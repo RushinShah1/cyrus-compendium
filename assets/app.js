@@ -1,5 +1,5 @@
 {
-const DOCS = ['home','spells','feats','aspera','items','consumables','combat','atlas','glossary'];
+const DOCS = ['home','spells','feats','aspera','items','consumables','combat','atlas','rules','glossary'];
 const main = document.getElementById('main');
 const cache = {};
 let current = null;
@@ -28,6 +28,7 @@ async function load(name){
   if (name === 'spells') initSpells();
   if (name === 'items' || name === 'consumables') initCatalog();
   if (name === 'glossary') initGlossary();
+  if (name === 'rules') initRules();
   if (name === 'home') initAppSettings();
   document.title = (main.querySelector('h1')?.textContent || 'Cyrus') + ' · Cyrus';
 }
@@ -44,12 +45,18 @@ scrim.className = 'pscrim'; scrim.hidden = true;
 document.body.append(scrim, stack);
 const panels = [];
 const MAXP = 15;
-let GLOSS = null;
-function loadGloss(){
-  if (!GLOSS) GLOSS = fetch('assets/glossary.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => j.e)
-    .catch(e => { GLOSS = null; throw e; });
-  return GLOSS;
+let GLOSS = null, CORE = null;
+function getJSON(u){ return fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => j.e); }
+function loadGloss(){ if (!GLOSS) GLOSS = getJSON('assets/glossary.json').catch(e => { GLOSS = null; throw e; }); return GLOSS; }
+function loadCore(){ if (!CORE) CORE = getJSON('assets/core.json').catch(e => { CORE = null; throw e; }); return CORE; }
+function loadAll(){ return Promise.all([loadGloss(), loadCore()]).then(([g, c]) => ({...c, ...g})); }
+async function getEntry(key){
+  const g = await loadGloss();
+  if (g[key]) return g[key];
+  const c = await loadCore();
+  return c[key];
 }
+function esc(t){ return String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 const AONPATH = {traits:'Traits',conditions:'Conditions',rules:'Rules',actions:'Actions',spells:'Spells',equipment:'Equipment',feats:'Feats',
   skills:'Skills',weapons:'Weapons',classes:'Classes',relics:'Relics',hybridstudies:'HybridStudies',backgrounds:'Backgrounds',heritages:'Heritages',mythicspells:'MythicSpells'};
 function aonUrl(key, name){
@@ -125,13 +132,26 @@ function openCard(card){
   const name = c.querySelector('h3.cn, h3')?.textContent?.trim() || '';
   pushPanel(kick, name, c, 'card:' + card.id);
 }
-async function openGloss(key, fallbackHref){
-  let G;
-  try { G = await loadGloss(); } catch (e) { if (fallbackHref) window.open(fallbackHref, '_blank', 'noopener'); return; }
-  const e = G[key];
+async function openGloss(key, fallbackHref, replace){
+  let e;
+  try { e = await getEntry(key); } catch (err) { e = null; }
   if (!e) { if (fallbackHref) window.open(fallbackHref, '_blank', 'noopener'); return; }
   const d = document.createElement('div'); d.className = 'gentry rt';
-  d.innerHTML = e[2];
+  const nav = e[4];
+  let crumbs = '', sections = '', pager = '';
+  if (nav) {
+    const all = await loadAll().catch(() => ({}));
+    const name = k => (all[k] ? all[k][0] : '');
+    const chain = []; let p = nav.p, guard = 0;
+    while (p && guard++ < 12) { chain.unshift(p); p = all[p] && all[p][4] ? all[p][4].p : null; }
+    crumbs = `<nav class="gcrumbs" aria-label="Location"><span>${esc(nav.b)}</span>` + chain.map(k => ` › <a href="#" data-g="${k}">${esc(name(k))}</a>`).join('') + '</nav>';
+    if (nav.c && nav.c.length) sections = '<h5 class="sub">Sections</h5><ul class="gsections">' + nav.c.map(k => `<li><a href="#" data-g="${k}">${esc(name(k))}</a></li>`).join('') + '</ul>';
+    const pv = nav.pv && all[nav.pv] ? `<button type="button" class="chip" data-gr="${nav.pv}">‹ ${esc(name(nav.pv))}</button>` : '<span></span>';
+    const nx = nav.nx && all[nav.nx] ? `<button type="button" class="chip" data-gr="${nav.nx}">${esc(name(nav.nx))} ›</button>` : '<span></span>';
+    pager = `<div class="gpager">${pv}${nx}</div>`;
+  }
+  d.innerHTML = crumbs + e[2] + sections + pager;
+  if (replace && panels.length) { const t = panels.pop(); t.remove(); }
   pushPanel(e[1] + (e[3] ? ' · legacy printing' : ''), e[0], d, key, aonUrl(key, e[0]));
 }
 
@@ -150,6 +170,8 @@ async function findElsewhere(id){
 }
 
 document.addEventListener('click', ev => {
+  const r = ev.target.closest('[data-gr]');
+  if (r) { ev.preventDefault(); openGloss(r.dataset.gr, null, true); return; }
   const g = ev.target.closest('a[data-g]');
   if (g) { ev.preventDefault(); openGloss(g.dataset.g, g.href); return; }
   const a = ev.target.closest('a[data-to]');
@@ -190,12 +212,39 @@ function initAppSettings(){
   else navigator.serviceWorker.ready.then(() => { status.textContent = standalone ? 'Running as an app. Everything is saved for offline use.' : 'Everything is saved for offline use on this device.'; });
 }
 
+// ───────── core rules contents ─────────
+function initRules(){
+  const q = main.querySelector('#toc-q'), count = main.querySelector('#toc-count');
+  const items = [...main.querySelectorAll('.toc li')];
+  const chapters = [...main.querySelectorAll('details.toc-ch')];
+  loadAll().catch(() => {});                       // warm the cache so the first panel opens quickly
+  let tmr;
+  q.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(run, 120); });
+  function run(){
+    const s = q.value.trim().toLowerCase();
+    if (!s) { items.forEach(li => li.hidden = false); chapters.forEach(c => { c.hidden = false; c.open = false; }); count.textContent = ''; return; }
+    let n = 0;
+    items.forEach(li => li.hidden = true);
+    items.forEach(li => {
+      const a = li.querySelector(':scope > a');
+      if (a && a.textContent.toLowerCase().includes(s)) {
+        n++;
+        let x = li;
+        while (x && x.tagName === 'LI') { x.hidden = false; x = x.parentElement.closest('li'); }
+        li.querySelectorAll('li').forEach(c => c.hidden = false);
+      }
+    });
+    chapters.forEach(c => { const any = c.querySelector('li:not([hidden])'); c.hidden = !any; c.open = !!any; });
+    count.textContent = n + ' matching sections';
+  }
+}
+
 // ───────── rules glossary page ─────────
 function initGlossary(){
   const list = main.querySelector('#g-list'), q = main.querySelector('#g-q'), count = main.querySelector('#g-count');
   const full = main.querySelector('#g-full'), types = new Set();
   let rows = null, limit = 200;
-  loadGloss().then(G => {
+  loadAll().then(G => {
     rows = Object.entries(G).map(([k, e]) => ({k, n: e[0], t: e[1], lg: e[3], low: e[0].toLowerCase(), txt: null, h: e[2]}))
       .sort((a, b) => a.low.localeCompare(b.low));
     render();
