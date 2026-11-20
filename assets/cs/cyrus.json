@@ -145,6 +145,9 @@
   },
   "feat:ancestry-9": {
    "multitalented": "@ft:witch-dedication"
+  },
+  "background>ft:canny-acumen": {
+   "cannyAcumen": "system.perception.rank"
   }
  },
  "inventory": [
@@ -185,7 +188,46 @@
       "n": "Shadow Synthesis",
       "text": "Aspera counts as leaving a hand free for Laughing Shadow's extra damage against off-guard targets while you hold it in both hands."
      }
-    ]
+    ],
+    "relic": true,
+    "aspects": [
+     "Time",
+     "Mind"
+    ],
+    "gifts": [
+     {
+      "n": "Repository of Knowledge",
+      "g": "relics-174",
+      "lv": 3,
+      "kind": "First minor gift"
+     },
+     {
+      "n": "Sands of the Hourglass",
+      "g": "relics-216",
+      "lv": 5,
+      "kind": "Second minor gift"
+     },
+     {
+      "n": "Precognition",
+      "g": "relics-217",
+      "lv": 9,
+      "kind": "First major gift"
+     },
+     {
+      "n": "Temporal Pulse",
+      "g": "relics-218",
+      "lv": 13,
+      "kind": "Second major gift"
+     },
+     {
+      "n": "Time Jump",
+      "g": "relics-219",
+      "lv": 17,
+      "kind": "Third major gift"
+     }
+    ],
+    "page": "aspera",
+    "desc": "Cyrus's relic polearm. Reach 10 feet, including two squares diagonally."
    },
    "qty": 1,
    "eq": "held2"

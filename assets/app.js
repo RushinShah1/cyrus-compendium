@@ -249,7 +249,7 @@ function initAppSettings(){
 }
 
 // ───────── character sheet ─────────
-window.Aspera = {pushPanel, popPanel, closeAll, openGloss: (k) => openGloss(k)};
+window.Aspera = {pushPanel, popPanel, closeAll, openGloss: (k) => openGloss(k), getEntry};
 let sheetScripts = null;
 function loadScript(src){ return new Promise((ok, no) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
 function initSheet(){

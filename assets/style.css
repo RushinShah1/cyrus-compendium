@@ -843,3 +843,79 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .cs-tray input,.cs-tray select{background:var(--sunk);color:var(--ink);border:1px solid var(--line2);border-radius:8px;padding:6px 8px;font:inherit;font-size:15px}
 .cs-tray .cs-inline input{flex:1;min-width:0}
 @media(max-width:760px){.cs-traybody{max-height:55vh}}
+
+/* ── sheet: sticky summary and tabs, stat cards, Spellstrike, item browser, item details ── */
+.cs-bar{position:sticky;top:0;z-index:15;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin:4px 0 14px}
+.cs-bar .cs-mini{position:static;border:0;margin:0;padding:6px 0 0;background:transparent;backdrop-filter:none;font-size:13px;color:var(--ink2)}
+.cs-bar .cs-mini .ok{color:var(--gold)}
+.cs-bar .cs-tabs{margin:0;border-bottom:0}
+@media(max-width:999px){.cs-bar{top:58px}}
+.cs-count{display:inline-block;min-width:1.4em;padding:0 5px;margin-left:4px;border-radius:999px;background:var(--gold);color:var(--bg);font-size:12px;font-weight:600;line-height:1.5;text-align:center}
+.cs-stat{display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:8px 10px}
+.cs-sl{background:transparent;border:0;padding:0;color:var(--ink3);font:inherit;font-size:13px;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px;text-align:left}
+.cs-sl:hover{color:var(--ink)}
+.cs-stat .cs-sv{display:inline-flex;flex-direction:row;align-items:center;gap:6px;width:auto;padding:2px 6px 2px 0;border-radius:6px}
+.cs-stat .cs-sv .ic,.cs-skv .ic{width:15px;height:15px;fill:var(--ink3);flex:none}
+.cs-stat.rollable .cs-sv:hover .ic,.cs-skv:hover .ic{fill:var(--gold)}
+.cs-stat > small{font-size:12px;color:var(--ink3)}
+.cs-sk{grid-template-columns:auto 1fr auto;padding:6px 8px 6px 10px}
+.cs-sk:hover span{text-decoration:underline dotted;text-underline-offset:3px}
+.cs-skv{display:inline-flex;align-items:center;gap:6px;background:var(--card2);border:0;border-left:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 12px;cursor:pointer;border-radius:0 8px 8px 0}
+.cs-skv b{font-size:17px;min-width:2.2em;text-align:right}
+.cs-skv:hover b{color:var(--gold)}
+.cs-lnk{background:transparent;border:0;padding:0;color:inherit;font:inherit;font-weight:inherit;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px;text-align:left}
+.cs-todo{border:1px solid var(--gold-dim);border-radius:12px;padding:12px 14px;background:color-mix(in srgb,var(--gold) 5%,var(--card))}
+.cs-todo h2{margin-top:0}
+.cs-todo .cs-choice{padding-left:0}
+.cs-track{display:grid;grid-template-columns:auto minmax(0,1fr);cursor:default}
+.cs-track .b{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}
+.chip.ss{border-color:var(--violet);color:var(--ink)}
+.chip.ss .ic{width:15px;height:15px;fill:var(--violet);margin-right:4px;vertical-align:-2px}
+.chip[disabled]{opacity:.45;cursor:not-allowed}
+.cs-sslist,.cs-iblist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
+.cs-sslist li,.cs-ires{display:grid;gap:6px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card)}
+.cs-sslist .t,.cs-ires .t{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-weight:600}
+.cs-sslist .m,.cs-ires .m,.cs-item .meta{display:flex;flex-wrap:wrap;gap:2px 14px;font-size:13px;color:var(--ink3)}
+.cs-sslist button{justify-self:start}
+.cs-ibcats{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.cs-ibf{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:flex-end}
+.cs-ibf .cs-field{margin:0}
+.cs-range{display:inline-flex;align-items:center;gap:6px}
+.cs-range input,.cs-qty input{width:4.4em}
+.cs-ibsum{margin:10px 0 0}
+.cs-ires .b{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.cs-ires .cs-trs{display:flex;flex-wrap:wrap;gap:4px}
+.cs-iblist .more{border:0;background:transparent;padding:0}
+.cs-ib input,.cs-ib select,.cs-itemp select{background:var(--sunk);color:var(--ink);border:1px solid var(--line2);border-radius:8px;padding:6px 8px;font:inherit;font-size:15px}
+.cs-ib .search input{width:100%}
+@media(max-width:760px){.cs-ibcats{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-18px;padding-right:18px}.cs-ibcats .chip{flex:none}}
+.cs-items{display:grid;gap:8px}
+.cs-item{grid-template-columns:minmax(0,1fr);gap:8px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card)}
+.cs-item .c{justify-content:flex-start}
+.cs-item .n{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.cs-item .meta{flex-basis:100%}
+.cs-iname{background:transparent;border:0;padding:0;color:var(--ink);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px;text-align:left}
+.cs-iname:hover{color:var(--gold)}
+.cs-qtyl{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink3)}
+.cs-facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0 18px;margin:0 0 12px}
+.cs-facts div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:5px 0}
+.cs-facts dt{color:var(--ink3)}.cs-facts dd{margin:0;text-align:right}
+.cs-itemp h3{margin:16px 0 6px}
+.cs-itemp .cs-trs{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 10px}
+.cs-gifts{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.cs-gifts li{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink3)}
+.cs-gifts li.on{color:var(--ink);border-color:var(--gold-dim)}
+.cs-gifts .lv{font-weight:600;text-align:center}
+.cs-gifts small{display:block;color:var(--ink3);font-size:12px}
+.cs-gifts .st{font-size:13px}
+.cs-gifts li.on .st{color:var(--gold)}
+/* the dice tray folds to a small button so it never covers the page */
+#cs-root{padding-bottom:76px}
+.cs-tray:not(.open){width:auto;max-width:min(360px,calc(100vw - 24px));left:auto;right:12px;border-radius:999px}
+.cs-tray:not(.open) .cs-trayhead{padding:8px 14px}
+@media(max-width:760px){.cs-tray:not(.open){left:auto;right:10px}.cs-tray.open .cs-traybody{max-height:50vh}}
+:root[data-look=basic] .cs-count{background:var(--link)}
+:root[data-look=basic] .cs-todo{background:var(--card)}
+.cs-ib [hidden],.cs-itemp [hidden]{display:none!important}
+.cs-track .b{flex-direction:row;align-items:center}
+.cs-ib .search input{border:0;background:transparent}

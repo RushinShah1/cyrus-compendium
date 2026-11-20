@@ -52,7 +52,7 @@ function putChar(c) {
 }
 const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 function blank(name) {
-  return {format: 'aspera-character', v: 1, mig: 2, id: newId(), name: name || 'New character', level: 1, ancestry: null, heritage: null, background: null, class: null, deity: null,
+  return {format: 'aspera-character', v: 1, mig: 3, id: newId(), name: name || 'New character', level: 1, ancestry: null, heritage: null, background: null, class: null, deity: null,
     boosts: {ancestry: [], background: [], class: null, 1: [], 5: [], 10: [], 15: [], 20: []}, trained: [], lores: [], increases: {}, intTrained: {}, languages: [],
     feats: {}, choices: {}, inventory: [], coins: {pp: 0, gp: 15, sp: 0, cp: 0}, ledger: [], hp: {damage: 0, temp: 0}, heroPoints: 1, focusUsed: 0,
     conditions: {}, effects: {}, toggles: {}, spells: {entries: []}, notes: {}, options: {freeArchetype: false}, bonusSlots: [],
@@ -62,6 +62,11 @@ function blank(name) {
 const STAVE = [['time-sense', 0, 8], ['figment', 0, 8], ['sure-strike', 1, 8], ['befuddle', 1, 8], ['illusory-object', 1, 8], ['loose-times-arrow', 2, 8], ['invisibility', 2, 8],
   ['embed-message', 2, 8], ['time-jump', 3, 8], ['slow', 3, 8], ['illusory-disguise', 3, 8], ['wall-of-mirrors', 4, 10], ['vision-of-death', 4, 10], ['space-fold-gate', 5, 12],
   ['synesthesia', 5, 12], ['cast-into-time', 6, 14], ['mislead', 6, 14], ['clairvoyance', 4, 16], ['haste', 7, 16], ['true-target', 7, 16]];
+const ASPERA_RELIC = {relic: true, aspects: ['Time', 'Mind'], page: 'aspera',
+  desc: "Cyrus's relic polearm. Reach 10 feet, including two squares diagonally.",
+  abil: [{n: 'Shadow Synthesis', text: "Aspera counts as leaving a hand free for Laughing Shadow's extra damage against off-guard targets while you hold it in both hands."}],
+  gifts: [{n: 'Repository of Knowledge', g: 'relics-174', lv: 3, kind: 'First minor gift'}, {n: 'Sands of the Hourglass', g: 'relics-216', lv: 5, kind: 'Second minor gift'},
+    {n: 'Precognition', g: 'relics-217', lv: 9, kind: 'First major gift'}, {n: 'Temporal Pulse', g: 'relics-218', lv: 13, kind: 'Second major gift'}, {n: 'Time Jump', g: 'relics-219', lv: 17, kind: 'Third major gift'}]};
 function asperaStave() {
   return {id: 'staff-aspera', name: "Aspera's stave", kind: 'staff', trad: 'arcane', attr: 'int', prof: 'class', known: [], used: 0, extra: 0,
     staff: STAVE.map(([s, rank, lv]) => ({k: 'sp:' + s, rank, lv})), note: 'Cast through Aspera with Fused Staff. Synesthesia needs occult spellcasting.'};
@@ -76,6 +81,16 @@ function migrate(c) {
     }
     if (asp && !c.spells.entries.some(e => e.kind === 'staff')) c.spells.entries.push(asperaStave());
     c.mig = 2;
+  }
+  if (c.mig < 3) {
+    const asp = c.inventory.find(i => i.id === 'aspera' && i.custom);
+    if (asp) {
+      // the plan takes Perception with Canny Acumen; earlier versions of the preset left it unchosen
+      const k = 'background>ft:canny-acumen', cur = c.choices[k] || {};
+      if (!cur.cannyAcumen) c.choices[k] = Object.assign(cur, {cannyAcumen: 'system.perception.rank'});
+      Object.assign(asp.custom, Object.assign({}, ASPERA_RELIC, {abil: asp.custom.abil || ASPERA_RELIC.abil}));
+    }
+    c.mig = 3;
   }
   return c;
 }
@@ -94,18 +109,48 @@ const act = a => a ? `<span class="pf" title="${ACT[a] || a}">${GLYPH[a] || ''}<
 const rankTag = r => `<span class="cs-rank r${r}" title="${RANKS[r]}">${RANK_L[r]}</span>`;
 const legTag = r => r && r.leg ? ` <span class="cs-leg" title="Legacy printing, renamed in the remaster as ${esc(r.now)}">legacy</span>` : '';
 function statBtn(key, label, val, sub, roll) {
-  return `<div class="cs-stat${roll ? ' rollable' : ''}"><button type="button" class="cs-sv" data-act="${roll ? 'roll' : 'breakdown'}" data-k="${esc(key)}" aria-label="${roll ? 'Roll ' : ''}${esc(label)}">
-<span class="l">${esc(label)}</span><b>${esc(val)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}</button>${roll ? `<button type="button" class="cs-info" data-act="breakdown" data-k="${esc(key)}" aria-label="How ${esc(label)} is made up">Details</button>` : ''}</div>`;
+  const k = esc(key);
+  return `<div class="cs-stat${roll ? ' rollable' : ''}"><button type="button" class="cs-sl" data-act="breakdown" data-k="${k}" title="How ${esc(label)} is made up">${esc(label)}</button>
+<button type="button" class="cs-sv" data-act="${roll ? 'roll' : 'breakdown'}" data-k="${k}" aria-label="${roll ? 'Roll ' + esc(label) : esc(label) + ' breakdown'}">${roll ? ic('dice') : ''}<b>${esc(val)}</b></button>${sub ? `<small>${esc(sub)}</small>` : ''}</div>`;
 }
 
 function render() {
   if (!root) return;
+  ensureEntries();   // class and archetype spellcasting must exist for staff charges and Spellstrike
   const y = window.scrollY;
   const tabs = [['sheet', 'Sheet'], ['build', 'Build'], ['inventory', 'Inventory'], ['spells', 'Spells'], ['feats', 'Feats'], ['notes', 'Notes']];
-  root.innerHTML = mini() + head() + encounterBar()
-    + `<nav class="cs-tabs" role="tablist">${tabs.map(([t, l]) => `<button type="button" role="tab" aria-selected="${t === tab}" class="${t === tab ? 'on' : ''}" data-act="tab" data-t="${t}">${l}</button>`).join('')}</nav>`
+  const todo = openChoices().length;
+  root.innerHTML = head() + encounterBar()
+    + `<div class="cs-bar">${mini()}<nav class="cs-tabs" role="tablist">${tabs.map(([t, l]) => `<button type="button" role="tab" aria-selected="${t === tab}" class="${t === tab ? 'on' : ''}" data-act="tab" data-t="${t}">${l}${t === 'build' && todo ? ` <span class="cs-count" title="${todo} choice${todo > 1 ? 's' : ''} to make">${todo}</span>` : ''}</button>`).join('')}</nav></div>`
     + `<div class="cs-body">${({sheet: tabSheet, build: tabBuild, inventory: tabInventory, spells: tabSpells, feats: tabFeats, notes: tabNotes})[tab]()}</div>` + tray();
   window.scrollTo(0, y);
+}
+
+// choices the rules leave open at or below the current level
+function openChoices() {
+  const out = res.pending.filter(p => p.value == null && !p.uid.startsWith('effect:')).map(p => ({p}));
+  const b = ch.boosts || {}, anc = res.S.anc;
+  const need = [['ancestry', 'ancestry', ch.altBoosts ? 2 : anc ? anc.boosts.filter(o => o.length > 1).length : 0, 1], ['background', 'background', res.S.bg ? 2 : 0, 1], ['class', 'class key attribute', res.S.cls ? 1 : 0, 1],
+    ['1', 'level 1', 4, 1], ['5', 'level 5', 4, 5], ['10', 'level 10', 4, 10], ['15', 'level 15', 4, 15], ['20', 'level 20', 4, 20]];
+  for (const [k, l, n, lv] of need) {
+    const have = k === 'class' ? (b.class ? 1 : 0) : (b[k] || []).length;
+    if (lv <= ch.level && have < n) out.push({slot: {label: `Attribute boosts for ${l} (${have} of ${n})`, lv, boost: true}});
+  }
+  for (const sl of res.slots) {
+    if (sl.lv > ch.level || sl.kind === 'boost') continue;
+    if (sl.kind === 'increase') { if (!(ch.increases || {})[sl.lv]) out.push({slot: sl}); continue; }
+    const f = (ch.feats || {})[sl.id];
+    if (!f || !rec(f.k)) out.push({slot: sl});
+  }
+  return out;
+}
+function todoSection() {
+  const open = openChoices();
+  if (!open.length) return '';
+  const ch1 = open.filter(o => o.p).map(o => choiceUI(o.p)).join('');
+  const sl = open.filter(o => o.slot);
+  const slots = sl.length ? `<p class="small">${sl.length === 1 ? 'One build choice is' : sl.length + ' build choices are'} still open: ${esc(sl.map(o => o.slot.boost ? o.slot.label : `${o.slot.label} at level ${o.slot.lv}`).join(', '))}. <button type="button" class="chip mini" data-act="tab" data-t="build">Open the Build tab</button></p>` : '';
+  return `<section class="cs-sec cs-todo"><h2>Choices to make</h2><p class="small muted">These affect your numbers and are not chosen yet.</p>${ch1 ? `<div class="cs-choices">${ch1}</div>` : ''}${slots}</section>`;
 }
 
 // a compact bar that stays at the top while scrolling
@@ -118,9 +163,8 @@ function mini() {
   const hp = res.hp.total, cur = Math.max(0, hp - (ch.hp.damage || 0));
   const e = ch.enc;
   return `<div class="cs-mini" aria-label="Summary"><b class="n">${esc(ch.name)}</b>
-<span class="hp"><span class="bar"><span style="width:${hp ? Math.round(100 * cur / hp) : 0}%"></span></span>${cur}/${hp}${ch.hp.temp ? ` +${ch.hp.temp}` : ''}</span>
-<span>AC ${res.ac.total}</span>${e.on ? `<span>Round ${e.round}</span><span class="pips">${pips(e.actions, maxActions())}</span>` : ''}
-<button type="button" class="chip mini" data-act="tray">${ic('dice')}Dice</button></div>`;
+<span class="hp"><span class="bar"><span style="width:${hp ? Math.round(100 * cur / hp) : 0}%"></span></span>${cur}/${hp} HP${ch.hp.temp ? ` +${ch.hp.temp}` : ''}</span>
+<span>AC ${res.ac.total}</span>${res.S.opts.has('feature:spellstrike') ? `<span class="${ch.trackers.spellstrike !== false ? 'ok' : 'muted'}">Spellstrike ${ch.trackers.spellstrike !== false ? 'charged' : 'expended'}</span>` : ''}${e.on ? `<span>Round ${e.round}</span><span class="pips">${pips(e.actions, maxActions())}</span>` : ''}</div>`;
 }
 
 function head() {
@@ -222,7 +266,7 @@ function damageRoll(label, parts, crit, ctx) {
     const r = rollFormula(p.f);
     if (!r) continue;
     const mult = crit && !p.critOnly ? 2 : 1;
-    out.push({f: p.f, t: p.t, c: p.c, rolls: r.parts, sub: r.total, v: r.total * mult, mult, heal: p.heal});
+    out.push({f: p.f, t: p.t, c: p.c, from: p.from, rolls: r.parts, sub: r.total, v: r.total * mult, mult, heal: p.heal});
     total += r.total * mult;
   }
   const entry = {kind: 'damage', label: label + (crit ? ' (critical)' : ''), parts: out, total, ctx: ctx || null, basic: ctx && ctx.basic};
@@ -270,13 +314,29 @@ function logCard(x, big) {
 ${x.dc != null || x.sub || x.reroll ? `<small class="muted">${[x.dc != null ? 'Against ' + x.dc : '', x.sub, x.reroll ? 'rerolled with a Hero Point' : ''].filter(Boolean).map(esc).join(' · ')}</small>` : ''}${big ? actionsFor(x) : ''}</div>`;
   }
   if (x.kind === 'note') return `<div class="cs-roll${big ? ' big' : ''}"><div class="h"><b>${esc(x.label)}</b><small>${time}</small></div><div class="r"><b>${esc(x.total)}</b></div></div>`;
-  const rows = (x.parts || []).map(p => `<div class="dp"><span class="dd">${p.rolls.map(r => r.rolls.map(v => `<span class="cs-die s">${v}</span>`).join('')).join('')}</span><span>${esc(p.f)}${p.mult > 1 ? ' ×2' : ''}</span><b>${p.v}</b><small>${esc([p.c, p.t].filter(Boolean).join(' '))}</small></div>`).join('');
+  const rows = (x.parts || []).map(p => `<div class="dp"><span class="dd">${p.rolls.map(r => r.rolls.map(v => `<span class="cs-die s">${v}</span>`).join('')).join('')}</span><span>${esc(p.f)}${p.mult > 1 ? ' ×2' : ''}</span><b>${p.v}</b><small>${esc([p.c, p.t].filter(Boolean).join(' '))}${p.from ? ` <i>${esc(p.from)}</i>` : ''}</small></div>`).join('');
   const basic = x.basic ? `<small class="muted">Basic save: critical success 0, success ${Math.floor(x.total / 2)}, failure ${x.total}, critical failure ${x.total * 2}</small>` : '';
   const heal = big && (x.parts || []).some(p => p.heal) ? `<div class="cs-rbtn"><button type="button" class="chip mini" data-act="apply-heal" data-n="${x.total}">Heal myself ${x.total}</button></div>` : '';
   return `<div class="cs-roll${big ? ' big' : ''}"><div class="h"><b>${esc(x.label)}</b><small>${time}</small></div>${rows}<div class="r"><span class="eq">Total</span><b class="tot">${x.total}</b></div>${basic}${heal}</div>`;
 }
 function actionsFor(x) {
   const b = [];
+  const ss = x.ctx && x.ctx.ss;
+  if (ss && res.strikes[x.ctx.strike]) {
+    const sp = rec(ss.k);
+    if (ss.atk) {
+      b.push(`<button type="button" class="chip mini${x.dg === 2 ? ' hi' : ''}" data-act="ss-dmg" data-id="${x.id}">Damage: Strike and ${esc(sp.n)}</button>`);
+      b.push(`<button type="button" class="chip mini${x.dg === 3 ? ' hi' : ''}" data-act="ss-dmg" data-id="${x.id}" data-crit="1">Critical damage: Strike and ${esc(sp.n)}</button>`);
+      b.push(`<span class="small">${esc(sp.n)} uses the Strike's result${x.dg != null && x.dg < 2 ? ', so it misses as well' : ''}.</span>`);
+    } else {
+      b.push(`<button type="button" class="chip mini${x.dg === 2 ? ' hi' : ''}" data-act="strike-dmg" data-i="${x.ctx.strike}">Strike damage</button>`);
+      b.push(`<button type="button" class="chip mini${x.dg === 3 ? ' hi' : ''}" data-act="strike-crit" data-i="${x.ctx.strike}">Critical Strike damage</button>`);
+      if (eng.spellDamage(sp, ss.rank).length && x.dg !== 0) b.push(`<button type="button" class="chip mini" data-act="spell-dmg" data-k="${esc(sp.k)}" data-r="${ss.rank}"${ss.save && ss.save.basic ? ' data-basic="1"' : ''}>${esc(sp.n)} damage</button>`);
+      b.push(`<span class="small">${x.dg === 0 ? `The Strike critically failed, so ${esc(sp.n)} has no effect.` : `The target attempts a ${ss.save.basic ? 'basic ' : ''}${esc(cap(ss.save.stat))} save against DC ${ss.save.dc}.`}</span>`);
+    }
+    if (!x.reroll && (ch.heroPoints || 0) > 0) b.push(`<button type="button" class="chip mini" data-act="hero-reroll" data-id="${x.id}">Reroll with a Hero Point</button>`);
+    return `<div class="cs-rbtn">${b.join('')}</div>`;
+  }
   if (x.ctx && x.ctx.strike != null && res.strikes[x.ctx.strike]) {
     b.push(`<button type="button" class="chip mini${x.dg === 2 ? ' hi' : ''}" data-act="strike-dmg" data-i="${x.ctx.strike}">Damage</button>`);
     b.push(`<button type="button" class="chip mini${x.dg === 3 ? ' hi' : ''}" data-act="strike-crit" data-i="${x.ctx.strike}">Critical damage</button>`);
@@ -311,6 +371,100 @@ function rollStrike(i, mapIdx) {
   const mod = s.map[mapIdx];
   check(`${s.name}, ${['first', 'second', 'third'][mapIdx]} attack`, mod, {sub: situationalText(s.attack), ctx: {strike: i, mod}});
   if (e.on) { e.attacks += 1; e.actions = Math.max(0, e.actions - 1); }
+}
+
+// ───────── Spellstrike ─────────
+// a spell of 1 or 2 actions with a spell attack roll or a saving throw (Impossible Magic)
+const ssTime = t => /^[12]$/.test(t || '') || /^[12] (to|or) [123]$/.test(t || '') || /^single action to/.test(t || '');
+const ssEligible = s => ssTime(s.time) && ((s.tr || []).includes('attack') || !!(s.dfn && s.dfn.save));
+function ssOptions() {
+  const out = [], seen = new Set();
+  const add = (s, rank, sc, src, how) => {
+    if (!s || !ssEligible(s)) return;
+    const key = [s.k, rank, sc.e.id, how.type].join('|');
+    if (seen.has(key)) return; seen.add(key);
+    out.push({s, rank, sc, src, how});
+  };
+  for (const sc of res.spellcasting) {
+    const e = sc.e, known = (e.known || []).map(k => rec(k)).filter(Boolean);
+    const isC = s => (s.tr || []).includes('cantrip');
+    if (e.kind === 'staff') {
+      const left = sc.charges.max - sc.charges.used;
+      for (const x of e.staff || []) {
+        if (x.lv > ch.level) continue;
+        const s = rec(x.k); if (!s) continue;
+        if (isC(s)) add(s, sc.cantripRank, sc, `${e.name}, cantrip`, {type: 'cantrip'});
+        else if (x.rank <= left) add(s, x.rank, sc, `${e.name}, ${x.rank} charge${x.rank > 1 ? 's' : ''} of ${left}`, {type: 'staff', e: e.id, cost: x.rank});
+      }
+    } else if (sc.slots) {
+      for (const s of known.filter(isC)) add(s, sc.cantripRank, sc, `${e.name}, cantrip`, {type: 'cantrip'});
+      for (let rk = sc.slots.length - 1; rk >= 1; rk--) {
+        const n = sc.slots[rk]; if (!n) continue;
+        if (e.kind === 'prepared') {
+          const prep = (e.prepared || {})[rk] || [], used = (e.used || {})[rk] || [];
+          for (let i = 0; i < n; i++) if (prep[i] && !used.includes(i)) add(rec(prep[i]), rk, sc, `${e.name}, prepared in a rank ${rk} slot`, {type: 'prep', e: e.id, r: rk, i});
+        } else {
+          const left = n - ((e.usedN || {})[rk] || 0);
+          if (left > 0) for (const s of known) if (!isC(s) && (s.lv || 1) <= rk) add(s, rk, sc, `${e.name}, rank ${rk} slot, ${left} left`, {type: 'spont', e: e.id, r: rk});
+        }
+      }
+    } else if (e.kind === 'focus') {
+      const left = res.focusMax - (ch.focusUsed || 0);
+      for (const s of known) {
+        if (isC(s)) add(s, sc.cantripRank, sc, `${e.name}, focus cantrip`, {type: 'cantrip'});
+        else if (left > 0) add(s, sc.cantripRank, sc, `${e.name}, 1 Focus Point`, {type: 'focus'});
+      }
+    } else for (const s of known) add(s, s.lv || 1, sc, `${e.name}, innate`, {type: 'innate', e: e.id});
+  }
+  return out.sort((a, b) => b.rank - a.rank || a.s.n.localeCompare(b.s.n));
+}
+function ssDefence(o) {
+  const sv = o.s.dfn && o.s.dfn.save;
+  if ((o.s.tr || []).includes('attack')) return "Uses the Strike's attack roll";
+  return `${sv.basic ? 'Basic ' : ''}${cap(sv.statistic)} save, DC ${o.sc.dc.total}`;
+}
+function ssPick(i) {
+  const st = res.strikes[i]; if (!st) return;
+  const opts = ssOptions();
+  const box = document.createElement('div');
+  box.className = 'cs-picker cs-ss';
+  const mapIdx = ch.enc.on ? Math.min(ch.enc.attacks, 2) : 0;
+  box.innerHTML = `<p class="small">Two actions. Cast a spell and make a melee Strike with ${esc(st.name)} at ${fmt(st.map[mapIdx])}. The Strike gains the arcane trait and counts as two attacks for your multiple attack penalty, applied after the Strike.</p>
+${opts.length > 8 ? '<label class="search"><input type="search" placeholder="Search spells" aria-label="Search spells"></label>' : ''}
+<ul class="cs-sslist">${opts.length ? opts.map((o, j) => {
+    const dmg = eng.spellDamage(o.s, o.rank);
+    return `<li data-n="${esc(o.s.n.toLowerCase())}"><div class="t">${g(o.s)}${legTag(o.s)}<span class="cs-badge">${(o.s.tr || []).includes('cantrip') ? 'Cantrip, rank ' + o.rank : 'Rank ' + o.rank}</span></div>
+<div class="m"><span>${esc(o.src)}</span><span>${esc(ssDefence(o))}</span>${dmg.length ? `<span>${esc(dmg.map(x => x.f + (x.t ? ' ' + x.t : '')).join(' + '))}</span>` : ''}</div>
+<button type="button" class="chip hi" data-j="${j}">Spellstrike with ${esc(o.s.n)}</button></li>`;
+  }).join('') : '<li class="muted">No spell you can cast right now qualifies. Spellstrike needs a spell of 1 or 2 actions with a spell attack roll or a saving throw, and a slot, charge or Focus Point to cast it.</li>'}</ul>`;
+  const q = box.querySelector('input[type=search]');
+  if (q) q.addEventListener('input', () => { const v = q.value.trim().toLowerCase(); box.querySelectorAll('.cs-sslist li[data-n]').forEach(li => { li.hidden = v && !li.dataset.n.includes(v); }); });
+  box.addEventListener('click', e => {
+    const b = e.target.closest('button[data-j]'); if (!b) return;
+    A.popPanel(); doSpellstrike(i, opts[+b.dataset.j]); commit();
+  });
+  A.pushPanel('Spellstrike', 'Choose a spell', box, 'ss:' + i);
+}
+function spendCast(how) {
+  const E2 = id => ch.spells.entries.find(x => x.id === id);
+  if (how.type === 'prep') { const x = E2(how.e); x.used = x.used || {}; const arr = x.used[how.r] = x.used[how.r] || []; if (!arr.includes(how.i)) arr.push(how.i); }
+  else if (how.type === 'spont') { const x = E2(how.e); x.usedN = x.usedN || {}; x.usedN[how.r] = (x.usedN[how.r] || 0) + 1; }
+  else if (how.type === 'staff') { const x = E2(how.e); x.used = (x.used || 0) + how.cost; }
+  else if (how.type === 'focus') ch.focusUsed = (ch.focusUsed || 0) + 1;
+  else if (how.type === 'innate') { const x = E2(how.e); x.innateUsed = x.innateUsed || {}; }
+}
+function doSpellstrike(i, o) {
+  const st = res.strikes[i]; if (!st || !o) return;
+  const e = ch.enc;
+  const mapIdx = e.on ? Math.min(e.attacks, 2) : 0;
+  const mod = st.map[mapIdx];
+  spendCast(o.how);
+  if (o.how.type === 'innate') { const x = ch.spells.entries.find(y => y.id === o.how.e); x.innateUsed[o.s.k] = (x.innateUsed[o.s.k] || 0) + 1; }
+  const sv = o.s.dfn && o.s.dfn.save;
+  const ss = {k: o.s.k, rank: o.rank, atk: (o.s.tr || []).includes('attack'), save: sv ? {stat: sv.statistic, basic: !!sv.basic, dc: o.sc.dc.total} : null};
+  check(`Spellstrike: ${st.name} with ${o.s.n}`, mod, {sub: [`${['first', 'second', 'third'][mapIdx]} attack`, situationalText(st.attack)].filter(Boolean).join('; '), ctx: {strike: i, mod, ss}});
+  if (e.on) { e.actions = Math.max(0, e.actions - 2); e.attacks += 2; }
+  ch.trackers.spellstrike = false;
 }
 
 // ───────── Sheet tab ─────────
@@ -353,9 +507,12 @@ function tabSheet() {
   const other = Object.entries(ch.effects || {}).filter(([k, v]) => v && !seen.has(k)).map(([k]) => { const r = rec(k); return r ? `<span class="cs-cond">${g(r, r.n.replace(/^(Effect|Spell Effect|Stance): /, ''))}${roundsTag(k)}<button type="button" class="x" data-act="effect-off" data-k="${esc(k)}" aria-label="Remove">×</button></span>` : ''; }).join('');
   const effChoices = res.pending.filter(p => p.uid.startsWith('effect:')).map(p => choiceUI(p)).join('');
   const trackers = [];
-  if (res.S.opts.has('feature:spellstrike')) {
-    const charged = ch.trackers.spellstrike !== false;
-    trackers.push(`<button type="button" class="cs-track${charged ? ' on' : ''}" data-act="spellstrike">${ic('spellstrike')}<span><b>Spellstrike</b><small>${charged ? 'Charged. Select once you use it.' : 'Expended. Recharge with Recharge Spellstrike, a conflux spell or Magus\'s Analysis; select to mark it charged.'}</small></span></button>`);
+  const ssOn = res.S.opts.has('feature:spellstrike'), charged = ch.trackers.spellstrike !== false;
+  if (ssOn) {
+    trackers.push(`<div class="cs-track${charged ? ' on' : ''}">${ic('spellstrike')}<span><b>Spellstrike ${charged ? 'charged' : 'expended'}</b><small>${charged
+      ? 'Use the Spellstrike button on a melee Strike below. It expends the charge.'
+      : 'Recharge Spellstrike takes 1 action. Casting a conflux spell of at least 1 action also recharges it.'}</small></span>
+<span class="b">${charged ? '<button type="button" class="chip mini" data-act="spellstrike">Mark expended</button>' : '<button type="button" class="chip mini hi" data-act="ss-recharge">Recharge Spellstrike</button><button type="button" class="chip mini" data-act="spellstrike">Mark charged</button>'}</span></div>`);
   }
   let shield = '';
   if (res.S.shield) {
@@ -368,19 +525,21 @@ function tabSheet() {
 <input type="number" inputmode="numeric" id="cs-block" placeholder="Damage" aria-label="Damage to block"><button type="button" class="chip" data-act="block">Shield Block</button><button type="button" class="chip mini" data-act="shield-repair">Repair</button></div></div>`;
   }
   const next = ch.enc.on ? Math.min(ch.enc.attacks, 2) : -1;
+  const ssRanged = [...res.S.opts].some(o => /starlit-span/.test(o));
   const strikes = res.strikes.map((s, i) => {
     const ex = s.extraDice.map(dd => `<span class="${dd.situational ? 'sit' : ''}">${dd.critical ? 'critical: ' : ''}+${dd.n}${dd.d} ${esc(dd.type || '')}${dd.cat === 'persistent' ? ' persistent' : ''} <small>(${esc(dd.from)})</small></span>`).join('');
     const notes = s.notes.map(n => `<li><b>${esc(n.title)}</b>${n.outcome ? ` <small>(${esc([].concat(n.outcome).map(o => o.replace(/([A-Z])/g, ' $1').toLowerCase()).join(', '))})</small>` : ''}: ${esc(stripTags(n.text))}</li>`).join('');
     const sit = s.attack.situational.concat(s.damage.situational).map(m => `${esc(m.label)} ${fmt(m.value)}`).join('; ');
-    return `<div class="cs-strike${s.held ? '' : ' idle'}"><div class="h"><b>${s.inv && !s.inv.custom ? g(s.r, s.name) : esc(s.name)}</b>${s.held ? '' : ' <small>not held</small>'}<span class="cs-trs">${s.traits.map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</span>
-<button type="button" class="cs-info" data-act="breakdown" data-k="strike:${i}">Details</button></div>
+    return `<div class="cs-strike${s.held ? '' : ' idle'}"><div class="h"><b>${s.inv ? `<button type="button" class="cs-lnk" data-act="item" data-id="${esc(s.inv.id)}">${esc(s.name)}</button>` : g(s.r, s.name)}</b>${s.held ? '' : ' <small>not held</small>'}<span class="cs-trs">${s.traits.map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</span>
+<button type="button" class="cs-info" data-act="breakdown" data-k="strike:${i}">Attack breakdown</button></div>
 <div class="cs-atk">${s.map.map((m, j) => `<button type="button" class="cs-sv bare${j === next ? ' next' : ''}" data-act="strike" data-i="${i}" data-m="${j}" aria-label="Roll ${esc(s.name)} ${['first', 'second', 'third'][j]} attack"><b>${fmt(m)}</b><small>${['First', 'Second', 'Third'][j]}</small></button>`).join('')}
 <button type="button" class="cs-sv bare dmg" data-act="strike-dmg" data-i="${i}" aria-label="Roll damage"><b>${esc(s.formula)}</b><small>Damage${s.range ? ` · range ${s.range} ft` : ''}</small></button>
-<button type="button" class="chip mini" data-act="strike-crit" data-i="${i}">Critical</button></div>
+<button type="button" class="chip mini" data-act="strike-crit" data-i="${i}">Critical</button>
+${ssOn && (!s.range || ssRanged) ? (charged ? `<button type="button" class="chip mini ss" data-act="ss-pick" data-i="${i}">${ic('spellstrike')}Spellstrike</button>` : `<button type="button" class="chip mini" data-act="ss-recharge">Recharge Spellstrike</button>`) : ''}</div>
 ${ex ? `<div class="cs-ex">${ex}</div>` : ''}${sit ? `<p class="small muted">Situational: ${sit}</p>` : ''}${notes ? `<ul class="cs-notes">${notes}</ul>` : ''}</div>`;
   }).join('');
   const skills = Object.entries(res.skills).sort((a, b) => (a[1].lore - b[1].lore) || a[1].label.localeCompare(b[1].label)).map(([k, v]) =>
-    `<div class="cs-skill"><button type="button" class="cs-sk" data-act="roll" data-k="skill:${esc(k)}" aria-label="Roll ${esc(v.label)}">${rankTag(v.rank)}<span>${esc(v.label)}</span><small>${v.attr.toUpperCase()}</small><b>${fmt(v.total)}</b></button><button type="button" class="cs-info" data-act="breakdown" data-k="skill:${esc(k)}" aria-label="How ${esc(v.label)} is made up">Details</button></div>`).join('');
+    `<div class="cs-skill"><button type="button" class="cs-sk" data-act="breakdown" data-k="skill:${esc(k)}" title="How ${esc(v.label)} is made up">${rankTag(v.rank)}<span>${esc(v.label)}</span><small>${v.attr.toUpperCase()}</small></button><button type="button" class="cs-skv" data-act="roll" data-k="skill:${esc(k)}" aria-label="Roll ${esc(v.label)}">${ic('dice')}<b>${fmt(v.total)}</b></button></div>`).join('');
   const acts = [];
   const seenA = new Set();
   for (const it of res.actions) {
@@ -399,7 +558,7 @@ ${ex ? `<div class="cs-ex">${ex}</div>` : ''}${sit ? `<p class="small muted">Sit
   const senses = res.senses.map(s => esc(cap(String(s.type || '').replace(/-/g, ' ')) + (s.range ? ` ${s.range} ft` : ''))).join(', ');
   const consum = ch.inventory.filter(i => { const r = eng.invRec(i); return r && r.t === 'consumable' && (i.qty ?? 1) > 0; });
   const quick = consum.length ? `<section class="cs-sec"><h2>Consumables</h2><div class="cs-conds">${consum.map(i => { const r = eng.invRec(i); return `<span class="cs-cond">${g(r)} <small>×${i.qty ?? 1}</small><button type="button" class="chip mini" data-act="consume" data-id="${esc(i.id)}">Use</button></span>`; }).join('')}</div></section>` : '';
-  return `<section class="cs-sec"><h2>Conditions and effects</h2><div class="cs-conds">${cond || '<span class="muted small">No conditions.</span>'} ${condSel}</div>
+  return todoSection() + `<section class="cs-sec"><h2>Conditions and effects</h2><div class="cs-conds">${cond || '<span class="muted small">No conditions.</span>'} ${condSel}</div>
 ${tg.length ? `<div class="cs-togs">${tg.join('')}</div>` : ''}${effChoices ? `<div class="cs-choices">${effChoices}</div>` : ''}
 <div class="cs-conds">${other}<button type="button" class="chip" data-act="effect-pick">Add an effect from a spell or item</button></div></section>
 <section class="cs-sec cs-2"><div><h2>Target</h2><div class="cs-togs">${targetTg.join('')}</div>
@@ -549,15 +708,17 @@ function tabInventory() {
   const invested = ch.inventory.filter(i => i.inv).length;
   const row = inv => {
     const r = eng.invRec(inv); if (!r) return '';
-    const name = inv.custom ? esc(inv.custom.n) : g(r, inv.name || r.n);
+    const name = inv.custom ? inv.custom.n : inv.name || r.n;
     const canInvest = (r.tr || []).includes('invested');
     const runes = (r.t === 'weapon' || r.t === 'armor' || r.t === 'shield') ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(inv.id)}">Runes${runeSummary(r, inv)}</button>` : '';
-    const use = r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(inv.id)}">Use</button>` : '';
-    return `<li class="cs-item"><div class="n">${name}${legTag(r)} <small>${esc(typeLabel(r))}${r.lv ? ', level ' + r.lv : ''}${r.cp ? ', ' + money(r.cp) : ''}</small></div>
-<div class="c"><span class="cs-step"><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="1" aria-label="More">+</button></span>
+    const use = r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(inv.id)}">Use one</button>` : '';
+    const meta = [typeLabel(r), `Level ${r.lv || 0}`, r.cp ? money(r.cp) : '', `Bulk ${bulkText(r.bulk)}`].filter(Boolean);
+    return `<li class="cs-item"><div class="n"><button type="button" class="cs-iname" data-act="item" data-id="${esc(inv.id)}">${esc(name)}</button>${legTag(r)}${inv.custom && inv.custom.relic ? '<span class="cs-badge">Relic</span>' : ''}${inv.inv ? '<span class="cs-badge">Invested</span>' : ''}
+<div class="meta">${meta.map(x => `<span>${esc(x)}</span>`).join('')}</div></div>
+<div class="c"><span class="cs-qtyl">Quantity <span class="cs-step"><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="1" aria-label="More">+</button></span></span>
 <select data-act="state" data-id="${esc(inv.id)}" aria-label="Where it is">${STATES.map(([k, l]) => `<option value="${k}"${(inv.eq || 'stowed') === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
 ${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" data-id="${esc(inv.id)}"${inv.inv ? ' checked' : ''}> Invested</label>` : ''}${runes}${use}
-<span class="small muted">${r.bulk === 0.1 ? 'L' : r.bulk || '—'}</span><button type="button" class="chip mini" data-act="sell" data-id="${esc(inv.id)}">Sell</button><button type="button" class="x" data-act="remove" data-id="${esc(inv.id)}" aria-label="Remove">×</button></div></li>`;
+${inv.custom ? '' : `<button type="button" class="chip mini" data-act="sell" data-id="${esc(inv.id)}">Sell for ${money(Math.floor((r.cp || 0) / 2))}</button>`}<button type="button" class="chip mini" data-act="remove" data-id="${esc(inv.id)}">Remove</button></div></li>`;
   };
   const sec = (k, t) => groups[k].length ? `<h3>${t}</h3><ul class="cs-items">${groups[k].map(row).join('')}</ul>` : '';
   const wealth = coinTotal(c) + ch.inventory.reduce((a, i) => { const r = eng.invRec(i); return a + (r ? (r.cp || 0) * (i.qty ?? 1) : 0); }, 0);
@@ -565,9 +726,9 @@ ${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" da
 <div class="cs-inline"><input type="number" inputmode="decimal" min="0" step="any" placeholder="Amount" id="cs-mamt" aria-label="Amount"><select id="cs-munit" aria-label="Unit"><option value="gp">gp</option><option value="sp">sp</option><option value="cp">cp</option><option value="pp">pp</option></select>
 <input type="text" placeholder="What for" id="cs-mnote" aria-label="Note"><button type="button" class="chip" data-act="money" data-d="1">Receive</button><button type="button" class="chip" data-act="money" data-d="-1">Spend</button></div>
 ${ledger ? `<ul class="cs-ledger">${ledger}</ul>` : ''}</section>
-<section class="cs-sec"><h2>Items</h2><p class="small muted">Bulk ${res.bulk.value}${res.bulk.light ? ' and ' + res.bulk.light + ' light' : ''}: encumbered above ${res.bulk.encumbered}, maximum ${res.bulk.max}. Invested ${invested} of 10.</p>
-${sec('held', 'Held')}${sec('worn', 'Worn')}${sec('stowed', 'Stowed')}${sec('dropped', 'Dropped')}${ch.inventory.length ? '' : '<p class="muted">No items yet.</p>'}
-<div class="cs-togs"><button type="button" class="chip" data-act="item-pick">Add or buy an item</button><button type="button" class="chip" data-act="custom-item">Add a custom item</button></div></section>`;
+<section class="cs-sec"><h2>Items</h2><div class="cs-togs"><button type="button" class="chip hi" data-act="item-pick">Add or buy items</button><button type="button" class="chip" data-act="custom-item">Add a custom item</button></div>
+<p class="small muted">Select an item's name for its details and rules text. Bulk ${res.bulk.value}${res.bulk.light ? ' and ' + res.bulk.light + ' light' : ''}: encumbered above ${res.bulk.encumbered}, maximum ${res.bulk.max}. Invested ${invested} of 10.</p>
+${sec('held', 'Held')}${sec('worn', 'Worn')}${sec('stowed', 'Stowed')}${sec('dropped', 'Dropped')}${ch.inventory.length ? '' : '<p class="muted">No items yet.</p>'}</section>`;
 }
 
 // ───────── Spells tab ─────────
@@ -762,25 +923,160 @@ function pickEffect() {
   items.sort((a, b) => a.label.localeCompare(b.label));
   picker('Add an effect', 'Sheet', items, it => { addEffect(it.rec.k); commit(); });
 }
-function pickItem() {
-  const types = ['weapon', 'armor', 'shield', 'equipment', 'consumable', 'treasure', 'backpack', 'kit', 'ammo'];
-  const items = Object.values(db.e).filter(r => types.includes(r.t)).map(r => ({label: r.n, rec: r, sub: `${esc(typeLabel(r))} · level ${r.lv || 0} · ${money(r.cp || 0)}` + (r.src ? ' · ' + esc(r.src) : '') + (r.leg ? ' · renamed in the remaster as ' + esc(r.now) : '')}));
-  items.sort((a, b) => a.label.localeCompare(b.label));
-  const filters = `<div class="cs-inline"><select class="f-type" aria-label="Type"><option value="">All types</option>${types.map(t => `<option value="${t}">${typeLabel({t})}</option>`).join('')}</select>
-<label class="cs-tog"><input type="checkbox" class="f-lv" checked> Level ${ch.level} or lower</label></div>`;
-  picker('Add or buy an item', 'Inventory', items, (it, how) => {
-    if (how === 2) {
-      const cost = it.rec.cp || 0;
-      if (coinTotal(ch.coins) < cost) { toast('Not enough money for ' + it.label + '.'); return; }
-      spend(cost, 'Bought ' + it.label);
-      toast('Bought ' + it.label + ' for ' + money(cost) + '.');
+// ───────── item browser ─────────
+const isRune = r => /^etched/.test(r.use || '');
+const isStaff = r => (r.tr || []).includes('staff') || r.cat === 'wand';
+const ICATS = [
+  ['all', 'Everything', () => true],
+  ['weapon', 'Weapons', r => r.t === 'weapon'],
+  ['armor', 'Armour', r => r.t === 'armor'],
+  ['shield', 'Shields', r => r.t === 'shield'],
+  ['rune', 'Runes', r => r.t === 'equipment' && isRune(r)],
+  ['staff', 'Staves and wands', r => r.t !== 'weapon' && isStaff(r)],
+  ['worn', 'Worn items', r => r.t === 'equipment' && /^worn/.test(r.use || '') && !isStaff(r)],
+  ['held', 'Held items', r => r.t === 'equipment' && /^(held|affixed-or-held|carried)/.test(r.use || '') && !isStaff(r)],
+  ['consumable', 'Consumables', r => r.t === 'consumable' && r.cat !== 'wand'],
+  ['ammo', 'Ammunition', r => r.t === 'ammo'],
+  ['gear', 'Other gear', r => r.t === 'equipment' && !isRune(r) && !isStaff(r) && !/^(worn|held|affixed-or-held|carried)/.test(r.use || '')],
+  ['backpack', 'Containers', r => r.t === 'backpack'],
+  ['treasure', 'Treasure and kits', r => r.t === 'treasure' || r.t === 'kit'],
+];
+const SORTS = [['name', 'Name'], ['lv', 'Level, lowest first'], ['lv-', 'Level, highest first'], ['cp', 'Price, lowest first'], ['cp-', 'Price, highest first']];
+const useText = u => u ? cap(String(u).replace(/^worn(?=[a-z])/, 'worn ').replace(/-/g, ' ').replace(/\b1\b/, 'one').replace(/\b2\b/, 'two')) : '';
+const bulkText = b => b === 0.1 ? 'L' : b ? String(b) : '—';
+let ib = null;
+function itemBrowser() {
+  ib = ib || {q: '', cat: 'all', sub: '', lo: 0, hi: ch.level, afford: false, rar: '', leg: true, sort: 'name'};
+  ib.hi = Math.max(ib.hi, 0);
+  const all = Object.values(db.e).filter(r => ['weapon', 'armor', 'shield', 'equipment', 'consumable', 'treasure', 'backpack', 'kit', 'ammo'].includes(r.t));
+  const box = document.createElement('div');
+  box.className = 'cs-ib';
+  box.innerHTML = `<div class="cs-ibtop"><label class="search"><input type="search" class="f-q" placeholder="Search names and traits, such as fire potion" aria-label="Search items" value="${esc(ib.q)}"></label>
+<div class="cs-ibcats" role="group" aria-label="Category">${ICATS.map(([k, l]) => `<button type="button" class="chip mini${ib.cat === k ? ' on' : ''}" data-cat="${k}" aria-pressed="${ib.cat === k}">${l}</button>`).join('')}</div>
+<div class="cs-ibf"><label class="cs-field inl f-subw"><span>Kind</span><select class="f-sub"></select></label>
+<label class="cs-field inl"><span>Level</span><span class="cs-range"><input type="number" class="f-lo" min="0" max="30" value="${ib.lo}" aria-label="Lowest level"> to <input type="number" class="f-hi" min="0" max="30" value="${ib.hi}" aria-label="Highest level"></span></label>
+<label class="cs-field inl"><span>Rarity</span><select class="f-rar"><option value="">Any</option><option value="common">Common</option><option value="uncommon">Uncommon</option><option value="rare">Rare</option><option value="unique">Unique</option></select></label>
+<label class="cs-field inl"><span>Sort by</span><select class="f-sort">${SORTS.map(([k, l]) => `<option value="${k}"${ib.sort === k ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
+<label class="cs-tog"><input type="checkbox" class="f-aff"${ib.afford ? ' checked' : ''}> Only what I can afford</label>
+<label class="cs-tog"><input type="checkbox" class="f-leg"${ib.leg ? ' checked' : ''}> Include legacy printings</label></div>
+<p class="small muted cs-ibsum"></p></div><ul class="cs-iblist"></ul>`;
+  box.querySelector('.f-rar').value = ib.rar;
+  const list = box.querySelector('.cs-iblist'), sum = box.querySelector('.cs-ibsum'), subSel = box.querySelector('.f-sub');
+  let lim = 60, shown = [];
+  const subOf = r => r.t === 'weapon' ? (r.grp || '') : r.t === 'armor' ? (r.cat || '') : r.t === 'consumable' ? (r.cat || 'other') : r.t === 'equipment' && isRune(r) ? (/weapon/.test(r.use) ? 'weapon' : /armor/.test(r.use) ? 'armor' : 'other') : '';
+  const subLabel = (k, v) => k === 'rune' ? {weapon: 'Weapon runes', armor: 'Armour runes', other: 'Other runes'}[v] || cap(v) : cap(v.replace(/-/g, ' '));
+  const fillSub = () => {
+    const pred = ICATS.find(c => c[0] === ib.cat)[2];
+    const vals = [...new Set(all.filter(pred).map(subOf).filter(Boolean))].sort();
+    subSel.innerHTML = `<option value="">All</option>` + vals.map(v => `<option value="${esc(v)}">${esc(subLabel(ib.cat, v))}</option>`).join('');
+    if (!vals.includes(ib.sub)) ib.sub = '';
+    subSel.value = ib.sub;
+    box.querySelector('.f-subw').hidden = vals.length < 2 || ib.cat === 'all';
+  };
+  const owned = k => ch.inventory.filter(i => i.k === k).reduce((a, i) => a + (i.qty ?? 1), 0);
+  const draw = () => {
+    const toks = ib.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const pred = ICATS.find(c => c[0] === ib.cat)[2];
+    const purse = coinTotal(ch.coins);
+    const m = all.filter(r => pred(r)
+      && (!ib.sub || subOf(r) === ib.sub)
+      && (r.lv || 0) >= ib.lo && (r.lv || 0) <= ib.hi
+      && (!ib.rar || (r.rar || 'common') === ib.rar)
+      && (ib.leg || !r.leg)
+      && (!ib.afford || (r.cp || 0) <= purse)
+      && toks.every(t => r.n.toLowerCase().includes(t) || (r.tr || []).some(x => x.includes(t)) || (r.cat || '').includes(t) || (r.grp || '') === t));
+    const by = ib.sort.replace('-', ''), dir = ib.sort.endsWith('-') ? -1 : 1;
+    m.sort((a, b) => by === 'name' ? a.n.localeCompare(b.n) : ((a[by] || 0) - (b[by] || 0)) * dir || a.n.localeCompare(b.n));
+    if (toks.length && ib.sort === 'name') m.sort((a, b) => (b.n.toLowerCase().startsWith(toks[0]) - a.n.toLowerCase().startsWith(toks[0])));
+    shown = m;
+    sum.textContent = `${m.length.toLocaleString()} item${m.length === 1 ? '' : 's'}. You have ${money(purse)}.`;
+    list.innerHTML = m.slice(0, lim).map((r, j) => {
+      const have = owned(r.k);
+      const meta = [`Level ${r.lv || 0}`, r.cp ? money(r.cp) : 'No price', `Bulk ${bulkText(r.bulk)}`, useText(r.use), r.rar && r.rar !== 'common' ? cap(r.rar) : ''].filter(Boolean);
+      const extra = r.t === 'weapon' && r.dmg ? `${r.dmg.dice || 1}${r.dmg.die} ${r.dmg.damageType || ''}${r.rng ? `, range ${r.rng} ft` : ''}, ${r.cat || ''} ${r.grp || ''}` : r.t === 'armor' ? `AC +${r.ac || 0}, Dex cap ${r.dex ?? '—'}, ${r.cat || ''}` : r.t === 'shield' ? `AC +${r.ac || 0}, Hardness ${r.hard || 0}, ${r.hp || 0} HP` : '';
+      return `<li class="cs-ires"><div class="t">${g(r)}${legTag(r)}${have ? `<span class="cs-badge">You have ${have}</span>` : ''}</div>
+<div class="m">${meta.map(x => `<span>${esc(x)}</span>`).join('')}</div>${extra ? `<div class="m">${esc(extra)}</div>` : ''}
+${(r.tr || []).length ? `<div class="cs-trs">${r.tr.slice(0, 6).map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</div>` : ''}
+<div class="b"><label class="cs-qty"><span class="sr">Quantity</span><input type="number" min="1" value="1" inputmode="numeric" data-q="${j}" aria-label="Quantity"></label>
+<button type="button" class="chip mini" data-add="${j}">Add</button><button type="button" class="chip mini hi" data-buy="${j}"${(r.cp || 0) > purse ? ' disabled title="Not enough money"' : ''}>Buy${r.cp ? ' for ' + money(r.cp) : ''}</button></div></li>`;
+    }).join('') + (m.length > lim ? `<li class="more"><button type="button" class="chip" data-more="1">Show ${Math.min(60, m.length - lim)} more</button></li>` : '')
+      + (m.length ? '' : '<li class="muted">Nothing matches. Try a wider level range or another category.</li>');
+  };
+  const read = () => {
+    ib.q = box.querySelector('.f-q').value; ib.sub = subSel.value;
+    ib.lo = Math.max(0, Number(box.querySelector('.f-lo').value) || 0); ib.hi = Math.max(ib.lo, Number(box.querySelector('.f-hi').value || 30));
+    ib.rar = box.querySelector('.f-rar').value; ib.sort = box.querySelector('.f-sort').value;
+    ib.afford = box.querySelector('.f-aff').checked; ib.leg = box.querySelector('.f-leg').checked;
+    lim = 60; draw();
+  };
+  let t;
+  box.querySelector('.f-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(read, 120); });
+  box.addEventListener('change', e => { if (!e.target.matches('[data-q]')) read(); });
+  box.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.cat) { ib.cat = b.dataset.cat; box.querySelectorAll('[data-cat]').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); }); fillSub(); lim = 60; draw(); return; }
+    if (b.dataset.more) { lim += 60; draw(); return; }
+    const j = b.dataset.add ?? b.dataset.buy; if (j == null) return;
+    const r = shown[+j]; if (!r) return;
+    const qty = Math.max(1, Math.floor(Number(box.querySelector(`[data-q="${j}"]`).value) || 1));
+    if (b.dataset.buy != null) {
+      const cost = (r.cp || 0) * qty;
+      if (coinTotal(ch.coins) < cost) { toast('Not enough money for ' + r.n + '.'); return; }
+      spend(cost, `Bought ${qty > 1 ? qty + ' × ' : ''}${r.n}`);
     }
-    addInv(it.rec);
+    addInv(Object.assign({}, r, {qty}));
     commit();
-  }, {verb: 'Add', verb2: 'Buy', keepOpen: true, filters, filter: (it, box) => {
-    const t = box.querySelector('.f-type').value, lv = box.querySelector('.f-lv').checked;
-    return (!t || it.rec.t === t) && (!lv || (it.rec.lv || 0) <= ch.level);
-  }});
+    toast(`${b.dataset.buy != null ? 'Bought' : 'Added'} ${qty > 1 ? qty + ' × ' : ''}${r.n}${b.dataset.buy != null && r.cp ? ' for ' + money((r.cp || 0) * qty) : ''}.`);
+    draw();
+  });
+  fillSub(); draw();
+  A.pushPanel('Inventory', 'Add or buy items', box, 'item-browser');
+  setTimeout(() => box.querySelector('.f-q').focus({preventScroll: true}), 60);
+}
+function itemPanel(id) {
+  const box = document.createElement('div');
+  box.className = 'cs-itemp';
+  const draw = () => {
+    const inv = ch.inventory.find(i => i.id === id);
+    if (!inv) { A.popPanel(); return false; }
+    const r = eng.invRec(inv), c = inv.custom;
+    const st = res.strikes.find(x => x.inv && x.inv.id === id);
+    const R = Object.assign({}, r.runes || {}, inv.runes || {});
+    const f = [['Type', typeLabel(r)], ['Level', `${r.lv || 0}${c && c.relic ? ', always equal to your level' : ''}`], ['Price', r.cp ? money(r.cp) : c ? 'Not for sale' : 'None'], ['Bulk', bulkText(r.bulk)], ['Usage', useText(r.use)], ['Rarity', r.rar ? cap(r.rar) : '']];
+    if (r.t === 'weapon' && r.dmg) f.push(['Weapon', `${cap(r.cat || '')} ${r.grp || ''}`.trim()], ['Base damage', `${r.dmg.dice || 1}${r.dmg.die} ${r.dmg.damageType || ''}`], ['Range', r.rng ? r.rng + ' feet' : 'Melee']);
+    if (st) f.push(['Attack', st.map.map(fmt).join(', ')], ['Damage', st.formula]);
+    if (r.t === 'armor') f.push(['AC bonus', '+' + (r.ac || 0)], ['Dex cap', String(r.dex ?? 'None')], ['Check penalty', String(r.chk || 0)], ['Speed penalty', r.spd ? r.spd + ' feet' : 'None'], ['Strength', r.str != null ? String(r.str) : 'None']);
+    if (r.t === 'shield') f.push(['AC bonus', '+' + (r.ac || 0)], ['Hardness', String(r.hard || 0)], ['Hit Points', String(r.hp || 0)]);
+    if (['weapon', 'armor', 'shield'].includes(r.t)) f.push(['Runes', runeSummary(r, inv).replace(/^: /, '') || 'None']);
+    const facts = `<dl class="cs-facts">${f.filter(x => x[1]).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v === runeSummary(r, inv).replace(/^: /, '') ? v : esc(v)}</dd></div>`).join('')}</dl>`;
+    const traits = (r.tr || []).length ? `<div class="cs-trs">${r.tr.map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</div>` : '';
+    const abil = (c && c.abil || []).map(a => `<p><b>${esc(a.n)}</b> ${esc(a.text)}</p>`).join('');
+    let relic = '';
+    if (c && c.relic) {
+      relic = `<h3>Relic</h3>${(c.aspects || []).length ? `<p><b>Aspects</b> ${esc(c.aspects.join(' and '))}</p>` : ''}
+<ul class="cs-gifts">${(c.gifts || []).map(gf => { const on = ch.level >= gf.lv; return `<li class="${on ? 'on' : ''}"><span class="lv">${gf.lv}</span><span><a href="#" data-g="${esc(gf.g)}">${esc(gf.n)}</a><small>${esc(gf.kind)}</small></span><span class="st">${on ? 'Unlocked' : 'From level ' + gf.lv}</span></li>`; }).join('')}</ul>`;
+    }
+    const page = c && c.page ? `<p><a class="chip" href="#${esc(c.page)}" data-close-all="1">Open the ${esc(c.n)} page</a></p>` : '';
+    const canInvest = (r.tr || []).includes('invested');
+    const ctl = `<h3>On your sheet</h3><div class="cs-inline"><span class="cs-qtyl">Quantity <span class="cs-step"><button type="button" data-act="qty" data-id="${esc(id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(id)}" data-d="1" aria-label="More">+</button></span></span>
+<select data-act="state" data-id="${esc(id)}" aria-label="Where it is">${STATES.map(([k, l]) => `<option value="${k}"${(inv.eq || 'stowed') === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
+${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" data-id="${esc(id)}"${inv.inv ? ' checked' : ''}> Invested</label>` : ''}
+${['weapon', 'armor', 'shield'].includes(r.t) ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(id)}">Change runes</button>` : ''}
+${r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(id)}">Use one</button>` : ''}
+${c ? '' : `<button type="button" class="chip mini" data-act="sell" data-id="${esc(id)}">Sell for ${money(Math.floor((r.cp || 0) / 2))}</button>`}<button type="button" class="chip mini" data-act="remove" data-id="${esc(id)}">Remove</button></div>`;
+    box.innerHTML = `${c && c.desc ? `<p>${esc(c.desc)}</p>` : ''}${facts}${traits}${abil}${relic}${page}${ctl}${!c && r.g ? '<h3>Rules text</h3><div class="cs-rules muted">Loading…</div>' : ''}`;
+    if (!c && r.g && A.getEntry) A.getEntry(r.g).then(e => { const el = box.querySelector('.cs-rules'); if (el) { el.classList.remove('muted'); el.innerHTML = e ? e[2] : 'The rules text is not available offline yet.'; } }).catch(() => {});
+    return true;
+  };
+  box.addEventListener('click', e => {
+    if (e.target.closest('[data-close-all]')) { A.closeAll(); return; }
+    if (!e.target.closest('[data-act]')) return;
+    onClick(e); if (!e.target.closest('[data-act="runes"]')) draw();
+  });
+  box.addEventListener('change', e => { onChange(e); draw(); });
+  if (!draw()) return;
+  const inv = ch.inventory.find(i => i.id === id);
+  A.pushPanel('Item', inv.custom ? inv.custom.n : inv.name || eng.invRec(inv).n, box, 'item:' + id);
 }
 function addInv(r) {
   if (r.t === 'kit' && r.kit) { for (const [k, q] of r.kit) { const x = rec(k); if (x) addInv(Object.assign({}, x, {qty: q || 1})); } return; }
@@ -1040,6 +1336,20 @@ function onClick(e) {
     case 'rest-night': restNight(); commit(); return;
     case 'refocus': ch.focusUsed = Math.max(0, (ch.focusUsed || 0) - 1); commit(); toast('Regained 1 Focus Point.'); return;
     case 'spellstrike': ch.trackers.spellstrike = ch.trackers.spellstrike === false; commit(); return;
+    case 'ss-pick': ssPick(Number(d.i)); return;
+    case 'ss-recharge':
+      ch.trackers.spellstrike = true;
+      if (ch.enc.on) ch.enc.actions = Math.max(0, ch.enc.actions - 1);
+      commit(); toast('Spellstrike recharged' + (ch.enc.on ? ' (1 action).' : '.')); return;
+    case 'ss-dmg': {
+      const x = (ch.log || []).find(l => l.id === d.id); if (!x || !x.ctx || !x.ctx.ss) return;
+      const st = res.strikes[x.ctx.strike], sp = rec(x.ctx.ss.k); if (!st || !sp) return;
+      const crit = !!d.crit;
+      const parts = strikeDamageParts(st, crit).map(q => Object.assign(q, {from: st.name}))
+        .concat(eng.spellDamage(sp, x.ctx.ss.rank).map(q => ({f: q.f, t: q.t, c: q.c, from: sp.n})));
+      damageRoll(`Spellstrike: ${st.name} and ${sp.n}`, parts, crit); commit(); return;
+    }
+    case 'item': itemPanel(d.id); return;
     case 'use': { const used = ch.uses[d.k] || 0, n = Number(d.n); ch.uses[d.k] = used >= n ? n - 1 : n; commit(); return; }
     case 'block': {
       const n = Math.max(0, Number(document.getElementById('cs-block').value) || 0); if (!n) return;
@@ -1084,7 +1394,7 @@ function onClick(e) {
       commit(); toast('Sold for ' + money(v) + '.'); return;
     }
     case 'runes': runesPanel(d.id); return;
-    case 'item-pick': pickItem(); return;
+    case 'item-pick': itemBrowser(); return;
     case 'custom-item': customItem(); return;
     case 'money': {
       const amt = Number(document.getElementById('cs-mamt').value) || 0; if (!amt) return;
@@ -1124,7 +1434,9 @@ function onClick(e) {
     case 'cast-focus': {
       if (res.focusMax - (ch.focusUsed || 0) <= 0) { toast('No Focus Points left. Refocus to regain one.'); return; }
       ch.focusUsed = (ch.focusUsed || 0) + 1; spendSpellActions(d.k);
-      toast('Cast ' + rec(d.k).n + '.'); commit(); return;
+      const fs = rec(d.k), conflux = (fs.tr || []).includes('magus') && /^[123]/.test(fs.time || '') && res.S.opts.has('feature:spellstrike');
+      if (conflux) ch.trackers.spellstrike = true;
+      toast('Cast ' + fs.n + '.' + (conflux ? ' Conflux spell: Spellstrike recharged.' : '')); commit(); return;
     }
     case 'cast-innate': { const x = EN(d.e); x.innateUsed = x.innateUsed || {}; x.innateUsed[d.k] = (x.innateUsed[d.k] || 0) + 1; spendSpellActions(d.k); commit(); return; }
     case 'staff-cast': {

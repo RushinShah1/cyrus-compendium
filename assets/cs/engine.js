@@ -111,7 +111,12 @@ class Engine {
   // an inventory entry: a catalogue item, or a custom item (such as a relic) described in the entry itself
   invRec(inv) {
     if (!inv) return null;
-    if (inv.custom) { const c = inv.custom; return Object.assign({k: 'custom:' + inv.id, sl: slugify(c.n || 'item'), t: 'equipment', tr: [], bulk: 0, cp: 0}, c); }
+    if (inv.custom) {
+      const c = inv.custom;
+      const r = Object.assign({k: 'custom:' + inv.id, sl: slugify(c.n || 'item'), t: 'equipment', tr: [], bulk: 0, cp: 0}, c);
+      if (c.relic && this.level) r.lv = this.level;      // a relic's level always matches its owner's (GM Core)
+      return r;
+    }
     return this.rec(inv.k);
   }
   t(s) { return (typeof s === 'string' && this.lang[s]) || s; }
@@ -122,7 +127,7 @@ class Engine {
       mods: [], adjust: [], notes: [], dice: [], strikesRE: [], resist: [], weak: [], immune: [], senses: [], speeds: {}, toggles: [], effects: [],
       martial: [], dexCaps: [], tempHP: [], rollTwice: [], degree: [], critSpec: [], languagesGranted: [], actions: []};
     const L = S.level;
-    this.S = S;
+    this.S = S; this.level = L;
     const cls = this.rec(ch.class), anc = this.rec(ch.ancestry), her = this.rec(ch.heritage), bg = this.rec(ch.background), dei = this.rec(ch.deity);
     S.cls = cls; S.anc = anc; S.her = her; S.bg = bg; S.dei = dei;
 
@@ -372,7 +377,7 @@ class Engine {
     const flag = rule.flag || slugify(it.r.n).replace(/-([a-z])/g, (m, c) => c.toUpperCase());
     let val = it.sel[flag];
     if (val == null && rule.selection != null) val = rule.selection;
-    const entry = {uid: it.uid, item: it, flag, rule, index: i, value: val ?? null, prompt: this.t(rule.prompt) || 'Make a choice'};
+    const entry = {uid: it.uid, item: it, flag, rule, index: i, value: val ?? null, prompt: (() => { const t = this.t(rule.prompt); return t && !/^PF2E\./.test(t) ? t : 'Choose an option for ' + it.r.n; })()};
     S.pending.push(entry);
     if (val == null) return;
     if (rule.actorFlag) setProp(S.flags, `system.${flag}`, val);
