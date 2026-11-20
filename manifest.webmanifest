@@ -8,12 +8,12 @@
  "theme_color": "#1b1b1f",
  "icons": [
   {
-   "src": "icons/gold-jewel-180.png",
+   "src": "icons/charcoal-gold-180.png",
    "sizes": "180x180",
    "type": "image/png"
   },
   {
-   "src": "icons/gold-jewel-512.png",
+   "src": "icons/charcoal-gold-512.png",
    "sizes": "512x512",
    "type": "image/png",
    "purpose": "any maskable"
