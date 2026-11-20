@@ -30,7 +30,7 @@ async function load(name){
   if (name === 'glossary') initGlossary();
   if (name === 'rules') initRules();
   if (name === 'home') initAppSettings();
-  document.title = (main.querySelector('h1')?.textContent || 'Cyrus') + ' · Cyrus';
+  document.title = (main.querySelector('h1')?.textContent || 'Aspera') + ' · Aspera';
 }
 
 function route(){ load((location.hash || '#home').slice(1)); }
