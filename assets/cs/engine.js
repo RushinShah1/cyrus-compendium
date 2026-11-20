@@ -453,6 +453,12 @@ class Engine {
       const r = this.rec(k); if (!r) continue;
       this.addItem(S, r, 'effect:' + k, {badge: typeof v === 'number' ? v : (v.badge || 1), lvl: (v && v.lvl) || S.level});
     }
+    const bk = this.bulk(S);
+    S.autoEncumbered = false;
+    if (bk.value > bk.encumbered && !(ch.conditions || {}).encumbered) {
+      S.autoEncumbered = true;
+      this.addItem(S, this.rec('co:encumbered'), 'cond:encumbered-auto', {badge: 1});
+    }
     for (const [k, v] of Object.entries(ch.conditions || {})) {
       if (!v) continue;
       const r = this.rec('co:' + k); if (!r) continue;
@@ -577,6 +583,7 @@ class Engine {
         S.dice.push({sel: [].concat(this.injectDeep(S, rule.selector || rule.selectors, it)), n: this.resolve(S, rule.diceNumber, it, 0), d: rule.dieSize, type: rule.damageType, cat: rule.category,
           critical: rule.critical, pred, from, label: this.t(rule.label) || from, override: rule.override});
       } else if (k === 'RollOption') {
+        if (rule.itemOnly) continue;
         if (pred && !testPred(pred, S.opts) && !rule.toggleable) continue;
         const opt = this.inject(S, rule.option, it);
         if (rule.toggleable) {
@@ -889,16 +896,51 @@ class Engine {
       const atk = this.stat(S, 'Spell attack', ['spell-attack', 'spell-attack-roll', `${trad}-spell-attack`, 'attack', 'attack-roll', `${a}-based`, 'all', 'check'], [this.attrMod(S, a), this.profMod(S, r)]);
       const dc = this.stat(S, 'Spell DC', ['spell-dc', `${trad}-spell-dc`, `${a}-based`, 'all'], [this.attrMod(S, a), this.profMod(S, r)]);
       dc.total += 10;
-      let slots = null;
-      if (e.kind === 'prepared' || e.kind === 'spontaneous') {
+      let slots = null, charges = null;
+      if (e.archetype) {
+        const has = n => S.opts.has(`feat:${n}-${e.archetype}-spellcasting`);
+        slots = [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        const add = (rk, lv, f) => { if (has(f) && L >= lv) slots[rk] = 1; };
+        add(1, 4, 'basic'); add(2, 6, 'basic'); add(3, 8, 'basic'); add(4, 12, 'expert'); add(5, 14, 'expert'); add(6, 16, 'expert'); add(7, 18, 'master'); add(8, 20, 'master');
+      } else if (e.kind === 'prepared' || e.kind === 'spontaneous') {
         const tab = e.table && this.db.slots[e.table] ? this.db.slots[e.table][0] : null;
         if (tab && tab.rows[L]) slots = tab.rows[L].slice();
         if (e.slotAdjust) slots = (slots || []).map((n, i) => n + (Number(e.slotAdjust[i]) || 0));
         if (e.slotsManual) slots = e.slotsManual.slice();
       }
-      list.push({e, attack: atk, dc, rank: r, slots, cantripRank: Math.max(1, Math.ceil(L / 2))});
+      list.push({e, attack: atk, dc, rank: r, slots, charges, cantripRank: Math.max(1, Math.ceil(L / 2))});
     }
+    // a staff gains charges equal to the rank of the highest spell slot, plus one expended slot's rank
+    const top = Math.max(0, ...list.filter(x => x.slots).map(x => x.slots.reduce((m, n, i) => n > 0 && i > 0 ? i : m, 0)));
+    for (const x of list) if (x.e.kind === 'staff') x.charges = {max: top + (Number(x.e.extra) || 0), used: Math.min(x.e.used || 0, top + (Number(x.e.extra) || 0)), top};
+    S.topSlot = top;
     return list;
+  }
+  // spellcasting archetypes the character has taken a dedication for
+  dedications(res) {
+    const out = [];
+    for (const c of Object.keys(CASTING)) if (res.S.opts.has(`feat:${c}-dedication`) && !(res.S.cls && res.S.cls.sl === c)) out.push(c);
+    return out;
+  }
+  archetypeEntry(c) {
+    const cs = CASTING[c], cls = this.rec('cl:' + c);
+    return {id: 'arch:' + c, name: (cls ? cls.n : c) + ' archetype spells', trad: cs[0] || (c === 'witch' ? 'occult' : 'arcane'), kind: cs[1], attr: cs[2], archetype: c, prof: 'class', known: [], prepared: {}, used: {}};
+  }
+  // damage of a spell cast at a rank, with interval or fixed heightening applied
+  spellDamage(r, rank) {
+    if (!r || !r.dmg) return [];
+    const out = [];
+    const base = r.lv || 1;
+    for (const [id, d] of Object.entries(r.dmg)) {
+      let f = d.f;
+      if (r.hti && r.hti[1][id] && rank > base) {
+        const steps = Math.floor((rank - base) / (r.hti[0] || 1));
+        for (let i = 0; i < steps; i++) f += '+' + r.hti[1][id];
+      }
+      if (r.htf) { const lv = Object.keys(r.htf).map(Number).filter(x => x <= rank).sort((a, b) => b - a)[0]; if (lv && r.htf[lv][id]) f = r.htf[lv][id]; }
+      out.push({f: simplify(f), t: d.t, c: d.c, heal: d.h});
+    }
+    return out;
   }
   defaultEntry(cls) {
     if (!cls || !cls.sc || !this.db.slots[cls.sl]) return null;
@@ -957,6 +999,7 @@ class Engine {
     const iopts = itemOptions(Object.assign({}, r, {tr: [...traits]}), 'item', [`item:${melee ? 'melee' : 'ranged'}`, held ? 'item:hands-held:' + (inv && inv.eq === 'held2' ? 2 : 1) : 'item:hands-held:0',
       `item:damage:die:faces:${String(r.dmg.die || 'd4').replace('d', '')}`, 'item:equipped', runes.potency ? 'item:magical' : '']);
     const opts = new Set([...S.opts, ...iopts, 'attack', 'strike', melee ? 'melee' : 'ranged']);
+    for (const rule of r.rules || []) if (rule.key === 'RollOption' && rule.itemOnly && (!rule.predicate || testPred(rule.predicate, opts))) opts.add(rule.option);
     const rank = this.weaponRank(S, r, opts);
     opts.add(`item:proficiency:rank:${rank}`);
     for (let i = 0; i <= rank; i++) opts.add(`item:proficiency:rank:${i}`);
@@ -1011,6 +1054,7 @@ class Engine {
       const pr = (this.db.runes.WEAPON_PROPERTY_RUNES || {})[p]; if (!pr) continue;
       for (const n of (((pr.damage || {}).notes) || []).concat(pr.attack && pr.attack.notes || [])) notes.push({title: this.t(n.title), text: this.t(n.text), outcome: n.outcome, from: this.t(pr.name)});
     }
+    for (const ab of r.abil || []) notes.push({title: ab.n, text: ab.text, from: r.n});
     return {r, inv, name: (inv && inv.name) || r.n, held, natural: !!natural, rank, attack: atk, map, damage: dmg, formula, dice, die: r.dmg.die, dtype: r.dmg.damageType,
       extraDice, traits: traitsList, notes, range: r.rng || null, melee, critSpec: S.critSpec.some(c => !c.pred || testPred(c.pred, opts)) || rank >= 0 && false};
   }
@@ -1036,8 +1080,22 @@ class Engine {
     return {value: total, light: light % 10, encumbered: 5 + str + (S.sys.inventory ? 0 : 0), max: 10 + str};
   }
 }
+// combine like dice: 2d6+1d6+1d6 becomes 4d6
+function simplify(f) {
+  const dice = {}, rest = [];
+  let k = 0;
+  for (const t of String(f).replace(/\s+/g, '').replace(/-/g, '+-').split('+').filter(Boolean)) {
+    const m = t.match(/^(\d*)d(\d+)$/);
+    if (m) dice[m[2]] = (dice[m[2]] || 0) + Number(m[1] || 1);
+    else if (/^-?\d+$/.test(t)) k += Number(t);
+    else rest.push(t);
+  }
+  const parts = Object.keys(dice).sort((a, b) => b - a).map(d => dice[d] + 'd' + d).concat(rest);
+  if (k) parts.push(String(k));
+  return parts.join('+').replace(/\+-/g, '-') || '0';
+}
 const ORDER = ['ancestry', 'class', 'archetype', 'skill', 'general', 'increase', 'boost', 'bonus'];
 
-const api = {Engine, testPred, itemOptions, slugify, prof, SKILLS, SAVES, ATTRS, ATTR_NAME, RANKS, CASTING, fmt, effectSlug};
+const api = {Engine, simplify, testPred, itemOptions, slugify, prof, SKILLS, SAVES, ATTRS, ATTR_NAME, RANKS, CASTING, fmt, effectSlug};
 if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.CSEngine = api;
 })(typeof self !== 'undefined' ? self : this);

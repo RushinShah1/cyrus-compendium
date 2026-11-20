@@ -67,7 +67,7 @@ async function getEntry(key){
   const sh = await loadShard(row[2]);
   const t = sh[src];
   if (!t) return null;
-  return [r[4] || r[0], I.t[r[1]], t[0], r[3] ? 'legacy' : '', t[1] || null];
+  return [r[0], I.t[r[1]], t[0], r[3] ? 'legacy' : '', t[1] || null];
 }
 function esc(t){ return String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 const AONPATH = {traits:'Traits',conditions:'Conditions',rules:'Rules',actions:'Actions',spells:'Spells',equipment:'Equipment',feats:'Feats',
@@ -334,7 +334,7 @@ function initGlossary(){
     if (s) m.sort((a, b) => (b.low.startsWith(s) - a.low.startsWith(s)) || a.low.localeCompare(b.low));
     let loaded = 0; for (let i = 0; i < I.n; i++) if (texts['#' + i]) loaded++;
     count.textContent = m.length + ' entries' + (deep && s && loaded < I.n ? ` (searched ${Math.round(100 * loaded / I.n)}% of the text so far)` : '');
-    const frag = m.slice(0, limit).map(r => `<a href="#" class="gitem" data-g="${r.k}"><span>${esc(r.n)}</span><small>${esc(r.t)}${r.now ? ' · remastered as ' + esc(r.now) : r.lg ? ' · legacy' : ''}</small></a>`).join('');
+    const frag = m.slice(0, limit).map(r => `<a href="#" class="gitem" data-g="${r.k}"><span>${esc(r.n)}</span><small>${esc(r.t)}${r.now ? ' · legacy, remastered as ' + esc(r.now) : r.lg ? ' · legacy' : ''}</small></a>`).join('');
     list.innerHTML = (frag || '<p class="muted">No entries match.</p>') + (m.length > limit ? `<button class="chip gmore" type="button">Show ${Math.min(200, m.length - limit)} more of ${m.length - limit}</button>` : '');
   }
   let tmr;

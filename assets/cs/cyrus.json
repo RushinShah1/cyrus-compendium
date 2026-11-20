@@ -1,41 +1,226 @@
 {
- "format": "aspera-character", "v": 1, "name": "Cyrus Val'Dira", "level": 1,
- "ancestry": "an:human", "heritage": "he:versatile-human", "background": "bg:relentless-dedication", "class": "cl:magus", "deity": null,
- "boosts": {"ancestry": [], "background": [], "class": null, "1": [], "5": ["str", "con", "int", "wis"], "10": ["str", "con", "int", "wis"], "15": ["con", "int"], "20": []},
- "trained": ["athletics", "society", "diplomacy"], "lores": [],
- "increases": {"3": "athletics", "5": "arcana", "7": "athletics", "9": "arcana", "11": "society", "13": "diplomacy", "15": "arcana"},
- "feats": {
-  "ancestry-1": {"k": "ft:natural-ambition"},
-  "skill-b1-1": {"k": "ft:additional-lore", "lore": "Academia"},
-  "class-2": {"k": "ft:force-fang"}, "skill-2": {"k": "ft:additional-lore", "lore": "Warfare"},
-  "general-3": {"k": "ft:toughness"},
-  "class-4": {"k": "ft:expansive-spellstrike"}, "skill-4": {"k": "ft:kreightons-cognitive-crossover"},
-  "ancestry-5": {"k": "ft:general-training"},
-  "class-6": {"k": "ft:reactive-strike"}, "skill-6": {"k": "ft:magical-shorthand"},
-  "general-7": {"k": "ft:improvise-strategy"},
-  "class-8": {"k": "ft:fused-staff"}, "skill-8": {"k": "ft:unmistakable-lore"},
-  "ancestry-9": {"k": "ft:multitalented"},
-  "class-10": {"k": "ft:dimensional-disappearance"}, "skill-10": {"k": "ft:courtly-graces"},
-  "general-11": {"k": "ft:axumas-awakening"},
-  "class-12": {"k": "ft:sprinting-spellstrike"}, "skill-12": {"k": "ft:titan-wrestler"},
-  "ancestry-13": {"k": "ft:clever-improviser"},
-  "class-14": {"k": "ft:hasted-assault"}, "skill-14": {"k": "ft:quick-jump"},
-  "general-15": {"k": "ft:unified-theory"},
-  "class-16": {"k": "ft:arcane-shroud"}
+ "format": "aspera-character",
+ "v": 1,
+ "name": "Cyrus Val'Dira",
+ "level": 1,
+ "ancestry": "an:human",
+ "heritage": "he:versatile-human",
+ "background": "bg:relentless-dedication",
+ "class": "cl:magus",
+ "deity": null,
+ "boosts": {
+  "ancestry": [],
+  "background": [],
+  "class": null,
+  "1": [],
+  "5": [
+   "str",
+   "con",
+   "int",
+   "wis"
+  ],
+  "10": [
+   "str",
+   "con",
+   "int",
+   "wis"
+  ],
+  "15": [
+   "con",
+   "int"
+  ],
+  "20": []
  },
- "bonusSlots": [{"id": "skill-b1-1", "lv": 1, "kind": "skill", "label": "Campaign skill feat"}],
+ "trained": [
+  "athletics",
+  "society",
+  "diplomacy"
+ ],
+ "lores": [],
+ "increases": {
+  "3": "athletics",
+  "5": "arcana",
+  "7": "athletics",
+  "9": "arcana",
+  "11": "society",
+  "13": "diplomacy",
+  "15": "arcana"
+ },
+ "feats": {
+  "ancestry-1": {
+   "k": "ft:natural-ambition"
+  },
+  "skill-b1-1": {
+   "k": "ft:additional-lore",
+   "lore": "Academia"
+  },
+  "class-2": {
+   "k": "ft:force-fang"
+  },
+  "skill-2": {
+   "k": "ft:additional-lore",
+   "lore": "Warfare"
+  },
+  "general-3": {
+   "k": "ft:toughness"
+  },
+  "class-4": {
+   "k": "ft:expansive-spellstrike"
+  },
+  "skill-4": {
+   "k": "ft:kreightons-cognitive-crossover"
+  },
+  "ancestry-5": {
+   "k": "ft:general-training"
+  },
+  "class-6": {
+   "k": "ft:reactive-strike"
+  },
+  "skill-6": {
+   "k": "ft:magical-shorthand"
+  },
+  "general-7": {
+   "k": "ft:improvise-strategy"
+  },
+  "class-8": {
+   "k": "ft:fused-staff"
+  },
+  "skill-8": {
+   "k": "ft:unmistakable-lore"
+  },
+  "ancestry-9": {
+   "k": "ft:multitalented"
+  },
+  "class-10": {
+   "k": "ft:dimensional-disappearance"
+  },
+  "skill-10": {
+   "k": "ft:courtly-graces"
+  },
+  "general-11": {
+   "k": "ft:axumas-awakening"
+  },
+  "class-12": {
+   "k": "ft:sprinting-spellstrike"
+  },
+  "skill-12": {
+   "k": "ft:titan-wrestler"
+  },
+  "ancestry-13": {
+   "k": "ft:clever-improviser"
+  },
+  "class-14": {
+   "k": "ft:hasted-assault"
+  },
+  "skill-14": {
+   "k": "ft:quick-jump"
+  },
+  "general-15": {
+   "k": "ft:unified-theory"
+  },
+  "class-16": {
+   "k": "ft:arcane-shroud"
+  }
+ },
+ "bonusSlots": [
+  {
+   "id": "skill-b1-1",
+   "lv": 1,
+   "kind": "skill",
+   "label": "Campaign skill feat"
+  }
+ ],
  "choices": {
-  "heritage": {"versatileHeritage": "@ft:fleet"},
-  "class>cf:hybrid-study": {"hybridStudy": "@cf:laughing-shadow"},
-  "feat:ancestry-1": {"naturalAmbition": "@ft:maguss-analysis"},
-  "feat:ancestry-5": {"feat": "@ft:incredible-initiative"},
-  "feat:ancestry-9": {"multitalented": "@ft:witch-dedication"}
+  "heritage": {
+   "versatileHeritage": "@ft:fleet"
+  },
+  "class>cf:hybrid-study": {
+   "hybridStudy": "@cf:laughing-shadow"
+  },
+  "feat:ancestry-1": {
+   "naturalAmbition": "@ft:maguss-analysis"
+  },
+  "feat:ancestry-5": {
+   "feat": "@ft:incredible-initiative"
+  },
+  "feat:ancestry-9": {
+   "multitalented": "@ft:witch-dedication"
+  }
  },
  "inventory": [
-  {"id": "aspera", "custom": {"n": "Aspera", "t": "weapon", "lv": 3, "cat": "martial", "grp": "polearm", "tr": ["reach", "trip", "deadly-d10"], "bulk": 2, "dmg": {"dice": 1, "die": "d8", "damageType": "slashing"}, "rng": null, "runes": {"potency": 0, "striking": 0, "property": []}}, "qty": 1, "eq": "held2"},
-  {"id": "lattice", "k": "eq:lattice-armor", "qty": 1, "eq": "worn"}
+  {
+   "id": "aspera",
+   "custom": {
+    "n": "Aspera",
+    "t": "weapon",
+    "lv": 3,
+    "cat": "martial",
+    "grp": "polearm",
+    "tr": [
+     "reach",
+     "trip",
+     "deadly-d10"
+    ],
+    "bulk": 2,
+    "dmg": {
+     "dice": 1,
+     "die": "d8",
+     "damageType": "slashing"
+    },
+    "rng": null,
+    "runes": {
+     "potency": 0,
+     "striking": 0,
+     "property": []
+    },
+    "rules": [
+     {
+      "key": "RollOption",
+      "option": "hands-free:but-really:1",
+      "itemOnly": true
+     }
+    ],
+    "abil": [
+     {
+      "n": "Shadow Synthesis",
+      "text": "Aspera counts as leaving a hand free for Laughing Shadow's extra damage against off-guard targets while you hold it in both hands."
+     }
+    ]
+   },
+   "qty": 1,
+   "eq": "held2"
+  },
+  {
+   "id": "lattice",
+   "k": "eq:lattice-armor",
+   "qty": 1,
+   "eq": "worn"
+  }
  ],
- "coins": {"pp": 0, "gp": 0, "sp": 0, "cp": 0}, "ledger": [],
- "hp": {"damage": 0, "temp": 0}, "heroPoints": 1, "focusUsed": 0, "conditions": {}, "effects": {}, "toggles": {}, "languages": [],
- "spells": {"entries": []}, "notes": {"player": "Rushin"}, "options": {"freeArchetype": false}
+ "coins": {
+  "pp": 0,
+  "gp": 0,
+  "sp": 0,
+  "cp": 0
+ },
+ "ledger": [],
+ "hp": {
+  "damage": 0,
+  "temp": 0
+ },
+ "heroPoints": 1,
+ "focusUsed": 0,
+ "conditions": {},
+ "effects": {},
+ "toggles": {},
+ "languages": [],
+ "spells": {
+  "entries": []
+ },
+ "notes": {
+  "player": "Rushin"
+ },
+ "options": {
+  "freeArchetype": false
+ }
 }
