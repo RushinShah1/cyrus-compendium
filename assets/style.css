@@ -157,7 +157,7 @@ body.compact .cb .rt,body.compact .hgt{display:none}body.compact .cb{grid-templa
 .tbl td.num,.tbl th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
 .tw .tbl tr:last-child td{border-bottom:0}
-@media(max-width:600px){.stack thead{display:none}.stack tr{display:grid;padding:8px 0;border-bottom:1px solid var(--line)}.stack td{display:flex;gap:10px;border:0;padding:3px 10px}.stack td::before{content:attr(data-l);color:var(--ink3);min-width:7em;flex:none}}
+@media(max-width:600px){.stack thead{display:none}.stack tr{display:block;padding:8px 0;border-bottom:1px solid var(--line)}.stack td{display:block;position:relative;border:0;padding:3px 10px 3px calc(8.5em + 20px);min-height:1.6em}.stack td::before{content:attr(data-l);position:absolute;left:10px;top:3px;width:8.5em;color:var(--ink3);line-height:1.35}.stack td:empty{display:none}}
 .fig{background:var(--sunk);border:1px solid var(--line);border-radius:var(--r);padding:14px;overflow-x:auto}
 .fig svg.dg{display:block;max-width:100%;height:auto;margin:0 auto}
 .cap{font-size:14px;color:var(--ink2);margin-top:8px}
@@ -488,3 +488,4 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .gpager .chip{max-width:48%;text-align:left;white-space:normal;line-height:1.3}
 .gpager .chip:last-child{text-align:right}
 .gembed{border-left:2px solid var(--line2);padding-left:12px;margin:10px 0}
+@media(max-width:600px){.figs.c1 .fig svg.dg{min-width:0;width:100%}}
