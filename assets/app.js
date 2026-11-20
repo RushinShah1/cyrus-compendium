@@ -194,7 +194,21 @@ function setIcon(k){
   document.getElementById('app-favicon')?.setAttribute('href', 'icons/' + k + '-180.png');
   document.getElementById('app-manifest')?.setAttribute('href', 'manifests/' + k + '.webmanifest');
 }
+function setLook(v){
+  try { localStorage.setItem('cyrus-look', v); } catch (e) {}
+  if (v === 'basic') document.documentElement.setAttribute('data-look', 'basic'); else document.documentElement.removeAttribute('data-look');
+}
 function initAppSettings(){
+  const lp = main.querySelector('.lookpick');
+  if (lp) {
+    const cur = document.documentElement.getAttribute('data-look') === 'basic' ? 'basic' : 'illustrated';
+    lp.querySelectorAll('[data-look]').forEach(b => { b.classList.toggle('on', b.dataset.look === cur); b.setAttribute('aria-checked', b.dataset.look === cur); });
+    lp.addEventListener('click', e => {
+      const b = e.target.closest('[data-look]'); if (!b) return;
+      setLook(b.dataset.look);
+      lp.querySelectorAll('[data-look]').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-checked', x === b); });
+    });
+  }
   const box = main.querySelector('#iconpick'), status = main.querySelector('#offline-status');
   if (!box) return;
   let cur = 'charcoal-gold';

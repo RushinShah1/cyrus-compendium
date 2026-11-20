@@ -489,3 +489,69 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .gpager .chip:last-child{text-align:right}
 .gembed{border-left:2px solid var(--line2);padding-left:12px;margin:10px 0}
 @media(max-width:600px){.figs.c1 .fig svg.dg{min-width:0;width:100%}}
+.lookpick{display:flex;gap:8px;margin:12px 0}
+.lookpick .chip.on{border-color:var(--gold);color:var(--ink)}
+
+/* ───────── Basic appearance: plain dark document style ───────── */
+:root[data-look=basic]{
+  --bg:#0d1117;--rail:#0d1117;--card:#0d1117;--card2:#161b22;--sunk:#0d1117;--line:#30363d;--line2:#3d444d;
+  --ink:#e6edf3;--ink2:#9da5ae;--ink3:#7d8590;--link:#4493f8;--gold:#4493f8;--gold-dim:#1f2a3a;--violet:#e6edf3;
+  --gS:#e6edf3;--gA:#e6edf3;--gB:#e6edf3;--gC:#e6edf3;--gD:#e6edf3;--gF:#7d8590;
+  --arcane:#9da5ae;--occult:#9da5ae;--divine:#9da5ae;--primal:#9da5ae;
+  --ac:#9da5ae;--fortitude:#9da5ae;--reflex:#9da5ae;--will:#9da5ae;
+  --damage:#9da5ae;--control:#9da5ae;--debuff:#9da5ae;--buff:#9da5ae;--position:#9da5ae;--utility:#9da5ae;
+  --r:6px}
+:root[data-look=basic] body{font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+:root[data-look=basic] body *{font-family:inherit!important;letter-spacing:normal}
+:root[data-look=basic] .ic,:root[data-look=basic] .emb,:root[data-look=basic] .tg,:root[data-look=basic] .ri{display:none!important}
+:root[data-look=basic] h1,:root[data-look=basic] h2,:root[data-look=basic] h3,:root[data-look=basic] h4,:root[data-look=basic] h5{font-weight:600;line-height:1.25}
+:root[data-look=basic] h1{font-size:26px;padding-bottom:.3em;border-bottom:1px solid var(--line)}
+:root[data-look=basic] h2{font-size:20px;padding-bottom:.3em;border-bottom:1px solid var(--line);margin-top:28px}
+:root[data-look=basic] h3,:root[data-look=basic] h3.ah{font-size:16px}
+:root[data-look=basic] h4,:root[data-look=basic] h5{font-size:14px}
+:root[data-look=basic] .ch .cn{font-size:16px}
+:root[data-look=basic] .lede{font-size:14px}
+:root[data-look=basic] .small,:root[data-look=basic] .muted.small{font-size:12px}
+:root[data-look=basic] .pf{font-size:0!important;vertical-align:baseline}
+:root[data-look=basic] .pf::before{content:attr(title);font-size:12px;color:var(--ink2);border:1px solid var(--line2);border-radius:4px;padding:0 5px;line-height:1.6;display:inline-block}
+:root[data-look=basic] .stars{color:var(--line2);font-size:12px}
+:root[data-look=basic] .stars b,:root[data-look=basic] .stars.ex,:root[data-look=basic] .stars.ex b{color:var(--ink);text-shadow:none}
+:root[data-look=basic] .gr{background:transparent!important;border:1px solid var(--line2);color:var(--ink)!important;font-size:12px!important;font-weight:600;height:20px;min-width:20px;border-radius:4px}
+:root[data-look=basic] .trait,:root[data-look=basic] .trait.r-uncommon,:root[data-look=basic] .trait.r-rare,:root[data-look=basic] .trait.r-unique,:root[data-look=basic] .trait.legacy{background:var(--card2);color:var(--ink2);border-color:var(--line);border-radius:4px;font-size:12px;padding:3px 6px}
+:root[data-look=basic] .chip{border-radius:6px;font-size:13px;min-height:30px;padding:3px 10px;background:var(--card2)}
+:root[data-look=basic] .chip.on{border-color:var(--link);color:var(--ink);background:#1f2a3a}
+:root[data-look=basic] .chip.mini.purple .st1{color:var(--ink)}
+:root[data-look=basic] .bd{border-radius:4px;font-size:12px;padding:2px 7px}
+:root[data-look=basic] .card{border-radius:6px;padding:14px 16px 10px;background:var(--bg)}
+:root[data-look=basic] .ev{background:var(--card2);border-left:3px solid var(--line2);border-radius:4px}
+:root[data-look=basic] .rate{border-radius:4px}
+:root[data-look=basic] .rc{padding:6px 8px}
+:root[data-look=basic] .rc .rl{font-size:12px}
+:root[data-look=basic] .panel,:root[data-look=basic] .fbox,:root[data-look=basic] details.toc-ch{border-radius:6px;background:var(--bg)}
+:root[data-look=basic] .tile{display:block;min-height:0;padding:12px 14px;border-radius:6px;background:var(--bg)}
+:root[data-look=basic] .tile b{display:block;font-size:15px;font-weight:600;color:var(--link)}
+:root[data-look=basic] .tile span{font-size:13px}
+:root[data-look=basic] .tile:hover,:root[data-look=basic] .tile:hover b{border-color:var(--link);text-decoration:none}
+:root[data-look=basic] .tbl{font-size:13px}
+:root[data-look=basic] .tbl th,:root[data-look=basic] .tbl td{padding:6px 10px}
+:root[data-look=basic] .rail a.doc{min-height:32px;font-size:14px;padding:6px 10px}
+:root[data-look=basic] .brand b{font-size:15px;font-weight:600}
+:root[data-look=basic] details.toc-ch>summary{font-size:15px;font-weight:600;min-height:40px}
+:root[data-look=basic] .ptitle .pn{font-size:16px;font-weight:600}
+:root[data-look=basic] .pbar button{font-size:13px;min-height:32px}
+:root[data-look=basic] .gentry{font-size:14px}
+:root[data-look=basic] .ipick{background:var(--card2)}
+:root[data-look=basic] .jumpbar a{border-radius:6px}
+:root[data-look=basic] a[data-g]{text-decoration-color:var(--line2)}
+:root[data-look=basic] .gitem{border-radius:6px;min-height:36px;padding:7px 10px}
+:root[data-look=basic] :is(.rt,.gentry,.turn p,.gfig p,.figcap,.fa,.stp,.keyrow,.st,.acc .ag,.search input,.slot,.topt,table.vt td,table.vt th,.tile span,.jumpbar a,details.vars>summary,.pk,.lgg){font-size:14px}
+:root[data-look=basic] :is(.rt h5.sub,.gentry h5.sub,.card h4,.legend h4,h4.th,.turn h4,.kick,p.cap,.gfig figcaption,.fn,details.rbox>summary){font-size:14px;font-weight:600}
+:root[data-look=basic] :is(.picks h3,.panel h3,h3.ah,.turn h3,.fqq,.tl .lv){font-size:16px;font-weight:600}
+:root[data-look=basic] :is(.cap,.cgl,.count,.to,.lgr,.lvl,.fl,.cf,.cr .cgl,.gcrumbs,.gnote,.gitem small,.sortbar .sl,.gentry table,.jumpbar.sm a,details.toc-ch>summary small,.rail .credit){font-size:12px}
+:root[data-look=basic] .chip,:root[data-look=basic] .bd,:root[data-look=basic] .pk,:root[data-look=basic] .slot{color:var(--ink2);border-color:var(--line)!important;background:var(--card2)!important;box-shadow:none!important}
+:root[data-look=basic] .chip.on{color:var(--ink);border-color:var(--link)!important;background:#1f2a3a!important}
+:root[data-look=basic] *{box-shadow:none!important;text-shadow:none!important}
+:root[data-look=basic] :is(.card,.panel,.tile,.ev,.fbox,.turn,.slot,.rate)::before{display:none}
+:root[data-look=basic] .ptitle .pk{background:transparent!important;border:0!important;padding:0;font-size:12px}
+:root[data-look=basic] :is(.fig,.gfig,.legend,.spanel){background:var(--bg)}
+:root[data-look=basic] .spanel{border-color:var(--line)}
