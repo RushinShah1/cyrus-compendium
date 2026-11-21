@@ -693,7 +693,7 @@ function tabBuild() {
   const langs = res.languages;
   return `<section class="cs-sec"><h2>Options</h2><div class="cs-togs"><label class="cs-tog"><input type="checkbox" data-act="opt" data-k="freeArchetype"${ch.options.freeArchetype ? ' checked' : ''}> Free archetype</label>
 <button type="button" class="chip" data-act="bonus-slot">Add a bonus feat or skill increase</button></div>
-${(ch.bonusSlots || []).length ? `<p class="small muted">Bonus slots: ${ch.bonusSlots.map((b2, i) => `${esc(b2.label)} at level ${b2.lv} <button type="button" class="chip mini" data-act="bonus-del" data-i="${i}">Remove</button>`).join(' ')}</p>` : ''}</section>
+${(ch.bonusSlots || []).length ? `<h3 class="cs-bh">Bonus feats and skill increases</h3><ul class="cs-bonus">${ch.bonusSlots.slice().sort((x, y) => x.lv - y.lv || String(x.label).localeCompare(String(y.label))).map(b2 => `<li><span class="lv">Level ${b2.lv}</span><span class="n">${esc(b2.label)}</span><button type="button" class="chip mini" data-act="bonus-del" data-id="${esc(b2.id)}">Remove</button></li>`).join('')}</ul>` : ''}</section>
 <section class="cs-sec"><h2>Attributes</h2>${attrs}</section>
 <section class="cs-sec"><h2>Skills</h2><p class="small muted">Train ${tc} skills at level 1 from your class and Intelligence (${trained.length} chosen). Skills your class or background already trains are marked.</p>
 <div class="cs-chips">${skillChips}</div>
@@ -1217,6 +1217,7 @@ function bonusSlot() {
     const v = k => box.querySelector(`[data-k="${k}"]`).value;
     const lv = Math.max(1, Math.min(20, Number(v('lv')) || 1)), kind = v('kind');
     ch.bonusSlots.push({id: `${kind === 'increase' ? 'inc' : kind}-b${newId()}-${lv}`, lv, kind, label: v('label') || (kind === 'increase' ? 'Bonus skill increase' : 'Bonus feat')});
+    ch.bonusSlots.sort((x, y) => x.lv - y.lv);
     commit(); A.popPanel();
   });
   A.pushPanel('Build', 'Add a bonus feat or skill increase', box, 'bonus-slot');
@@ -1409,7 +1410,7 @@ function onClick(e) {
     case 'lang-add': { const v = document.getElementById('cs-lang').value.trim(); if (v) { ch.languages.push(v.toLowerCase()); commit(); } return; }
     case 'lang-del': ch.languages.splice(Number(d.i), 1); commit(); return;
     case 'bonus-slot': bonusSlot(); return;
-    case 'bonus-del': { const s = ch.bonusSlots.splice(Number(d.i), 1)[0]; if (s) { delete ch.feats[s.id]; if (ch.bonusInc) delete ch.bonusInc[s.id]; } commit(); return; }
+    case 'bonus-del': { const i = ch.bonusSlots.findIndex(b => b.id === d.id); const s = i < 0 ? null : ch.bonusSlots.splice(i, 1)[0]; if (s) { delete ch.feats[s.id]; if (ch.bonusInc) delete ch.bonusInc[s.id]; } commit(); return; }
     case 'qty': { const inv = ch.inventory.find(i => i.id === d.id); inv.qty = Math.max(0, (inv.qty ?? 1) + Number(d.d)); commit(); return; }
     case 'remove': ch.inventory = ch.inventory.filter(i => i.id !== d.id); commit(); return;
     case 'sell': {
