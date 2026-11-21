@@ -920,3 +920,4 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .cs-track .b{flex-direction:row;align-items:center}
 .cs-ib .search input{border:0;background:transparent}
 .cs-gifts small.gt{margin-top:3px;line-height:1.4;color:var(--ink2)}
+.cs-toast{bottom:calc(72px + env(safe-area-inset-bottom))}

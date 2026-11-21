@@ -225,15 +225,18 @@ class Engine {
     const inc = ch.increases || {};
     S.skillBase = {}; S.skillInc = [];
     for (const [k, v] of Object.entries(sys.skills)) S.skillBase[k] = v.rank;
-    for (const lv of Object.keys(inc).map(Number).sort((a, b) => a - b)) {
+    // class skill increases are keyed by level; bonus increases come from bonus slots of kind 'increase'
+    const incList = Object.keys(inc).map(Number).map(lv => ({lv, s: inc[lv], id: 'inc-' + lv}))
+      .concat((ch.bonusSlots || []).filter(b => b.kind === 'increase').map(b => ({lv: b.lv, s: (ch.bonusInc || {})[b.id], id: b.id, bonus: true})))
+      .sort((a, b) => a.lv - b.lv || (a.bonus ? 1 : 0) - (b.bonus ? 1 : 0));
+    for (const {lv, s, id} of incList) {
       if (lv > L) continue;
-      const s = inc[lv];
       if (!s) continue;
       const k = SKILLS[s] ? s : (S.loreNames[s] ? s : addLore(s));
       if (!k) continue;
       if (!(k in S.skillBase)) S.skillBase[k] = 0;
       const cap = lv >= 15 ? 4 : lv >= 7 ? 3 : 2;
-      S.skillInc.push({k, lv, cap});
+      S.skillInc.push({k, lv, cap, id});
       sys.skills[k].rank = Math.min(Math.max(sys.skills[k].rank, 0) + 1, cap);
     }
     for (const [lv, s] of Object.entries(ch.intTrained || {})) if (s) { if (SKILLS[s]) up(s, 1); else addLore(s); }
@@ -570,11 +573,11 @@ class Engine {
     S.wastedInc = [];
     for (const k of new Set(ups.map(u => u.k).concat((S.skillInc || []).map(i => i.k)))) {
       const ev = ups.filter(u => u.k === k).map(u => ({lv: u.lv, up: u.v}))
-        .concat((S.skillInc || []).filter(i => i.k === k).map(i => ({lv: i.lv, inc: true, cap: i.cap})))
+        .concat((S.skillInc || []).filter(i => i.k === k).map(i => ({lv: i.lv, inc: true, cap: i.cap, id: i.id})))
         .sort((a, b) => a.lv - b.lv || (a.inc ? 1 : 0) - (b.inc ? 1 : 0));
       let r = (S.skillBase || {})[k] || 0;
       for (const e of ev) {
-        if (e.inc && r >= e.cap) S.wastedInc.push({lv: e.lv, k, rank: r, cap: e.cap});
+        if (e.inc && r >= e.cap) S.wastedInc.push({lv: e.lv, k, rank: r, cap: e.cap, id: e.id});
         r = e.inc ? Math.min(r + 1, e.cap) : Math.max(r, e.up);
       }
       const sk = S.sys.skills[k];

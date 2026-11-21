@@ -55,7 +55,7 @@ function blank(name) {
   return {format: 'aspera-character', v: 1, mig: 4, id: newId(), name: name || 'New character', level: 1, ancestry: null, heritage: null, background: null, class: null, deity: null,
     boosts: {ancestry: [], background: [], class: null, 1: [], 5: [], 10: [], 15: [], 20: []}, trained: [], lores: [], increases: {}, intTrained: {}, languages: [],
     feats: {}, choices: {}, inventory: [], coins: {pp: 0, gp: 15, sp: 0, cp: 0}, ledger: [], hp: {damage: 0, temp: 0}, heroPoints: 1, focusUsed: 0,
-    conditions: {}, effects: {}, toggles: {}, spells: {entries: []}, notes: {}, options: {freeArchetype: false}, bonusSlots: [],
+    conditions: {}, effects: {}, toggles: {}, spells: {entries: []}, notes: {}, options: {freeArchetype: false}, bonusSlots: [], bonusInc: {},
     log: [], enc: {on: false, round: 0, actions: 3, reaction: true, attacks: 0}, target: {dc: null}, uses: {}, trackers: {}, rollMode: 'normal'};
 }
 // bring characters saved by earlier versions up to date
@@ -156,7 +156,7 @@ function openChoices() {
   }
   for (const sl of res.slots) {
     if (sl.lv > ch.level || sl.kind === 'boost') continue;
-    if (sl.kind === 'increase') { if (!(ch.increases || {})[sl.lv]) out.push({slot: sl}); continue; }
+    if (sl.kind === 'increase') { if (!(sl.bonus ? (ch.bonusInc || {})[sl.id] : (ch.increases || {})[sl.lv])) out.push({slot: sl}); continue; }
     const f = (ch.feats || {})[sl.id];
     if (!f || !rec(f.k)) out.push({slot: sl});
   }
@@ -672,8 +672,10 @@ function tabBuild() {
     for (const s of here) {
       if (s.kind === 'boost') continue;
       if (s.kind === 'increase') {
-        const wi = (res.wastedInc || []).find(w => w.lv === lv);
-        parts.push(`<div class="cs-feat"><span class="l">Skill increase</span><select data-act="inc" data-lv="${lv}" aria-label="Skill increase at level ${lv}"><option value="">Choose…</option>${skillOpts((ch.increases || {})[lv])}</select>${wi ? `<p class="small cs-warn">${esc(wastedText(wi))}</p>` : ''}</div>`);
+        const wi = (res.wastedInc || []).find(w => w.id === (s.bonus ? s.id : 'inc-' + lv));
+        const sel = s.bonus ? `<select data-act="inc-b" data-s="${esc(s.id)}" aria-label="${esc(s.label)} at level ${lv}"><option value="">Choose…</option>${skillOpts((ch.bonusInc || {})[s.id])}</select>`
+          : `<select data-act="inc" data-lv="${lv}" aria-label="Skill increase at level ${lv}"><option value="">Choose…</option>${skillOpts((ch.increases || {})[lv])}</select>`;
+        parts.push(`<div class="cs-feat"><span class="l">${esc(s.bonus ? s.label : 'Skill increase')}</span>${sel}${wi ? `<p class="small cs-warn">${esc(wastedText(wi))}</p>` : ''}</div>`);
         continue;
       }
       const f = feats[s.id], r = f ? rec(f.k) : null;
@@ -690,7 +692,7 @@ function tabBuild() {
   for (let i = 0; i < intExtra; i++) { const key = 'x' + i; intRows += `<select data-act="int-train" data-k="${key}" aria-label="Extra trained skill ${i + 1}"><option value="">Choose…</option>${Object.keys(SKILLS).map(s => `<option value="${s}"${(ch.intTrained || {})[key] === s ? ' selected' : ''}>${cap(s)}</option>`).join('')}</select>`; }
   const langs = res.languages;
   return `<section class="cs-sec"><h2>Options</h2><div class="cs-togs"><label class="cs-tog"><input type="checkbox" data-act="opt" data-k="freeArchetype"${ch.options.freeArchetype ? ' checked' : ''}> Free archetype</label>
-<button type="button" class="chip" data-act="bonus-slot">Add a bonus feat slot</button></div>
+<button type="button" class="chip" data-act="bonus-slot">Add a bonus feat or skill increase</button></div>
 ${(ch.bonusSlots || []).length ? `<p class="small muted">Bonus slots: ${ch.bonusSlots.map((b2, i) => `${esc(b2.label)} at level ${b2.lv} <button type="button" class="chip mini" data-act="bonus-del" data-i="${i}">Remove</button>`).join(' ')}</p>` : ''}</section>
 <section class="cs-sec"><h2>Attributes</h2>${attrs}</section>
 <section class="cs-sec"><h2>Skills</h2><p class="small muted">Train ${tc} skills at level 1 from your class and Intelligence (${trained.length} chosen). Skills your class or background already trains are marked.</p>
@@ -1203,17 +1205,21 @@ function customItem() {
 function bonusSlot() {
   const box = document.createElement('div');
   box.className = 'cs-runes';
-  box.innerHTML = `<label class="cs-field"><span>Kind of feat</span><select data-k="kind"><option value="skill">Skill feat</option><option value="general">General feat</option><option value="class">Class feat</option><option value="ancestry">Ancestry feat</option><option value="archetype">Archetype feat</option><option value="bonus">Any feat</option></select></label>
+  box.innerHTML = `<label class="cs-field"><span>Kind</span><select data-k="kind"><option value="skill">Skill feat</option><option value="general">General feat</option><option value="class">Class feat</option><option value="ancestry">Ancestry feat</option><option value="archetype">Archetype feat</option><option value="bonus">Any feat</option><option value="increase">Skill increase</option></select></label>
 <label class="cs-field"><span>Level</span><input type="number" data-k="lv" value="${ch.level}" min="1" max="20"></label><label class="cs-field"><span>Label</span><input type="text" data-k="label" value="Bonus feat"></label>
 <button type="button" class="chip" data-save="1">Add</button>`;
+  const lab = box.querySelector('[data-k="label"]');
+  box.querySelector('[data-k="kind"]').addEventListener('change', e => {
+    if (['Bonus feat', 'Bonus skill increase'].includes(lab.value)) lab.value = e.target.value === 'increase' ? 'Bonus skill increase' : 'Bonus feat';
+  });
   box.addEventListener('click', e => {
     if (!e.target.closest('[data-save]')) return;
     const v = k => box.querySelector(`[data-k="${k}"]`).value;
-    const lv = Math.max(1, Math.min(20, Number(v('lv')) || 1));
-    ch.bonusSlots.push({id: `${v('kind')}-b${newId()}-${lv}`, lv, kind: v('kind'), label: v('label') || 'Bonus feat'});
+    const lv = Math.max(1, Math.min(20, Number(v('lv')) || 1)), kind = v('kind');
+    ch.bonusSlots.push({id: `${kind === 'increase' ? 'inc' : kind}-b${newId()}-${lv}`, lv, kind, label: v('label') || (kind === 'increase' ? 'Bonus skill increase' : 'Bonus feat')});
     commit(); A.popPanel();
   });
-  A.pushPanel('Build', 'Add a bonus feat slot', box, 'bonus-slot');
+  A.pushPanel('Build', 'Add a bonus feat or skill increase', box, 'bonus-slot');
 }
 
 // ───────── breakdowns ─────────
@@ -1403,7 +1409,7 @@ function onClick(e) {
     case 'lang-add': { const v = document.getElementById('cs-lang').value.trim(); if (v) { ch.languages.push(v.toLowerCase()); commit(); } return; }
     case 'lang-del': ch.languages.splice(Number(d.i), 1); commit(); return;
     case 'bonus-slot': bonusSlot(); return;
-    case 'bonus-del': { const s = ch.bonusSlots.splice(Number(d.i), 1)[0]; if (s) delete ch.feats[s.id]; commit(); return; }
+    case 'bonus-del': { const s = ch.bonusSlots.splice(Number(d.i), 1)[0]; if (s) { delete ch.feats[s.id]; if (ch.bonusInc) delete ch.bonusInc[s.id]; } commit(); return; }
     case 'qty': { const inv = ch.inventory.find(i => i.id === d.id); inv.qty = Math.max(0, (inv.qty ?? 1) + Number(d.d)); commit(); return; }
     case 'remove': ch.inventory = ch.inventory.filter(i => i.id !== d.id); commit(); return;
     case 'sell': {
@@ -1523,6 +1529,7 @@ function onChange(e) {
     case 'choice': (ch.choices[d.uid] = ch.choices[d.uid] || {})[d.flag] = t.value || undefined; if (!t.value) delete ch.choices[d.uid][d.flag]; commit(); return;
     case 'opt': if (d.k === 'altBoosts') { ch.altBoosts = t.checked; ch.boosts.ancestry = []; } else ch.options[d.k] = t.checked; commit(); return;
     case 'inc': if (t.value) ch.increases[d.lv] = t.value; else delete ch.increases[d.lv]; commit(); return;
+    case 'inc-b': ch.bonusInc = ch.bonusInc || {}; if (t.value) ch.bonusInc[d.s] = t.value; else delete ch.bonusInc[d.s]; commit(); return;
     case 'int-train': ch.intTrained[d.k] = t.value; commit(); return;
     case 'init': ch.initiative = t.value || null; commit(); return;
     case 'state': { const inv = ch.inventory.find(i => i.id === d.id); inv.eq = t.value; commit(); return; }
