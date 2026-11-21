@@ -173,6 +173,7 @@ class Engine {
 
     // active-effect-like changes, in priority order
     this.applyAE(S);
+    this.replaySkills(S);
     sys.attributes.speed.value = sys.attributes.speed.value || 25;
     // numeric roll options after proficiency changes
     this.numericOptions(S);
@@ -222,13 +223,17 @@ class Engine {
     for (const s of ch.trained || []) { if (SKILLS[s]) up(s, 1); else addLore(s); }
     for (const l of ch.lores || []) addLore(l);
     const inc = ch.increases || {};
+    S.skillBase = {}; S.skillInc = [];
+    for (const [k, v] of Object.entries(sys.skills)) S.skillBase[k] = v.rank;
     for (const lv of Object.keys(inc).map(Number).sort((a, b) => a - b)) {
       if (lv > L) continue;
       const s = inc[lv];
       if (!s) continue;
       const k = SKILLS[s] ? s : (S.loreNames[s] ? s : addLore(s));
       if (!k) continue;
+      if (!(k in S.skillBase)) S.skillBase[k] = 0;
       const cap = lv >= 15 ? 4 : lv >= 7 ? 3 : 2;
+      S.skillInc.push({k, lv, cap});
       sys.skills[k].rank = Math.min(Math.max(sys.skills[k].rank, 0) + 1, cap);
     }
     for (const [lv, s] of Object.entries(ch.intTrained || {})) if (s) { if (SKILLS[s]) up(s, 1); else addLore(s); }
@@ -540,6 +545,9 @@ class Engine {
       if (/^skills\.[\w-]+\.rank$/.test(p) && !getProp(target, p.replace(/\.rank$/, ''))) setProp(target, p.replace(/\.rank$/, ''), {rank: 0, lore: !SKILLS[p.split('.')[1]]});
       if (/^proficiencies\.attacks\.[\w-]+\.rank$/.test(p) && !getProp(target, p.replace(/\.rank$/, ''))) setProp(target, p.replace(/\.rank$/, ''), {rank: 0, custom: true});
       const cur = getProp(target, p);
+      // skill ranks granted by the build at a given level (Skill Mastery, Canny Acumen and the like)
+      const sm = p.match(/^skills\.([\w-]+)\.rank$/);
+      if (sm && rule.mode === 'upgrade' && target === S.sys && !/^(effect:|cond:|inv:)/.test(it.uid)) (S.skillUps = S.skillUps || []).push({k: sm[1], lv: it.lvl || 1, v: Number(v)});
       let nv = cur;
       switch (rule.mode) {
         case 'add': nv = Array.isArray(cur) ? cur.concat([v]) : (Number(cur) || 0) + Number(v); break;
@@ -552,6 +560,25 @@ class Engine {
       }
       setProp(target, p, nv);
       if (p.startsWith('build.languages.granted') && Array.isArray(nv)) S.languagesGranted = S.languagesGranted.concat(nv.map(x => (x && x.slug) || x));
+    }
+  }
+
+  // Skill increases add one rank to whatever the skill is at that level, so a rank a feat grants
+  // earlier (Skill Mastery at 9) must count before a later increase (13). Replay both in level order.
+  replaySkills(S) {
+    const ups = S.skillUps || [];
+    S.wastedInc = [];
+    for (const k of new Set(ups.map(u => u.k).concat((S.skillInc || []).map(i => i.k)))) {
+      const ev = ups.filter(u => u.k === k).map(u => ({lv: u.lv, up: u.v}))
+        .concat((S.skillInc || []).filter(i => i.k === k).map(i => ({lv: i.lv, inc: true, cap: i.cap})))
+        .sort((a, b) => a.lv - b.lv || (a.inc ? 1 : 0) - (b.inc ? 1 : 0));
+      let r = (S.skillBase || {})[k] || 0;
+      for (const e of ev) {
+        if (e.inc && r >= e.cap) S.wastedInc.push({lv: e.lv, k, rank: r, cap: e.cap});
+        r = e.inc ? Math.min(r + 1, e.cap) : Math.max(r, e.up);
+      }
+      const sk = S.sys.skills[k];
+      if (sk) sk.rank = Math.max(sk.rank, r);
     }
   }
 
@@ -794,6 +821,7 @@ class Engine {
     out.bulk = this.bulk(S, out);
     out.tempHP = S.tempHP;
     out.notes = S.notes; out.degree = S.degree; out.rollTwice = S.rollTwice;
+    out.wastedInc = S.wastedInc || [];
     out.items = S.items; out.pending = S.pending; out.toggles = S.toggles; out.actions = S.actions;
     out.slots = this.slots(S);
     out.trainCount = this.trainCount(S);

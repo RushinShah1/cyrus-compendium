@@ -131,11 +131,17 @@ function render() {
   ensureEntries();   // class and archetype spellcasting must exist for staff charges and Spellstrike
   const y = window.scrollY;
   const tabs = [['sheet', 'Sheet'], ['build', 'Build'], ['inventory', 'Inventory'], ['spells', 'Spells'], ['feats', 'Feats'], ['notes', 'Notes']];
-  const todo = openChoices().length;
+  const todo = openChoices().length + (res.wastedInc || []).length;
   root.innerHTML = head() + encounterBar()
     + `<div class="cs-bar">${mini()}<nav class="cs-tabs" role="tablist">${tabs.map(([t, l]) => `<button type="button" role="tab" aria-selected="${t === tab}" class="${t === tab ? 'on' : ''}" data-act="tab" data-t="${t}">${l}${t === 'build' && todo ? ` <span class="cs-count" title="${todo} choice${todo > 1 ? 's' : ''} to make">${todo}</span>` : ''}</button>`).join('')}</nav></div>`
     + `<div class="cs-body">${({sheet: tabSheet, build: tabBuild, inventory: tabInventory, spells: tabSpells, feats: tabFeats, notes: tabNotes})[tab]()}</div>` + tray();
   window.scrollTo(0, y);
+}
+
+const RANK_NAMES = ['untrained', 'trained', 'expert', 'master', 'legendary'];
+function wastedText(w) {
+  const name = (res.skills[w.k] && res.skills[w.k].label) || cap(w.k);
+  return `The skill increase at level ${w.lv} (${name}) has no effect: ${name} is already ${RANK_NAMES[w.rank]} by then${w.cap === 2 ? ', and master needs level 7' : w.cap === 3 ? ', and legendary needs level 15' : ''}.`;
 }
 
 // choices the rules leave open at or below the current level
@@ -157,12 +163,13 @@ function openChoices() {
   return out;
 }
 function todoSection() {
-  const open = openChoices();
-  if (!open.length) return '';
+  const open = openChoices(), wasted = res.wastedInc || [];
+  if (!open.length && !wasted.length) return '';
   const ch1 = open.filter(o => o.p).map(o => choiceUI(o.p)).join('');
   const sl = open.filter(o => o.slot);
   const slots = sl.length ? `<p class="small">${sl.length === 1 ? 'One build choice is' : sl.length + ' build choices are'} still open: ${esc(sl.map(o => o.slot.boost ? o.slot.label : `${o.slot.label} at level ${o.slot.lv}`).join(', '))}. <button type="button" class="chip mini" data-act="tab" data-t="build">Open the Build tab</button></p>` : '';
-  return `<section class="cs-sec cs-todo"><h2>Choices to make</h2><p class="small muted">These affect your numbers and are not chosen yet.</p>${ch1 ? `<div class="cs-choices">${ch1}</div>` : ''}${slots}</section>`;
+  const wl = wasted.map(w => `<p class="small">${esc(wastedText(w))} <button type="button" class="chip mini" data-act="tab" data-t="build">Change it on the Build tab</button></p>`).join('');
+  return `<section class="cs-sec cs-todo"><h2>Choices to make</h2><p class="small muted">These affect your numbers and are not chosen yet, or have no effect as chosen.</p>${ch1 ? `<div class="cs-choices">${ch1}</div>` : ''}${slots}${wl}</section>`;
 }
 
 // a compact bar that stays at the top while scrolling
@@ -665,7 +672,8 @@ function tabBuild() {
     for (const s of here) {
       if (s.kind === 'boost') continue;
       if (s.kind === 'increase') {
-        parts.push(`<div class="cs-feat"><span class="l">Skill increase</span><select data-act="inc" data-lv="${lv}" aria-label="Skill increase at level ${lv}"><option value="">Choose…</option>${skillOpts((ch.increases || {})[lv])}</select></div>`);
+        const wi = (res.wastedInc || []).find(w => w.lv === lv);
+        parts.push(`<div class="cs-feat"><span class="l">Skill increase</span><select data-act="inc" data-lv="${lv}" aria-label="Skill increase at level ${lv}"><option value="">Choose…</option>${skillOpts((ch.increases || {})[lv])}</select>${wi ? `<p class="small cs-warn">${esc(wastedText(wi))}</p>` : ''}</div>`);
         continue;
       }
       const f = feats[s.id], r = f ? rec(f.k) : null;
