@@ -52,7 +52,7 @@ function putChar(c) {
 }
 const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 function blank(name) {
-  return {format: 'aspera-character', v: 1, mig: 3, id: newId(), name: name || 'New character', level: 1, ancestry: null, heritage: null, background: null, class: null, deity: null,
+  return {format: 'aspera-character', v: 1, mig: 4, id: newId(), name: name || 'New character', level: 1, ancestry: null, heritage: null, background: null, class: null, deity: null,
     boosts: {ancestry: [], background: [], class: null, 1: [], 5: [], 10: [], 15: [], 20: []}, trained: [], lores: [], increases: {}, intTrained: {}, languages: [],
     feats: {}, choices: {}, inventory: [], coins: {pp: 0, gp: 15, sp: 0, cp: 0}, ledger: [], hp: {damage: 0, temp: 0}, heroPoints: 1, focusUsed: 0,
     conditions: {}, effects: {}, toggles: {}, spells: {entries: []}, notes: {}, options: {freeArchetype: false}, bonusSlots: [],
@@ -66,7 +66,9 @@ const ASPERA_RELIC = {relic: true, aspects: ['Time', 'Mind'], page: 'aspera',
   desc: "Cyrus's relic polearm. Reach 10 feet, including two squares diagonally.",
   abil: [{n: 'Shadow Synthesis', text: "Aspera counts as leaving a hand free for Laughing Shadow's extra damage against off-guard targets while you hold it in both hands."}],
   gifts: [{n: 'Repository of Knowledge', g: 'relics-174', lv: 3, kind: 'First minor gift'}, {n: 'Sands of the Hourglass', g: 'relics-216', lv: 5, kind: 'Second minor gift'},
-    {n: 'Precognition', g: 'relics-217', lv: 9, kind: 'First major gift'}, {n: 'Temporal Pulse', g: 'relics-218', lv: 13, kind: 'Second major gift'}, {n: 'Time Jump', g: 'relics-219', lv: 17, kind: 'Third major gift'}]};
+    {n: 'Precognition', g: 'relics-217', lv: 9, kind: 'First major gift'}, {n: 'Temporal Pulse', g: 'relics-218', lv: 13, kind: 'Second major gift'}, {n: 'Unrestricted Quickening', lv: 17, kind: 'Grand gift', text: "While you're wielding the relic, you can use the extra action from the quickened condition for any action, or as part of any activity, regardless of the restrictions of the effect that made you quickened. Quick Start: when you roll initiative, you become quickened until the end of your first turn."},
+    {n: 'Unravelling Strike', lv: 17, kind: 'Relic ability', text: "Free action (concentrate), once per hour. Trigger: you hit a creature with a Strike using the relic, including a Strike made as part of Spellstrike. Effect: the relic attempts to counteract one spell or magical effect on the target, chosen by you. If you don't know what effects are on the target, it attempts to counteract the effect with the highest rank."},
+    {n: 'Arcane Persuasion', lv: 17, kind: 'Relic ability', text: "While the relic is on your person, you gain a +2 item bonus to Arcana and Society checks. When you interact with spellcasters or creatures with magical traits, or the subject is magic, you can use Arcana in place of Diplomacy to Make an Impression or Request, and in place of Deception to Lie."}]};
 function asperaStave() {
   return {id: 'staff-aspera', name: "Aspera's stave", kind: 'staff', trad: 'arcane', attr: 'int', prof: 'class', known: [], used: 0, extra: 0,
     staff: STAVE.map(([s, rank, lv]) => ({k: 'sp:' + s, rank, lv})), note: 'Cast through Aspera with Fused Staff. Synesthesia needs occult spellcasting.'};
@@ -91,6 +93,16 @@ function migrate(c) {
       Object.assign(asp.custom, Object.assign({}, ASPERA_RELIC, {abil: asp.custom.abil || ASPERA_RELIC.abil}));
     }
     c.mig = 3;
+  }
+  if (c.mig < 4) {
+    // Aspera's fifth gift is now a custom grand gift with two relic abilities
+    const asp = c.inventory.find(i => i.id === 'aspera' && i.custom);
+    if (asp && asp.custom.relic) {
+      asp.custom.gifts = ASPERA_RELIC.gifts.map(x => Object.assign({}, x));
+      asp.custom.rules = (asp.custom.rules || []).filter(r => r.label !== 'Aspera (Arcane Persuasion)')
+        .concat([{key: 'FlatModifier', selector: ['arcana', 'society'], type: 'item', value: 2, label: 'Aspera (Arcane Persuasion)', predicate: [{gte: ['self:level', 17]}]}]);
+    }
+    c.mig = 4;
   }
   return c;
 }
@@ -1054,7 +1066,7 @@ function itemPanel(id) {
     let relic = '';
     if (c && c.relic) {
       relic = `<h3>Relic</h3>${(c.aspects || []).length ? `<p><b>Aspects</b> ${esc(c.aspects.join(' and '))}</p>` : ''}
-<ul class="cs-gifts">${(c.gifts || []).map(gf => { const on = ch.level >= gf.lv; return `<li class="${on ? 'on' : ''}"><span class="lv">${gf.lv}</span><span><a href="#" data-g="${esc(gf.g)}">${esc(gf.n)}</a><small>${esc(gf.kind)}</small></span><span class="st">${on ? 'Unlocked' : 'From level ' + gf.lv}</span></li>`; }).join('')}</ul>`;
+<ul class="cs-gifts">${(c.gifts || []).map(gf => { const on = ch.level >= gf.lv; return `<li class="${on ? 'on' : ''}"><span class="lv">${gf.lv}</span><span>${gf.g ? `<a href="#" data-g="${esc(gf.g)}">${esc(gf.n)}</a>` : `<b>${esc(gf.n)}</b>`}<small>${esc(gf.kind)}</small>${gf.text ? `<small class="gt">${esc(gf.text)}</small>` : ''}</span><span class="st">${on ? 'Unlocked' : 'From level ' + gf.lv}</span></li>`; }).join('')}</ul>`;
     }
     const page = c && c.page ? `<p><a class="chip" href="#${esc(c.page)}" data-close-all="1">Open the ${esc(c.n)} page</a></p>` : '';
     const canInvest = (r.tr || []).includes('invested');

@@ -181,6 +181,24 @@
       "key": "RollOption",
       "option": "hands-free:but-really:1",
       "itemOnly": true
+     },
+     {
+      "key": "FlatModifier",
+      "selector": [
+       "arcana",
+       "society"
+      ],
+      "type": "item",
+      "value": 2,
+      "label": "Aspera (Arcane Persuasion)",
+      "predicate": [
+       {
+        "gte": [
+         "self:level",
+         17
+        ]
+       }
+      ]
      }
     ],
     "abil": [
@@ -220,10 +238,22 @@
       "kind": "Second major gift"
      },
      {
-      "n": "Time Jump",
-      "g": "relics-219",
+      "n": "Unrestricted Quickening",
       "lv": 17,
-      "kind": "Third major gift"
+      "kind": "Grand gift",
+      "text": "While you're wielding the relic, you can use the extra action from the quickened condition for any action, or as part of any activity, regardless of the restrictions of the effect that made you quickened. Quick Start: when you roll initiative, you become quickened until the end of your first turn."
+     },
+     {
+      "n": "Unravelling Strike",
+      "lv": 17,
+      "kind": "Relic ability",
+      "text": "Free action (concentrate), once per hour. Trigger: you hit a creature with a Strike using the relic, including a Strike made as part of Spellstrike. Effect: the relic attempts to counteract one spell or magical effect on the target, chosen by you. If you don't know what effects are on the target, it attempts to counteract the effect with the highest rank."
+     },
+     {
+      "n": "Arcane Persuasion",
+      "lv": 17,
+      "kind": "Relic ability",
+      "text": "While the relic is on your person, you gain a +2 item bonus to Arcana and Society checks. When you interact with spellcasters or creatures with magical traits, or the subject is magic, you can use Arcana in place of Diplomacy to Make an Impression or Request, and in place of Deception to Lie."
      }
     ],
     "page": "aspera",
