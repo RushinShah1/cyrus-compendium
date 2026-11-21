@@ -693,7 +693,11 @@ function tabBuild() {
   const langs = res.languages;
   return `<section class="cs-sec"><h2>Options</h2><div class="cs-togs"><label class="cs-tog"><input type="checkbox" data-act="opt" data-k="freeArchetype"${ch.options.freeArchetype ? ' checked' : ''}> Free archetype</label>
 <button type="button" class="chip" data-act="bonus-slot">Add a bonus feat or skill increase</button></div>
-${(ch.bonusSlots || []).length ? `<h3 class="cs-bh">Bonus feats and skill increases</h3><ul class="cs-bonus">${ch.bonusSlots.slice().sort((x, y) => x.lv - y.lv || String(x.label).localeCompare(String(y.label))).map(b2 => `<li><span class="lv">Level ${b2.lv}</span><span class="n">${esc(b2.label)}</span><button type="button" class="chip mini" data-act="bonus-del" data-id="${esc(b2.id)}">Remove</button></li>`).join('')}</ul>` : ''}</section>
+${(ch.bonusSlots || []).length ? `<h3 class="cs-bh">Bonus feats and skill increases</h3><div class="cs-scroll"><table class="cs-bonus"><thead><tr><th>Level</th><th>Type</th><th>Label</th><th><span class="sr">Remove</span></th></tr></thead><tbody>${ch.bonusSlots.slice().sort((x, y) => x.lv - y.lv || String(x.label).localeCompare(String(y.label))).map(b2 => `<tr>
+<td><input type="number" min="1" max="20" value="${b2.lv}" data-act="bonus-lv" data-id="${esc(b2.id)}" aria-label="Level for ${esc(b2.label)}"></td>
+<td><select data-act="bonus-kind" data-id="${esc(b2.id)}" aria-label="Type for ${esc(b2.label)}">${BONUS_KINDS.map(([k, l]) => `<option value="${k}"${b2.kind === k ? ' selected' : ''}>${l}</option>`).join('')}</select></td>
+<td><input type="text" value="${esc(b2.label)}" data-act="bonus-label" data-id="${esc(b2.id)}" aria-label="Label"></td>
+<td><button type="button" class="chip mini" data-act="bonus-del" data-id="${esc(b2.id)}">Remove</button></td></tr>`).join('')}</tbody></table></div>` : ''}</section>
 <section class="cs-sec"><h2>Attributes</h2>${attrs}</section>
 <section class="cs-sec"><h2>Skills</h2><p class="small muted">Train ${tc} skills at level 1 from your class and Intelligence (${trained.length} chosen). Skills your class or background already trains are marked.</p>
 <div class="cs-chips">${skillChips}</div>
@@ -1202,6 +1206,26 @@ function customItem() {
   });
   A.pushPanel('Inventory', 'Custom item', box, 'custom-item');
 }
+const BONUS_KINDS = [['skill', 'Skill feat'], ['general', 'General feat'], ['class', 'Class feat'], ['ancestry', 'Ancestry feat'], ['archetype', 'Archetype feat'], ['bonus', 'Any feat'], ['increase', 'Skill increase']];
+// A bonus slot's id ends in its level, which the rules engine reads for the feat's level, so changing the level
+// or type gives it a new id and carries over what was chosen in it (dropped when the new type can't hold it).
+function editBonusSlot(id, patch) {
+  const b = ch.bonusSlots.find(x => x.id === id); if (!b) return;
+  const kind = patch.kind || b.kind, lv = Math.max(1, Math.min(20, Number(patch.lv ?? b.lv) || 1));
+  const nid = `${kind === 'increase' ? 'inc' : kind}-b${newId()}-${lv}`;
+  const wasInc = b.kind === 'increase', isInc = kind === 'increase';
+  ch.bonusInc = ch.bonusInc || {};
+  if (wasInc && isInc && ch.bonusInc[id]) ch.bonusInc[nid] = ch.bonusInc[id];
+  delete ch.bonusInc[id];
+  if (!wasInc && !isInc && ch.feats[id]) {
+    ch.feats[nid] = ch.feats[id];
+    for (const k of Object.keys(ch.choices)) if (k === 'feat:' + id || k.startsWith('feat:' + id + '>')) { ch.choices[k.replace('feat:' + id, 'feat:' + nid)] = ch.choices[k]; delete ch.choices[k]; }
+  }
+  delete ch.feats[id];
+  if (wasInc !== isInc && ['Bonus feat', 'Bonus skill increase'].includes(b.label)) b.label = isInc ? 'Bonus skill increase' : 'Bonus feat';
+  Object.assign(b, {id: nid, kind, lv});
+  ch.bonusSlots.sort((x, y) => x.lv - y.lv);
+}
 function bonusSlot() {
   const box = document.createElement('div');
   box.className = 'cs-runes';
@@ -1531,6 +1555,9 @@ function onChange(e) {
     case 'opt': if (d.k === 'altBoosts') { ch.altBoosts = t.checked; ch.boosts.ancestry = []; } else ch.options[d.k] = t.checked; commit(); return;
     case 'inc': if (t.value) ch.increases[d.lv] = t.value; else delete ch.increases[d.lv]; commit(); return;
     case 'inc-b': ch.bonusInc = ch.bonusInc || {}; if (t.value) ch.bonusInc[d.s] = t.value; else delete ch.bonusInc[d.s]; commit(); return;
+    case 'bonus-lv': editBonusSlot(d.id, {lv: t.value}); commit(); return;
+    case 'bonus-kind': editBonusSlot(d.id, {kind: t.value}); commit(); return;
+    case 'bonus-label': { const b = ch.bonusSlots.find(x => x.id === d.id); if (b) b.label = t.value.trim() || b.label; commit(); return; }
     case 'int-train': ch.intTrained[d.k] = t.value; commit(); return;
     case 'init': ch.initiative = t.value || null; commit(); return;
     case 'state': { const inv = ch.inventory.find(i => i.id === d.id); inv.eq = t.value; commit(); return; }
