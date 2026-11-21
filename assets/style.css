@@ -930,3 +930,10 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .cs-bonus td:last-child{width:1%;white-space:nowrap}
 .trait.fr{background:color-mix(in srgb,var(--violet) 22%,transparent);border-color:var(--violet);color:var(--ink)}
 .chip.fr{border-color:var(--violet)}
+.cs-attrs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin:0 0 12px}
+.cs-attr{display:flex;flex-direction:column;align-items:center;gap:1px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 4px;color:var(--ink);font:inherit;cursor:pointer}
+.cs-attr span{font-size:12px;color:var(--ink3);letter-spacing:.04em}
+.cs-attr b{font-size:18px}
+.cs-attr small{font-size:11px;color:var(--gold)}
+.cs-attr.apex{border-color:var(--gold-dim)}
+.cs-attr:hover b{color:var(--gold)}

@@ -216,6 +216,18 @@ class Engine {
       if (b.class) boost(b.class);
       for (const lv of [1, 5, 10, 15, 20]) if (L >= lv) (b[lv] || []).slice(0, 4).forEach(boost);
     }
+    // apex item (GM Core): the first invested apex item raises its attribute's modifier by 1 or to +4, whichever is higher;
+    // only one apex item benefits you at a time
+    S.apex = null; S.apexExtra = [];
+    for (const inv of ch.inventory || []) {
+      if (!inv.inv) continue;
+      const r = this.invRec(inv);
+      if (!r || !r.apex || !(r.tr || []).includes('apex')) continue;
+      if (S.apex) { S.apexExtra.push(r.n); continue; }
+      S.apex = {attr: r.apex, name: inv.custom ? inv.custom.n : r.n, id: inv.id, before: A[r.apex]};
+      A[r.apex] = Math.max(A[r.apex] + 1, 4);
+      S.apex.after = A[r.apex];
+    }
     S.attr = {};
     for (const a of ATTRS) S.attr[a] = {mod: A[a], base: Math.trunc(A[a])};
   }
@@ -835,6 +847,7 @@ class Engine {
     out.tempHP = S.tempHP;
     out.notes = S.notes; out.degree = S.degree; out.rollTwice = S.rollTwice;
     out.wastedInc = S.wastedInc || [];
+    out.apex = S.apex; out.apexExtra = S.apexExtra;
     out.items = S.items; out.pending = S.pending; out.toggles = S.toggles; out.actions = S.actions;
     out.slots = this.slots(S);
     out.trainCount = this.trainCount(S);

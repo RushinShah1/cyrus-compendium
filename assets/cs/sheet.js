@@ -214,6 +214,9 @@ ${dying && !dead ? `<button type="button" class="chip warn" data-act="recovery">
 </header>
 <div class="cs-vitals">${statBtn('ac', 'AC', res.ac.total, RANKS[res.ac.rank])}${saves}${statBtn('perception', 'Perception', fmt(res.perception.total), RANKS[res.perception.rank], true)}
 ${statBtn('speed', 'Speed', res.speed.total + ' ft', Object.entries(res.otherSpeeds).map(([k, v]) => k + ' ' + v.total).join(', '))}${cdc ? statBtn('classdc', 'Class DC', cdc.total, RANKS[cdc.rank]) : ''}${statBtn('initiative', 'Initiative', fmt(res.initiative.total), ch.initiative ? cap(ch.initiative) : 'Perception', true)}</div>
+<div class="cs-attrs" role="group" aria-label="Attribute modifiers">${ATTRS.map(a => { const ap = res.apex && res.apex.attr === a;
+  return `<button type="button" class="cs-attr${ap ? ' apex' : ''}" data-act="breakdown" data-k="attr:${a}" title="${esc(ATTR_NAME[a] || a)}${ap ? ', raised by ' + esc(res.apex.name) : ''}"><span>${a.toUpperCase()}</span><b>${fmt(res.attributes[a])}</b>${ap ? '<small>Apex</small>' : ''}</button>`; }).join('')}</div>
+${(res.apexExtra || []).length ? `<p class="small cs-warn">Only one apex item can raise an attribute at a time. ${esc(res.apexExtra.join(', '))} ${res.apexExtra.length > 1 ? 'are' : 'is'} invested but not raising an attribute.</p>` : ''}
 <div class="cs-res"><span><b>Hero Points</b>${dots(ch.heroPoints || 0, res.heroMax, 'hero')}</span>${res.focusMax ? `<span><b>Focus Points</b>${dots(res.focusMax - (ch.focusUsed || 0), res.focusMax, 'focus')}</span>` : ''}
 <span><b>Dying</b>${step('dying', c.dying)}</span><span><b>Wounded</b>${step('wounded', c.wounded)}</span><span><b>Doomed</b>${step('doomed', c.doomed)}</span>
 ${res.S.autoEncumbered ? '<span class="cs-warn">Encumbered by Bulk</span>' : ''}</div>`;
@@ -1087,6 +1090,7 @@ function itemPanel(id) {
     if (r.t === 'armor') f.push(['AC bonus', '+' + (r.ac || 0)], ['Dex cap', String(r.dex ?? 'None')], ['Check penalty', String(r.chk || 0)], ['Speed penalty', r.spd ? r.spd + ' feet' : 'None'], ['Strength', r.str != null ? String(r.str) : 'None']);
     if (r.t === 'shield') f.push(['AC bonus', '+' + (r.ac || 0)], ['Hardness', String(r.hard || 0)], ['Hit Points', String(r.hp || 0)]);
     if (['weapon', 'armor', 'shield'].includes(r.t)) f.push(['Runes', runeSummary(r, inv).replace(/^: /, '') || 'None']);
+    if (r.apex) f.push(['Apex', `raises ${ATTR_NAME[r.apex]}${res.apex && res.apex.id === id ? ', active' : inv.inv ? ', not active: another apex item is' : ', when invested'}`]);
     const facts = `<dl class="cs-facts">${f.filter(x => x[1]).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v === runeSummary(r, inv).replace(/^: /, '') ? v : esc(v)}</dd></div>`).join('')}</dl>`;
     const traits = (r.tr || []).length ? `<div class="cs-trs">${r.tr.map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</div>` : '';
     const abil = (c && c.abil || []).map(a => `<p><b>${esc(a.n)}</b> ${esc(a.text)}</p>`).join('');
@@ -1204,12 +1208,14 @@ function customItem() {
 <label class="cs-field"><span>Check penalty</span><input type="number" data-k="chk" value="0"></label><label class="cs-field"><span>Speed penalty</span><input type="number" data-k="spd" value="0"></label>
 <label class="cs-field"><span>Strength</span><input type="number" data-k="str" value="0"></label></fieldset>
 <label class="cs-field"><span>Special ability, if any: its name, a colon, then what it does</span><textarea data-k="abil" rows="3"></textarea></label>
+<label class="cs-field"><span>Apex item: the attribute it raises when invested</span><select data-k="apex"><option value="">Not an apex item</option>${ATTRS.map(a => `<option value="${a}">${ATTR_NAME[a]}</option>`).join('')}</select></label>
 <button type="button" class="chip" data-save="1">Add</button>`;
   box.addEventListener('click', e => {
     if (!e.target.closest('[data-save]')) return;
     const v = k => box.querySelector(`[data-k="${k}"]`).value;
     const t = v('t');
     const c = {n: v('n') || 'Custom item', t, lv: Number(v('lv')) || 0, tr: v('tr').split(',').map(s => slugify(s)).filter(Boolean), bulk: Number(v('bulk')) || 0};
+    if (v('apex')) { c.apex = v('apex'); for (const t2 of ['apex', 'invested']) if (!c.tr.includes(t2)) c.tr.push(t2); }
     if (t === 'weapon') Object.assign(c, {cat: v('cat'), grp: slugify(v('grp')) || null, dmg: {dice: 1, die: v('die'), damageType: v('dtype')}, rng: Number(v('rng')) || null, runes: {potency: 0, striking: 0, property: []}});
     if (t === 'armor') Object.assign(c, {cat: v('acat'), ac: Number(v('ac')) || 0, dex: Number(v('dex')), chk: Number(v('chk')) || 0, spd: Number(v('spd')) || 0, str: Number(v('str')) || null, runes: {potency: 0, resilient: 0, property: []}});
     const ab = v('abil').trim();
@@ -1268,6 +1274,7 @@ function breakdown(k) {
   else if (k.startsWith('save:')) st = res.saves[k.slice(5)]; else if (k.startsWith('skill:')) st = res.skills[k.slice(6)];
   else if (k.startsWith('strike:')) st = res.strikes[+k.slice(7)].attack; else if (k.startsWith('damage:')) st = res.strikes[+k.slice(7)].damage;
   else if (k.startsWith('spellatk:') || k.startsWith('spelldc:')) { const sc = res.spellcasting.find(s => s.e.id === k.split(':')[1]); st = k.startsWith('spellatk') ? sc.attack : sc.dc; }
+  if (k.startsWith('attr:')) { attrBreakdown(k.slice(5)); return; }
   if (!st) return;
   const base = /^(ac|classdc|spelldc)/.test(k) ? 10 : 0;
   const rows = (base ? ['<tr><td>Base</td><td>10</td><td></td></tr>'] : []).concat(st.mods.map(m => `<tr class="${m.applied ? '' : 'off'}"><td>${esc(m.label)}${m.situational ? ' <small>situational</small>' : ''}</td><td>${fmt(m.value)}</td><td><small>${esc(m.type || 'untyped')}${m.applied ? '' : m.situational ? '' : ', does not stack'}</small></td></tr>`));
@@ -1279,6 +1286,20 @@ function breakdown(k) {
 ${canRoll ? `<button type="button" class="chip" data-roll="1">Roll</button>` : ''}<p class="small muted">Situational modifiers apply only when their condition holds, such as against an off-guard target.</p>`;
   box.addEventListener('click', e => { if (!e.target.closest('[data-roll]')) return; A.popPanel(); if (k.startsWith('strike:')) rollStrike(+k.slice(7)); else rollKey(k); commit(); });
   A.pushPanel('Breakdown', st.label, box, 'bd:' + k);
+}
+
+function attrBreakdown(a) {
+  const box = document.createElement('div');
+  box.className = 'cs-bd';
+  const ap = res.apex && res.apex.attr === a ? res.apex : null;
+  const from = ap ? Math.trunc(ap.before) : res.attributes[a];
+  box.innerHTML = `<p class="cs-bdt"><b>${fmt(res.attributes[a])}</b></p><table class="tbl"><tbody>
+<tr><td>Boosts and flaws from your build</td><td>${fmt(from)}</td><td></td></tr>
+${ap ? `<tr><td>${esc(ap.name)} (apex item)</td><td>${fmt(res.attributes[a] - from)}</td><td><small>raises the modifier by 1 or to +4, whichever is higher</small></td></tr>` : ''}</tbody></table>
+<p class="small muted">Boosts and flaws are chosen on the Build tab. An invested apex item raises one attribute; only one apex item can do so at a time.</p>
+<button type="button" class="chip" data-go="1">Open the Build tab</button>`;
+  box.addEventListener('click', e => { if (!e.target.closest('[data-go]')) return; A.popPanel(); tab = 'build'; render(); });
+  A.pushPanel('Breakdown', ATTR_NAME[a] || a, box, 'bd:attr:' + a);
 }
 
 // ───────── upkeep ─────────
