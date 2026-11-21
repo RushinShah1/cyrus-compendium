@@ -72,7 +72,9 @@ async function getEntry(key){
 function esc(t){ return String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 const AONPATH = {traits:'Traits',conditions:'Conditions',rules:'Rules',actions:'Actions',spells:'Spells',equipment:'Equipment',feats:'Feats',
   skills:'Skills',weapons:'Weapons',classes:'Classes',relics:'Relics',hybridstudies:'HybridStudies',backgrounds:'Backgrounds',heritages:'Heritages',mythicspells:'MythicSpells'};
+const FRT = 'Deity (Forgotten Realms)';
 function aonUrl(key, name){
+  if (key.startsWith('fr:')) return null;   // Forgotten Realms deities are not on Archives of Nethys
   const m = key.match(/^([a-z]+)-(\d+)$/);
   if (m && AONPATH[m[1]]) return `https://2e.aonprd.com/${AONPATH[m[1]]}.aspx?ID=${m[2]}`;
   return 'https://2e.aonprd.com/Search.aspx?q=' + encodeURIComponent(name);
@@ -307,8 +309,9 @@ function initGlossary(){
     rows.sort((a, b) => a.low.localeCompare(b.low));
     const tc = {}; rows.forEach(r => tc[r.t] = (tc[r.t] || 0) + 1);
     const box = main.querySelector('#g-types');
-    const order = Object.keys(tc).sort((a, b) => tc[b] - tc[a]);
-    const chip = t => `<button class="chip mini" type="button" data-gt="${esc(t)}">${esc(t)} <small>${tc[t]}</small></button>`;
+    // the campaign's Forgotten Realms deities always have their own filter at the front
+    const order = Object.keys(tc).sort((a, b) => (b === FRT) - (a === FRT) || tc[b] - tc[a]);
+    const chip = t => `<button class="chip mini${t === FRT ? ' fr' : ''}" type="button" data-gt="${esc(t)}">${esc(t)} <small>${tc[t]}</small></button>`;
     box.innerHTML = order.slice(0, 14).map(chip).join('') + `<button class="chip mini" type="button" id="g-more" aria-expanded="false">More types (${order.length - 14})</button><span class="gmoretypes" hidden>${order.slice(14).sort().map(chip).join('')}</span>`;
     box.querySelector('#g-more').addEventListener('click', e => { const sp = box.querySelector('.gmoretypes'); sp.hidden = !sp.hidden; e.currentTarget.setAttribute('aria-expanded', !sp.hidden); e.currentTarget.textContent = sp.hidden ? `More types (${order.length - 14})` : 'Fewer types'; });
     render();

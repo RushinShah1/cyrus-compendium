@@ -928,3 +928,5 @@ ul.toc li[hidden],details.toc-ch[hidden]{display:none}
 .cs-bonus input,.cs-bonus select{background:var(--sunk);color:var(--ink);border:1px solid var(--line2);border-radius:8px;padding:5px 8px;font:inherit;font-size:15px;width:100%}
 .cs-bonus input[type=number]{width:4.2em}
 .cs-bonus td:last-child{width:1%;white-space:nowrap}
+.trait.fr{background:color-mix(in srgb,var(--violet) 22%,transparent);border-color:var(--violet);color:var(--ink)}
+.chip.fr{border-color:var(--violet)}

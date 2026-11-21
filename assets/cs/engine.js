@@ -161,7 +161,15 @@ class Engine {
     if (anc) { O.add(`ancestry:${anc.sl}`); for (const t of anc.tr || []) { O.add(`self:trait:${t}`); sys.traits.value.push(t); } }
     if (her) { O.add(`heritage:${her.sl}`); for (const t of her.tr || []) { O.add(`self:trait:${t}`); sys.traits.value.push(t); } }
     if (bg) O.add(`background:${bg.sl}`);
-    if (dei) { O.add(`deity:primary:${dei.sl}`); O.add(`deity:${dei.sl}`); }
+    if (dei) {
+      O.add(`deity:primary:${dei.sl}`); O.add(`deity:${dei.sl}`);
+      // the deity's statistics as Foundry exposes them, which class features such as Divine Font and sanctification test
+      for (const f of dei.font || []) O.add(`deity:primary:font:${f}`);
+      if (dei.sanct) for (const w of dei.sanct.what || []) O.add(`deity:primary:sanctification:${dei.sanct.modal}:${w}`);
+      for (const k of dei.skill || []) O.add(`deity:primary:skill:${k}`);
+      for (const w of dei.weapons || []) O.add(`deity:primary:favored-weapon:${w}`);
+      for (const d of (dei.domains || {}).primary || []) O.add(`deity:primary:domain:${d}`);
+    }
     for (const [k, v] of Object.entries(ch.toggles || {})) if (v === true) O.add(k); else if (typeof v === 'string' && v) { O.add(k); O.add(`${k}:${v}`); }
     for (const [k, v] of Object.entries(ch.conditions || {})) if (v) { O.add(`self:condition:${k}`); if (typeof v === 'number') O.add(`self:condition:${k}:${v}`); }
 
@@ -385,6 +393,8 @@ class Engine {
     const flag = rule.flag || slugify(it.r.n).replace(/-([a-z])/g, (m, c) => c.toUpperCase());
     let val = it.sel[flag];
     if (val == null && rule.selection != null) val = rule.selection;
+    // a class feature asking for a deity takes the one chosen on the Build tab
+    if (val == null && S.dei && rule.choices && rule.choices.itemType === 'deity') val = '@' + S.dei.k;
     const entry = {uid: it.uid, item: it, flag, rule, index: i, value: val ?? null, prompt: (() => { const t = this.t(rule.prompt); return t && !/^PF2E\./.test(t) ? t : 'Choose an option for ' + it.r.n; })()};
     S.pending.push(entry);
     if (val == null) return;

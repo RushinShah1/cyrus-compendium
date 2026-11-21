@@ -595,7 +595,7 @@ ${senses ? `<p><b>Senses</b> ${senses}</p>` : ''}<p><b>Languages</b> ${esc(res.l
 
 // ───────── Build tab ─────────
 function origin(kind, label, r, extra) {
-  return `<div class="cs-orig"><span class="l">${label}</span><span class="v">${r ? g(r) : '<span class="muted">Not chosen</span>'}</span><button type="button" class="chip" data-act="pick-origin" data-k="${kind}">${r ? 'Change' : 'Choose'}</button>${extra || ''}</div>`;
+  return `<div class="cs-orig"><span class="l">${label}</span><span class="v">${r ? g(r) + (r.fr ? ' <span class="cs-badge">Forgotten Realms</span>' : '') : '<span class="muted">Not chosen</span>'}</span><button type="button" class="chip" data-act="pick-origin" data-k="${kind}">${r ? 'Change' : 'Choose'}</button>${extra || ''}</div>`;
 }
 const labelFor = (opts, v) => (opts.find(o => String(o.value) === String(v)) || {label: String(v)}).label;
 function choiceUI(p) {
@@ -898,7 +898,9 @@ function picker(title, kicker, items, onPick, opts = {}) {
   };
   let t;
   q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { lim = 150; draw(); }, 120); });
-  box.addEventListener('change', () => draw());
+  // the search box redraws on input; a change event from it (fired when it loses focus to a Choose button) must not
+  // redraw the list under the pointer, or the click is lost
+  box.addEventListener('change', e => { if (e.target !== q) draw(); });
   box.addEventListener('click', e => {
     const b = e.target.closest('button');
     if (!b) return;
@@ -911,7 +913,18 @@ function picker(title, kicker, items, onPick, opts = {}) {
   setTimeout(() => q.focus({preventScroll: true}), 50);
 }
 const recSub = r => [r.lv != null ? (r.t === 'spell' ? ((r.tr || []).includes('cantrip') ? 'Cantrip' : 'Rank ' + r.lv) : 'Level ' + r.lv) : '', (r.tr || []).filter(t => !['general', 'skill'].includes(t)).slice(0, 5).join(', '), r.src || '', r.leg ? 'renamed in the remaster as ' + r.now : ''].filter(Boolean).map(esc).join(' · ');
+function pickDeity() {
+  const rs = Object.values(db.e).filter(r => r.t === 'deity');
+  const pans = [...new Set(rs.filter(r => r.fr).map(r => r.pan))];
+  const items = rs.map(r => ({label: r.n, rec: r, fr: !!r.fr, pan: r.pan || '',
+    sub: r.fr ? esc(`${cap(r.title || '')} · ${r.pan} · Forgotten Realms, proposed conversion`) : recSub(r)}))
+    .sort((a, b) => a.label.localeCompare(b.label));
+  const filters = `<label class="cs-field inl"><span>Show</span><select class="f-dei"><option value="fr">Forgotten Realms deities</option>${pans.map(p => `<option value="${esc(p)}">${esc(p)}</option>`).join('')}<option value="pf">Pathfinder deities</option><option value="all">All deities</option></select></label>`;
+  picker('Choose a deity', 'Build', items, it => { ch.deity = it.rec.k; commit(); },
+    {filters, filter: (it, box) => { const v = box.querySelector('.f-dei').value; return v === 'all' || (v === 'fr' ? it.fr : v === 'pf' ? !it.fr : it.pan === v); }});
+}
 function pickOrigin(kind) {
+  if (kind === 'deity') return pickDeity();
   let rs = Object.values(db.e).filter(r => r.t === kind);
   if (kind === 'heritage') { const a = res.S.anc; rs = rs.filter(r => !r.anc || (a && r.anc === a.sl)); }
   const items = rs.map(r => ({label: r.n, rec: r, sub: recSub(r) + (kind === 'heritage' && !r.anc ? ' · versatile heritage' : '')})).sort((a, b) => a.label.localeCompare(b.label));
@@ -1037,7 +1050,7 @@ ${(r.tr || []).length ? `<div class="cs-trs">${r.tr.slice(0, 6).map(t => `<span 
   };
   let t;
   box.querySelector('.f-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(read, 120); });
-  box.addEventListener('change', e => { if (!e.target.matches('[data-q]')) read(); });
+  box.addEventListener('change', e => { if (!e.target.matches('[data-q], .f-q')) read(); });
   box.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     if (b.dataset.cat) { ib.cat = b.dataset.cat; box.querySelectorAll('[data-cat]').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); }); fillSub(); lim = 60; draw(); return; }
