@@ -36,6 +36,7 @@ async function loadDB(progress) {
     if (p === 'core') { out.slots = j.slots; out.runes = j.runes; out.lang = j.lang; }
     progress && progress(++n, parts.length);
   }));
+  try { const r = await fetch('assets/cs/grades.json'); if (r.ok) GR = await r.json(); } catch (e) { /* grades are optional */ }
   db = out; eng = new Engine(db);
   return db;
 }
@@ -446,25 +447,41 @@ function ssDefence(o) {
   return `${sv.basic ? 'Basic ' : ''}${cap(sv.statistic)} save, DC ${o.sc.dc.total}`;
 }
 function ssPick(i) {
-  const st = res.strikes[i]; if (!st) return;
+  const st0 = res.strikes[i]; if (!st0) return;
   const opts = ssOptions();
   const box = document.createElement('div');
   box.className = 'cs-picker cs-ss';
   const mapIdx = ch.enc.on ? Math.min(ch.enc.attacks, 2) : 0;
-  box.innerHTML = `<p class="small">Two actions. Cast a spell and make a melee Strike with ${esc(st.name)} at ${fmt(st.map[mapIdx])}. The Strike gains the arcane trait and counts as two attacks for your multiple attack penalty, applied after the Strike.</p>
-${opts.length > 8 ? '<label class="search"><input type="search" placeholder="Search spells" aria-label="Search spells"></label>' : ''}
-<ul class="cs-sslist">${opts.length ? opts.map((o, j) => {
-    const dmg = eng.spellDamage(o.s, o.rank);
-    return `<li data-n="${esc(o.s.n.toLowerCase())}"><div class="t">${g(o.s)}${legTag(o.s)}<span class="cs-badge">${(o.s.tr || []).includes('cantrip') ? 'Cantrip, rank ' + o.rank : 'Rank ' + o.rank}</span></div>
-<div class="m"><span>${esc(o.src)}</span><span>${esc(ssDefence(o))}</span>${dmg.length ? `<span>${esc(dmg.map(x => x.f + (x.t ? ' ' + x.t : '')).join(' + '))}</span>` : ''}</div>
-<button type="button" class="chip hi" data-j="${j}">Spellstrike with ${esc(o.s.n)}</button></li>`;
-  }).join('') : '<li class="muted">No spell you can cast right now qualifies. Spellstrike needs a spell of 1 or 2 actions with a spell attack roll or a saving throw, and a slot, charge or Focus Point to cast it.</li>'}</ul>`;
-  const q = box.querySelector('input[type=search]');
-  if (q) q.addEventListener('input', () => { const v = q.value.trim().toLowerCase(); box.querySelectorAll('.cs-sslist li[data-n]').forEach(li => { li.hidden = v && !li.dataset.n.includes(v); }); });
+  const items = opts.map((o, j) => ({label: o.s.n, rec: o.s, o, j, gr: gradeOf('sp', o.s), hayx: [o.src, spellArea(o.s), spellDef(o.s), ...spellDmg(o.s)].join(' ')}));
+  const avg = o => eng.spellDamage(o.s, o.rank).reduce((t, x) => t + String(x.f || '').split('+').reduce((u, p) => { const m = p.trim().match(/^(\d+)d(\d+)$/); return u + (m ? m[1] * (+m[2] + 1) / 2 : Number(p) || 0); }, 0), 0);
+  const sf = spellFacets(items);
+  const spec = [
+    {k: 'how', label: 'Paid with', type: 'chips', opts: [['cantrip', 'Cantrip'], ['prep', 'Prepared slot'], ['spont', 'Spell slot'], ['staff', 'Stave charges'], ['focus', 'Focus Point'], ['innate', 'Innate']].filter(([v]) => items.some(it => it.o.how.type === v)), val: it => it.o.how.type},
+    sf.def, sf.area, sf.dmg, sf.role, fxGrade()].map(f => Object.assign({}, f, {opts: f.opts.filter(([v]) => items.some(it => [].concat(f.val(it)).map(String).includes(v)))})).filter(f => f.opts.length > 1);
+  const sorts = [['rank-', 'Rank, highest first', (a, b) => b.o.rank - a.o.rank], ['dmg', 'Average damage, highest first', (a, b) => avg(b.o) - avg(a.o)], SO_NAME, SO_GR, ...roleSorts()];
+  const defs = fxDefaults(spec, sorts, {open: false});
+  const st = FX.ss || (FX.ss = fxClone(defs));
+  box.innerHTML = `<p class="small">Two actions. Cast a spell and make a melee Strike with ${esc(st0.name)} at ${fmt(st0.map[mapIdx])}. The Strike gains the arcane trait and counts as two attacks for your multiple attack penalty, applied after the Strike.</p>
+${opts.length ? `<label class="search"><input type="search" placeholder="Search spells, damage types and areas" aria-label="Search spells" value="${esc(st.q || '')}"></label>${fxHTML(spec, st, sorts)}<p class="small muted cs-pc"></p>` : ''}<ul class="cs-sslist"></ul>`;
+  const list = box.querySelector('.cs-sslist'), q = box.querySelector('input[type=search]'), count = box.querySelector('.cs-pc');
+  const draw = () => {
+    if (!opts.length) { list.innerHTML = '<li class="muted">No spell you can cast right now qualifies. Spellstrike needs a spell of 1 or 2 actions with a spell attack roll or a saving throw, and a slot, charge or Focus Point to cast it.</li>'; return; }
+    st.q = q.value;
+    const m = fxApply(items, spec, st, sorts);
+    count.textContent = `${m.length} of ${items.length} spells`;
+    list.innerHTML = m.map(it => {
+      const o = it.o, dmg = eng.spellDamage(o.s, o.rank);
+      return `<li><div class="t">${g(o.s)}${legTag(o.s)}${grBadge(it.gr)}<span class="cs-badge">${(o.s.tr || []).includes('cantrip') ? 'Cantrip, rank ' + o.rank : 'Rank ' + o.rank}</span></div>
+<div class="m"><span>${esc(o.src)}</span><span>${esc(ssDefence(o))}</span>${o.s.area ? `<span>${esc(o.s.area.value + '-foot ' + o.s.area.type)}</span>` : ''}${dmg.length ? `<span>${esc(dmg.map(x => x.f + (x.t ? ' ' + x.t : '')).join(' + '))}</span>` : ''}</div>
+<button type="button" class="chip hi" data-j="${it.j}">Spellstrike with ${esc(o.s.n)}</button></li>`;
+    }).join('') || '<li class="muted">Nothing matches. Clear a filter or widen the search.</li>';
+  };
+  if (q) { let t; q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(draw, 120); }); fxBind(box, spec, st, defs, items, sorts, draw); }
   box.addEventListener('click', e => {
     const b = e.target.closest('button[data-j]'); if (!b) return;
     A.popPanel(); doSpellstrike(i, opts[+b.dataset.j]); commit();
   });
+  draw();
   A.pushPanel('Spellstrike', 'Choose a spell', box, 'ss:' + i);
 }
 function spendCast(how) {
@@ -885,31 +902,183 @@ function tabNotes() {
 <section class="cs-sec"><h2>Saved data</h2><p class="small muted">Characters are saved on this device. Use Export to copy one to another device or keep a backup, and Import to load it.</p></section>`;
 }
 
+// ───────── filters and sorting for search-and-add panels ─────────
+let GR = {sp: {}, ft: {}, it: {}};
+const gkey = n => String(n || '').replace(/’/g, "'").trim().toLowerCase();
+const gradeOf = (kind, r) => (r && ((GR[kind] || {})[gkey(r.n)] || (r.now && (GR[kind] || {})[gkey(r.now)]))) || null;
+const grBadge = gr => gr ? ` <span class="gr gr-${gr[0]}" title="Compendium grade ${gr[0]}">${gr[0]}</span>` : '';
+const gOrd = gr => gr ? 'SABCDF'.indexOf(gr[0]) : 9;
+const FX = {};
+const ROLE_NAMES = ['Damage', 'Control', 'Debuff', 'Buff or heal', 'Positioning', 'Utility'];
+const actCodes = t => {
+  t = String(t == null ? '' : t).toLowerCase();
+  if (!t || t === 'null') return ['passive'];
+  if (t === 'reaction' || t === 'free') return [t];
+  const m = t.match(/^(\d)(?: (?:to|or) (\d))?$/);
+  if (m) { const o = []; for (let i = +m[1]; i <= +(m[2] || m[1]); i++) o.push(String(i)); return o; }
+  if (/^single action to/.test(t)) return ['1', '2', '3'];
+  return ['long'];
+};
+const actCost = t => { const c = actCodes(t)[0]; return {free: 0, reaction: 0.5, passive: -1, long: 9}[c] ?? Number(c); };
+const fxOpts = (vals, label = v => cap(String(v).replace(/-/g, ' '))) => vals.map(v => [v, esc(label(v))]);
+const countVals = (items, f) => { const c = new Map(); for (const it of items) for (const v of [].concat(f(it) || [])) if (v !== '' && v != null) c.set(v, (c.get(v) || 0) + 1); return c; };
+// facet builders: val(it) returns the item's value or values for the facet
+const FX_RAR = {k: 'rar', label: 'Rarity', type: 'chips', opts: [['common', 'Common'], ['uncommon', 'Uncommon'], ['rare', 'Rare'], ['unique', 'Unique']], val: it => (it.rec && it.rec.rar) || 'common'};
+const FX_TR = {k: 'tr', label: 'Traits', type: 'traits', val: it => (it.rec && it.rec.tr) || []};
+const FX_LEG = {k: 'leg', type: 'toggle', text: 'Hide legacy printings renamed in the remaster', def: true, test: it => !(it.rec && it.rec.leg)};
+const fxSrc = items => { const c = countVals(items, it => it.rec && it.rec.src); return {k: 'src', label: 'Source', type: 'select', opts: [...c.keys()].sort().map(v => [v, `${v} (${c.get(v)})`]), val: it => (it.rec && it.rec.src) || ''}; };
+const fxLv = (label, lo, hi, min = 0, max = 25) => ({k: 'lv', label, type: 'range', min, max, def: [lo, hi], val: it => it.rec && it.rec.lv});
+const fxGrade = () => ({k: 'gr', label: 'Compendium grade', type: 'chips', opts: [...'SABCDF'].map(x => [x, x]).concat([['none', 'Not graded']]), cls: v => v === 'none' ? '' : 'g-' + v, val: it => it.gr ? it.gr[0] : 'none'});
+const fxActs = get => ({k: 'act', label: 'Actions', type: 'chips', opts: [['1', act('1')], ['2', act('2')], ['3', act('3')], ['reaction', act('reaction') + ' Reaction'], ['free', act('free') + ' Free'], ['long', 'Longer'], ['passive', 'No action']], val: it => actCodes(get(it))});
+const SO_NAME = ['name', 'Name', (a, b) => a.label.localeCompare(b.label), true];
+const SO_LV = ['lv', 'Level, lowest first', (a, b) => ((a.rec && a.rec.lv) || 0) - ((b.rec && b.rec.lv) || 0)];
+const SO_LVD = ['lv-', 'Level, highest first', (a, b) => ((b.rec && b.rec.lv) || 0) - ((a.rec && a.rec.lv) || 0)];
+const SO_GR = ['grade', 'Compendium grade', (a, b) => gOrd(a.gr) - gOrd(b.gr)];
+const fxClone = o => JSON.parse(JSON.stringify(o));
+function fxDefaults(spec, sorts, init = {}) {
+  const st = {q: '', sel: {}, rng: {}, tog: {}, tr: [], tm: 'any', sort: sorts.length ? sorts[0][0] : '', open: false};
+  for (const f of spec) {
+    if (f.type === 'chips' || f.type === 'select') st.sel[f.k] = f.def || [];
+    if (f.type === 'range') st.rng[f.k] = f.def || [f.min, f.max];
+    if (f.type === 'toggle') st.tog[f.k] = !!f.def;
+  }
+  return Object.assign(st, fxClone(init));
+}
+function fxMatch(spec, st, it) {
+  for (const f of spec) {
+    if (f.type === 'chips' || f.type === 'select') {
+      const s = st.sel[f.k];
+      if (s && s.length) { const vs = [].concat(f.val(it)).map(String); if (!vs.some(v => s.includes(v))) return false; }
+    } else if (f.type === 'range') {
+      const v = f.val(it), [lo, hi] = st.rng[f.k];
+      if (v != null && (v < lo || v > hi)) return false;
+    } else if (f.type === 'toggle') {
+      if (st.tog[f.k] && !f.test(it)) return false;
+    } else if (f.type === 'traits' && st.tr.length) {
+      const t = f.val(it) || [];
+      if (st.tm === 'all' ? !st.tr.every(x => t.includes(x)) : !st.tr.some(x => t.includes(x))) return false;
+    }
+  }
+  return true;
+}
+function fxHTML(spec, st, sorts, title = 'Filters and sorting') {
+  const rows = spec.filter(f => f.type !== 'toggle').map(f => {
+    let c = '';
+    if (f.type === 'chips') c = f.opts.map(([v, l, t]) => { const on = (st.sel[f.k] || []).includes(v); return `<button type="button" class="chip mini${on ? ' on' : ''}${f.cls && f.cls(v) ? ' ' + f.cls(v) : ''}" data-fk="${f.k}" data-v="${esc(v)}" aria-pressed="${on}"${t ? ` title="${esc(t)}"` : ''}>${l}</button>`; }).join('');
+    else if (f.type === 'select') c = `<select data-fs="${f.k}" aria-label="${esc(f.label)}"><option value="">Any</option>${f.opts.map(([v, l]) => `<option value="${esc(v)}"${(st.sel[f.k] || [])[0] === v ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
+    else if (f.type === 'range') { const [lo, hi] = st.rng[f.k]; c = `<span class="cs-range"><input type="number" data-fr="${f.k}" data-e="0" min="${f.min}" max="${f.max}" value="${lo}" aria-label="${esc(f.label)}, lowest"> to <input type="number" data-fr="${f.k}" data-e="1" min="${f.min}" max="${f.max}" value="${hi}" aria-label="${esc(f.label)}, highest"></span>`; }
+    else if (f.type === 'traits') c = `<div class="cs-tsel"><button type="button" class="chip mini" data-tt="1" aria-expanded="false">Choose traits ▾</button><span class="cs-tpills"></span><div class="cs-tpanel" hidden><div class="cs-thead"><input type="search" class="cs-tq" placeholder="Find a trait" aria-label="Find a trait"><span class="cs-tmode" role="group" aria-label="How to match traits"><button type="button" class="chip mini${st.tm !== 'all' ? ' on' : ''}" data-tm="any" title="Has any of the chosen traits">Any</button><button type="button" class="chip mini${st.tm === 'all' ? ' on' : ''}" data-tm="all" title="Has all of the chosen traits">All</button></span></div><div class="cs-tlist"></div></div></div>`;
+    return `<div class="cs-fr"${f.hint ? ` title="${esc(f.hint)}"` : ''}><span class="cs-fl">${esc(f.label)}</span><div class="cs-fc">${c}</div></div>`;
+  }).join('');
+  const togs = spec.filter(f => f.type === 'toggle').map(f => `<label class="cs-tog"><input type="checkbox" data-ft="${f.k}"${st.tog[f.k] ? ' checked' : ''}> ${esc(f.text)}</label>`).join('');
+  const sort = sorts.length > 1 ? `<div class="cs-fr"><span class="cs-fl">Sort</span><div class="cs-fc"><select data-fsort aria-label="Sort by">${sorts.map(([k, l]) => `<option value="${k}"${st.sort === k ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></div></div>` : '';
+  return `<details class="cs-fx"${st.open ? ' open' : ''}><summary><span class="cs-fxh">${esc(title)}</span><span class="cs-fxn"></span></summary><div class="cs-fxb">${rows}${togs ? `<div class="cs-fr"><span class="cs-fl">Show</span><div class="cs-fc">${togs}</div></div>` : ''}${sort}<div class="cs-fr"><span class="cs-fl"></span><div class="cs-fc"><button type="button" class="chip mini" data-fclear="1">Clear filters</button></div></div></div></details>`;
+}
+// wires the controls in box to st; redraw() is called after every change
+function fxBind(box, spec, st, defs, items, sorts, redraw) {
+  const host = () => box.querySelector('.cs-fx');
+  const tf = spec.find(f => f.type === 'traits');
+  const tcount = tf ? countVals(items, tf.val) : new Map();
+  const tnames = [...tcount.keys()].sort();
+  // the summary line names every filter in force, including the defaults, so a closed panel still shows them
+  const strip = h => String(h).replace(/<[^>]+>/g, '').trim();
+  const changed = () => {
+    const parts = [];
+    for (const f of spec) {
+      if ((f.type === 'chips' || f.type === 'select') && (st.sel[f.k] || []).length) parts.push(st.sel[f.k].map(v => { const o = f.opts.find(x => x[0] === v); return o ? strip(o[1]).replace(/ \(\d+\)$/, '') || v : v; }).join(' or '));
+      else if (f.type === 'range' && (st.rng[f.k][0] !== f.min || st.rng[f.k][1] !== f.max)) parts.push(`${f.label} ${st.rng[f.k][0]}–${st.rng[f.k][1]}`);
+      else if (f.type === 'toggle' && st.tog[f.k]) parts.push(f.text);
+      else if (f.type === 'traits' && st.tr.length) parts.push(st.tr.join(st.tm === 'all' ? ' and ' : ' or '));
+    }
+    const el = box.querySelector('.cs-fxn'); if (el) { el.textContent = parts.length ? parts.join(' · ') : 'None'; el.title = el.textContent; }
+  };
+  const pills = () => {
+    const p = box.querySelector('.cs-tpills'); if (!p) return;
+    p.innerHTML = st.tr.map(t => `<button type="button" class="chip mini on" data-trx="${esc(t)}" title="Remove this trait">${esc(t.replace(/-/g, ' '))} ×</button>`).join('');
+    const b = box.querySelector('[data-tt]'); if (b) b.firstChild.textContent = st.tr.length ? `Traits (${st.tm === 'all' ? 'all of' : 'any of'} ${st.tr.length}) ▾` : 'Choose traits ▾';
+  };
+  const tlist = () => {
+    const l = box.querySelector('.cs-tlist'); if (!l) return;
+    const q = (box.querySelector('.cs-tq').value || '').trim().toLowerCase();
+    const ns = tnames.filter(t => !q || t.includes(q));
+    l.innerHTML = ns.slice(0, 300).map(t => `<label class="cs-topt"><input type="checkbox" value="${esc(t)}"${st.tr.includes(t) ? ' checked' : ''}><span>${esc(t.replace(/-/g, ' '))}</span><span class="tn">${tcount.get(t)}</span></label>`).join('') || '<p class="small muted">No trait matches.</p>';
+  };
+  const go = () => { changed(); redraw(); };
+  box.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b || !host() || !host().contains(b)) return;
+    if (b.dataset.fk) {
+      const f = spec.find(x => x.k === b.dataset.fk), s = st.sel[f.k] = st.sel[f.k] || [], v = b.dataset.v, i = s.indexOf(v);
+      if (f.single) st.sel[f.k] = i >= 0 ? [] : [v]; else if (i >= 0) s.splice(i, 1); else s.push(v);
+      host().querySelectorAll(`[data-fk="${f.k}"]`).forEach(x => { const on = st.sel[f.k].includes(x.dataset.v); x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
+      go(); return;
+    }
+    if (b.dataset.tt) { const p = box.querySelector('.cs-tpanel'); p.hidden = !p.hidden; b.setAttribute('aria-expanded', !p.hidden); if (!p.hidden) { tlist(); box.querySelector('.cs-tq').focus({preventScroll: true}); } return; }
+    if (b.dataset.tm) { st.tm = b.dataset.tm; box.querySelectorAll('[data-tm]').forEach(x => x.classList.toggle('on', x === b)); pills(); go(); return; }
+    if (b.dataset.trx) { st.tr = st.tr.filter(t => t !== b.dataset.trx); pills(); tlist(); go(); return; }
+    if (b.dataset.fclear) {
+      const keepQ = st.q, open = st.open;
+      Object.keys(st).forEach(k => delete st[k]); Object.assign(st, fxClone(defs), {q: keepQ, open});
+      host().outerHTML = fxHTML(spec, st, sorts); pills(); go();
+    }
+  });
+  box.addEventListener('input', e => {
+    const t = e.target;
+    if (t.classList.contains('cs-tq')) { tlist(); return; }
+    if (t.dataset.fr != null) { const f = spec.find(x => x.k === t.dataset.fr), v = Number(t.value); if (t.value === '' || isNaN(v)) return; st.rng[f.k][+t.dataset.e] = v; go(); }
+  });
+  box.addEventListener('change', e => {
+    const t = e.target; if (!host() || !host().contains(t)) return;
+    if (t.dataset.fs != null) { st.sel[t.dataset.fs] = t.value ? [t.value] : []; go(); }
+    else if (t.dataset.ft != null) { st.tog[t.dataset.ft] = t.checked; go(); }
+    else if (t.dataset.fsort != null) { st.sort = t.value; go(); }
+    else if (t.closest('.cs-tlist')) { const v = t.value; st.tr = t.checked ? [...new Set([...st.tr, v])] : st.tr.filter(x => x !== v); pills(); go(); }
+  });
+  box.addEventListener('toggle', e => { if (e.target.classList && e.target.classList.contains('cs-fx')) st.open = e.target.open; }, true);
+  pills(); changed();
+}
+// filter, search and sort; search matches the name, traits and source, every word in any order
+function fxApply(items, spec, st, sorts, extra) {
+  const toks = String(st.q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const m = items.filter(it => {
+    if (it.hay == null) it.hay = [it.label, ...((it.rec && it.rec.tr) || []), (it.rec && it.rec.src) || '', it.hayx || ''].join(' ').toLowerCase().replace(/-/g, ' ');
+    return toks.every(t => it.hay.includes(t.replace(/-/g, ' '))) && fxMatch(spec, st, it) && (!extra || extra(it));
+  });
+  const so = sorts.find(s => s[0] === st.sort) || sorts[0];
+  if (so) m.sort((a, b) => so[2](a, b) || a.label.localeCompare(b.label));
+  if (toks.length && (!so || so[3])) m.sort((a, b) => a.label.toLowerCase().startsWith(toks[0]) ? (b.label.toLowerCase().startsWith(toks[0]) ? 0 : -1) : (b.label.toLowerCase().startsWith(toks[0]) ? 1 : 0));
+  return m;
+}
+
 // ───────── pickers ─────────
 function picker(title, kicker, items, onPick, opts = {}) {
   const box = document.createElement('div');
   box.className = 'cs-picker';
-  box.innerHTML = `<label class="search"><input type="search" placeholder="Search" aria-label="Search"></label>${opts.filters || ''}<p class="small muted cs-pc"></p><ul class="cs-plist"></ul>`;
+  const spec = opts.facets || [], sorts = opts.sorts || [SO_NAME];
+  const key = opts.key || 'picker:' + title;
+  const defs = fxDefaults(spec, sorts, opts.init || {});
+  const st = FX[key] || (FX[key] = fxClone(defs));
+  box.innerHTML = `<label class="search"><input type="search" placeholder="${esc(opts.placeholder || 'Search names, traits and sources')}" aria-label="Search" value="${esc(st.q || '')}"></label>${opts.filters || ''}${spec.length || sorts.length > 1 ? fxHTML(spec, st, sorts) : ''}<p class="small muted cs-pc"></p><ul class="cs-plist"></ul>`;
   const q = box.querySelector('input'), list = box.querySelector('.cs-plist'), count = box.querySelector('.cs-pc');
   let lim = 150;
   const draw = () => {
-    const s = q.value.trim().toLowerCase();
-    const m = items.filter(it => (!s || it.label.toLowerCase().includes(s)) && (!opts.filter || opts.filter(it, box)));
-    if (s) m.sort((a, b) => (b.label.toLowerCase().startsWith(s) - a.label.toLowerCase().startsWith(s)));
-    count.textContent = m.length + ' to choose from';
-    list.innerHTML = m.slice(0, lim).map(it => `<li><button type="button" class="chip mini" data-i="${items.indexOf(it)}">${esc(opts.verb || 'Choose')}</button>${opts.verb2 ? `<button type="button" class="chip mini" data-i2="${items.indexOf(it)}">${esc(opts.verb2)}</button>` : ''}<span class="n">${it.rec ? g(it.rec, it.label) + legTag(it.rec) : esc(it.label)}</span>${it.sub ? `<small>${it.sub}</small>` : ''}</li>`).join('')
-      + (m.length > lim ? `<li><button type="button" class="chip" data-more="1">Show more</button></li>` : '');
+    st.q = q.value;
+    const m = fxApply(items, spec, st, sorts, opts.filter ? it => opts.filter(it, box) : null);
+    count.textContent = `${m.length.toLocaleString()} to choose from` + (m.length < items.length ? ` (of ${items.length.toLocaleString()})` : '');
+    list.innerHTML = m.slice(0, lim).map(it => `<li><button type="button" class="chip mini" data-i="${items.indexOf(it)}">${esc(opts.verb || 'Choose')}</button>${opts.verb2 ? `<button type="button" class="chip mini" data-i2="${items.indexOf(it)}">${esc(opts.verb2)}</button>` : ''}<span class="n">${it.rec ? g(it.rec, it.label) + legTag(it.rec) : esc(it.label)}${grBadge(it.gr)}${it.tag || ''}</span>${it.sub ? `<small>${it.sub}</small>` : ''}</li>`).join('')
+      + (m.length > lim ? `<li><button type="button" class="chip" data-more="1">Show more</button></li>` : '')
+      + (m.length ? '' : '<li class="muted">Nothing matches. Clear a filter or widen the search.</li>');
   };
   let t;
   q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { lim = 150; draw(); }, 120); });
   // the search box redraws on input; a change event from it (fired when it loses focus to a Choose button) must not
   // redraw the list under the pointer, or the click is lost
-  box.addEventListener('change', e => { if (e.target !== q) draw(); });
+  box.addEventListener('change', e => { if (e.target !== q && !e.target.closest('.cs-fx')) draw(); });
+  fxBind(box, spec, st, defs, items, sorts, () => { lim = 150; draw(); });
   box.addEventListener('click', e => {
     const b = e.target.closest('button');
-    if (!b) return;
+    if (!b || b.closest('.cs-fx')) return;
     if (b.dataset.more) { lim += 150; draw(); return; }
-    if (b.dataset.i != null) { onPick(items[+b.dataset.i], 1); if (!opts.keepOpen) A.popPanel(); else toast('Added ' + items[+b.dataset.i].label + '.'); }
+    if (b.dataset.i != null) { onPick(items[+b.dataset.i], 1); if (!opts.keepOpen) A.popPanel(); else { toast('Added ' + items[+b.dataset.i].label + '.'); if (opts.redrawOnPick) { opts.redrawOnPick(items[+b.dataset.i]); draw(); } } }
     if (b.dataset.i2 != null) { onPick(items[+b.dataset.i2], 2); if (!opts.keepOpen) A.popPanel(); }
   });
   draw();
@@ -917,55 +1086,100 @@ function picker(title, kicker, items, onPick, opts = {}) {
   setTimeout(() => q.focus({preventScroll: true}), 50);
 }
 const recSub = r => [r.lv != null ? (r.t === 'spell' ? ((r.tr || []).includes('cantrip') ? 'Cantrip' : 'Rank ' + r.lv) : 'Level ' + r.lv) : '', (r.tr || []).filter(t => !['general', 'skill'].includes(t)).slice(0, 5).join(', '), r.src || '', r.leg ? 'renamed in the remaster as ' + r.now : ''].filter(Boolean).map(esc).join(' · ');
+const ATTR_OPTS = ATTRS.map(a => [a, ATTR_NAME[a] || a]);
+const SKILL_LIST = ['acrobatics', 'arcana', 'athletics', 'crafting', 'deception', 'diplomacy', 'intimidation', 'medicine', 'nature', 'occultism', 'performance', 'religion', 'society', 'stealth', 'survival', 'thievery'];
 function pickDeity() {
   const rs = Object.values(db.e).filter(r => r.t === 'deity');
-  const pans = [...new Set(rs.filter(r => r.fr).map(r => r.pan))];
+  const pans = [...new Set(rs.filter(r => r.fr).map(r => r.pan))].sort();
   const items = rs.map(r => ({label: r.n, rec: r, fr: !!r.fr, pan: r.pan || '',
     sub: r.fr ? esc(`${cap(r.title || '')} · ${r.pan} · Forgotten Realms, proposed conversion`) : recSub(r)}))
     .sort((a, b) => a.label.localeCompare(b.label));
-  const filters = `<label class="cs-field inl"><span>Show</span><select class="f-dei"><option value="fr">Forgotten Realms deities</option>${pans.map(p => `<option value="${esc(p)}">${esc(p)}</option>`).join('')}<option value="pf">Pathfinder deities</option><option value="all">All deities</option></select></label>`;
-  picker('Choose a deity', 'Build', items, it => { ch.deity = it.rec.k; commit(); },
-    {filters, filter: (it, box) => { const v = box.querySelector('.f-dei').value; return v === 'all' || (v === 'fr' ? it.fr : v === 'pf' ? !it.fr : it.pan === v); }});
+  const doms = [...countVals(items, it => [...((it.rec.domains || {}).primary || []), ...((it.rec.domains || {}).alternate || [])]).keys()].sort();
+  const facets = [
+    {k: 'set', label: 'Setting', type: 'select', opts: [['fr', 'Forgotten Realms deities'], ...pans.map(p => ['pan:' + p, p]), ['pf', 'Pathfinder deities']], def: ['fr'], val: it => it.fr ? ['fr', 'pan:' + it.pan] : ['pf']},
+    {k: 'font', label: 'Divine font', type: 'chips', opts: [['heal', 'Heal'], ['harm', 'Harm']], val: it => it.rec.font || []},
+    {k: 'sanct', label: 'Sanctification', type: 'chips', opts: [['holy', 'Holy'], ['unholy', 'Unholy'], ['none', 'None']], val: it => ((it.rec.sanct || {}).what || []).length ? it.rec.sanct.what : ['none']},
+    {k: 'dom', label: 'Domain', type: 'select', opts: fxOpts(doms), val: it => [...((it.rec.domains || {}).primary || []), ...((it.rec.domains || {}).alternate || [])]},
+    {k: 'sk', label: 'Divine skill', type: 'chips', opts: fxOpts(SKILL_LIST), val: it => it.rec.skill || []},
+    fxSrc(items)];
+  picker('Choose a deity', 'Build', items, it => { ch.deity = it.rec.k; commit(); }, {key: 'deity', facets, sorts: [SO_NAME]});
 }
 function pickOrigin(kind) {
   if (kind === 'deity') return pickDeity();
   let rs = Object.values(db.e).filter(r => r.t === kind);
   if (kind === 'heritage') { const a = res.S.anc; rs = rs.filter(r => !r.anc || (a && r.anc === a.sl)); }
   const items = rs.map(r => ({label: r.n, rec: r, sub: recSub(r) + (kind === 'heritage' && !r.anc ? ' · versatile heritage' : '')})).sort((a, b) => a.label.localeCompare(b.label));
+  const boostVal = it => [...new Set((it.rec.boosts || []).filter(b => b.length < 6).flat())];
+  const facets = [];
+  if (kind === 'class') facets.push({k: 'key', label: 'Key attribute', type: 'chips', opts: ATTR_OPTS, val: it => it.rec.key || []},
+    {k: 'sc', label: 'Spellcasting', type: 'chips', opts: [['1', 'Spellcaster'], ['0', 'No spellcasting']], val: it => String(it.rec.sc ? 1 : 0)},
+    {k: 'hp', label: 'Hit Points', type: 'chips', opts: [['6', '6'], ['8', '8'], ['10', '10'], ['12', '12']], val: it => String(it.rec.hp)});
+  if (kind === 'ancestry') facets.push({k: 'boost', label: 'Attribute boost', type: 'chips', opts: ATTR_OPTS, val: boostVal},
+    {k: 'hp', label: 'Hit Points', type: 'chips', opts: [['6', '6'], ['8', '8'], ['10', '10'], ['12', '12']], val: it => String(it.rec.hp)},
+    {k: 'size', label: 'Size', type: 'chips', opts: [['tiny', 'Tiny'], ['sm', 'Small'], ['med', 'Medium'], ['lg', 'Large']], val: it => it.rec.size || ''},
+    {k: 'vis', label: 'Vision', type: 'chips', opts: [['normal', 'Normal'], ['low-light-vision', 'Low-light'], ['darkvision', 'Darkvision']], val: it => it.rec.vision || 'normal'});
+  if (kind === 'background') facets.push({k: 'boost', label: 'Attribute boost', type: 'chips', opts: ATTR_OPTS, val: boostVal},
+    {k: 'sk', label: 'Trained skill', type: 'chips', opts: fxOpts(SKILL_LIST), val: it => ((it.rec.skills || {}).value) || []});
+  if (kind === 'heritage') facets.push({k: 'vh', label: 'Heritage', type: 'chips', opts: [['own', 'For this ancestry'], ['versatile', 'Versatile']], val: it => it.rec.anc ? 'own' : 'versatile'});
+  facets.push(FX_RAR, FX_TR, fxSrc(items), FX_LEG);
   picker('Choose ' + (kind === 'class' ? 'a class' : kind === 'ancestry' ? 'an ancestry' : 'a ' + kind), 'Build', items, it => {
     ch[kind] = it.rec.k;
     if (kind === 'ancestry') { ch.heritage = null; ch.boosts.ancestry = []; }
     if (kind === 'background') ch.boosts.background = [];
     if (kind === 'class') { ch.boosts.class = null; ch.spells.entries = (ch.spells.entries || []).filter(e => e.id !== 'class'); }
     commit();
-  });
+  }, {key: 'origin:' + kind, facets, sorts: [SO_NAME, ['rar', 'Rarity', (a, b) => FX_RAR.opts.findIndex(o => o[0] === FX_RAR.val(a)) - FX_RAR.opts.findIndex(o => o[0] === FX_RAR.val(b))]]});
 }
 function pickFeat(slotId) {
   const slot = res.slots.find(s => s.id === slotId) || {id: slotId, lv: Number(slotId.split('-').pop()) || 1, kind: slotId.split('-')[0]};
   const rs = eng.featOptions(res, slot);
   const taken = new Set(Object.entries(ch.feats).filter(([k]) => k !== slotId).map(([, f]) => f && f.k));
+  const own = res.S.cls ? res.S.cls.sl : '';
   const items = rs.map(r => {
     const bad = eng.prereqs(res, r).some(p => p.ok === false);
-    return {label: r.n, rec: r, sub: recSub(r) + (r.pre ? ` · <span class="${bad ? 'cs-warn' : ''}">${esc(r.pre.join('; '))}</span>` : '') + (taken.has(r.k) && !r.max ? ' · already taken' : ''), bad};
+    return {label: r.n, rec: r, gr: gradeOf('ft', r), bad, taken: taken.has(r.k) && !r.max, hayx: (r.pre || []).join(' '),
+      sub: recSub(r) + (r.pre ? ` · <span class="${bad ? 'cs-warn' : ''}">${esc(r.pre.join('; '))}</span>` : '') + (taken.has(r.k) && !r.max ? ' · already taken' : '')};
   });
-  const own = res.S.cls ? res.S.cls.sl : '';
-  items.sort((a, b) => ((b.rec.tr || []).includes(own) - (a.rec.tr || []).includes(own)) || ((b.rec.lv || 0) - (a.rec.lv || 0)) || a.label.localeCompare(b.label));
-  const filters = `<div class="cs-togs"><label class="cs-tog"><input type="checkbox" class="f-met" checked> Hide feats whose prerequisites aren't met</label></div>`;
+  const sug = (a, b) => ((b.rec.tr || []).includes(own) - (a.rec.tr || []).includes(own)) || (gOrd(a.gr) - gOrd(b.gr)) || ((b.rec.lv || 0) - (a.rec.lv || 0));
+  items.sort((a, b) => sug(a, b) || a.label.localeCompare(b.label));
+  const fcat = it => (it.rec.tr || []).includes('archetype') || (it.rec.tr || []).includes('dedication') ? 'archetype' : ['class', 'ancestry', 'skill', 'general'].includes(it.rec.cat) ? it.rec.cat : 'other';
+  const facets = [
+    fxLv('Level', 1, slot.lv, 1, 20),
+    {k: 'cat', label: 'Kind', type: 'chips', opts: [['class', 'Class'], ['archetype', 'Archetype'], ['ancestry', 'Ancestry'], ['skill', 'Skill'], ['general', 'General'], ['other', 'Other']], val: fcat},
+    fxActs(it => it.rec.act),
+    {k: 'sk', label: 'Skill in prerequisites', type: 'select', opts: fxOpts(SKILL_LIST), val: it => SKILL_LIST.filter(s => (it.rec.pre || []).join(' ').toLowerCase().includes(s))},
+    fxGrade(), FX_RAR, FX_TR, fxSrc(items),
+    {k: 'met', type: 'toggle', text: "Hide feats whose prerequisites aren't met", def: true, test: it => !it.bad},
+    {k: 'tk', type: 'toggle', text: 'Hide feats already taken', def: false, test: it => !it.taken},
+    FX_LEG];
+  if (FX['feat:' + slot.kind]) FX['feat:' + slot.kind].rng.lv = [Math.min(FX['feat:' + slot.kind].rng.lv[0], slot.lv), slot.lv];
   picker(slot.label || 'Choose a feat', 'Level ' + slot.lv, items, it => { ch.feats[slotId] = {k: it.rec.k}; commit(); },
-    {filters, filter: (it, box) => !(box.querySelector('.f-met').checked && it.bad)});
+    {key: 'feat:' + slot.kind, facets, init: {rng: {lv: [1, slot.lv]}}, sorts: [['sug', 'Suggested: own class, then grade, then level', sug, true], SO_NAME, SO_LVD, SO_LV, SO_GR]});
 }
 function pickChoice(uid, flag) {
   const p = res.pending.find(x => x.uid === uid && x.flag === flag);
   if (!p) return;
   const items = eng.choices(res.S, p).map(o => ({label: o.label, rec: o.rec, value: o.value, sub: o.rec ? recSub(o.rec) : ''}));
-  picker(p.prompt, p.item.r.n, items, it => { (ch.choices[uid] = ch.choices[uid] || {})[flag] = it.value; commit(); });
+  const recs = items.filter(it => it.rec).length > 12;
+  const facets = recs ? [FX_RAR, FX_TR, fxSrc(items), FX_LEG] : [];
+  if (recs && items.some(it => it.rec && it.rec.lv != null)) facets.unshift(fxLv('Level', 0, 25));
+  picker(p.prompt, p.item.r.n, items, it => { (ch.choices[uid] = ch.choices[uid] || {})[flag] = it.value; commit(); },
+    {key: 'choice:' + flag, facets, sorts: recs ? [SO_NAME, SO_LV, SO_LVD] : [SO_NAME]});
 }
 function addEffect(k) { const rounds = effectRounds(rec(k)); ch.effects[k] = rounds != null ? {on: true, rounds} : true; }
 function pickEffect() {
-  const items = Object.values(db.e).filter(r => r.t === 'effect').map(r => ({label: r.n.replace(/^(Effect|Spell Effect|Stance): /, ''), rec: r, sub: esc((r.n.match(/^(Effect|Spell Effect|Stance)/) || ['Effect'])[0]) + (r.src ? ' · ' + esc(r.src) : '') + (effectRounds(r) != null ? ` · ${effectRounds(r)} rounds` : '')}));
+  const kindOf = r => (r.n.match(/^(Effect|Spell Effect|Stance)/) || ['Effect'])[0];
+  const items = Object.values(db.e).filter(r => r.t === 'effect').map(r => ({label: r.n.replace(/^(Effect|Spell Effect|Stance): /, ''), rec: r, on: !!ch.effects[r.k], sub: esc(kindOf(r)) + (r.src ? ' · ' + esc(r.src) : '') + (effectRounds(r) != null ? ` · ${effectRounds(r)} rounds` : '')}));
   items.sort((a, b) => a.label.localeCompare(b.label));
-  picker('Add an effect', 'Sheet', items, it => { addEffect(it.rec.k); commit(); });
+  const unit = it => { const d = it.rec.dur || {}; return d.sustained ? 'sustained' : d.unit === 'unlimited' || d.value === -1 ? 'unlimited' : d.unit || 'other'; };
+  const facets = [
+    {k: 'kind', label: 'Kind', type: 'chips', opts: [['Spell Effect', 'Spell effects'], ['Effect', 'Other effects'], ['Stance', 'Stances']], val: it => kindOf(it.rec)},
+    {k: 'dur', label: 'Duration', type: 'chips', opts: [['rounds', 'Rounds'], ['minutes', 'Minutes'], ['hours', 'Hours'], ['days', 'Days'], ['sustained', 'Sustained'], ['unlimited', 'Unlimited'], ['encounter', 'Encounter']], val: unit},
+    fxLv('Level', 0, 25), FX_RAR, FX_TR, fxSrc(items),
+    {k: 'on', type: 'toggle', text: 'Hide effects already on', def: false, test: it => !ch.effects[it.rec.k]}];
+  picker('Add an effect', 'Sheet', items, it => { addEffect(it.rec.k); commit(); }, {key: 'effect', facets, sorts: [SO_NAME, SO_LV, SO_LVD, ['src', 'Source', (a, b) => (a.rec.src || '').localeCompare(b.rec.src || '')]]});
 }
+
 // ───────── item browser ─────────
 const isRune = r => /^etched/.test(r.use || '');
 const isStaff = r => (r.tr || []).includes('staff') || r.cat === 'wand';
@@ -984,7 +1198,10 @@ const ICATS = [
   ['backpack', 'Containers', r => r.t === 'backpack'],
   ['treasure', 'Treasure and kits', r => r.t === 'treasure' || r.t === 'kit'],
 ];
-const SORTS = [['name', 'Name'], ['lv', 'Level, lowest first'], ['lv-', 'Level, highest first'], ['cp', 'Price, lowest first'], ['cp-', 'Price, highest first']];
+const SORTS = [['name', 'Name'], ['lv', 'Level, lowest first'], ['lv-', 'Level, highest first'], ['cp', 'Price, lowest first'], ['cp-', 'Price, highest first'], ['bulk', 'Bulk, lightest first'], ['grade', 'Compendium grade']];
+const IB_SPEC = [Object.assign({}, FX_TR, {val: r => r.tr || []}), Object.assign(fxGrade(), {val: r => (gradeOf('it', r) || ['none'])[0]}),
+  {k: 'use', label: 'Worn or held', type: 'chips', opts: [['worn', 'Worn'], ['held', 'Held'], ['etched', 'Etched (runes)'], ['affixed', 'Affixed'], ['other', 'Other']], val: r => { const u = r.use || ''; return /^worn/.test(u) ? 'worn' : /^held|^carried/.test(u) ? 'held' : /^etched/.test(u) ? 'etched' : /^affixed/.test(u) ? 'affixed' : 'other'; }},
+  {k: 'src', label: 'Source', type: 'select', opts: [], val: r => r.src || ''}];
 const useText = u => u ? cap(String(u).replace(/^worn(?=[a-z])/, 'worn ').replace(/-/g, ' ').replace(/\b1\b/, 'one').replace(/\b2\b/, 'two')) : '';
 const bulkText = b => b === 0.1 ? 'L' : b ? String(b) : '—';
 let ib = null;
@@ -992,6 +1209,9 @@ function itemBrowser() {
   ib = ib || {q: '', cat: 'all', sub: '', lo: 0, hi: ch.level, afford: false, rar: '', leg: true, sort: 'name'};
   ib.hi = Math.max(ib.hi, 0);
   const all = Object.values(db.e).filter(r => ['weapon', 'armor', 'shield', 'equipment', 'consumable', 'treasure', 'backpack', 'kit', 'ammo'].includes(r.t));
+  if (!IB_SPEC[3].opts.length) { const c = countVals(all, r => r.src); IB_SPEC[3].opts = [...c.keys()].sort().map(v => [v, `${v} (${c.get(v)})`]); }
+  const ibDefs = fxDefaults(IB_SPEC, [], {open: false});
+  ib.fx = ib.fx || fxClone(ibDefs);
   const box = document.createElement('div');
   box.className = 'cs-ib';
   box.innerHTML = `<div class="cs-ibtop"><label class="search"><input type="search" class="f-q" placeholder="Search names and traits, such as fire potion" aria-label="Search items" value="${esc(ib.q)}"></label>
@@ -1002,7 +1222,7 @@ function itemBrowser() {
 <label class="cs-field inl"><span>Sort by</span><select class="f-sort">${SORTS.map(([k, l]) => `<option value="${k}"${ib.sort === k ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
 <label class="cs-tog"><input type="checkbox" class="f-aff"${ib.afford ? ' checked' : ''}> Only what I can afford</label>
 <label class="cs-tog"><input type="checkbox" class="f-leg"${ib.leg ? ' checked' : ''}> Include legacy printings</label></div>
-<p class="small muted cs-ibsum"></p></div><ul class="cs-iblist"></ul>`;
+${fxHTML(IB_SPEC, ib.fx, [], 'More filters')}<p class="small muted cs-ibsum"></p></div><ul class="cs-iblist"></ul>`;
   box.querySelector('.f-rar').value = ib.rar;
   const list = box.querySelector('.cs-iblist'), sum = box.querySelector('.cs-ibsum'), subSel = box.querySelector('.f-sub');
   let lim = 60, shown = [];
@@ -1027,9 +1247,10 @@ function itemBrowser() {
       && (!ib.rar || (r.rar || 'common') === ib.rar)
       && (ib.leg || !r.leg)
       && (!ib.afford || (r.cp || 0) <= purse)
+      && fxMatch(IB_SPEC, ib.fx, r)
       && toks.every(t => r.n.toLowerCase().includes(t) || (r.tr || []).some(x => x.includes(t)) || (r.cat || '').includes(t) || (r.grp || '') === t));
     const by = ib.sort.replace('-', ''), dir = ib.sort.endsWith('-') ? -1 : 1;
-    m.sort((a, b) => by === 'name' ? a.n.localeCompare(b.n) : ((a[by] || 0) - (b[by] || 0)) * dir || a.n.localeCompare(b.n));
+    m.sort((a, b) => by === 'name' ? a.n.localeCompare(b.n) : by === 'grade' ? (gOrd(gradeOf('it', a)) - gOrd(gradeOf('it', b))) || a.n.localeCompare(b.n) : ((a[by] || 0) - (b[by] || 0)) * dir || a.n.localeCompare(b.n));
     if (toks.length && ib.sort === 'name') m.sort((a, b) => (b.n.toLowerCase().startsWith(toks[0]) - a.n.toLowerCase().startsWith(toks[0])));
     shown = m;
     sum.textContent = `${m.length.toLocaleString()} item${m.length === 1 ? '' : 's'}. You have ${money(purse)}.`;
@@ -1037,7 +1258,7 @@ function itemBrowser() {
       const have = owned(r.k);
       const meta = [`Level ${r.lv || 0}`, r.cp ? money(r.cp) : 'No price', `Bulk ${bulkText(r.bulk)}`, useText(r.use), r.rar && r.rar !== 'common' ? cap(r.rar) : ''].filter(Boolean);
       const extra = r.t === 'weapon' && r.dmg ? `${r.dmg.dice || 1}${r.dmg.die} ${r.dmg.damageType || ''}${r.rng ? `, range ${r.rng} ft` : ''}, ${r.cat || ''} ${r.grp || ''}` : r.t === 'armor' ? `AC +${r.ac || 0}, Dex cap ${r.dex ?? '—'}, ${r.cat || ''}` : r.t === 'shield' ? `AC +${r.ac || 0}, Hardness ${r.hard || 0}, ${r.hp || 0} HP` : '';
-      return `<li class="cs-ires"><div class="t">${g(r)}${legTag(r)}${have ? `<span class="cs-badge">You have ${have}</span>` : ''}</div>
+      return `<li class="cs-ires"><div class="t">${g(r)}${legTag(r)}${grBadge(gradeOf('it', r))}${have ? `<span class="cs-badge">You have ${have}</span>` : ''}</div>
 <div class="m">${meta.map(x => `<span>${esc(x)}</span>`).join('')}</div>${extra ? `<div class="m">${esc(extra)}</div>` : ''}
 ${(r.tr || []).length ? `<div class="cs-trs">${r.tr.slice(0, 6).map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</div>` : ''}
 <div class="b"><label class="cs-qty"><span class="sr">Quantity</span><input type="number" min="1" value="1" inputmode="numeric" data-q="${j}" aria-label="Quantity"></label>
@@ -1054,7 +1275,8 @@ ${(r.tr || []).length ? `<div class="cs-trs">${r.tr.slice(0, 6).map(t => `<span 
   };
   let t;
   box.querySelector('.f-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(read, 120); });
-  box.addEventListener('change', e => { if (!e.target.matches('[data-q], .f-q')) read(); });
+  box.addEventListener('change', e => { if (!e.target.matches('[data-q], .f-q') && !e.target.closest('.cs-fx')) read(); });
+  fxBind(box, IB_SPEC, ib.fx, ibDefs, all, [], () => { lim = 60; draw(); });
   box.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     if (b.dataset.cat) { ib.cat = b.dataset.cat; box.querySelectorAll('[data-cat]').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); }); fillSub(); lim = 60; draw(); return; }
@@ -1141,22 +1363,43 @@ function receive(cp, note) {
   ch.coins.cp = (ch.coins.cp || 0) + cp % 10;
   ch.ledger.push({t: Date.now(), d: cp, note});
 }
+// spell facets shared by the add-a-spell panel and the Spellstrike chooser
+const spellDef = r => (r.tr || []).includes('attack') ? 'attack' : (r.dfn && r.dfn.save && r.dfn.save.statistic) || 'none';
+const spellArea = r => { const a = r.area && r.area.type; return !a ? 'none' : ['burst', 'cone', 'line', 'emanation'].includes(a) ? a : 'other'; };
+const spellDmg = r => [...new Set(Object.values(r.dmg || {}).map(d => d && d.t).filter(Boolean))];
+function spellFacets(items, get = it => it.rec) {
+  const dts = countVals(items, it => spellDmg(get(it)));
+  return {
+    def: {k: 'def', label: 'Defense', type: 'chips', opts: [['attack', 'Spell attack (AC)'], ['fortitude', 'Fortitude'], ['reflex', 'Reflex'], ['will', 'Will'], ['none', 'No roll']], val: it => spellDef(get(it))},
+    area: {k: 'area', label: 'Area', type: 'chips', opts: [['burst', 'Burst'], ['cone', 'Cone'], ['line', 'Line'], ['emanation', 'Emanation'], ['other', 'Other area'], ['none', 'No area']], val: it => spellArea(get(it)), hint: 'Expansive Spellstrike restores bursts, cones and lines'},
+    dmg: {k: 'dmg', label: 'Damage type', type: 'chips', opts: [...dts.keys()].sort().map(v => [v, esc(cap(v))]).concat([['none', 'No damage']]), val: it => { const d = spellDmg(get(it)); return d.length ? d : ['none']; }},
+    role: {k: 'role', label: 'Role', type: 'chips', opts: ROLE_NAMES.map((l, i) => [String(i), esc(l)]), hint: 'Rated 3 stars or more for that role on the Spells page', val: it => it.gr ? [...it.gr[1]].map((x, i) => +x >= 3 ? String(i) : null).filter(Boolean) : []},
+  };
+}
+const roleSorts = () => ROLE_NAMES.map((l, i) => [`role${i}`, `${l} rating`, (a, b) => (+((b.gr || [])[1] || '000000')[i]) - (+((a.gr || [])[1] || '000000')[i])]);
 function pickSpell(eid, max) {
   const e = ch.spells.entries.find(x => x.id === eid);
-  const items = Object.values(db.e).filter(r => r.t === 'spell' && !r.ritual).map(r => ({label: r.n, rec: r, sub: recSub(r) + ' · ' + esc((r.trad || []).join(', '))}));
-  items.sort((a, b) => a.label.localeCompare(b.label));
-  const filters = `<div class="cs-inline"><label class="cs-tog"><input type="checkbox" class="f-trad" checked> ${cap(e.trad)} spells only</label>
-<label class="cs-tog"><input type="checkbox" class="f-rank" checked> Rank ${max} or lower</label><select class="f-kind" aria-label="Kind"><option value="">Any</option><option value="cantrip">Cantrips</option><option value="focus">Focus spells</option><option value="spell">Other spells</option></select></div>`;
-  picker('Add a spell', e.name, items, it => { e.known = e.known || []; if (!e.known.includes(it.rec.k)) e.known.push(it.rec.k); commit(); }, {verb: 'Add', keepOpen: true, filters, filter: (it, box) => {
-    const r = it.rec, tr = r.tr || [];
-    if (box.querySelector('.f-trad').checked && !(r.trad || []).includes(e.trad) && !tr.includes('focus')) return false;
-    if (box.querySelector('.f-rank').checked && (r.lv || 1) > Math.max(1, max) && !tr.includes('cantrip')) return false;
-    const k = box.querySelector('.f-kind').value;
-    if (k === 'cantrip' && !tr.includes('cantrip')) return false;
-    if (k === 'focus' && !tr.includes('focus')) return false;
-    if (k === 'spell' && (tr.includes('cantrip') || tr.includes('focus'))) return false;
-    return true;
-  }});
+  const known = () => new Set(e.known || []);
+  const items = Object.values(db.e).filter(r => r.t === 'spell' && !r.ritual).map(r => ({label: r.n, rec: r, gr: gradeOf('sp', r), hayx: [spellArea(r), spellDef(r), ...spellDmg(r)].join(' '), sub: recSub(r) + ' · ' + esc((r.trad || []).join(', '))}));
+  const isC = r => (r.tr || []).includes('cantrip'), isF = r => (r.tr || []).includes('focus');
+  const sf = spellFacets(items);
+  const TRADS = ['arcane', 'divine', 'occult', 'primal'];
+  const facets = [
+    {k: 'rank', label: 'Rank', type: 'chips', opts: [['0', 'Cantrip'], ...Array.from({length: 10}, (_, i) => [String(i + 1), String(i + 1)])], cls: () => 'rk', val: it => isC(it.rec) ? '0' : String(it.rec.lv || 1)},
+    {k: 'kind', label: 'Kind', type: 'chips', opts: [['cantrip', 'Cantrips'], ['focus', 'Focus spells'], ['spell', 'Other spells']], val: it => [isC(it.rec) ? 'cantrip' : '', isF(it.rec) ? 'focus' : '', !isC(it.rec) && !isF(it.rec) ? 'spell' : ''].filter(Boolean)},
+    {k: 'trad', label: 'Tradition', type: 'chips', opts: TRADS.map(t => [t, cap(t)]), def: TRADS.includes(e.trad) ? [e.trad] : [], hint: 'Focus spells belong to no tradition and always match', val: it => (it.rec.trad || []).length ? it.rec.trad : TRADS},
+    fxActs(it => it.rec.time), sf.def, sf.area, sf.dmg, sf.role, fxGrade(), FX_RAR, FX_TR, fxSrc(items),
+    {k: 'cast', type: 'toggle', text: `Rank ${Math.max(1, max)} or lower`, def: true, test: it => isC(it.rec) || (it.rec.lv || 1) <= Math.max(1, max)},
+    {k: 'ss', type: 'toggle', text: 'Works with Spellstrike', def: false, test: it => ssEligible(it.rec)},
+    {k: 'kn', type: 'toggle', text: 'Hide spells already added', def: false, test: it => !known().has(it.rec.k)},
+    FX_LEG];
+  const sorts = [SO_NAME, ['rank', 'Rank, lowest first', (a, b) => (isC(a.rec) ? 0 : a.rec.lv || 1) - (isC(b.rec) ? 0 : b.rec.lv || 1)], ['rank-', 'Rank, highest first', (a, b) => (isC(b.rec) ? 0 : b.rec.lv || 1) - (isC(a.rec) ? 0 : a.rec.lv || 1)],
+    SO_GR, ...roleSorts(), ['act', 'Action cost', (a, b) => actCost(a.rec.time) - actCost(b.rec.time)], ['def', 'Defense', (a, b) => spellDef(a.rec).localeCompare(spellDef(b.rec))]];
+  for (const it of items) it.tag = '';
+  const mark = () => { const kn = known(); for (const it of items) it.tag = kn.has(it.rec.k) ? ' <span class="cs-badge">Added</span>' : ''; };
+  mark();
+  picker('Add a spell', e.name, items, it => { e.known = e.known || []; if (!e.known.includes(it.rec.k)) e.known.push(it.rec.k); commit(); },
+    {verb: 'Add', keepOpen: true, key: 'spell:' + eid, facets, sorts, redrawOnPick: mark, placeholder: 'Search names, traits and sources, such as fire cone'});
 }
 function runesPanel(id) {
   const inv = ch.inventory.find(i => i.id === id); if (!inv) return;
