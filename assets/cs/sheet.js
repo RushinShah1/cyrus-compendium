@@ -738,7 +738,7 @@ function tabInventory() {
   const row = inv => {
     const r = eng.invRec(inv); if (!r) return '';
     const name = inv.custom ? inv.custom.n : inv.name || r.n;
-    const canInvest = (r.tr || []).includes('invested');
+    const canInvest = eng.needsInvest(r, inv);
     const runes = (r.t === 'weapon' || r.t === 'armor' || r.t === 'shield') ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(inv.id)}">Runes${runeSummary(r, inv)}</button>` : '';
     const use = r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(inv.id)}">Use one</button>` : '';
     const meta = [typeLabel(r), `Level ${r.lv || 0}`, r.cp ? money(r.cp) : '', `Bulk ${bulkText(r.bulk)}`].filter(Boolean);
@@ -747,6 +747,7 @@ function tabInventory() {
 <div class="c"><span class="cs-qtyl">Quantity <span class="cs-step"><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(inv.id)}" data-d="1" aria-label="More">+</button></span></span>
 <select data-act="state" data-id="${esc(inv.id)}" aria-label="Where it is">${STATES.map(([k, l]) => `<option value="${k}"${(inv.eq || 'stowed') === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
 ${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" data-id="${esc(inv.id)}"${inv.inv ? ' checked' : ''}> Invested</label>` : ''}${runes}${use}
+${canInvest && !inv.inv && r.t === 'armor' && inv.eq === 'worn' ? '<span class="small muted">Not invested: the armour still gives its AC, but resilient and property runes do nothing until it is.</span>' : ''}
 ${inv.custom ? '' : `<button type="button" class="chip mini" data-act="sell" data-id="${esc(inv.id)}">Sell for ${money(Math.floor((r.cp || 0) / 2))}</button>`}<button type="button" class="chip mini" data-act="remove" data-id="${esc(inv.id)}">Remove</button></div></li>`;
   };
   const sec = (k, t) => groups[k].length ? `<h3>${t}</h3><ul class="cs-items">${groups[k].map(row).join('')}</ul>` : '';
@@ -1100,7 +1101,7 @@ function itemPanel(id) {
 <ul class="cs-gifts">${(c.gifts || []).map(gf => { const on = ch.level >= gf.lv; return `<li class="${on ? 'on' : ''}"><span class="lv">${gf.lv}</span><span>${gf.g ? `<a href="#" data-g="${esc(gf.g)}">${esc(gf.n)}</a>` : `<b>${esc(gf.n)}</b>`}<small>${esc(gf.kind)}</small>${gf.text ? `<small class="gt">${esc(gf.text)}</small>` : ''}</span><span class="st">${on ? 'Unlocked' : 'From level ' + gf.lv}</span></li>`; }).join('')}</ul>`;
     }
     const page = c && c.page ? `<p><a class="chip" href="#${esc(c.page)}" data-close-all="1">Open the ${esc(c.n)} page</a></p>` : '';
-    const canInvest = (r.tr || []).includes('invested');
+    const canInvest = eng.needsInvest(r, inv);
     const ctl = `<h3>On your sheet</h3><div class="cs-inline"><span class="cs-qtyl">Quantity <span class="cs-step"><button type="button" data-act="qty" data-id="${esc(id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(id)}" data-d="1" aria-label="More">+</button></span></span>
 <select data-act="state" data-id="${esc(id)}" aria-label="Where it is">${STATES.map(([k, l]) => `<option value="${k}"${(inv.eq || 'stowed') === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
 ${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" data-id="${esc(id)}"${inv.inv ? ' checked' : ''}> Invested</label>` : ''}

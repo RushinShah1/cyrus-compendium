@@ -482,6 +482,15 @@ class Engine {
       S.items.push(it);
       this.processGrants(S, it);
     }
+    // property runes on worn, invested armour apply their own rule elements (Sunweave's Perception bonus, for example)
+    for (const inv of ch.inventory || []) {
+      const r = this.invRec(inv); if (!r || r.t !== 'armor' || (inv.eq || 'stowed') !== 'worn' || !inv.inv) continue;
+      const R = Object.assign({property: []}, r.runes || {}, inv.runes || {});
+      for (const p of R.property || []) {
+        const rr = p && this.rec(this.armorRuneKey(p)); if (!rr) continue;
+        this.addItem(S, rr, 'inv:' + inv.id + '>rune:' + p, {lvl: rr.lv || 0, parent: 'inv:' + inv.id, granted: true});
+      }
+    }
     // effects and conditions switched on in the sheet
     for (const [k, v] of Object.entries(ch.effects || {})) {
       if (!v) continue;
@@ -510,6 +519,19 @@ class Engine {
         this.addItem(S, g, it.uid + '>' + g.k, {parent: it.uid, granted: true, lvl: it.lvl});
       }
     }
+  }
+  // 'greaterSunweave' -> 'eq:sunweave-greater'
+  armorRuneKey(p) {
+    const m = String(p).match(/^(lesser|moderate|greater|major|true)([A-Z].*)$/);
+    const kebab = x => x.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+    return m ? 'eq:' + kebab(m[2]) + '-' + m[1] : 'eq:' + kebab(p);
+  }
+  // armour with any rune has the invested trait (GM Core pg. 224); its item bonus to AC applies either way
+  needsInvest(r, inv) {
+    if ((r.tr || []).includes('invested')) return true;
+    if (r.t !== 'armor') return false;
+    const R = Object.assign({}, r.runes || {}, (inv && inv.runes) || {});
+    return !!(R.potency || R.resilient || (R.property || []).filter(Boolean).length);
   }
   itemActive(r, inv) {
     const st = inv.eq || 'stowed';
@@ -764,7 +786,9 @@ class Engine {
     out.saves = {};
     for (const [s, a] of Object.entries(SAVES)) {
       const r = sys.saves[s].rank;
-      out.saves[s] = this.stat(S, s[0].toUpperCase() + s.slice(1), [s, `${a}-based`, 'saving-throw', 'all', 'check'], [this.attrMod(S, a), this.profMod(S, r)]);
+      const sBase = [this.attrMod(S, a), this.profMod(S, r)];
+      if (S.armor && S.armor.runes.resilient && S.armor.inv.inv) sBase.push({label: ['', 'Resilient', 'Greater resilient', 'Major resilient'][S.armor.runes.resilient] || 'Resilient', value: S.armor.runes.resilient, type: 'item', slug: 'resilient', enabled: true});
+      out.saves[s] = this.stat(S, s[0].toUpperCase() + s.slice(1), [s, `${a}-based`, 'saving-throw', 'all', 'check'], sBase);
       out.saves[s].rank = r;
       out.saves[s].degree = S.degree.filter(d => d.sel === s || d.sel === 'saving-throw').map(d => d.from);
     }
