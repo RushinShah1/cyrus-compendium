@@ -976,3 +976,5 @@ details.cs-fx[open]>summary{border-bottom:1px solid var(--line)}
 .tx[aria-pressed="true"]{border-color:var(--damage);color:var(--damage)}
 .topt:has(.tx[aria-pressed="true"]) label span{text-decoration:line-through;color:var(--ink3)}
 .pill.neg{border-color:var(--damage)}
+
+.ev p+p{margin-top:.65em}
