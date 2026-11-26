@@ -109,7 +109,11 @@ function migrate(c) {
 }
 
 // ───────── compute and render ─────────
-function recompute() { res = eng.compute(ch); }
+function recompute() { res = eng.compute(ch); resPlan = null; }
+// the build computed at level 20, so choices on feats and features planned above the current level can be made now
+let resPlan = null;
+function planRes() { return resPlan || (resPlan = eng.compute(Object.assign(JSON.parse(JSON.stringify(ch)), {level: 20}))); }
+function findPending(uid, flag) { return res.pending.find(x => x.uid === uid && x.flag === flag) || planRes().pending.find(x => x.uid === uid && x.flag === flag); }
 function commit(rerender = true) { putChar(ch); recompute(); if (rerender) render(); }
 function toast(msg) {
   let t = document.querySelector('.cs-toast');
@@ -618,8 +622,8 @@ function origin(kind, label, r, extra) {
   return `<div class="cs-orig"><span class="l">${label}</span><span class="v">${r ? g(r) + (r.fr ? ' <span class="cs-badge">Forgotten Realms</span>' : '') : '<span class="muted">Not chosen</span>'}</span><button type="button" class="chip" data-act="pick-origin" data-k="${kind}">${r ? 'Change' : 'Choose'}</button>${extra || ''}</div>`;
 }
 const labelFor = (opts, v) => (opts.find(o => String(o.value) === String(v)) || {label: String(v)}).label;
-function choiceUI(p) {
-  const opts = eng.choices(res.S, p);
+function choiceUI(p, S = res.S) {
+  const opts = eng.choices(S, p);
   const cur = p.value;
   const curR = typeof cur === 'string' ? rec(cur) : null;
   const label = curR ? g(curR) : cur != null ? esc(labelFor(opts, cur)) : '<span class="muted">Not chosen</span>';
@@ -675,7 +679,8 @@ function tabBuild() {
   const slots = res.slots;
   const feats = ch.feats || {};
   const featuresAt = lv => cls ? cls.items.filter(x => x[0] === lv).map(x => rec(x[1])).filter(Boolean) : [];
-  const pendingFor = u => res.pending.filter(p => p.uid === u || p.uid.startsWith(u + '>'));
+  const pendingFor = (u, lv = 1) => (lv > L ? planRes() : res).pending.filter(p => p.uid === u || p.uid.startsWith(u + '>'));
+  const choiceAt = (p, lv) => choiceUI(p, lv > L ? planRes().S : res.S);
   let levels = '';
   for (let lv = 1; lv <= 20; lv++) {
     const here = slots.filter(s => s.lv === lv);
@@ -687,7 +692,7 @@ function tabBuild() {
     }
     if (fts.length) {
       parts.push(`<div class="cs-feat"><span class="l">Class features</span><span class="v">${fts.map(r => g(r)).join(', ')}</span></div>`);
-      for (const r of fts) for (const p of pendingFor('class>' + r.k)) parts.push(choiceUI(p));
+      for (const r of fts) for (const p of pendingFor('class>' + r.k, lv)) parts.push(choiceAt(p, lv));
     }
     for (const s of here) {
       if (s.kind === 'boost') continue;
@@ -703,7 +708,7 @@ function tabBuild() {
       if (r) { const pr = eng.prereqs(res, r).filter(p => p.ok === false); if (pr.length) warn = `<small class="cs-warn">Prerequisite not met: ${esc(pr.map(p => p.text).join('; '))}</small>`; }
       parts.push(`<div class="cs-feat"><span class="l">${esc(s.label)}</span><span class="v">${r ? g(r) + legTag(r) + ` <small>${r.lv || ''}</small>` : '<span class="muted">Empty</span>'}${warn}</span><button type="button" class="chip" data-act="pick-feat" data-s="${esc(s.id)}">${r ? 'Change' : 'Choose'}</button>${r ? `<button type="button" class="chip" data-act="clear-feat" data-s="${esc(s.id)}" aria-label="Remove">×</button>` : ''}</div>`);
       if (r && r.k === 'ft:additional-lore') parts.push(`<div class="cs-choice"><span class="l">Additional Lore: which Lore</span><input type="text" value="${esc(f.lore || '')}" placeholder="Academia" data-field="featlore" data-s="${esc(s.id)}" aria-label="Lore for Additional Lore"></div>`);
-      for (const p of pendingFor('feat:' + s.id)) parts.push(choiceUI(p));
+      for (const p of pendingFor('feat:' + s.id, lv)) parts.push(choiceAt(p, lv));
     }
     levels += `<section class="cs-lv${lv > L ? ' planned' : ''}"><h3>Level ${lv}${lv > L ? ' <small>planned</small>' : ''}</h3>${parts.join('')}</section>`;
   }
@@ -1157,9 +1162,9 @@ function pickFeat(slotId) {
     {key: 'feat:' + slot.kind, facets, init: {rng: {lv: [1, slot.lv]}}, sorts: [['sug', 'Suggested: own class, then grade, then level', sug, true], SO_NAME, SO_LVD, SO_LV, SO_GR]});
 }
 function pickChoice(uid, flag) {
-  const p = res.pending.find(x => x.uid === uid && x.flag === flag);
+  const p = findPending(uid, flag);
   if (!p) return;
-  const items = eng.choices(res.S, p).map(o => ({label: o.label, rec: o.rec, value: o.value, sub: o.rec ? recSub(o.rec) : ''}));
+  const items = eng.choices(res.pending.includes(p) ? res.S : planRes().S, p).map(o => ({label: o.label, rec: o.rec, value: o.value, sub: o.rec ? recSub(o.rec) : ''}));
   const recs = items.filter(it => it.rec).length > 12;
   const facets = recs ? [FX_RAR, FX_TR, fxSrc(items), FX_LEG] : [];
   if (recs && items.some(it => it.rec && it.rec.lv != null)) facets.unshift(fxLv('Level', 0, 25));
