@@ -967,3 +967,4 @@ details.cs-fx[open]>summary{border-bottom:1px solid var(--line)}
 .cs-plist .n .gr,.cs-ires .t .gr,.cs-sslist .t .gr{margin-left:6px;height:20px;min-width:20px;font-size:13px;vertical-align:1px}
 .cs-ss .cs-sslist li[hidden]{display:none}
 @media(max-width:560px){.cs-fr{grid-template-columns:minmax(0,1fr);gap:4px}.cs-fl{padding-top:0}}
+.pkh{font-size:15px;font-weight:600;color:var(--ink2);margin:14px 0 2px}
