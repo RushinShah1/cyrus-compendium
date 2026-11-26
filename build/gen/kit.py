@@ -222,7 +222,7 @@ def sort_bar(keys, bar_id=None, levels=3):
 
 def trait_dropdown(counts):
     tl = sorted(counts.items(), key=lambda kv: kv[0].lower())
-    topts = ''.join(f'<label class="topt" data-n="{H.escape(t.lower())}"><input type="checkbox" value="{H.escape(t.lower())}"><span>{H.escape(t)}</span><span class="tn">{n}</span></label>' for t, n in tl)
+    topts = ''.join(f'<div class="topt" data-n="{H.escape(t.lower())}"><label><input type="checkbox" value="{H.escape(t.lower())}"><span>{H.escape(t)}</span></label><span class="tn">{n}</span><button type="button" class="tx" data-x="{H.escape(t.lower())}" aria-pressed="false" aria-label="Exclude {H.escape(t)}">Exclude</button></div>' for t, n in tl)
     return (f'<div class="tsel"><button class="chip tbtn" type="button" aria-expanded="false">{ic("rules")}<span class="tlab">Choose traits</span><span class="caret" aria-hidden="true">▾</span></button>'
             f'<div class="tpanel" hidden><div class="thead"><label class="search tsearch">{ic("search")}<input type="search" placeholder="Find a trait" autocomplete="off"></label>'
             f'<div class="tmode" role="group" aria-label="How to match traits"><button class="chip mini on" type="button" data-tm="any">Any</button><button class="chip mini" type="button" data-tm="all">All</button></div></div>'

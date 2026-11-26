@@ -49,6 +49,30 @@ SLOT_LVL = {1: 1, 2: 3, 3: 5, 4: 7, 5: 9, 6: 11, 7: 13, 8: 15, 9: 17}
 missing = []
 
 
+_SHAPE = re.compile(r'type:(burst|cone|line)|\d+-foot (burst|cone|line)')
+_MULTI = re.compile(r'\b(two|three|four|five|six|[2-9])\s+\d+-foot[- ]burst', re.I)
+
+
+def spellstrike_areas(d, e):
+    """Area shapes the spell has when cast with 1 or 2 actions, which is what Spellstrike can deliver.
+
+    A spell whose area depends on the number of actions is read version by version. A spell that creates several
+    bursts is left out, because Expansive Spellstrike places a single burst."""
+    desc = (d.get('description') or {}).get('value', '') if d else ''
+    atxt = ' '.join(v for k, v in e['fields'] if k == 'Area').lower()
+    if _MULTI.search(re.sub(r'<[^>]+>', ' ', desc)) or _MULTI.search(atxt):
+        return set()
+    found = lambda t: {a or b for a, b in _SHAPE.findall(t)}
+    versions = dict(re.findall(r'<p>\s*<span class="action-glyph">([123])</span>(.*?)</p>', desc, flags=re.S))
+    if any(found(v) for v in versions.values()):
+        return set().union(*(found(v) for k, v in versions.items() if k in '12'))
+    shapes = found(desc) | found(atxt)
+    area = (d.get('area') or {}).get('type') if d else None
+    if area in ('burst', 'cone', 'line'):
+        shapes.add(area)
+    return shapes
+
+
 def badges(e, name):
     d = e['fdoc']['system'] if e.get('fdoc') else {}
     t = str((d.get('time') or {}).get('value', ''))
@@ -63,13 +87,12 @@ def badges(e, name):
             tr = tr + ['attack']
     out = []
     eligible = t in ('1', '2', '1 to 3', '1 to 2', '2 to 3') and ('attack' in tr or df.get('save'))
-    area = (d.get('area') or {}).get('type', '') or ''
-    atxt = ' '.join(v for k, v in e['fields'] if k == 'Area').lower()
+    shapes = spellstrike_areas(d, e)
     if eligible:
         out.append(f'<span class="bd b-ss" title="Can be delivered with Spellstrike">{ic("spellstrike")}Spellstrike</span>')
-        if area in ('burst', 'cone', 'line') or any(w in atxt for w in ('burst', 'cone', 'line')):
+        if shapes & {'burst', 'cone', 'line'}:
             out.append(f'<span class="bd b-ex" title="Expansive Spellstrike keeps the area">{ic("expansive")}Expansive</span>')
-        if area == 'line' or 'line' in atxt:
+        if 'line' in shapes:
             out.append(f'<span class="bd b-sp" title="Works with Sprinting Spellstrike">{ic("sprinting")}Sprinting</span>')
     if name in STUDIOUS:
         out.append(f'<span class="bd b-st" title="Laughing Shadow studious spell">{ic("studious")}Studious {STUDIOUS[name]}</span>')
@@ -124,6 +147,8 @@ def card(name, rank, occult_only):
         e['heightened'] = (e.get('heightened') or '') + xh
     br, bg = best(r, g, name)
     tnames = [t for t, _ in e.get('traits', [])]
+    # the Spellstrike tags can be filtered like traits
+    tnames = tnames + [lab for cls, lab in (('b-ss', 'Spellstrike'), ('b-ex', 'Expansive Spellstrike'), ('b-sp', 'Sprinting Spellstrike'), ('b-st', 'Studious spell')) if cls in bd]
     TRAITS.update(tnames)
     attrs = (f'data-traits="{H.escape("|".join(t.lower() for t in tnames))}" data-rank="{rank}" data-trad="{tg}" data-def="{dk}" data-r="{br}" data-g="{bg}" data-act="{act_codes(e)}" '
              f'data-name="{H.escape(name.lower())}" data-ss="{1 if elig else 0}"')
@@ -254,9 +279,9 @@ def controls_html():
     gbtn = ''.join(f'<button class="chip mini g-{g}{" on" if g in "SA" else ""}" data-m="grades" data-v="{g}">{g}</button>' for g in 'SABCDF')
     kbtn = ''.join(f'<button class="chip mini rk" data-m="ranks" data-v="{r}">{"Cantrip" if r == 0 else r}</button>' for r in range(10))
     tl = sorted(TRAITS.items(), key=lambda kv: kv[0].lower())
-    topts = ''.join(f'<label class="topt" data-n="{H.escape(t.lower())}"><input type="checkbox" value="{H.escape(t.lower())}"><span>{H.escape(t)}</span><span class="tn">{n}</span></label>' for t, n in tl)
-    trait_row = f'''<div class="tsel" id="tsel"><button class="chip tbtn" type="button" aria-expanded="false" aria-controls="tpanel">{ic("rules")}<span class="tlab">Choose traits</span><span class="caret" aria-hidden="true">▾</span></button>
-<div class="tpanel" id="tpanel" hidden><div class="thead"><label class="search tsearch">{ic("search")}<input type="search" placeholder="Find a trait" autocomplete="off"></label>
+    topts = ''.join(f'<div class="topt" data-n="{H.escape(t.lower())}"><label><input type="checkbox" value="{H.escape(t.lower())}"><span>{H.escape(t)}</span></label><span class="tn">{n}</span><button type="button" class="tx" data-x="{H.escape(t.lower())}" aria-pressed="false" aria-label="Exclude {H.escape(t)}">Exclude</button></div>' for t, n in tl)
+    trait_row = f'''<div class="tsel" id="tsel"><button class="chip tbtn" type="button" aria-expanded="false" aria-controls="tpanel">{ic("rules")}<span class="tlab">Choose traits and tags</span><span class="caret" aria-hidden="true">▾</span></button>
+<div class="tpanel" id="tpanel" hidden><div class="thead"><label class="search tsearch">{ic("search")}<input type="search" placeholder="Find a trait or tag" autocomplete="off"></label>
 <div class="tmode" role="group" aria-label="How to match traits"><button class="chip mini on" type="button" data-tm="any">Any</button><button class="chip mini" type="button" data-tm="all">All</button></div></div>
 <div class="tlist">{topts}</div><div class="tfoot"><button class="chip mini" type="button" id="tclear">Clear traits</button><button class="chip mini" type="button" id="tdone">Done</button></div></div>
 <div class="tpills" id="tpills"></div></div>'''

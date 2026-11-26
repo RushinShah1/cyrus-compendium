@@ -214,6 +214,32 @@ def _norm(b):
     return b
 
 
+_SCHOOLS = {'abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'illusion', 'necromancy', 'transmutation'}
+_RENAMED = {'positive': 'vitality', 'negative': 'void'}
+_RARITY = ('uncommon', 'rare', 'unique')
+
+
+def _spell_traits(shown, d):
+    """Trait row for a spell card: the printed traits under current rules.
+
+    Older printings list components and a school in place of concentrate and manipulate, so the row takes the
+    traits from the Foundry record as well, drops the school and uses the current names of renamed traits."""
+    have = {}
+    for label, url in shown:
+        k = _RENAMED.get(label.lower(), label.lower())
+        if k in _SCHOOLS:
+            continue
+        have[k] = (k.title(), TRAITS.get(k, url))
+    tr = d['system'].get('traits', {})
+    rar = tr.get('rarity', 'common')
+    if rar != 'common':
+        have.setdefault(rar, (rar.title(), TRAITS.get(rar, AON)))
+    for t in tr.get('value', []):
+        k = t.replace('-', ' ')
+        have.setdefault(k, (k.title(), TRAITS.get(k, f'{AON}/Search.aspx?q={quote_plus(k.title())}')))
+    return [have[k] for k in sorted(have, key=lambda k: (k not in _RARITY, k))]
+
+
 def entry(name, kind='spell', foundry_kind=None, prefer_source=None):
     fk = foundry_kind or {'spell': 'spell', 'feat': 'feat', 'action': 'action', 'item': 'item', 'feature': 'feature',
                           'skillaction': 'action'}.get(kind, 'any')
@@ -244,6 +270,8 @@ def entry(name, kind='spell', foundry_kind=None, prefer_source=None):
         e['remaster'] = bool(d['system'].get('publication', {}).get('remaster')) if d else True
         e['fdoc'] = d
         e.setdefault('kind', kind)
+        if kind == 'spell' and d is not None:
+            e['traits'] = _spell_traits(e['traits'], d)
         return e
     if d is None:
         raise KeyError(name)

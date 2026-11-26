@@ -87,3 +87,24 @@ for _n, _a, _b in [
     _r, _g, _e = E[_n]
     assert _a in _e, _n
     E[_n] = (_r, _g, _e.replace(_a, _b))
+
+# Plasma Whirl: only the 3-action version sickens, and Spellstrike delivers the 1- or 2-action version
+E['Plasma Whirl'] = ('401000', 'BDD', "Plasma Whirl deals electricity and fire damage in a cone on a basic Reflex save, and the number of actions sets its size. With 1 action it is a 15-foot cone of 2d6 of each type, which fits after a Spellstrike on the same turn. With 2 actions it is a 30-foot cone of 5d6 of each type, about 35 damage, and this is the version Spellstrike delivers; through Expansive Spellstrike the cone starts beside the target. With 3 actions it is a 60-foot cone of the same damage, and only this version sickens: creatures that fail are sickened 1, or sickened 2 on a critical failure. The 3-action version cannot be delivered with Spellstrike. The two damage types are resisted separately. As a payload it matches Howling Blizzard's damage in a smaller cone and without the difficult terrain, so its advantage is the choice of three sizes.")
+for _n, _a, _b in [
+ ('Briny Bolt', "every hit with Aspera also blinds the target until it spends an action to clear its eyes.", "every hit with Aspera also blinds the target for a round, unless it spends an action to clear its eyes."),
+ ('Invisibility', "Invisibility is one of the most important spells Cyrus brings, because no one else in the party has it.", "Invisibility is one of the most important spells Cyrus brings, and it is only on the arcane and occult lists."),
+ ('Shared Invisibility', "into position for an ambush, and the party has no other source of group invisibility.", "into position for an ambush."),
+]:
+    _r, _g, _e = E[_n]
+    assert _a in _e, _n
+    E[_n] = (_r, _g, _e.replace(_a, _b))
+
+# single-target incapacitation spells do nothing on a success against a higher-level target, so they grade as situational
+for _n, _g2, _a, _b in [
+ ('Lignify', None, " It has 120-foot range and works as a Fortitude payload, which complements Slow's Fortitude-free control.", " It has 120-foot range and works as a Fortitude payload."),
+ ('Curse of the Toad Prince', 'BBD', "Against humanoid enemies such as knights, cultists and casters, it is one of the strongest rank-6 payloads.", "Against a humanoid above level 12 the trait improves its save by one degree, so a success does nothing. It is a strong rank-6 payload against humanoids of Cyrus's level or lower and a poor one against a higher-level boss."),
+ ('Uncontrollable Dance', 'BCC', ", though the incapacitation trait limits it against higher-level enemies.", ". The incapacitation trait improves the save of a target above level 16 by one degree, so against a higher-level boss a success does nothing."),
+]:
+    _r, _g, _e = E[_n]
+    assert _a in _e, (_n, _e[-200:])
+    E[_n] = (_r, _g2 or _g, _e.replace(_a, _b))
