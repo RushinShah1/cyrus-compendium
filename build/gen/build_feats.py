@@ -6,11 +6,6 @@ from feat_list import *
 from feat_evals import F, CLASS_ROLES, SKILL_ROLES, DED_ROLES
 
 
-def table(head, rows):
-    th = ''.join(f'<th>{h}</th>' for h in head)
-    trs = ''.join('<tr>' + ''.join(f'<td data-l="{head[i]}">{c}</td>' for i, c in enumerate(r)) + '</tr>' for r in rows)
-    return f'<div class="tw"><table class="tbl stack"><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table></div>'
-
 KIND = {'C':('fist','Class feat'),'S':('cap','Skill feat'),'G':('star','General feat'),'A':('ancestry','Ancestry feat'),'I':('upgrade','Skill increase'),'B':('crown','Attribute boosts'),'X':('swirl','Class feature'),'H':('heritage','Heritage'),'K':('background','Background')}
 PLAN = [
  (1, [('H','Versatile Human → Fleet'),('K','Relentless Dedication → Canny Acumen, Warfare Lore'),('A',"Natural Ambition → Magus's Analysis"),('S','Additional Lore (Academia), from the campaign'),('X','Spellstrike, Arcane Cascade, Laughing Shadow, Dimensional Assault')]),
@@ -27,7 +22,7 @@ PLAN = [
  (12,[('C','Sprinting Spellstrike'),('S','Titan Wrestler')]),
  (13,[('A','Advanced General Training → Prescient Consumable'),('I','Society to master'),('X','Weapon mastery, studious: Fly, Translocate')]),
  (14,[('C','Hasted Assault'),('S','Quick Jump')]),
- (15,[('G','Canny Acumen for Reflex, if a second is allowed'),('I','Arcana to legendary'),('B','Str, Con, Int, Wis'),('X','Greater weapon specialization')]),
+ (15,[('G','Canny Acumen (Reflex)'),('I','Arcana to legendary'),('B','Str, Con, Int, Wis'),('X','Greater weapon specialization')]),
  (16,[('C','Arcane Shroud'),('S','Unified Theory')]),
  (17,[('A','Heroic Presence'),('I','Athletics to legendary'),('X','Master spellcasting, rank 9 slots')]),
  (18,[('C','Stolen Spell'),('S','Cloud Jump')]),
@@ -88,22 +83,9 @@ def build():
     feats_anc = '\n'.join(fcard(n, CLASS_ROLES if False else SKILL_ROLES) for n in ANCESTRY)
     feats_ded = '\n'.join(fcard(n, DED_ROLES) for n in DEDICATIONS)
     feats_feat = '\n'.join(feature_card(n, k, NOTES.get(n,'')) for n,k in FEATURES)
-    nav = ''.join(f'<a href="#" data-to="{i}">{t}</a>' for i,t in [('f-plan','Level plan'),('f-decide','Decisions'),('f-changes','Changes'),('f-features','Class features'),('f-class','Class feats'),('f-skill','Skill and general'),('f-anc','Ancestry'),('f-ded','Level 9 dedication'),('f-attr','Attributes')])
+    nav = ''.join(f'<a href="#" data-to="{i}">{t}</a>' for i,t in [('f-plan','Level plan'),('f-decide','Decisions'),('f-features','Class features'),('f-class','Class feats'),('f-skill','Skill and general'),('f-anc','Ancestry'),('f-ded','Level 9 dedication'),('f-attr','Attributes')])
     decide = f'''<div class="grid3">
-<div class="panel"><h3>{ic('occult','t-occult')}Level 9</h3><p><a href="#" data-to="ft-witch-dedication">Witch</a> is planned, for occult casting and a familiar. <a href="#" data-to="ft-psychic-dedication">Psychic</a> stays the alternative if a combat psi cantrip matters more. Either lets Cyrus cast Synesthesia from the stave.</p></div>
-<div class="panel"><h3>{ic('star')}Level 15 general feat</h3><p>The build takes <a href="#" data-to="ft-canny-acumen">Canny Acumen</a> for Reflex saves, which become master at 17. The feat has no rule that lets it be taken twice, and the background already grants it for Perception, so this needs the GM's agreement. Without it, the single Canny Acumen goes to either Perception or Reflex and this slot takes another general feat.</p></div>
-<div class="panel"><h3>{ic('clock')}Level 18</h3><p><a href="#" data-to="ft-stolen-spell">Stolen Spell</a> is planned. It only triggers against enemy spellcasters, so Versatile Spellstrike is the alternative if most fights have none.</p></div></div>'''
-    changes = table(['Choice', 'Before', 'Now', 'Reason'], [
-        ['Running Recharge', 'Alternative to Fused Staff at 8 and to Arcane Shroud at 16', 'Taken at 4', 'The campaign grants a bonus class feat at 4, so levels 8 and 16 no longer need an alternative.'],
-        ['Bonus general feat at 3', 'Not recorded', 'Prescient Planner', 'It is the prerequisite for Prescient Consumable.'],
-        ['Ancestry feat at 13', 'Clever Improviser or Advanced General Training', 'Advanced General Training for Prescient Consumable', 'It completes the pair started at 3. Clever Improviser stays the alternative.'],
-        ['Society', 'Expert at 11, master at 13 as one option', 'Expert at 5, master at 13', 'The campaign grants a bonus skill increase at 5.'],
-        ['Diplomacy', 'Expert at 13 as one option', 'Expert at 11, master at 19', 'The level-11 increase is free once Society moves to 5.'],
-        ['Skill feat at 14', 'Quick Jump or Leverage Connections', 'Quick Jump', 'Cloud Jump at 18 builds on it. Leverage Connections stays the alternative.'],
-        ['Unified Theory', 'General feat at 15', 'Skill feat at 16', 'It is a skill feat, which leaves the level-15 general feat for another choice.'],
-        ['Skill feat at 16', 'Free pick', 'Unified Theory', 'Moved from 15.'],
-        ['Levels 17 to 20', 'Not planned', 'Heroic Presence, Stolen Spell, Cloud Jump, Sanguine Tenacity, Supreme Spellstrike, Legendary Professional', 'The plan now runs to 20.'],
-    ])
+<div class="panel"><h3>{ic('occult','t-occult')}Level 9</h3><p><a href="#" data-to="ft-witch-dedication">Witch</a> for occult casting and a familiar. <a href="#" data-to="ft-psychic-dedication">Psychic</a> if a combat psi cantrip matters more. Either lets Cyrus cast Synesthesia from the stave.</p></div></div>'''
     attr = '''<div class="tw"><table class="tbl stack"><thead><tr><th>Level</th><th>Boosts</th><th>Why</th></tr></thead><tbody>
 <tr><td data-l="Level">1</td><td data-l="Boosts">Str +4, Int +3, Con +1, Dex +1</td><td data-l="Why">Strength for Aspera's attack, damage and Trip. Intelligence for spell DC, trained skills and languages.</td></tr>
 <tr><td data-l="Level">5</td><td data-l="Boosts">Str (partial, toward +5), Con, Int to +4, Wis</td><td data-l="Why">Int +4 lifts spell DC and adds a trained skill and language.</td></tr>
@@ -113,12 +95,11 @@ def build():
 </tbody></table></div>'''
     page = f'''<div class="page doc" data-page="feats">
 <header class="ph"><h1>Feat paths</h1>
-<p class="lede">Human Laughing Shadow magus, levels 1 to 20. Class feats are set at every level. The campaign adds a skill feat at 1, a general feat at 3, a class feat at 4 and a skill increase at 5. The open choice is the general feat at 15. Feat levels follow the magus in <em>Impossible Magic</em>. Ratings assume one or two fights a day with rests between them.</p></header>
+<p class="lede">Human Laughing Shadow magus, levels 1 to 20. Class feats are set at every level. The campaign adds a skill feat at 1, a general feat at 3, a class feat at 4 and a skill increase at 5. Feat levels follow the magus in <em>Impossible Magic</em>. Ratings assume one or two fights a day with rests between them.</p></header>
 <nav class="jumpbar scroll">{nav}</nav>
 <h2 id="f-plan">Level plan</h2><p class="muted">Select a feat to open its details beside the plan. *If Warfare Lore is already trained from the background, the table's duplicate-training rule moves that training to another Lore (Engineering or Undead).</p>
 {tl}
 <h2 id="f-decide">Decisions still open</h2>{decide}
-<h2 id="f-changes">Changes to the plan</h2><p class="muted">Each change to an earlier choice, with what it replaced.</p>{changes}
 <h2 id="f-features">Class features and focus spells</h2><p class="muted">Rules Cyrus uses every turn.</p>{feats_feat}
 <h2 id="f-class">Class feats</h2>{feats_class}
 <h2 id="f-skill">Skill and general feats</h2>{feats_skill}

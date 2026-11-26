@@ -152,35 +152,12 @@ def defence_table():
 
 
 PARTY = [
-    ('Mira', 'Champion of Kelemvor', 'Divine (focus spells)',
-     "A durable front line. Her champion's reaction triggers when an enemy damages an ally while both are inside her 15-foot aura, and what it does depends on her cause.",
-     "End turns within 15 feet of her so the reaction covers him. From 10 feet he can flank with her without standing next to the enemy. Trip enemies inside her reach, and avoid moving one out of her aura with Acid Grip or a Shove."),
-    ('Cassius', 'Fighter', 'None',
-     "The party's most accurate attacker, with Reactive Strike from level 1.",
-     "Off-guard, prone and frightened targets add to his chance of a critical hit, which is already the party's highest, so set them up on the enemy he is fighting. A tripped enemy that Stands provokes his Reactive Strike and, from 6, Cyrus's as well. Haste on him is an extra Strike each round."),
-    ('Yara', 'Cloistered cleric of Kelemvor', 'Divine',
-     "Healing from her divine font and the divine spell list, including Bless and Heroism.",
-     "Carry his own emergency healing so hers is not the only route back into a fight. Agree with her who prepares Dispel Magic and Fly. Check before spending two answers on the same effect."),
-    ('Theldren', 'Stone order druid', 'Primal',
-     "Primal area and control spells. Haste, Slow, Fireball, Fly and Dispel Magic are on his list as well as Cyrus's.",
-     "Agree each day who prepares the shared spells. Say where he will end his turn before an area spell goes down, and use Acid Grip, Trip or a flank to hold enemies inside the area without standing in it."),
-    ('Adrian', 'Animist', 'Divine',
-     "Divine spells and apparitions that change from day to day.",
-     "Ask what today's apparitions reward, then apply pressure to the defence his next spell targets."),
+    ('Mira', 'Champion', 'Divine (focus spells)', "Her champion's reaction covers allies within 15 feet, so end turns inside that distance and flank with her from 10 feet."),
+    ('Cassius', 'Fighter', 'None', "Trip, flank or frighten the enemy he is fighting. A tripped enemy that Stands provokes his Reactive Strike."),
+    ('Yara', 'Cleric', 'Divine', "Carry emergency healing so hers is not the only source. Agree who prepares Dispel Magic and Fly."),
+    ('Theldren', 'Druid', 'Primal', "Haste, Slow, Fireball, Fly and Dispel Magic are on both lists, so agree who prepares each. Say where Cyrus will end his turn before an area spell goes down."),
+    ('Adrian', 'Animist', 'Divine', "His apparitions change from day to day, so ask which defence his spells target that day."),
 ]
-_TRAD = {'primal': ['Theldren'], 'divine': ['Yara', 'Adrian']}
-SHARED = ['Haste', 'Slow', 'Fly', 'Fireball', 'Dispel Magic', 'Eclipse Burst', 'Heroism', 'Bless', 'Cleanse Affliction']
-
-
-def shared_table():
-    import rules
-    rows = []
-    for n in SHARED:
-        tr = rules.get(n, 'spell')['system']['traits'].get('traditions', [])
-        who = [w for t in ('primal', 'divine') if t in tr for w in _TRAD[t]]
-        how = 'Spellbook' if 'arcane' in tr else 'Scroll or wand after the dedication at 9' if 'occult' in tr else 'Not available to him'
-        rows.append([n, ', '.join(t.capitalize() for t in tr), ', '.join(who) or 'None', how])
-    return table(['Spell', 'Spell lists', 'Also on the list of', 'How Cyrus gets it'], rows)
 
 
 LEVELS = [
@@ -201,7 +178,7 @@ def combat_page():
     nav = ''.join(f'<a href="#" data-to="{a}">{b}</a>' for a, b in [
         ('cb-levels', 'By level'), ('cb-turns', 'Turn patterns'), ('cb-grid', 'Positioning'), ('cb-off', 'Off-turn'), ('cb-def', 'Targeting'), ('cb-party', 'Party'), ('cb-act', 'Actions')])
     sit = ''.join(f'<a href="#" data-to="{sid}">{h}</a>' for sid, h, _ in SITUATIONS)
-    party = table(['Character', 'Class', 'Spell tradition', 'What they bring', 'What Cyrus does with them'], [list(p) for p in PARTY])
+    party = table(['Character', 'Class', 'Spell tradition', 'Working together'], [list(p) for p in PARTY])
     levels = table(['Levels', 'How a turn works', 'Spells and resources'], [list(r) for r in LEVELS])
     page = f'''<div class="page doc" data-page="combat">
 <header class="ph"><h1>Combat flow and teamwork</h1>
@@ -229,11 +206,7 @@ def combat_page():
 {defence_table()}
 
 <h2 id="cb-party">{ic("team")}Party</h2>
-<p class="prose">Cyrus is the party's only arcane caster and, from 9, its only occult one. The others cover the divine and primal lists.</p>
 {party}
-<h3>Spells on more than one list</h3>
-<p class="muted">Being on a caster's list does not mean it is prepared that day, so agree who brings each one. Sisterstone armour works with a matching sisterstone item carried by Mira or Yara.</p>
-{shared_table()}
 
 <h2 id="cb-act">{ic("fist")}Actions</h2>
 <p class="prose">Basic and Athletics actions with their rules text. Class actions are on the Feat paths page.</p>

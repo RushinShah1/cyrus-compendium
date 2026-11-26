@@ -1,7 +1,7 @@
 # Rank-end summaries, written against three goals: a payload for every defence (AC, Fortitude, Reflex, Will),
 # varied damage types, and tactical variety at each rank.
-# Keys: role -> spell names; 'saves' -> defence -> spell names; 'book' learned first; 'book2' added later from scrolls
-# or other spellbooks; 'types' damage types among the spellbook picks; 'prep' and an optional 'note'.
+# Keys: role -> spell names; 'saves' -> defence -> spell names; 'book' spellbook picks in priority order;
+# 'types' damage types among the spellbook picks; 'prep' and an optional 'note'.
 # Scroll and wand picks are worked out from the grades in build_spells.py.
 P = {}
 
@@ -116,3 +116,23 @@ _p(9,
    'bleed, bludgeoning, fire',
    "Cyrus gets rank-9 slots at 17. Foresight on whichever ally the boss targets and Remake Physiology on the boss. "
    "No attack spell at this rank has a card, so Disintegrate heightened is the AC payload.")
+
+BOOK = {
+    0: ['Gouging Claw', 'Ignition', 'Frostbite', 'Electric Arc', 'Shield', 'Message', 'Needle Darts', 'Tangle Vine', 'Detect Magic'],
+    1: ['Sure Strike', 'Briny Bolt', 'Thunderstrike', 'Fear', 'Shockwave', 'Dehydrate', 'Shocking Grasp', 'Gust of Wind', 'Grease', 'Acidic Burst'],
+    2: ['Acid Grip', 'Invisibility', 'Telekinetic Maneuver', 'Ignite Fireworks', 'Spray of Salt', 'Disorienting Flash', 'Hidebound', 'Warping Pull',
+        'Laughing Fit', 'Revealing Light', 'Blazing Bolt', 'Heat Metal', 'Charitable Urge', 'Vomit Swarm'],
+    3: ['Haste', 'Slow', 'Lightning Bolt', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave', 'Blister Bomb', 'Shared Invisibility'],
+    4: ['Fly', 'Translocate', 'Wall of Mirrors', 'Force Rain', 'Chromatic Ray', 'Freezing Touch', 'Grasp of the Deep', "Mantis's Grasp", 'Entangle Fate', 'Vision of Death', 'Containment'],
+    5: ['Weight of the World', 'Wall of Stone', 'Glacial Skewer', 'Blazing Fissure', 'Wave of Despair', 'Mirror Malefactors', 'Grisly Growths', 'Tornadic Gale'],
+    6: ['Living Thunderbolt', 'Chain Lightning', 'Disintegrate', 'Wall of Force', 'Missed Cue', 'Necrotize', 'Lignify'],
+    7: ['True Target', 'Frigid Flurry', 'Telekinetic Bombardment', 'Comet Charge', 'Power Word Blind', 'Time Beacon', 'Contingency'],
+    8: ['Disappearance', 'Quandary', 'Arctic Rift', 'Roar of Freedom', 'Uncontrollable Dance', 'Power Word Stun', 'Boil Blood'],
+    9: ['Foresight', 'Remake Physiology', 'Dimensional Excision', 'Power Word Kill', 'Unspeakable Shadow', 'Bilocation'],
+}
+TYPES = {0: 'bleed, fire, cold, electricity, piercing', 2: 'acid, fire, sonic, piercing', 6: 'electricity, void, mental', 9: 'bleed'}
+for _r in P:
+    P[_r]['book'] = BOOK[_r]
+    P[_r].pop('book2', None)
+    if _r in TYPES:
+        P[_r]['types'] = TYPES[_r]

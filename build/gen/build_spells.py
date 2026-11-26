@@ -157,7 +157,7 @@ def picks_html(rank):
         f'<div class="pk">{ic(k, "ro-" + k)}<span class="pl">{lab}</span><span class="pv">{", ".join(link(n) for n in p.get(lab, [])) or "<span class=muted>Nothing stands out</span>"}</span></div>'
         for k, lab in ROLES)
     acc = ''
-    for key, lab, icn in [('book', 'Spellbook, learn first', 'book'), ('book2', 'Spellbook, add later', 'book'), ('scroll', 'Scrolls', 'scroll'), ('wand', 'Wands', 'wand'), ('familiar', 'Familiar', 'familiar')]:
+    for key, lab, icn in [('book', 'Spellbook', 'book'), ('scroll', 'Scrolls', 'scroll'), ('wand', 'Wands', 'wand'), ('familiar', 'Familiar', 'familiar')]:
         if p.get(key):
             acc += f'<div class="pk">{ic(icn)}<span class="pl">{lab}</span><span class="pv">{", ".join(link(n) for n in p[key])}</span></div>'
     cover = ''
