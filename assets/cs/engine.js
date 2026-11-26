@@ -115,9 +115,50 @@ class Engine {
       const c = inv.custom;
       const r = Object.assign({k: 'custom:' + inv.id, sl: slugify(c.n || 'item'), t: 'equipment', tr: [], bulk: 0, cp: 0}, c);
       if (c.relic && this.level) r.lv = this.level;      // a relic's level always matches its owner's (GM Core)
-      return r;
+      return inv.mat && inv.mat.type ? this.withMaterial(r, inv.mat) : r;
     }
-    return this.rec(inv.k);
+    const r = this.rec(inv.k);
+    return r && inv.mat && inv.mat.type ? this.withMaterial(r, inv.mat) : r;
+  }
+  // the material tables for a weapon, armour or shield record (Foundry's valuation data)
+  materialTable(r) {
+    const M = this.db.materials || {};
+    if (r.t === 'weapon') return M.weapon;
+    if (r.t === 'armor') return M.armor;
+    if (r.t !== 'shield') return null;
+    const b = r.base || r.sl || '';
+    return /buckler/.test(b) ? M.buckler : /tower-shield/.test(b) ? M.tower : M.shield;
+  }
+  // a weapon, armour or shield made of a precious material: level and price from the material's grade
+  // (price is the material's price plus a tenth of it per Bulk, never below the base price), shield Hardness and HP
+  // from the grade, and the GM Core effects that change the item's own numbers
+  withMaterial(r, m) {
+    if (!['weapon', 'armor', 'shield'].includes(r.t)) return r;
+    const tbl = this.materialTable(r) || {};
+    const d = (tbl[m.type] || {})[m.grade] || null;
+    const o = Object.assign({}, r, {mat: {type: m.type, grade: m.grade, ok: !!d}});
+    if (d) {
+      o.lv = Math.max(r.lv || 0, d.level);
+      const bulk = r.t === 'shield' ? 0 : Math.max(Math.floor(r.bulk || 0), 1);
+      o.cp = Math.max(Math.round((d.price + bulk * d.price / 10) * 100), r.cp || 0);
+      if (r.t === 'shield') { if (d.hardness != null) o.hard = d.hardness; if (d.maxHP != null) o.hp = d.maxHP; }
+      if (d.rarity && d.rarity !== 'common' && !(r.tr || []).includes(d.rarity)) o.tr = (r.tr || []).concat([d.rarity]);
+    }
+    // dawnsilver and duskwood: 1 Bulk lighter, or light Bulk if normally 1, no effect on light Bulk
+    if (m.type === 'dawnsilver' || m.type === 'duskwood') {
+      const b = r.bulk || 0;
+      o.bulk = b >= 2 ? b - 1 : b >= 1 ? 0.1 : b;
+      if (r.t === 'armor') {
+        if (r.str != null) o.str = r.str - 1;
+        if (r.spd) o.spd = Math.min(0, r.spd + 5);
+      }
+    }
+    // orichalcum armour: a fourth property rune and +1 circumstance bonus to initiative while worn
+    if (r.t === 'armor' && m.type === 'orichalcum') {
+      o.propMax = 4;
+      o.rules = (r.rules || []).concat([{key: 'FlatModifier', selector: 'initiative', type: 'circumstance', value: 1, label: 'Orichalcum armour'}]);
+    }
+    return o;
   }
   t(s) { return (typeof s === 'string' && this.lang[s]) || s; }
 

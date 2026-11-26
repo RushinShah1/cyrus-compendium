@@ -33,7 +33,7 @@ async function loadDB(progress) {
     if (!r.ok) throw new Error(p);
     const j = await r.json();
     Object.assign(out.e, j.e);
-    if (p === 'core') { out.slots = j.slots; out.runes = j.runes; out.lang = j.lang; }
+    if (p === 'core') { out.slots = j.slots; out.runes = j.runes; out.materials = j.materials; out.lang = j.lang; }
     progress && progress(++n, parts.length);
   }));
   try { const r = await fetch('assets/cs/grades.json'); if (r.ok) GR = await r.json(); } catch (e) { /* grades are optional */ }
@@ -740,7 +740,7 @@ const coinTotal = c => (c.pp || 0) * 1000 + (c.gp || 0) * 100 + (c.sp || 0) * 10
 const money = cp => { const gp = Math.floor(cp / 100), sp = Math.floor(cp % 100 / 10), c = cp % 10; return [gp ? gp.toLocaleString() + ' gp' : '', sp ? sp + ' sp' : '', c ? c + ' cp' : ''].filter(Boolean).join(' ') || '0 gp'; };
 const STATES = [['held1', 'Held in one hand'], ['held2', 'Held in two hands'], ['worn', 'Worn'], ['stowed', 'Stowed'], ['dropped', 'Dropped']];
 function typeLabel(r) { return {weapon: 'Weapon', armor: 'Armour', shield: 'Shield', consumable: 'Consumable', equipment: 'Item', treasure: 'Treasure', backpack: 'Container', kit: 'Kit', ammo: 'Ammunition'}[r.t] || 'Item'; }
-function runeSummary(r, inv) {
+function runeSummary(r, inv, noMat) {
   const R = Object.assign({}, r.runes || {}, inv.runes || {});
   const p = [];
   if (R.potency) p.push('+' + R.potency);
@@ -748,6 +748,7 @@ function runeSummary(r, inv) {
   if (R.resilient) p.push(['', 'resilient', 'greater resilient', 'major resilient'][R.resilient]);
   if (R.reinforcing) p.push('reinforcing ' + R.reinforcing);
   for (const x of R.property || []) p.push(eng.t(((db.runes.WEAPON_PROPERTY_RUNES[x] || db.runes.ARMOR_PROPERTY_RUNES[x]) || {}).name || x));
+  if (!noMat && inv.mat && inv.mat.type) p.push(matText(inv).toLowerCase());
   return p.length ? ': ' + esc(p.join(', ')) : '';
 }
 function tabInventory() {
@@ -761,7 +762,7 @@ function tabInventory() {
     const r = eng.invRec(inv); if (!r) return '';
     const name = inv.custom ? inv.custom.n : inv.name || r.n;
     const canInvest = eng.needsInvest(r, inv);
-    const runes = (r.t === 'weapon' || r.t === 'armor' || r.t === 'shield') ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(inv.id)}">Runes${runeSummary(r, inv)}</button>` : '';
+    const runes = (r.t === 'weapon' || r.t === 'armor' || r.t === 'shield') ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(inv.id)}">Runes and material${runeSummary(r, inv)}</button>` : '';
     const use = r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(inv.id)}">Use one</button>` : '';
     const meta = [typeLabel(r), `Level ${r.lv || 0}`, r.cp ? money(r.cp) : '', `Bulk ${bulkText(r.bulk)}`].filter(Boolean);
     return `<li class="cs-item"><div class="n"><button type="button" class="cs-iname" data-act="item" data-id="${esc(inv.id)}">${esc(name)}</button>${legTag(r)}${inv.custom && inv.custom.relic ? '<span class="cs-badge">Relic</span>' : ''}${inv.inv ? '<span class="cs-badge">Invested</span>' : ''}
@@ -1317,9 +1318,9 @@ function itemPanel(id) {
     if (st) f.push(['Attack', st.map.map(fmt).join(', ')], ['Damage', st.formula]);
     if (r.t === 'armor') f.push(['AC bonus', '+' + (r.ac || 0)], ['Dex cap', String(r.dex ?? 'None')], ['Check penalty', String(r.chk || 0)], ['Speed penalty', r.spd ? r.spd + ' feet' : 'None'], ['Strength', r.str != null ? String(r.str) : 'None']);
     if (r.t === 'shield') f.push(['AC bonus', '+' + (r.ac || 0)], ['Hardness', String(r.hard || 0)], ['Hit Points', String(r.hp || 0)]);
-    if (['weapon', 'armor', 'shield'].includes(r.t)) f.push(['Runes', runeSummary(r, inv).replace(/^: /, '') || 'None']);
+    if (['weapon', 'armor', 'shield'].includes(r.t)) f.push(['Material', matText(inv) || 'Ordinary'], ['Runes', runeSummary(r, inv, true).replace(/^: /, '') || 'None']);
     if (r.apex) f.push(['Apex', `raises ${ATTR_NAME[r.apex]}${res.apex && res.apex.id === id ? ', active' : inv.inv ? ', not active: another apex item is' : ', when invested'}`]);
-    const facts = `<dl class="cs-facts">${f.filter(x => x[1]).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v === runeSummary(r, inv).replace(/^: /, '') ? v : esc(v)}</dd></div>`).join('')}</dl>`;
+    const facts = `<dl class="cs-facts">${f.filter(x => x[1]).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v === runeSummary(r, inv, true).replace(/^: /, '') ? v : esc(v)}</dd></div>`).join('')}</dl>`;
     const traits = (r.tr || []).length ? `<div class="cs-trs">${r.tr.map(t => `<span class="trait">${esc(t.replace(/-/g, ' '))}</span>`).join('')}</div>` : '';
     const abil = (c && c.abil || []).map(a => `<p><b>${esc(a.n)}</b> ${esc(a.text)}</p>`).join('');
     let relic = '';
@@ -1332,7 +1333,7 @@ function itemPanel(id) {
     const ctl = `<h3>On your sheet</h3><div class="cs-inline"><span class="cs-qtyl">Quantity <span class="cs-step"><button type="button" data-act="qty" data-id="${esc(id)}" data-d="-1" aria-label="Fewer">−</button><b>${inv.qty ?? 1}</b><button type="button" data-act="qty" data-id="${esc(id)}" data-d="1" aria-label="More">+</button></span></span>
 <select data-act="state" data-id="${esc(id)}" aria-label="Where it is">${STATES.map(([k, l]) => `<option value="${k}"${(inv.eq || 'stowed') === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
 ${canInvest ? `<label class="cs-tog"><input type="checkbox" data-act="invest" data-id="${esc(id)}"${inv.inv ? ' checked' : ''}> Invested</label>` : ''}
-${['weapon', 'armor', 'shield'].includes(r.t) ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(id)}">Change runes</button>` : ''}
+${['weapon', 'armor', 'shield'].includes(r.t) ? `<button type="button" class="chip mini" data-act="runes" data-id="${esc(id)}">Change runes or material</button>` : ''}
 ${r.t === 'consumable' ? `<button type="button" class="chip mini" data-act="consume" data-id="${esc(id)}">Use one</button>` : ''}
 ${c ? '' : `<button type="button" class="chip mini" data-act="sell" data-id="${esc(id)}">Sell for ${money(Math.floor((r.cp || 0) / 2))}</button>`}<button type="button" class="chip mini" data-act="remove" data-id="${esc(id)}">Remove</button></div>`;
     box.innerHTML = `${c && c.desc ? `<p>${esc(c.desc)}</p>` : ''}${facts}${traits}${abil}${relic}${page}${ctl}${!c && r.g ? '<h3>Rules text</h3><div class="cs-rules muted">Loading…</div>' : ''}`;
@@ -1406,6 +1407,11 @@ function pickSpell(eid, max) {
   picker('Add a spell', e.name, items, it => { e.known = e.known || []; if (!e.known.includes(it.rec.k)) e.known.push(it.rec.k); commit(); },
     {verb: 'Add', keepOpen: true, key: 'spell:' + eid, facets, sorts, redrawOnPick: mark, placeholder: 'Search names, traits and sources, such as fire cone'});
 }
+const MAT_NAMES = {abysium: 'Abysium', adamantine: 'Adamantine', 'cold-iron': 'Cold iron', dawnsilver: 'Dawnsilver', djezet: 'Djezet', dragonhide: 'Dragonhide', dreamweb: 'Dreamweb', duskwood: 'Duskwood', 'grisantian-pelt': 'Grisantian pelt', inubrix: 'Inubrix', 'keep-stone': 'Keep stone', noqual: 'Noqual', orichalcum: 'Orichalcum', peachwood: 'Peachwood', siccatite: 'Siccatite', silver: 'Silver', 'sisterstone-dusk': 'Sisterstone (dusk)', 'sisterstone-scarlet': 'Sisterstone (scarlet)', sloughstone: 'Sloughstone', 'sovereign-steel': 'Sovereign steel', throneglass: 'Throneglass', warpglass: 'Warpglass'};
+const GRADE_NAMES = {low: 'Low grade', standard: 'Standard grade', high: 'High grade'};
+const RUNE_CAP = {low: 8, standard: 15, high: 20};
+const matName = t => MAT_NAMES[t] || cap(String(t).replace(/-/g, ' '));
+function matText(inv) { return inv.mat && inv.mat.type ? matName(inv.mat.type) + (inv.mat.grade ? ', ' + GRADE_NAMES[inv.mat.grade].toLowerCase() : '') : ''; }
 function runesPanel(id) {
   const inv = ch.inventory.find(i => i.id === id); if (!inv) return;
   const r = eng.invRec(inv);
@@ -1419,24 +1425,42 @@ function runesPanel(id) {
   if (isW) html += sel('striking', 4, ['Striking', 'None', 'Striking', 'Greater striking', 'Major striking']);
   if (isA) html += sel('resilient', 4, ['Resilient', 'None', 'Resilient', 'Greater resilient', 'Major resilient']);
   if (r.t === 'shield') html += sel('reinforcing', 7, ['Reinforcing', 'None', 'Minor', 'Lesser', 'Moderate', 'Greater', 'Major', 'Supreme']);
+  // precious material: the item's own table from Foundry lists which materials and grades exist for it
+  const mt = eng.materialTable(eng.rec(inv.k) || r) || {};
+  const M = inv.mat || {};
+  const gradesOf = t => Object.entries(mt[t] || {}).filter(([, v]) => v).map(([g, v]) => [g, v]);
+  const matOpts = Object.keys(mt).sort((a, b) => matName(a).localeCompare(matName(b)));
+  const gradeSel = t => gradesOf(t).map(([g, v]) => `<option value="${g}"${M.grade === g ? ' selected' : ''}>${GRADE_NAMES[g]} (level ${v.level})</option>`).join('');
+  html += `<label class="cs-field"><span>Material</span><select data-mat="type"><option value="">Ordinary</option>${matOpts.map(t => `<option value="${t}"${M.type === t ? ' selected' : ''}>${esc(matName(t))}</option>`).join('')}</select></label>`
+    + `<label class="cs-field"><span>Grade</span><select data-mat="grade"${M.type ? '' : ' disabled'}>${M.type ? gradeSel(M.type) : '<option value="">None</option>'}</select></label>`;
   const table = isW ? db.runes.WEAPON_PROPERTY_RUNES : isA ? db.runes.ARMOR_PROPERTY_RUNES : null;
   if (table) {
     const names = Object.entries(table).map(([k, v]) => [k, eng.t(v.name), v.level]).sort((a, b) => a[1].localeCompare(b[1]));
-    const slots = R.potency || 0;
+    const slots = Math.min(R.potency || 0, 3) + (r.propMax === 4 && (R.potency || 0) >= 3 ? 1 : 0);
     for (let i = 0; i < Math.max(slots, (R.property || []).length); i++) {
       html += `<label class="cs-field"><span>Property rune ${i + 1}${i >= slots ? ' (no slot)' : ''}</span><select data-prop="${i}"><option value="">None</option>${names.map(([k, n, lv]) => `<option value="${k}"${(R.property || [])[i] === k ? ' selected' : ''}>${esc(n)} (level ${lv})</option>`).join('')}</select></label>`;
     }
   }
-  box.innerHTML = html + `<p class="small muted">Property rune slots equal the potency rune's value. Change the potency rune and save to get more slots.</p><button type="button" class="chip" data-save="1">Save</button>`;
+  const capNote = M.type && M.grade && M.grade !== 'high' ? ` ${GRADE_NAMES[M.grade]} precious items hold runes up to level ${RUNE_CAP[M.grade]}.` : '';
+  box.innerHTML = html + `<p class="small muted">Property rune slots equal the potency rune's value${r.propMax === 4 ? ', and orichalcum armour holds a fourth at +3' : ''}. Change the potency rune and save to get more slots.${capNote}</p><button type="button" class="chip" data-save="1">Save</button>`;
+  box.addEventListener('change', e => {
+    if (e.target.dataset.mat !== 'type') return;
+    const t = e.target.value, gs = box.querySelector('select[data-mat="grade"]');
+    gs.disabled = !t;
+    gs.innerHTML = t ? gradesOf(t).map(([g, v]) => `<option value="${g}">${GRADE_NAMES[g]} (level ${v.level})</option>`).join('') : '<option value="">None</option>';
+    const std = gradesOf(t).find(([g]) => g === 'standard'); if (std) gs.value = 'standard';
+  });
   box.addEventListener('click', e => {
     if (!e.target.closest('[data-save]')) return;
     const nr = {};
     box.querySelectorAll('select[data-k]').forEach(s => nr[s.dataset.k] = Number(s.value));
     nr.property = [...box.querySelectorAll('select[data-prop]')].map(s => s.value).filter(Boolean);
     if (inv.custom) inv.custom.runes = nr; else inv.runes = nr;
+    const mt2 = box.querySelector('select[data-mat="type"]').value, mg2 = box.querySelector('select[data-mat="grade"]').value;
+    if (mt2 && mg2) inv.mat = {type: mt2, grade: mg2}; else delete inv.mat;
     commit(); A.popPanel();
   });
-  A.pushPanel('Runes', inv.name || r.n, box, 'runes:' + id);
+  A.pushPanel('Runes and material', inv.name || r.n, box, 'runes:' + id);
 }
 function customItem() {
   const box = document.createElement('div');
