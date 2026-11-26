@@ -43,13 +43,29 @@ def links_in(doc):
     return out
 
 
+HINT_CATS = {'spell': {'spell', 'mythic-spell'}, 'item': {'equipment', 'weapon', 'armor', 'shield', 'item-bonus', 'relic'},
+             'feat': {'feat'}, 'action': {'action'}}
+
+
+def split_hint(q):
+    """A name link can end in #spell, #item, #feat or #action to say which kind of entry the name means."""
+    name, _, hint = q.partition('#')
+    return name, (hint if hint in HINT_CATS else '')
+
+
 def resolve_name(q):
-    """A Search.aspx?q= link: find the best AoN document by exact name, preferring remastered printings."""
+    """A Search.aspx?q= link: find the best AoN document by exact name, preferring remastered printings.
+
+    With a kind hint only a document of that kind is accepted, so a spell is never linked to a deity, trait or item
+    that happens to share its name."""
+    q, hint = split_hint(q)
     n = q.lower().strip()
     keys = [k for k in bn.get(n, []) if k in bu]
     if not keys:
         n2 = re.sub(r'\s*\((?:lesser|moderate|greater|major|true|minor|standard)\)$', '', n)
         keys = [k for k in bn.get(n2, []) if k in bu]
+    if hint:
+        keys = [k for k in keys if (bu[k].get('category') or '') in HINT_CATS[hint]]
     if not keys:
         return None
 
@@ -69,9 +85,9 @@ def seeds():
         for u in re.findall(r'href="https://2e\.aonprd\.com(/[^"]+)"', h):
             u = H.unescape(u)
             if 'Search.aspx' in u:
-                m = re.search(r'q=([^&]+)', u)
+                m = re.search(r'q=([^&#]+)(#[a-z]+)?', u)
                 if m:
-                    q.add(unquote_plus(m.group(1)))
+                    q.add(unquote_plus(m.group(1)) + (m.group(2) or ''))
             else:
                 k = aon_index.norm(u)
                 if k in bu:
@@ -229,7 +245,8 @@ def render_aon(k):
 
 
 def render_foundry(name):
-    for kind in ('item', 'spell', 'feat', 'action'):
+    name, hint = split_hint(name)
+    for kind in ((hint,) if hint else ('item', 'spell', 'feat', 'action')):
         try:
             e = entries.entry(name, kind, foundry_kind='any')
         except KeyError:
@@ -292,7 +309,9 @@ def main():
     for low, name in fallback.items():
         r = render_foundry(name)
         if r:
-            key = 'f-' + slug(name)
+            key = 'f-' + slug(split_hint(name)[0])
+            if key in ALL and ALL[key][1] != r[1]:
+                key += '-' + split_hint(name)[1]
             ALL[key] = r
             qmap[low] = key
     extra = '/home/claude/build/sheet/extra_gloss.json'
@@ -398,8 +417,8 @@ A_RE = re.compile(r'<a ([^>]*?)href="https://2e\.aonprd\.com(/[^"]+)"([^>]*)>')
 def gkey(u, G, qmap):
     u = H.unescape(u)
     if 'Search.aspx' in u:
-        m = re.search(r'q=([^&]+)', u)
-        return qmap.get(unquote_plus(m.group(1)).lower()) if m else None
+        m = re.search(r'q=([^&#]+)(#[a-z]+)?', u)
+        return qmap.get((unquote_plus(m.group(1)) + (m.group(2) or '')).lower()) if m else None
     k = aon_index.norm(u)
     return k if k in G else None
 

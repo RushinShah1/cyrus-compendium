@@ -119,6 +119,9 @@ def defense_key(e):
     return ' '.join(dict.fromkeys(keys)) or 'none'
 
 
+NO_CAST_TRAITS = {'Blood Vendetta', 'Utter Destruction'}  # published with neither trait (Player Core pg. 318; Pathfinder #209)
+
+
 def card(name, rank, occult_only):
     e = entry(name, 'spell')
     if name not in E:
@@ -147,6 +150,10 @@ def card(name, rank, occult_only):
         e['heightened'] = (e.get('heightened') or '') + xh
     br, bg = best(r, g, name)
     tnames = [t for t, _ in e.get('traits', [])]
+    # every spell has concentrate or manipulate unless its published entry is checked and listed here
+    if not {'concentrate', 'manipulate'} & {t.lower() for t in tnames} and name not in NO_CAST_TRAITS:
+        import sys
+        print(f'TRAIT CHECK: {name} has neither concentrate nor manipulate: {tnames}', file=sys.stderr)
     # the Spellstrike tags can be filtered like traits
     tnames = tnames + [lab for cls, lab in (('b-ss', 'Spellstrike'), ('b-ex', 'Expansive Spellstrike'), ('b-sp', 'Sprinting Spellstrike'), ('b-st', 'Studious spell')) if cls in bd]
     TRAITS.update(tnames)

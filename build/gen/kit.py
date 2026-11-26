@@ -195,7 +195,7 @@ def rules_card(e, cid, kicker='', extra_top='', evaluation='', ratings_html='', 
     if e.get('heightened'):
         hh = re.sub(r'<p>\s*<strong>\s*Heightened\s*\(([^)]*)\)\s*</strong>\s*(.*?)</p>', lambda m: f'<p class="hr"><span class="hl">{ic("heighten")}Heightened ({m.group(1)})</span><span class="hx">{m.group(2)}</span></p>', e['heightened'], flags=re.S)
         height = f'<section class="hgt">{hh}</section>'
-    ev = f'<section class="ev"><h4>{ic("eval")}Evaluation</h4><p>{evaluation}</p></section>' if evaluation else ''
+    ev = (f'<section class="ev"><h4>{ic("eval")}Evaluation</h4>' + ''.join(f'<p>{para}</p>' for para in evaluation.split('\n\n')) + '</section>') if evaluation else ''
     src = f'<span class="src">{ic("source")}{H.escape(e.get("book", ""))}{" · text from Foundry PF2e" if e.get("source") == "foundry" else ""}</span>'
     act = cast_info(e)[0]
     return f'''<article class="card" id="{cid}" {extra_top}>

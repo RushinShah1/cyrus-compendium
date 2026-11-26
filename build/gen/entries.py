@@ -127,7 +127,7 @@ def _foundry_entry(d, kind):
     rar = tr.get('rarity', 'common')
     if rar != 'common':
         traits.append((rar.title(), TRAITS.get(rar, AON)))
-    for t in tr.get('value', []):
+    for t in list(tr.get('value', [])) + [x for x in TRAIT_FIX.get(d['name'], []) if x not in tr.get('value', [])]:
         nm = t.replace('-', ' ').title()
         traits.append((nm, TRAITS.get(t.replace('-', ' '), f'{AON}/Search.aspx?q={quote_plus(nm)}')))
     fields = []
@@ -188,7 +188,8 @@ def _foundry_entry(d, kind):
         n = (s.get('actions') or {}).get('value')
         act = {'action': {1: 'one', 2: 'two', 3: 'three'}.get(n), 'reaction': 'reaction', 'free': 'free'}.get(at)
     pub = s.get('publication', {})
-    return dict(name=d['name'], url=f'{AON}/Search.aspx?q={quote_plus(d["name"])}', source='foundry', level=str(lvl),
+    hint = '#' + kind if kind in ('spell', 'item', 'feat', 'action') else ''  # tells the glossary which kind of entry the name means
+    return dict(name=d['name'], url=f'{AON}/Search.aspx?q={quote_plus(d["name"])}{hint}', source='foundry', level=str(lvl),
                 action=act, action_text=str(t or ''), traits=traits, fields=fields,
                 traditions=[x.title() for x in (tr.get('traditions') or [])],
                 book=pub.get('title', '').replace('Pathfinder ', ''), body=body, heightened=height)
@@ -219,6 +220,9 @@ _RENAMED = {'positive': 'vitality', 'negative': 'void'}
 _RARITY = ('uncommon', 'rare', 'unique')
 
 
+TRAIT_FIX = {'Weight of the World': ['concentrate', 'manipulate']}  # the data record has an empty trait list; Impossible Magic pg. 173
+
+
 def _spell_traits(shown, d):
     """Trait row for a spell card: the printed traits under current rules.
 
@@ -234,7 +238,7 @@ def _spell_traits(shown, d):
     rar = tr.get('rarity', 'common')
     if rar != 'common':
         have.setdefault(rar, (rar.title(), TRAITS.get(rar, AON)))
-    for t in tr.get('value', []):
+    for t in list(tr.get('value', [])) + TRAIT_FIX.get(d['name'], []):
         k = t.replace('-', ' ')
         have.setdefault(k, (k.title(), TRAITS.get(k, f'{AON}/Search.aspx?q={quote_plus(k.title())}')))
     return [have[k] for k in sorted(have, key=lambda k: (k not in _RARITY, k))]

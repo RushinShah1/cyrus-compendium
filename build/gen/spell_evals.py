@@ -270,4 +270,5 @@ for _n, (_a, _b) in _STAVE.items():
     assert _a in _e, _n
     E[_n] = (_r, _g, _e.replace(_a, _b))
 
-import spell_evals7  # noqa: E402,F401  general rewrites, applied last
+import spell_evals7  # noqa: E402,F401  general rewrites
+import spell_evals8  # noqa: E402,F401  evaluations rewritten to one standard, applied last
