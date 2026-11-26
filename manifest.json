@@ -1,0 +1,399 @@
+{
+ "source": "https://elasticsearch.aonprd.com/aon/_search",
+ "archived_at": "2026-11-26T18:52:32+00:00",
+ "categories": {
+  "action": {
+   "file": "actions.json",
+   "count": 4311
+  },
+  "ancestry": {
+   "file": "ancestries.json",
+   "count": 102
+  },
+  "animal-companion": {
+   "file": "animal-companions.json",
+   "count": 123
+  },
+  "animal-companion-advanced": {
+   "file": "animal-companion-advanceds.json",
+   "count": 8
+  },
+  "animal-companion-specialization": {
+   "file": "animal-companion-specializations.json",
+   "count": 17
+  },
+  "animal-companion-unique": {
+   "file": "animal-companion-uniques.json",
+   "count": 2
+  },
+  "apparition": {
+   "file": "apparitions.json",
+   "count": 14
+  },
+  "arcane-school": {
+   "file": "arcane-schools.json",
+   "count": 29
+  },
+  "arcane-thesis": {
+   "file": "arcane-thesis.json",
+   "count": 10
+  },
+  "archetype": {
+   "file": "archetypes.json",
+   "count": 354
+  },
+  "armor": {
+   "file": "armors.json",
+   "count": 75
+  },
+  "armor-group": {
+   "file": "armor-groups.json",
+   "count": 7
+  },
+  "article": {
+   "file": "articles.json",
+   "count": 107
+  },
+  "background": {
+   "file": "backgrounds.json",
+   "count": 669
+  },
+  "bloodline": {
+   "file": "bloodlines.json",
+   "count": 28
+  },
+  "campsite-meal": {
+   "file": "campsite-meals.json",
+   "count": 27
+  },
+  "category-page": {
+   "file": "category-pages.json",
+   "count": 289
+  },
+  "cause": {
+   "file": "causes.json",
+   "count": 13
+  },
+  "class": {
+   "file": "classes.json",
+   "count": 51
+  },
+  "class-feature": {
+   "file": "class-features.json",
+   "count": 1366
+  },
+  "class-kit": {
+   "file": "class-kits.json",
+   "count": 32
+  },
+  "class-sample": {
+   "file": "class-samples.json",
+   "count": 116
+  },
+  "condition": {
+   "file": "conditions.json",
+   "count": 98
+  },
+  "conscious-mind": {
+   "file": "conscious-minds.json",
+   "count": 12
+  },
+  "creature": {
+   "file": "creatures.json",
+   "count": 5087
+  },
+  "creature-ability": {
+   "file": "creature-abilities.json",
+   "count": 85
+  },
+  "creature-adjustment": {
+   "file": "creature-adjustments.json",
+   "count": 61
+  },
+  "creature-family": {
+   "file": "creature-families.json",
+   "count": 659
+  },
+  "creature-theme-template": {
+   "file": "creature-theme-templates.json",
+   "count": 16
+  },
+  "cult-activity": {
+   "file": "cult-activities.json",
+   "count": 5
+  },
+  "curse": {
+   "file": "curses.json",
+   "count": 100
+  },
+  "deity": {
+   "file": "deities.json",
+   "count": 730
+  },
+  "deity-category": {
+   "file": "deity-categories.json",
+   "count": 40
+  },
+  "deviant-ability-classification": {
+   "file": "deviant-ability-classifications.json",
+   "count": 10
+  },
+  "disease": {
+   "file": "diseases.json",
+   "count": 45
+  },
+  "doctrine": {
+   "file": "doctrines.json",
+   "count": 5
+  },
+  "domain": {
+   "file": "domains.json",
+   "count": 124
+  },
+  "draconic-exemplar": {
+   "file": "draconic-exemplars.json",
+   "count": 44
+  },
+  "druidic-order": {
+   "file": "druidic-orders.json",
+   "count": 13
+  },
+  "eidolon": {
+   "file": "eidolons.json",
+   "count": 26
+  },
+  "element": {
+   "file": "elements.json",
+   "count": 6
+  },
+  "epithet": {
+   "file": "epithets.json",
+   "count": 18
+  },
+  "equipment": {
+   "file": "equipment.json",
+   "count": 9251
+  },
+  "familiar-ability": {
+   "file": "familiar-abilities.json",
+   "count": 194
+  },
+  "familiar-specific": {
+   "file": "familiar-specifics.json",
+   "count": 50
+  },
+  "fatal-method": {
+   "file": "fatal-methods.json",
+   "count": 2
+  },
+  "feat": {
+   "file": "feats.json",
+   "count": 9081
+  },
+  "fey-patronage": {
+   "file": "fey-patronages.json",
+   "count": 4
+  },
+  "follower": {
+   "file": "followers.json",
+   "count": 6
+  },
+  "grim-fascination": {
+   "file": "grim-fascinations.json",
+   "count": 4
+  },
+  "hazard": {
+   "file": "hazards.json",
+   "count": 791
+  },
+  "hellknight-order": {
+   "file": "hellknight-orders.json",
+   "count": 16
+  },
+  "heritage": {
+   "file": "heritages.json",
+   "count": 483
+  },
+  "hunters-edge": {
+   "file": "hunters-edges.json",
+   "count": 7
+  },
+  "hybrid-study": {
+   "file": "hybrid-studies.json",
+   "count": 15
+  },
+  "ikon": {
+   "file": "ikons.json",
+   "count": 21
+  },
+  "implement": {
+   "file": "implements.json",
+   "count": 20
+  },
+  "innovation": {
+   "file": "innovations.json",
+   "count": 7
+  },
+  "instinct": {
+   "file": "instincts.json",
+   "count": 16
+  },
+  "item-bonus": {
+   "file": "item-bonus.json",
+   "count": 1390
+  },
+  "kingdom-event": {
+   "file": "kingdom-events.json",
+   "count": 45
+  },
+  "kingdom-structure": {
+   "file": "kingdom-structures.json",
+   "count": 76
+  },
+  "language": {
+   "file": "languages.json",
+   "count": 155
+  },
+  "lesson": {
+   "file": "lessons.json",
+   "count": 31
+  },
+  "methodology": {
+   "file": "methodologies.json",
+   "count": 9
+  },
+  "muse": {
+   "file": "muses.json",
+   "count": 10
+  },
+  "mystery": {
+   "file": "mysteries.json",
+   "count": 22
+  },
+  "mythic-calling": {
+   "file": "mythic-callings.json",
+   "count": 15
+  },
+  "patron": {
+   "file": "patrons.json",
+   "count": 27
+  },
+  "plane": {
+   "file": "planes.json",
+   "count": 47
+  },
+  "practice": {
+   "file": "practices.json",
+   "count": 4
+  },
+  "racket": {
+   "file": "rackets.json",
+   "count": 10
+  },
+  "relic": {
+   "file": "relics.json",
+   "count": 219
+  },
+  "research-field": {
+   "file": "research-fields.json",
+   "count": 8
+  },
+  "ritual": {
+   "file": "rituals.json",
+   "count": 238
+  },
+  "rules": {
+   "file": "rules.json",
+   "count": 3659
+  },
+  "runesmith-rune": {
+   "file": "runesmith-runes.json",
+   "count": 44
+  },
+  "set-relic": {
+   "file": "set-relics.json",
+   "count": 14
+  },
+  "shield": {
+   "file": "shields.json",
+   "count": 32
+  },
+  "sidebar": {
+   "file": "sidebars.json",
+   "count": 726
+  },
+  "siege-weapon": {
+   "file": "siege-weapons.json",
+   "count": 84
+  },
+  "skill": {
+   "file": "skills.json",
+   "count": 50
+  },
+  "skill-general-action": {
+   "file": "skill-general-actions.json",
+   "count": 25
+  },
+  "source": {
+   "file": "sources.json",
+   "count": 343
+  },
+  "spell": {
+   "file": "spells.json",
+   "count": 2798
+  },
+  "style": {
+   "file": "styles.json",
+   "count": 11
+  },
+  "subconscious-mind": {
+   "file": "subconscious-minds.json",
+   "count": 8
+  },
+  "tactic": {
+   "file": "tactics.json",
+   "count": 37
+  },
+  "tenet": {
+   "file": "tenets.json",
+   "count": 2
+  },
+  "tradition": {
+   "file": "traditions.json",
+   "count": 5
+  },
+  "trait": {
+   "file": "traits.json",
+   "count": 925
+  },
+  "vehicle": {
+   "file": "vehicles.json",
+   "count": 140
+  },
+  "warfare-army": {
+   "file": "warfare-armies.json",
+   "count": 11
+  },
+  "warfare-tactic": {
+   "file": "warfare-tactics.json",
+   "count": 21
+  },
+  "way": {
+   "file": "ways.json",
+   "count": 11
+  },
+  "weapon": {
+   "file": "weapons.json",
+   "count": 613
+  },
+  "weapon-group": {
+   "file": "weapon-groups.json",
+   "count": 17
+  },
+  "weather-hazard": {
+   "file": "weather-hazards.json",
+   "count": 12
+  }
+ },
+ "total": 46796
+}

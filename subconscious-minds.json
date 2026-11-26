@@ -1,0 +1,354 @@
+[
+ {
+  "attribute": [
+   "Charisma"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-1",
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Emotional Acceptance](/SubconsciousMinds.aspx?ID=1)</title>\n\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 15\n\nThe mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your power—you might consider your heart the source of your strength, or you might find that the infinite complexity felt in a moment expresses your power more efficiently than any string of mystic words ever could.\n\n Your thought components are emotions. You might summon the sense of freedom to buoy you through the air or let fear grip your heart even as you plant it in another's mind. Emotion components tend to impart abstract or vivid effects to your visual and auditory spell manifestations as well as more intangible flashes of emotion, such as swirls of joyous color or a sense of growing melancholy.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Charisma.\n\n**Psyche Action** [Restore the Mind](/Actions.aspx?ID=1223)\n\n</column>\n\n<document level=\"2\" id=\"action-1223\" />",
+  "name": "Emotional Acceptance",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive",
+  "primary_source_raw": "Dark Archive pg. 15",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2022-07-27",
+  "remaster_id": [
+   "subconscious-mind-5"
+  ],
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 15\n</additional-info>\n\n---\n\n<summary>\nThe mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive"
+  ],
+  "source_raw": [
+   "Dark Archive pg. 15"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive](/Sources.aspx?ID=129) pg. 15",
+  "speed": {},
+  "sub_document_id": [
+   "action-1223"
+  ],
+  "summary": "The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …",
+  "summary_markdown": "The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …",
+  "text": "Psychic Subconscious Mind Emotional Acceptance Source Dark Archive pg. 15 The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your power—you might consider your heart the source of your strength, or you might find that the infinite complexity felt in a moment expresses your power more efficiently than any string of mystic words ever could. Your thought components are emotions. You might summon the sense of freedom to buoy you through the air or let fear grip your heart even as you plant it in another's mind. Emotion components tend to impart abstract or vivid effects to your visual and auditory spell manifestations as well as more intangible flashes of emotion, such as swirls of joyous color or a sense of growing melancholy. Key Attribute Your key attribute is Charisma. Psyche Action Restore the Mind Action Restore the Mind Single Action Emotion Enchantment Healing Mental Psyche Psychic Source Dark Archive pg. 15 Your unleashed psyche gives you closer connections to the emotions of your allies, letting you project reassurance and strength that replenishes their mind and body. Choose one of the two benefits to grant one ally within 30 feet that you can see. That ally is then temporarily immune for 10 minutes. The ally gains a +1 status bonus to saving throws against mental effects until your psyche ends. The ally regains Hit Points equal to 2 + double your level.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=1",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Intelligence"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-2",
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Gathered Lore](/SubconsciousMinds.aspx?ID=2)</title>\n\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 15\n\nMany psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a mentor or classically trained at a facility for psychic development, you've learned techniques and teachings for best harnessing the mind, cataloging each expression of psychic power with a specific teaching, anecdote, or phrase.\n\n Your thought components are mantras you associate with a given spell, which you mentally repeat as you cast. You might silently utter a teaching of resilience as you spin force into a barrier or hear the first three notes of a traveling song as you slip through space. Mantra components often produce runes or symbols from your learnings that are unique to each spell you cast, causing your spell manifestations to resemble those of conventional spellcasters to a much greater degree than those of other psychics.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Intelligence.\n\n**Psyche Action** [Recall the Teachings](/Actions.aspx?ID=1224)\n\n</column>\n\n<document level=\"2\" id=\"action-1224\" />",
+  "name": "Gathered Lore",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive",
+  "primary_source_raw": "Dark Archive pg. 15",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2022-07-27",
+  "remaster_id": [
+   "subconscious-mind-6"
+  ],
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 15\n</additional-info>\n\n---\n\n<summary>\nMany psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive"
+  ],
+  "source_raw": [
+   "Dark Archive pg. 15"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive](/Sources.aspx?ID=129) pg. 15",
+  "speed": {},
+  "sub_document_id": [
+   "action-1224"
+  ],
+  "summary": "Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …",
+  "summary_markdown": "Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …",
+  "text": "Psychic Subconscious Mind Gathered Lore Source Dark Archive pg. 15 Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a mentor or classically trained at a facility for psychic development, you've learned techniques and teachings for best harnessing the mind, cataloging each expression of psychic power with a specific teaching, anecdote, or phrase. Your thought components are mantras you associate with a given spell, which you mentally repeat as you cast. You might silently utter a teaching of resilience as you spin force into a barrier or hear the first three notes of a traveling song as you slip through space. Mantra components often produce runes or symbols from your learnings that are unique to each spell you cast, causing your spell manifestations to resemble those of conventional spellcasters to a much greater degree than those of other psychics. Key Attribute Your key attribute is Intelligence. Psyche Action Recall the Teachings Action Recall the Teachings Single Action Divination Occult Psyche Psychic Source Dark Archive pg. 15 The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to Aid all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an Occultism check for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=2",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Intelligence"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-3",
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Precise Discipline](/SubconsciousMinds.aspx?ID=3)</title>\n\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 16\n\nDetermine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, whether that's because your power naturally tends to precise, discrete effects, or because you've adopted strict discipline to ensure your mind can change the world only when you intend it to.\n\n Your thought components are calculations you make to determine the forces you need to call upon. Perhaps you mentally weigh the mass of an object against the force of gravity to levitate it or you might determine exactly how much energy is needed for an object to combust. Calculation components tend to impart ordered visual and auditory effects to your spell manifestation, such as regular tessellations of light, mathematical spirals, or harmonic tones.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Intelligence.\n\n**Psyche Action** [Calculate Threats](/Actions.aspx?ID=1225)\n\n</column>\n\n<document level=\"2\" id=\"action-1225\" />",
+  "name": "Precise Discipline",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive",
+  "primary_source_raw": "Dark Archive pg. 16",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2022-07-27",
+  "remaster_id": [
+   "subconscious-mind-7"
+  ],
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 16\n</additional-info>\n\n---\n\n<summary>\nDetermine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive"
+  ],
+  "source_raw": [
+   "Dark Archive pg. 16"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive](/Sources.aspx?ID=129) pg. 16",
+  "speed": {},
+  "sub_document_id": [
+   "action-1225"
+  ],
+  "summary": "Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …",
+  "summary_markdown": "Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …",
+  "text": "Psychic Subconscious Mind Precise Discipline Source Dark Archive pg. 16 Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, whether that's because your power naturally tends to precise, discrete effects, or because you've adopted strict discipline to ensure your mind can change the world only when you intend it to. Your thought components are calculations you make to determine the forces you need to call upon. Perhaps you mentally weigh the mass of an object against the force of gravity to levitate it or you might determine exactly how much energy is needed for an object to combust. Calculation components tend to impart ordered visual and auditory effects to your spell manifestation, such as regular tessellations of light, mathematical spirals, or harmonic tones. Key Attribute Your key attribute is Intelligence. Psyche Action Calculate Threats Action Calculate Threats Single Action Mental Psyche Psychic Source Dark Archive pg. 16 Your subconscious automatically calculates vectors and forces when your mind is unleashed, showing you the likely path of incoming attacks to avoid. You gain a +2 circumstance bonus to AC and Reflex saves until the beginning of your next turn.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=3",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Charisma"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-4",
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Wandering Reverie](/SubconsciousMinds.aspx?ID=4)</title>\n\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 16\n\nThe subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you bring this more fundamental part of your mind to bear. Whether through sleep, self-hypnosis, or special exercises to empty your mind, you've found a way to access a deeper, more chaotic state of free association that better channels your psychic power.\n\n Your thought components come from your imagination, images, and sensations your mind freely associates. You might have a passing daydream of small creatures bringing you an object as you telekinetically attract it or you may blink to find you've teleported to your desired location. Spell manifestations from imagination components have surreal or indistinct qualities, and the exact details fade quickly from observers' memory, as sensations from a dream.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Charisma.\n\n**Psyche Action** [Fade into Daydreams](/Actions.aspx?ID=1226)\n\n</column>\n\n<document level=\"2\" id=\"action-1226\" />",
+  "name": "Wandering Reverie",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive",
+  "primary_source_raw": "Dark Archive pg. 16",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2022-07-27",
+  "remaster_id": [
+   "subconscious-mind-8"
+  ],
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive](/Sources.aspx?ID=129) pg. 16\n</additional-info>\n\n---\n\n<summary>\nThe subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive"
+  ],
+  "source_raw": [
+   "Dark Archive pg. 16"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive](/Sources.aspx?ID=129) pg. 16",
+  "speed": {},
+  "sub_document_id": [
+   "action-1226"
+  ],
+  "summary": "The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …",
+  "summary_markdown": "The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …",
+  "text": "Psychic Subconscious Mind Wandering Reverie Source Dark Archive pg. 16 The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you bring this more fundamental part of your mind to bear. Whether through sleep, self-hypnosis, or special exercises to empty your mind, you've found a way to access a deeper, more chaotic state of free association that better channels your psychic power. Your thought components come from your imagination, images, and sensations your mind freely associates. You might have a passing daydream of small creatures bringing you an object as you telekinetically attract it or you may blink to find you've teleported to your desired location. Spell manifestations from imagination components have surreal or indistinct qualities, and the exact details fade quickly from observers' memory, as sensations from a dream. Key Attribute Your key attribute is Charisma. Psyche Action Fade into Daydreams Action Fade into Daydreams Single Action Illusion Psyche Psychic Source Dark Archive pg. 16 Your flights of imagination spill into the real world, causing you to become indistinct, hazy, or cloaked in figments. You become concealed until the start of your next turn. This concealment can't be used to Hide, as normal for concealing effects that leave your location obvious.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=4",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Charisma"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-5",
+  "legacy_id": [
+   "subconscious-mind-1"
+  ],
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Emotional Acceptance](/SubconsciousMinds.aspx?ID=5)</title>\n\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15\n\nThe mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your power—you might consider your heart the source of your strength, or you might find that the infinite complexity felt in a moment expresses your power more efficiently than any string of mystic words ever could.\n\n Your thoughtforms are emotions. You might summon the sense of freedom to buoy you through the air or let fear grip your heart even as you plant it in another's mind. Emotion thoughtforms tend to impart abstract or vivid effects to your visual and auditory spell manifestations as well as more intangible flashes of emotion, such as swirls of joyous color or a sense of growing melancholy.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Charisma.\n\n**Psyche Action** [Restore the Mind](/Actions.aspx?ID=3539)\n\n</column>\n\n<document level=\"2\" id=\"action-3539\" />",
+  "name": "Emotional Acceptance",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive (Remastered)",
+  "primary_source_raw": "Dark Archive (Remastered) pg. 15",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-02-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15\n</additional-info>\n\n---\n\n<summary>\nThe mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive (Remastered)"
+  ],
+  "source_raw": [
+   "Dark Archive (Remastered) pg. 15"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15",
+  "speed": {},
+  "sub_document_id": [
+   "action-3539"
+  ],
+  "summary": "The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …",
+  "summary_markdown": "The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your …",
+  "text": "Psychic Subconscious Mind Emotional Acceptance Source Dark Archive (Remastered) pg. 15 The mind's truths come not in learned words or mathematical formulas but in deeper feelings and sensations. Emotions unlock the door to your power—you might consider your heart the source of your strength, or you might find that the infinite complexity felt in a moment expresses your power more efficiently than any string of mystic words ever could. Your thoughtforms are emotions. You might summon the sense of freedom to buoy you through the air or let fear grip your heart even as you plant it in another's mind. Emotion thoughtforms tend to impart abstract or vivid effects to your visual and auditory spell manifestations as well as more intangible flashes of emotion, such as swirls of joyous color or a sense of growing melancholy. Key Attribute Your key attribute is Charisma. Psyche Action Restore the Mind Action Restore the Mind Single Action Emotion Healing Mental Psyche Psychic Source Dark Archive (Remastered) pg. 15 Your unleashed psyche gives you closer connections to the emotions of your allies, letting you project reassurance and strength that replenishes their mind and body. Choose one of the two benefits to grant one ally within 30 feet that you can see. That ally is then temporarily immune for 10 minutes. The ally gains a +1 status bonus to saving throws against mental effects until your psyche ends. The ally regains Hit Points equal to 2 + double your level.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=5",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Intelligence"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-6",
+  "legacy_id": [
+   "subconscious-mind-2"
+  ],
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Gathered Lore](/SubconsciousMinds.aspx?ID=6)</title>\n\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15\n\nMany psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a mentor or classically trained at a facility for psychic development, you've learned techniques and teachings for best harnessing the mind, cataloging each expression of psychic power with a specific teaching, anecdote, or phrase.\n\n Your thoughtforms are mantras you associate with a given spell, which you mentally repeat as you cast. You might silently utter a teaching of resilience as you spin force into a barrier or hear the first three notes of a traveling song as you slip through space. Mantra thoughtforms often produce runes or symbols from your learnings that are unique to each spell you cast, causing your spell manifestations to resemble those of conventional spellcasters to a much greater degree than those of other psychics.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Intelligence.\n\n**Psyche Action** [Recall the Teachings](/Actions.aspx?ID=3540)\n\n</column>\n\n<document level=\"2\" id=\"action-3540\" />",
+  "name": "Gathered Lore",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive (Remastered)",
+  "primary_source_raw": "Dark Archive (Remastered) pg. 15",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-02-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15\n</additional-info>\n\n---\n\n<summary>\nMany psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive (Remastered)"
+  ],
+  "source_raw": [
+   "Dark Archive (Remastered) pg. 15"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 15",
+  "speed": {},
+  "sub_document_id": [
+   "action-3540"
+  ],
+  "summary": "Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …",
+  "summary_markdown": "Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a …",
+  "text": "Psychic Subconscious Mind Gathered Lore Source Dark Archive (Remastered) pg. 15 Many psychics are self-taught, frantically improvising how to best control their abilities before their power overwhelms them. Not you. Tutored by a mentor or classically trained at a facility for psychic development, you've learned techniques and teachings for best harnessing the mind, cataloging each expression of psychic power with a specific teaching, anecdote, or phrase. Your thoughtforms are mantras you associate with a given spell, which you mentally repeat as you cast. You might silently utter a teaching of resilience as you spin force into a barrier or hear the first three notes of a traveling song as you slip through space. Mantra thoughtforms often produce runes or symbols from your learnings that are unique to each spell you cast, causing your spell manifestations to resemble those of conventional spellcasters to a much greater degree than those of other psychics. Key Attribute Your key attribute is Intelligence. Psyche Action Recall the Teachings Action Recall the Teachings Single Action Occult Psyche Psychic Source Dark Archive (Remastered) pg. 15 The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to Aid all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an Occultism check for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=6",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Intelligence"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-7",
+  "legacy_id": [
+   "subconscious-mind-3"
+  ],
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Precise Discipline](/SubconsciousMinds.aspx?ID=7)</title>\n\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16\n\nDetermine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, whether that's because your power naturally tends to precise, discrete effects, or because you've adopted strict discipline to ensure your mind can change the world only when you intend it to.\n\n Your thoughtforms are calculations you make to determine the forces you need to call upon. Perhaps you mentally weigh the mass of an object against the force of gravity to levitate it or you might determine exactly how much energy is needed for an object to combust. Calculation thoughtforms tend to impart ordered visual and auditory effects to your spell manifestation, such as regular tessellations of light, mathematical spirals, or harmonic tones.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Intelligence.\n\n**Psyche Action** [Calculate Threats](/Actions.aspx?ID=3541)\n\n</column>\n\n<document level=\"2\" id=\"action-3541\" />",
+  "name": "Precise Discipline",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive (Remastered)",
+  "primary_source_raw": "Dark Archive (Remastered) pg. 16",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-02-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16\n</additional-info>\n\n---\n\n<summary>\nDetermine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive (Remastered)"
+  ],
+  "source_raw": [
+   "Dark Archive (Remastered) pg. 16"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16",
+  "speed": {},
+  "sub_document_id": [
+   "action-3541"
+  ],
+  "summary": "Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …",
+  "summary_markdown": "Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, …",
+  "text": "Psychic Subconscious Mind Precise Discipline Source Dark Archive (Remastered) pg. 16 Determine intended outcome. Align thoughts. Identify and resolve distractions. Manifest. Intentional focus is the key to unleashing your abilities, whether that's because your power naturally tends to precise, discrete effects, or because you've adopted strict discipline to ensure your mind can change the world only when you intend it to. Your thoughtforms are calculations you make to determine the forces you need to call upon. Perhaps you mentally weigh the mass of an object against the force of gravity to levitate it or you might determine exactly how much energy is needed for an object to combust. Calculation thoughtforms tend to impart ordered visual and auditory effects to your spell manifestation, such as regular tessellations of light, mathematical spirals, or harmonic tones. Key Attribute Your key attribute is Intelligence. Psyche Action Calculate Threats Action Calculate Threats Single Action Mental Psyche Psychic Source Dark Archive (Remastered) pg. 16 Your subconscious automatically calculates vectors and forces when your mind is unleashed, showing you the likely path of incoming attacks to avoid. You gain a +2 circumstance bonus to AC and Reflex saves until the beginning of your next turn.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=7",
+  "weakness": {}
+ },
+ {
+  "attribute": [
+   "Charisma"
+  ],
+  "category": "subconscious-mind",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "subconscious-mind-8",
+  "legacy_id": [
+   "subconscious-mind-4"
+  ],
+  "markdown": "<title level=\"1\" right=\"Psychic Subconscious Mind \" pfs=\"Standard\">[Wandering Reverie](/SubconsciousMinds.aspx?ID=8)</title>\n\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16\n\nThe subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you bring this more fundamental part of your mind to bear. Whether through sleep, self-hypnosis, or special exercises to empty your mind, you've found a way to access a deeper, more chaotic state of free association that better channels your psychic power.\n\n Your thoughtforms come from your imagination, images, and sensations your mind freely associates. You might have a passing daydream of small creatures bringing you an object as you telekinetically attract it or you may blink to find you've teleported to your desired location. Spell manifestations from imagination thoughtforms have surreal or indistinct qualities, and the exact details fade quickly from observers' memory, as sensations from a dream.\n\n<column gap=\"tiny\">\n\n**Key Attribute** Your key attribute is Charisma.\n\n**Psyche Action** [Fade into Daydreams](/Actions.aspx?ID=3542)\n\n</column>\n\n<document level=\"2\" id=\"action-3542\" />",
+  "name": "Wandering Reverie",
+  "pfs": "Standard",
+  "primary_source": "Dark Archive (Remastered)",
+  "primary_source_raw": "Dark Archive (Remastered) pg. 16",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-02-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16\n</additional-info>\n\n---\n\n<summary>\nThe subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Dark Archive (Remastered)"
+  ],
+  "source_raw": [
+   "Dark Archive (Remastered) pg. 16"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Dark Archive (Remastered)](/Sources.aspx?ID=293) pg. 16",
+  "speed": {},
+  "sub_document_id": [
+   "action-3542"
+  ],
+  "summary": "The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …",
+  "summary_markdown": "The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you …",
+  "text": "Psychic Subconscious Mind Wandering Reverie Source Dark Archive (Remastered) pg. 16 The subconscious is by definition buried below the surface. Thus, only by stripping away the clamor and interference of everyday thought can you bring this more fundamental part of your mind to bear. Whether through sleep, self-hypnosis, or special exercises to empty your mind, you've found a way to access a deeper, more chaotic state of free association that better channels your psychic power. Your thoughtforms come from your imagination, images, and sensations your mind freely associates. You might have a passing daydream of small creatures bringing you an object as you telekinetically attract it or you may blink to find you've teleported to your desired location. Spell manifestations from imagination thoughtforms have surreal or indistinct qualities, and the exact details fade quickly from observers' memory, as sensations from a dream. Key Attribute Your key attribute is Charisma. Psyche Action Fade into Daydreams Action Fade into Daydreams Single Action Illusion Psyche Psychic Source Dark Archive (Remastered) pg. 16 Your flights of imagination spill into the real world, causing you to become indistinct, hazy, or cloaked in figments. You become concealed until the start of your next turn. This concealment can't be used to Hide, as normal for concealing effects that leave your location obvious.",
+  "type": "Psychic Subconscious Mind",
+  "url": "/SubconsciousMinds.aspx?ID=8",
+  "weakness": {}
+ }
+]

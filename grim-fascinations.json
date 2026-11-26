@@ -1,0 +1,158 @@
+[
+ {
+  "category": "grim-fascination",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "grim-fascination-1",
+  "markdown": "<title level=\"1\" right=\"Necromancer Grim Fascination \" pfs=\"Standard\">[Blood](/GrimFascinations.aspx?ID=1)</title>\n\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n\nBlood necromancers, also known as sanguimancers, manipulate their own blood and the flowing blood of their enemies. Your thralls often resemble vampiric spawn or constructs of hardened blood.\n\n**Grave Spell** [Blood Infusion](/Spells.aspx?ID=2887)\n\n**Thrall Enhancement** Your thralls are enhanced with a drop of your blood, and when they fall, your blood returns to you. Whenever a thrall is destroyed, you regain 1 Hit Point. At 5th level and every 4 levels thereafter, the amount of Hit Points you regain when a thrall is destroyed increases by 1.",
+  "name": "Blood",
+  "pfs": "Standard",
+  "primary_source": "Impossible Magic",
+  "primary_source_raw": "Impossible Magic pg. 30",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-07-30",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n</additional-info>\n\n---\n\n<summary>\nBlood necromancers, also known as sanguimancers, manipulate their own blood and the flowing blood of their enemies. Your thralls often resemble …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Impossible Magic"
+  ],
+  "source_raw": [
+   "Impossible Magic pg. 30"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Impossible Magic](/Sources.aspx?ID=355) pg. 30",
+  "speed": {},
+  "spell": [
+   "Blood Infusion"
+  ],
+  "spell_markdown": "[Blood Infusion](/Spells.aspx?ID=2887)",
+  "summary": "Blood necromancers, also known as sanguimancers, manipulate their own blood and the flowing blood of their enemies. Your thralls often resemble …",
+  "summary_markdown": "Blood necromancers, also known as sanguimancers, manipulate their own blood and the flowing blood of their enemies. Your thralls often resemble …",
+  "text": "Necromancer Grim Fascination Blood Source Impossible Magic pg. 30 Blood necromancers, also known as sanguimancers, manipulate their own blood and the flowing blood of their enemies. Your thralls often resemble vampiric spawn or constructs of hardened blood. Grave Spell Blood Infusion Thrall Enhancement Your thralls are enhanced with a drop of your blood, and when they fall, your blood returns to you. Whenever a thrall is destroyed, you regain 1 Hit Point. At 5th level and every 4 levels thereafter, the amount of Hit Points you regain when a thrall is destroyed increases by 1.",
+  "type": "Necromancer Grim Fascination",
+  "url": "/GrimFascinations.aspx?ID=1",
+  "weakness": {}
+ },
+ {
+  "category": "grim-fascination",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "grim-fascination-2",
+  "markdown": "<title level=\"1\" right=\"Necromancer Grim Fascination \" pfs=\"Standard\">[Bone](/GrimFascinations.aspx?ID=2)</title>\n\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n\nBone necromancers, also known as osteomancers, craft what they desire from the skeletons of the dead or simply create new skeletons by expanding and shaping small bone pieces.\n\n**Grave Spell** [Bone Spear](/Spells.aspx?ID=2890)\n\n**Thrall Enhancement** Your thralls are well constructed and nimble. Each of your thralls’ Speed is increased by 5 feet.",
+  "name": "Bone",
+  "pfs": "Standard",
+  "primary_source": "Impossible Magic",
+  "primary_source_raw": "Impossible Magic pg. 30",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-07-30",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n</additional-info>\n\n---\n\n<summary>\nBone necromancers, also known as osteomancers, craft what they desire from the skeletons of the dead or simply create new skeletons by expanding and …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Impossible Magic"
+  ],
+  "source_raw": [
+   "Impossible Magic pg. 30"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Impossible Magic](/Sources.aspx?ID=355) pg. 30",
+  "speed": {},
+  "spell": [
+   "Bone Spear"
+  ],
+  "spell_markdown": "[Bone Spear](/Spells.aspx?ID=2890)",
+  "summary": "Bone necromancers, also known as osteomancers, craft what they desire from the skeletons of the dead or simply create new skeletons by expanding and …",
+  "summary_markdown": "Bone necromancers, also known as osteomancers, craft what they desire from the skeletons of the dead or simply create new skeletons by expanding and …",
+  "text": "Necromancer Grim Fascination Bone Source Impossible Magic pg. 30 Bone necromancers, also known as osteomancers, craft what they desire from the skeletons of the dead or simply create new skeletons by expanding and shaping small bone pieces. Grave Spell Bone Spear Thrall Enhancement Your thralls are well constructed and nimble. Each of your thralls’ Speed is increased by 5 feet.",
+  "type": "Necromancer Grim Fascination",
+  "url": "/GrimFascinations.aspx?ID=2",
+  "weakness": {}
+ },
+ {
+  "category": "grim-fascination",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "grim-fascination-3",
+  "markdown": "<title level=\"1\" right=\"Necromancer Grim Fascination \" pfs=\"Standard\">[Flesh](/GrimFascinations.aspx?ID=3)</title>\n\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n\nFlesh necromancers, also known as caromancers, are experts at the destruction, production, and manipulation of flesh and muscles. Your thralls generally take on the form of zombies and other creatures of dead flesh.\n\n**Grave Spell** [Dead Weight](/Spells.aspx?ID=2896)\n\n**Thrall Enhancement** You can still make use of a destroyed thrall’s flesh. Whenever one of your thralls is destroyed, you can cause the thrall to leave behind [difficult terrain](/Rules.aspx?ID=2366) in the space it was destroyed. The difficult terrain lasts 10 minutes.",
+  "name": "Flesh",
+  "pfs": "Standard",
+  "primary_source": "Impossible Magic",
+  "primary_source_raw": "Impossible Magic pg. 30",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-07-30",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n</additional-info>\n\n---\n\n<summary>\nFlesh necromancers, also known as caromancers, are experts at the destruction, production, and manipulation of flesh and muscles. Your thralls …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Impossible Magic"
+  ],
+  "source_raw": [
+   "Impossible Magic pg. 30"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Impossible Magic](/Sources.aspx?ID=355) pg. 30",
+  "speed": {},
+  "spell": [
+   "Dead Weight"
+  ],
+  "spell_markdown": "[Dead Weight](/Spells.aspx?ID=2896)",
+  "summary": "Flesh necromancers, also known as caromancers, are experts at the destruction, production, and manipulation of flesh and muscles. Your thralls …",
+  "summary_markdown": "Flesh necromancers, also known as caromancers, are experts at the destruction, production, and manipulation of flesh and muscles. Your thralls …",
+  "text": "Necromancer Grim Fascination Flesh Source Impossible Magic pg. 30 Flesh necromancers, also known as caromancers, are experts at the destruction, production, and manipulation of flesh and muscles. Your thralls generally take on the form of zombies and other creatures of dead flesh. Grave Spell Dead Weight Thrall Enhancement You can still make use of a destroyed thrall’s flesh. Whenever one of your thralls is destroyed, you can cause the thrall to leave behind difficult terrain in the space it was destroyed. The difficult terrain lasts 10 minutes.",
+  "type": "Necromancer Grim Fascination",
+  "url": "/GrimFascinations.aspx?ID=3",
+  "weakness": {}
+ },
+ {
+  "category": "grim-fascination",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "grim-fascination-4",
+  "markdown": "<title level=\"1\" right=\"Necromancer Grim Fascination \" pfs=\"Standard\">[Spirit](/GrimFascinations.aspx?ID=4)</title>\n\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n\nSpirit necromancers, also known as vitamancers, seek the secrets of the soul and play with the eternal energies of the living and dead. Your thralls often resemble ghosts and spirits.\n\n**Grave Spell** [Life Tap](/Spells.aspx?ID=2900)\n\n**Thrall Enhancement** Your thralls, while still being tied to the physical world, have an incorporeal essence. Whenever one of your thralls Strikes, you can choose for that damage to be spirit or void damage instead of physical damage.",
+  "name": "Spirit",
+  "pfs": "Standard",
+  "primary_source": "Impossible Magic",
+  "primary_source_raw": "Impossible Magic pg. 30",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-07-30",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Impossible Magic](/Sources.aspx?ID=355) pg. 30\n</additional-info>\n\n---\n\n<summary>\nSpirit necromancers, also known as vitamancers, seek the secrets of the soul and play with the eternal energies of the living and dead. Your thralls …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Impossible Magic"
+  ],
+  "source_raw": [
+   "Impossible Magic pg. 30"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Impossible Magic](/Sources.aspx?ID=355) pg. 30",
+  "speed": {},
+  "spell": [
+   "Life Tap"
+  ],
+  "spell_markdown": "[Life Tap](/Spells.aspx?ID=2900)",
+  "summary": "Spirit necromancers, also known as vitamancers, seek the secrets of the soul and play with the eternal energies of the living and dead. Your thralls …",
+  "summary_markdown": "Spirit necromancers, also known as vitamancers, seek the secrets of the soul and play with the eternal energies of the living and dead. Your thralls …",
+  "text": "Necromancer Grim Fascination Spirit Source Impossible Magic pg. 30 Spirit necromancers, also known as vitamancers, seek the secrets of the soul and play with the eternal energies of the living and dead. Your thralls often resemble ghosts and spirits. Grave Spell Life Tap Thrall Enhancement Your thralls, while still being tied to the physical world, have an incorporeal essence. Whenever one of your thralls Strikes, you can choose for that damage to be spirit or void damage instead of physical damage.",
+  "type": "Necromancer Grim Fascination",
+  "url": "/GrimFascinations.aspx?ID=4",
+  "weakness": {}
+ }
+]

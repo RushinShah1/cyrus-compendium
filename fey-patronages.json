@@ -1,0 +1,146 @@
+[
+ {
+  "anathema": "allow your artistic skills to go fallow through lack of practice, disparage an honest attempt at a performance by another, refuse to perform for a fey audience",
+  "category": "fey-patronage",
+  "edict": "attempt to defuse hostile situations using art, showcase your performance skills at every opportunity",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "fey-patronage-1",
+  "markdown": "<title level=\"1\" right=\"Fey Patronage \" pfs=\"\">[Oath of Delight](/FeyPatronages.aspx?ID=1)</title>\n\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n\nYou’ve sworn an oath to bring joy to the world (all worlds, really) through your performances.\n\n**Edicts** attempt to defuse hostile situations using art, showcase your performance skills at every opportunity\n\n**Anathema** allow your artistic skills to go fallow through lack of practice, disparage an honest attempt at a performance by another, refuse to perform for a fey audience\n\n---\n\n**Boon** Your fey patron blesses your performances for others. When you succeed at a check to [Earn Income](/Actions.aspx?ID=2364) using Performance, you get a critical success instead.\n\n**Curse** If you won't voluntarily entertain, then your fey patron curses you to do so involuntarily. Minor mishaps make many of your actions seem foolish or draw attention to you. Whenever you attempt a [Deception](/Skills.aspx?ID=38), [Intimidation](/Skills.aspx?ID=40), or [Stealth](/Skills.aspx?ID=48) check, you must roll twice and take the worse result. This is a [misfortune](/Traits.aspx?ID=654) effect.",
+  "name": "Oath of Delight",
+  "primary_source": "Feybound",
+  "primary_source_raw": "Feybound pg. 20",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-11-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n</additional-info>\n\n---\n\n<summary>\nYou’ve sworn an oath to bring joy to the world (all worlds, really) through your performances.\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Feybound"
+  ],
+  "source_raw": [
+   "Feybound pg. 20"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Feybound](/Sources.aspx?ID=379) pg. 20",
+  "speed": {},
+  "summary": "You’ve sworn an oath to bring joy to the world (all worlds, really) through your performances.",
+  "summary_markdown": "You’ve sworn an oath to bring joy to the world (all worlds, really) through your performances.",
+  "text": "Fey Patronage Oath of Delight Source Feybound pg. 20 You’ve sworn an oath to bring joy to the world (all worlds, really) through your performances. Edicts attempt to defuse hostile situations using art, showcase your performance skills at every opportunity Anathema allow your artistic skills to go fallow through lack of practice, disparage an honest attempt at a performance by another, refuse to perform for a fey audience Boon Your fey patron blesses your performances for others. When you succeed at a check to Earn Income using Performance, you get a critical success instead. Curse If you won't voluntarily entertain, then your fey patron curses you to do so involuntarily. Minor mishaps make many of your actions seem foolish or draw attention to you. Whenever you attempt a Deception, Intimidation, or Stealth check, you must roll twice and take the worse result. This is a misfortune effect.",
+  "type": "Fey Patronage",
+  "url": "/FeyPatronages.aspx?ID=1",
+  "weakness": {}
+ },
+ {
+  "anathema": "attack, betray, or harm the fey to which you’re sworn, allow that fey to come to harm through your inaction, refuse an order from that fey",
+  "category": "fey-patronage",
+  "edict": "perform all duties requested of you by the fey to which you’re sworn for as long as promised",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "fey-patronage-2",
+  "markdown": "<title level=\"1\" right=\"Fey Patronage \" pfs=\"\">[Oath of Fealty](/FeyPatronages.aspx?ID=2)</title>\n\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n\nYou’ve sworn an oath to serve a specific fey for a set period—typically, to serve the fey to whom you swore the oath for a year and a day. Some powerful fey will manipulate time in their domain to extend the duration of this oath.\n\n**Edicts** perform all duties requested of you by the fey to which you’re sworn for as long as promised\n\n**Anathema** attack, betray, or harm the fey to which you’re sworn, allow that fey to come to harm through your inaction, refuse an order from that fey\n\n---\n\n**Boon** Your fey patron steps in to keep you, their servant, alive for another day. Once, your fey patron ends all negative effects affecting you, unless they're from an artifact, deity, or similarly powerful source; they also restore all lost Hit Points and replenish your spells, Focus Points, and other daily resources. Your fey patron will typically do this in only the direst of circumstances.\n\n**Curse** Your fey patron turns the weight of your obligation to them from metaphorical to physical. You're permanently [clumsy](/Conditions.aspx?ID=61) 1 and encumbered.",
+  "name": "Oath of Fealty",
+  "primary_source": "Feybound",
+  "primary_source_raw": "Feybound pg. 20",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-11-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n</additional-info>\n\n---\n\n<summary>\nYou’ve sworn an oath to serve a specific fey for a set period—typically, to serve the fey to whom you swore the oath for a year and a day. Some …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Feybound"
+  ],
+  "source_raw": [
+   "Feybound pg. 20"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Feybound](/Sources.aspx?ID=379) pg. 20",
+  "speed": {},
+  "summary": "You’ve sworn an oath to serve a specific fey for a set period—typically, to serve the fey to whom you swore the oath for a year and a day. Some …",
+  "summary_markdown": "You’ve sworn an oath to serve a specific fey for a set period—typically, to serve the fey to whom you swore the oath for a year and a day. Some …",
+  "text": "Fey Patronage Oath of Fealty Source Feybound pg. 20 You’ve sworn an oath to serve a specific fey for a set period—typically, to serve the fey to whom you swore the oath for a year and a day. Some powerful fey will manipulate time in their domain to extend the duration of this oath. Edicts perform all duties requested of you by the fey to which you’re sworn for as long as promised Anathema attack, betray, or harm the fey to which you’re sworn, allow that fey to come to harm through your inaction, refuse an order from that fey Boon Your fey patron steps in to keep you, their servant, alive for another day. Once, your fey patron ends all negative effects affecting you, unless they're from an artifact, deity, or similarly powerful source; they also restore all lost Hit Points and replenish your spells, Focus Points, and other daily resources. Your fey patron will typically do this in only the direst of circumstances. Curse Your fey patron turns the weight of your obligation to them from metaphorical to physical. You're permanently clumsy 1 and encumbered.",
+  "type": "Fey Patronage",
+  "url": "/FeyPatronages.aspx?ID=2",
+  "weakness": {}
+ },
+ {
+  "anathema": "refuse entry to a traveler who hasn’t shown you hostility, refuse to grant shelter to a fey who hasn’t attacked you, throw a nonviolent guest out of your home",
+  "category": "fey-patronage",
+  "edict": "show good hospitality (which includes food and a place to rest should they be requested) to all guests in any property you view as your home",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "fey-patronage-3",
+  "markdown": "<title level=\"1\" right=\"Fey Patronage \" pfs=\"\">[Oath of Hospitality](/FeyPatronages.aspx?ID=3)</title>\n\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n\nYou’ve sworn an oath to show hospitality to all, especially fey.\n\n**Edicts** show good hospitality (which includes food and a place to rest should they be requested) to all guests in any property you view as your home\n\n**Anathema** refuse entry to a traveler who hasn’t shown you hostility, refuse to grant shelter to a fey who hasn’t attacked you, throw a nonviolent guest out of your home\n\n---\n\n**Boon** Your fey patron grants you the ability to keep your tables full for company. Once per week, you can cast [create food](/Spells.aspx?ID=1475) as an innate primal spell, though you must do so to feed any guests you might have before you partake yourself.\n\n**Curse** Your fey patron ensures that all fey know of your lack of courtesy. Fey creatures' attitudes toward you are one category worse (friendly instead of [helpful](/Conditions.aspx?ID=78), [indifferent](/Conditions.aspx?ID=82) instead of [friendly](/Conditions.aspx?ID=75), and so on).",
+  "name": "Oath of Hospitality",
+  "primary_source": "Feybound",
+  "primary_source_raw": "Feybound pg. 20",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-11-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n</additional-info>\n\n---\n\n<summary>\nYou’ve sworn an oath to show hospitality to all, especially fey.\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Feybound"
+  ],
+  "source_raw": [
+   "Feybound pg. 20"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Feybound](/Sources.aspx?ID=379) pg. 20",
+  "speed": {},
+  "summary": "You’ve sworn an oath to show hospitality to all, especially fey.",
+  "summary_markdown": "You’ve sworn an oath to show hospitality to all, especially fey.",
+  "text": "Fey Patronage Oath of Hospitality Source Feybound pg. 20 You’ve sworn an oath to show hospitality to all, especially fey. Edicts show good hospitality (which includes food and a place to rest should they be requested) to all guests in any property you view as your home Anathema refuse entry to a traveler who hasn’t shown you hostility, refuse to grant shelter to a fey who hasn’t attacked you, throw a nonviolent guest out of your home Boon Your fey patron grants you the ability to keep your tables full for company. Once per week, you can cast create food as an innate primal spell, though you must do so to feed any guests you might have before you partake yourself. Curse Your fey patron ensures that all fey know of your lack of courtesy. Fey creatures' attitudes toward you are one category worse (friendly instead of helpful, indifferent instead of friendly, and so on).",
+  "type": "Fey Patronage",
+  "url": "/FeyPatronages.aspx?ID=3",
+  "weakness": {}
+ },
+ {
+  "anathema": "attack a fey protecting a natural space, pollute a natural space, take more from nature than what you need to survive",
+  "category": "fey-patronage",
+  "edict": "defend wilderness from development or destruction, prevent others from taking more than they need to survive",
+  "exclude_from_search": false,
+  "is_standard_ancestry_feat": false,
+  "id": "fey-patronage-4",
+  "markdown": "<title level=\"1\" right=\"Fey Patronage \" pfs=\"\">[Oath of the Wilds](/FeyPatronages.aspx?ID=4)</title>\n\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n\nYou've sworn an oath to protect nature from encroaching civilization and from those who would despoil it or recklessly plunder its resources. Some fey will instead request an oath to protect a specific region, rather than nature as a whole.\n\n**Edicts** defend wilderness from development or destruction, prevent others from taking more than they need to survive\n\n**Anathema** attack a fey protecting a natural space, pollute a natural space, take more from nature than what you need to survive\n\n---\n\n**Boon** Your fey patron grants you the ability to move swiftly through natural spaces. You ignore [difficult terrain](/Rules.aspx?ID=2366) caused by plants and fungi, such as bushes, vines, and undergrowth.\n\n**Curse** Your fey patron turns nature against you. Whenever you take damage from a creature or hazard with the [animal](/Traits.aspx?ID=531), [fungus](/Traits.aspx?ID=614), or [plant](/Traits.aspx?ID=668) traits, you're [sickened](/Conditions.aspx?ID=91) 2.",
+  "name": "Oath of the Wilds",
+  "primary_source": "Feybound",
+  "primary_source_raw": "Feybound pg. 20",
+  "primary_source_category": "Rulebooks",
+  "rarity": "common",
+  "rarity_id": 1,
+  "release_date": "2026-11-04",
+  "resistance": {},
+  "search_markdown": "<additional-info>\n**Source** [Feybound](/Sources.aspx?ID=379) pg. 20\n</additional-info>\n\n---\n\n<summary>\nYou've sworn an oath to protect nature from encroaching civilization and from those who would despoil it or recklessly plunder its resources. Some …\n</summary>",
+  "skill_mod": {},
+  "source": [
+   "Feybound"
+  ],
+  "source_raw": [
+   "Feybound pg. 20"
+  ],
+  "source_category": [
+   "Rulebooks"
+  ],
+  "source_markdown": "[Feybound](/Sources.aspx?ID=379) pg. 20",
+  "speed": {},
+  "summary": "You've sworn an oath to protect nature from encroaching civilization and from those who would despoil it or recklessly plunder its resources. Some …",
+  "summary_markdown": "You've sworn an oath to protect nature from encroaching civilization and from those who would despoil it or recklessly plunder its resources. Some …",
+  "text": "Fey Patronage Oath of the Wilds Source Feybound pg. 20 You've sworn an oath to protect nature from encroaching civilization and from those who would despoil it or recklessly plunder its resources. Some fey will instead request an oath to protect a specific region, rather than nature as a whole. Edicts defend wilderness from development or destruction, prevent others from taking more than they need to survive Anathema attack a fey protecting a natural space, pollute a natural space, take more from nature than what you need to survive Boon Your fey patron grants you the ability to move swiftly through natural spaces. You ignore difficult terrain caused by plants and fungi, such as bushes, vines, and undergrowth. Curse Your fey patron turns nature against you. Whenever you take damage from a creature or hazard with the animal, fungus, or plant traits, you're sickened 2.",
+  "type": "Fey Patronage",
+  "url": "/FeyPatronages.aspx?ID=4",
+  "weakness": {}
+ }
+]
