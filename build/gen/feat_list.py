@@ -4,9 +4,9 @@ CLASS = ["Magus's Analysis","Force Fang","Expansive Spellstrike","Running Rechar
  "Fused Staff","Standby Spell","Runic Impression","Spell Swipe","Capture Magic",
  "Dimensional Disappearance","Cascading Ray","Rapid Recharge",
  "Sprinting Spellstrike","Conflux Focus","Overwhelming Spellstrike","Magic Sense (Magus)",
- "Hasted Assault","Arcane Shroud","Dispelling Spellstrike","Resounding Cascade"]
+ "Hasted Assault","Arcane Shroud","Dispelling Spellstrike","Resounding Cascade","Stolen Spell","Supreme Spellstrike"]
 SKILLGEN = ["Fleet","Canny Acumen","Additional Lore","Toughness","Incredible Initiative","Kreighton's Cognitive Crossover","Magical Shorthand","Improvise Strategy",
  "Battle Planner","Unmistakable Lore","Courtly Graces","Leverage Connections","Titan Wrestler","Quick Jump","Bon Mot","Unified Theory","Trick Magic Item",
- "Prescient Planner","Prescient Consumable","Biographical Eye","Axuma's Awakening","Assurance","Kip Up","Combat Climber","Powerful Leap"]
-ANCESTRY = ["Natural Ambition","General Training","Clever Improviser","Multitalented","Advanced General Training"]
+ "Prescient Planner","Prescient Consumable","Biographical Eye","Axuma's Awakening","Assurance","Kip Up","Combat Climber","Powerful Leap","Cloud Jump","Legendary Professional","Sanguine Tenacity"]
+ANCESTRY = ["Natural Ambition","General Training","Clever Improviser","Multitalented","Advanced General Training","Heroic Presence"]
 DEDICATIONS = ["Witch Dedication","Psychic Dedication","Rogue Dedication","Exemplar Dedication","Commander Dedication"]

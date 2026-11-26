@@ -157,13 +157,20 @@ def picks_html(rank):
         f'<div class="pk">{ic(k, "ro-" + k)}<span class="pl">{lab}</span><span class="pv">{", ".join(link(n) for n in p.get(lab, [])) or "<span class=muted>Nothing stands out</span>"}</span></div>'
         for k, lab in ROLES)
     acc = ''
-    for key, lab, icn in [('book', 'Spellbook', 'book'), ('scroll', 'Scrolls', 'scroll'), ('wand', 'Wands', 'wand'), ('familiar', 'Familiar', 'familiar')]:
+    for key, lab, icn in [('book', 'Spellbook, learn first', 'book'), ('book2', 'Spellbook, add later', 'book'), ('scroll', 'Scrolls', 'scroll'), ('wand', 'Wands', 'wand'), ('familiar', 'Familiar', 'familiar')]:
         if p.get(key):
             acc += f'<div class="pk">{ic(icn)}<span class="pl">{lab}</span><span class="pv">{", ".join(link(n) for n in p[key])}</span></div>'
+    cover = ''
+    if p.get('saves'):
+        rows = ''.join(
+            f'<div class="pk">{ic("shieldmagic")}<span class="pl">{d}</span><span class="pv">{", ".join(link(n) for n in p["saves"].get(d, [])) or "<span class=muted>No card at this rank</span>"}</span></div>'
+            for d in ('AC', 'Fortitude', 'Reflex', 'Will'))
+        types = f'<div class="pk">{ic("damage")}<span class="pl">Damage types</span><span class="pv">{H.escape(p["types"])}</span></div>' if p.get('types') else ''
+        cover = f'<h4 class="pkh">Payloads by defence</h4><div class="pkg"><div>{rows}</div><div>{types}</div></div>'
     prep = f'<p class="prep">{H.escape(p["prep"])}</p>' if p.get('prep') else ''
     note = f'<p class="muted small">{H.escape(p["note"])}</p>' if p.get('note') else ''
     title = 'Cantrip picks' if rank == 0 else f'Rank {rank} picks'
-    return f'<aside class="picks"><h3>{ic("star")}{title}</h3>{prep}<div class="pkg"><div>{roles}</div><div>{acc}</div></div>{note}</aside>'
+    return f'<aside class="picks"><h3>{ic("star")}{title}</h3>{prep}<div class="pkg"><div>{roles}</div><div>{acc}</div></div>{cover}{note}</aside>'
 
 
 def considered_html(rank):

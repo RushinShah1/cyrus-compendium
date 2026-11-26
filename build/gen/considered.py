@@ -567,3 +567,22 @@ for _n, _why, _g in [
         if _n in _d:
             _d[_n] = _why
             CG[_n] = _g
+
+# reasons name no party member and no printing
+for _n, _why in [
+ ('Cauterize Wounds', 'Removes bleeding with fire damage; ordinary healing does more.'),
+ ('Veil Of Spirits', 'Takes 3 actions; a 20-foot area that dazzles creatures and gives them weakness to spirit damage, which suits a party that deals spirit damage, but it affects allies too.'),
+ ('Magnetize', "Makes an ally attract metal ranged attacks and penalise metal melee attacks on others; a spell for the party's main defender, but it costs Cyrus a turn."),
+ ('Acid Splash', 'Replaced by Caustic Blast.'),
+ ('Ray of Frost', 'Replaced by Frostbite.'),
+ ('Ghost Sound', 'Replaced by Figment.'),
+ ('Phantasmal Killer', 'Replaced by Vision of Death.'),
+ ('Cone of Cold', 'Replaced by Howling Blizzard.'),
+ ('Disjunction', 'Deactivates or destroys a magic item; rarely the right answer.'),
+]:
+    _hit = False
+    for _d in C.values():
+        if _n in _d:
+            _d[_n] = _why
+            _hit = True
+    assert _hit, _n

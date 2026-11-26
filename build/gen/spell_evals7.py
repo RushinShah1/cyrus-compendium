@@ -62,3 +62,28 @@ for _n, _a, _b in [
     _r, _g, _e = E[_n]
     assert _a in _e, _n
     E[_n] = (_r, _g, _e.replace(_a, _b))
+
+# party members are not named in evaluations; shared spells are covered on the combat page
+for _n, _a, _b in [
+ ('Bless', "It is also on Yara's spell list, so a scroll is only worth carrying as a backup.", "In a party with a divine caster, a scroll is only worth carrying as a backup."),
+ ('Cleanse Affliction', "It is also on Yara's spell list, so a scroll is a backup", "It is on the divine, occult and primal lists, so in a party with one of those casters a scroll is a backup"),
+ ('Dispel Magic', "Yara and Theldren have it on their spell lists too, so the party can decide between them who keeps a copy ready.", "It is on all four spell lists, so a party with several casters can decide between them who keeps a copy ready."),
+ ('Eclipse Burst', "Long-range area spells are something a primal caster such as Theldren may cover instead, which frees Cyrus's slot for a payload.", "It is also a divine and primal spell, so another caster can cover long-range areas, which frees Cyrus's slot for a payload."),
+ ('Fireball', "It is also available to Theldren, should the party want a very long-range area option, while Cyrus spends", "It is also a primal spell, so another caster can provide the very long-range area option while Cyrus spends"),
+ ('Fly', "It is also on Theldren's and Yara's spell lists, so on a day that needs several flyers the party has more than one source.", "It is on all four spell lists, so on a day that needs several flyers a party with other casters has more than one source."),
+ ('Haste', "It is also on Theldren's spell list, which gives the party a second source on days when both want it.", "It is also an occult and primal spell, so another caster can be a second source on days when more than one ally wants it."),
+ ('Heroism', "It is also on Yara's spell list, so Cyrus's scroll or wand is a way to cover it when her slots are needed elsewhere.", "It is a divine and occult spell, so Cyrus's scroll or wand is a way to cover it when a divine caster's slots are needed elsewhere."),
+ ('Slow', "It is also on Theldren's spell list, but only Cyrus can deliver it with a Strike.", "It is also an occult and primal spell, but only Cyrus can deliver it with a Strike."),
+ # evaluations describe the spell, not which printing it comes from
+ ('Acid Arrow', "Acid Arrow is a legacy attack spell that deals", "Acid Arrow is an attack spell that deals"),
+ ('Shocking Grasp', "Shocking Grasp is a legacy spell that stays available under the table's rules because it wasn't reprinted under the same name. It deals", "Shocking Grasp deals"),
+ ('Sudden Bolt', "Sudden Bolt is a legacy spell that deals", "Sudden Bolt deals"),
+ ('Spell Turning', " It is a legacy spell that wasn't renamed.", ""),
+ ('Weird', "Weird is a legacy spell that deals", "Weird deals"),
+ ('Friendfetch', "Friendfetch is a legacy spell that pulls", "Friendfetch pulls"),
+ ('Death Ward', "Death Ward is a legacy spell that grants", "Death Ward grants"),
+ ('Helpful Steps', "Helpful Steps is a legacy spell that creates", "Helpful Steps creates"),
+]:
+    _r, _g, _e = E[_n]
+    assert _a in _e, _n
+    E[_n] = (_r, _g, _e.replace(_a, _b))

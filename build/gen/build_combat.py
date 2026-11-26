@@ -63,8 +63,8 @@ SITUATIONS = [
          "Only once Analysis has been used on this creature today and no Focus Point is worth spending. It costs the whole turn, so it only works when he doesn't need to move."),
         ('Off-Spellstrike', 7, [('1', 'Improvise Strategy'), ('1', 'Trip', 'MAP 0'), ('1', 'Dimensional Assault', 'Strike at MAP −5')],
          "Clumsy 1 from Improvise Strategy lowers the target's Reflex DC for the Trip. Dimensional Assault then moves Cyrus to the best flanking square, Strikes the prone target and recharges Spellstrike, so the next turn opens with a full-accuracy Spellstrike."),
-        ('Running Recharge, then Spellstrike', 16, [('1', 'Running Recharge', 'recharges'), ('2', 'Spellstrike', 'MAP 0')],
-         "If Running Recharge is taken instead of Arcane Shroud: it recharges and moves up to half his Speed in one action, so he can reach a flanking square and Spellstrike every turn without Focus Points."),
+        ('Running Recharge, then Spellstrike', 4, [('1', 'Running Recharge', 'recharges'), ('2', 'Spellstrike', 'MAP 0')],
+         "Running Recharge recharges Spellstrike and moves him up to half his Speed, or a Step, in one action, so he can reach a flanking square and Spellstrike without spending a Focus Point. Use it once Analysis has been spent on this creature and he needs to move; if the target is already in reach and flanked, Force Fang adds damage for the same action."),
     ]),
     ('t-far', 'No enemy in reach', [
         ('Stride, then Spellstrike', 1, [('1', 'Stride'), ('2', 'Spellstrike', 'MAP 0')],
@@ -133,32 +133,84 @@ def action_cards():
 
 
 def defence_table():
-    rows = [
-        ['AC', 'Ignition, Live Wire, Shocking Grasp, Briny Bolt, Acid Arrow, Disintegrate',
-         'The Strike roll decides the spell, so a miss loses both. Use them against an off-guard target or when AC is the weak defence.'],
-        ['Reflex', 'Thunderstrike, Breathe Fire, Sudden Bolt, Lightning Bolt, Fireball, Howling Blizzard, Chain Lightning, Frigid Flurry',
-         'Most of his area damage, so it is the widest choice for Expansive Spellstrike.'],
-        ['Fortitude', 'Frostbite, Void Warp, Grim Tendrils, Noise Blast, Slow, Blindness, Weight of the World, Petrify',
-         'Often the lowest save of spellcasters and agile creatures.'],
-        ['Will', 'Daze, Fear, Befuddle, Laughing Fit, Stupefy, Paralyze, Vision of Death, Confusion',
-         'Often the lowest save of brutes and animals.'],
-    ]
-    return table(['Weak defence', 'Example spells', 'Notes'], rows)
+    from picks import P
+    notes = {
+        'AC': 'The Strike roll decides the spell, so a miss loses both. Use them against an off-guard target or when AC is the weak defence.',
+        'Reflex': 'Most of his area damage, so it is the widest choice for Expansive Spellstrike.',
+        'Fortitude': 'Often the lowest save of spellcasters and agile creatures.',
+        'Will': 'Often the lowest save of brutes and animals. Mindless creatures are immune to mental effects, which covers most Will spells.',
+    }
+    rows = []
+    for d in ('AC', 'Reflex', 'Fortitude', 'Will'):
+        names = []
+        for r in range(0, 10):
+            for n in P[r]['saves'].get(d, [])[:2]:
+                if ' (' not in n and n not in names:
+                    names.append(n)
+        rows.append([d, ', '.join(names), notes[d]])
+    return table(['Weak defence', 'Spells by rank, lowest first', 'Notes'], rows)
 
 
-PARTY = [('Cyrus Val\'Dira', 'Magus', 'Arcane; occult from items after 9'), ('Mira', 'Champion', 'Divine (focus spells)'), ('Cassius', 'Fighter', 'None'),
-         ('Yara', 'Cleric', 'Divine'), ('Theldren', 'Druid', 'Primal'), ('Adrian', 'Animist', 'Divine')]
+PARTY = [
+    ('Mira', 'Champion of Kelemvor', 'Divine (focus spells)',
+     "A durable front line. Her champion's reaction triggers when an enemy damages an ally while both are inside her 15-foot aura, and what it does depends on her cause.",
+     "End turns within 15 feet of her so the reaction covers him. From 10 feet he can flank with her without standing next to the enemy. Trip enemies inside her reach, and avoid moving one out of her aura with Acid Grip or a Shove."),
+    ('Cassius', 'Fighter', 'None',
+     "The party's most accurate attacker, with Reactive Strike from level 1.",
+     "Off-guard, prone and frightened targets add to his chance of a critical hit, which is already the party's highest, so set them up on the enemy he is fighting. A tripped enemy that Stands provokes his Reactive Strike and, from 6, Cyrus's as well. Haste on him is an extra Strike each round."),
+    ('Yara', 'Cloistered cleric of Kelemvor', 'Divine',
+     "Healing from her divine font and the divine spell list, including Bless and Heroism.",
+     "Carry his own emergency healing so hers is not the only route back into a fight. Agree with her who prepares Dispel Magic and Fly. Check before spending two answers on the same effect."),
+    ('Theldren', 'Stone order druid', 'Primal',
+     "Primal area and control spells. Haste, Slow, Fireball, Fly and Dispel Magic are on his list as well as Cyrus's.",
+     "Agree each day who prepares the shared spells. Say where he will end his turn before an area spell goes down, and use Acid Grip, Trip or a flank to hold enemies inside the area without standing in it."),
+    ('Adrian', 'Animist', 'Divine',
+     "Divine spells and apparitions that change from day to day.",
+     "Ask what today's apparitions reward, then apply pressure to the defence his next spell targets."),
+]
+_TRAD = {'primal': ['Theldren'], 'divine': ['Yara', 'Adrian']}
+SHARED = ['Haste', 'Slow', 'Fly', 'Fireball', 'Dispel Magic', 'Eclipse Burst', 'Heroism', 'Bless', 'Cleanse Affliction']
+
+
+def shared_table():
+    import rules
+    rows = []
+    for n in SHARED:
+        tr = rules.get(n, 'spell')['system']['traits'].get('traditions', [])
+        who = [w for t in ('primal', 'divine') if t in tr for w in _TRAD[t]]
+        how = 'Spellbook' if 'arcane' in tr else 'Scroll or wand after the dedication at 9' if 'occult' in tr else 'Not available to him'
+        rows.append([n, ', '.join(t.capitalize() for t in tr), ', '.join(who) or 'None', how])
+    return table(['Spell', 'Spell lists', 'Also on the list of', 'How Cyrus gets it'], rows)
+
+
+LEVELS = [
+    ('1 to 4', "One Spellstrike, then a recharge. Magus's Analysis recharges once per creature each day, Dimensional Assault and Force Fang recharge for a Focus Point each, and Arcane Cascade costs an action in the first round.",
+     "Cantrips are the usual payload, with Gouging Claw first. Both rank-1 slots go to Sure Strike. Expansive Spellstrike and Running Recharge arrive at 4, with two rank-2 slots."),
+    ('5 to 8', "Haste and Slow at 5. Reactive Strike at 6 makes his reach a threat off-turn. Improvise Strategy at 7 gives off-guard without an attack, studious spells give a free Arcane Cascade, and master Athletics makes Trip reliable.",
+     "Slotted spells start to cover each save. A Ring of Wizardry adds rank-1 slots at 7 and Aspera's stave adds charges at 8, so Sure Strike no longer competes with payloads."),
+    ('9 to 12', "Dimensional Assault reaches his full Speed at 9. Dimensional Disappearance at 10 makes each teleport an escape or an attack from hiding. Sprinting Spellstrike at 12 turns line spells into movement and area damage.",
+     "The Witch Dedication at 9 opens occult scrolls, wands and Synesthesia from the stave. Haste becomes a studious spell at 11."),
+    ('13 to 16', "Hasted Assault at 14 makes him quickened for a whole fight and adds a third Focus Point. Arcane Shroud at 16 adds a short buff each time he enters Arcane Cascade.",
+     "Fly and Translocate become studious spells at 13. Rank-5 to rank-8 slots give an A-graded payload for most defences at each rank."),
+    ('17 to 20', "Rank-9 slots and master spellcasting at 17. Double Spellstrike at 19 delivers two spells in one Spellstrike once a day. Supreme Spellstrike at 20 makes him permanently quickened for a Strike or a recharge.",
+     "Aspera's planned grand gift at 17 removes the limit on the quickened action. Stolen Spell at 18 only matters against enemy spellcasters."),
+]
 
 
 def combat_page():
     nav = ''.join(f'<a href="#" data-to="{a}">{b}</a>' for a, b in [
-        ('cb-turns', 'Turn patterns'), ('cb-grid', 'Positioning'), ('cb-off', 'Off-turn'), ('cb-def', 'Targeting'), ('cb-party', 'Party'), ('cb-act', 'Actions')])
+        ('cb-levels', 'By level'), ('cb-turns', 'Turn patterns'), ('cb-grid', 'Positioning'), ('cb-off', 'Off-turn'), ('cb-def', 'Targeting'), ('cb-party', 'Party'), ('cb-act', 'Actions')])
     sit = ''.join(f'<a href="#" data-to="{sid}">{h}</a>' for sid, h, _ in SITUATIONS)
-    party = table(['Character', 'Class', 'Spell tradition'], [list(p) for p in PARTY])
+    party = table(['Character', 'Class', 'Spell tradition', 'What they bring', 'What Cyrus does with them'], [list(p) for p in PARTY])
+    levels = table(['Levels', 'How a turn works', 'Spells and resources'], [list(r) for r in LEVELS])
     page = f'''<div class="page doc" data-page="combat">
 <header class="ph"><h1>Combat flow and teamwork</h1>
 <p class="lede">Turn patterns by situation and level, positioning, targeting and the party. Focus Points are assumed full at the start of each fight.</p></header>
 <nav class="jumpbar scroll">{nav}</nav>
+
+<h2 id="cb-levels">{ic("upgrade")}Play patterns by level</h2>
+<p class="prose">What changes at each stage of the plan. The turn cards below give the level each turn becomes available.</p>
+{levels}
 
 <h2 id="cb-turns">{ic("clock")}Turn patterns</h2>
 <p class="prose">Each card is one turn. Glyphs show action cost; tags show the multiple attack penalty at that point. Spellstrike counts as two attacks once it resolves, so any attack after it is at −10. Recharge, Analysis, Force Fang and Improvise Strategy have no attack trait.</p>
@@ -170,14 +222,18 @@ def combat_page():
 {diagrams()}
 
 <h2 id="cb-off">{ic("reach")}Off-turn</h2>
-<div class="panel"><p>From level 6, Reactive Strike covers every square within 10 feet. It triggers on move and manipulate actions, ranged attacks and leaving a square, so a prone enemy that Stands, an enemy that Steps in, or a caster within reach all provoke it. A critical hit disrupts a manipulate action. Ending each turn charged, two squares from the target and opposite an ally leaves the enemy a choice between staying flanked and provoking.</p></div>
+<div class="panel"><p>From level 6, Reactive Strike covers every square within 10 feet. It triggers on move and manipulate actions, ranged attacks and leaving a square, so a prone enemy that Stands, an enemy that Strides through his reach, or a caster within reach all provoke it. A Step does not trigger it. A critical hit disrupts a manipulate action. Ending each turn charged, two squares from the target and opposite an ally leaves the enemy a choice between staying flanked and provoking.</p></div>
 
 <h2 id="cb-def">{ic("target")}Targeting by defence</h2>
 <p class="prose">Magus's Analysis and the party's Recall Knowledge should identify the weakest defence. Preparing spells for at least three defences keeps a good Spellstrike available.</p>
 {defence_table()}
 
 <h2 id="cb-party">{ic("team")}Party</h2>
+<p class="prose">Cyrus is the party's only arcane caster and, from 9, its only occult one. The others cover the divine and primal lists.</p>
 {party}
+<h3>Spells on more than one list</h3>
+<p class="muted">Being on a caster's list does not mean it is prepared that day, so agree who brings each one. Sisterstone armour works with a matching sisterstone item carried by Mira or Yara.</p>
+{shared_table()}
 
 <h2 id="cb-act">{ic("fist")}Actions</h2>
 <p class="prose">Basic and Athletics actions with their rules text. Class actions are on the Feat paths page.</p>
