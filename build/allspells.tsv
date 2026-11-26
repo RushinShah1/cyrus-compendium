@@ -1,0 +1,467 @@
+0	Gouging Claw	A	2		500000	S--	1
+0	Ignition	A	2		400000	A--	1
+0	Needle Darts	A	2		400001	A--	1
+0	Live Wire	A	2		400000	B--	1
+0	Frostbite	A	2		310000	B--	1
+0	Electric Arc	A	2		300000	B--	1
+0	Void Warp	A	2		201000	C--	1
+0	Telekinetic Projectile	A	2		300001	C--	1
+0	Tangle Vine	A	2		030100	B--	1
+0	Caustic Blast	A	2		200000	C--	1
+0	Scatter Scree	A	2	1 minute	120000	C--	1
+0	Daze	A	2	1 round	110000	C--	1
+0	Shield	A	1	until the start of your next turn	000400	A--	0
+0	Detect Magic	A	2		000004	B--	0
+0	Figment	A	2	sustained	010003	B--	0
+0	Telekinetic Hand	A	2	sustained	000003	C--	0
+0	Message	A	1	see below	000003	B--	0
+0	Time Sense	A	1		000102	C--	0
+0	Eat Fire	A	r	until the end of your next turn	000202	C--	0
+0	Gale Blast	A	2		110020	C--	1
+0	Puff of Poison	A	2		300000	C--	1
+0	Spout	A	2		301000	C--	1
+0	Slashing Gust	A	2		200000	D--	1
+0	Timber	A	2		200000	C--	1
+0	Phase Bolt	A	2		300000	C--	1
+0	Glass Shield	A	1	until the start of your next turn	000300	C--	1
+0	Warp Step	A	2		000010	D--	0
+0	Light	A	2	until your next daily preparations	000003	B--	0
+0	Prestidigitation	A	2	sustained	000002	C--	0
+0	Read Aura	A	long		000003	B--	0
+0	Infectious Enthusiasm	A	2	1 round	000100	D--	0
+0	Guidance	O	1	until the start of your next turn	000302	A--	0
+0	Forbidding Ward	O	2	sustained up to 1 minute	000300	B--	0
+0	Haunting Hymn	O	2		200000	C--	1
+0	Wash Your Luck	O	2	1 minute	000200	C--	0
+0	Know the Way	O	2		000002	C--	0
+0	Read the Air	O	2	1 minute	000002	B--	0
+1	Sure Strike	A	1	until the end of your turn	000600	SCC	0
+1	Thunderstrike	A	2		410000	ACD	1
+1	Dehydrate	A	2	1 minute	202000	ACC	1
+1	Fear	A	2	varies	014000	ABB	1
+1	Fleet Step	A	2	1 minute	000050	BBC	0
+1	Tailwind	A	2	1 hour	000042	CCB	0
+1	Grease	A	2	1 minute	040020	BBC	1
+1	Befuddle	A	2	1 round	003000	BCC	1
+1	Briny Bolt	A	2		330000	SBC	1
+1	Shocking Grasp	A	2		400000	ACD	1
+1	Force Barrage	A	1 2 3		200000	CCC	0
+1	Breathe Fire	A	2		200000	CCD	1
+1	Dizzying Colors	A	2	1 or more rounds (see below)	043000	BCC	1
+1	Pummeling Rubble	A	2		200020	CCD	1
+1	Gust of Wind	A	2	until the start of your next turn	030030	ACC	1
+1	Goblin Pox	A	2		003000	BCD	1
+1	Leaden Steps	A	2	sustained up to 1 minute	012000	BCD	1
+1	Command	A	2	until the end of the target's next turn	030000	CCD	1
+1	Curse of Slippery Steps	A	2	varies	030010	CCD	1
+1	Hydraulic Push	A	2		300030	BCD	1
+1	Grim Tendrils	A	2		201000	CCD	1
+1	Horizon Thunder Sphere	A	2 3 long		300000	BCD	0
+1	Mystic Armor	A	2	until your next daily preparations	000200	DDD	0
+1	Jump	A	1		000030	CCC	0
+1	Gentle Landing	A	r	1 minute	000003	BCD	0
+1	Interposing Earth	A	r	3 rounds	000300	BDD	0
+1	Illusory Object	A	2	10 minutes	020004	BAC	0
+1	Illusory Disguise	A	2	1 hour	000004	CAC	0
+1	Helpful Steps	A	2	10 minutes	000023	CAC	0
+1	Runic Weapon	A	2	1 minute	000300	CDD	0
+1	Conductive Weapon	A	2	1 minute	200200	CCD	0
+1	Friendfetch	A	2		000040	CBD	0
+1	Pocket Library	A	3	24 hours	000003	CCB	0
+1	Schadenfreude	A	r		012000	CDD	0
+1	Acidic Burst	A	2		300000	BCD	1
+1	Agitate	A	2	varies	021000	BCD	1
+1	Alarm	A	long	8 hours	000003	CCB	0
+1	Ant Haul	A	2	8 hours	000001	DDD	0
+1	Anticipate Peril	A	2	10 minutes	000100	DDD	0
+1	Carryall	A	2	8 hours	000002	DDD	0
+1	Charm	A	2	1 hour	000004	BBC	1
+1	Chilling Spray	A	2		220000	CCD	1
+1	Déjà Vu	A	2	2 rounds	030000	CDD	1
+1	Draw Ire	A	2	1 minute	111000	CDD	1
+1	Echoing Weapon	A	2	1 minute	100000	DDD	0
+1	Endure	A	1	1 minute	000100	DDD	0
+1	Enfeeble	A	2	varies	003000	BCC	1
+1	Flourishing Flora	A	2		200000	CDD	1
+1	Gravitational Pull	A	1 2 3		020030	BCC	1
+1	Kinetic Ram	A	1 2 3		010020	CDD	1
+1	Mending	A	long		000001	DDD	0
+1	Mindlink	A	2		000002	CDD	0
+1	Mud Pit	A	3	1 minute	030000	CCD	0
+1	Noxious Vapors	A	2	1 round	200100	CDD	1
+1	Penumbral Shroud	A	2	10 minutes	001001	DDD	1
+1	Pest Form	A	2	10 minutes	000003	BAC	0
+1	Phantasmal Minion	A	3	sustained	000002	DDD	0
+1	Shattering Gem	A	2	1 minute	000200	DDD	1
+1	Shockwave	A	2		022000	BCD	1
+1	Sleep	A	2		040000	CBD	1
+1	Snowball	A	2		210000	CDD	1
+1	Spider Sting	A	2		102000	CDD	1
+1	Summon Animal	A	3	sustained up to 1 minute	100100	DDD	0
+1	Tether	A	2	1 minute	030000	BCD	1
+1	Thoughtful Gift	A	1		000002	CCD	0
+1	Ventriloquism	A	2	10 minutes	000002	CCD	0
+1	Wall of Shrubs	A	3	1 minute	020010	CCD	0
+1	Soothe	O	2	1 minute	000500	FAA	0
+1	Bless	O	2	1 minute	000400	FCC	0
+1	Bane	O	2	1 minute	003000	FCD	1
+1	Sanctuary	O	2	1 minute	000300	FBC	1
+1	Protection	O	2	1 minute	000300	FCB	0
+1	Liberating Command	O	1		000300	FBB	0
+1	Ill Omen	O	2	1 round	003000	FBC	1
+1	Lose the Path	O	r		030000	FDD	0
+1	Phantom Pain	O	2	1 minute	203000	FCD	1
+1	Spirit Link	O	2	10 minutes	000300	FCB	0
+2	Acid Grip	A	2		332050	SBC	1
+2	Invisibility	A	2	10 minutes	000436	SAA	0
+2	Blazing Bolt	A	1 2 3		400000	ACD	1
+2	Telekinetic Maneuver	A	2		040040	ACD	1
+2	Sudden Bolt	A	2		400000	BCD	1
+2	Acid Arrow	A	2		300000	CCD	1
+2	Disintegrating Puddle	A	2	1 minute	320000	BCD	1
+2	Laughing Fit	A	2	sustained	042000	BCD	1
+2	Stupefy	A	2	varies	003000	CCD	1
+2	Revealing Light	A	2	varies	003004	BAC	1
+2	Noise Blast	A	2		300000	BCD	1
+2	Dimensional Drop	A	2		230000	BCD	1
+2	Dispel Magic	A	2		020005	BAD	0
+2	See the Unseen	A	2	10 minutes	000004	BBA	0
+2	Blur	A	2	1 minute	000400	ABB	0
+2	Mirror Image	A	2	1 minute	000400	BBC	0
+2	Resist Energy	A	2	10 minutes	000400	BAB	0
+2	Loose Time's Arrow	A	2	until the end of your next turn	000340	BBB	0
+2	Enlarge	A	2	5 minutes	000430	BBC	0
+2	Gecko Grip	A	2	10 minutes	000032	ACC	0
+2	Water Breathing	A	long	1 hour	000003	CAD	0
+2	Blood Vendetta	A	r	varies	220000	BDD	0
+2	Embed Message	A	2	unlimited	000002	CCD	0
+2	Hidebound	A	r	1 round	000400	ADD	0
+2	Warping Pull	A	r		000430	ADD	0
+2	Propulsive Breeze	A	r		000030	BDD	0
+2	Pyrefowl Rebuke	A	r		100010	DDD	0
+2	Animated Assault	A	2	sustained up to 1 minute	300000	CCD	1
+2	Ash Cloud	A	3	1 minute	210000	CCD	0
+2	Charitable Urge	A	2	varies	040000	BCD	1
+2	Darkness	A	3	1 minute	020001	DDD	0
+2	Darkvision	A	2	1 hour	000004	BCB	0
+2	Deafness	A	2		002000	DDD	1
+2	Entangling Flora	A	2	1 minute	040000	BBC	1
+2	Environmental Endurance	A	long	until your next daily preparations	000002	CCB	0
+2	Exploding Earth	A	2		310000	CCD	1
+2	False Vitality	A	2	8 hours	000300	BCB	0
+2	Floating Flame	A	2	sustained up to 1 minute	300000	CCD	1
+2	Heat Metal	A	2		400000	BCD	1
+2	Humanoid Form	A	2	10 minutes	000004	CBC	0
+2	Illusory Creature	A	2	sustained	210003	CCD	0
+2	Knock	A	2	1 minute	000004	BAB	0
+2	Lucky Number	A	long	until the next time you make your daily preparations	000200	CCD	0
+2	Mist	A	3	1 minute	020002	CBD	0
+2	Oaken Resilience	A	2	10 minutes	000100	DDD	0
+2	Phantasmal Treasure	A	2	varies	030000	CCD	1
+2	Shrink	A	2	5 minutes	000002	CCD	0
+2	Splinter Volley	A	2 3		400000	CCD	0
+2	Sticky Fire	A	2		202000	CCD	1
+2	Summon Elemental	A	3	sustained up to 1 minute	100100	DDD	0
+2	Translate	A	2	1 hour	000003	CBB	0
+2	Vomit Swarm	A	2		302000	BCD	1
+2	Water Walk	A	2	10 minutes	000002	CCC	0
+2	Web	A	3	1 minute	040000	BBC	0
+2	Marvelous Mount	A	long	8 hours	000002	DCC	0
+2	Blazing Armory	A	2	5 minutes	000100	DDD	0
+2	Gentle Breeze	O	2	10 minutes	000400	FCA	0
+2	Sound Body	O	2		000303	FAB	0
+2	Calm	O	2	sustained up to 1 minute	040000	FBD	1
+2	Silence	O	2	1 minute	000004	FAC	0
+2	Clear Mind	O	2		000300	FAC	0
+2	Cleanse Affliction	O	2		000300	FBC	0
+2	Sure Footing	O	2		000300	FBC	0
+2	Paranoia	O	2	1 minute	030000	FCD	1
+2	Augury	O	long		000003	FCD	0
+2	Spiritual Armament	O	2	sustained up to 1 minute	300000	FCD	1
+2	Status	O	2	until your next daily preparations	000002	FCC	0
+3	Haste	A	2	1 minute	000550	SAA	0
+3	Slow	A	2	varies	054000	SAB	1
+3	Time Jump	A	1		000060	ABC	0
+3	Lightning Bolt	A	2		400000	SBD	1
+3	Fireball	A	2		400000	BBD	1
+3	Cave Fangs	A	2	1 minute	430000	BBD	1
+3	Blindness	A	2		005000	BCD	1
+3	Paralyze	A	2	varies	050000	BCD	1
+3	Blister Bomb	A	2		004000	ACD	1
+3	Earthbind	A	2	varies	030000	CBD	1
+3	Magnetic Acceleration	A	2		400000	BCD	1
+3	Wooden Double	A	r		000400	ADD	0
+3	Ghostly Weapon	A	2	5 minutes	000302	ABD	0
+3	Cloud Dragon's Cloak	A	r	1 round	000400	ADD	0
+3	Shadow Projectile	A	r		202000	BDD	0
+3	Agonizing Despair	A	2		403000	ACD	1
+3	Aqueous Orb	A	2	sustained up to 1 minute	030000	CCD	1
+3	Clairaudience	A	long	10 minutes	000003	CBC	0
+3	Cozy Cabin	A	long	12 hours	000002	DCC	0
+3	Crashing Wave	A	2		400000	BCD	1
+3	Curse of Lost Time	A	2	varies	004000	BCD	1
+3	Day's Weight	A	2	1 minute	004000	ACD	1
+3	Dive and Breach	A	2		200040	BCD	1
+3	Dream Message	A	long	until your next daily preparations	000003	CBC	0
+3	Elemental Absorption	A	2	1 minute	000300	CCD	0
+3	Enthrall	A	2	sustained	020002	CCD	1
+3	Gravity Well	A	2		030040	BCD	1
+3	Hypnotize	A	2	sustained up to 1 minute	040000	BCD	1
+3	Impending Doom	A	2	3 rounds	234000	BCD	1
+3	Levitate	A	2	5 minutes	000002	CCC	0
+3	Locate	A	long	sustained	000003	CBD	0
+3	Mind Reading	A	2	1 round or sustained up to 1 minute	000003	CBD	1
+3	Organsight	A	2	1 minute	400000	BCD	0
+3	Phantom Prison	A	3	1 minute	040000	BCD	0
+3	Safe Passage	A	3	sustained up to 1 minute	000102	DCD	0
+3	Shared Invisibility	A	2	10 minutes	000305	ABB	0
+3	Stinking Cloud	A	2	1 minute	043000	ABC	1
+3	Tempest Cloak	A	2	1 minute	000300	CCD	0
+3	Vampiric Feast	A	2		400100	ACD	1
+3	Wall of Thorns	A	3	1 minute	040000	BCD	0
+3	Wall of Water	A	3	1 minute	030000	CCD	0
+3	Wall of Wind	A	3	1 minute	030000	BBD	0
+3	Warding Aggression	A	2	up to 1 minute	000300	CDD	0
+3	Echo Jump	A	2		200030	BCD	1
+3	Temporal Twin	A	2	until the end of your next turn	000300	CCD	0
+3	Blazing Dive	A	2		200030	CCD	1
+3	Oneiric Mire	A	3	1 minute	030000	BCD	0
+3	Veil of Privacy	A	long	8 hours	000002	DCD	0
+3	Coral Scourge	A	2	1 minute	003000	CCD	1
+3	Glass Sand	A	2		400000	CCD	1
+3	Magical Fetters	A	2	see below	034000	BCD	1
+3	Radiant Globe	A	3	sustained up to 1 minute	020300	CCD	0
+3	Heroism	O	2	10 minutes	000500	FAB	0
+3	Hypercognition	O	1		000005	FAA	0
+3	Defensive Prescience	O	r		000200	FDD	0
+3	Begone	O	1		030030	FBC	1
+3	Strength of Mind	O	1	10 minutes	000300	FCC	0
+3	Focusing Hum	O	1	sustained up to 1 minute	000002	FCD	0
+4	Fly	A	2	5 minutes	000365	AAB	0
+4	Translocate	A	2		000054	AAB	0
+4	Vision of Death	A	2		403000	BCD	1
+4	Containment	A	2	1 minute	050300	BBD	1
+4	Force Rain	A	1 2 3		400000	BCD	1
+4	Life-Draining Roots	A	2		300200	CCD	1
+4	Grasping Earth	A	2	sustained up to 1 minute	040000	BCD	1
+4	Confusion	A	2	1 minute	040000	BCD	1
+4	Unfettered Movement	A	2	10 minutes	000330	CBC	0
+4	Clairvoyance	A	long	10 minutes	000004	CAB	0
+4	Wall of Mirrors	A	2		040003	ABD	0
+4	Zephyr Slip	A	r		000020	DDD	0
+4	Rebounding Barrier	A	r		000300	CDD	0
+4	Bestial Curse	A	2	varies	003000	CCD	1
+4	Chromatic Ray	A	2		400000	ACD	1
+4	Countless Eyes	A	2	1 minute	000200	CCD	0
+4	Creation	A	long	1 hour	000003	CBC	0
+4	Dispelling Globe	A	2	10 minutes	000400	CCD	0
+4	Draw the Lightning	A	2	1 minute	300100	BCD	1
+4	Dull Ambition	A	2	varies	002002	CCD	1
+4	Fire Shield	A	2	1 minute	000400	BCD	0
+4	Flicker	A	2	1 minute	000300	CCD	0
+4	Grasp of the Deep	A	2	1 minute	432000	ACD	1
+4	Ice Storm	A	3	sustained up to 1 minute	220000	CCD	0
+4	Invisibility Curtain	A	3	sustained	010003	CCD	0
+4	Liminal Doorway	A	long	8 hours	000003	CCD	0
+4	Mercurial Stride	A	2		200030	CCD	1
+4	Mirror's Misfortune	A	2	1 minute	000300	CCD	1
+4	Morass of Ages	A	2	sustained up to 1 minute	040000	BCD	1
+4	Mountain Resilience	A	2	20 minutes	000400	BBC	0
+4	Nightmare	A	long	1 day	002001	DCD	0
+4	Outcast's Curse	A	2		002002	CCD	1
+4	Peaceful Bubble	A	long	24 hours	000003	CCD	0
+4	Rust Cloud	A	3	1 minute	310000	BCD	0
+4	Seal Fate	A	2	varies	003000	CCD	1
+4	Shape Stone	A	2		000002	CCD	1
+4	Solid Fog	A	3	1 minute	030000	CCD	0
+4	Spell Immunity	A	2	until the next time you make your daily preparations.	000300	CCD	0
+4	Suggestion	A	2	varies	020003	BBC	1
+4	Telepathy	A	2	10 minutes	000002	CCC	0
+4	Vampiric Maiden	A	2		320100	CCD	1
+4	Vapor Form	A	2	5 minutes	000013	CCD	0
+4	Wall of Fire	A	3	1 minute	230000	BCD	0
+4	Weapon Storm	A	2		200000	CCD	1
+4	Winning Streak	A	1	1 round (see text)	000400	BBC	0
+4	Replicate	A	3	sustained	000002	CCD	0
+4	Discern Lies	A	2	10 minutes	000003	CBC	0
+4	Planar Tether	A	2	varies	010001	CCD	1
+4	Sanguine Mist	A	2	sustained up to 1 minute	300100	CCD	1
+4	Infectious Melody	O	2	varies	030000	FCD	1
+4	Tortoise and the Hare	O	2		040300	FAC	1
+4	Read Omens	O	long		000003	FCD	0
+4	Honeyed Words	O	2	10 minutes	000003	FBC	0
+5	Weight of the World	A	2		354000	SBD	1
+5	Wall of Stone	A	3		060043	SAC	0
+5	Glacial Skewer	A	2		530040	ACD	1
+5	Blazing Fissure	A	2		442000	SCD	1
+5	Tornadic Gale	A	2		430040	ACD	1
+5	Howling Blizzard	A	2		420000	BCD	1
+5	Impaling Spike	A	2	1 minute	340000	BCD	1
+5	Shadow Siphon	A	r		000400	CDD	0
+5	Corrosive Muck	A	2	1 minute	340000	BCD	1
+5	Banishment	A	2		050000	CCD	1
+5	Space Fold Gate	A	3	1 minute	000054	CBD	0
+5	Magic Passage	A	2	1 hour	000004	CAD	0
+5	Scouting Eye	A	long	sustained	000004	CBC	0
+5	Sending	A	3		000004	CAC	0
+5	Drop Dead	A	r	sustained up to 1 minute	000403	BDD	0
+5	Acid Storm	A	2	1 minute	200000	CCD	1
+5	Blink Charge	A	2		300040	BCD	0
+5	Blister	A	2	1 minute	400000	BCD	1
+5	Cloak of Colors	A	2	1 minute	020400	BBC	0
+5	Elemental Breath	A	2 3		400000	BCD	0
+5	Flowing Strike	A	3		200040	CCD	0
+5	Forceful Hand	A	2	sustained up to 1 minute	000300	CCD	0
+5	Freezing Rain	A	3	sustained up to 10 minutes	330000	CCD	0
+5	Geyser	A	2	1 round	320000	BCD	1
+5	Glimmer of Charm	A	2	sustained up to 1 minute	000003	CCD	1
+5	Grisly Growths	A	2		400000	ACD	1
+5	Hallucination	A	2	1 hour	010004	BBC	1
+5	Illusory Scene	A	long	1 hour	000003	CBC	0
+5	Imaginary Lockbox	A	long	until the next time you make your daily preparations	000002	CCC	0
+5	Invoke Spirits	A	2	sustained up to 1 minute	210000	CCD	1
+5	Mariner's Curse	A	2		004000	BCD	1
+5	Mind Probe	A	long	sustained up to 1 minute	000004	CBD	0
+5	Mirror Malefactors	A	2	sustained up to 1 minute	403000	ACD	1
+5	Pressure Zone	A	3	1 minute	004000	BCD	0
+5	Quicken Time	A	2	1 minute	000340	CCD	0
+5	Rewinding Step	A	long	10 minutes	000020	CCD	0
+5	Slither	A	3	1 minute	040000	BCD	0
+5	Stagnate Time	A	2	1 minute	050000	ABC	1
+5	Subconscious Suggestion	A	2	varies	010003	BBC	1
+5	Summon Dragon	A	3	sustained up to 1 minute	200100	DDD	0
+5	Telekinetic Haul	A	2	sustained up to 1 minute	000002	DCD	0
+5	Toxic Cloud	A	3	1 minute	300000	BCD	0
+5	Truespeech	A	2	1 hour	000004	BBC	0
+5	Umbral Journey	A	long	8 hours	000003	CBC	0
+5	Wall of Ice	A	3	1 minute	030000	BCD	0
+5	Wave of Despair	A	2	1 or more rounds	050000	ACD	1
+5	Etheric Shards	A	2	1 minute	120000	CCD	1
+5	Telepathic Bond	A	long	8 hours	000003	CBC	0
+5	King's Castle	A	2		000030	CCD	0
+5	Control Water	A	2	1 hour	000002	DCD	1
+5	Blinding Bottle	A	2		044000	BCD	1
+5	Blinding Foam	A	2	1 minute	305000	BCD	1
+5	Synesthesia	O	2	varies	036000	FAB	1
+5	Strange Geometry	O	3	1 minute	040000	FCD	0
+5	Inevitable Disaster	O	2		400000	FBD	1
+5	Death Ward	O	2	10 minutes	000400	FBD	0
+5	Shadow Blast	O	2		400000	FCD	0
+6	Disintegrate	A	2		500003	ABD	1
+6	Chain Lightning	A	2		500000	ACD	1
+6	Living Thunderbolt	A	2	1 minute	502450	SCD	1
+6	Wall of Force	A	3	1 minute	050000	ABD	0
+6	Silver Spear	A	2		500000	ACD	1
+6	Petrify	A	2	varies	040000	BCD	1
+6	Cast into Time	A	2		330000	CCD	1
+6	Unexpected Transposition	A	r		000430	BDD	0
+6	Collective Transposition	A	2		020050	BBD	1
+6	Truesight	A	2	10 minutes	000005	CAC	0
+6	Mislead	A	2	sustained up to 1 minute	000433	BBD	0
+6	Teleport	A	long		000005	CAC	0
+6	Arrow Salvo	A	2		500000	BCD	1
+6	Chromatic Image	A	2	1 minute	000400	BCD	0
+6	Cursed Metamorphosis	A	2	varies	040000	BCD	1
+6	Dominate	A	2	until your next daily preparations	050000	BCD	1
+6	Field of Razors	A	3	1 minute	120000	CCD	0
+6	Flame Vortex	A	3	sustained up to 1 minute	200000	CCD	0
+6	Frost Pillar	A	2	sustained up to 1 minute	040000	BCD	1
+6	Lignify	A	2	varies	050000	ACD	1
+6	Necrotize	A	2	varies	502000	ACD	1
+6	Never Mind	A	2	varies	003000	BCD	1
+6	Phantasmal Calamity	A	2		510000	ACD	1
+6	Poltergeist's Fury	A	3	sustained up to 1 minute	200000	CCD	0
+6	Purple Worm Sting	A	2		300000	CCD	1
+6	Repulsion	A	2	1 minute	030000	DCD	1
+6	Spellwrack	A	2		002000	CCD	1
+6	Tangling Creepers	A	3	10 minutes	030000	CCD	0
+6	Vampiric Exsanguination	A	2		500100	ACD	1
+6	Vibrant Pattern	A	2	sustained up to 1 minute	040000	BCD	1
+6	Vitrifying Blast	A	2	varies	440000	ACD	1
+6	Wall of Metal	A	3	1 minute	030000	CCD	0
+6	Zero Gravity	A	3	sustained up to 1 minute	030000	CCD	0
+6	Awaken Entropy	A	3	sustained up to 1 minute	300000	CCD	0
+6	Explosive Barrage	A	2		500000	BCD	1
+6	Frozen Fog	A	2	1 minute	403000	BCD	1
+6	Phantom Orchestra	A	2	sustained up to 1 minute	200000	CCD	1
+6	Scrying	A	long	sustained up to 10 minutes	000004	CBD	0
+6	Utter Destruction	A	2		400000	CCD	1
+6	Zealous Conviction	O	2	10 minutes	000500	FAB	0
+6	Scintillating Safeguard	O	r		000500	FDD	0
+6	Spirit Blast	O	2		400000	FCD	1
+6	Blanket of Stars	O	2	10 minutes	000003	FCD	1
+7	True Target	A	1	until the start of your next turn	000600	SBC	0
+7	Frigid Flurry	A	2		500050	SCD	1
+7	Beheading Buzz Saw	A	2		400000	BCD	1
+7	Eclipse Burst	A	2		400000	CCD	1
+7	Telekinetic Bombardment	A	2		440000	ACD	1
+7	Comet Charge	A	2		500050	ACD	1
+7	Defy the Gods	A	2		005000	BCD	1
+7	Spell Riposte	A	r		000403	BDD	0
+7	Contingency	A	long	until your next daily preparations	000403	BBC	0
+7	Duplicate Foe	A	3	sustained up to 1 minute	210000	CCD	0
+7	Energy Aegis	A	long	until your next daily preparations	000400	ABB	0
+7	Fiery Body	A	2	1 minute	200100	CCD	0
+7	Heaving Earth	A	2		030020	CCD	1
+7	Hungry Depths	A	3	sustained up to 1 minute	300000	CCD	0
+7	Interplanar Teleport	A	long		000004	CBD	0
+7	Lifewood Cage	A	3	sustained up to 1 minute	040000	BCD	0
+7	Mask of Terror	A	2	1 minute	000400	BCD	1
+7	Momentary Recovery	A	2		000030	CCD	0
+7	Planar Palace	A	long	until your next daily preparations	000003	CBC	0
+7	Planar Seal	A	2	until your next daily preparations	000002	CCD	0
+7	Power Word Blind	A	1	varies	045000	ACD	0
+7	Prismatic Armor	A	2	1 minute	000400	BCD	0
+7	Prismatic Spray	A	2		430000	BCD	0
+7	Project Image	A	2	sustained up to 1 minute	000002	DCD	0
+7	Reverse Gravity	A	3	1 minute	050000	BCD	0
+7	Retrocognition	A	long	sustained	000003	CBD	0
+7	Shadow Raid	A	3	1 minute	400000	BCD	0
+7	Time Beacon	A	1	until the end of your turn	000503	ADD	0
+7	Vacuum	A	2	sustained up to 1 minute	030000	DCD	1
+7	Warp Mind	A	2		040000	BCD	1
+7	Tempest of Shades	A	3	until the end of your next turn	300000	CCD	0
+7	Shock to the System	O	2	1 minute	000503	FSA	0
+7	Ethereal Jaunt	O	2	sustained up to 1 minute	000044	FBD	0
+7	Visions of Danger	O	3	1 minute	420000	FCD	0
+7	Orb of Twisting Fate	O	2	up to 1 minute	030000	FCD	1
+8	Arctic Rift	A	2		540000	ACD	1
+8	Disappearance	A	2	10 minutes	000656	SAC	0
+8	Quandary	A	2	sustained	060000	ACD	0
+8	Roar of Freedom	A	1		503400	SCD	1
+8	Desiccate	A	2		500000	BCD	1
+8	Uncontrollable Dance	A	2	varies	054000	ACD	1
+8	Falling Sky	A	2		050000	ACD	1
+8	Boil Blood	A	2		502000	ACD	1
+8	Confusing Colors	A	2	sustained up to 1 minute	040000	BCD	1
+8	Dream Council	A	long	1 hour	000002	DCD	0
+8	Earthquake	A	2	1 round	040000	CCD	1
+8	Hidden Mind	A	2	until the next time you make your daily preparations	000303	CBC	0
+8	Pinpoint	A	long		000004	CBD	0
+8	Power Word Stun	A	1	varies	060000	ACD	0
+8	Prismatic Wall	A	3	1 hour	040000	BCD	0
+8	Rainbow Fumarole	A	3	1 minute	300000	CCD	0
+8	Unrelenting Observation	A	2	varies	000002	DCD	0
+8	Whirlpool	A	3	sustained up to 1 minute	030000	CCD	0
+8	Sudden Transposition	A	2		400040	BCD	1
+8	Summon Archmage	A	3	until the end of your next turn	300000	CCD	0
+8	Spirit Song	O	2		430000	FCD	1
+8	Spiritual Epidemic	O	2	varies	005000	FCD	1
+9	Foresight	A	2	1 hour	000603	SAC	0
+9	Remake Physiology	A	2	varies	046030	SCD	1
+9	Falling Stars	A	2		520000	BCD	1
+9	Phantasmagoria	A	2		440000	BCD	1
+9	Dimensional Excision	A	2		500000	ACD	1
+9	Implosion	A	2	sustained up to 1 minute	400000	BCD	1
+9	Massacre	A	2		500000	BCD	1
+9	Bilocation	A	2	10 minutes	000350	ABD	0
+9	Detonate Magic	A	2		200002	CCD	1
+9	Magnetic Dominion	A	3	sustained up to 1 minute	000040	CCD	0
+9	Power Word Kill	A	1	varies	500000	ACD	0
+9	Prismatic Sphere	A	2	1 hour	040000	CCD	0
+9	Resplendent Mansion	A	long	until your next daily preparations	000003	CCC	0
+9	Telepathic Demand	A	3	varies	010002	CCD	0
+9	Unspeakable Shadow	A	2	varies	035000	ACD	1
+9	Summon Draconic Legion	A	3	until the end of your next turn	400000	CCD	0
+9	Overwhelming Presence	O	2	until full tribute is paid	050000	FCD	1
+9	Unfathomable Song	O	2	sustained up to 1 minute	040000	FCD	1

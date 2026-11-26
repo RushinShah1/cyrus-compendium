@@ -1,0 +1,589 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                FEAT PATHS
+
+
+
+
+Cyrus’s Feat Paths
+Human Laughing Shadow Magus · Levels 1–16
+
+Keep Route 4 as the default. Take Expansive Spellstrike at 4, Reactive Strike at 6, and Improvise Strategy
+at 7. Reserve the level-8 class feat for Fused Staff if Cyrus has a staff worth preparing. The level-9
+dedication is the main open choice.
+
+
+Shared progression and Route 4
+This uses standard class, skill, general, and ancestry feat slots. The campaign grants Additional Lore
+(Academia). Each entry in the class column spends one class feat unless it names a class feature or the
+ancestry feat that grants it. Magus advancement
+
+ Leve    Magus choices and features                              Ancestry, skills, and general feats
+ l
+
+ 1       Laughing Shadow grants Dimensional Assault.             Versatile Human → Fleet. Relentless Dedication →
+         Natural Ambition grants Magus’s Analysis.               Canny Acumen (Perception) and Warfare Lore. Bonus
+                                                                 Additional Lore (Academia). Trained Acrobatics,
+                                                                 Athletics, Arcana, Diplomacy, Occultism, Society.
+
+ 2       Force Fang.                                             Additional Lore (Warfare). Under the table’s
+                                                                 duplicate-training rule, apply the extra trained
+                                                                 proficiency to a separate Lore. Engineering Lore is the
+                                                                 original suggestion. Undead Lore is a strong
+                                                                 alternative.
+
+ 3       Starting adventuring level.                             Toughness. Expert Athletics. Academia and Warfare
+                                                                 Lore reach expert automatically.
+
+ 4       Expansive Spellstrike.                                  Cognitive Crossover.
+
+ 5       Martial weapon expertise.                               General Training → Incredible Initiative. Expert Arcana.
+                                                                 At Int +4, choose a skill and language. Stealth is the
+                                                                 default skill.
+
+ 6       Reactive Strike.                                        Magical Shorthand.
+
+ 7       Weapon specialization. Studious Spell adds Gecko        Master Athletics. Academia and Warfare Lore reach
+         Grip and Blur.                                          master automatically. General feat → Improvise
+                                                                 Strategy.
+
+ 8       Fused Staff when the staff is ready. Running            Unmistakable Lore.
+         Recharge is the substitute.
+
+ 9       Expert spellcasting. Dimensional Assault heightens to   Multitalented → dedication open. Master Arcana.
+         rank 5 and uses full Speed as its maximum range.
+
+ 10      Dimensional Disappearance.                              Courtly Graces.
+
+ 11      Medium armor expertise. Studious Spell adds Haste       Axuma’s Awakening with the approved reflavour.
+         and Ghostly Weapon.                                     Expert Society.
+
+ 12      Sprinting Spellstrike.                                  Titan Wrestler.
+
+
+
+
+Feat paths                                                                                                                  1
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                  FEAT PATHS
+
+
+
+
+ Leve      Magus choices and features                              Ancestry, skills, and general feats
+ l
+
+ 13        Martial weapon mastery. Studious Spell adds Fly and     Clever Improviser or Advanced General Training.
+           Translocate.                                            Expert Diplomacy by default. Master Society instead
+                                                                   opens Biographical Eye through Advanced General
+                                                                   Training.
+
+ 14        Hasted Assault. Advance Arcane Shroud here if party     Bon Mot for Will-focused teamwork or Quick Jump for
+           Haste is reliable.                                      vertical fights.
+
+ 15        Greater weapon specialization.                          Legendary Arcana → Unified Theory. Academia and
+                                                                   Warfare Lore reach legendary automatically. At Int +5,
+                                                                   choose another trained skill and language.
+
+ 16        Arcane Shroud. If taken at 14, consider Hasted          Trick Magic Item or a remaining flex pick.
+           Assault, Running Recharge, or Dispelling Spellstrike.
+
+
+Favor Arcana, Athletics, and Warfare Lore for the day-to-day roles this build wants. Society supports
+humanoid identification and court play. Pick Undead Lore over Engineering Lore if recurring undead
+investigations need a second specialist. The redirected training stays at its own rank. The automatic
+increases apply to the Lores selected with Additional Lore.
+
+
+Where the routes diverge
+Slot              Route 4 · Lore       Route 1 · Court and         Route 2 · Prescient at 13   Route 3 · Prescient at 15
+                  and court            connections
+
+7 general         Improvise            Improvise Strategy          Prescient Planner           Improvise Strategy
+                  Strategy
+
+8 skill           Unmistakable Lore    Courtly Graces or           Improvise Strategy          Unmistakable Lore
+                                       Unmistakable Lore
+
+9 increase        Master Arcana        Master Arcana               Master Arcana               Master Arcana
+
+10 skill          Courtly Graces       The other level-8 pick      Unmistakable Lore           Courtly Graces or Titan
+                                                                                               Wrestler
+
+11 increase       Expert Society       Expert Society              Expert Society or           Expert Society or
+                                                                   Diplomacy                   Diplomacy
+
+12 skill          Titan Wrestler       Leverage Connections        Titan Wrestler or Courtly   Titan Wrestler or a flex pick
+                                                                   Graces
+
+13 ancestry       Clever Improviser    Advanced General            Advanced General            Advanced General Training
+                  or Advanced          Training → Titan Wrestler   Training → Prescient        → Prescient Planner
+                  General Training                                 Consumable
+
+13 increase       Expert Diplomacy     Expert Diplomacy            Expert in the other of      Expert in the other of
+                  or master Society                                Society or Diplomacy        Society or Diplomacy
+
+15 general        Unified Theory       Unified Theory              Unified Theory              Prescient Consumable
+
+16 skill          Flex pick            Flex pick                   Flex pick                   Unified Theory
+
+
+All four routes keep legendary Arcana at 15. Route 1 gets a repeatable social tool by 12. Routes 2 and 3
+trade two feat picks for a flexible purchase with a one-minute retrieval. At 13, the level cap is item level 6,
+
+
+Feat paths                                                                                                                  2
+CYRUS VAL’DIRA / PF2E REMASTER                                                                      FEAT PATHS
+
+
+
+which covers rank-3 scrolls. At 15, it reaches item level 7 and rank-4 scrolls. Build around Route 4 when
+the group can stock the consumables it plans to use.
+
+A Rogue dedication at 9 grants a skill feat. If Cyrus can meet Dex +2, use that feat for Unmistakable Lore
+when available and move Courtly Graces earlier or free a later skill slot.
+
+
+Class feat ratings
+0–5 per category measures the feat’s contribution to that role. Three is strong and five is defining. S is a
+priority, A a strong contender, B a useful alternative, and C a specialist pick. The overall grade weighs
+timing and the feat slot it competes for.
+
+Feat                                                  Turn       Positioning   Pressure   Versatility   Cyrus
+                                                      economy                                           grade
+
+Magus’s Analysis                                      ★★★★★      ☆☆☆☆☆         ☆☆☆☆☆      ★★★★☆         S
+
+Force Fang                                            ★★★★★      ☆☆☆☆☆         ★★★☆☆      ★★★☆☆         S
+
+Expansive Spellstrike                                 ★★★★☆      ★★★☆☆         ★★★★★      ★★★★★         S
+
+Reactive Strike                                       ★★★★☆      ☆☆☆☆☆         ★★★★★      ★★★☆☆         S
+
+Fused Staff                                           ★★★☆☆      ☆☆☆☆☆         ★☆☆☆☆      ★★★★★         A
+
+Running Recharge                                      ★★★★★      ★★★★☆         ☆☆☆☆☆      ★★☆☆☆         A
+
+Dimensional Disappearance                             ★★★★☆      ★★★★★         ★★★☆☆      ★★★★☆         S
+
+Sprinting Spellstrike                                 ★★★★★      ★★★★★         ★★★★☆      ★★★☆☆         S
+
+Hasted Assault                                        ★★★★★      ★★★★☆         ★★★☆☆      ★★☆☆☆         A
+
+Arcane Shroud                                         ★★★☆☆      ★★★☆☆         ★☆☆☆☆      ★★★★☆         A
+
+Spell Retaliation                                     ★★★★☆      ☆☆☆☆☆         ★☆☆☆☆      ★☆☆☆☆         C
+
+Knowledge Is Power                                    ★☆☆☆☆      ☆☆☆☆☆         ★★★★☆      ★★★★☆         B
+
+Capture Magic                                         ★★★☆☆      ☆☆☆☆☆         ★☆☆☆☆      ★★☆☆☆         C
+
+Dispelling Spellstrike                                ★★☆☆☆      ☆☆☆☆☆         ★★★★☆      ★★★☆☆         B
+
+
+
+
+Feat paths                                                                                                      3
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                FEAT PATHS
+
+
+
+
+Magus rules at the table
+ Ability                              Reference and decision
+
+ Spellstrike                          2 actions, charged. Combine a melee Strike with an eligible spell that takes
+                                      1 or 2 actions. A spell attack uses the Strike result. A save spell still prompts
+                                      the target’s save on an ordinary miss, and a critical failure on the Strike
+                                      disrupts the spell. Spellstrike counts as two attacks for MAP, which applies
+                                      after the activity. Recharge for 1 action with concentrate, or cast a conflux
+                                      spell of at least 1 action.
+
+ Arcane Cascade and Laughing Shadow   1 action, concentrate, stance. Melee Strikes deal 1 extra force damage
+                                      and gain the arcane trait. Gain resistance 1 to damage from spells. Both
+                                      values rise to 2 with weapon specialization and 3 with greater weapon
+                                      specialization. After casting a spell earlier on the same turn, he can choose
+                                      one damage type the spell can deal. Laughing Shadow adds +5 feet status to
+                                      Speeds, or +10 feet unarmored. Its free-hand melee Strikes against off-guard
+                                      creatures raise Cascade damage to 3/5/7. Cyrus’s Aspera discussion covers
+                                      how the two-handed weapon can support that benefit.
+
+ Dimensional Assault                  1 action, 1 Focus Point, concentrate. Teleport to a visible square within
+                                      half Speed and make a melee Strike against a foe within reach from there.
+                                      The range becomes full Speed at rank 5. Taking another creature disrupts the
+                                      spell. The conflux cast recharges Spellstrike, while the Strike increases MAP.
+
+ Magus’s Analysis                     1 action. Recall Knowledge about a creature, then recharge even if the
+                                      check fails. A previous hit on that creature this turn grants +1 circumstance
+                                      to the check. Each subject is immune for 1 day. Choose it when learning a
+                                      defense or reaction matters.
+
+ Force Fang                           1 action, 1 Focus Point, manipulate. A target within melee reach takes
+                                      1d4+1 force, automatic, plus 1d4+1 per 2 heightened ranks. The cast
+                                      recharges Spellstrike without adding MAP. Aspera’s reach extends the target
+                                      options.
+
+ Expansive Spellstrike                Bursts, cones, and lines take their normal area and must include the Strike
+                                      target. The target’s occupied corner anchors a burst. For a cone or line from
+                                      nonadjacent reach, pick any square adjacent to the target as the origin. All
+                                      creatures in the area resolve the spell normally. Only one creature receives
+                                      the weapon Strike.
+
+ Reactive Strike                      Reaction, within reach. Triggered by a manipulate or move action, ranged
+                                      attack, or leaving a square during movement. Make a melee Strike without
+                                      applying or increasing MAP. A critical hit disrupts a triggering manipulate
+                                      action. Trip can prompt a Stand and create an opening in Cyrus’s reach.
+
+ Running Recharge                     1 action, concentrate. Recharge and Step or Stride up to half Speed. Take
+                                      it early if movement and recharging repeatedly compete for the third action.
+
+ Fused Staff                          Fuse a magical staff during daily preparation or with 10 minutes and
+                                      manipulate. The fused item retains staff activations and casts after
+                                      preparation. Use the higher of each fundamental weapon rune and suppress
+                                      staff property runes. The fusion works for Cyrus and lasts until a new fusion or
+                                      24 hours out of his possession. It earns a slot when the staff’s actual daily
+                                      castings matter.
+
+ Dimensional Disappearance            Dimensional Assault provides invisibility after teleporting. Cyrus can skip the
+                                      Strike to stay invisible and leave MAP clear. If he Strikes, invisibility ends after
+                                      that Strike, so it can benefit that attack.
+
+
+
+Feat paths                                                                                                                   4
+CYRUS VAL’DIRA / PF2E REMASTER                                                                            FEAT PATHS
+
+
+
+
+ Ability                             Reference and decision
+
+ Sprinting Spellstrike               2 actions, charged, line spell. Move in a straight line before the Strike, up
+                                     to the spell’s line length. Movement can pass through enemies and provokes
+                                     no reactions. With the movement Speed, can Burrow, Climb, Fly, or Swim
+                                     instead of Striding. Expansive Spellstrike makes the spell area follow the
+                                     movement line. The Grid Atlas covers placement.
+
+ Hasted Assault                      1 action, 1 Focus Point, manipulate, 1 minute. Recharges and grants
+                                     quickened for Stride or Strike from the next turn. Best when Cyrus can start
+                                     before the fight or early enough to gain more than a single extra action. The
+                                     quickened action can pay for the named basic actions only.
+
+ Arcane Shroud                       Select three spells on taking the feat. Each time Cyrus uses Arcane Cascade,
+                                     one selected spell affects him until the end of his next turn or earlier if the
+                                     stance or spell ends. Good first trio is Invisibility, Resist Energy, and Fleet
+                                     Step for three distinct problems. The complete choice list is those three plus
+                                     False Vitality, Mountain Resilience, and See the Unseen.
+
+ Spell Retaliation                   Free action, uncharged. Recharge after succeeding at a save against an
+                                     enemy spell or an enemy failing a spell attack against Cyrus. Useful in a fight
+                                     with frequent hostile casts. Reactive Strike has wider application at 6.
+
+ Knowledge Is Power                  A critical Recall Knowledge success lets Cyrus exploit a −1 circumstance
+                                     penalty on the target’s defenses against his next relevant attack or spell. The
+                                     target also takes the penalty on its next relevant attack or DC against him.
+                                     Allies can benefit if he shares the information. The opportunity lasts one
+                                     minute.
+
+ Capture Magic                       Reaction. A successful save against a hostile spell or the enemy’s missed
+                                     spell attack lets Cyrus enter Cascade using that spell to set the damage type.
+                                     If already in Cascade, he can instead gain +2 status to its extra damage and
+                                     resistance until the end of his next turn. Consider it in caster-heavy fights
+                                     where his reaction is often free.
+
+ Dispelling Spellstrike              3 actions. On a hit, also attempt to counteract one active spell on the target.
+                                     Counteract rank is half level rounded up and the modifier is spellcasting
+                                     proficiency plus Intelligence and applicable bonuses. Worth the full turn when
+                                     a common buff or ward is materially protecting the enemy.
+
+
+Studious Spell. Add the listed spells to the spellbook if needed. Casting one lets Cyrus enter Arcane
+Cascade as a free action immediately afterward on the same turn. It adds spellbook access and action
+economy. Normal spell slots supply the preparations. Remastered study rules
+
+
+
+
+Feat paths                                                                                                             5
+CYRUS VAL’DIRA / PF2E REMASTER                                                     FEAT PATHS
+
+
+
+
+Skill, ancestry, and general picks
+Feat                                       Combat   Knowledge   Utility   Social     Cyrus
+                                                                                     grade
+
+Additional Lore · Warfare                  ★★★★☆    ★★★★☆       ★★☆☆☆     ★☆☆☆☆      S
+
+Improvise Strategy                         ★★★★★    ☆☆☆☆☆       ☆☆☆☆☆     ☆☆☆☆☆      S
+
+Fleet                                      ★★★★☆    ☆☆☆☆☆       ★★★☆☆     ☆☆☆☆☆      S
+
+Toughness                                  ★★★★☆    ☆☆☆☆☆       ★★☆☆☆     ☆☆☆☆☆      A
+
+Incredible Initiative                      ★★★★☆    ☆☆☆☆☆       ☆☆☆☆☆     ☆☆☆☆☆      A
+
+Unmistakable Lore                          ★☆☆☆☆    ★★★★★       ★★★☆☆     ★★☆☆☆      A
+
+Magical Shorthand                          ☆☆☆☆☆    ★☆☆☆☆       ★★★★★     ☆☆☆☆☆      A
+
+Courtly Graces                             ☆☆☆☆☆    ★☆☆☆☆       ★★★☆☆     ★★★★★      A
+
+Titan Wrestler                             ★★★★☆    ☆☆☆☆☆       ★☆☆☆☆     ☆☆☆☆☆      A
+
+Unified Theory                             ☆☆☆☆☆    ★★★★★       ★★★★☆     ☆☆☆☆☆      A
+
+Axuma’s Awakening                          ★★☆☆☆    ☆☆☆☆☆       ★★★★★     ★★☆☆☆      A
+
+Cognitive Crossover                        ★★☆☆☆    ★★★★☆       ★★☆☆☆     ★★☆☆☆      B
+
+Clever Improviser                          ★☆☆☆☆    ★★★☆☆       ★★★★☆     ★★★☆☆      B
+
+Leverage Connections                       ☆☆☆☆☆    ★★☆☆☆       ★★★☆☆     ★★★★★      B
+
+Bon Mot                                    ★★★★☆    ☆☆☆☆☆       ☆☆☆☆☆     ★☆☆☆☆      B
+
+Quick Jump                                 ★★★☆☆    ☆☆☆☆☆       ★★★☆☆     ☆☆☆☆☆      B
+
+Trick Magic Item                           ★★☆☆☆    ☆☆☆☆☆       ★★★★☆     ☆☆☆☆☆      B
+
+Prescient Planner + Prescient Consumable   ★☆☆☆☆    ☆☆☆☆☆       ★★★★★     ☆☆☆☆☆      B
+
+Biographical Eye                           ☆☆☆☆☆    ★★★☆☆       ★★☆☆☆     ★★★★☆      B
+
+Battle Planner                             ★★☆☆☆    ☆☆☆☆☆       ☆☆☆☆☆     ☆☆☆☆☆      C
+
+
+
+
+Feat paths                                                                                   6
+CYRUS VAL’DIRA / PF2E REMASTER                                                                           FEAT PATHS
+
+
+
+
+Skill and general feat rules
+ Feat                                      Reference and decision
+
+ Additional Lore                           Train a named Lore. It becomes expert at 3, master at 7, and
+                                           legendary at 15 through its own increases. Each repeat names a
+                                           separate Lore. Warfare meets Improvise Strategy’s prerequisite at 7.
+                                           Academia keeps the scholarly role without pulling ranks away from
+                                           Athletics or Arcana.
+
+ Canny Acumen and Fleet                    Canny Acumen grants expert Perception in this build and master at
+                                           17. Magus already reaches expert Perception at 9, so the early lead
+                                           runs through 8. Fleet increases Speed by 5 feet and supports Stride,
+                                           partial-Speed effects, and Dimensional Assault.
+
+ Toughness and Incredible Initiative       Toughness adds maximum HP equal to level and lowers recovery
+                                           check DC to 9 + dying value. Incredible Initiative gives +2
+                                           circumstance to initiative. An early turn establishes a flank, trips a
+                                           foe before melee allies act, or delivers party control.
+
+ Natural Ambition, General Training, and   Natural Ambition grants a level-1 class feat. General Training grants a
+ Advanced General Training                 level-1 general feat. Advanced General Training is a level-13 ancestry
+                                           option that grants a general feat of level 7 or lower. Meet the chosen
+                                           feat’s prerequisites.
+
+ Cognitive Crossover                       The legacy feat lists Pathfinder Society membership as access.
+                                           Choose two eligible knowledge skills when taking it. On a check with
+                                           one that yields no information, use a reaction to try again with the
+                                           other. Choose a pair whose actual subjects overlap. Arcana and
+                                           Society suit parts of Cyrus’s campaign, while one named Lore can
+                                           help if it addresses frequent questions.
+
+ Magical Shorthand                         On a successful Learn a Spell check, improve to critical success and
+                                           finish in 10 minutes. Failure allows another try after a week or level
+                                           gain, whichever comes first. In downtime, use the applicable magical
+                                           skill to earn a discount rather than income. Expert Arcana at 5
+                                           satisfies the prerequisite for the level-6 slot.
+
+ Improvise Strategy                        1 action, master Warfare Lore. Choose auditory or visual and test
+                                           Warfare Lore against a creature’s Perception DC within 30 feet.
+                                           Success applies clumsy 1, dazzled, off-guard, or stupefied 1 until the
+                                           end of Cyrus’s next turn. The foe can spend an action to clear it,
+                                           using concentrate for auditory or Interact for visual. A critical success
+                                           avoids the one-hour reuse immunity. A failure still applies the
+                                           immunity. A critical failure also makes Cyrus off-guard until the start
+                                           of his next turn. It has mental and bravado traits and leaves the first
+                                           attack clear.
+
+ Unmistakable Lore                         Expert in a Lore qualifies. A trained Lore turns a Recall Knowledge
+                                           critical failure into failure. A master Lore yields extra detail on a
+                                           critical success. The same protection covers all Cyrus’s trained Lores.
+
+ Feat                                      Reference and decision
+
+ Courtly Graces and Leverage Connections   Courtly Graces requires trained Society. Society can Make an
+                                           Impression on nobles and Impersonate a type of noble or a particular
+                                           noble. Normal skills gain +1 circumstance in those uses instead. It
+                                           also establishes how people read Cyrus’s status in conversation.
+                                           Leverage Connections needs expert Society and Courtly Graces or
+                                           Streetwise. Once per week in a suitable community, use Society to
+
+
+Feat paths                                                                                                             7
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                FEAT PATHS
+
+
+
+
+ Feat                                         Reference and decision
+
+                                              request a plausible favor or aid from a friendly contact. A critical
+                                              success gives a +2 circumstance bonus on the first check acting on
+                                              the favor.
+
+ Bon Mot                                      1 action, trained Diplomacy. Test Diplomacy against a foe’s Will
+                                              DC within 30 feet. Success imposes −2 status to Perception and Will
+                                              saves for a minute, or −3 on critical success. The foe can spend an
+                                              action on a retort. A critical failure puts −2 on Cyrus until a minute
+                                              passes or he succeeds on another Bon Mot. Coordinate with a
+                                              Will-save caster.
+
+ Titan Wrestler or Quick Jump                 Titan Wrestler extends Disarm, Grapple, Reposition, Shove, and Trip
+                                              to foes two sizes larger, or three at legendary Athletics. Medium
+                                              Cyrus can handle Huge targets at master. Quick Jump turns Long
+                                              Jump and High Jump into one action and removes their running start.
+                                              Choose the maps and foes that actually show up.
+
+ Unified Theory                               Legendary Arcana can take the place of Nature, Occultism, or
+                                              Religion when a skill action or feat calls for a check based on the
+                                              magical tradition. It also removes the usual Arcana penalties for
+                                              using it on another tradition’s magic. Creature identification still
+                                              follows its own skill table when tradition is irrelevant.
+
+ Axuma’s Awakening                            Choose two common or accessible arcane cantrips, plus one rank-1
+                                              and one rank-2 arcane spell. Cantrips heighten automatically. Each
+                                              ranked selection is an innate spell once per day. Default innate DC
+                                              and attack modifier use Charisma, so take buffs, travel, utility, or
+                                              other casts that do not ask for a save. Innate spells
+
+ Clever Improviser or Biographical Eye        Clever Improviser grants Untrained Improvisation and access to
+                                              actions that normally require training. Biographical Eye requires
+                                              master Society, then uses a one-minute encounter and a DC 30
+                                              Society check to infer a stranger’s profession, background, and
+                                              residence. Conversation gives +1 circumstance. A false identity can
+                                              mask the results.
+
+ Prescient Planner and Prescient Consumable   Spend one minute to retrieve an undeclared common item and pay
+                                              its price. Planner covers adventuring gear. Consumable upgrades the
+                                              same retrieval to consumables. Both share the half-level and Bulk
+                                              caps. After use, the ability resets the next time Cyrus can purchase
+                                              goods. Stocked consumables beat the feat pair for predictable
+                                              missions.
+
+ Trick Magic Item                             1 action, trained in a magical skill. A successful tradition-skill
+                                              check lets Cyrus spend the remaining turn activating the item
+                                              normally. Failure prevents another attempt that turn, critical failure
+                                              locks it until daily preparation. Strong for planned utilities, especially
+                                              outside combat. Direct tradition access remains smoother for
+                                              in-combat scrolls.
+
+ Battle Planner                               A scouting fallback when Cyrus has enough observation and one
+                                              minute to plan. Roll Warfare Lore while planning. If the scout report
+                                              remains accurate when combat starts, Cyrus can keep the result as
+                                              initiative via a fortune effect. Pass when fights rarely come with
+                                              preparation or party initiative effects already solve the problem.
+
+
+
+
+Feat paths                                                                                                                 8
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                   FEAT PATHS
+
+
+
+
+Level 9 dedication
+Multitalented grants a level-2 multiclass dedication even if the current dedication lock would otherwise
+prevent taking it. Versatile Human Cyrus needs to meet the chosen dedication’s normal attribute
+prerequisites. The other branch feats listed here use their own eligible slots.
+
+ Choice               Immediate return                              Follow-up and cost                              Cyru
+                                                                                                                    s gra
+                                                                                                                    de
+
+ Witch Dedication     Int +2. An occult patron gives occult         Best when familiar play and occult scroll       A
+                      casting, one prepared cantrip from the two    or wand access both matter. Basic Witch
+                      available through the familiar, and a         Spellcasting spends a later class slot for
+                      familiar that can be Smudge. If already       prepared slots. The dedication familiar
+                      trained in Occultism, choose another skill.   gets normal familiar abilities and the
+                                                                    patron sets tradition.
+
+ Psychic Dedication   Int +2 or Cha +2. Occult casting and one      Psi Development opens the second                A
+                      standard psi cantrip from the chosen          standard or unique surface psi cantrip
+                      conscious mind. Choose Int as Cyrus’s         and unlocks amps for them. Tangible
+                      casting attribute.                            Dream can add Imaginary Weapon. A
+                                                                    level-10 class purchase competes with
+                                                                    Dimensional Disappearance. Basic
+                                                                    Psychic Spellcasting is a separate route
+                                                                    to slots, with additional investment for
+                                                                    advanced casting.
+
+ Rogue Dedication     Dex +2. Surprise Attack, a skill feat, and    Immediate payoff in an ancestry slot if         B
+                      two training picks under its skill rules.     the Dexterity boost already suits Cyrus.
+                                                                    Match the granted feat to an open skill
+                                                                    slot. Surprise Attack needs initiative
+                                                                    rolled with Deception or Stealth and
+                                                                    makes creatures that have yet to act
+                                                                    off-guard to Cyrus during the first round.
+
+ Exemplar             Str +2 or Dex +2. An ikon and its             The single ikon loses its empowered state       B
+ Dedication           immanence, transcendence, and shifting        on transcendence until Cyrus shifts.
+                      mechanics.                                    Second Ikon at 12 competes with
+                                                                    Sprinting Spellstrike unless there is a
+                                                                    separate Free Archetype slot. High
+                                                                    thematic value when an ikon adds a
+                                                                    distinct play pattern.
+
+
+Recommended decision. Witch offers the best fit when Smudge and occult item access are the
+priorities. Psychic earns a higher priority if Cyrus expects to spend a second feat on a psi cantrip. Both can
+access occult consumables through their relevant casting feature, even before taking later slot feats.
+Rogue is the economical social/Lore branch if Dex +2 is already in reach. Exemplar is the martial
+mythic-flavor branch.
+
+Earlier Free Archetype path. The earlier draft used Fighter Dedication at 2, Fighter archetype picks at 4
+and 6, Exemplar at 8, Psychic via Multitalented at 9, Psi Development at 10, and Second Ikon at 12. That
+schedule depends on Free Archetype, Strength and Dexterity +2 at 2, and two Fighter archetype feats
+before Exemplar. Spend the level-10 and level-12 archetype slots only if the variant lets this sequence
+work with the two active dedications. In the default schedule, each follow-up replaces a regular class pick.
+
+
+
+
+Feat paths                                                                                                                  9
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                       FEAT PATHS
+
+
+
+
+Attributes and flex slots
+ Leve        Plan
+ l
+
+ 5           Take the partial Str boost toward +5, with Con +2 and Int +4. Wis +1 is the default fourth boost. Favor Dex if it
+             improves AC or reaches the prerequisite for a branch you expect to take.
+
+ 10          Take Str +5 and Con +3. If play will reach 15, bank the first half of the Int +5 boost and choose Wis or Dex. For
+             an earlier endpoint, boost both Wis and Dex instead of banking Int.
+
+ 15          Take Con +4 and finish Int +5 if started at 10. Bank Str toward +6 if level 20 looks relevant. Otherwise prioritize
+             Wis and Dex for current defenses.
+
+
+Keep the trade-offs visible. Treat the level-16 class slot as a choice about which turn to unlock.
+Running Recharge fixes movement and recharge conflicts. Arcane Shroud rewards using Cascade to solve
+a short-term problem. Dispelling Spellstrike spends the full turn to remove an active enemy spell. Pick
+according to the encounters Cyrus is actually facing.
+
+After 16. Canny Acumen reaches master Perception at 17 alongside Magus master spellcasting. At 19,
+Double Spellstrike combines two eligible spells whose ranks total 10 or less, once per day. A useful skill
+feat can take the level-19 general slot when the remaining general choices have little impact. Magus
+advancement
+
+
+
+
+Feat paths                                                                                                                     10
+

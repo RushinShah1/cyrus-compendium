@@ -1,0 +1,1367 @@
+### All-Seeing Eye | L3 | {'gp': 50} | affixed-to-armor-or-a-weapon
+This glass eyeball is slightly uncanny due to the two brightly colored crystal irises it sports on opposing sides. It helps combatants see their foes even in the darkest of situations.
+Armor You gain resistance 2 to damage from illusion effects.
+Weapon (fortune) After you cast a light spell by Activating the eye, your own eyesight sharpens until the end of your next turn. If you fail the flat check to target a Compendium.pf2e.conditionitems.Item.Concealed or Compendium.pf2e.conditionitems.Item.Hidden opponent with a Strike with the weapon, you can reroll it and take the new result.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+
+### All-Seeing Eye (Greater) | L5 | {'gp': 140} | affixed-to-armor-or-a-weapon
+This glass eyeball is slightly uncanny due to the two brightly colored crystal irises it sports on opposing sides. It helps combatants see their foes even in the darkest of situations. The spell DC of any spell cast by Activating this item is 20.
+Armor You gain resistance 4 to damage from illusion effects.
+Weapon (fortune) After you cast a light spell by Activating the eye, your own eyesight sharpens until the end of your next turn. If you fail the flat check to target a Compendium.pf2e.conditionitems.Item.Concealed or hidden opponent with a Strike with the weapon, you can reroll it and take the new result.
+reflex|dc:20|basic|name:All-Seeing Eye Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Revealing Light.
+
+### Beastmaster's Sigil | L5 | {'gp': 160} | affixed-to-armor-or-a-weapon
+This silver disc displays an ever-changing etching of an animal. When you affix the beastmaster's sigil, the animal settles into a single form based on where you affix it, showing the animal the item can summon when affixed that way. The spell DC of any spell cast by activating this item is 19. A weapon can benefit from only the melee weapon benefit or ranged weapon benefit. A thrown melee weapon gets the melee weapon benefit, and a combination weapon gets only one benefit, which you choose when you affix the spellheart. If it's unclear which one should apply, the GM decides.
+Armor The sigil grants you a +1 item bonus to saving throws against poison.Melee Weapon The sigil grants you a +1 item bonus to Athletics checks to Compendium.pf2e.actionspf2e.Item.Trip.Ranged Weapon If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the sigil, the target takes 1d6[bleed]{1d6 persistent bleed} damage.Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Melee Weapon
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Ranged Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tame.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 2nd-rank Compendium.pf2e.spells-srd.Item.Summon Animal to summon a Compendium.pf2e.pathfinder-monster-core.Actor.Hunting Spider (armor), Compendium.pf2e.pathfinder-monster-core.Actor.Wolf (melee weapon), or Compendium.pf2e.pathfinder-monster-core.Actor.Vampire Bat Swarm (ranged weapon).
+
+### Beastmaster's Sigil (Greater) | L7 | {'gp': 360} | affixed-to-armor-or-a-weapon
+This silver disc displays an ever-changing etching of an animal. When you affix the beastmaster's sigil, the animal settles into a single form based on where you affix it, showing the animal the item can summon when affixed that way. The spell DC of any spell cast by activating this item is 23. A weapon can benefit from only the melee weapon benefit or ranged weapon benefit. A thrown melee weapon gets the melee weapon benefit, and a combination weapon gets only one benefit, which you choose when you affix the spellheart. If it's unclear which one should apply, the GM decides.
+Armor The sigil grants you a +1 item bonus to saving throws against poison.Melee Weapon The sigil grants you a +1 item bonus to Athletics checks to Compendium.pf2e.actionspf2e.Item.Trip.Ranged Weapon If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the sigil, the target takes 2d6[bleed]{2d6 persistent bleed} damage.Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Melee Weapon
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Ranged Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tame.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Summon Animal to summon a Compendium.pf2e.pathfinder-monster-core.Actor.Giant Monitor Lizard (armor), Compendium.pf2e.pathfinder-monster-core.Actor.Boar (melee), or Compendium.pf2e.pathfinder-monster-core.Actor.Giant Bat (ranged).
+
+### Beastmaster's Sigil (Major) | L9 | {'gp': 700} | affixed-to-armor-or-a-weapon
+This silver disc displays an ever-changing etching of an animal. When you affix the beastmaster's sigil, the animal settles into a single form based on where you affix it, showing the animal the item can summon when affixed that way. The spell DC of any spell cast by activating this item is 25. A weapon can benefit from only the melee weapon benefit or ranged weapon benefit. A thrown melee weapon gets the melee weapon benefit, and a combination weapon gets only one benefit, which you choose when you affix the spellheart. If it's unclear which one should apply, the GM decides.
+Armor The sigil grants you a +2 item bonus to saving throws against poison.Melee Weapon The sigil grants you a +2 item bonus to Athletics checks to Compendium.pf2e.actionspf2e.Item.Trip.Ranged Weapon If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the sigil, the target takes 3d6[bleed]{3d6 persistent bleed} damage.Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Melee Weapon
+Compendium.pf2e.equipment-effects.Item.Effect: Beastmaster's Sigil - Ranged Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tame.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Summon Animal to summon a Compendium.pf2e.pathfinder-monster-core.Actor.Giant Scorpion (armor), Compendium.pf2e.pathfinder-monster-core.Actor.Dire Wolf (melee weapon), or Compendium.pf2e.pathfinder-monster-core-2.Actor.Fen Mosquito Swarm (ranged weapon).
+
+### Brightbloom Posy | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+Appearing as vibrant as the day they were picked, this cluster of flowers is arranged in a small spray, tied with a red satin ribbon. The spell DC of any spell cast by activating this item is 24.
+Armor You gain the ability to speak with flowers, as Compendium.pf2e.spells-srd.Item.Speak with Plants.
+Weapon (disease) After you cast a plant spell by activating the posy, pollen coats your weapon. Your next Strike causes the target to be Sickened 1 on a hit (Sickened 2 on a critical hit). If the creature attempts to recover, it sneezes rather than retching (rolling against the spellheart's spell DC). If you don't make a Strike by the end of your next turn, the pollen becomes inert. Plant creatures are immune.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tangle Vine.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Soothing Blossoms.
+
+### Brightbloom Posy (Greater) | L11 | {'gp': 1300} | affixed-to-armor-or-a-weapon
+Appearing as vibrant as the day they were picked, this cluster of flowers is arranged in a small spray, tied with a red satin ribbon. The spell DC of any spell cast by activating this item is 28.
+Armor You gain the ability to speak with flowers, as Compendium.pf2e.spells-srd.Item.Speak with Plants.Weapon (disease) After you cast a plant spell by activating the posy, pollen coats your weapon. Your next Strike causes the target to be Sickened 1 on a hit (Sickened 2 on a critical hit). If the creature attempts to recover, it sneezes rather than retching (rolling against the spellheart's spell DC). If you don't make a Strike by the end of your next turn, the pollen becomes inert. Plant creatures are immune.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tangle Vine.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Soothing Blossoms.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Petal Storm.
+
+### Brightbloom Posy (Major) | L19 | {'gp': 36000} | affixed-to-armor-or-a-weapon
+Appearing as vibrant as the day they were picked, this cluster of flowers is arranged in a small spray, tied with a red satin ribbon. The spell DC of any spell cast by activating this item is 41.
+Armor You gain the ability to speak with flowers, as Compendium.pf2e.spells-srd.Item.Speak with Plants.Weapon (disease) After you cast a plant spell by activating the posy, pollen coats your weapon. Your next Strike causes the target to be Sickened 1 on a hit (Sickened 2 on a critical hit). If the creature attempts to recover, it sneezes rather than retching (rolling against the spellheart's spell DC). If you don't make a Strike by the end of your next turn, the pollen becomes inert. Plant creatures are immune.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Tangle Vine.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Petal Storm.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Burning Blossoms.
+
+### Cerebral Barbell | L3 | {'gp': 60} | affixed-to-armor-or-a-weapon
+This tiny metallic barbell is strangely heavy for its size. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+7 #spell attack roll]]{+7}.
+Armor You gain resistance 2 to force.
+Weapon After casting a spell by Activating the cerebral barbell, your Strikes with the weapon deal an additional 2[force] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Projectile.
+
+### Cerebral Barbell (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+This tiny metallic barbell is strangely heavy for its size. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+14 #spell attack roll]]{+14} and the DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 2 to force.
+Weapon After casting a spell by Activating the cerebral barbell, your Strikes with the weapon deal an additional 3[force] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Weapon
+reflex|dc:24|basic|name:Cerebral Barbell Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Projectile.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Iron Rain.
+
+### Cerebral Barbell (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This tiny metallic barbell is strangely heavy for its size. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+19 #spell attack roll]]{+19} and the DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 2 to force.
+Weapon After casting a spell by Activating the cerebral barbell, your Strikes with the weapon deal an additional 4[force] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cerebral Barbell - Weapon
+reflex|dc:29|basic|name:Cerebral Barbell Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Projectile.
+Activate Cast a Spell
+Effect You cast a 4th-rank Compendium.pf2e.spells-srd.Item.Iron Rain.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Magnetize.
+
+### Cheery Chime | L3 | {'gp': 45} | affixed-to-armor-or-a-weapon
+This single crystalline wind chime occasionally jingles as if blown against another chime by a soothing breeze.
+Armor You gain a +1 item bonus to saving throws against emotion effects.
+Weapon After you cast an emotion spell by Activating the cheery chime, your Strikes with the weapon deal an additional 1d4 mental damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Infectious Enthusiasm.
+
+### Cheery Chime (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+This single crystalline wind chime occasionally jingles as if blown against another chime by a soothing breeze. The spell DC of any spell cast by Activating the item is 24.
+Armor You gain a +2 item bonus to saving throws against emotion effects.
+Weapon After you cast an emotion spell by Activating the cheery chime, your Strikes with the weapon deal an additional 1d6 mental damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Weapon
+will|dc:24|name:Cheery Chime Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Infectious Enthusiasm.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Laughing Fit.
+
+### Cheery Chime (Major) | L15 | {'gp': 5300} | affixed-to-armor-or-a-weapon
+This single crystalline wind chime occasionally jingles as if blown against another chime by a soothing breeze. The spell DC of any spell cast by Activating the item is 34.
+Armor You gain a +3 item bonus to saving throws against emotion effects.
+Weapon After you cast an emotion spell by Activating the cheery chime, your Strikes with the weapon deal an additional 1d8 mental damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Cheery Chime - Weapon
+will|dc:34|name:Cheery Chime Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Infectious Enthusiasm.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Laughing Fit.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Roaring Applause.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Zealous Conviction.
+
+### Clay Sphere | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+This dry clay ball becomes malleable when activated, shifting into a variety of forms. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+7 #Spell Attack Roll]]{+7} and the spell DC 17.
+Armor You gain resistance 2 to precision damage and a +1 item bonus to saving throws against effects with the morph or polymorph traits.Weapon After you cast a morph or polymorph spell by activating the clay sphere, the weapon becomes malleable, shifting its form to your whims. Your Strikes with the affixed weapon have the versatile bludgeoning, versatile piercing, and versatile slashing trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon have their damage dice increase by one step.Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+
+### Clay Sphere (Greater) | L6 | {'gp': 225} | affixed-to-armor-or-a-weapon
+This dry clay ball becomes malleable when activated, shifting into a variety of forms. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+10 #Spell Attack Roll]]{+10} and the spell DC 20.
+Armor You gain resistance 5 to precision damage and a +2 item bonus to saving throws against effects with the morph or polymorph traits.Weapon After you cast a morph or polymorph spell by activating the clay sphere, the weapon becomes malleable, shifting its form to your whims. Your Strikes with the affixed weapon have the versatile bludgeoning, versatile piercing, and versatile slashing trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon have their damage dice increase by one step.Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Enlarge.
+
+### Clay Sphere (Major) | L14 | {'gp': 4200} | affixed-to-armor-or-a-weapon
+This dry clay ball becomes malleable when activated, shifting into a variety of forms. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+21 #Spell Attack Roll]]{+21} and the spell DC 31.
+Armor You gain resistance 10 to precision damage and a +3 item bonus to saving throws against effects with the morph or polymorph traits.Weapon After you cast a morph or polymorph spell by activating the clay sphere, the weapon becomes malleable, shifting its form to your whims. Your Strikes with the affixed weapon have the versatile bludgeoning, versatile piercing, and versatile slashing trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon have their damage dice increase by one step.Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Clay Sphere - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Cursed Metamorphosis.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Plant Form.
+
+### Deathbane Crescent | L3 | {'gp': 50} | affixed-to-armor-or-a-weapon
+This crescent moon carved out of bone holds the power to turn back the undead. This spellheart covers any item it's affixed to with spiderwebs that reappear even if damaged or removed. The spell DC of any spell cast by Activating this item is 18.
+Armor After you cast a vitality spell by Activating the crescent, you gain resistance 2 to attacks and effects from undead creatures until the end of your next turn.
+Weapon After you cast a vitality spell by Activating the crescent, your Strikes with the weapon deal an additional 1d4[vitality] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Deathbane Crescent - Weapon
+fortitude|dc:18|basic|name:Deathbane Crescent Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Vitality Lash.
+
+### Deathbane Crescent (Greater) | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+This crescent moon carved out of bone holds the power to turn back the undead. This spellheart covers any item it's affixed to with spiderwebs that reappear even if damaged or removed. The spell DC of any spell cast by Activating this item is 24.
+Armor After you cast a vitality spell by Activating the crescent, you gain resistance 5 to attacks and effects from undead creatures until the end of your next turn.
+Weapon After you cast a vitality spell by Activating the crescent, your Strikes with the weapon deal an additional 1d6[vitality] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Deathbane Crescent - Weapon
+fortitude|dc:24|basic|name:Deathbane Crescent Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Vitality Lash.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Infuse Vitality.
+
+### Deathbane Crescent (Major) | L12 | {'gp': 1900} | affixed-to-armor-or-a-weapon
+This crescent moon carved out of bone holds the power to turn back the undead. This spellheart covers any item it's affixed to with spiderwebs that reappear even if damaged or removed. The spell DC of any spell cast by Activating this item is 30.
+Armor After you cast a vitality spell by Activating the crescent, you gain resistance 10 to attacks and effects from undead creatures until the end of your next turn.
+Weapon After you cast a vitality spell by Activating the crescent, your Strikes with the weapon deal an additional 1d8[vitality] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Deathbane Crescent - Weapon
+fortitude|dc:30|basic|name:Deathbane Crescent Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Vitality Lash.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Infuse Vitality.
+Activate Cast a Spell
+Frequency once per day
+Effect you cast 4th-rank Compendium.pf2e.spells-srd.Item.Sound Body.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vital Beacon.
+
+### Desolation Locket | L8 | {'gp': 470} | affixed-to-armor-or-a-weapon
+The surface of this golden, heart-shaped locket is nearly worn through with cracks. If opened, it reveals a portrait of someone the bearer loved dearly and has lost. The spell DC of any spell cast by activating this item is 24.
+Armor The desolation locket numbs you to further despair, and you gain a +2 item bonus to saving throws against emotion effects.Weapon (emotion, mental) After you cast a non-cantrip spell by activating the locket, you emanate an aura of hopelessness in a emanation|distance:5 until the start of your next turn. A creature that ends its turn in the aura must succeed at a will|dc:24|traits:emotion,mental saving throw against the locket's spell DC or become Slowed 1 (Slowed 2 on a critical failure) until the end of its next turn.Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Haunting Hymn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fear.
+
+### Desolation Locket (Greater) | L13 | {'gp': 2800} | affixed-to-armor-or-a-weapon
+The surface of this golden, heart-shaped locket is nearly worn through with cracks. If opened, it reveals a portrait of someone the bearer loved dearly and has lost. The spell DC of any spell cast by activating this item is 30.
+Armor The desolation locket numbs you to further despair, and you gain a +3 item bonus to saving throws against emotion effects.Weapon(emotion, mental) After you cast a non-cantrip spell by activating the locket, you emanate an aura of hopelessness in a emanation|distance:5 until the start of your next turn. A creature that ends its turn in the aura must succeed at a will|dc:30|traits:emotion,mental saving throw against the locket's spell DC or become Slowed 1 (Slowed 2 on a critical failure) until the end of its next turn.Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Haunting Hymn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Fear
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Wave of Despair.
+
+### Desolation Locket (Major) | L19 | {'gp': 34000} | affixed-to-armor-or-a-weapon
+The surface of this golden, heart-shaped locket is nearly worn through with cracks. If opened, it reveals a portrait of someone the bearer loved dearly and has lost. The spell DC of any spell cast by activating this item is 41.
+Armor The desolation locket numbs you to further despair, and you gain a +4 item bonus to saving throws against emotion effects. When you critically fail a saving throw against an emotion effect, you get a failure instead.Weapon(emotion, mental) After you cast a non-cantrip spell by activating the locket, you emanate an aura of hopelessness in a emanation|distance:5 until the start of your next turn. A creature that ends its turn in the aura must succeed at a will|dc:41|traits:emotion,mental saving throw against the locket's spell DC or become Slowed 1 (Slowed 2 on a critical failure) until the end of its next turn.Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Desolation Locket - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Haunting Hymn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Wave of Despair.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Canticle of Everlasting Grief.
+
+### Devilwing Badge | L4 | {'gp': 90} | affixed-to-armor-or-a-weapon
+This small tearing of a devil's wing has been cleansed with holy water before being mounted onto a silver badge. The spell attack modifier of any spell cast by Activating this item is +8, and the spell DC is 18.
+Armor You gain resistance 2 to fire and unholy.Weapon After you cast a spell by Activating the devilwing badge, your Strikes with the weapon deal an additional 1d4 spirit damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Armor)
+Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Weapon)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+
+### Devilwing Badge (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+This small tearing of a devil's wing has been cleansed with holy water before being mounted onto a silver badge. The spell attack modifier of any spell cast by Activating this item is +14, and the spell DC is 24.
+Armor You gain resistance 5 to fire and unholy.Weapon After you cast a spell by Activating the devilwing badge, your Strikes with the weapon deal an additional 1d6 spirit damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Armor)
+Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Weapon)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Crisis of Faith.
+
+### Devilwing Badge (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This small tearing of a devil's wing has been cleansed with holy water before being mounted onto a silver badge. The spell attack modifier of any spell cast by Activating this item is +19, and the spell DC is 29.
+Armor You gain resistance 10 to fire and unholy.Weapon After you cast a spell by Activating the devilwing badge, your Strikes with the weapon deal an additional 1d8 spirit damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Armor)
+Compendium.pf2e.equipment-effects.Item.Effect: Devilwing Badge (Weapon)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Crisis of Faith.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Wrath.
+
+### Energizing Vial | L7 | {'gp': 350} | affixed-to-armor-or-a-weapon
+This sealed glass vial has no stopper and is filled with pure white light. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+13 #spell attack roll]]{+13}.
+Armor After you cast an electricity spell by Activating the energizing vial, you can Step as a free action once per round until the end of your next turn.
+Weapon After you cast an electricity spell by Activating the energizing vial, your Strikes with the weapon deal 1d4[persistent,electricity] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Energizing Vial - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Live Wire
+
+### Energizing Vial (Greater) | L13 | {'gp': 2700} | affixed-to-armor-or-a-weapon
+This sealed glass vial has no stopper and is filled with pure white light. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+21 #spell attack roll]]{+21} and the spell DC is 31.
+Armor After you cast an electricity spell by Activating the energizing vial, you can Step as a free action once per round until the end of your next turn.
+Weapon After you cast an electricity spell by Activating the energizing vial, your Strikes with the weapon deal 1d6[persistent,electricity] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Energizing Vial - Weapon
+reflex|dc:31|basic|name:Energizing Vial Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Live Wire
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 5th-rank lightning lasso
+
+### Energizing Vial (Major) | L18 | {'gp': 22000} | affixed-to-armor-or-a-weapon
+This sealed glass vial has no stopper and is filled with pure white light. The spell attack modifier of any spell cast by Activating this item is [[/r 1d20+28 #spell attack roll]]{+28} and spell DC is 38.
+Armor After you cast an electricity spell by Activating the energizing vial, you can Step as a free action once per round until the end of your next turn.
+Weapon After you cast an electricity spell by Activating the energizing vial, your Strikes with the weapon deal 1d8[persistent,electricity] damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Energizing Vial - Weapon
+reflex|dc:38|basic|name:Energizing Vial Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Live Wire
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 8th-rank Compendium.pf2e.spells-srd.Item.Lightning Lasso
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 8th-rank Compendium.pf2e.spells-srd.Item.Draw the Lightning
+
+### Enigma Mirror | L7 | {'gp': 325} | affixed-to-armor-or-a-weapon
+Mist fills the glass of this small circular hand mirror, creating strange patterns in the shifting gray wisps. The back of the mirror bears a flowing script engraving in an unknown language. The spell DC of any spell cast by activating this item is 23.
+Armor After you cast an illusion spell by activating the mirror, choose one ally within 30 feet. That ally is Compendium.pf2e.conditionitems.Item.Concealed as if seen in a misty mirror, until the end of your next turn.Weapon After you cast an illusion spell by activating the mirror, illusory copies of the weapon swirl in the air around it. You're affected by the Compendium.pf2e.spells-srd.Item.Thicket of Knives spell until the end of your next turn. The spell ends if you stop wielding the affixed weapon.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Forbidding Ward.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Blur
+
+### Enigma Mirror (Greater) | L10 | {'gp': 950} | affixed-to-armor-or-a-weapon
+Mist fills the glass of this small circular hand mirror, creating strange patterns in the shifting gray wisps. The back of the mirror bears a flowing script engraving in an unknown language. The spell DC of any spell cast by activating this item is 27.
+Armor After you cast an illusion spell by activating the mirror, choose one ally within 30 feet. That ally is Compendium.pf2e.conditionitems.Item.Concealed as if seen in a misty mirror, until the end of your next turn.Weapon After you cast an illusion spell by activating the mirror, illusory copies of the weapon swirl in the air around it. You're affected by the Compendium.pf2e.spells-srd.Item.Thicket of Knives spell until the end of your next turn. The spell ends if you stop wielding the affixed weapon.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Forbidding Ward.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Mirror's Misfortune.
+
+### Enigma Mirror (Major) | L13 | {'gp': 2750} | affixed-to-armor-or-a-weapon
+Mist fills the glass of this small circular hand mirror, creating strange patterns in the shifting gray wisps. The back of the mirror bears a flowing script engraving in an unknown language. The spell DC of any spell cast by activating this item is 30.
+Armor After you cast an illusion spell by activating the mirror, choose one ally within 30 feet. That ally is Compendium.pf2e.conditionitems.Item.Concealed as if seen in a misty mirror, until the end of your next turn.Weapon After you cast an illusion spell by activating the mirror, illusory copies of the weapon swirl in the air around it. You're affected by the Compendium.pf2e.spells-srd.Item.Thicket of Knives spell until the end of your next turn. The spell ends if you stop wielding the affixed weapon.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Forbidding Ward.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Mirror's Misfortune.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Mirror Malefactors.
+
+### Five-Feather Wreath | L4 | {'gp': 90} | affixed-to-metal-armor-or-a-weapon
+Identical feathers radiate from the center of this spellheart, held in place by woven straw. The spell attack roll of any spell cast by Activating this item is +8, and the spell DC is 18.
+Armor You gain a +1 item bonus to Acrobatics checks and resistance 2 to falling damage.
+Weapon After you cast an air spell by Activating the wreath, you can Fly 5 feet as a single action, or you can Fly 10 feet as a free action if the spell you cast wasn't a cantrip. This must be your next action, and if you don't have a fly Speed, you must end the flight on solid ground or fall.
+Compendium.pf2e.equipment-effects.Item.Effect: Five-Feather Wreath - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gale Blast.
+
+### Five-Feather Wreath (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+Identical feathers radiate from the center of this spellheart, held in place by woven straw. The spell attack roll of any spell cast by Activating this item is +14, and the spell DC is 24.
+Armor You gain a +1 item bonus to Acrobatics checks and resistance 5 to falling damage.Weapon After you cast an air spell by Activating the wreath, you can Fly 5 feet as a single action, or you can Fly 25 feet as a free action if the spell you cast wasn't a cantrip. This must be your next action, and if you don't have a fly Speed, you must end the flight on solid ground or fall.Compendium.pf2e.equipment-effects.Item.Effect: Five-Feather Wreath - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gale Blast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Wall of Wind.
+
+### Five-Feather Wreath (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+Identical feathers radiate from the center of this spellheart, held in place by woven straw. The spell attack roll of any spell cast by Activating this item is +19, and the spell DC is 29.
+Armor You gain a +2 item bonus to Acrobatics checks and resistance 10 to falling damage.
+Weapon After you cast an air spell by Activating the wreath, you can Fly 5 feet as a single action, or you can Fly 40 feet as a free action if the spell you cast wasn't a cantrip. This must be your next action, and if you don't have a fly Speed, you must end the flight on solid ground or fall.
+Compendium.pf2e.equipment-effects.Item.Effect: Five-Feather Wreath - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gale Blast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th rank Compendium.pf2e.spells-srd.Item.Wall of Wind.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fly.
+
+### Flaming Star | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+A sheen of red crosses the surface of this star-shaped goldstone medallion when the light hits it. The affixed armor or weapon is warm to the touch. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+7 #spell attack roll]]{+7}, and the spell DC is 17.
+Armor You gain resistance 2 to fire.
+Weapon After you cast a fire spell by Activating the star, your Strikes with the weapon deal an additional 1d4 fire damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Ignition.
+
+### Flaming Star (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+A sheen of red crosses the surface of this star-shaped goldstone medallion when the light hits it. The affixed armor or weapon is warm to the touch. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+14 #spell attack roll]]{+14}, and the spell DC is 24.
+Armor You gain resistance 5 to fire.
+Weapon After you cast a fire spell by Activating the star, your Strikes with the weapon deal an additional 1d6 fire damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Ignition.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fireball.
+reflex|dc:24|basic|name:Fireball|traits:spell|showDC:all
+
+### Flaming Star (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+A sheen of red crosses the surface of this star-shaped goldstone medallion when the light hits it. The affixed armor or weapon is warm to the touch. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+19 #spell attack roll]]{+19}, and the spell DC is 29.
+Armor You gain resistance 10 to fire.
+Weapon After you cast a fire spell by Activating the star, your Strikes with the weapon deal an additional 1d8 fire damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Flaming Star - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Ignition.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Fireball.
+reflex|dc:29|basic|name:Flaming Star Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Wall of Fire.
+
+### Foxglove Token | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+This small piece of wood is finely carved to depict a foxglove. The spell DC of any spell cast by Activating this item is 17.
+Armor You gain resistance 2 to poison damage.
+Weapon After you cast a plant spell by activating the foxglove token, your Strikes with the weapon it's attached to deal an additional 1d4 poison damage until the end of your next turn.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Puff of Poison.
+
+### Foxglove Token (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+This small piece of wood is finely carved to depict a foxglove. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 5 to poison damage.
+Weapon After you cast a plant spell by activating the foxglove token, your Strikes with the weapon it's attached to deal an additional 1d6 poison damage until the end of your next turn.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Puff of Poison.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Noxious Vapors.
+
+### Foxglove Token (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This small piece of wood is finely carved to depict a foxglove. The spell DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 10 to poison damage.
+Weapon After you cast a plant spell by activating the foxglove token, your Strikes with the weapon it's attached to deal an additional 1d8 poison damage until the end of your next turn.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Puff of Poison.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Noxious Vapors.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Petal Storm.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Wall of Thorns.
+
+### Ghostcaller's Planchette | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This miniature wooden planchette is engraved with symbols designed to attract spirits. When affixed, the symbols begin to glow, and the planchette turns slightly insubstantial. The spell DC of any spell cast by activating this item is 29.
+Armor After you cast a spell by activating the planchette, you gain resistance 5 to all physical damage (except Compendium.pf2e.equipment-srd.Item.Ghost Touch) until the start of your next turn. Attacks by incorporeal creatures (such as a ghost's ghostly hand) count as ghost touch.
+Compendium.pf2e.equipment-effects.Item.Effect: Ghostcaller's Planchette - Armor
+Weapon After you cast a spell by activating the planchette, the affixed weapon gains the effects of the ghost touch property rune until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Ghostcaller's Planchette - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Invoke Spirits
+
+### Ghostcaller's Planchette (Greater) | L18 | {'gp': 21000} | affixed-to-armor-or-a-weapon
+This miniature wooden planchette is engraved with symbols designed to attract spirits. When affixed, the symbols begin to glow, and the planchette turns slightly insubstantial. The spell DC of any spell cast by activating this item is 38.
+Armor After you cast a spell by activating the planchette, you gain resistance 10 to all physical damage (except Compendium.pf2e.equipment-srd.Item.Ghost Touch) until the start of your next turn. Attacks by incorporeal creatures (such as a ghost's ghostly hand) count as ghost touch.
+Compendium.pf2e.equipment-effects.Item.Effect: Ghostcaller's Planchette - Armor
+Weapon After you cast a spell by activating the planchette, the affixed weapon gains the effects of both the ghost touch and Greater Vitalizing property runes until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Ghostcaller's Planchette - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Invoke Spirits
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Incarnate Tempest of Shades.
+
+### Grim Sandglass | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+One bulb of this tiny hourglass contains black sand, the other white. After even a few grains pass from one side to the other, it reverses its flow to keep the two sides in equilibrium. The spell DC of any spell cast by Activating this item is 17.
+Armor You gain resistance 2 to void.
+Weapon After you Cast a Spell by Activating the hourglass, your Strikes with the weapon deal an additional 1d4 void damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+
+### Grim Sandglass (Greater) | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+One bulb of this tiny hourglass contains black sand, the other white. After even a few grains pass from one side to the other, it reverses its flow to keep the two sides in equilibrium. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 5 to void.
+Weapon After you Cast a Spell by Activating the hourglass, your Strikes with the weapon deal an additional 1d6 void damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 2nd-rank Compendium.pf2e.spells-srd.Item.Harm.
+
+### Grim Sandglass (Major) | L12 | {'gp': 2000} | affixed-to-armor-or-a-weapon
+One bulb of this tiny hourglass contains black sand, the other white. After even a few grains pass from one side to the other, it reverses its flow to keep the two sides in equilibrium. The spell DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 10 to void.
+Weapon After you Cast a Spell by Activating the hourglass, your Strikes with the weapon deal an additional 1d8 void damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Grim Sandglass - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Harm.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Whispers of the Void.
+
+### Heartmoss | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+This burgundy moss grows in heart-shaped clumps and releases a pleasant, calming scent. The spell DC of any spell cast by Activating this item is 17.
+Armor You gain resistance 2 to mental damage and a +1 item bonus to saving throws against effects with the emotion trait.
+Weapon After you cast a healing spell by activating the heartmoss, the weapon exudes a soothing scent. Your Strikes with the affixed weapon have the nonlethal trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon cause the target to be Stupefied 1 for 1 round if it hits (or for 3 rounds on a critical hit).
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+
+### Heartmoss (Greater) | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+This burgundy moss grows in heart-shaped clumps and releases a pleasant, calming scent. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 5 to mental damage and a +1 item bonus to saving throws against effects with the emotion trait.
+Weapon After you cast a healing spell by activating the heartmoss, the weapon exudes a soothing scent. Your Strikes with the affixed weapon have the nonlethal trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon cause the target to be Stupefied 2 for 1 round if it hits (or for 3 rounds on a critical hit).
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Heal.
+
+### Heartmoss (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This burgundy moss grows in heart-shaped clumps and releases a pleasant, calming scent. The spell DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 10 to mental damage and a +1 item bonus to saving throws against effects with the emotion trait.
+Weapon After you cast a healing spell by activating the heartmoss, the weapon exudes a soothing scent. Your Strikes with the affixed weapon have the nonlethal trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon cause the target to be Stupefied 3 for 1 round if it hits (or for 3 rounds on a critical hit).
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Heal.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Sound Body.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Healing Well.
+
+### Helping Hand | L3 | {'gp': 45} | affixed-to-armor-or-a-weapon
+This miniature wooden hand has fully articulated fingers with brass joints. The tiny hand twitches infrequently of its own accord, especially if scrutinized for too long.
+Armor You increase your maximum and encumbered Bulk limit by 1.
+Weapon You gain a +1 item bonus to skill checks to Aid when wielding the weapon.
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Hand.
+
+### Helping Hand (Greater) | L8 | {'gp': 415} | affixed-to-armor-or-a-weapon
+This miniature wooden hand has fully articulated fingers with brass joints. The tiny hand twitches infrequently of its own accord, especially if scrutinized for too long.
+Armor You increase your maximum and encumbered Bulk limit by 2.
+Weapon You gain a +2 item bonus to skill checks to Aid when wielding the weapon.
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Hand.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Mending.
+
+### Helping Hand (Major) | L13 | {'gp': 2400} | affixed-to-armor-or-a-weapon
+This miniature wooden hand has fully articulated fingers with brass joints. The tiny hand twitches infrequently of its own accord, especially if scrutinized for too long.
+Armor You increase your maximum and encumbered Bulk limit by 3.
+Weapon You gain a +2 item bonus to skill checks to Aid when wielding the weapon.
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Helping Hand - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Hand.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Mending.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Imaginary Lockbox.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Telekinetic Haul.
+
+### Hydrating Pinwheel | L7 | {'gp': 350} | affixed-to-armor-or-a-weapon
+Clear streams of water have been magically solidified into a glimmering, iridescent pinwheel that looks as fragile as glass. When affixed, it spins gently without a breeze.
+Armor You gain resistance 3 to persistent acid damage and persistent fire damage.
+Weapon After you cast a water spell by Activating the enduring helix, your Strikes with the weapon deal 1d4 persistent cold damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Rousing Splash.
+
+### Hydrating Pinwheel (Greater) | L13 | {'gp': 2700} | affixed-to-armor-or-a-weapon
+Clear streams of water have been magically solidified into a glimmering, iridescent pinwheel that looks as fragile as glass. When affixed, it spins gently without a breeze. The spell DC of any spell cast by Activating this item is 31.
+Armor You gain resistance 3 to persistent acid damage and persistent fire damage.
+Weapon After you cast a water spell by Activating the enduring helix, your Strikes with the weapon deal 1d6 persistent cold damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Weapon
+reflex|dc:31|basic|name:Hydrating Pinwheel Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Rousing Splash.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Geyser
+
+### Hydrating Pinwheel (Major) | L18 | {'gp': 22000} | affixed-to-armor-or-a-weapon
+Clear streams of water have been magically solidified into a glimmering, iridescent pinwheel that looks as fragile as glass. When affixed, it spins gently without a breeze. The spell DC of any spell cast by Activating this item is 38.
+Armor You gain resistance 3 to persistent acid damage and persistent fire damage.
+Weapon After you cast a water spell by Activating the enduring helix, your Strikes with the weapon deal 1d8 persistent cold damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Hydrating Pinwheel - Weapon
+reflex|dc:38|basic|name:Hydrating Pinwheel Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Rousing Splash.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 8th-rank Compendium.pf2e.spells-srd.Item.Geyser
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 8th-rank Compendium.pf2e.spells-srd.Item.Soothing Spring
+
+### Jester's Bell | L5 | {'gp': 140} | affixed-to-armor-or-a-weapon
+This spherical brass bell always appears well polished no matter its surroundings and jingles whenever someone laughs. The spell DC of any spell cast by activating this item is 19.
+Armor You gain resistance 2 to mental damage and a +1 item bonus to saving throws against mental effects.
+Weapon After activating the bell to Cast a mental Spell, your weapon shakes with a sound like laughter. Your next Strike causes the target to become irate with you; they take a –1 item penalty to skill checks or Strikes that target creatures that aren't you until the start of your next turn. If you don't make a Strike by the end of your next turn, the laughing sound fades with no effect.
+Compendium.pf2e.equipment-effects.Item.Effect: Jester's Bell - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Laughing Fit.
+
+### Jester's Bell (Greater) | L7 | {'gp': 340} | affixed-to-armor-or-a-weapon
+This spherical brass bell always appears well polished no matter its surroundings and jingles whenever someone laughs. The spell DC of any spell cast by activating this item is 23.
+Armor You gain resistance 5 to mental damage and a +1 item bonus to saving throws against mental effects.
+Weapon After activating the bell to Cast a mental Spell, your weapon shakes with a sound like laughter. Your next Strike causes the target to become irate with you; they take a –1 item penalty to skill checks or Strikes that target creatures that aren't you until the start of your next turn. If you don't make a Strike by the end of your next turn, the laughing sound fades with no effect.
+Compendium.pf2e.equipment-effects.Item.Effect: Jester's Bell - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Laughing Fit.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Blistering Invective.
+
+### Jester's Bell (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This spherical brass bell always appears well polished no matter its surroundings and jingles whenever someone laughs. The spell DC of any spell cast by activating this item is 27.
+Armor You gain resistance 10 to mental damage and a +1 item bonus to saving throws against mental effects.
+Weapon After activating the bell to Cast a mental Spell, your weapon shakes with a sound like laughter. Your next Strike causes the target to become irate with you; they take a –1 item penalty to skill checks or Strikes that target creatures that aren't you until the start of your next turn. If you don't make a Strike by the end of your next turn, the laughing sound fades with no effect.
+Compendium.pf2e.equipment-effects.Item.Effect: Jester's Bell - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Laughing Fit.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Blistering Invective.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank blistering invective.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Confusion.
+
+### Jolt Coil | L3 | {'gp': 60} | affixed-to-armor-or-a-weapon
+Contained within this small glass tube is a twisted wire filament crackling with electricity, sending static prickling through the hair of anyone holding it. The spell DC of any spell cast by activating this item is 17.
+Armor You gain resistance 2 to electricity.
+Weapon After you cast an electricity spell by activating the coil, your Strikes with the weapon deal an additional 1d4 electricity damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Weapon
+reflex|dc:17|basic|name:Jolt Coil Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Electric Arc.
+
+### Jolt Coil (Greater) | L8 | {'gp': 475} | affixed-to-armor-or-a-weapon
+Contained within this small glass tube is a twisted wire filament crackling with electricity, sending static prickling through the hair of anyone holding it. The spell DC of any spell cast by activating this item is 24.
+Armor You gain resistance 3 to electricity.Weapon After you cast an electricity spell by activating the coil, your Strikes with the weapon deal an additional 1d6 electricity damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Weapon
+reflex|dc:24|basic|name:Jolt Coil Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Electric Arc.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Lightning Bolt.
+
+### Jolt Coil (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+Contained within this small glass tube is a twisted wire filament crackling with electricity, sending static prickling through the hair of anyone holding it. The spell DC of any spell cast by activating this item is 29.
+Armor You gain resistance 5 to electricity.Weapon After you cast an electricity spell by activating the coil, your Strikes with the weapon deal an additional 1d8 electricity damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jolt Coil - Weapon
+reflex|dc:29|basic|name:Jolt Coil Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Electric Arc.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Lightning Bolt.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Draw the Lightning.
+
+### Judgment Thurible | L10 | {'gp': 975} | affixed-to-armor-or-a-weapon
+The golden religious symbol on the top of this spherical incense holder shifts its form to match the faith of its bearer. You gain no benefit from a judgment thurible if you don't worship a deity. The spell DC of any spell cast by activating this item is 27.
+Armor After you cast a spell by activating the thurible, the thurible casts 3rd-rank Compendium.pf2e.spells-srd.Item.Protection on you, with a duration of 1 round.Weapon After you cast a spell by activating the thurible, the weapon gains a rune that lasts until the end of your next turn. It gains the Compendium.pf2e.equipment-srd.Item.Holy rune if your deity allows holy sanctification or the Compendium.pf2e.equipment-srd.Item.Unholy rune if your deity allows unholy sanctification. If your deity allows both, you can choose which rune the weapon gains. If your deity allows neither, your weapon doesn't gain a rune.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Wrath.
+
+### Judgment Thurible (Greater) | L17 | {'gp': 14000} | affixed-to-armor-or-a-weapon
+The golden religious symbol on the top of this spherical incense holder shifts its form to match the faith of its bearer. You gain no benefit from a judgment thurible if you don't worship a deity. The spell DC of any spell cast by activating this item is 35.
+Armor After you cast a spell by activating the thurible, the thurible casts 3rd-rank Compendium.pf2e.spells-srd.Item.Protection on you, with a duration of 1 round.Weapon After you cast a spell by activating the thurible, the weapon gains a rune that lasts until the end of your next turn. It gains the Compendium.pf2e.equipment-srd.Item.Holy rune if your deity allows holy sanctification or the Compendium.pf2e.equipment-srd.Item.Unholy rune if your deity allows unholy sanctification. If your deity allows both, you can choose which rune the weapon gains. If your deity allows neither, your weapon doesn't gain a rune. The extra damage from this rune is 2d6.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Divine Wrath.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Decree
+
+### Judgment Thurible (Major) | L20 | {'gp': 65000} | affixed-to-armor-or-a-weapon
+The golden religious symbol on the top of this spherical incense holder shifts its form to match the faith of its bearer. You gain no benefit from a judgment thurible if you don't worship a deity. The spell DC of any spell cast by activating this item is 43.
+Armor After you cast a spell by activating the thurible, the thurible casts 3rd-rank Compendium.pf2e.spells-srd.Item.Protection on you, with a duration of 1 round.Weapon After you cast a spell by activating the thurible, the weapon gains a rune that lasts until the end of your next turn. It gains the Compendium.pf2e.equipment-srd.Item.Holy rune if your deity allows holy sanctification or the Compendium.pf2e.equipment-srd.Item.Unholy rune if your deity allows unholy sanctification. If your deity allows both, you can choose which rune the weapon gains. If your deity allows neither, your weapon doesn't gain a rune. The extra damage from this rune is 2d6.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Divine Lance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Divine Decree.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Incarnate Deific Herald.
+
+### Jyoti's Feather | L10 | {'gp': 960} | affixed-to-armor-or-a-weapon
+A jyoti's feather is a shimmering red-and-gold feather that seems almost metallic, although it's delicate and flexible to the touch. Though most aren't made from true jyoti feathers, as the reclusive outsiders avoid visitors from the Universe, the creatures' connection to life energy lent these spellhearts their name.
+Armor You gain a +2 item bonus to saving throws against death effects and void energy.Weapon The weapon has the Compendium.pf2e.equipment-srd.Item.Vitalizing rune while the feather is affixed.Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vital Beacon.
+
+### Jyoti's Feather (Greater) | L14 | {'gp': 4100} | affixed-to-armor-or-a-weapon
+A jyoti's feather is a shimmering red-and-gold feather that seems almost metallic, although it's delicate and flexible to the touch. Though most aren't made from true jyoti feathers, as the reclusive outsiders avoid visitors from the Universe, the creatures' connection to life energy lent these spellhearts their name.
+Armor You gain a +3 item bonus to saving throws against death effects and void energy.Weapon The weapon has the Compendium.pf2e.equipment-srd.Item.Vitalizing rune while the feather is affixed.Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 5th-rank Compendium.pf2e.spells-srd.Item.Vital Beacon.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Healing Well
+
+### Jyoti's Feather (Major) | L16 | {'gp': 9400} | affixed-to-armor-or-a-weapon
+A jyoti's feather is a shimmering red-and-gold feather that seems almost metallic, although it's delicate and flexible to the touch. Though most aren't made from true jyoti feathers, as the reclusive outsiders avoid visitors from the Universe, the creatures' connection to life energy lent these spellhearts their name.
+Armor You gain a +4 item bonus to saving throws against death effects and void energy.Weapon The weapon has the Greater Vitalizing rune while the feather is affixed.Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Jyoti's Feather - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Stabilize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Healing Well
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Field of Life
+
+### Lightweave Scarf | L8 | {'gp': 500} | affixed-to-armor-or-a-weapon
+The first of these strips of glittering cloth was worn by a monk from Jinin who would interweave it into his handwraps of mighty blows. The spell DC of any spell cast by activating this item is 24.
+Armor You gain a +2 item bonus to saving throws against illusions and Deception checks to Compendium.pf2e.actionspf2e.Item.Create a Diversion.Weapon (visual) After you cast an illusion spell by activating the scarf, the weapon is shrouded in a mesmerizing illusory pattern. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Confused for 1 round if it hits. If you don't make a Strike by the end of your next turn, the illusion ends with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Lightweave Scarf (Armor)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Hypnotize.
+
+### Lightweave Scarf (Greater) | L15 | {'gp': 5500} | affixed-to-armor-or-a-weapon
+The first of these strips of glittering cloth was worn by a monk from Jinin who would interweave it into his handwraps of mighty blows. The spell DC of any spell cast by activating this item is 34.
+Armor You gain a +2 item bonus to saving throws against illusions and Deception checks to Compendium.pf2e.actionspf2e.Item.Create a Diversion.Weapon (visual) After you cast an illusion spell by activating the scarf, the weapon is shrouded in a mesmerizing illusory pattern. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Confused for 1 round if it hits. If you don't make a Strike by the end of your next turn, the illusion ends with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Lightweave Scarf (Armor)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Hypnotize.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vibrant Pattern.
+
+### Lightweave Scarf (Major) | L18 | {'gp': 22000} | affixed-to-armor-or-a-weapon
+The first of these strips of glittering cloth was worn by a monk from Jinin who would interweave it into his handwraps of mighty blows. The spell DC of any spell cast by activating this item is 38.
+Armor You gain a +3 item bonus to saving throws against illusions and Deception checks to Compendium.pf2e.actionspf2e.Item.Create a Diversion.Weapon (visual) After you cast an illusion spell by activating the scarf, the weapon is shrouded in a mesmerizing illusory pattern. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Confused for 1 minute if it hits. If you don't make a Strike by the end of your next turn, the illusion ends with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Lightweave Scarf (Armor)
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 8th-rank Compendium.pf2e.spells-srd.Item.Vibrant Pattern.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Confusing Colors.
+
+### Perfect Droplet | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+Intense blue water magically holds its shape-a perfect sphere. The spell DC of any spell cast by Activating this item is 17.
+Armor You gain resistance 2 to water effects and attacks by water creatures.
+Weapon After you cast a water spell by Activating the droplet, your body becomes mistlike. Until the end of the turn, you can move through enemies' spaces, treating each square in their spaces as difficult terrain. You can't move through creatures that have the water trait in this way.
+Compendium.pf2e.equipment-effects.Item.Effect: Perfect Droplet - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Spout.
+
+### Perfect Droplet (Greater) | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+Intense blue water magically holds its shape-a perfect sphere. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 5 to water effects and attacks by water creatures.Weapon After you cast a water spell by Activating the droplet, your body becomes mistlike. Until the end of the turn, you can move through enemies' spaces. You can't move through creatures that have the water trait in this way.Compendium.pf2e.equipment-effects.Item.Effect: Perfect Droplet - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Spout.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Aqueous Orb or Compendium.pf2e.spells-srd.Item.Feet to Fins.
+
+### Perfect Droplet (Major) | L12 | {'gp': 1800} | affixed-to-armor-or-a-weapon
+Intense blue water magically holds its shape-a perfect sphere. The spell DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 10 to water effects and attacks by water creatures.Weapon After you cast a water spell by Activating the droplet, your body becomes mistlike. Until the end of the turn, you can move through enemies' spaces. You can't move through creatures that have the water trait in this way.Compendium.pf2e.equipment-effects.Item.Effect: Perfect Droplet - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Spout.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Aqueous Orb or Compendium.pf2e.spells-srd.Item.Feet to Fins.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Hydraulic Torrent.
+
+### Phantasmal Doorknob | L6 | {'gp': 215} | affixed-to-armor-or-a-weapon
+This ornate doorknob can open doors both material and metaphysical, revealing dreams and nightmares. The spell DC of any spell cast by activating this item is 20.
+Armor You gain a +1 item bonus to Thievery checks to Pick a Lock.Weapon If you critically succeed at a Strike with the weapon, the target is Compendium.pf2e.conditionitems.Item.Dazzled until the end of its next turn.Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Figment.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Phantasmal Treasure.
+
+### Phantasmal Doorknob (Greater) | L10 | {'gp': 900} | affixed-to-armor-or-a-weapon
+This ornate doorknob can open doors both material and metaphysical, revealing dreams and nightmares. The spell DC of any spell cast by activating this item is 27.
+Armor You gain a +2 item bonus to Thievery checks to Pick a Lock.Weapon If you critically succeed at a Strike with the weapon, the target is Compendium.pf2e.conditionitems.Item.Blinded until the end of its next turn. The creature is then temporarily immune to being blinded in this way for 24 hours.Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Figment.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vision of Death.
+
+### Phantasmal Doorknob (Major) | L15 | {'gp': 6000} | affixed-to-armor-or-a-weapon
+This ornate doorknob can open doors both material and metaphysical, revealing dreams and nightmares. The spell DC of any spell cast by activating this item is 34.
+Armor You gain a +2 item bonus to Thievery checks to Pick a Lock.Weapon If you critically succeed at a Strike with the weapon, the target is Compendium.pf2e.conditionitems.Item.Blinded until the end of its next turn. The creature is then temporarily immune to being blinded in this way for 24 hours.Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Phantasmal Doorknob - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Figment.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th-rank Compendium.pf2e.spells-srd.Item.Vision of Death.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Phantasmal Calamity
+
+### Pickled Demon Tongue | L3 | {'gp': 60} | affixed-to-armor-or-a-weapon
+This small crystal vial contains the forked end of a demon's tongue, preserved in brine. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+7 #Spell Attack Roll]]{+7}, and the spell DC is 17.
+Armor You gain resistance 2 to acid and attacks by demons.Weapon After you cast an acid spell by Activating the pickled demon tongue, your Strikes with the weapon deal an additional 1d4[acid] damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Caustic Blast.
+
+### Pickled Demon Tongue (Greater) | L8 | {'gp': 460} | affixed-to-armor-or-a-weapon
+This small crystal vial contains the forked end of a demon's tongue, preserved in brine. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+14 #Spell Attack Roll]]{+14}, and the spell DC is 24.
+Armor You gain resistance 5 to acid and attacks by demons.Weapon After you cast an acid spell by Activating the pickled demon tongue, your Strikes with the weapon deal an additional 1d6[acid] damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Caustic Blast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Acidic Burst (reflex|dc:24|basic|traits:spell).
+
+### Pickled Demon Tongue (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This small crystal vial contains the forked end of a demon's tongue, preserved in brine. The spell attack roll of any spell cast by Activating this item is [[/r 1d20+19 #Spell Attack Roll]]{+19}, and the spell DC is 29.
+Armor You gain resistance 10 to acid and attacks by demons.Weapon After you cast an acid spell by Activating the pickled demon tongue, your Strikes with the weapon deal an additional 1d8[acid] damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Pickled Demon Tongue - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Caustic Blast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Acid Grip.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Acidic Burst (reflex|dc:29|basic|traits:spell).
+
+### Polished Demon Horn | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+This spellheart is fashioned from the tip of a demon's horn that's been polished until smooth and shiny. The spell DC of any spell cast by Activating this item is 17.
+Armor You gain resistance 2 to unholy.Weapon After you cast an enchantment spell by Activating the horn, your Strikes with the weapon deal an additional 1d4 mental damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze (will|dc:17|basic|traits:cantrip,spell,mental,nonlethal).
+
+### Polished Demon Horn (Greater) | L8 | {'gp': 450} | affixed-to-armor-or-a-weapon
+This spellheart is fashioned from the tip of a demon's horn that's been polished until smooth and shiny. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain resistance 5 to unholy.Weapon After you cast an enchantment spell by Activating the horn, your Strikes with the weapon deal an additional 1d6 mental damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze (will|dc:24|basic|traits:cantrip,spell,mental,nonlethal).
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Fear (will|dc:24|traits:emotion,fear,mental,spell).
+
+### Polished Demon Horn (Major) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+This spellheart is fashioned from the tip of a demon's horn that's been polished until smooth and shiny. The spell DC of any spell cast by Activating this item is 29.
+Armor You gain resistance 10 to unholy.Weapon After you cast an enchantment spell by Activating the horn, your Strikes with the weapon deal an additional 1d8 mental damage until end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Polished Demon Horn - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze (will|dc:29|basic|traits:mental,emotion,fear|options:spell).
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Fear (will|dc:29|basic|traits:cantrip,spell,mental,nonlethal)..
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Outcast's Curse (will|dc:29|traits:misfortune,curse,mental,spell).
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vision of Death (will|dc:29|traits:emotion,death,fear,mental,spell).
+
+### Radiant Prism | L16 | {'gp': 8600} | affixed-to-armor-or-a-weapon
+This glass prism pays homage to its namesake pantheon—the Radiant Prism of Sarenrae, Desna, and Shelyn. Any armor or weapon the prism is affixed to glows softly with colored lights. The spell DC of any spell cast by activating this item is 35.
+Armor (light) After you cast a non-cantrip spell by activating the prism, you glow with dim light in a multitude of shimmering hues, shedding light like a Compendium.pf2e.equipment-srd.Item.Torch and making you Compendium.pf2e.conditionitems.Item.Concealed until the end of your next turn.Weapon After you cast a non-cantrip spell by activating the prism, your Strikes with the weapon gain the Compendium.pf2e.equipment-srd.Item.Brilliant property rune until the end of your next turn.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fiery Body
+
+### Radiant Prism (Greater) | L18 | {'gp': 20500} | affixed-to-armor-or-a-weapon
+This glass prism pays homage to its namesake pantheon—the Radiant Prism of Sarenrae, Desna, and Shelyn. Any armor or weapon the prism is affixed to glows softly with colored lights. The spell DC of any spell cast by activating this item is 38.
+Armor (light) After you cast a non-cantrip spell by activating the prism, you glow with dim light in a multitude of shimmering hues, shedding light like a Compendium.pf2e.equipment-srd.Item.Torch and making you Compendium.pf2e.conditionitems.Item.Concealed for 2 rounds.Weapon After you cast a non-cantrip spell by activating the prism, your Strikes with the weapon gain the Compendium.pf2e.equipment-srd.Item.Brilliant property rune until the end of your next turn. The damage from the brilliant rune increases to 2d4 of each type.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fiery Body.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Confusing Colors.
+
+### Radiant Prism (Major) | L20 | {'gp': 64000} | affixed-to-armor-or-a-weapon
+This glass prism pays homage to its namesake pantheon—the Radiant Prism of Sarenrae, Desna, and Shelyn. Any armor or weapon the prism is affixed to glows softly with colored lights. The spell DC of any spell cast by activating this item is 43.
+Armor (light) After you cast a non-cantrip spell by activating the prism, you glow with dim light in a multitude of shimmering hues, shedding light like a Compendium.pf2e.equipment-srd.Item.Torch and making you Compendium.pf2e.conditionitems.Item.Concealed for 2 rounds.Weapon After you cast a non-cantrip spell by activating the prism, your Strikes with the weapon gain the Greater Brilliant property rune until the end of your next turn. The damage from the greater brilliant rune increases to 3d4 of each type.
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Light.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Fiery Body.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Falling Stars.
+
+### Resonating Fork | L5 | {'gp': 140} | affixed-to-armor-or-a-weapon
+This two-pronged fork of metal emits a constant low hum, vibrating slightly when touched. The spell attack modifier of any spell cast by activating this item is +9, and the spell DC is 19.
+Armor You gain resistance 2 to sonic damage and a +1 item bonus to saving throws against effects with the auditory or sonic trait.Weapon After you cast a sonic spell by activating the fork, the weapon reverberates with trapped sound waves. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Deafened for 1 round if it hits (or for 3 rounds on a critical hit). If you don't make a Strike by the end of your next turn, the sound waves dissipate with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Resonating Fork - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Bullhorn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Biting Words.
+
+### Resonating Fork (Greater) | L7 | {'gp': 340} | affixed-to-armor-or-a-weapon
+This two-pronged fork of metal emits a constant low hum, vibrating slightly when touched. The spell attack modifier of any spell cast by activating this item is +13, and the spell DC is 23.
+Armor You gain resistance 5 to sonic damage and a +2 item bonus to saving throws against effects with the auditory or sonic trait.Weapon After you cast a sonic spell by activating the fork, the weapon reverberates with trapped sound waves. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Deafened for 3 rounds if it hits (or for 1 minute on a critical hit). If you don't make a Strike by the end of your next turn, the sound waves dissipate with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Resonating Fork - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Bullhorn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 2nd-rank Compendium.pf2e.spells-srd.Item.Biting Words.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Noise Blast.
+
+### Resonating Fork (Major) | L12 | {'gp': 1800} | affixed-to-armor-or-a-weapon
+This two-pronged fork of metal emits a constant low hum, vibrating slightly when touched. The spell attack modifier of any spell cast by activating this item is +19, and the spell DC is 29.
+Armor You gain resistance 10 to sonic damage and a +2 item bonus to saving throws against effects with the auditory or sonic trait.Weapon After you cast a sonic spell by activating the fork, the weapon reverberates with trapped sound waves. Your next Strike causes the target to be Compendium.pf2e.conditionitems.Item.Deafened for 1 minute if it hits (or for 1 hour on a critical hit). If you don't make a Strike by the end of your next turn, the sound waves dissipate with no effect.Compendium.pf2e.equipment-effects.Item.Effect: Resonating Fork - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Bullhorn.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Noise Blast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Painful Vibrations.
+
+### Rime Crystal | L3 | {'gp': 55} | affixed-to-armor-or-a-weapon
+Slowly spinning at the center of this crystalline orb is a single snowflake, and its surface remains lightly covered in frost no matter how hot the weather is outside. The spell attack modifier of any spell cast by activating this item is +7, and the spell DC is 17.
+Armor You gain resistance 2 to cold.Weapon After you cast a cold spell by activating the crystal, your Strikes with the weapon deal an additional 1d4[cold] damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Frostbite.
+
+### Rime Crystal (Greater) | L8 | {'gp': 425} | affixed-to-armor-or-a-weapon
+Slowly spinning at the center of this crystalline orb is a single snowflake, and its surface remains lightly covered in frost no matter how hot the weather is outside. The spell attack modifier of any spell cast by activating this item is +14, and the spell DC is 24.
+Armor You gain resistance 5 to cold.Weapon After you cast a cold spell by activating the crystal, your Strikes with the weapon deal an additional 1d6[cold] damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Frostbite.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 3rd-rank Compendium.pf2e.spells-srd.Item.Chilling Spray.
+
+### Rime Crystal (Major) | L13 | {'gp': 2800} | affixed-to-armor-or-a-weapon
+Slowly spinning at the center of this crystalline orb is a single snowflake, and its surface remains lightly covered in frost no matter how hot the weather is outside. The spell attack modifier of any spell cast by activating this item is +20, and the spell DC is 30.
+Armor You gain resistance 10 to cold.Weapon After you cast a cold spell by activating the crystal, your Strikes with the weapon deal an additional 1d8[cold] damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Rime Crystal - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Frostbite.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Ice Storm.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Howling Blizzard.
+
+### Sanguine Fang | L9 | {'gp': 650} | affixed-to-armor-or-a-weapon
+A pointed vampire fang hovers within this smoked-glass vial, its tip crimson with slowly dripping blood. The spell DC of any spell cast by activating this item is 25.
+Armor You gain resistance 3 to persistent bleed damage and a +2 item bonus on saving throws against effects with the void trait.Weapon After you cast a spell by activating the fang, your Strikes with the weapon deal 1d4 persistent bleed damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vampiric Feast.
+
+### Sanguine Fang (Greater) | L12 | {'gp': 1750} | affixed-to-armor-or-a-weapon
+A pointed vampire fang hovers within this smoked-glass vial, its tip crimson with slowly dripping blood. The spell DC of any spell cast by activating this item is 29.
+Armor You gain resistance 5 to persistent bleed damage and a +2 item bonus on saving throws against effects with the void trait.Weapon After you cast a spell by activating the fang, your Strikes with the weapon deal 1d6 persistent bleed damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Sanguine Mist.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Vampiric Feast.
+
+### Sanguine Fang (Major) | L15 | {'gp': 5750} | affixed-to-armor-or-a-weapon
+A pointed vampire fang hovers within this smoked-glass vial, its tip crimson with slowly dripping blood. The spell DC of any spell cast by activating this item is 34.
+Armor You gain resistance 10 to persistent bleed damage and a +3 item bonus on saving throws against effects with the void trait.Weapon After you cast a spell by activating the fang, your Strikes with the weapon deal 2d6 persistent bleed damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Sanguine Fang - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Void Warp.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 5th-rank Compendium.pf2e.spells-srd.Item.Vampiric Feast.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Vampiric Exsanguination.
+
+### Saurian Spike | L9 | {'gp': 700} | affixed-to-armor-or-a-weapon
+This jagged, bony growth narrows to a sharp, pointed tip. Deep groves from some former battle scar its surface. The bearer of a saurian spike often feels a sudden surge in power and confidence. The spell attack modifier of any spell cast by activating this item is +15.
+Armor You gain imprecise scent with a range of 30 feet.Weapon (auditory, emotion, fear, visual) When you cast a polymorph spell by activating the spike, your battle form is exceptionally fearsome. Each enemy in a emanation|distance:30 must succeed at a will|dc:27|traits:auditory,emotion,fear,visual saving throw or become Frightened 1 (Frightened 2 on a critical failure).Compendium.pf2e.equipment-effects.Item.Effect: Saurian Spike - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Dinosaur Form.
+
+### Saurian Spike (Greater) | L11 | {'gp': 1400} | affixed-to-armor-or-a-weapon
+This jagged, bony growth narrows to a sharp, pointed tip. Deep groves from some former battle scar its surface. The bearer of a saurian spike often feels a sudden surge in power and confidence. The spell attack modifier of any spell cast by activating this item is +18.
+Armor You gain imprecise scent with a range of 60 feet.Weapon (auditory, emotion, fear, visual) When you cast a polymorph spell by activating the spike, your battle form is exceptionally fearsome. Each enemy in a emanation|distance:60 must succeed at a will|dc:28|traits:auditory,emotion,fear,visual saving throw or become Frightened 1 (Frightened 2 on a critical failure).Compendium.pf2e.equipment-effects.Item.Effect: Saurian Spike - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 5th-rank Compendium.pf2e.spells-srd.Item.Dinosaur Form.
+
+### Saurian Spike (Major) | L15 | {'gp': 6500} | affixed-to-armor-or-a-weapon
+This jagged, bony growth narrows to a sharp, pointed tip. Deep groves from some former battle scar its surface. The bearer of a saurian spike often feels a sudden surge in power and confidence. The spell attack modifier of any spell cast by activating this item is +24.
+Armor You gain precise scent with a range of 60 feet.Weapon (auditory, emotion, fear, visual) When you cast a polymorph spell by activating the spike, your battle form is exceptionally fearsome. Each enemy in a emanation|distance:60 must succeed at a will|dc:34|traits:auditory,emotion,fear,visual saving throw or become Frightened 2 (Frightened 3 on a critical failure).Compendium.pf2e.equipment-effects.Item.Effect: Saurian Spike - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Dinosaur Form.
+
+### Silver Tongue | L8 | {'gp': 430} | affixed-to-armor-or-a-weapon
+This tongue-shaped silver trinket typically dangles from a silver chain. It seems to catch the light wherever it is affixed. When affixed to armor or a weapon with any metal components, it makes those pieces gleam brightly. The spell DC of any spell cast by Activating this item is 24.
+Armor You gain a +2 item bonus to saving throws against auditory and linguistic effects.
+Weapon After you cast a mental spell by Activating the silver tongue, you gain a +2 item bonus to Intimidation checks to [[/act demoralize]] until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Silver Tongue - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Silver Tongue - Weapon
+will|dc:24|basic|name:Silver Tongue Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze.
+
+### Silver Tongue (Greater) | L15 | {'gp': 2600} | affixed-to-armor-or-a-weapon
+This tongue-shaped silver trinket typically dangles from a silver chain. It seems to catch the light wherever it is affixed. When affixed to armor or a weapon with any metal components, it makes those pieces gleam brightly. The spell DC of any spell cast by Activating this item is 34.
+Armor You gain a +3 item bonus to saving throws against auditory and linguistic effects.
+Weapon After you cast a mental spell by Activating the silver tongue, you gain a +3 item bonus to Intimidation checks to [[/act demoralize]] until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Silver Tongue - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Silver Tongue - Weapon
+will|dc:34|basic|name:Silver Tongue Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Daze.
+Activate Cast a Spell
+Frequency once per day
+Effect you cast 6th-rank Compendium.pf2e.spells-srd.Item.Biting Words.
+Activate Cast a Spell
+Frequency once per day
+Effect you cast 6th-rank Compendium.pf2e.spells-srd.Item.Charm.
+
+### Spiny Lodestone | L4 | {'gp': 90} | affixed-to-metal-armor-or-a-weapon
+This perfectly octahedral magnetite crystal is covered in a hair-like layer of iron sand that always finds its way back to shape if wiped away. The spell attack modifier of any spell cast by Activating this item is +8, and the spell DC is 18.
+Armor You gain a +1 item bonus to Athletics checks and resistance 2 to nonlethal damage.
+Weapon After you cast a spell by Activating the spiny lodestone, your Strikes with the weapon deal an additional 1d4 piercing damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Needle Darts
+
+### Spiny Lodestone (Greater) | L8 | {'gp': 425} | affixed-to-metal-armor-or-a-weapon
+This perfectly octahedral magnetite crystal is covered in a hair-like layer of iron sand that always finds its way back to shape if wiped away. The spell attack modifier of any spell cast by Activating this item is +14, and the spell DC is 24.
+Armor You gain a +1 item bonus to Athletics checks and resistance 5 to nonlethal damage.Weapon After you cast a spell by Activating the spiny lodestone, your Strikes with the weapon deal an additional 1d6 piercing damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Needle Darts
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Magnetic Acceleration
+
+### Spiny Lodestone (Major) | L12 | {'gp': 1750} | affixed-to-metal-armor-or-a-weapon
+This perfectly octahedral magnetite crystal is covered in a hair-like layer of iron sand that always finds its way back to shape if wiped away. The spell attack modifier of any spell cast by Activating this item is +19, and the spell DC is 29.
+Armor You gain a +2 item bonus to Athletics checks and resistance 10 to nonlethal damage.Weapon After you cast a spell by Activating the spiny lodestone, your Strikes with the weapon deal an additional 1d8 piercing damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Spiny Lodestone - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Needle Darts
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Magnetic Acceleration
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Rust Cloud
+
+### Thirsty Chalice | L3 | {'gp': 50} | affixed-to-armor-or-a-weapon
+This slate chalice improbably holds one single drop of water in it at all times and helps refresh the wearer, sometimes at the expense of their enemies.
+Armor After you cast a spell by Activating the chalice, you are surrounded by a fine mist. You become Compendium.pf2e.conditionitems.Item.Concealed until the beginning of your next turn.
+Weapon (void) After you cast a spell by Activating the chalice, your Strikes with the weapon deal an additional 1[void] damage until the end of your next turn; the first time in a round you successfully deal this void damage, you gain 4 temporary Hit Points that last for 1 minute.
+Compendium.pf2e.equipment-effects.Item.Effect: Thirsty Chalice - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Draw Moisture.
+
+### Thirsty Chalice (Greater) | L6 | {'gp': 230} | affixed-to-armor-or-a-weapon
+This slate chalice improbably holds one single drop of water in it at all times and helps refresh the wearer, sometimes at the expense of their enemies. The DC of all spells cast by Activating this item is 22.
+Armor After you cast a spell by Activating the chalice, you are surrounded by a fine mist. You become Compendium.pf2e.conditionitems.Item.Concealed until the beginning of your next turn.
+Weapon (void) After you cast a spell by Activating the chalice, your Strikes with the weapon deal an additional 2[void] damage until the end of your next turn; the first time in a round you successfully deal this void damage, you gain 8 temporary Hit Points that last for 1 minute.
+Compendium.pf2e.equipment-effects.Item.Effect: Thirsty Chalice - Weapon
+fortitude|dc:22|basic|name:Thirsty Chalice Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Draw Moisture.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Curse of Lost Time.
+
+### Thirsty Chalice (Major) | L16 | {'gp': 8750} | affixed-to-armor-or-a-weapon
+This slate chalice improbably holds one single drop of water in it at all times and helps refresh the wearer, sometimes at the expense of their enemies. The DC of all spells cast by Activating this item is 35.
+Armor After you cast a spell by Activating the chalice, you are surrounded by a fine mist. You become Compendium.pf2e.conditionitems.Item.Concealed until the beginning of your next turn.
+Weapon (void) After you cast a spell by Activating the chalice, your Strikes with the weapon deal an additional 4[void] damage until the end of your next turn; the first time in a round you successfully deal this void damage, you gain 16 temporary Hit Points that last for 1 minute.
+Compendium.pf2e.equipment-effects.Item.Effect: Thirsty Chalice - Weapon
+fortitude|dc:35|basic|name:Thirsty Chalice Spell|traits:spell|showDC:all
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Draw Moisture.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th rank Compendium.pf2e.spells-srd.Item.Curse of Lost Time.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 6th rank Compendium.pf2e.spells-srd.Item.Vital Seed.
+
+### Thorn Triad | L4 | {'gp': 90} | affixed-to-non-metal-armor-or-a-weapon
+From each corner of this carved, triangular badge extends a long, sharp thorn. The spell DC of any spell cast by activating this item is 18.
+Armor After you cast a plant spell by activating the triad, you gain resistance 2 to bludgeoning and piercing damage and weakness 3 to fire until the end of your next turn, or double the resistance for a non-cantrip spell.
+Weapon After you cast a plant spell by activating the triad, thorns erupt from the weapon. Your Strikes with the weapon deal an additional 1d4 persistent bleed damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Timber.
+
+### Thorn Triad (Greater) | L8 | {'gp': 450} | affixed-to-non-metal-armor-or-a-weapon
+From each corner of this carved, triangular badge extends a long, sharp thorn. The spell DC of any spell cast by activating this item is 24.
+Armor After you cast a plant spell by activating the triad, you gain resistance 4 to bludgeoning and piercing damage and weakness 3 to fire until the end of your next turn, or double the resistance for a non-cantrip spell.Weapon After you cast a plant spell by activating the triad, thorns erupt from the weapon. Your Strikes with the weapon deal an additional 1d6 persistent bleed damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Timber.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Wall of Thorns.
+
+### Thorn Triad (Major) | L12 | {'gp': 1800} | affixed-to-non-metal-armor-or-a-weapon
+From each corner of this carved, triangular badge extends a long, sharp thorn. The spell DC of any spell cast by activating this item is 29.
+Armor After you cast a plant spell by activating the triad, you gain resistance 6 to bludgeoning and piercing damage and weakness 3 to fire until the end of your next turn, or double the resistance for a non-cantrip spell.Weapon After you cast a plant spell by activating the triad, thorns erupt from the weapon. Your Strikes with the weapon deal an additional 1d8 persistent bleed damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Thorn Triad - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Timber.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.Wall of Thorns.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Petal Storm.
+
+### Trinity Geode | L3 | {'gp': 60} | affixed-to-armor-or-a-weapon
+The crystal chamber within this split geode is divided into three lobes of equal size. The spell DC of any spell cast by Activating this item is 17.
+Armor After you cast an earth spell by Activating the geode, you gain resistance 1 to physical damage (except adamantine) until the end of your next turn, or double the resistance for a non-cantrip spell.
+Weapon After you cast an earth spell by Activating the geode, your Strikes with the weapon deal an additional 1d4 bludgeoning damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Scatter Scree.
+
+### Trinity Geode (Greater) | L8 | {'gp': 460} | affixed-to-armor-or-a-weapon
+The crystal chamber within this split geode is divided into three lobes of equal size. The spell DC of any spell cast by Activating this item is 24.
+Armor After you cast an earth spell by Activating the geode, you gain resistance 3 to physical damage (except adamantine) until the end of your next turn, or double the resistance for a non-cantrip spell.Weapon After you cast an earth spell by Activating the geode, your Strikes with the weapon deal an additional 1d6 bludgeoning damage until the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Scatter Scree.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.One with Stone.
+
+### Trinity Geode (Major) | L12 | {'gp': 1900} | affixed-to-armor-or-a-weapon
+The crystal chamber within this split geode is divided into three lobes of equal size. The spell DC of any spell cast by Activating this item is 29.
+Armor After you cast an earth spell by Activating the geode, you gain resistance 5 to physical damage (except adamantine) until the end of your next turn, or double the resistance for a non-cantrip spell.
+Weapon After you cast an earth spell by Activating the geode, your Strikes with the weapon deal an additional 1d8 bludgeoning damage until the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Trinity Geode - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Scatter Scree.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 4th-rank Compendium.pf2e.spells-srd.Item.One with Stone.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Mountain Resilience.
+
+### Vigilant Eye | L9 | {'gp': 650} | affixed-to-armor-or-a-weapon
+Carved in this wooden disc is a humanoid eye, painted in muted shades that blend in with the wood. The eye's pupil continually twitches and moves, scanning its bearer's surroundings.
+Armor (revelation) You aren't Compendium.pf2e.conditionitems.Item.Off-Guard to Compendium.pf2e.conditionitems.Item.Hidden or Compendium.pf2e.conditionitems.Item.Undetected creatures of the eye's level or lower, or creatures of the eye's level or lower using surprise attack, though you can still be flanked.Weapon When you make a Strike with the weapon against a target that's Compendium.pf2e.conditionitems.Item.Concealed, hidden, or undetected, the DC of your flat check to target it is 4 if the target is concealed or 10 if it's hidden or undetected.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Detect Magic.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Web of Eyes.
+
+### Vigilant Eye (Greater) | L11 | {'gp': 1250} | affixed-to-armor-or-a-weapon
+Carved in this wooden disc is a humanoid eye, painted in muted shades that blend in with the wood. The eye's pupil continually twitches and moves, scanning its bearer's surroundings.
+Armor (revelation) You aren't Compendium.pf2e.conditionitems.Item.Off-Guard to Compendium.pf2e.conditionitems.Item.Hidden or Compendium.pf2e.conditionitems.Item.Undetected creatures of the eye's level or lower, or creatures of the eye's level or lower using surprise attack, though you can still be flanked.Weapon When you make a Strike with the weapon against a target that's Compendium.pf2e.conditionitems.Item.Concealed, hidden, or undetected, the DC of your flat check to target it is 3 if the target is concealed or 9 if it's hidden or undetected.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Detect Magic.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Clairvoyance.
+
+### Vigilant Eye (Major) | L13 | {'gp': 2700} | affixed-to-armor-or-a-weapon
+Carved in this wooden disc is a humanoid eye, painted in muted shades that blend in with the wood. The eye's pupil continually twitches and moves, scanning its bearer's surroundings.
+Armor (revelation) You aren't Compendium.pf2e.conditionitems.Item.Off-Guard to Compendium.pf2e.conditionitems.Item.Hidden or Compendium.pf2e.conditionitems.Item.Undetected creatures of the eye's level or lower, or creatures of the eye's level or lower using surprise attack, though you can still be flanked.Weapon When you make a Strike with the weapon against a target that's Compendium.pf2e.conditionitems.Item.Concealed, hidden, or undetected, the DC of your flat check to target it is 2 if the target is concealed or 8 if it's hidden or undetected.Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Detect Magic.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Clairvoyance.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Scouting Eye.
+
+### Warding Statuette | L7 | {'gp': 325} | affixed-to-armor-or-a-weapon
+This small figurine is carved from soapstone in the shape of a deity or guardian, facing both front and back to indicate unflagging vigilance. The spell attack modifier of any spell cast by activating this item is +13.
+Armor You gain resistance 1 against ranged weapon attacks.Weapon When you hit with a Strike using the affixed weapon, or when a spell effect you created by activating the statuette hits with a Strike, you can choose a creature adjacent to the creature that was hit. That creature gains a +1 status bonus to AC until the start of your next turn. No more than one creature can benefit from this each turn.Compendium.pf2e.equipment-effects.Item.Effect: Warding Statuette - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Warding Statuette - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Shield.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Spiritual Armament.
+
+### Warding Statuette (Greater) | L13 | {'gp': 2600} | affixed-to-armor-or-a-weapon
+This small figurine is carved from soapstone in the shape of a deity or guardian, facing both front and back to indicate unflagging vigilance. The spell attack modifier of any spell cast by activating this item is +20.
+Armor You gain resistance 5 against ranged weapon attacks.Weapon When you hit with a Strike using the affixed weapon, or when a spell effect you created by activating the statuette hits with a Strike, you can choose a creature adjacent to the creature that was hit. That creature gains a +1 status bonus to AC until the start of your next turn. No more than one creature can benefit from this each turn.Compendium.pf2e.equipment-effects.Item.Effect: Warding Statuette - Armor
+Compendium.pf2e.equipment-effects.Item.Effect: Warding Statuette - Weapon
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Shield.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 5th-rank Compendium.pf2e.spells-srd.Item.Spiritual Weapon.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Spiritual Guardian.
+
+### Wyrm Claw | L12 | {'gp': 1000} | affixed-to-armor-or-a-weapon
+The tip of a metallic dragon's claw is set into a band of silver. When you summon dragons using the claw, you must choose metallic dragons.
+Armor After you cast a conjuration spell by activating the wyrm claw, you gain resistance 5 to acid, cold, electricity, and fire for the next minute.Weapon After you cast a conjuration spell by activating the claw, you gain a Breath Weapon activity that takes 2 actions and deals 6d6 damage with a reflex|dc:28|basic|options:area-effect. Choose the area and type of damage when you use Breath Weapon: a line|distance:30 that deals acid, electricity, or fire, or a cone|distance:15 that deals cold or fire. You can use this activity once before the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Claw - Armor
+6d6[acid|options:area-damage] 6d6[cold|options:area-damage] 6d6[electricity|options:area-damage] 6d6[fire|options:area-damage]
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Summon Dragon.
+
+### Wyrm Claw (Greater) | L15 | {'gp': 6500} | affixed-to-armor-or-a-weapon
+The tip of a metallic dragon's claw is set into a band of silver. When you summon dragons using the claw, you must choose metallic dragons.
+Armor After you cast a conjuration spell by activating the wyrm claw, you gain resistance 10 to acid, cold, electricity, and fire for the next minute.Weapon After you cast a conjuration spell by activating the claw, you gain a Breath Weapon activity that takes 2 actions and deals 9d6 damage with a reflex|dc:34|basic|options:area-effect. Choose the area and type of damage when you use Breath Weapon: a line|distance:30 that deals acid, electricity, or fire, or a cone|distance:15 that deals cold or fire. You can use this activity once before the end of your next turn.Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Claw - Armor
+9d6[acid|options:area-damage] 9d6[cold|options:area-damage] 9d6[electricity|options:area-damage] 9d6[fire|options:area-damage]
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Summon Dragon.
+
+### Wyrm Claw (Major) | L19 | {'gp': 40000} | affixed-to-armor-or-a-weapon
+The tip of a metallic dragon's claw is set into a band of silver. When you summon dragons using the claw, you must choose metallic dragons.
+Armor After you cast a conjuration spell by activating the wyrm claw, you gain resistance 15 to acid, cold, electricity, and fire for the next minute.Weapon After you cast a conjuration spell by activating the claw, you gain a Breath Weapon activity that takes 2 actions and deals 12d6 damage with a reflex|dc:41|basic|options:area-effect. Choose the area and type of damage when you use Breath Weapon: a line|distance:30 that deals acid, electricity, or fire, or a cone|distance:15 that deals cold or fire. You can use this activity once before the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Claw - Armor
+12d6[acid|options:area-damage] 12d6[cold|options:area-damage] 12d6[electricity|options:area-damage] 12d6[fire|options:area-damage]
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Incarnate Draconic Legion.
+
+### Wyrm Spindle | L12 | {'gp': 1000} | affixed-to-armor-or-a-weapon
+The broken tips of four dragon claws—one of each magical tradition—are set into a silver fitting. They protrude in the shape of a star or compass.
+Armor After you cast a non-cantrip spell by activating the spindle, you gain resistance 5 to fire, force, mental, and spirit for 1 minute.Weapon After you cast a non-cantrip spell by activating the spindle, you gain a Dragon Breath activity that takes 2 actions and deals 6d6 damage to all creatures in a type:cone|distance:30 with a reflex|dc:28|basic|options:area-effect save. Choose the type of damage when you use Dragon Breath: 6d6[fire|options:area-damage]{fire}, 6d6[force|options:area-damage]{force}, 6d6[mental|options:area-damage]{mental}, or 6d6[spirit|options:area-damage]{spirit}. You can use this activity once before the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Spindle - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Summon Dragon.
+
+### Wyrm Spindle (Greater) | L15 | {'gp': 6500} | affixed-to-armor-or-a-weapon
+The broken tips of four dragon claws—one of each magical tradition—are set into a silver fitting. They protrude in the shape of a star or compass.
+Armor After you cast a non-cantrip spell by activating the spindle, you gain resistance 10 to fire, force, mental, and spirit for 1 minute.Weapon After you cast a non-cantrip spell by activating the spindle, you gain a Dragon Breath activity that takes 2 actions and deals 9d6 damage to all creatures in a type:cone|distance:30 with a reflex|dc:34|basic|options:area-effect save. Choose the type of damage when you use Dragon Breath: 9d6[fire|options:area-damage]{fire}, 9d6[force|options:area-damage]{force}, 9d6[mental|options:area-damage]{mental}, or 9d6[spirit|options:area-damage]{spirit}. You can use this activity once before the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Spindle - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast 7th-rank Compendium.pf2e.spells-srd.Item.Summon Dragon.
+
+### Wyrm Spindle (Major) | L19 | {'gp': 40000} | affixed-to-armor-or-a-weapon
+The broken tips of four dragon claws—one of each magical tradition—are set into a silver fitting. They protrude in the shape of a star or compass.
+Armor After you cast a non-cantrip spell by activating the spindle, you gain resistance 15 to fire, force, mental, and spirit for 1 minute.Weapon After you cast a non-cantrip spell by activating the spindle, you gain a Dragon Breath activity that takes 2 actions and deals 12d6 damage to all creatures in a type:cone|distance:30 with a reflex|dc:41|basic|options:area-effect save. Choose the type of damage when you use Dragon Breath: 12d6[fire|options:area-damage]{fire}, 12d6[force|options:area-damage]{force}, 12d6[mental|options:area-damage]{mental}, or 12d6[spirit|options:area-damage]{spirit}. You can use this activity once before the end of your next turn.
+Compendium.pf2e.equipment-effects.Item.Effect: Wyrm Spindle - Armor
+Activate Cast a Spell
+Effect You cast Compendium.pf2e.spells-srd.Item.Gouging Claw.
+Activate Cast a Spell
+Frequency once per day
+Effect You cast Compendium.pf2e.spells-srd.Item.Incarnate Draconic Legion.
+

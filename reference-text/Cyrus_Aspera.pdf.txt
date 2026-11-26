@@ -1,0 +1,215 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                   ASPERA
+
+
+
+
+Aspera
+A two-handed signature blade for Cyrus’s Laughing Shadow. The weapon’s reach sets the
+rhythm, Time and Mind guide its growth, and the stave gives him practical spells he can reach
+for without changing grips.
+
+
+The weapon today
+Alex approved the signature weapon and gave Aspera to Cyrus at level 3. He was receptive to the
+two-handed Laughing Shadow interaction. Cyrus has the weapon. Its Foundry entry and in-character
+identification are pending. The entries below are the build plan.
+
+ Decision                           Working design
+
+ Shape                              A curved, double-bladed scimitar on a long haft. Mechanically a two-handed
+                                    martial polearm, with 1d8 slashing, Bulk 2, and Reach as the planning chassis.
+
+ Handling                           Trip is the key proposed trait. It gives Cyrus a reason to alternate setup and
+                                    weapon attacks while holding Aspera. Deadly d10 is the proposed critical flourish.
+                                    The fauchard, glaive, and guisarme are useful published comparisons.
+
+ Two-handed Arcane Cascade          While Cyrus wields Aspera in two hands, let qualifying Strikes against off-guard
+                                    creatures use Laughing Shadow’s enhanced Arcane Cascade damage as if he had
+                                    the free hand it normally requires. The bonus is 3, then 5 with weapon
+                                    specialization, then 7 with greater specialization.
+
+ Fighting style                     Reach keeps a flank open, gives more origin choices for Expansive Spellstrike,
+                                    and covers approach lanes for Reactive Strike. Trip gives allies an opening if a
+                                    spell slot would be too expensive.
+
+
+Reach gives a Medium wielder 10-foot reach with a reach weapon. The 10-foot exception covers two
+diagonal squares. Trip uses the weapon’s reach and potency item bonus and waives the free-hand
+requirement for the Athletics action. Trip’s action tests Reflex DC and leaves the target prone on success.
+End a turn with both hands on Aspera if you want its reaction threat. Restoring the grip costs an Interact.
+
+
+Relic growth
+Time and Mind are the proposed mechanical aspects. Luck can show in divergent outcomes, and shadow
+in the blade’s presentation. The GM Core relic schedule places minor gifts at 1 and 5, major gifts at 9 and
+13, and a grand gift at 17. Aspera’s first manifestation can happen later than its arrival. Gift saves use the
+better of Cyrus’s class DC and spell DC.
+
+ Tier                        Gift                             What it gives Cyrus
+
+ First minor                 Repository of Knowledge          Three relic-related Lores while Aspera is on his person.
+                                                              They start trained, increase to expert at relic level 9,
+                                                              then master at 17. Pick subjects that reveal the
+                                                              weapon’s history and complement Cyrus’s existing
+                                                              Lores.
+
+
+
+
+Aspera                                                                                                                   1
+CYRUS VAL’DIRA / PF2E REMASTER                                                                               ASPERA
+
+
+
+
+ Tier                       Gift                           What it gives Cyrus
+
+ Second minor · 5+          Sands of the Hourglass         Two actions, once per hour, one creature within 30 feet,
+                                                           Fortitude. Success gives clumsy 1 and enfeebled 1.
+                                                           Failure gives both at 2 plus drained 1. Critical failure
+                                                           gives both at 3 plus drained 2. The first two conditions
+                                                           last 1 minute. Good before the party targets Reflex or
+                                                           the enemy makes Strength-based attacks.
+
+ First major · 9+           Precognition                   Reaction when Cyrus’s turn starts, once per day.
+                                                           Resolve two prospective turns and choose which
+                                                           happens. Best for a decisive sequence with
+                                                           meaningfully different plans and easy bookkeeping.
+
+ Second major · 13+         Temporal Pulse                 Two actions, once per day. Choose creatures within 30
+                                                           feet to make Will saves. Failure imposes slowed 1,
+                                                           critical failure slowed 2. Each creature slowed lets
+                                                           Cyrus give one ally in range, including himself,
+                                                           quickened for 1 round. A team payoff when several
+                                                           turns are about to matter.
+
+
+A grand gift can follow the campaign’s late story. Time Reversal is the time-focused candidate. Mental
+Bastion is the knowledge-focused comparison. Another level-17 direction is an Intelligence apex
+awakening, optionally with a narrow Lore item bonus. Pick an awakening that reflects the story Aspera has
+developed by then.
+
+
+The fused stave
+Use the remastered Fused Staff feat at level 8 if the stave is ready. Fuse the magical staff into Aspera
+during daily preparation or with a 10-minute manipulate activity. The fusion keeps the staff’s activations,
+including normal casting from a prepared staff while wielding the weapon. The pair uses the higher
+potency and striking runes independently. Staff property runes are suppressed in fusion. It lasts until
+Cyrus fuses the staff again or loses possession of the weapon for 24 hours, and its fused benefits work for
+him alone.
+
+Under the staff rules, prepare one staff per day. It starts with charges equal to the rank of the highest spell
+slot. As a prepared caster Cyrus can expend one slot in daily preparations to add its rank in charges. Each
+ranked cast uses charges equal to the printed rank of that entry and uses Cyrus’s casting statistics. Staff
+cantrips cost no charges and heighten normally. The spell must be on an available spell list and within
+Cyrus’s casting access. The stave adds casts to the lower ranks Cyrus retains.
+
+Spell lists by milestone
+The proposed multipurpose item draws on time, cognition, and illusions. The published personal staff
+framework uses one shared trait and its own item-level table, with ranks 3 through 6 first appearing at
+item levels 9, 11, 13, and 15. Aspera’s 8/10/12/14 steps and theme-based spell selection are bespoke. The
+staff-count audit found means of 6.69, 10.00, and 11.36 listed spells at item levels 8, 10, and 12
+respectively. Aspera’s core steps give 7, 9, and 11, with lower-rank alternates competing within entries.
+
+ Stage                    Proposed additions                    Role
+
+ Level 8 · cantrip        Time Sense                            Free staff cantrip for exact timing and narrowly
+                                                                applicable timing checks.
+
+
+
+
+Aspera                                                                                                                2
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                           ASPERA
+
+
+
+
+ Stage                        Proposed additions                          Role
+
+ Level 8 · rank 1             Sure Strike, Befuddle                       One-action accuracy for a decisive attack, or short
+                                                                          Will-based interference. Illusory Object is the
+                                                                          alternate if the stave should carry more deceptive
+                                                                          utility.
+
+ Level 8 · rank 2             Loose Time’s Arrow, Invisibility            Party opening movement and scouting or
+                                                                          extraction. Embed Message works as a
+                                                                          flavour-forward swap, or as a scroll for planned
+                                                                          communication.
+
+ Level 8 · rank 3             Time Jump, Slow                             Two distinct ways to win actions, mobility for
+                                                                          Cyrus and Fortitude control against a priority foe.
+                                                                          Heightened Illusory Disguise competes for a
+                                                                          dedicated infiltration version.
+
+ Level 10 · rank 4            Wall of Mirrors, Vision of Death            Battlefield division and a repeatable way to point
+                                                                          a meaningful spell at Will. The rare wall is an
+                                                                          option for the bespoke item.
+
+ Level 12 · rank 5            Space Fold Gate, Synesthesia                Movement for the group and a major Will debuff.
+                                                                          Synesthesia is occult-only. Give the second slot to
+                                                                          Shadow Siphon if the item needs an arcane cast
+                                                                          as soon as it comes online.
+
+ Level 14 · rank 6            Cast into Time, Mislead                     A temporal attack and sustained invisibility and an
+                                                                          illusory double.
+
+ Level 16 · proposed          Haste at rank 3, Clairvoyance at rank       Haste gives the third rank-3 choice. Clairvoyance
+ additions                    4, and True Target at rank 7                scouts at up to 500 feet and adds a different job
+                                                                          from the existing spellbook’s Translocate. True
+                                                                          Target opens a boss round for the team.
+                                                                          Translocate is the rank-4 swap if repeat
+                                                                          teleportation is more useful.
+
+
+At level 16, a rank-8 slot gives 8 charges at preparation. That buys Haste plus Synesthesia, or True
+Target plus Sure Strike. Sacrificing one rank-7 preparation brings the pool to 15, enough for Haste, True
+Target and Synesthesia across the day if Cyrus has the casting access for each. Use the normal rank-7
+preparations for Spell Riposte, Defy the Gods, Frigid Flurry or Comet Charge when an encounter calls for
+them. Spell Riposte can instead take the stave’s True Target entry for a more reactive build.
+
+
+Weapon runes and attachment
+Follow on-tier fundamental upgrades from Itemisation and Budget. A relic weapon normally accepts
+fundamental runes. Its unlock can specify whether it also accepts property runes. The options below fill
+any available slots on Aspera itself. Select by the fight that recurs.
+
+ Rune                  Job                                                         Price
+
+ Fearsome              Crits apply frightened 1, or frightened 2 with greater.     L5 · 160 gp, greater L12 · 2,000 gp
+                       Supports allied attacks and saves when the party can
+                       follow before the target’s turn.
+
+ Astral                Adds 1d6 spirit and incorporates ghost touch. Crits         L8 · 450 gp, greater L15 · 6,000 gp
+                       against a possessing creature can force a Will save to
+                       expel it without injuring its host.
+
+
+
+Aspera                                                                                                                          3
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                   ASPERA
+
+
+
+
+ Rune             Job                                                      Price
+
+ Rooting          Crits immobilize for 1 round and apply clumsy 1 until    L7 · 360 gp, L11 · 1,400 gp, L15 · 6,500
+                  immobilization ends. Escape DC scales with the           gp
+                  upgrade.
+
+ Frost            Adds 1d6 cold. A crit threatens slowed 1 through the     L8 · 500 gp, greater L15 · 6,500 gp
+                  end of Cyrus’s next turn unless the target succeeds at
+                  Fortitude.
+
+
+A Clay Sphere fits the early weapon when the party needs physical damage flexibility. It adds Gouging
+Claw and, after Cyrus activates the heart to cast a morph or polymorph spell, briefly offers all three
+physical damage types and a larger die for weapon Strikes. At higher levels the attachment can pivot
+toward repeatable critical-hit support with a Phantasmal Doorknob.
+
+
+
+
+Aspera                                                                                                                4
+

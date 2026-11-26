@@ -1,0 +1,902 @@
+0|Acid Splash|2|AC||30 feet|c|L|Core Rulebook
+0|Ancient Dust|2|fortitude|15cone||u|L|#186: Ghost King's
+0|Approximate|2|||10 feet|c|R|Impossible Magic
+0|Artistic Recollection|2|||touch|c|R|Impossible Magic
+0|Bramble Bush|2|breflex|5cube|30 feet|u|R|#203: Shepherd of 
+0|Bullhorn|2||||c|R|Player Core 2
+0|Caustic Blast|2|breflex|5burs|30 feet|c|R|Player Core
+0|Create Earthen Facsimile|2|||touch|c|R|Impossible Magic
+0|Daze|2|bwill||60 feet|c|R|Player Core
+0|Deep Breath|1||||c|R|Rage of Elements
+0|Detect Magic|2||30eman||c|R|Player Core
+0|Detect Metal|2||30eman||c|R|Rage of Elements
+0|Draw Moisture|2|||10 feet|c|R|Rage of Elements
+0|Eat Fire|reaction||||c|R|Rage of Elements
+0|Electric Arc|2|breflex||30 feet|c|R|Player Core
+0|Elemental Counter|reaction||||u|R|Rage of Elements
+0|Figment|2|||30 feet|c|R|Player Core
+0|Frost's Touch|1|||30 feet|r|R|Treasure Vault (Re
+0|Frostbite|2|bfortitude||60 feet|c|R|Player Core
+0|Gale Blast|2|fortitude|5eman||c|R|Player Core 2
+0|Ghost Sound|2|||30 feet|c|L|Core Rulebook
+0|Glamorize|2||||c|R|Lost Omens Divine 
+0|Glass Shield|1|breflex|||c|R|Rage of Elements
+0|Glowing Trail|2||||u|L|#194: Cult of the 
+0|Gouging Claw|2|AC||touch|c|R|Player Core
+0|Ignition|2|AC||30 feet|c|R|Player Core
+0|Illuminate|1|reflex|30eman||c|R|Rage of Elements
+0|Infectious Enthusiasm|2||||c|R|Impossible Magic
+0|Invoke True Name|1|||30 feet|r|L|Secrets of Magic
+0|Light|2|||120 feet|c|R|Player Core
+0|Live Wire|2|AC||30 feet|c|R|Player Core 2
+0|Message|1|||120 feet|c|R|Player Core
+0|Musical Accompaniment|2||||c|R|Impossible Magic
+0|Needle Darts|2|AC||60 feet|c|R|Rage of Elements
+0|Phase Bolt|2|AC||60 feet|c|R|Dark Archive (Rema
+0|Prestidigitation|2|||10 feet|c|R|Player Core
+0|Protect Companion|1|||30 feet|c|R|Impossible Magic
+0|Puff of Poison|2|fortitude||10 feet|c|R|Player Core 2
+0|Ray of Frost|2|AC||120 feet|c|L|Core Rulebook
+0|Read Aura|1 minute|||30 feet|c|R|Player Core
+0|Root Reading|2||30eman||c|R|Rage of Elements
+0|Scatter Scree|2|breflex|10line|30 feet|c|R|Player Core 2
+0|Shield|1||||c|R|Player Core
+0|Sigil|2|||touch|c|R|Player Core
+0|Slashing Gust|2|AC||60 feet|c|R|Rage of Elements
+0|Spout|2|breflex|5cube|30 feet|c|R|Player Core 2
+0|Summon Instrument|3||||c|R|Player Core
+0|Take Root|1|||30 feet|c|R|Rage of Elements
+0|Tangle Vine|2|AC||30 feet|c|R|Player Core
+0|Telekinetic Hand|2|||30 feet|c|R|Player Core
+0|Telekinetic Projectile|2|AC||30 feet|c|R|Player Core
+0|Timber|2|breflex|15line||c|R|Rage of Elements
+0|Time Sense|1||||c|R|Dark Archive (Rema
+0|Torturous Trauma|2|bfortitude||30 feet|u|L|#186: Ghost King's
+0|Tremor Signs|1|||120 feet|c|R|Rage of Elements
+0|Void Warp|2|bfortitude||30 feet|c|R|Player Core
+0|Warp Step|2||||c|R|Dark Archive (Rema
+1|500 Toads|2||15burs|30 feet|r|R|NPC Core
+1|Acidic Burst|2|breflex|5eman||c|R|Lost Omens Divine 
+1|Admonishing Ray|2|AC||60 feet|c|L|#158: Sixty Feet U
+1|Agitate|2|will||30 feet|c|R|Lost Omens Divine 
+1|Air Bubble|reaction|||60 feet|c|R|Player Core
+1|Airburst|1|fortitude|5eman||u|L|#169: Kindled Magi
+1|Alarm|10 minutes||20burs|touch|c|R|Player Core
+1|Animate Rope|2|||100 feet|c|L|Advanced Player's 
+1|Ant Haul|2|||touch|c|R|Player Core
+1|Anticipate Peril|2|||30 feet|c|R|Lost Omens Divine 
+1|Aqueous Blast|1|AC|||r|L|Kingmaker
+1|Befuddle|2|will||30 feet|c|R|Lost Omens Divine 
+1|Bone Shield|1||||c|R|Impossible Magic
+1|Breadcrumbs|1 minute|||touch|c|R|Impossible Magic
+1|Breathe Fire|2|breflex|15cone||c|R|Player Core
+1|Briny Bolt|2|AC||60 feet|c|R|Adventure Path: Ga
+1|Buoyant Bubbles|1|||30 feet|c|R|Rage of Elements
+1|Camel Spit|2|AC|||c|R|Howl of the Wild
+1|Carryall|2||||c|R|Player Core 2
+1|Charm|2|will||30 feet|c|R|Player Core
+1|Chilling Spray|2|reflex|15cone||c|R|Player Core 2
+1|Cinder Scribe|2|||touch|u|R|Impossible Magic
+1|Command|2|will||30 feet|c|R|Player Core
+1|Conductive Weapon|2|||touch|c|R|Rage of Elements
+1|Cradle Aloft|1|||touch|c|R|Impossible Magic
+1|Create Water|2|||0 feet|c|R|Player Core
+1|Curse of Slippery Steps|2|reflex||30 feet|c|R|Lost Omens Cheliax
+1|Dehydrate|2|fortitude|5burs|30 feet|c|R|Rage of Elements
+1|Disguise Magic|1 minute|||30 feet|c|R|Player Core
+1|Dizzying Colors|2|will|15cone||c|R|Player Core
+1|Dome of Tranquility|1 minute||30burs|30 feet|c|R|Impossible Magic
+1|Draw Ire|2|will||120 feet|c|L|Secrets of Magic
+1|Déjà Vu|2|will||100 feet|c|R|Player Core 2
+1|Echoing Weapon|2|||touch|c|R|Impossible Magic
+1|Elysian Whimsy|2|will||30 feet|u|L|#183: Field of Mai
+1|Endure|1|||touch|c|R|Lost Omens Divine 
+1|Enfeeble|2|fortitude||30 feet|c|R|Player Core
+1|Equal Footing|2|will||30 feet|u|R|Lost Omens Shining
+1|Exchange Image|2|will||touch|u|L|#147: Tomorrow Mus
+1|Fashionista|2|||30 feet|c|L|Lost Omens Firebra
+1|Fear|2|will||30 feet|c|R|Player Core
+1|Fishing Spot|10 minutes||||c|R|Impossible Magic
+1|Flashy Disappearance|2||||u|L|Lost Omens Firebra
+1|Fleet Step|2||||c|R|Player Core
+1|Flense|2|AC||touch|u|L|#186: Ghost King's
+1|Flourishing Flora|2|breflex|5burs|30 feet|c|R|Rage of Elements
+1|Fold Metal|2|||touch|c|R|Rage of Elements
+1|Force Barrage|1 to 3|||120 feet|c|R|Player Core
+1|Forge|2|fortitude||30 feet|u|L|Lost Omens Highhel
+1|Friendfetch|2|||30 feet|u|L|#169: Kindled Magi
+1|Gentle Landing|reaction|||60 feet|c|R|Player Core
+1|Gloom Mantle|2||||c|R|Lost Omens Cheliax
+1|Goblin Pox|2|fortitude||touch|c|R|Player Core
+1|Gravitational Pull|1 to 3|fortitude||30 feet|c|R|Impossible Magic
+1|Grease|2|reflex||30 feet|c|R|Player Core
+1|Grim Tendrils|2|fortitude|30line||c|R|Player Core
+1|Gritty Wheeze|2|fortitude|15cone||u|L|Adventure: Thresho
+1|Groom Companion|2|||touch|c|R|Impossible Magic
+1|Gust of Wind|2|fortitude|60line||c|R|Player Core
+1|Helpful Steps|2|||60 feet|c|L|Lost Omens Firebra
+1|Hippocampus Retreat|2|AC||10 feet|c|R|Howl of the Wild
+1|Horizon Thunder Sphere|2 to 2 rounds|AC||varies|c|R|Impossible Magic
+1|Hydraulic Push|2|AC||60 feet|c|R|Player Core
+1|Illusory Disguise|2|||30 feet|c|R|Player Core
+1|Illusory Object|2||20burs|500 feet|c|R|Player Core
+1|Instant Pottery|1 minute|||10 feet|c|R|Rage of Elements
+1|Interposing Earth|reaction||||c|R|Rage of Elements
+1|Invisible Item|2|||touch|c|R|Player Core 2
+1|Item Facade|2|||touch|c|R|Player Core
+1|Jump|1||||c|R|Player Core
+1|Kinetic Ram|1 to 3|fortitude||varies|c|R|Dark Archive (Rema
+1|Leaden Steps|2|fortitude||30 feet|c|R|Player Core 2
+1|Lock|2|||touch|c|R|Player Core
+1|Mending|10 minutes|||touch|c|R|Player Core
+1|Message Rune|5 minutes|||touch|c|R|Lost Omens Divine 
+1|Metal Merged|2||||c|R|Impossible Magic
+1|Mindlink|2|||touch|c|R|Player Core
+1|Mud Pit|3||15burs|60 feet|c|R|Player Core 2
+1|Mystic Armor|2||||c|R|Player Core
+1|Necromancer's Generosity|2|||30 feet|c|R|Impossible Magic
+1|Negate Aroma|2|||touch|c|L|Core Rulebook
+1|Noxious Vapors|2|bfortitude|10eman||c|R|Player Core 2
+1|Nudge the Odds|2||||u|R|Impossible Magic
+1|Overselling Flourish|reaction|will||60 feet|u|L|Lost Omens Firebra
+1|Penumbral Shroud|2|reflex||30 feet|c|R|Lost Omens Divine 
+1|Personal Rain Cloud|2|reflex||60 feet|u|L|#151: The Show Mus
+1|Pest Form|2||||c|R|Player Core
+1|Pet Cache|1|||touch|c|R|Player Core
+1|Phantasmal Minion|3|||60 feet|c|R|Player Core
+1|Pocket Library|3||||r|R|Lost Omens Rival A
+1|Propelling Air Stream|2|AC||30 feet|c|R|Impossible Magic
+1|Pummeling Rubble|2|reflex|15cone||c|R|Player Core
+1|Quick Sort|3|||10 feet|c|R|Impossible Magic
+1|Rainbow's End|2|bfortitude|10burs|60 feet|r|R|War of Immortals
+1|Reed Whistle|2||||u|R|#203: Shepherd of 
+1|Restyle|1 minute|||touch|c|R|Impossible Magic
+1|Rude Awakening|2|reflex||30 feet|c|R|Lost Omens Cheliax
+1|Runic Body|2|||touch|c|R|Player Core
+1|Runic Weapon|2|||touch|c|R|Player Core
+1|Schadenfreude|reaction|will||30 feet|c|R|Player Core 2
+1|Scorching Blast|1|AC|||r|L|Kingmaker
+1|Scouring Sand|2|reflex|10burs|60 feet|u|L|#151: The Show Mus
+1|Seashell of Stolen Sound|reaction|||30 feet|c|R|Impossible Magic
+1|Share Lore|1 minute|||touch|c|R|Lost Omens Divine 
+1|Shattering Gem|2|breflex||touch|c|R|Lost Omens Divine 
+1|Shell Game|2|||15 feet|u|R|Feybound
+1|Shielded Arm|2|||touch|c|R|Rage of Elements
+1|Shocking Grasp|2|AC||touch|c|L|Core Rulebook
+1|Shockwave|2|reflex|15cone||c|R|Lost Omens Divine 
+1|Signal Skyrocket|3|reflex|30burs|1,000 feet|c|R|Rage of Elements
+1|Sleep|2|will|5burs|30 feet|c|R|Player Core
+1|Snowball|2|AC||30 feet|c|L|Lost Omens World G
+1|Spider Sting|2|fortitude||touch|c|R|Player Core
+1|Stick On|2|||touch|c|R|Impossible Magic
+1|Summon Animal|3|||30 feet|c|R|Player Core
+1|Summon Construct|3|||30 feet|c|R|Player Core
+1|Summon Undead|3|||30 feet|c|R|Player Core
+1|Sure Strike|1||||c|R|Player Core
+1|Synchronize|2|||touch|c|R|Impossible Magic
+1|Synchronize Steps|2|||30 feet|u|L|Lost Omens Knights
+1|Tailwind|2||||c|R|Player Core
+1|Temporary Tool|1 minute||||c|R|Lost Omens Divine 
+1|Tether|2|reflex||30 feet|c|R|Lost Omens Divine 
+1|Thicket of Knives|2||||c|R|Impossible Magic
+1|Thoughtful Gift|1|||120 feet|c|R|Player Core 2
+1|Threefold Limb|2|AC||touch|u|R|Lost Omens Rival A
+1|Thunderstrike|2|breflex||120 feet|c|R|Player Core
+1|Unbroken Panoply|2|||touch|u|R|Lost Omens Rival A
+1|Ventriloquism|2||||c|R|Player Core
+1|Wall of Shrubs|3|||120 feet|c|R|Rage of Elements
+1|Weaken Earth|2|fortitude||touch|c|R|Rage of Elements
+1|Weave Wood|1 minute|||touch|c|R|Rage of Elements
+1|Wooden Fists|2||||c|R|Rage of Elements
+2|Acid Arrow|2|AC||120 feet|c|L|Core Rulebook
+2|Acid Grip|2|breflex||120 feet|c|R|Player Core
+2|Allfood|1 minute||||u|L|#194: Cult of the 
+2|Animated Assault|2|breflex|10burs|120 feet|c|R|Player Core 2
+2|Ash Cloud|3|fortitude|20burs|120 feet|c|R|Impossible Magic
+2|Banishing Touch|1 to 3|AC||touch|r|R|War of Immortals
+2|Bee-Man's Summons|2||500eman||r|R|#201: Pactbreaker
+2|Befitting Attire|2|||30 feet|c|R|Impossible Magic
+2|Binding Muzzle|2|fortitude||100 feet|r|L|#195: Heavy is the
+2|Blast of the Bellows|2||20burs|100 feet|r|L|#195: Heavy is the
+2|Blazing Armory|2|||30 feet|c|R|Rage of Elements
+2|Blazing Bolt|1 to 3|AC||60 feet|c|R|Player Core
+2|Blood Duplicate|2|||touch|u|L|#182: Graveclaw
+2|Blood Runs Cold|2|fortitude||60 feet|c|R|Impossible Magic
+2|Blood Vendetta|reaction|will||30 feet|c|R|Player Core
+2|Blur|2|||touch|c|R|Player Core
+2|Bone Spray|2|breflex|15cone||c|R|Impossible Magic
+2|Boneshaker|2 or 3|fortitude||100 feet|u|L|#176: Lost Mammoth
+2|Brine Dragon Bile|reaction|AC||30 feet|c|R|Rage of Elements
+2|Burrow Ward|2|fortitude|15eman||c|R|Rage of Elements
+2|Buzzing Servants|3||5squa|30 feet|r|R|Lost Omens Rival A
+2|Carrion Mire|3|reflex|15burs|30 feet|u|L|Wake the Dead #4
+2|Cauterize Wounds|2|||60 feet|c|R|Rage of Elements
+2|Charitable Urge|2|will||30 feet|c|R|Player Core 2
+2|Clad In Metal|2|||touch|c|R|Rage of Elements
+2|Cleanse Air|2||30burs|120 feet|c|R|Rage of Elements
+2|Confetti Cloud|1 to 3|||90 feet|u|L|Lost Omens Firebra
+2|Create Food|1 hour|||30 feet|c|R|Player Core
+2|Dancing Shield|2|||60 feet|c|R|Battlecry!
+2|Darkness|3||20burs|120 feet|c|R|Player Core
+2|Darkvision|2||||c|R|Player Core
+2|Deafness|2|fortitude||30 feet|c|R|Player Core
+2|Dimensional Drop|2|reflex||60 feet|c|R|Impossible Magic
+2|Disintegrating Puddle|2|AC||30 feet|c|R|Impossible Magic
+2|Dismantle|2|||touch|c|R|Player Core 2
+2|Disorienting Flash|1 to 3|bfortitude|5burs|60 feet|c|R|Impossible Magic
+2|Dispel Magic|2|||120 feet|c|R|Player Core
+2|Electrostatic Glider|2||||c|R|Impossible Magic
+2|Elemental Zone|2||20burs|120 feet|c|R|Impossible Magic
+2|Embed Message|2|||touch|c|R|Player Core
+2|Empathic Link|1 minute|||touch|u|L|Lost Omens Knights
+2|Empty Pack|2|||touch|c|R|Dark Archive (Rema
+2|Enlarge|2|||30 feet|c|R|Player Core
+2|Entangling Flora|2|reflex|20burs|120 feet|c|R|Player Core
+2|Environmental Endurance|10 minutes|||touch|c|R|Player Core
+2|Everlight|3|||touch|c|R|Player Core
+2|Expeditious Excavation|2|reflex|5cube|touch|c|R|Lost Omens Divine 
+2|Exploding Earth|2|fortitude||120 feet|c|R|Rage of Elements
+2|Explosive Dust|2||5burs|10 feet|c|R|Impossible Magic
+2|Extract Poison|2|||touch|c|L|Secrets of Magic
+2|False Vitality|2||||c|R|Player Core
+2|Falsify Heat|2|||60 feet|c|R|Rage of Elements
+2|Familiar's Resurrection|10 minutes|||10 feet|c|R|Impossible Magic
+2|Far-Flung Fetch|2|||60 feet|r|R|NPC Core
+2|Fear the Sun|2|fortitude||30 feet|c|R|Lost Omens Divine 
+2|Feast of Ashes|3|fortitude||30 feet|c|R|Lost Omens Divine 
+2|Final Sacrifice|2|breflex|20eman|120 feet|c|R|Player Core 2
+2|Fireproof|1 minute|||touch|c|R|Rage of Elements
+2|Flame Wisp|2||||c|R|Impossible Magic
+2|Floating Flame|2|breflex|5squa|30 feet|c|R|Player Core
+2|Floating Harness|2|||touch|c|R|Impossible Magic
+2|Frozen Lungs|2|fortitude||30 feet|c|R|Impossible Magic
+2|Gecko Grip|2|||touch|c|R|Player Core
+2|Ghostly Carrier|2|||120 feet|c|R|Player Core
+2|Glacial Causeway|2||120line||c|R|Impossible Magic
+2|Heat Metal|2|reflex||30 feet|c|L|Advanced Player's 
+2|Helpful Reload|reaction|||30 feet|c|R|Battlecry!
+2|Helpful Scribe|2|||touch|c|R|Impossible Magic
+2|Helpful Wood Spirits|2||5burs|30 feet|c|R|Rage of Elements
+2|Hidebound|reaction|||60 feet|c|R|Howl of the Wild
+2|Horrifying Blood Loss|1|will||30 feet|u|L|#181: Zombie Feast
+2|Humanoid Form|2||||c|R|Player Core
+2|Ignite Fireworks|2|reflex|10burs|60 feet|c|R|Impossible Magic
+2|Illusory Creature|2|||500 feet|c|R|Player Core
+2|Illusory Shroud|2|||touch|u|L|Lost Omens Firebra
+2|Impeccable Flow|2||||u|L|#169: Kindled Magi
+2|Infernal Supervision|2||||u|R|Lost Omens Cheliax
+2|Instant Armor|10 minutes||||c|R|Rage of Elements
+2|Invisibility|2|||touch|c|R|Player Core
+2|Iron Gut|2||||c|L|Lost Omens Gods & 
+2|Kgalaserke's Axes|1 or 2|||30 feet|u|R|Lost Omens Rival A
+2|Knock|2|||30 feet|c|R|Player Core
+2|Laughing Fit|2|will||30 feet|c|R|Player Core
+2|Lock Item|2|reflex||30 feet|c|R|Battlecry!
+2|Loose Time's Arrow|2|||30 feet|c|R|Dark Archive (Rema
+2|Lucky Number|10 minutes||||c|R|Impossible Magic
+2|Magnetic Attraction|2|||60 feet|c|R|Rage of Elements
+2|Magnetic Repulsion|2||||c|R|Rage of Elements
+2|Mark of Blood|2|will||touch|r|R|Adventure: Prey fo
+2|Marvelous Mount|10 minutes|||30 feet|c|R|Player Core
+2|Mental Map|2|will||touch|u|R|Lost Omens Rival A
+2|Metal Reverberation|2|bfortitude||30 feet|c|R|Impossible Magic
+2|Mind Games|2|will||30 feet|u|L|#169: Kindled Magi
+2|Mirror Image|2||||c|L|Core Rulebook
+2|Mist|3||20burs|120 feet|c|R|Player Core
+2|Noise Blast|2|fortitude|10burs|30 feet|c|R|Player Core
+2|Oaken Resilience|2|||touch|c|R|Player Core
+2|Osseous Cage|2|reflex|5cube|30 feet|u|L|Wake the Dead #4
+2|Pave Ground|2||60line||c|R|Rage of Elements
+2|Peaceful Rest|2|||touch|c|R|Player Core
+2|Penumbral Disguise|2|||touch|c|R|Lost Omens Divine 
+2|Persistent Servant|1 minute||60burs|120 feet|c|R|Impossible Magic
+2|Phantasmal Treasure|2|will||60 feet|c|R|Player Core 2
+2|Phantom Crowd|2||5burs|60 feet|c|R|Impossible Magic
+2|Piercing Jet|2|AC||30 feet|c|R|Lost Omens Cheliax
+2|Propulsive Breeze|reaction|||60 feet|c|R|Rage of Elements
+2|Pyrefowl Rebuke|reaction|breflex|||u|R|#216: The Acropoli
+2|Radiant Field|3|fortitude|20burs|120 feet|c|R|Lost Omens Divine 
+2|Resist Energy|2|||touch|c|R|Player Core
+2|Retrieving Hook|1|fortitude||15 feet|c|R|Impossible Magic
+2|Revealing Light|2|reflex|10burs|120 feet|c|R|Player Core
+2|Rime Slick|2|breflex|15burs|60 feet|u|L|#151: The Show Mus
+2|Rubble Step|2|||touch|c|R|Rage of Elements
+2|Sea Surge|2|fortitude|||u|L|#151: The Show Mus
+2|See the Unseen|2||||c|R|Player Core
+2|Shadow Zombie|2|will||30 feet|u|L|#181: Zombie Feast
+2|Shape Wood|2|||touch|c|R|Player Core
+2|Shift Perspective|2|||120 feet|c|R|Impossible Magic
+2|Shrink|2|||30 feet|c|R|Player Core
+2|Slough Skin|2||||c|R|Lost Omens Divine 
+2|Splinter Volley|2 or 3|AC||60 feet|c|R|Rage of Elements
+2|Spray of Salt|2|fortitude|15cone||c|R|Lost Omens Cheliax
+2|Spy's Mark|3|||touch|c|L|Lost Omens Firebra
+2|Steel Fortifications|3|||120 feet|c|R|Battlecry!
+2|Sticky Fire|2|AC||60 feet|c|R|Battlecry!
+2|Stupefy|2|will||30 feet|c|R|Player Core
+2|Sudden Bolt|2|breflex||60 feet|u|L|#151: The Show Mus
+2|Summon Elemental|3|||30 feet|c|R|Player Core
+2|Summoner's Precaution|10 minutes||||c|R|Impossible Magic
+2|Summoner's Visage|2|||touch|c|R|Impossible Magic
+2|Swallow Light|2|breflex|15cone|30 feet|u|L|#181: Zombie Feast
+2|Telekinetic Maneuver|2|AC||60 feet|c|R|Player Core
+2|The Queen's Rainbow|3|fortitude|60line||u|R|Lost Omens Rival A
+2|Thermal Remedy|1 minute|||touch|c|R|Rage of Elements
+2|Thunder Echo|2||120eman||c|R|Impossible Magic
+2|Timely Reminder|2||||c|R|Impossible Magic
+2|Timely Tutor|1|||touch|c|R|Impossible Magic
+2|Tracing Bond|10 minutes|||touch|c|R|Impossible Magic
+2|Translate|2|||30 feet|c|R|Player Core
+2|Tremorsense|2||||c|R|Rage of Elements
+2|Umbral Extraction|2||||c|L|Secrets of Magic
+2|Umbral Mindtheft|2||||u|L|#181: Zombie Feast
+2|Uncover Device|2|||60 feet|c|R|Impossible Magic
+2|Unrelenting Gravity|2|fortitude||30 feet|c|R|Impossible Magic
+2|Vanish Weapon|reaction|AC|||c|R|Impossible Magic
+2|Veil of Spirits|3|reflex|20burs|120 feet|u|R|Lost Omens Shining
+2|Vicious Jealousy|2|will||30 feet|u|L|#181: Zombie Feast
+2|Voice on the Breeze|2||10burs|10 miles|c|R|Rage of Elements
+2|Vomit Swarm|2|breflex|30cone||c|R|Player Core 2
+2|Warping Pull|reaction|||30 feet|u|R|Lost Omens Shining
+2|Warrior's Regret|2|will||touch|c|R|Impossible Magic
+2|Watchdog|10 minutes|||touch|c|R|Impossible Magic
+2|Water Breathing|1 minute|||30 feet|c|R|Player Core
+2|Water Walk|2|||touch|c|R|Player Core
+2|Waterproof|2|||touch|c|R|Rage of Elements
+2|Web|3|reflex|10burs|30 feet|c|R|Player Core 2
+3|Agonizing Despair|2|will||60 feet|c|L|Advanced Player's 
+3|Aqueous Orb|2|reflex||60 feet|c|R|Player Core
+3|Bind Undead|2|||30 feet|c|R|Player Core
+3|Blastback|reaction|breflex|20eman||c|R|Rage of Elements
+3|Blazing Dive|2|breflex|10eman||c|R|Impossible Magic
+3|Blindness|2|fortitude||30 feet|c|R|Player Core
+3|Blister Bomb|2|fortitude|5burs|100 feet|c|R|Battlecry!
+3|Bone Flense|2|||touch|r|R|Adventure: Prey fo
+3|Bonewall Bulwark|2|||5 feet|r|L|Wake the Dead #4
+3|Bottomless Stomach|3|||touch|c|R|Impossible Magic
+3|Bracing Tendrils|2||||c|R|Dark Archive (Rema
+3|Burning Trail|2|||30 feet|c|R|Impossible Magic
+3|Caster's Imposition|3|will|||u|L|#182: Graveclaw
+3|Cave Fangs|2|breflex|20burs|60 feet|c|R|Rage of Elements
+3|Chosen Gravity|2|||30 feet|c|R|Impossible Magic
+3|Clairaudience|1 minute|||500 feet|c|R|Player Core
+3|Cloud Dragon's Cloak|reaction|||60 feet|c|R|Rage of Elements
+3|Conjured Conveyance|3|||30 feet|u|R|#203: Shepherd of 
+3|Coral Scourge|2|reflex||30 feet|c|R|Rage of Elements
+3|Cozy Cabin|1 minute|||30 feet|c|R|Player Core
+3|Crashing Wave|2|breflex|30cone||c|R|Player Core 2
+3|Croak Voice|2|fortitude||30 feet|c|R|Howl of the Wild
+3|Cup of Dust|3|fortitude||30 feet|c|R|Lost Omens Divine 
+3|Curse of Lost Time|2|fortitude||touch|c|R|Player Core 2
+3|Day's Weight|2|fortitude||120 feet|c|R|Impossible Magic
+3|Deep Sight|2||||r|L|#194: Cult of the 
+3|Disruptive Transfer|2|will||your Speed|r|R|Lost Omens Rival A
+3|Distracting Chatter|2|will||30 feet|c|L|Secrets of Magic
+3|Dive and Breach|2|breflex|||c|R|Rage of Elements
+3|Dividing Trench|3|||120 feet|c|R|Battlecry!
+3|Dream Message|10 minutes|||planetary|c|R|Player Core
+3|Eagle's Cry|2|fortitude|30cone||u|R|Lost Omens Shining
+3|Earthbind|2|fortitude||120 feet|c|R|Player Core
+3|Echo Jump|2|breflex|10eman|30 feet|u|R|Lost Omens Shining
+3|Elemental Absorption|2||||c|R|Impossible Magic
+3|Elemental Annihilation Wave|2 to 2 rounds|breflex|30cone||c|R|Rage of Elements
+3|Enthrall|2|will||120 feet|c|R|Player Core
+3|Excise Lexicon|2|will|||u|L|#186: Ghost King's
+3|Familiar's Call|3|||100 miles|c|R|Impossible Magic
+3|Familiar's Face|2|||1 mile|c|R|Player Core 2
+3|Far Reach|1|||120 feet|c|R|Impossible Magic
+3|Feet to Fins|2|||touch|c|R|Player Core
+3|Fireball|2|breflex|20burs|500 feet|c|R|Player Core
+3|Firework Blast|2|breflex|20burs|500 feet|u|L|Lost Omens Firebra
+3|Garden of Stone|3|breflex|10burs|120 feet|c|R|Impossible Magic
+3|Gasping Marsh|2|bfortitude|10burs|30 feet|u|L|#171: Hurricane's 
+3|Ghost Rush|2||||c|R|Impossible Magic
+3|Ghostly Weapon|2|||touch|c|R|Player Core
+3|Glass Sand|2|reflex|60cone||u|L|Adventure: The Enm
+3|Gleaming Pet|2|fortitude||30 feet|c|R|Impossible Magic
+3|Gravity Wave|2|fortitude|30cone||c|R|Impossible Magic
+3|Gravity Well|2|reflex|30burs|120 feet|c|R|Player Core 2
+3|Haste|2|||30 feet|c|R|Player Core
+3|Heatvision|2|||touch|u|R|Rage of Elements
+3|Horde of Underlings|3||30cone||r|R|Lost Omens Draconi
+3|Hypnotize|2|will|10burs|120 feet|c|R|Player Core
+3|Ibex's Harvest|1 to 3|bwill|10eman|varies|u|R|Lost Omens Rival A
+3|Impending Doom|2|will||30 feet|c|L|Secrets of Magic
+3|Inertia Lock|2|||touch|c|R|Impossible Magic
+3|Insect Form|2||||c|R|Player Core
+3|Instant Parade|2||10eman||u|L|Lost Omens Firebra
+3|Invent Code|3|||30 feet|u|R|Impossible Magic
+3|Iron Rain|2|breflex|20burs|60 feet|c|R|Impossible Magic
+3|Lashing Rope|2|AC||50 feet|c|R|Adventure Path: Ga
+3|Levitate|2|||touch|c|R|Player Core
+3|Lightning Bolt|2|breflex|120line||c|R|Player Core
+3|Lightning Lasso|2|reflex||30 feet|c|R|Impossible Magic
+3|Locate|10 minutes|||500 feet|u|R|Player Core
+3|Lotus Walk|2||||c|R|Rage of Elements
+3|Magical Fetters|2|reflex||60 feet|u|L|#158: Sixty Feet U
+3|Magnetic Acceleration|2|AC||120 feet|c|R|Rage of Elements
+3|Mind Reading|2|will||30 feet|u|R|Player Core
+3|Mind of Menace|10 minutes|will|||c|R|Impossible Magic
+3|Nothing Up My Sleeve|3||||u|L|Lost Omens Firebra
+3|Noxious Metals|2|bfortitude|20burs|60 feet|c|R|Rage of Elements
+3|One with Stone|2||||c|R|Player Core
+3|Oneiric Mire|3|will|20burs|120 feet|c|L|Secrets of Magic
+3|Ooze Form|2||||c|L|Secrets of Magic
+3|Organsight|2|||30 feet|c|L|Secrets of Magic
+3|Overload Connection|2|breflex||60 feet|c|R|Impossible Magic
+3|Overwhelming Memory|2|||30 feet|u|R|Lost Omens Rival A
+3|Paralyze|2|will||30 feet|c|R|Player Core
+3|Perceive the Threads of Fate|1||||r|R|War of Immortals
+3|Percussive Impact|2|AC||60 feet|u|L|Lost Omens Firebra
+3|Perseis's Precautions|3|||touch|u|L|Lost Omens Society
+3|Phantom Prison|3|will||50 feet|c|R|Impossible Magic
+3|Pillar of Water|3|||120 feet|c|R|Rage of Elements
+3|Pyrotechnics|2|fortitude||120 feet|u|L|#152: Legacy of th
+3|Radiant Globe|3|fortitude|10burs|120 feet|u|R|Lost Omens Shining
+3|Rally Point|2||5squa|touch|u|R|Dark Archive (Rema
+3|Rend Magic|2|AC||touch|c|R|Impossible Magic
+3|Restraining Chains|2|||120 feet|c|R|Impossible Magic
+3|Roaring Applause|2|will||60 feet|c|R|Impossible Magic
+3|Rouse Skeletons|2|breflex|10burs|60 feet|c|R|Player Core 2
+3|Safe Passage|3|||touch|c|R|Player Core
+3|Sand Form|2|||touch|c|R|Rage of Elements
+3|Scrying Ripples|1 minute|||touch|c|R|Rage of Elements
+3|Sea of Thought|2|fortitude|15burs|60 feet|c|R|Dark Archive (Rema
+3|Secret Page|1 minute|||touch|c|L|Core Rulebook
+3|Shadow Projectile|reaction|will|||c|R|Impossible Magic
+3|Shared Invisibility|2||30eman||c|R|Player Core 2
+3|Shift Blame|reaction|will||30 feet|c|L|Secrets of Magic
+3|Shifting Sand|3|reflex|20burs|30 feet|c|R|Lost Omens Divine 
+3|Shrink Item|10 minutes|||touch|c|R|Player Core 2
+3|Skyglass Prison|2|fortitude||30 feet|c|R|Impossible Magic
+3|Slow|2|fortitude||30 feet|c|R|Player Core
+3|Sparkleskin|2|fortitude||touch|u|L|Lost Omens Firebra
+3|Speak With Magic|2||||c|R|Impossible Magic
+3|Spontaneous Cartography|3|||1 mile|c|R|Impossible Magic
+3|Stinking Cloud|2|fortitude|20burs|120 feet|c|L|Core Rulebook
+3|Tempest Cloak|2|||30 feet|c|R|Rage of Elements
+3|Temporal Twin|2|||30 feet|u|R|Dark Archive (Rema
+3|Thief of Fortune|2|||60 feet|u|R|Lost Omens Rival A
+3|Time Jump|1||||c|R|Impossible Magic
+3|Time Pocket|1 minute|||touch|c|R|Dark Archive (Rema
+3|Tiny Wings|2|||touch|c|R|Impossible Magic
+3|Trade Items|2|reflex||60 feet|u|R|Lost Omens Shining
+3|Transcribe Conflict|1 minute|||touch|r|L|Kingmaker
+3|Travel by Turtle|3|||60 feet|r|R|War of Immortals
+3|Tricks and Treats|2|will|10eman||u|R|Feybound
+3|Unseasonable Squall|2|fortitude|20burs|60 feet|u|L|#151: The Show Mus
+3|Vampiric Feast|2|bfortitude||touch|c|R|Player Core
+3|Veil of Privacy|10 minutes|||touch|u|R|Player Core
+3|Wall of Radiance|3|bfortitude||30 feet|u|L|#172: Secrets of t
+3|Wall of Shadow|3|||30 feet|c|R|Lost Omens Divine 
+3|Wall of Thorns|3|||60 feet|c|R|Player Core
+3|Wall of Virtue|3|||120 feet|u|L|Lost Omens Knights
+3|Wall of Water|3|||120 feet|c|L|Secrets of Magic
+3|Wall of Wind|3|fortitude||120 feet|c|R|Player Core
+3|Warding Aggression|2||||c|R|Impossible Magic
+3|Weapon Tide|2 to 2 rounds|breflex|30cone||c|R|Impossible Magic
+3|Web of Eyes|2|||30 feet|c|R|Impossible Magic
+3|Widow’s Bite|2|AC||touch|c|R|Impossible Magic
+3|Wooden Double|reaction||||c|R|Rage of Elements
+4|Aerial Form|2||||c|R|Player Core
+4|Airlift|2|reflex|10eman||c|R|Rage of Elements
+4|Aromatic Lure|2|will||60 feet|r|L|Lost Omens Legends
+4|Bestial Curse|2|fortitude||touch|c|R|Player Core 2
+4|Bridge of Vines|3|reflex||60 feet|u|R|Lost Omens Rival A
+4|Call The Blood|2|bfortitude||60 feet|u|L|#165: Eyes of Empt
+4|Channel Arrogance|1 to 3|will||30 feet|u|R|Lost Omens Draconi
+4|Chromatic Armor|2 or 3|||touch|c|L|Secrets of Magic
+4|Chromatic Ray|2|fortitude||30 feet|c|L|Secrets of Magic
+4|Cinder Swarm|2|||60 feet|c|R|Rage of Elements
+4|Clairvoyance|1 minute|||500 feet|c|R|Player Core
+4|Cloud Current|1 minute|||500 feet|u|R|Lost Omens Draconi
+4|Clownish Curse|2|will||touch|u|L|#152: Legacy of th
+4|Compel True Name|2|will||30 feet|r|L|Secrets of Magic
+4|Confusion|2|will||30 feet|c|R|Player Core
+4|Containment|2|reflex||30 feet|c|R|Player Core 2
+4|Coral Eruption|3|breflex|10burs|120 feet|c|R|Impossible Magic
+4|Countless Eyes|2|||touch|c|R|Player Core 2
+4|Creation|1 minute|||0 feet|c|R|Player Core
+4|Crystallized Vapors|2|AC|15eman||c|R|Impossible Magic
+4|Daydreamer's Curse|2|will||touch|u|L|#164: Hands of the
+4|Deathless March|2|will|20eman||r|L|Wake the Dead #4
+4|Detect Creator|10 minutes|||1 mile|r|L|Lost Omens Knights
+4|Detect Scrying|2||30eman||u|R|Player Core
+4|Discern Lies|2||||u|L|Core Rulebook
+4|Dispelling Globe|2||10burs||u|R|Player Core
+4|Draw the Lightning|2|breflex||120 feet|c|R|Impossible Magic
+4|Dull Ambition|2|will||120 feet|c|R|Player Core 2
+4|Elemental Sense|2||||c|R|Rage of Elements
+4|Enervation|2|fortitude|30line||c|L|Advanced Player's 
+4|Enhance Senses|2|||30 feet|u|L|Lost Omens Knights
+4|Entangle Fate|2|will||30 feet|r|R|Season of Ghosts H
+4|False Nature|3|||touch|u|R|Dark Archive (Rema
+4|Favorable Review|2|will||touch|u|L|#152: Legacy of th
+4|Fetch|1|||30 feet|c|R|Impossible Magic
+4|Filter Air|reaction||||c|R|Battlecry!
+4|Fire Shield|2||||c|R|Player Core
+4|Flicker|2||||c|R|Player Core
+4|Fly|2|||touch|c|R|Player Core
+4|Force Rain|1 to 3|breflex|5squa|60 feet|c|R|Impossible Magic
+4|Forgotten Lines|2|||touch|r|L|#147: Tomorrow Mus
+4|Freezing Touch|2|fortitude||touch|c|R|Impossible Magic
+4|Friends to Foes|2|will||30 feet|c|R|Impossible Magic
+4|Fulminating Impact|2||||c|R|Impossible Magic
+4|Gift of Dusk|2|fortitude||30 feet|c|R|Lost Omens Cheliax
+4|Glass Form|2|||touch|c|R|Rage of Elements
+4|Grasp of the Deep|2|will||60 feet|c|R|Rage of Elements
+4|Grasping Earth|2|fortitude|10burs|60 feet|c|R|Rage of Elements
+4|Hop, Skip, Jump|2|||120 feet|c|R|Impossible Magic
+4|Ice Storm|3|breflex|20burs|120 feet|c|R|Player Core 2
+4|Incarnate Shadow Minuet|3|will||30 feet|c|R|Impossible Magic
+4|Infiltrator's Tunnel|2|will||60 feet (see text)|r|R|NPC Core
+4|Invisibility Curtain|3|||120 feet|c|L|Secrets of Magic
+4|It is Written|1||||r|R|War of Immortals
+4|Life-Draining Roots|2|breflex|30line||c|R|Rage of Elements
+4|Liminal Doorway|10 minutes|||touch|u|R|Player Core
+4|Living Terrain|2|reflex|10burs|30 feet|c|R|Impossible Magic
+4|Lost Things Returned|2|will||30 feet|c|R|Feybound
+4|Magic Mailbox|1 hour|||touch|u|R|Impossible Magic
+4|Magnetize|2|reflex||touch|c|R|Impossible Magic
+4|Mantis's Grasp|2|reflex||120 feet|r|R|Adventure: Prey fo
+4|Mercurial Stride|2|fortitude|||c|R|Rage of Elements
+4|Mirage|10 minutes||50burs|500 feet|u|R|Player Core
+4|Mirror's Misfortune|2|will|||c|L|Secrets of Magic
+4|Misty Memory|1 minute||||u|R|Rage of Elements
+4|Morass of Ages|2|fortitude|5eman||c|R|Dark Archive (Rema
+4|Mountain Resilience|2|||touch|c|R|Player Core
+4|Mutilate|2 or 3|bfortitude||40 feet|u|R|#209: Destroyer's 
+4|Necrotic Radiation|2|reflex||touch|u|L|#154: Siege of the
+4|Nightmare|10 minutes|will||planetary|c|R|Player Core
+4|Ocular Overload|10 minutes||||c|L|Secrets of Magic
+4|Outcast's Curse|2|will||touch|c|R|Player Core
+4|Peaceful Bubble|10 minutes||100burs|touch|u|R|Player Core
+4|Pest Swarm|3|||30 feet|u|R|Battlecry!
+4|Phantasmal Killer|2|will||120 feet|c|L|Core Rulebook
+4|Planar Tether|2|will||30 feet|c|R|Player Core
+4|Procyal Philosophy|2|||120 feet|u|L|#183: Field of Mai
+4|Prophet's Luck|reaction|||60 feet|r|R|Season of Ghosts H
+4|Ranage's Circle|2|fortitude||30 feet|u|R|Lost Omens Rival A
+4|Ravenous Portal|3|||30 feet|c|L|Secrets of Magic
+4|Rebounding Barrier|reaction||||r|L|Lost Omens Legends
+4|Reflective Scales|2||||c|R|Lost Omens Divine 
+4|Replicate|3|||60 feet|c|L|Secrets of Magic
+4|Rigid Form|1||||c|R|Rage of Elements
+4|Rope Trick|10 minutes|||touch|u|L|Core Rulebook
+4|Rust Cloud|3|bfortitude|20burs|120 feet|c|R|Rage of Elements
+4|Sage's Curse|2|bwill||touch|u|L|Abomination Vaults
+4|Sanguine Mist|2|bfortitude|10burs|60 feet|c|R|Impossible Magic
+4|Seal Fate|2|fortitude||touch|c|R|Player Core 2
+4|Shadow Strike|3|AC||30 feet|c|R|Impossible Magic
+4|Shape Stone|2|reflex||touch|c|R|Player Core
+4|Sliding Blocks|3|||120 feet|c|R|Rage of Elements
+4|Soft Landing|2||60eman|1 mile|c|R|Dark Archive (Rema
+4|Solid Fog|3||20burs|120 feet|c|L|Core Rulebook
+4|Spell Immunity|2|||touch|c|L|Core Rulebook
+4|Steal Voice|2|fortitude||30 feet|u|L|#186: Ghost King's
+4|Stifling Stillness|2|bfortitude|20burs|120 feet|c|R|Rage of Elements
+4|Stonesense|3||||r|L|#194: Cult of the 
+4|Sudden Swarm|2|||30 feet|c|R|Impossible Magic
+4|Suggestion|2|will||30 feet|c|R|Player Core
+4|Swarming Wasp Stings|2|fortitude||30 feet|u|L|#160: Assault on H
+4|Telepathy|2||||c|R|Player Core
+4|Translocate|2|||120 feet|c|R|Player Core
+4|Trickster's Feathers|2||||r|R|War of Immortals
+4|Umbral Graft|2||||c|L|Secrets of Magic
+4|Unending Tears|2|will||30 feet|c|R|Lost Omens Cheliax
+4|Unfettered Movement|2|||touch|c|R|Player Core
+4|Vampiric Maiden|2|fortitude||30 feet|c|R|Player Core 2
+4|Vapor Form|2|||touch|c|R|Player Core
+4|Variable Gravity|2||||c|L|Secrets of Magic
+4|Vision of Beauty|2|will||60 feet|r|L|Kingmaker
+4|Vision of Death|2|will||120 feet|c|R|Player Core
+4|Wall Of Mirrors|2|||120 feet|r|R|Season of Ghosts H
+4|Wall of Fire|3|||120 feet|c|R|Player Core
+4|Weapon Storm|2|reflex|||c|R|Player Core
+4|Winning Streak|1|||20 feet|c|R|Impossible Magic
+4|Ymeri's Mark|2|breflex||touch|c|R|Rage of Elements
+4|Zephyr Slip|reaction||||c|R|Rage of Elements
+5|Acid Storm|2|breflex|20burs|120 feet|c|R|Lost Omens Divine 
+5|Ancestral Winds|2|will|20burs|120 feet|u|R|#209: Destroyer's 
+5|Bandit's Doom|30 minutes|will|||c|L|Secrets of Magic
+5|Banishment|2|will||30 feet|c|R|Player Core
+5|Belittling Boast|2||30burs||u|L|Lost Omens Firebra
+5|Black Tentacles|3|AC|20burs|120 feet|c|L|Core Rulebook
+5|Blazing Fissure|2|reflex|120line||c|R|Impossible Magic
+5|Blind Eye|1 minute|||touch|u|L|#182: Graveclaw
+5|Blinding Bottle|2|fortitude|30burs|100 feet|c|R|Battlecry!
+5|Blinding Foam|2|AC||60 feet|u|L|Lost Omens Firebra
+5|Blink Charge|2|||60 feet|c|R|Impossible Magic
+5|Blister|2|fortitude||60 feet|c|R|Player Core 2
+5|Blood Feast|2|AC||touch|u|L|#154: Siege of the
+5|Boomerang Shot|2|AC||100|u|R|#203: Shepherd of 
+5|Bottle Memory|10 minutes|will||touch|u|R|Feybound
+5|Brimstone Rain|3|breflex|20burs|120 feet|u|R|Lost Omens Cheliax
+5|Calcium Rain|2|breflex|30burs|60 feet|c|R|Impossible Magic
+5|Chromatic Wall|3||60line|120 feet|c|L|Core Rulebook
+5|Cloak of Colors|2|||30 feet|c|R|Player Core 2
+5|Cone of Cold|2|breflex|60cone||c|L|Core Rulebook
+5|Control Water|2|fortitude||500 feet|c|R|Player Core
+5|Corrosive Muck|2|breflex||120 feet|c|R|Player Core 2
+5|Crucible of Iron|2|reflex||60 feet|c|R|Impossible Magic
+5|Desperate Repair|reaction|||60 feet|c|R|Battlecry!
+5|Diadem of Divine Radiance|2||||r|R|War of Immortals
+5|Domora's Defense|2|||120 feet|u|R|Lost Omens Rival A
+5|Drop Dead|reaction|||120 feet|u|R|Player Core 2
+5|Elemental Breath|2 or 3|breflex|60cone||c|R|Rage of Elements
+5|Elemental Form|2||||c|R|Player Core
+5|Ember Doppelgänger|2|breflex|10burs|30 feet|c|R|Impossible Magic
+5|Engrave Memory|1 minute|||touch|u|R|Rage of Elements
+5|Entwined Roots|1 minute||20burs||c|R|Rage of Elements
+5|Etheric Shards|2|breflex|20burs|60 feet|c|R|Dark Archive (Rema
+5|False Vision|10 minutes||100burs|touch|u|R|Player Core
+5|Fire's Pathway|1 minute||||u|R|Rage of Elements
+5|Flame Dancer|2|||60 feet|c|R|Rage of Elements
+5|Flames of Ego|2|will||120 feet|c|R|Rage of Elements
+5|Flammable Fumes|3||20burs|120 feet|c|L|Secrets of Magic
+5|Flowing Strike|3||||c|R|Impossible Magic
+5|Forceful Hand|2|||60 feet|c|L|Secrets of Magic
+5|Freezing Rain|3|reflex|20burs|120 feet|c|R|Rage of Elements
+5|Geyser|2|reflex|10cyli|500 feet|c|R|Impossible Magic
+5|Glacial Skewer|2|AC||60 feet|c|R|Impossible Magic
+5|Glimmer of Charm|2|will|20eman||c|L|Secrets of Magic
+5|Grisly Growths|2|bfortitude||60 feet|c|R|Player Core 2
+5|Hallucination|2|will||30 feet|c|R|Player Core
+5|Horizon's Veil|3||20burs|60 feet|c|R|Impossible Magic
+5|Howling Blizzard|2|breflex|60cone||c|R|Player Core
+5|Illusory Scene|10 minutes||30burs|500 feet|c|R|Player Core
+5|Imaginary Lockbox|1 minute|||touch|c|R|Player Core 2
+5|Impaling Spike|2|reflex||30 feet|c|R|Player Core
+5|Incendiary Fog|3|breflex|20burs|120 feet|r|L|#177: Burning Tund
+5|Infectious Comedy|2|will||30 feet|u|L|#185: A Taste of A
+5|Instant Minefield|3|breflex||100 feet|c|R|Battlecry!
+5|Invoke Spirits|2|bwill|10burs|120 feet|c|R|Player Core
+5|King's Castle|2|||60 feet|u|R|Lost Omens Shining
+5|Lashunta's Life Bubble|1|||30 feet|u|R|Adventure Path: Ga
+5|Magic Passage|2|||touch|u|R|Player Core
+5|Mantle of the Frozen Heart|2||||c|R|Impossible Magic
+5|Mantle of the Magma Heart|2||||c|R|Impossible Magic
+5|Mantle of the Melting Heart|2||||c|R|Rage of Elements
+5|Mantle of the Unwavering Heart|2||||c|R|Rage of Elements
+5|Mariner's Curse|2|will||touch|c|R|Player Core
+5|Mind Probe|1 minute|will||30 feet|u|R|Player Core
+5|Mirror Malefactors|2|bwill||30 feet|c|R|Impossible Magic
+5|Pillars of Sand|3|||120 feet|u|L|#155: Lord of the 
+5|Plasma Whirl|1 to 3|breflex|30cone||c|R|Impossible Magic
+5|Pressure Zone|3|fortitude|20burs|500 feet|c|R|Rage of Elements
+5|Quicken Time|2||20burs|120 feet|c|R|Dark Archive (Rema
+5|Return Beacon|1 minute|||30 feet|u|L|#166: Despair on D
+5|Rewinding Step|1 minute||||c|R|Impossible Magic
+5|Ritual Obstruction|1 minute||60burs||u|L|#182: Graveclaw
+5|Sawtooth Terrain|2|reflex|20burs|30 feet|r|R|Adventure: Prey fo
+5|Scouring Pulse|2|breflex|10cyli|120 feet|u|L|Lost Omens Knights
+5|Scouting Eye|1 minute|||see text|c|R|Player Core
+5|Searing Rain|3|reflex|20burs|120 feet|c|R|Lost Omens Cheliax
+5|Secret Chest|1 minute|||touch|c|L|Advanced Player's 
+5|Sending|3|||planetary|c|R|Player Core
+5|Shadow Siphon|reaction|||60 feet|c|L|Core Rulebook
+5|Shock and Awe|3|will|50burs|100 feet|c|R|Battlecry!
+5|Slither|3|reflex|20burs|120 feet|c|R|Player Core
+5|Space Fold Gate|3|||200 feet|u|R|Impossible Magic
+5|Stagnate Time|2|will|20burs|120 feet|c|R|Dark Archive (Rema
+5|Subconscious Suggestion|2|will||30 feet|c|R|Player Core
+5|Summon Dragon|3|||30 feet|c|R|Player Core
+5|Telekinetic Haul|2|||120 feet|c|R|Player Core
+5|Telepathic Bond|1 minute|||touch|u|L|Core Rulebook
+5|Temporary Glyph|3|||30 feet|c|L|Secrets of Magic
+5|Tornadic Gale|2|reflex|120line||c|R|Impossible Magic
+5|Toxic Cloud|3|bfortitude|20burs|120 feet|c|R|Player Core
+5|Transmute Rock And Mud|3||10cube|60 feet|c|L|Advanced Player's 
+5|Truespeech|2|||touch|u|R|Player Core
+5|Twist Reality|2|will||30 feet|c|R|Feybound
+5|Umbral Journey|1 minute|||touch|u|R|Player Core
+5|Unravel Existence|3|bfortitude|20burs|120 feet|c|R|Impossible Magic
+5|Wall of Ice|3|||120 feet|c|R|Player Core
+5|Wall of Stone|3|||120 feet|c|R|Player Core
+5|Wave of Despair|2|will|30cone||c|R|Player Core
+5|Weight of the World|2|fortitude||120 feet|c|R|Impossible Magic
+5|Wisdom of the Winds|1 minute||||u|R|Rage of Elements
+5|Wyvern Sting|2|fortitude||touch|u|L|#160: Assault on H
+6|Arrow Salvo|2|breflex|30burs|100 feet|c|R|Rage of Elements
+6|Aura of the Unremarkable|2|will|30eman||u|L|#166: Despair on D
+6|Awaken Entropy|3|bfortitude|10burs|120 feet|c|R|Dark Archive (Rema
+6|Boots on the Ground|3|||100 feet|c|R|Battlecry!
+6|Bound in Death|2|will||60 feet|u|L|#186: Ghost King's
+6|Cast into Time|2|fortitude|15cone||c|R|Impossible Magic
+6|Catch Your Name|reaction|will|||r|L|Secrets of Magic
+6|Chain Lightning|2|breflex||500 feet|c|R|Player Core
+6|Chromatic Image|2||||c|L|Secrets of Magic
+6|Collective Transposition|2|will|30eman||c|R|Player Core 2
+6|Crimson Breath|2|fortitude||touch|r|R|Adventure: Prey fo
+6|Curse of the Toad Prince|2|will||30 feet|r|R|Feybound
+6|Cursed Metamorphosis|2|fortitude||30 feet|c|R|Player Core
+6|Daemon Form|2||||c|R|Impossible Magic
+6|Demon Form|2||||c|R|Impossible Magic
+6|Devil Form|2||||c|R|Impossible Magic
+6|Disintegrate|2|bfortitude||120 feet|c|R|Player Core
+6|Dominate|2|will||30 feet|u|R|Player Core
+6|Doom Mark|2|AC|||c|R|Impossible Magic
+6|Dragon Form|2||||c|R|Player Core
+6|Earth and Sky|2|fortitude|20eman||u|R|Lost Omens Draconi
+6|Elemental Confluence|3||10burs|60 feet|c|R|Impossible Magic
+6|Explosive Barrage|2|bfortitude|20burs|100 feet|c|R|Battlecry!
+6|Field of Razors|3|breflex|20burs|60 feet|c|R|Rage of Elements
+6|Flame Vortex|3|breflex|5cyli|120 feet|c|R|Impossible Magic
+6|Frost Pillar|2|reflex||30 feet|c|R|Rage of Elements
+6|Frozen Fog|2|bfortitude|20burs|120 feet|c|R|Battlecry!
+6|Halcyon Infusion|10 minutes|||touch|r|L|Lost Omens Legends
+6|Incarnate Wild Rose|3|||100 feet|c|R|Impossible Magic
+6|Lignify|2|fortitude||120 feet|c|R|Rage of Elements
+6|Living Thunderbolt|2|breflex|||c|R|Impossible Magic
+6|Mislead|2||||c|R|Player Core
+6|Missed Cue|2|will||30 feet|r|R|#205: Singer, Stal
+6|Necrotize|2|fortitude||60 feet|c|R|Impossible Magic
+6|Never Mind|2|will||30 feet|c|R|Player Core
+6|Patron's Protector|2|bfortitude||30 feet|c|R|Impossible Magic
+6|Personal Ocean|2||||c|R|Rage of Elements
+6|Petrify|2|fortitude||120 feet|c|R|Player Core
+6|Phantasmal Calamity|2|bwill|30burs|500 feet|c|R|Player Core
+6|Phantom Orchestra|2|bfortitude|10burs|120 feet|c|R|Rage of Elements
+6|Poltergeist's Fury|3|breflex|20eman||c|R|Dark Archive (Rema
+6|Proximal Shift|2|||60 feet|c|R|Impossible Magic
+6|Purple Worm Sting|2|fortitude||touch|c|L|Core Rulebook
+6|Ravenous Darkness|3|AC|20burs|120 feet|u|L|#186: Ghost King's
+6|Repulsion|2|will|40eman||c|R|Player Core
+6|Scrying|10 minutes|will||planetary|u|R|Player Core
+6|Seize Identity|2|will||30 feet|r|R|War of Immortals
+6|Siege Weapon's Blessing|3|||touch|u|R|Battlecry!
+6|Silver Spear|2|AC||120 feet|c|R|Lost Omens Cheliax
+6|Skeleton Army|3|||100 feet|c|R|Battlecry!
+6|Spellwrack|2|will||30 feet|c|R|Player Core
+6|Tangling Creepers|3||40burs|500 feet|c|R|Player Core
+6|Teleport|10 minutes|||100 miles|u|R|Player Core
+6|Temporal Ward|3|will||touch|r|L|#173: Doorway to t
+6|Tentacular Innervation|2||||c|R|Impossible Magic
+6|Truesight|2||||c|R|Player Core
+6|Unexpected Transposition|reaction|will||30 feet|c|R|Impossible Magic
+6|Utter Destruction|2|fortitude|30cone|120 feet|u|R|#209: Destroyer's 
+6|Vampiric Exsanguination|2|bfortitude|30cone||c|R|Player Core
+6|Vibrant Pattern|2|will|10burs|120 feet|c|R|Player Core
+6|Vitrifying Blast|2|reflex|15cone|60 feet|c|R|Rage of Elements
+6|Wall of Force|3|||30 feet|c|R|Player Core
+6|Wall of Metal|3|||120 feet|c|R|Rage of Elements
+6|Word of Revision|reaction|||60 feet|r|L|Kingmaker
+6|Zero Gravity|3||20cyli|120 feet|u|L|Secrets of Magic
+7|Beheading Buzz Saw|2|reflex|60line||c|R|Rage of Elements
+7|Blightburn Blast|2|bfortitude|15cone||u|L|#155: Lord of the 
+7|Chrysopoetic Curse|2|will||30 feet|u|R|Lost Omens Rival A
+7|Comet Charge|2|AC||120 feet|c|R|Impossible Magic
+7|Contingency|10 minutes||||c|R|Player Core
+7|Control Sand|2||5eman||u|L|#155: Lord of the 
+7|Corrosive Body|2||||c|L|Secrets of Magic
+7|Dancing Fountain|3|breflex|30burs||c|R|Rage of Elements
+7|Defy the Gods|2|will||60 feet|c|R|Impossible Magic
+7|Devouring Void|3|bfortitude|30burs|120 feet|u|R|Lost Omens Rival A
+7|Diabolical Mantle|2||||u|R|Lost Omens Cheliax
+7|Duplicate Foe|3|fortitude||30 feet|c|R|Player Core
+7|Eclipse Burst|2|reflex|60burs|500 feet|c|R|Player Core
+7|Energy Aegis|1 minute|||touch|c|R|Player Core
+7|Entrancing Eyes|2|will|30eman||u|L|#154: Siege of the
+7|Fiery Body|2||||c|R|Player Core
+7|Final Fate of the Locust Host|3|||500 feet|r|R|War of Immortals
+7|Frigid Flurry|2|breflex|120line||c|R|Impossible Magic
+7|Heaving Earth|2|breflex||120 feet|c|R|Rage of Elements
+7|Hungry Depths|3|breflex|5burs|120 feet|c|R|Rage of Elements
+7|Incarnate Tempest of Shades|3|fortitude||100 feet|c|R|Impossible Magic
+7|Indolent Haze|3|will|20burs|120 feet|u|R|Lost Omens Rival A
+7|Inexhaustible Cynicism|2|will||30 feet|c|L|Secrets of Magic
+7|Infinitesimal Collapse Field|3|fortitude|30eman||c|R|Impossible Magic
+7|Interplanar Teleport|10 minutes|||5 feet|u|R|Player Core
+7|Leng Sting|2|fortitude||touch|u|L|#160: Assault on H
+7|Lifewood Cage|3|reflex|20cube|30 feet; 1 cube 20 feet on each side|c|R|Player Core 2
+7|Love's Sacrifice|reaction|will||30 feet|u|R|Lost Omens Rival A
+7|Mask of Terror|2|will||30 feet|c|R|Player Core
+7|Maze of Locked Doors|2|will||120 feet|u|L|#158: Sixty Feet U
+7|Momentary Recovery|2|||60 feet|c|R|Dark Archive (Rema
+7|Planar Palace|1 minute|||30 feet|u|R|Player Core
+7|Planar Seal|2||60burs|120 feet|u|R|Player Core
+7|Pollen Pods|2|fortitude||100 feet|c|R|Rage of Elements
+7|Power Word Blind|1|||30 feet|u|L|Core Rulebook
+7|Prismatic Armor|2|||touch|c|L|Secrets of Magic
+7|Prismatic Spray|2||30cone||c|L|Core Rulebook
+7|Project Image|2|||30 feet|c|R|Player Core
+7|Puppet Strings|2|reflex||60 feet|c|R|Impossible Magic
+7|Recall Legacy|3|||touch|r|R|Lost Omens Rival A
+7|Restore Ground|2||30burs|120 feet|u|R|Lost Omens Rival A
+7|Retrocognition|1 minute||||c|R|Player Core
+7|Return To Essence|2|||120 feet|r|L|#173: Doorway to t
+7|Reverse Gravity|3||20cyli|120 feet|u|L|Core Rulebook
+7|Shadow Form|2||||c|R|Lost Omens Cheliax
+7|Shadow Raid|3|breflex|30burs|120 feet|c|R|Impossible Magic
+7|Spell Riposte|reaction||||u|R|Player Core 2
+7|Spell Turning|2||||u|L|Core Rulebook
+7|Telekinetic Bombardment|2|reflex|10burs|500 feet|c|R|Dark Archive (Rema
+7|Time Beacon|1||||c|R|Dark Archive (Rema
+7|True Target|1|||60 feet|c|R|Player Core
+7|Vacuum|2|fortitude|15eman||c|R|Rage of Elements
+7|Warp Mind|2|will||120 feet|c|R|Player Core
+8|All is One, One is All|3|||60 feet|r|L|Lost Omens Legends
+8|Amalgamizing Leap|2|fortitude||60 ft|u|R|Impossible Magic
+8|Antimagic Field|3||10eman||r|L|Core Rulebook
+8|Arctic Rift|2|fortitude|120line||c|R|Player Core
+8|Boil Blood|2|fortitude||60 feet|c|L|Secrets of Magic
+8|Burning Blossoms|3|will|30cyli|120 feet|c|R|Impossible Magic
+8|Clockwork Devotion|3|breflex||100 feet|u|R|Battlecry!
+8|Confusing Colors|2|will|20burs|120 feet|c|R|Player Core 2
+8|Deluge|2|reflex|40burs|500 feet|u|L|#156: The Apocalyp
+8|Desiccate|2|bfortitude||500 feet|c|R|Player Core
+8|Disappearance|2|||touch|c|R|Player Core
+8|Dream Council|10 minutes|||planetary|c|R|Player Core 2
+8|Earthbreaker Stride|10 minutes||||u|R|Impossible Magic
+8|Earthquake|2|breflex|60burs|500 feet|c|R|Player Core
+8|Falling Sky|2|fortitude|30cyli|120 feet|c|R|Dark Archive (Rema
+8|Ferrous Form|2||||c|R|Rage of Elements
+8|Hidden Mind|2|||30 feet|u|R|GM Core
+8|Incarnate Archmage|3|will||100 feet|c|R|Impossible Magic
+8|Metallic Meteorite Glyph|2 to 2 rounds|breflex||120 feet|c|R|Impossible Magic
+8|Mimic Spell|reaction|||120 feet|r|R|Lost Omens Rival A
+8|Monstrosity Form|2||||c|R|Player Core
+8|Part the Mists to Paradise|1 minute|||30 feet|r|R|War of Immortals
+8|Pinpoint|10 minutes|||unlimited|u|R|Player Core
+8|Polar Ray|2|AC||120 feet|c|L|Core Rulebook
+8|Power Word Stun|1|||30 feet|u|L|Core Rulebook
+8|Prismatic Wall|3||60line|120 feet|c|L|Core Rulebook
+8|Prying Survey|1 minute||120eman||u|L|#156: The Apocalyp
+8|Quandary|2|||30 feet|c|R|Player Core
+8|Rainbow Fumarole|3|breflex|20cyli|500 feet|c|R|Rage of Elements
+8|Roar of Freedom|1|will|30eman||c|R|Lost Omens Cheliax
+8|Stars of Another Sky|3|will|30cyli|100|c|R|Impossible Magic
+8|Sudden Transposition|2|fortitude|60eman||u|R|Lost Omens Shining
+8|Summon Elemental Herald|3|||100 feet|c|R|Rage of Elements
+8|Summon Irii|3|||100 feet|r|R|Dark Archive (Rema
+8|Take Your Places|2|||60 feet|r|R|#205: Singer, Stal
+8|Uncontrollable Dance|2|will||touch|c|R|Player Core
+8|Undermine Reality|2|will||500 feet|u|L|#156: The Apocalyp
+8|Unrelenting Observation|2||20burs|100 feet|c|R|Player Core
+8|Whirlpool|3|reflex|25cyli|500 feet|c|R|Rage of Elements
+9|Astral Labyrinth|2|will|80burs|120 feet|u|L|#156: The Apocalyp
+9|Beseech Arcanotheign|3|||100 feet|r|R|War of Immortals
+9|Bilocation|2||||c|R|Dark Archive (Rema
+9|Call Fluxwraith|3|will||100 feet|r|L|Wake the Dead #3
+9|Detonate Magic|2|breflex|5eman|120 feet|u|R|Player Core
+9|Dimensional Excision|2|bwill||120 feet|r|R|#212: A Voice in t
+9|Disjunction|2|||120 feet|u|L|Core Rulebook
+9|Divinity Leech|2|will||30 feet|r|L|#162: Ruins of the
+9|Falling Stars|2|breflex||500 feet|c|R|Player Core
+9|Foresight|2|||touch|c|R|Player Core
+9|Forest of Gates|10 minutes|||1000 miles|u|R|Lost Omens Shining
+9|Implosion|2|bfortitude||30 feet|c|R|Player Core
+9|Incarnate Draconic Legion|3|breflex||100 feet|c|R|Impossible Magic
+9|Linnorm Sting|2|fortitude||touch|u|L|#160: Assault on H
+9|Magnetic Dominion|3|reflex|100eman||c|R|Rage of Elements
+9|Massacre|2|fortitude|60line||c|R|Player Core
+9|Metamorphosis|2||||c|R|Player Core
+9|Phantasmagoria|2|will||120 feet|c|R|Player Core
+9|Pierce the Sky|3|AC||120 feet|c|R|Impossible Magic
+9|Power Word Kill|1|||30 feet|u|L|Core Rulebook
+9|Prismatic Shield|1||||r|L|#162: Ruins of the
+9|Prismatic Sphere|2|||10 feet|c|L|Core Rulebook
+9|Proliferating Eyes|2|||touch|c|L|Secrets of Magic
+9|Remake Physiology|2|fortitude||touch|c|R|Impossible Magic
+9|Resplendent Mansion|1 minute|||500 feet|c|R|Player Core 2
+9|Summon Ancient Fleshforged|3|||250 feet|r|L|Lost Omens Impossi
+9|Telepathic Demand|3|will||planetary|c|R|Player Core 2
+9|Trim the Blight|2|fortitude|60cone||r|R|#212: A Voice in t
+9|Unspeakable Shadow|2|will||120 feet|c|L|Secrets of Magic
+9|Upheaval|2||150burs|500 feet|u|L|#156: The Apocalyp
+9|Vampiric Revelry|2 to 2 rounds|bfortitude|||c|R|Impossible Magic
+9|Weird|2|will||120 feet|c|L|Core Rulebook
+10|Cataclysm|2|breflex|60burs|1,000 feet|c|R|Player Core
+10|Conquering Soldiers|3|||500 feet|u|R|Battlecry!
+10|Dragon Turret|3|breflex|10cyli|500 feet|u|R|Lost Omens Draconi
+10|Fated Confrontation|3|||120|c|R|Impossible Magic
+10|Freeze Time|3||||c|R|Player Core
+10|Gate|2|||120 feet|u|R|Player Core
+10|Indestructibility|2||||c|R|Player Core
+10|Jassim's Allegiance|3|||500 feet|r|R|Battlecry!
+10|Manifestation|3||||c|R|Player Core
+10|Nullify|reaction|||120 feet|c|R|Impossible Magic
+10|Planar Collision|2|breflex|100burs|300 feet|c|R|Impossible Magic
+10|Remake|1 hour|||5 feet|u|R|Player Core
+10|Shadow Army|3|will|50burs|500 feet|c|R|Impossible Magic
+10|Summon Oliphaunt of Jandelay|2|||500 feet|r|R|War of Immortals

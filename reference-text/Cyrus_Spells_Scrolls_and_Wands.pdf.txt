@@ -1,0 +1,2128 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                                  SPELLS, SCROLLS AND WANDS
+
+
+
+
+Cyrus’s Spell Selections
+An arcane spellbook and casting kit for a reach-weapon Laughing Shadow Magus. Prepare by
+encounter role, then use Aspera, a wand or a scroll to cover the jobs that recur outside your
+spell slots.
+
+
+Daily preparation
+At level 3, a balanced starting slate is Gouging Claw, Shield, Needle Darts, Electric Arc and
+Frostbite. This is a sample loadout. Swap Needle Darts for Figment or Telekinetic Hand when exploration
+matters, or let an Ignition spellheart cover fire. Use Gouging Claw for the routine Strike and spend slots on
+a stronger rider, a weak save or a team effect.
+
+ Defence or job               Repeatable answer                             Slot or utility upgrade
+
+ AC                           Gouging Claw in reach or Needle Darts at      Briny Bolt for sight denial, Shocking Grasp for
+                              range                                         burst, Glacial Skewer for a push into terrain
+
+ Fortitude                    Frostbite                                     Goblin Pox early, Slow for action denial, Blister
+                                                                            Bomb for disease-susceptible groups, Weight of
+                                                                            the World for immediate disruption
+
+ Reflex                       Electric Arc for two creatures                Acid Grip for forced movement, Lightning Bolt
+                                                                            for lines, Cave Fangs for difficult terrain
+
+ Will                         Daze when you need ranged, nonlethal          Fear for the team, Laughing Fit for reaction
+                              damage                                        denial, Vision of Death for reach-independent
+                                                                            ranged pressure
+
+ No hostile roll              Force Fang in melee reach                     Force Barrage to finish a runner, Invisibility or
+                                                                            Haste to set up allies, walls to split the
+                                                                            encounter
+
+ Mobility and rescue          Dimensional Assault and ordinary              Loose Time’s Arrow, Time Jump, Fly and
+                              movement                                      Translocate
+
+ Investigation and            Detect Magic, Figment or Telekinetic Hand     See the Unseen, Clairvoyance, Sending or
+ travel                                                                     Teleport from a slot, scroll or wand as the day
+                                                                            warrants
+
+
+The remastered Magus keeps lower-rank slots. A new rank starts with one slot, then gains its second slot
+the following level. Learn two arcane spells per level from available ranks and add other options through
+Learn a Spell. Choose five daily cantrips. Cantrips and focus spells heighten to half character level rounded
+up. INT sets spell accuracy and DC, with expert casting at level 9 and master at 17. Ordinary slots stop at
+rank 9. Magus rules and slots.
+
+ Character level            New rank or              Starting preparation and planned swaps
+                            milestone
+
+ 3–4                        Rank 2. At level 3,      Rank 1 Sure Strike + Fear or Sure Strike + Thunderstrike on a
+                            two rank-1 slots and     damage day. Rank 2 Acid Grip by default. Swap to Invisibility for a
+                            one rank-2 slot          stealth plan or Laughing Fit when reactions matter. At level 4 add one
+                                                     of the latter alongside Acid Grip.
+
+
+
+
+Spells, scrolls and wands                                                                                                       1
+CYRUS VAL’DIRA / PF2E REMASTER                                                             SPELLS, SCROLLS AND WANDS
+
+
+
+
+ Character level            New rank or         Starting preparation and planned swaps
+                            milestone
+
+ 5–6                        Rank 3              Slow if a single dangerous foe is expected. Haste when the team can
+                                                turn it into multiple useful actions. Lightning Bolt or Cave Fangs if
+                                                the party needs area damage. Time Jump is a strong second slot when
+                                                movement is the encounter constraint.
+
+ 7–8                        Rank 4              Vision of Death for Will pressure. Fly or Invisibility (4) shrinks a
+                                                mobility or protection gap. Choose Containment to isolate a
+                                                dangerous piece. Higher slots can heighten existing winners.
+
+ 9–10                       Rank 5 and expert   Weight of the World for a dangerous creature, Glacial Skewer if the
+                            casting             opening is attack-based, Blazing Fissure if grounded foes can line up,
+                                                Wall of Stone if dividing the fight is decisive.
+
+ 11–12                      Rank 6              Start from Slow (6) for several enemies or Chain Lightning for
+                                                selective damage. Learn Living Thunderbolt when the party can
+                                                spare the setup turn. Wall of Force is the dividing option.
+
+ 13–14                      Rank 7              True Target and Frigid Flurry are the leading general-purpose
+                                                preparations. Rotate in Defy the Gods for Will-based anti-caster
+                                                control, Spell Riposte for hostile targeted magic, and Comet Charge
+                                                when distance is the threat. Haste (7) is an early combat team
+                                                investment. Set Contingency outside combat when time and slots
+                                                allow.
+
+ 15–16                      Rank 8              Quandary or Disappearance as control or protection. Arctic Rift
+                                                replaces a Reflex line when Fortitude is the better defence. Roar of
+                                                Freedom is a strong one-action direct cast beside a Spellstrike.
+
+ 17–20                      Rank 9              Foresight for a priority ally, Remake Physiology for stacked
+                                                penalties, Falling Stars for an open map. Phantasmagoria offers
+                                                party-safe Will pressure. Dimensional Excision is a rare single-target
+                                                candidate if it enters the spellbook.
+
+
+Studious Spell. At level 7, Laughing Shadow adds Gecko Grip and Blur. At 11 add Haste and Ghostly
+Weapon, then at 13 add Fly and Translocate. Casting one allows free Arcane Cascade as the next action
+that turn. These are ordinary spellbook entries that use your usual casting resources. Laughing Shadow
+study · Magus class.
+
+
+Cast normally or deliver with Aspera
+• Attack payload. A charged Spellstrike takes two actions and accepts a one- or two-action spell that
+  requires an attack roll or save. The weapon Strike result drives an attack-roll spell. Reach extends touch
+  payloads like Gouging Claw. Sure Strike and off-guard improve this lane.
+• Save payload. The target uses its normal save after an ordinary miss. A critically failed Strike disrupts the
+  spell. Save-based riders apply after the Strike’s damage. A saving-throw spell cast separately usually
+  leaves your Strike at full accuracy.
+• Area payload. Expansive Spellstrike restores bursts, cones and lines with the chosen Strike target inside.
+  With a nonadjacent target, a cone or line uses a source square adjacent to the target. Emanations, walls
+  and effects that select multiple distinct targets still need ordinary casting for full coverage. The Grid Atlas
+  shows friendly-fire placement for standard areas.
+
+
+
+
+Spells, scrolls and wands                                                                                                2
+CYRUS VAL’DIRA / PF2E REMASTER                                                                 SPELLS, SCROLLS AND WANDS
+
+
+
+• Line movement. Sprinting Spellstrike takes two actions. With Expansive, it lays the line along the straight
+  movement route before the Strike. You can move up to the spell’s line length and use a matching
+  movement type. Select an endpoint that leaves the chosen target in reach and the intended secondary
+  targets inside the line.
+• Action trade. Spellstrike uses the charge and counts as two attacks for MAP afterward. Conflux casts such
+  as Dimensional Assault and Force Fang can recharge it. Choose direct casting when keeping the charge,
+  getting the full area, separating enemies or casting at safe range matters more than the added Strike.
+Spellstrike and conflux rules · Expansive Spellstrike · Sprinting Spellstrike · Dimensional Assault · Force
+Fang.
+
+
+Scroll and wand coverage
+ Purchase           Scroll kit                       Wand candidate                     Leave in preparations
+ band
+
+ Level 3–5          One each of Helpful Steps,       Tailwind (2) at level 5 for an     A save spell with its success effect,
+                    Illusory Object or Gentle        8-hour Speed bonus. The rank-1     an attack payload when valuable
+                    Landing for terrain. Add         wand is cheaper and lasts one      and Sure Strike where possible.
+                    Invisibility, See the Unseen     hour.
+                    or Water Breathing when
+                    forecast.
+
+ Level 6–10         Dispel Magic at an effective     Invisibility (2) if scouting       Slow, one map-shaping spell and
+                    counteract rank. Fly,            often, See the Unseen (2)          the party buff that fits the day.
+                    Translocate and                  when encounters reward it, or
+                    Clairvoyance cover route         Haste (3) if it sees regular use
+                    changes. A spare Revealing       and Aspera lacks coverage.
+                    Light answers invisibility for
+                    the group.
+
+ Level 11–16        See the Unseen (5),              See the Unseen (5) for             The highest-rank offensive or
+                    Truesight, Teleport,             regular 8-hour coverage or         control solution. Cast True Target
+                    Sending or Magic Passage         Contingency (7) for a              and team Haste from
+                    for a likely expedition          substantial recurring plan. Both   easy-to-reach sources.
+                    problem. Carry a suitable        compete with permanent gear.
+                    spare Spell Riposte only
+                    where it can be held in
+                    advance.
+
+ Level 17+          A selected high-rank rescue      Upgrade a recurring utility        Plan the strongest
+                    or control spell can protect     wand only for a meaningful         encounter-specific support and
+                    a long adventuring day.          breakpoint. Save high-rank         control alongside your line or
+                    Existing utility scrolls still   money for gear or a reliable       attack payload.
+                    do their jobs.                   daily spell.
+
+
+Handling. A scroll or wand must be held and its spell on your eligible list. The item casts at a fixed rank
+with your applicable spell attack and DC. The scroll is consumed. The standard wand works once daily and
+can be overcharged once that day at the risk of breaking or destruction. Compare a 60 gp rank-1 wand to
+a 4 gp rank-1 scroll, and a 160 gp rank-2 wand to a 12 gp rank-2 scroll. An 8-hour rank-2 Tailwind pays for
+itself if it replaces fourteen rank-2 scrolls and gives daily access while the purchase is in use.
+
+Aspera in two hands. Release is free. Drawing a worn item normally takes one Interact action, and
+restoring the two-handed grip takes one. A two-action cast plus draw fills a turn. Draw in advance for a
+reaction scroll. An affixed scroll is a distinct route for an eligible payload via Striker’s Scroll and competes
+
+
+Spells, scrolls and wands                                                                                                       3
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+with a talisman on Aspera. Fused Staff allows ordinary casting from the prepared staff while it remains
+fused. Use that route when the spell belongs in Aspera’s list.
+
+Occult route. Occult casting can open Soothe, Hypercognition and Synesthesia scrolls when the relevant
+spellcasting archetype is in use. Arcane Magus casting alone does not supply those spells. Choose the
+appropriate spellcasting statistic for the item. Heal belongs to divine and primal. Between an item that
+heals allies and the party’s healing, Cyrus can carry support without planning around an occult route.
+
+Scroll rules · Wand rules · Striker’s Scroll · Fused Staff.
+
+
+Read the ratings
+Five-point ratings mark each spell’s meaningful roles. An omitted role scores 0. 1 is narrow, 3 is strong in
+its job and 5 defines the role in Cyrus’s kit. Preparation, scroll and wand are separate ratings for the value
+of that casting source. A dash indicates that the source is inapplicable. Linked spell names open the full
+rules. Grades measure usefulness for Cyrus in the spell’s best role. S is a defining acquisition, A earns
+regular use, B is a clean specialist, and C is a campaign or encounter pick. The rules summaries use CS, S,
+F and CF for degrees of success.
+
+
+Cantrips
+Gouging Claw
+S · Damage ★★★★★
+
+2 actions · AC · touch · 1 creature
+
+Rules. On hit choose piercing or slashing for 2d6 and add 2 persistent bleed. Both double on a critical hit.
+Each additional rank adds 1d6 initial and 1 persistent bleed. Archives of Nethys
+
+For Cyrus. Baseline reach Spellstrike. Against creatures immune to bleed, use the best alternative
+damage type or save.
+
+Electric Arc
+S · Damage ★★★★☆
+
+2 actions · basic Reflex · 30 feet · 1 or 2 creatures
+
+Rules. Each of one or two creatures takes 2d4 electricity with a basic Reflex save. Each additional rank
+adds 1d4. Archives of Nethys
+
+For Cyrus. Default direct damage when both targets are useful. Spellstrike delivers it to one because the
+spell selects separate targets.
+
+
+
+
+Spells, scrolls and wands                                                                                   4
+CYRUS VAL’DIRA / PF2E REMASTER                                                        SPELLS, SCROLLS AND WANDS
+
+
+
+
+Shield
+S · Buff / Heal ★★★★☆
+
+1 action · until the start of your next turn
+
+Rules. Gain +1 circumstance AC until your next turn and access to Shield Block with Hardness 5. That
+block can reduce damage from spells or magical effects. Blocking ends Shield and prevents another cast
+for 10 minutes. Hardness rises by 5 per two ranks. Archives of Nethys
+
+For Cyrus. A spare-action defence with both hands occupied. When a reaction is already reserved, the AC
+can still matter.
+
+Needle Darts
+A · Damage ★★★★☆ · Utility ★★☆☆☆
+
+2 actions · AC · 60 feet · 1 creature
+
+Rules. Hit deals 3d4 piercing with the properties of a piece of metal you possess. Critical hit doubles
+damage and adds 1 persistent bleed. Each additional rank adds 1d4 and 1 critical bleed. The metal
+returns. Archives of Nethys
+
+For Cyrus. Carry cold iron and silver for known weaknesses. A clean 60-foot fallback when Aspera cannot
+reach.
+
+Frostbite
+A · Damage ★★★☆☆ · Debuff ★★☆☆☆
+
+2 actions · basic Fortitude · 60 feet · 1 creature
+
+Rules. Basic Fortitude against 2d4 cold. CF also grants weakness 1 to bludgeoning until your next turn.
+Each additional rank adds 1d4 damage and 1 weakness. Archives of Nethys
+
+For Cyrus. Repeatable Fortitude coverage at 60 feet. On a CF, call out the weakness for the party’s
+bludgeoning attacks.
+
+Ignition
+A · Damage ★★★★☆
+
+2 actions · AC · 30 feet · 1 creature
+
+Rules. An attack hits for 2d4 fire. In melee reach choose a melee spell attack for d6s instead. Crit doubles
+initial damage and adds 1 persistent die. Each additional rank adds one die to both amounts. Archives of
+Nethys
+
+For Cyrus. Best as a fire option from a spellheart if daily cantrip slots are tight. The critical-only rider is
+less dependable than Gouging Claw’s bleed.
+
+
+
+
+Spells, scrolls and wands                                                                                         5
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Figment
+A · Control ★★☆☆☆ · Utility ★★★★☆
+
+2 actions · 30 feet · sustained
+
+Rules. Sustained simple sound or visual illusion. Visuals fit a 5-foot cube and look crude within 15 feet.
+Cast or Sustain to Create a Diversion at +2 circumstance using Deception. A creature disbelieves if the
+diversion fails against it. Archives of Nethys
+
+For Cyrus. Subtle distraction or misdirection for scouting and problem solving.
+
+Telekinetic Hand
+A · Positioning ★★☆☆☆ · Utility ★★★★★
+
+2 actions · 30 feet · 1 unattended object of Light bulk or less · sustained
+
+Rules. Move a Light unattended object up to 20 feet and again each Sustain. Rank 3 handles 1 Bulk. Rank
+5 extends range to 60 feet. Rank 7 handles 2 Bulk. Archives of Nethys
+
+For Cyrus. Take one utility cantrip on map-heavy days. Safe retrieval or moving unattended props earns
+this slot.
+
+Message
+A · Utility ★★★★☆
+
+1 action · 120 feet · 1 creature · see below · Linguistic · Mental
+
+Rules. Send a quiet private message to a creature within 120 feet. It can reply by reaction or by free
+action on its next turn while in range and able to see you. Rank 3 reaches 500 feet. Archives of Nethys
+
+For Cyrus. One-action coordination during exploration or stealth. Keep when party planning depends on
+silent communication.
+
+Telekinetic Projectile
+B · Damage ★★★☆☆ · Utility ★☆☆☆☆
+
+2 actions · AC · 30 feet · 1 creature
+
+Rules. Hurl an unattended object of up to 1 Bulk for 2d6 bludgeoning, piercing or slashing according to
+the object. Crit doubles it. Add 1d6 per rank. Object properties do not transfer. Archives of Nethys
+
+For Cyrus. Repeatable bludgeoning payload. Needle Darts offers longer range and material weaknesses.
+
+Detect Magic
+B · Utility ★★★★☆
+
+2 actions · 30-foot emanation
+
+Rules. Detect the presence of magic in the emanation, excluding known magic if desired. It detects
+illusions only when they are lower rank. Rank 3 reveals the highest effect’s rank or level. Rank 4 narrows
+its location to a 5-foot cube. Archives of Nethys
+
+For Cyrus. Prepare when Cyrus leads investigation or when the party lacks repeatable detection.
+
+
+
+
+Spells, scrolls and wands                                                                                    6
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Caustic Blast
+B · Damage ★★☆☆☆
+
+2 actions · basic Reflex · 30 feet · 5-foot burst
+
+Rules. Basic Reflex against 1d8 acid. CF adds 1 persistent acid. Every two ranks adds 1d8 and 1
+persistent acid. Archives of Nethys
+
+For Cyrus. The tiny acid burst handles clustered creatures and swarm weaknesses. It is a real Expansive
+payload and scales more slowly than Electric Arc.
+
+Phase Bolt
+B · Damage ★★★☆☆ · Utility ★☆☆☆☆
+
+2 actions · AC · 60 feet · 1 creature
+
+Rules. Hit deals 3d4 piercing, doubled on a critical hit. Reduce target’s circumstance AC bonus by 2
+against this spell attack. Add 1d4 per rank. Archives of Nethys
+
+For Cyrus. Ranged answer to cover and shields. Do not assume a spell-attack-specific AC adjustment
+transfers into a weapon attack.
+
+Daze
+C · Damage ★☆☆☆☆ · Control ★☆☆☆☆
+
+2 actions · Will · 60 feet · 1 creature · 1 round · Mental
+
+Rules. Basic Will against 1d6 nonlethal mental damage. CF also stunned 1. Add 1d6 every two ranks.
+Archives of Nethys
+
+For Cyrus. Will coverage at 60 feet in the smallest slot. Use chiefly for nonlethal or when Will is
+exceptionally exposed.
+
+Time Sense
+C · Buff / Heal ★☆☆☆☆ · Utility ★★★☆☆
+
+1 action
+
+Rules. Learn the exact time or calculate a known calendar event with relevant training. An extremely
+precise action on this turn can get +1 status to one listed check. That use is limited to once per hour.
+Archives of Nethys
+
+For Cyrus. Aspera’s thematic utility candidate. Use its timing bonus only when the action genuinely calls
+for precise timing.
+
+
+Rank 1
+
+
+
+
+Spells, scrolls and wands                                                                                  7
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Sure Strike
+S · Buff / Heal ★★★★★
+
+Preparation ★★★★★ · Scroll ★★☆☆☆ · Wand ★★★☆☆
+
+1 action · until the end of your turn
+
+Rules. Roll the next attack before your turn ends twice and take the higher result. Ignore circumstance
+penalties to the attack and concealed or hidden flat checks. After the attack, gain 10-minute immunity to
+Sure Strike. Archives of Nethys
+
+For Cyrus. Best held in a cheap slot or bonus resource. One action plus attack Spellstrike fits the turn. A
+held wand or drawn scroll changes the action budget.
+
+Fear
+S · Debuff ★★★★★ · Control ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · Will · 30 feet · 1 creature · Mental
+
+Rules. Will S frightened 1, F frightened 2 and CF frightened 3 with fleeing for one round. CS unaffected.
+Rank 3 targets up to five creatures. Archives of Nethys
+
+For Cyrus. Broad team setup. Frightened reduces AC, saves and checks, so cast before allies when
+possible. Use another plan against fear- or mental-immune targets.
+
+Tailwind
+S · Positioning ★★★★★ · Utility ★★★☆☆
+
+Preparation ★★☆☆☆ · Scroll ★★★★☆ · Wand ★★★★★
+
+2 actions · 1 hour
+
+Rules. Gain +10-foot status to Speed for one hour. Rank 2 lasts eight hours. Archives of Nethys
+
+For Cyrus. The first broad-use wand candidate. Compare overlapping status Speed bonuses and use the
+higher applicable one.
+
+Thunderstrike
+A · Damage ★★★★☆ · Debuff ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★☆☆☆ · Wand ★☆☆☆☆
+
+2 actions · basic Reflex · 120 feet · 1 creature
+
+Rules. Basic Reflex against 1d12 electricity plus 1d4 sonic. Metal-armoured or primarily metal targets
+take −1 circumstance to the save and become clumsy 1 for one round if damaged. Each rank adds both
+dice. Archives of Nethys
+
+For Cyrus. Ranged single-target Reflex spell. Strong against metal and during a round when Cyrus should
+keep his distance.
+
+
+
+
+Spells, scrolls and wands                                                                                     8
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+Briny Bolt
+A · Damage ★★★☆☆ · Debuff ★★★★☆ · Control ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC · 60 feet · 1 creature
+
+Rules. Hit deals 2d6 bludgeoning and blinded for one round. Crit doubles it and adds dazzled for a minute.
+An Interact ends blinded only. Each rank adds 2d6 base damage. Archives of Nethys
+
+For Cyrus. An expendable Spellstrike that can buy an enemy action or help allies attack. Its punch comes
+from sight denial.
+
+Shocking Grasp
+A · Damage ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★★☆☆☆
+
+2 actions · AC · touch · 1 creature · legacy
+
+Rules. Legacy melee spell attack for 2d12 electricity on hit. Metal targets grant +1 circumstance to its
+spell attack and add 1d4 persistent electricity on a hit. Crit doubles initial damage only. Each rank adds
+1d12 and 1 persistent electricity. Archives of Nethys
+
+For Cyrus. Attack-based choice in Cyrus’s legacy pool. Thunderstrike instead attacks Reflex at long
+range. Check which attack-specific circumstance riders carry into the weapon Strike.
+
+Force Barrage
+A · Damage ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+1–3 actions · 120 feet · 1 creature
+
+Rules. Automatically hit visible targets with 1 shard per action, 1d4+1 force each. Combine damage from
+shards aimed at the same creature before applying adjustments. Every two ranks adds one shard per
+action. Archives of Nethys
+
+For Cyrus. No hostile roll and flexible action cost make it a clean finisher. Cast directly.
+
+Befuddle
+A · Debuff ★★★★☆ · Control ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · Will · 30 feet · 1 creature · 1 round · Mental
+
+Rules. Will S clumsy 1 and stupefied 1, F both 2 and CF both 3 plus confused. CS unaffected. Effects last
+one round. Archives of Nethys
+
+For Cyrus. A one-rank opener for a caster or a follow-up Reflex attack. Strong staff candidate when its
+short duration can be used immediately.
+
+
+
+
+Spells, scrolls and wands                                                                                    9
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+Goblin Pox
+A · Debuff ★★★★☆ · Control ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · touch · 1 creature · Disease
+
+Rules. Fortitude S sickened 1, F begins disease stage 1 and CF starts stage 2. Stage 1 sickened 1 for one
+round. Stage 2 adds slowed 1 for one round. Stage 3 prevents removing sickened 1 for a day. Goblins and
+goblin dogs are immune. Archives of Nethys
+
+For Cyrus. Touch becomes reach through Spellstrike. Sickened gives the whole party an opening against
+disease-susceptible creatures.
+
+Grease
+A · Control ★★★★☆ · Positioning ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex or Acrobatics · 30 feet · 4 contiguous 5-foot squares · 1 object of 1 Bulk or less · 1 minute
+
+Rules. Grease four contiguous 5-foot squares or one ≤1 Bulk object for a minute. Standing creatures
+check Reflex or Acrobatics against your DC or fall prone. Entering requires Balance unless Stepping or
+Crawling. Object mode hinders pickup or use, can disarm on CF, or grants +2 circumstance to Fortitude
+against Grapple if worn. Archives of Nethys
+
+For Cyrus. Cheap choke-point control. Ordinary casting preserves the unusual footprint and lets allies
+plan around it.
+
+Illusory Object
+A · Control ★★★☆☆ · Utility ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · 500 feet · 20-foot burst · 10 minutes · Visual
+
+Rules. Create a visual stationary object within a 20-foot burst. It can animate visually. A creature touching
+or Seeking it can disbelieve. Rank 2 adds sound, scent and touch for an hour. Rank 5 removes the time
+limit from the sensory version. Archives of Nethys
+
+For Cyrus. Useful for false terrain, cover stories and decoys. The same casting can solve very different
+maps.
+
+Helpful Steps
+A · Positioning ★★★★☆ · Utility ★★★★☆
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · 60 feet · 10 minutes
+
+Rules. Create a supported ladder or staircase up to 40 feet tall. It lasts 10 minutes and can be Dismissed.
+Add 40 feet per rank. Archives of Nethys
+
+For Cyrus. A cheap way to change the route for the entire party before resorting to individual flight.
+
+
+
+
+Spells, scrolls and wands                                                                                    10
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Gentle Landing
+A · Buff / Heal ★★★☆☆ · Positioning ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+Reaction · 60 feet · 1 falling creature · 1 minute
+
+Rules. React when a creature in range falls. It falls 60 feet per round, takes no falling damage if it lands
+during the spell and the spell then ends. Archives of Nethys
+
+For Cyrus. Excellent when a fall can be anticipated and the scroll is already held. A preparation answers
+surprise falls.
+
+Interposing Earth
+A · Buff / Heal ★★★★☆ · Control ★☆☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+Reaction · 3 rounds
+
+Rules. When you are targeted by a Strike or about to attempt a Reflex save against a damaging area
+effect, erect a small intervening earth barrier for standard cover against the trigger. If damage still
+applies, destroy the barrier and reduce damage by 2. Otherwise AC 5, Hardness 2, HP 5 for three rounds.
+Rank 4 raises reduction and Hardness to 8 and HP to 20. Archives of Nethys
+
+For Cyrus. A cheap defensive preparation when the reaction is available. It needs somewhere legal to put
+the barrier.
+
+Illusory Disguise
+A · Utility ★★★★★
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · 30 feet · 1 willing creature · 1 hour · Visual
+
+Rules. Change the target’s appearance, voice and worn gear for a disguise within ordinary body-size
+limits. Give +4 status to Deception checks to maintain it and count level even if untrained. Rank 3 allows a
+specific same-size individual you know by appearance or voice. Rank 4 affects up to ten willing creatures
+with individual nonspecific guises. Rank 7 allows specific group guises. Archives of Nethys
+
+For Cyrus. A planned infiltration scroll. Have each teammate cover behaviour, speech and gear the
+illusion does not change.
+
+Grim Tendrils
+B · Damage ★★★☆☆ · Debuff ★☆☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · Fortitude · 30-foot line
+
+Rules. Living creatures in a 30-foot line take 2d4 void and 1 persistent bleed on F. S takes half void and
+no bleed. CF doubles both. CS unaffected. Per rank add 2d4 void and 1 bleed. Archives of Nethys
+
+For Cyrus. An early narrow Fortitude line. Creature restrictions matter in an undead-heavy encounter.
+
+
+
+
+Spells, scrolls and wands                                                                                      11
+CYRUS VAL’DIRA / PF2E REMASTER                                                         SPELLS, SCROLLS AND WANDS
+
+
+
+
+Friendfetch
+B · Positioning ★★★★★ · Utility ★★☆☆☆
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · 30 feet · 1 or 2 willing creatures · uncommon · legacy
+
+Rules. Pull one or two willing creatures directly toward you into the closest empty space along their path.
+This is forced movement. Archives of Nethys
+
+For Cyrus. A low-rank rescue or regroup. An uncommon legacy choice that is worth a scroll when
+corridors and ledges matter.
+
+Pocket Library
+B · Utility ★★★★☆
+
+Preparation ★★☆☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+3 actions · 24 hours · rare
+
+Rules. Choose one trained Recall Knowledge skill. Calling a book while checking needs a free hand, gives
++1 status and converts a critical failure to failure. A successful creature check adds context. The spell
+ends after one use within 24 hours. At ranks 3, 6 and 9 gain +2/+3/+4 and 2/3/4 uses. Archives of Nethys
+
+For Cyrus. Use for a known investigation. The Rival Academies remaster entry is rare. Choose the
+appropriate skill in advance.
+
+Runic Weapon
+B · Buff / Heal ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · touch · 1 weapon that is unattended or wielded by a willing creature · 1 minute
+
+Rules. For one minute, the weapon becomes +1 striking. Rank 6 gives +2 greater striking. Rank 9 gives
++3 major striking. Archives of Nethys
+
+For Cyrus. A strong temporary bridge for a weapon missing those runes. Permanent fundamentals
+usually supersede the early use.
+
+Command
+B · Control ★★★★☆ · Debuff ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 30 feet · 1 creature · until the end of the target's next turn · Linguistic · Mental
+
+Rules. Choose approach, flee, drop held items, fall prone or stand still. Will S unaffected, F spends the first
+action of its next turn obeying, CF uses all its actions. Affected creature cannot Delay or react until it
+obeys. Rank 5 affects up to ten. Archives of Nethys
+
+For Cyrus. Use for a concrete positional or action payoff when language and mental effects work. Fear is
+safer on a successful Will save.
+
+
+
+
+Spells, scrolls and wands                                                                                    12
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+Curse of Slippery Steps
+B · Control ★★★★☆ · Positioning ★★★☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 30 feet · 1 creature
+
+Rules. Reflex S treats all terrain as difficult for a round. F lasts an hour and leaves a watery trail granting
++2 circumstance to Track it. CF lasts 24 hours. CS unaffected. Archives of Nethys
+
+For Cyrus. Cheap movement denial against a runner or charger, including success value. Party members
+can kite or protect an objective around it.
+
+Conductive Weapon
+B · Buff / Heal ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · touch · 1 metal weapon that is unattended or attended by a willing creature · 1 minute
+
+Rules. For one minute the metal weapon becomes +1 shock. Against mainly metal or metal-armoured
+creatures, the shock die is d12. Archives of Nethys
+
+For Cyrus. Useful prebuff before permanent property options mature. Compare with actual runes already
+on Aspera and with party buffs.
+
+Hydraulic Push
+B · Damage ★★★★☆ · Positioning ★★★★☆ · Control ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC · 60 feet · 1 creature or unattended object
+
+Rules. Ranged spell attack on hit deals 3d6 bludgeoning and pushes 5 feet. Crit doubles damage and
+pushes 10 feet. Add 2d6 per rank. Archives of Nethys
+
+For Cyrus. Attack payload for forced movement and bludgeoning. Its push is away from you, while Acid
+Grip is more flexible and affects Reflex.
+
+Horizon Thunder Sphere
+B · Damage ★★★★☆ · Debuff ★☆☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions to 2 rounds · AC · 1 creature
+
+Rules. Two-action form attacks at 30 feet for 3d6 electricity. Three actions reaches 60 feet and deals half
+on an ordinary miss. Spend three then two actions over two rounds for extra splash and a retaliatory
+spark. Crit doubles damage and dazzles one round. Add 2d6 per rank to initial damage. Archives of Nethys
+
+For Cyrus. An AC option through Spellstrike uses the two-action version. Thunderstrike can instead attack
+Reflex from 120 feet. The two-round option is very expensive in combat actions.
+
+
+Rank 2
+
+
+
+Spells, scrolls and wands                                                                                     13
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+Acid Grip
+S · Damage ★★★☆☆ · Control ★★★★☆ · Debuff ★★☆☆☆ · Positioning ★★★★★
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 120 feet · 1 creature
+
+Rules. Reflex S half of 2d8 acid and move up to 5 feet. F full damage, 1d6 persistent acid and move up to
+10 feet. CF double initial, full persistent and move up to 20 feet. CS unaffected. Persistent acid applies
+−10-foot status to Speeds. Each two ranks adds 2d8 and 1d6 persistent. Archives of Nethys
+
+For Cyrus. A displaced enemy can free an ally, lose a lane or enter a teammate’s threat. Good at 120 feet
+and valid as a reach payload.
+
+Invisibility
+S · Buff / Heal ★★★★☆ · Positioning ★★★★☆ · Utility ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★★★☆
+
+2 actions · touch · 1 creature · 10 minutes
+
+Rules. Touch invisibility for 10 minutes. A hostile action ends it after resolving. Rank 4 lasts one minute
+and survives hostile actions. Apply the invisible condition’s normal detection rules. Archives of Nethys
+
+For Cyrus. Rank 2 for exploration or a planned opening, rank 4 for combat. Both are valuable item
+castings.
+
+Disintegrating Puddle
+A · Damage ★★★★☆ · Control ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · AC · 30 feet · 1 creature · 1 minute
+
+Rules. Spell attack for 2d12 acid on hit, double initial on a crit. On a hit it leaves acid in the target square
+and adjacent squares for a minute. Entry or start of turn in the puddle deals 1d4 acid. Each two ranks adds
+2d12 and 1d4 puddle. Archives of Nethys
+
+For Cyrus. Good attack damage and a lingering hazard. Its original targeting is one creature, so do not
+count a restored burst through Expansive.
+
+Enlarge
+A · Buff / Heal ★★★★☆ · Positioning ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · 30 feet · 1 willing creature · 5 minutes
+
+Rules. Willing target becomes Large, clumsy 1, gains 5 feet reach and +2 status damage on melee
+Strikes. Tiny gains 10 feet reach. Rank 4 makes it Huge for +10 feet reach and +4 damage, or +15 feet
+reach for Tiny. Rank 6 can apply either version to up to ten willing creatures. Archives of Nethys
+
+For Cyrus. Precast when wider threat and physical feats matter. Clumsy and the larger footprint have real
+costs in tight terrain.
+
+
+
+
+Spells, scrolls and wands                                                                                     14
+CYRUS VAL’DIRA / PF2E REMASTER                                                   SPELLS, SCROLLS AND WANDS
+
+
+
+
+Laughing Fit
+A · Control ★★★★★ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 30 feet · 1 living creature · sustained · Mental
+
+Rules. Will S blocks reactions, F also slows 1, CF drops the target prone and denies actions and reactions
+for one round before applying F. CS unaffected. Sustain for up to one minute. Archives of Nethys
+
+For Cyrus. Turn off a dangerous reaction before the party moves. The Sustain cost matters if Cyrus needs
+to move and recharge.
+
+Revealing Light
+A · Debuff ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · Reflex · 120 feet · 10-foot burst
+
+Rules. A 10-foot burst dazzles, changes invisible to concealed and removes other concealment. Reflex S
+lasts two rounds, F one minute and CF ten minutes. CS unaffected. Archives of Nethys
+
+For Cyrus. Solves group visibility problems while reducing enemy accuracy. Works as an Expansive burst
+when a legal placement catches the right targets.
+
+Dispel Magic
+A · Control ★★★★☆ · Utility ★★★★★
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · counteract · 120 feet · 1 spell effect or unattended magic item
+
+Rules. Counteract a spell effect or magic item. On a successful counteract, a magic item is mundane for
+ten minutes. Artifact-like targets cause automatic failure. Archives of Nethys
+
+For Cyrus. Buy at a counteract rank that can handle the threats. A rank-2 copy ages faster than an
+unscaled utility spell.
+
+Loose Time’s Arrow
+A · Buff / Heal ★★★★☆ · Positioning ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · 30 feet · up to 6 creatures · until the end of your next turn
+
+Rules. Up to six creatures within range become quickened until the end of your next turn. Extra action is
+Step or Stride. Archives of Nethys
+
+For Cyrus. Great when several allies need to move and still use their full turns. Initiative determines who
+can exploit the window.
+
+
+
+
+Spells, scrolls and wands                                                                                15
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+See the Unseen
+A · Utility ★★★★★
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★★★☆
+
+2 actions · 10 minutes
+
+Rules. For ten minutes, invisible creatures are visible but concealed, and incorporeal creatures phased
+within 10 feet of a surface can be seen as blurry shapes. +2 status to disbelieve illusions. Rank 5 lasts
+eight hours. Archives of Nethys
+
+For Cyrus. Self-only detection. Choose Revealing Light when the whole party benefits.
+
+Water Breathing
+A · Utility ★★★★★
+
+Preparation ★☆☆☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+1 minute · 30 feet · up to 5 creatures · 1 hour
+
+Rules. Up to five creatures can breathe underwater for an hour. Rank 3 lasts eight hours and rank 4 lasts
+until daily preparations. Archives of Nethys
+
+For Cyrus. Carry a scroll on water-facing expeditions and cast before entering. Check the party’s own
+breathing and swimming coverage.
+
+Disorienting Flash
+A · Damage ★★★☆☆ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+1–3 actions · basic Fortitude · 60 feet · 5-foot square or 10-/20-foot burst
+
+Rules. Basic Fortitude. One action affects a 5-foot square for 1d10 sonic. Two affects a 10-foot burst for
+2d10. Failed saves dazzle until your next turn ends. Three affects a 20-foot burst and adds deafened on a
+failure. Each rank adds 1d10 in every mode. Archives of Nethys
+
+For Cyrus. Two-action version supplies a compact Fortitude burst for Expansive. One action fits beside a
+separate Spellstrike with a different payload.
+
+Resist Energy
+A · Buff / Heal ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · touch · 1 creature · 10 minutes
+
+Rules. Grant resistance 5 to acid, cold, electricity, fire or sonic, including gear. Rank 4 gives resistance 10
+to up to two creatures. Rank 7 grants 15 to up to five. Archives of Nethys
+
+For Cyrus. Predictable energy damage is a reason to cast before the fight. Keep a spare or prepare at the
+meaningful breakpoint.
+
+
+
+
+Spells, scrolls and wands                                                                                   16
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Acid Arrow
+B · Damage ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · AC · 120 feet · 1 creature · legacy
+
+Rules. Legacy attack spell. Hit deals 3d8 acid and 1d6 persistent acid. Crit doubles initial only. Each two
+ranks adds 2d8 and 1d6 persistent. Archives of Nethys
+
+For Cyrus. A deliberately retained AC option. Acid Grip instead adds Reflex and displacement, while
+Disintegrating Puddle leaves hazard tiles.
+
+Gecko Grip
+B · Positioning ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · touch · 1 creature · 10 minutes
+
+Rules. Grant a climb Speed equal to the target’s Speed for ten minutes. Rank 5 lasts one hour. Archives of
+Nethys
+
+For Cyrus. A Studious Spell at level 7. Strong for walls and ceilings when the group can pursue the same
+route.
+
+Blur
+B · Buff / Heal ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · touch · 1 creature · 1 minute · Visual
+
+Rules. Target is concealed for one minute. This blur keeps their location obvious and supplies no
+concealment for Hide or Sneak. Archives of Nethys
+
+For Cyrus. Studious Spell for Laughing Shadow at level 7. Compare a preplanned Blur against the stealth
+and opening utility of Invisibility.
+
+Blood Vendetta
+B · Damage ★★★☆☆ · Debuff ★★★☆☆
+
+Preparation ★★★☆☆ · Scroll ★★☆☆☆ · Wand ★☆☆☆☆
+
+Reaction · Will · 30 feet · the triggering creature
+
+Rules. After piercing, slashing or bleed damages you, the attacker attempts Will. S takes half of 2d6
+persistent bleed, F takes full and weakness 1 to piercing and slashing while bleeding, CF doubles bleed. CS
+unaffected. Every two ranks adds 2d6 bleed. Archives of Nethys
+
+For Cyrus. Useful reaction on a bleed-susceptible creature. Compare it with a defensive reaction before
+spending the slot.
+
+
+
+
+Spells, scrolls and wands                                                                                 17
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Dimensional Drop
+B · Control ★★★★☆ · Damage ★★☆☆☆ · Positioning ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 60 feet · 1 creature standing on the ground · Teleportation
+
+Rules. Ground portal drops a target through extradimensional space. Reflex CS unaffected, S drops 10
+feet, F 20 feet, CF 40 feet, before reappearing over its original space and taking fall damage. Spell DC for
+Arrest a Fall. Rank 5 targets up to five. Archives of Nethys
+
+For Cyrus. Low-rank disruption against enemies with usable ground beneath them. Figure landing and fall
+rules before assuming prone.
+
+Mirror Image
+B · Buff / Heal ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · 1 minute · legacy · Visual
+
+Rules. Legacy defence. Three images divert hits with initial odds 3 in 4, then 2 in 3, then 1 in 2 while they
+are destroyed. Noncritical misses destroy an image. A crit diverted to an image also becomes an ordinary
+hit on you. Ends when images are gone or duration expires. Archives of Nethys
+
+For Cyrus. Good when multiple weapon attacks are likely. Blur and Invisibility defend through
+concealment or detection instead.
+
+Embed Message
+B · Utility ★★★★☆
+
+Preparation ★☆☆☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · touch · 1 object or willing creature · unlimited
+
+Rules. Put a message of up to 25 words on the target, concealed until a specified trigger occurs within 30
+feet. Text and speech deliver it then end the spell. Rank 4 adds a simple sensory cue. Rank 6 can repeat it
+a chosen number of times. Archives of Nethys
+
+For Cyrus. Campaign utility for dead drops, records or coded watches. An evocative alternative on Aspera
+with narrow day-to-day value.
+
+
+Rank 3
+Haste
+S · Buff / Heal ★★★★★ · Positioning ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★★★☆
+
+2 actions · 30 feet · 1 creature · 1 minute
+
+Rules. Grant quickened for one minute. Its extra action can only Strike or Stride. Rank 7 targets up to six
+creatures. Archives of Nethys
+
+For Cyrus. For Cyrus the extra Stride can fund a complete turn. For the group choose targets that can
+convert the extra action into useful attacks or movement.
+
+
+
+Spells, scrolls and wands                                                                                  18
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Slow
+S · Control ★★★★★ · Debuff ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · Fortitude · 30 feet · 1 creature
+
+Rules. Fortitude S slowed 1 for one round, F slowed 1 for a minute, CF slowed 2 for a minute. CS
+unaffected. Rank 6 targets up to ten creatures. Archives of Nethys
+
+For Cyrus. Reliable boss answer on a success and premier high-rank group control. Use when enemies
+need multiple actions to threaten allies.
+
+Time Jump
+S · Positioning ★★★★★ · Control ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★★★☆
+
+1 action
+
+Rules. Spend one action and gain two restricted moves such as Stride, Step, Leap or Stand. Other
+creatures cannot react to these moves and you cannot insert other actions. A second cast within a minute
+causes stupefied 4 for a minute. Archives of Nethys
+
+For Cyrus. Move twice and still Spellstrike this turn, or stand and step out of trouble. A one-action staff
+cast preserves the combo.
+
+Lightning Bolt
+A · Damage ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · 120-foot line
+
+Rules. Creatures in a 120-foot line take 4d12 electricity with a basic Reflex save. Add 1d12 per rank.
+Archives of Nethys
+
+For Cyrus. Main early line for Aspera. Its long narrow footprint rewards deliberate placement and direct
+casting at range.
+
+Fireball
+A · Damage ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · 500 feet · 20-foot burst
+
+Rules. Creatures in a 20-foot burst take 6d6 fire with a basic Reflex save. Add 2d6 per rank. Archives of
+Nethys
+
+For Cyrus. Reliable broad fire damage at long range. Confirm ally-safe geometry before delivering it
+through reach.
+
+
+
+
+Spells, scrolls and wands                                                                                     19
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Cave Fangs
+A · Damage ★★★★☆ · Control ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · 60 feet · 20-foot burst · 1 minute
+
+Rules. A 20-foot burst deals 6d6 piercing, basic Reflex, and creates difficult terrain for one minute. You
+can Dismiss it. Add 2d6 per rank. Archives of Nethys
+
+For Cyrus. Trades Fireball’s range for movement control and physical damage. Consider which allies need
+the affected route afterward.
+
+Blister Bomb
+A · Debuff ★★★★★ · Control ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · 100 feet · 5-foot burst · Disease
+
+Rules. All creatures in a 5-foot burst save Fortitude. S sickened 2. F starts stage 1, sickened 2. CF starts
+stage 2, adds 1d6 persistent bleed. Stage 3 raises bleed to 2d6, stage 4 raises sickened to 3. CS grants
+one-week immunity. Archives of Nethys
+
+For Cyrus. Repeatedly useful on living groups vulnerable to disease. The compact burst is easier to
+deliver away from allies.
+
+Wooden Double
+A · Buff / Heal ★★★★★ · Positioning ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★☆☆☆ · Wand ★☆☆☆☆
+
+Reaction
+
+Rules. React to a critical hit from a damaging Strike or effect by Stepping. A double in the old space
+absorbs the hit with Hardness 5 and 20 HP. You take overflow after it is destroyed. Add 10 HP per rank.
+Archives of Nethys
+
+For Cyrus. A strong prepared defence when it’s safe to Step. The scroll draw and reaction competition
+reduce item value.
+
+Ghostly Weapon
+B · Buff / Heal ★★★★☆ · Utility ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · touch · 1 weapon that is either unattended or wielded by you or a willing ally · 5 minutes
+
+Rules. For five minutes the weapon gains ghost touch, affects material and incorporeal targets and can be
+wielded by either. Archives of Nethys
+
+For Cyrus. At level 11 learn it automatically. A scroll is useful before then when ghosts repeatedly turn up
+and a permanent rune would displace a better property.
+
+
+Rank 4
+
+
+Spells, scrolls and wands                                                                                      20
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Fly
+S · Positioning ★★★★★ · Buff / Heal ★★★☆☆ · Utility ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★★★☆
+
+2 actions · touch · 1 creature · 5 minutes
+
+Rules. For five minutes, the target gets a fly Speed equal to its Speed or 20 feet, whichever is higher.
+Follow normal Fly requirements. Rank 7 lasts one hour. Archives of Nethys
+
+For Cyrus. A rescue or encounter access tool worth a scroll even with Dimensional Assault. Studious from
+level 13.
+
+Vision of Death
+A · Damage ★★★★☆ · Debuff ★★★★☆ · Control ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 120 feet · 1 living creature · Mental
+
+Rules. Will S half of 8d6 mental and frightened 1, F full and frightened 2, CF double and frightened 4 with
+fleeing until frightened ends. CS unaffected. A creature reduced to 0 HP by the spell dies. Add 2d6 per
+rank. Archives of Nethys
+
+For Cyrus. Ranged Will pressure with a useful success. Against mental-immune creatures choose a
+different save.
+
+Containment
+A · Control ★★★★★ · Buff / Heal ★★★☆☆ · Positioning ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 30 feet · 1 creature · 1 minute
+
+Rules. An immobile barrier blocks creatures, attacks and effects for one minute. Hardness 10, HP 40 and
+immune to crits and precision. Unwilling target Reflex CS escapes, S produces 10 HP, F full barrier. Each
+rank adds 5 HP on S and 15 on F. Archives of Nethys
+
+For Cyrus. Separate a threat or protect an ally. Plan for reduced allied attack access while the field
+stands.
+
+Translocate
+A · Positioning ★★★★★ · Utility ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · 120 feet · Teleportation
+
+Rules. Teleport alone with worn and held gear to a visible unoccupied point within 120 feet. Rank 5
+reaches one mile and can reach a familiar unseen destination whose distance and direction you know.
+Rank 5 grants one-hour immunity after use. Archives of Nethys
+
+For Cyrus. Escape, bypass an obstacle, or reach a remote goal. For short measurable movement Time
+Jump can be cheaper.
+
+
+
+
+Spells, scrolls and wands                                                                                  21
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Clairvoyance
+A · Utility ★★★★★
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★★★☆
+
+1 minute · 500 feet · 10 minutes
+
+Rules. Create a stationary invisible eye even without line of sight or effect. For ten minutes see from it in
+all directions with normal visual senses. Archives of Nethys
+
+For Cyrus. Remote reconnaissance before committing to a route. The minute-long cast suits advance
+planning and makes a reusable staff or wand sensible.
+
+Wall of Mirrors
+A · Control ★★★★★ · Debuff ★★☆☆☆ · Utility ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · 120 feet · rare
+
+Rules. A solid vertical barrier up to 50 feet long and 20 feet high. Each 10-by-10 section has AC 10,
+Hardness 10 and 40 HP, crit and precision immunity. Conceals across it. Creatures that Strike it suffer 4d4
+mental, basic Will. Add 10 HP per rank. Archives of Nethys
+
+For Cyrus. Rare two-action battlefield division with a real barrier. The printing omits a duration. Use a
+shared duration ruling before treating it as a lasting structure.
+
+Force Rain
+A · Damage ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+1–3 actions · basic Reflex · 60 feet · 5-foot square or 10-foot burst
+
+Rules. One action deals 4d6 force to a 5-foot square with basic Reflex. Two deals 8d6 in a 10-foot burst
+with basic Reflex. Three automatically deals 20 force in a 10-foot burst. Each rank adds 1d6, 2d6 or 5
+respectively. Archives of Nethys
+
+For Cyrus. The two-action burst is the Expansive version. The three-action cast supplies reliable damage
+directly.
+
+Life-Draining Roots
+B · Damage ★★★★☆ · Buff / Heal ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · basic Reflex · 30-foot line
+
+Rules. A 30-foot line deals 8d6 piercing, basic Reflex. Gain 1d4 temporary HP per living creature in the
+line for one minute. Add 2d6 damage per rank. Archives of Nethys
+
+For Cyrus. A physical line when elemental resistance matters. Its defensive payoff depends on lining up
+living creatures.
+
+
+
+
+Spells, scrolls and wands                                                                                   22
+CYRUS VAL’DIRA / PF2E REMASTER                                                   SPELLS, SCROLLS AND WANDS
+
+
+
+
+Unfettered Movement
+B · Buff / Heal ★★★★☆ · Positioning ★★★★★
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · touch · 1 creature touched · 10 minutes
+
+Rules. Ignore circumstance Speed penalties. Escape against immobilized, grabbed or restrained
+automatically succeeds unless the effect is higher-rank magic. Archives of Nethys
+
+For Cyrus. Prepare for a known grappler or hold a scroll for a hazardous crossing. It does not take the
+Escape action for you.
+
+
+Rank 5
+Weight of the World
+S · Damage ★★★☆☆ · Control ★★★★★ · Debuff ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · 120 feet · 1 creature
+
+Rules. Base damage is 2d12 bludgeoning and 1d12 persistent bleed. Fortitude S half damage, dazzled for
+a round and stunned 1. F full damage, dazzled a minute and stunned 2. CF double damage, dazzled a
+minute and stunned 3. CS unaffected. Each two ranks adds 1d12 to both damage values. Archives of
+Nethys
+
+For Cyrus. High-value Fortitude disruption even on a success. Particularly good when an enemy is about
+to spend a multi-action activity.
+
+Wall of Stone
+S · Control ★★★★★ · Positioning ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+3 actions · 120 feet
+
+Rules. Create up to 120 feet of solid stone wall, 20 feet high and 1 foot thick. Each 10-by-10 section has
+AC 10, Hardness 14, 50 HP and crit and precision immunity. Shape it along grid borders or into a bridge or
+stair. Each two ranks adds 15 HP per section. Archives of Nethys
+
+For Cyrus. A three-action cast can cut several enemies out of a fight. Leave allies a useful lane.
+
+Synesthesia
+S · Debuff ★★★★★ · Control ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · Will · 30 feet · 1 creature · occult only · Mental
+
+Rules. The target is clumsy 3, takes −10 feet status to all Speeds, treats others as concealed and needs a
+DC 5 flat check for concentrate actions. Will S lasts one round, F one minute, CF a minute and stunned 2.
+CS unaffected. Archives of Nethys
+
+For Cyrus. Occult-only. Aspera needs a specific access rule or Cyrus needs occult casting. Powerful
+physical and mental disruption in one turn.
+
+
+
+Spells, scrolls and wands                                                                                 23
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Glacial Skewer
+A · Damage ★★★★★ · Control ★★★★☆ · Positioning ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC · 60 feet · 1 creature
+
+Rules. Attack deals 4d10 cold and 4d4 piercing and pushes 10 feet. Crit doubles damage and pushes 20
+feet. Collision with a Large or larger structure or obstacle immobilizes up to one minute or until Escape.
+Each rank adds 1d10 cold and 1d4 piercing. Archives of Nethys
+
+For Cyrus. Cyrus’s high-value attack payload when an obstacle lines up. The push happens after the
+weapon Strike.
+
+Blazing Fissure
+A · Damage ★★★★☆ · Control ★★★★☆ · Debuff ★★★☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 120-foot line
+
+Rules. A 120-foot line deals 4d6 bludgeoning and 6d6 fire to creatures on solid ground. Reflex S halves
+damage, F takes full and falls prone, CF doubles damage and falls prone. Each rank adds 1d6 of each type.
+Archives of Nethys
+
+For Cyrus. Use when prone helps allies and the path is grounded. It is a long-range Expansive and
+Sprinting payload.
+
+Sending
+A · Utility ★★★★★
+
+Preparation ★☆☆☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+3 actions · planetary · 1 creature you know well · Mental
+
+Rules. Send up to 25 words to a creature you know well on the same planet. It can reply immediately with
+up to 25 words. Archives of Nethys
+
+For Cyrus. Keep an off-screen communication option that works over a continent. A wand only pays when
+the story calls for repeated dispatches.
+
+Howling Blizzard
+A · Damage ★★★★☆ · Control ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 or 3 actions · basic Reflex · 60-foot cone or 30-foot burst
+
+Rules. Two actions make a 60-foot cone. Three actions make a 30-foot burst at up to 500 feet. Basic
+Reflex against 10d6 cold and difficult terrain until your next turn. Add 2d6 per rank. Archives of Nethys
+
+For Cyrus. An alternative shape and damage type. Use Expansive for the two-action cone, direct cast
+when you need the large remote burst.
+
+
+
+
+Spells, scrolls and wands                                                                                   24
+CYRUS VAL’DIRA / PF2E REMASTER                                                      SPELLS, SCROLLS AND WANDS
+
+
+
+
+Shadow Siphon
+A · Buff / Heal ★★★★★ · Control ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★★☆☆☆
+
+Reaction · counteract · 60 feet · the triggering spell · legacy
+
+Rules. React to a damaging spell within 60 feet. Counteract as if two ranks higher. On success, all
+creatures that would take damage take half instead. Other effects still occur. Archives of Nethys
+
+For Cyrus. An arcane option when Aspera needs a rank-5 reactive defence. It competes for the reaction
+and can soften an area Spell Riposte cannot catch.
+
+Corrosive Muck
+B · Damage ★★★★☆ · Control ★★★★☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · basic Reflex on entry or start · 120 feet · all squares in two 10-foot bursts · 1 minute
+
+Rules. Make two 10-foot bursts of greater difficult terrain for one minute. Entry during a move action or
+starting a turn there triggers 8d6 acid, basic Reflex, once per round. CF adds 1d6 persistent acid. Each two
+ranks adds a burst. Archives of Nethys
+
+For Cyrus. Cast directly to create two obstacles without an initial save. Later entry or occupancy calls for
+the save, so reserve a route for allies.
+
+Space Fold Gate
+B · Positioning ★★★★★ · Utility ★★★★★
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+3 actions · 200 feet · sustained up to 1 minute · uncommon · Teleportation
+
+Rules. Link two visible empty squares on solid ground with 5-foot portals. Entry and exit can be part of
+movement, including for enemies. Objects and ranged attacks can pass through but spells have no effect
+through them. Rank 6 reaches 500 feet and up to 10-foot portals. Rank 7 reaches 1,000 feet and up to
+30-foot portals. Archives of Nethys
+
+For Cyrus. A major map or objective tool. The full cast takes a turn and control of both ends matters.
+
+Magic Passage
+B · Positioning ★★★★☆ · Utility ★★★★★
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · touch · 5-foot-wide, 10-foot-tall, 10-foot-deep section of wooden, plaster, or stone wall · 1 hour ·
+uncommon
+
+Rules. Open a 5-by-10-foot tunnel through wood, plaster or stone, up to 10 feet deep for an hour. Metal
+defeats the spell. At rank 7 reach 20 feet deep and choose an access password or trigger for the disguised
+entrance. Archives of Nethys
+
+For Cyrus. Pack for infiltrations or rescues with a real structural obstacle. This option is uncommon.
+
+
+
+
+Spells, scrolls and wands                                                                                    25
+CYRUS VAL’DIRA / PF2E REMASTER                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+Scouting Eye
+B · Positioning ★★★☆☆ · Utility ★★★★★
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+1 minute · sustained
+
+Rules. Place an invisible eye at a visible spot within 500 feet. First Sustain each round can move it 30 feet
+with forward view or 10 feet with all-around view. It can Seek. Damage or separation by plane ends the
+spell. Archives of Nethys
+
+For Cyrus. Active reconnaissance beats static Clairvoyance when a clear start exists. The long cast and
+Sustain make it a planned scouting scroll.
+
+
+Rank 6
+Chain Lightning
+S · Damage ★★★★★
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · 500 feet · 1 creature, plus any number of additional creatures
+
+Rules. Basic Reflex against 8d12 electricity. Choose successive distinct targets within 30 feet of the
+previous one and within your line of effect. A CS ends the chain. Add 1d12 per rank. Archives of Nethys
+
+For Cyrus. Selective area damage when allies are mixed in. Cast normally to preserve the chain and lead
+with likely weak Reflex saves.
+
+Living Thunderbolt
+S · Damage ★★★★☆ · Positioning ★★★★★ · Buff / Heal ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★☆☆ · Wand ★★☆☆☆
+
+2 actions · 1 minute
+
+Rules. For a minute gain 60-foot fly Speed, electricity resistance 10 and automatic Escape from listed
+effects unless higher-rank magic. Pass through creatures, deal 4d12 electricity with basic Reflex once per
+creature each round crossed, and dazzle for a round on F. Each two ranks adds 5 resistance and 1d12.
+Archives of Nethys
+
+For Cyrus. Set up for movement-heavy maps. Physical passage through a creature’s space is the trigger,
+so a wider spell template alone earns no extra contact damage.
+
+
+
+
+Spells, scrolls and wands                                                                                 26
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Wall of Force
+S · Control ★★★★★ · Positioning ★★★☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+3 actions · 30 feet · 1 minute
+
+Rules. Create an invisible wall up to 50 feet long and 20 feet high. Creatures and physical effects cannot
+pass. AC 10, Hardness 30, HP 60, crit and precision immunity. Blocks incorporeal and ethereal creatures.
+Teleportation and visual effects can pass. Disintegrate destroys it. Every two ranks adds 20 HP. Archives of
+Nethys
+
+For Cyrus. A three-action partition for threats worth removing from the next round. Check the rules’
+exceptions for magical through-effects.
+
+Silver Spear
+A · Damage ★★★★★ · Debuff ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC · 120 feet · 1 creature
+
+Rules. Hit with a silver spear for 12d6 piercing and an additional 12d6 spirit against fiends. Critical hit
+doubles damage and tethers a fiend for a minute, requiring a DC 11 flat check for teleportation actions.
+Each rank adds 2d6 to each component. Archives of Nethys
+
+For Cyrus. Excellent when its silver properties and fiend rider matter. Compare with Glacial Skewer for an
+ordinary target.
+
+Teleport
+A · Positioning ★★★★★ · Utility ★★★★★
+
+Preparation ★★☆☆☆ · Scroll ★★★★★ · Wand ★★★☆☆
+
+10 minutes · 100 miles · you and up to 4 targets touched, either willing creatures or objects roughly the
+size of a creature · uncommon · Teleportation
+
+Rules. With ten minutes of casting, transport yourself and up to four touched willing creatures and carried
+gear up to 100 miles. Arrival can be off target. Higher ranks broaden distances and accuracy. Archives of
+Nethys
+
+For Cyrus. Expedition resource. Size the transport plan for the whole party before committing.
+
+Truesight
+A · Utility ★★★★★ · Buff / Heal ★★☆☆☆
+
+Preparation ★★★☆☆ · Scroll ★★★★★ · Wand ★★☆☆☆
+
+2 actions · 10 minutes
+
+Rules. For ten minutes the GM makes secret counteract checks to let you see through illusions, morph
+and polymorph effects within 60 feet. Successful checks reveal reality without ending the effects. Archives
+of Nethys
+
+For Cyrus. Different from seeing every invisible creature automatically. Buy a spell rank that can
+counteract likely effects.
+
+
+
+
+Spells, scrolls and wands                                                                                     27
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Unexpected Transposition
+A · Positioning ★★★★★ · Buff / Heal ★★★★☆ · Control ★★☆☆☆
+
+Preparation ★★★★☆ · Scroll ★★☆☆☆ · Wand ★☆☆☆☆
+
+Reaction · Will · 30 feet · 1 creature other than the triggering enemy · Teleportation
+
+Rules. When targeted by a Strike, pick a different creature within 30 feet and swap places. An unwilling
+replacement can resist with Will. If you switch places, the original Strike resolves against the replacement
+in your old space. You and the replacement then have immunity to this spell for one minute. Archives of
+Nethys
+
+For Cyrus. A prepared escape or redirect when reaction and position are aligned. Resolve line, reach and
+ally exposure before picking the substitute.
+
+Collective Transposition
+A · Positioning ★★★★★ · Control ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 30-foot emanation · Teleportation
+
+Rules. Teleport targets to unoccupied visible spaces in the area where they fit. Unwilling targets save Will.
+CS can choose to teleport to their own destination, S unaffected, F moves to your choice. Each rank adds
+another target. Archives of Nethys
+
+For Cyrus. Rescue and team positioning with hostile interference available. A known line of sight and
+useful destinations make this work.
+
+Cast into Time
+A · Damage ★★★★☆ · Control ★★★★☆ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · 15-foot cone · Mental
+
+Rules. Creatures in the cone make Fortitude saves against 5d8 mental plus 5d6 bludgeoning. Except on
+CS, they disappear to the end of your turn. S takes half, F full with sickened 1, CF double with sickened 2.
+Mental immunity stops only the mental portion. Each rank adds 2d6 bludgeoning. Archives of Nethys
+
+For Cyrus. Distinct Aspera candidate that pressures Fortitude and lets Cyrus finish the turn while the
+targets are gone. Their disappearance usually ends before allies act.
+
+Disintegrate
+B · Damage ★★★★★ · Control ★★★☆☆ · Utility ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC and basic Fortitude · 120 feet · 1 creature, unattended object, or force construct
+
+Rules. Spell attack hit against a creature unlocks a basic Fortitude save against 12d10 untyped damage.
+A crit worsens the save outcome by a degree. A valid object or force construct is destroyed on hit, up to a
+10-foot cube. Add 2d10 per rank. Archives of Nethys
+
+For Cyrus. The two defensive gates reduce combat reliability. Keep the object and barrier application in
+mind when deciding whether to learn it.
+
+
+
+
+Spells, scrolls and wands                                                                                  28
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Mislead
+B · Buff / Heal ★★★★☆ · Positioning ★★★☆☆ · Utility ★★★★☆
+
+Preparation ★★★☆☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · sustained up to 1 minute
+
+Rules. Become invisible and make a duplicate that performs illusory actions. Sustain to direct it. Hostile
+actions leave invisibility intact. If plausible, you can roll Deception against Perception DCs as part of
+interacting to make the duplicate seem responsible. Archives of Nethys
+
+For Cyrus. Narrative and repositioning option for Aspera. In straightforward combat, rank-4 Invisibility
+often solves the immediate problem more cheaply.
+
+
+Rank 7
+Frigid Flurry
+S · Damage ★★★★★ · Positioning ★★★★★
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · line up to 120 feet
+
+Rules. Basic Reflex against 9d6 cold plus 9d6 slashing along up to 120 feet. Allies are unaffected. The
+flurry carries you to the far end, protecting you against most damage and effects during transit. Fire and
+other effects applicable to snow can still affect you. Each rank adds 1d6 of each type. Archives of Nethys
+
+For Cyrus. Default late line when its endpoint is good. If combining with Sprinting, settle how the spell’s
+carry effect and the feat sequence interact before relying on it.
+
+True Target
+S · Buff / Heal ★★★★★
+
+Preparation ★★★★★ · Scroll ★★★☆☆ · Wand ★★★☆☆
+
+1 action · 60 feet · 4 creatures · until the start of your next turn
+
+Rules. Designate a creature. The first attack against it by each affected ally before your next turn is rolled
+twice, using the higher roll. Ignore circumstance penalties to the attack and concealment or hidden flat
+checks. Targets four creatures. Archives of Nethys
+
+For Cyrus. One action plus Spellstrike is possible. Prioritize allies with strong single attacks and timing to
+act, including Cyrus if chosen.
+
+Defy the Gods
+A · Debuff ★★★★★ · Control ★★★★☆ · Buff / Heal ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 60 feet · 1 creature
+
+Rules. Will S drained 1 and stupefied 1 for one round. F both 2 for a minute. CF both 3 for a minute. CS
+unaffected. Draining a divine, holy or unholy target grants 15 resistance to holy and unholy for a minute.
+Archives of Nethys
+
+For Cyrus. Disable spellcasting and pressure Fortitude through drained. A divine target adds protection.
+The hostile debuff works on other valid targets.
+
+
+Spells, scrolls and wands                                                                                    29
+CYRUS VAL’DIRA / PF2E REMASTER                                                   SPELLS, SCROLLS AND WANDS
+
+
+
+
+Comet Charge
+A · Damage ★★★★★ · Positioning ★★★★★ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · AC · 120 feet · 1 creature
+
+Rules. Fly in a straight line up to 120 feet to an empty space adjacent to the target, bypassing movement
+reactions, then melee spell attack. From higher elevation the target is off-guard to the attack. Choose acid
+6d6 + 4d6 persistent, fire 14d6, cold 12d6 and Speed penalty, lightning 6d12 and dazzled, slashing rust
+10d8 or 10d10 against metal, or piercing splinters 10d6 and clumsy 1. Crit doubles applicable damage.
+Archives of Nethys
+
+For Cyrus. A direct cast turns distance into a single devastating attack. Movement timing inside
+Spellstrike is a table question. The direct cast already serves its role.
+
+Spell Riposte
+A · Buff / Heal ★★★★★ · Control ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★★☆☆☆
+
+Reaction · counteract · uncommon
+
+Rules. React to a targeted spell you are aware of. Attempt to counteract it. Success redirects your share
+to the caster instead. Area spells cannot be redirected. Archives of Nethys
+
+For Cyrus. Prepare before a hostile caster fight. Rank, reaction access and actual trigger matter more
+than placing it on an expensive wand.
+
+Contingency
+A · Buff / Heal ★★★★★ · Positioning ★★★★☆ · Utility ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+10 minutes · until your next daily preparations
+
+Rules. Ten-minute cast plus a companion spell of rank 4 or below, up to three actions, that can affect you.
+Fix choices and a Ready-style trigger in advance. Before daily preparations, use your reaction on that
+trigger to apply it only to yourself. At ranks 8 and 9, companion cap rises to 5 and 6. Archives of Nethys
+
+For Cyrus. Use for a clear rescue or defence trigger. One active at a time and the companion spell still
+has to be supplied.
+
+Telekinetic Bombardment
+A · Damage ★★★★☆ · Control ★★★★★ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Reflex · 500 feet · 10-foot burst or 30-foot line
+
+Rules. Choose a 10-foot burst or remotely placed 30-foot line. Deal 14d6 bludgeoning with a Reflex save
+and leave rubble. A failure knocks prone. CF also stuns 1. Add 2d6 per rank. Archives of Nethys
+
+For Cyrus. Prioritize ordinary casting for the 500-foot remote placement. For Expansive use the feat’s
+origin constraints.
+
+
+Rank 8
+Spells, scrolls and wands                                                                                  30
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Quandary
+S · Control ★★★★★ · Debuff ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · 30 feet · 1 creature · sustained · Teleportation
+
+Rules. No initial save. Send a creature to a puzzle room while Sustained. It can act once per turn to check
+Occultism, Perception or Thievery against your DC. CS escapes, S twice solves, CF clears progress. Only
+planar-capable travel can leave independently. Archives of Nethys
+
+For Cyrus. Isolate the dangerous piece while allies solve the rest. Fund subsequent Sustains and the
+party’s target switch.
+
+Disappearance
+S · Buff / Heal ★★★★★ · Positioning ★★★★☆ · Utility ★★★★★
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · touch · 1 target · 10 minutes
+
+Rules. For ten minutes, the touched creature is invisible to all precise senses. Hostile actions are possible
+without ending it. Traces or other cues can let observers locate the target by Seeking. Archives of Nethys
+
+For Cyrus. A powerful infiltration or defensive preparation. Let allies know where they can still help you.
+
+Roar of Freedom
+S · Damage ★★★★★ · Buff / Heal ★★★★☆ · Debuff ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+1 action · Will · 30-foot emanation
+
+Rules. Enemies in the emanation take 12d8 sonic with Will. S halves damage. F adds frightened 1 and
+stupefied 1 for a round. CF doubles damage and applies both 2 for two rounds. Tyrannical foes can take
+−2 circumstance. Allies get 15 temporary HP for a minute. Each rank adds 1d8 and 5 temporary HP.
+Archives of Nethys
+
+For Cyrus. One-action direct cast can fit on the Spellstrike turn and support nearby allies. Its emanation
+remains distinct from Expansive areas.
+
+Arctic Rift
+A · Damage ★★★★★ · Control ★★★★☆ · Debuff ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · 120-foot line
+
+Rules. A 120-foot line deals 12d8 cold, Fortitude. F also slows 1 until next turn. CF encloses the victim in
+ice, immobilized and slowed while held. Ice Hardness 5 and HP 60. Add 1d8 and 5 ice HP per rank.
+Archives of Nethys
+
+For Cyrus. A Fortitude Sprinting line when enemy Reflex is stronger. Its hazard can catch allies, unlike
+Flurry.
+
+
+
+
+Spells, scrolls and wands                                                                                  31
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Desiccate
+A · Damage ★★★★★
+
+Preparation ★★★★☆ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Fortitude · 500 feet · any number of living creatures
+
+Rules. Select any number of living creatures for 10d10 void, basic Fortitude. Plants and water creatures
+worsen their degree by one. Insufficient moisture can make a target immune. Add 1d10 per rank. Archives
+of Nethys
+
+For Cyrus. Selective long-range Fortitude blast. Ordinary casting preserves the full selection.
+
+
+Rank 9
+Foresight
+S · Buff / Heal ★★★★★ · Utility ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★★☆☆
+
+2 actions · touch · 1 creature · 1 hour · Mental
+
+Rules. For one hour the touched creature gets +2 status initiative and resists being off-guard from
+flanking or undetected creatures. Your reaction grants better-of-two on its forced roll or worse-of-two on a
+foe’s opposing roll. One active spell at a time. Archives of Nethys
+
+For Cyrus. Excellent prebuff on a priority PC. Decide who benefits from your reaction more than Cyrus
+benefits from his other reactions.
+
+Remake Physiology
+S · Debuff ★★★★★ · Control ★★★★★ · Positioning ★★★☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Fortitude · touch · 1 living creature
+
+Rules. Fortitude S affected one round, F one minute, CF permanent, CS unaffected. Target takes −20 feet
+status Speeds, clumsy 1, drained 1, enfeebled 1, stupefied 1 and dazzled. A DC 5 flat check at the start of
+its turn can cause slowed 1. Archives of Nethys
+
+For Cyrus. Major all-stat disruption with a success effect. Its touch range fits reach Spellstrike.
+
+Falling Stars
+A · Damage ★★★★★ · Control ★★☆☆☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · basic Reflex · 500 feet · 4 40-foot bursts
+
+Rules. Four 40-foot bursts deal 14d6 sonic, fire, cold or electricity, chosen on casting. Each
+nonoverlapping 10-foot center also deals 6d10 bludgeoning. A creature rolls one basic Reflex save and
+takes each damage type once. Archives of Nethys
+
+For Cyrus. Enormous coverage on an open map. Cast normally when positioning four impacts and
+friendly fire matter.
+
+
+
+
+Spells, scrolls and wands                                                                                 32
+CYRUS VAL’DIRA / PF2E REMASTER                                                     SPELLS, SCROLLS AND WANDS
+
+
+
+
+Phantasmagoria
+A · Damage ★★★★☆ · Debuff ★★★★★ · Control ★★★★☆
+
+Preparation ★★★★★ · Scroll ★★★★☆ · Wand ★★☆☆☆
+
+2 actions · Will · 120 feet · any number of creatures · Mental
+
+Rules. Choose any number of creatures for 16d6 mental on Will F and confused until your next turn. S half
+damage and no reactions until then. CF doubles damage and confuses for a minute. CS unaffected.
+Archives of Nethys
+
+For Cyrus. Selective party-safe Will pressure late. Use on appropriate minds and read its result before
+planning allied moves.
+
+Dimensional Excision
+A · Damage ★★★★★ · Debuff ★★★☆☆
+
+Preparation ★★★★☆ · Scroll ★★★☆☆ · Wand ★☆☆☆☆
+
+2 actions · basic Will · 120 feet · 1 creature · rare · Teleportation
+
+Rules. Rare spell. Basic Will against 14d10 damage and 2d10 persistent bleed. A target outside its native
+plane gets −4 status to the save. At 0 HP it leaves only gear. Archives of Nethys
+
+For Cyrus. A high ceiling against extraplanar foes. It attacks Will without the mental trait.
+
+
+Occult scroll options
+Soothe
+A · Buff / Heal ★★★★★
+
+Preparation — · Scroll ★★★★★ · Wand ★★★☆☆
+
+2 actions · 30 feet · 1 willing creature · 1 minute · occult only · Mental
+
+Rules. Occult-only. Heal a willing target for 1d10+4 and grant +2 status to saves against mental effects
+for one minute. Each rank adds another 1d10+4 healing. Archives of Nethys
+
+For Cyrus. Once occult scroll casting is available, a ranged ally heal fills an emergency role. Judge
+demand alongside the party’s healing.
+
+Hypercognition
+B · Utility ★★★★★
+
+Preparation — · Scroll ★★★★★ · Wand ★★☆☆☆
+
+1 action · occult only
+
+Rules. Occult-only. One action allows up to six Recall Knowledge checks without special abilities,
+reactions or free actions that trigger on those checks. Archives of Nethys
+
+For Cyrus. A specialist information scroll after occult access. Ordinary Arcana and Magus’s Analysis keep
+their own roles.
+
+
+Rank-7 line comparison
+Assumes rank 7 for each cast. Averages are before saves, resistance and weaknesses.
+
+
+Spells, scrolls and wands                                                                                 33
+CYRUS VAL’DIRA / PF2E REMASTER                                                                    SPELLS, SCROLLS AND WANDS
+
+
+
+
+ Spell                 Failed-save damage                Placement                            Why choose it
+
+ Frigid Flurry         9d6 cold + 9d6 slashing,          Up to 120-foot line. Foes only.      Lead for damage and ally
+                       average 63                        Moves Cyrus to the line’s far        safety. Consider the destination
+                                                         end.                                 before committing.
+
+ Blazing Fissure       6d6 bludgeoning + 8d6 fire,       120-foot line. Creatures on solid    Prone on a failed save helps
+                       average 49                        ground.                              melee allies and can cost an
+                                                                                              enemy its next action.
+
+ Telekinetic           14d6 bludgeoning, average         10-foot burst or 30-foot line        Remote shape choice, prone on
+ Bombardment           49                                within 500 feet.                     F, prone and stunned 1 on CF,
+                                                                                              with rubble controlling the map
+                                                                                              afterward.
+
+
+For ordinary casts, Flurry’s movement can place Cyrus for a Strike or move him away from a dangerous
+square. With Sprinting Spellstrike, agree how the movement from the feat and the spell’s carry resolve. A
+normal Flurry cast is already a strong option. Sprinting Spellstrike.
+
+
+Match the area to the encounter
+ Situation                        First choices                                   Practical limits
+
+ Pack beside a flank              Caustic Blast, Disorienting Flash (2            5- or 10-foot bursts are easy to place.
+                                  actions), Force Rain (2 actions), Blister       Choose Reflex vs Fortitude and confirm
+                                  Bomb                                            whether the ally is actually outside the
+                                                                                  area.
+
+ A wide lane                      Lightning Bolt, Blazing Fissure, Arctic Rift    120-foot lines. Lightning Bolt is available at
+                                                                                  rank 3 and its current spell entry gives 120
+                                                                                  feet. The general Line example still gives 60
+                                                                                  feet.
+
+ Big clustered fight              Fireball, Cave Fangs or Howling Blizzard (3     Cast normally for remote placement. Cave
+                                  actions)                                        Fangs can also slow the next advance.
+
+ Allies already mixed in          Direct Electric Arc, Chain Lightning,           Selected targets and foe-only text preserve
+                                  Desiccate, Phantasmagoria, or Frigid            ally safety. Base Spellstrike reduces
+                                  Flurry                                          separately selected targets to one.
+
+ A fight needs dividing           Containment, Wall of Stone, Wall of Mirrors     Pick which opponent or ally to isolate and
+                                  or Wall of Force                                who can exploit the delay. Avoid spending
+                                                                                  the only useful line of approach.
+
+
+Lightning Bolt spell · Line area rule · Expansive Spellstrike.
+
+
+Casting from Aspera and spellhearts
+Use Aspera for spells that repay their fixed charge cost across several encounters. Prepare higher-rank
+spells when scaling drives their value. See Aspera for the individual stave entries.
+
+A spellheart can supply Ignition, Shield or Detect Magic. Use Cyrus’s spell attack or DC for its cantrip
+when better. Ranked activations use the item’s listed statistics. Spellheart rules · Current Fused Staff.
+
+
+
+
+Spells, scrolls and wands                                                                                                       34
+

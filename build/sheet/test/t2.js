@@ -1,0 +1,11 @@
+const m = require('./cyrus.js');
+m.ch.effects['fe:stance-arcane-cascade'] = true;
+m.ch.choices['effect:fe:stance-arcane-cascade'] = {};
+m.ch.conditions = {frightened: 2, 'off-guard': true};
+const r = m.eng.compute(m.ch);
+const f = x => (x >= 0 ? '+' : '') + x;
+console.log('speed', r.speed.total, r.speed.mods.map(x => x.label + ' ' + x.value + (x.applied ? '' : '(x)')).join(', '));
+for (const s of r.strikes) console.log(s.name, s.map.map(f).join('/'), s.formula, '|', s.damage.mods.map(x => x.label + ' ' + x.value + (x.applied ? '' : '(x)') + (x.situational ? '(sit)' : '')).join(', '));
+console.log('AC', r.ac.total, r.ac.mods.map(x => x.label + ' ' + x.value + (x.applied ? '' : '(x)')).join(', '));
+console.log('pending', r.pending.filter(p => p.uid.startsWith('effect')).map(p => p.flag + ':' + p.value));
+console.log(JSON.stringify(m.db.e['fe:stance-arcane-cascade'].rules).slice(0, 1500));

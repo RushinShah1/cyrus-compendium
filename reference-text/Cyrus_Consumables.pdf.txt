@@ -1,0 +1,361 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                   CONSUMABLES
+
+
+
+
+Cyrus’s Consumable Planning
+Carry one immediate answer, one prepared answer, and one mission-specific option. Aspera’s
+two-handed grip makes access and activation as important as the effect.
+
+
+What stays in the kit
+ Priority                        Use case                                        Stock
+
+ A · Emergency healing           Cyrus is outside a healer’s reach or needs      One level-appropriate Healing Potion. A
+                                 HP before the next enemy turn.                  cheap minor dose is a spare.
+
+ A · Targeting through           Smoke, blur, or similar concealment             One Cat’s Eye Elixir.
+ concealment                     threatens a decisive Spellstrike.
+
+ B · Silver or cold iron         A weakness is known, or physical                One Transmuting Ingot of each metal
+                                 resistance can be bypassed.                     when threats are unclear.
+
+ B · Spare one draw action       Cyrus needs a two-action play and has           One Retrieval Prism, attuned to the item
+                                 time to prepare an armor talisman.              most likely to matter this fight.
+
+ B · Break terrain               The map makes a jump worth more than            Blast Boots if available, or an Emerald
+                                 an extra Strike.                                Grasshopper at item 5.
+
+ C · One-encounter answers       A lead identifies a ghost, sustained            Buy that answer from the sections below.
+                                 incoming damage, poison, or a specific
+                                 obstacle.
+
+
+Grades are Cyrus-specific. A means routine stock, B means carry for a recurring problem, and C means
+buy against a known lead. Estimates assume ordinary market prices. The Itemisation and Budget guide
+owns permanent spending priorities.
+
+
+Hands, retrieval, and the off-turn
+Drawing and Stowing Items governs the grip changes. Interact draws a stored or worn object, passes a
+held object to a willing creature with a free hand, or adds a hand to Aspera. Removing a hand or dropping
+an object uses Release. Keep emergency consumables in accessible worn storage and pull packed items
+out before combat. Swap trades a held item for a worn one with one Interact. Drinking, activating and
+regripping still have their own actions.
+
+ Starting point                             Sequence                                     What the turn buys
+
+ Aspera in two hands, potion or elixir      Release 0 → draw 1 → drink 1 → regrip        Three actions restores the weapon.
+ worn                                       1.                                           Delay regrip to move or act with the
+                                                                                         free hand instead.
+
+ Aspera in two hands, emergency             Release 0 → retrieve 0 → drink 1 →           Two actions restores the weapon.
+ potion in prism or belt                    regrip 1.                                    The remaining action can move,
+                                                                                         Recall Knowledge, or recharge.
+
+ Potion Patch loaded and affixed            Activate 1.                                  Keep both hands on Aspera. A
+                                                                                         charged Spellstrike fits in the same
+                                                                                         turn.
+
+
+
+Consumables                                                                                                                     1
+CYRUS VAL’DIRA / PF2E REMASTER                                                                                CONSUMABLES
+
+
+
+
+ Starting point                         Sequence                                     What the turn buys
+
+ Affixed weapon or armor talisman       Triggered free action, reaction, or          Concentrate-only talismans
+                                        listed activation.                           generally leave both hands in place.
+                                                                                     A prism still requires a free hand.
+
+ Two-hand consumable, weapon            Stow or drop Aspera → draw and use           Plan the weapon recovery too. An
+ already released to one hand           the item with the indicated hands.           active melee ally can often use the
+                                                                                     item more cheaply.
+
+
+Aspera must be wielded to make a two-handed Strike or Reactive Strike with it. End a turn in the grip you
+want during enemy movement. If an empty container stays in hand, drop it with Release rather than
+spend time stowing it. Free-action retrieval without a trigger is a turn tool, so hold an item in advance if its
+activation responds to an off-turn trigger. Draw and other manipulate actions can provoke a reaction from
+a creature that has one. Worn manipulate activations, including Blast Boots, require a free hand to touch
+the item. Activating Items
+
+Bow and throwable backup. A bow listed with Hands 1+ can be carried in one hand. Firing needs the
+other hand for the shot. At reload 0, drawing ammunition and firing are part of the Strike. A vial, scroll, or
+Aspera still in that second hand stops the bow shot. An ammunition item's separate activation can add
+actions. A light hammer in one hand leaves the other free, and its thrown attack is a ranged Strike, so it
+uses Dexterity for the attack and normally adds Strength to damage. Compare its backup role with Needle
+Darts in the Combat Flow guide. Player Core weapons · Magical ammunition
+
+Ready the item before initiative
+ Access tool           Activation and limits                                Purchase call
+
+ Retrieval Prism       Item 3, 12 gp. Armor talisman. Attune to one         The basic prism handles a planned
+                       item of up to 1 Bulk during affixing. Free           emergency. Spend 200 gp only when
+                       concentrate activation retrieves it into a free      choosing the item at need solves a recurring
+                       hand from the same plane. Greater item 10,           problem a belt does not already cover.
+                       200 gp, chooses any eligible item in your
+                       possession without pre-attuning.
+
+ Retrieval Belt        Invested belt. Item 7, 340 gp, stores one item       Buy it if the saved action will repeatedly
+                       of up to 1 Bulk with 1 manipulate action.            change a turn. Extra storage gives choices at
+                       Retrieve into a free hand with a free                draw time within the same cooldown.
+                       manipulate action, then both activations lock
+                       for 1 minute. Item 9, 600 gp, stores three. Item
+                       13, 2,500 gp, stores ten.
+
+ Potion Patch          Load and affix in 1 minute, two hands,               Spend 20 gp to preserve a decisive Spellstrike
+                       manipulate. Self activation is 1 concentrate         or grip. It carries potions, so standard
+                       action, hands stay occupied. Item 4, 20 gp,          alchemical elixirs use the draw route.
+                       accepts up to item 10 potions. The 100 gp item
+                       8 accepts up to item 15. The 600 gp item 13
+                       accepts any level. One setup lasts until use,
+                       the next daily prep, or a new patch.
+
+ Prescient Planner     Spend 1 minute and the listed price to retrieve      Shopping insurance between encounters.
+ and Prescient         an undeclared common consumable from your            Taking two feats costs more build flexibility
+ Consumable            backpack. Its level is at most half Cyrus’s level,   than carrying the likely answers.
+                       and carrying it must leave him unencumbered.
+                       Use once between shopping opportunities.
+
+
+
+
+Consumables                                                                                                                  2
+CYRUS VAL’DIRA / PF2E REMASTER                                                                              CONSUMABLES
+
+
+
+Affix a Talisman takes 10 minutes and a repair toolkit in both hands. Wear or wield the host item when
+using its talisman. Two talismans on one host suppress both under the ordinary rule. Ghostbane and
+Escape Fulu carry that trait. A prism or grasshopper therefore competes for the armor’s slot. A crystal or
+Ghostbane Fulu competes for Aspera’s. Striker’s Scroll also occupies Aspera’s talisman slot, as explained
+in Feat Paths and Spell Selections. Other fulu use Affix a Fulu and typically take effect once placed. Fulu
+expire a year after creation unless specified otherwise.
+
+
+Potions and elixirs
+Potion and elixir entries below use one held hand and one manipulate action to drink. Treat the action cost
+and remaining encounter length as part of the price. Feed a potion at normal reach to a willing or helpless
+creature under the potion rules. Put the item on an ally with a free hand if they’re better placed to deliver
+it.
+
+ Item                  Table reference                                      When it earns a slot
+
+ Healing Potion        Minor item 1, 4 gp, 1d8 HP. Lesser item 3, 12        Keep one immediate heal. The minor vial
+                       gp, 2d8+5. Moderate item 6, 50 gp, 3d8+10.           averages 4.5 HP. Lesser averages 14 and is
+                       Greater item 12, 400 gp, 6d8+20. Major item          the real starting emergency dose.
+                       18, 5,000 gp, 8d8+30.
+
+ Cat’s Eye Elixir      Item 2, 7 gp. For 1 minute, within 30 feet, ignore   Outstanding when a high-value attack has a
+                       the concealed targeting flat check and reduce        visibility check. It doesn’t tell Cyrus which
+                       the hidden check to DC 5.                            square an undetected foe occupies.
+
+ Mistform Elixir       Concealed for 3 rounds at item 4 and 18 gp, 1        Drink before a long fight against targeted
+                       minute at item 6 and 56 gp, or 5 minutes at          attacks. Area effects and effects that bypass
+                       item 10 and 180 gp. Obvious position gives no        concealment blunt the payoff.
+                       Hide or Sneak opportunity from this
+                       concealment alone.
+
+ Numbing Tonic         Gain temporary HP immediately and again at           Best before repeated hits, ideally
+                       each turn start for 1 minute. Item 1/5/9/13/16       precombat. Temporary HP don’t stack into a
+                       grants 2/5/10/15/20 temporary HP for                 growing pool.
+                       4/30/150/600/1,400 gp.
+
+ Soothing Tonic        Fast healing for one minute. Item 2, 7 gp, fast      Useful across several rounds or when the
+                       healing 1. Item 5, 28 gp, fast healing 3. Item 10,   party has to move before treating wounds.
+                       185 gp, fast healing 5.                              Use a healing potion when the HP must
+                                                                            arrive now.
+
+ Potion of Quickness   Item 8, 90 gp. The drink grants Haste for 1          A lesser patch makes a 110 gp one-action,
+                       minute. Its extra action is a Stride or Strike,      hands-free setup for a long fight. Haste from
+                       beginning on a later turn.                           Aspera or an ally covers routine use.
+
+
+
+
+Consumables                                                                                                                 3
+CYRUS VAL’DIRA / PF2E REMASTER                                                                            CONSUMABLES
+
+
+
+
+Weapon treatments and movement
+ Item                 Table reference                                     When it earns a slot
+
+ Transmuting Ingot    One held hand, 1 manipulate action. Item 1          Apply to Aspera before contact when the
+                      silver costs 3 gp, cold iron 4 gp. Item 10          material matters. Carry metal chips for
+                      adamantine costs 154 gp. The weapon counts          repeated Needle Darts. The ingot changes
+                      as that material for its physical damage for 1      the main weapon’s damage.
+                      minute.
+
+ Analysis Eye         Item 4, 20 gp. One held hand, 1 manipulate          Buy once for an unfamiliar mixed fight.
+                      action. First successful Strike with the treated    Recall Knowledge covers more questions
+                      weapon against each creature lets Cyrus learn       and Magus’s Analysis already earns its place
+                      one weakness or resistance as a free action. The    in Cyrus’s turn.
+                      GM chooses when several qualify.
+
+ Potency Crystal      Weapon talisman. Free concentrate on making         Base version is a good experiment for a
+                      the attack before rolling. Item 1, 4 gp, makes it   backup hammer or an early Aspera without
+                      +1 striking for that Strike and the rest of the     striking. Keep permanent fundamental runes
+                      turn. Item 9, 150 gp, +2 greater striking. Item     first in the budget.
+                      15, 1,300 gp, +3 major striking.
+
+ Ghostbane Fulu       Item 6, 40 gp. Weapon talisman. Free                Buy for a specific haunting before
+                      concentrate after a successful Strike against an    committing to a permanent property rune.
+                      incorporeal creature, before damage. Gives the      Competes with the crystal or Striker’s Scroll.
+                      weapon ghost touch against that creature for 1
+                      minute.
+
+ Escape Fulu          Item 7, 70 gp. Armor talisman. Free concentrate     Bring when grabs or a getaway are
+                      when attempting Escape. For 1 minute gain +2        expected. An Escape still uses its normal
+                      status to Escape and to Stealth checks to Hide      action and attack trait.
+                      or Sneak.
+
+ Emerald              Armor talisman, trained Athletics, 1 concentrate    Turn on the jump without a draw or grip
+ Grasshopper          action. Item 5, 30 gp, Leaps up to 40 feet          change. Excellent for a known gap or ledge.
+                      horizontally and 10 vertically. Item 9, 150 gp,     Put a prism on the armor when access is the
+                      reaches 100/30 feet and boosts further Leaps        problem.
+                      that turn. If airborne at turn’s end, descend
+                      harmlessly at 60 feet per round.
+
+ Blast Boots          Uncommon footwear gadget. Attach in 1               Try the moderate pair on a map with
+                      minute. Free a hand and spend 1 manipulate          elevation. Resolve the chosen jump’s check
+                      action to High or Long Jump without the opening     and remaining requirements.
+                      Stride. Item 1 costs 3 gp. Item 3, 11 gp, adds up
+                      to 30 feet vertical or 45 feet horizontal to the
+                      respective jump.
+
+ Gecko Pads           Uncommon handwear gadget, 2 manipulate              Use for a deliberate approach or let the ally
+                      actions. Climb Speed equals land Speed while        with better hand economy use them.
+                      hands are free. Item 5, 25 gp, 10 minutes. Item
+                      9, 125 gp, 1 hour.
+
+
+Whetstones use their own activation rather than taking a talisman’s affixing activity. Load the needed
+treatment before a fight when the duration permits.
+
+
+
+
+Consumables                                                                                                                4
+CYRUS VAL’DIRA / PF2E REMASTER                                                                         CONSUMABLES
+
+
+
+
+Mission supplies
+ Type                                   Example and use
+
+ Oils                                   Oil of Skating, item 2 and 5 gp, applies to feet or footwear with two
+                                        hands and 1 manipulate action. For 1 hour, +10-foot status to Speed on
+                                        flat ground or +20 downhill. Difficult, greater difficult, and uneven
+                                        ground remove the bonus. Uphill becomes difficult terrain and Balance
+                                        checks worsen by one degree. Oil of Potency uses two hands and 1
+                                        manipulate action. Item 2, 7 gp, supplies +1 striking weapon or +1
+                                        resilient armor for 1 minute. Oil of Mending, item 3 and 9 gp, applies
+                                        with two hands and repairs an item as 2nd-rank Mending.
+
+ Bottled breaths                        The bottled breath trait usually takes one hand to inhale or administer.
+                                        Effects last while holding breath, normally up to 5 + Constitution
+                                        modifier rounds before action or damage costs. Blight Breath, item 12,
+                                        350 gp, takes 1 manipulate to inhale for poison resistance 10. Its
+                                        separate 1-action exhale makes a 15-foot cone, 10d6 poison, DC 29
+                                        basic Reflex, and expends the dose. Buy only for poison work where a
+                                        cone is also useful.
+
+ Teas                                   AoN tea index · Energizing Tea entry. One dose costs 20 gp. A one-action
+                                        drink gives +1 item to Athletics and Acrobatics for 10 minutes. A
+                                        10-minute ceremony with sterling tea ware extends it to 1 hour. Use a
+                                        dose for a climb, contest or court demonstration when a permanent item
+                                        bonus is smaller.
+
+ Missives                               The level-5 Butterfly Heartening Missive costs 25 gp. Compose to a
+                                        known recipient and location. It flies there at about 15 miles per hour for
+                                        up to 24 hours. On activation, once in the next 24 hours it improves an
+                                        unsuccessful Diplomacy or Performance check by one degree, a fortune
+                                        effect. Bull, Rabbit, and Turtle instead grant +1 item to Fortitude, Reflex,
+                                        or Will for 24 hours at item 6 and 50 gp.
+
+ Explosive missive                      Explosive Missive uses a composed message and 2 actions with
+                                        concentrate and manipulate. Pick acid, cold, electricity, fire, or sonic
+                                        through its inscription. It deals 4d6 in a 5-foot burst from a corner of the
+                                        missive’s space, DC 18 basic Reflex. Critical failure adds 1d4 persistent
+                                        of the same type. Use as a prepared environmental tool and check
+                                        friendlies at the blast point.
+
+ Bombs                                  Lesser Bottled Lightning is item 1 and 3 gp. One-action ranged Strike
+                                        deals 1d6 electricity and 1 splash. A hit makes the main target off-guard
+                                        until the start of the thrower’s next turn. Let a reliable ranged ally use it
+                                        to set Cyrus up when nobody can flank.
+
+ Alchemical tools                       Lesser Smoke Ball is item 1 and 3 gp. Two hands, 1 manipulate action,
+                                        5-foot burst from a corner of the user’s space. One minute of mutual
+                                        concealment unless strong wind disperses it. Use for a withdrawal or
+                                        crossing, and plan around allies’ targeting checks.
+
+ Hostile fulu                           Stumbling Fulu is item 3 and 10 gp. Affix to armor. For 1 hour, after a
+                                        completed Stride the wearer attempts DC 17 Reflex. Failure gives
+                                        clumsy 1. Critical failure gives clumsy 2 and prone. A preplanned trick
+                                        for someone whose armor you can reach, with a fixed DC.
+
+ Alchemical food, plants, and bottled   Search the alchemical index for a departure meal, resistance,
+ monstrosities                          movement, or scout effect. Treat each as mission prep and check the
+                                        activation window and delivery.
+
+
+
+Consumables                                                                                                             5
+CYRUS VAL’DIRA / PF2E REMASTER                                                                               CONSUMABLES
+
+
+
+
+ Type                                           Example and use
+
+ Poisons, drugs, and mutagens                   Alchemical index. Injury poison is a planned weapon application, with
+                                                attack and save gates. Mutagens trade benefits against a drawback.
+                                                Drugs can introduce affliction costs. Assign these to an ally built to
+                                                exploit them or buy only when the stat block solves the mission.
+
+ Ammunition and siege ammunition                Use magical ammunition for a bow or launcher you actually carry.
+                                                Magical siege ammunition belongs in an agreed siege loadout. Match
+                                                weapon and preparation to the ammunition entry.
+
+ Spell catalysts and other consumables          A spell catalyst modifies its named spell with its own cost and
+                                                conditions. Use a general consumable to answer a known obstacle.
+                                                Check the delivery action before relying on either in the Spellstrike turn.
+
+
+
+
+Buy and prepare by tier
+ Levels        Refill first                                          Add when the mission points there
+
+ 3–5           Lesser Healing Potion, Cat’s Eye Elixir, one silver   A 4 gp crystal, 11 gp moderate Blast Boots, 12 gp
+               ingot and one cold iron ingot cost 26 gp together.    prism, or 20 gp patch. Start with one solution, plus
+                                                                     the price of any potion loaded into the patch.
+
+ 6–9           A moderate heal, Cat’s Eye, both metals, and one      Escape or ghostbane for a real lead, Greater
+               lesser Mistform cost 82 gp.                           Grasshopper for known terrain, or the 110 gp
+                                                                     patched Quickness for a set-piece. Check repeated
+                                                                     draw savings before buying the 340 gp belt.
+
+ 10–16         Keep cheap answers with no fixed DC when the          Prefer one capability that changes an encounter to
+               problem stays relevant. Upgrade the immediate         a stack of high-level fixed-DC items. Accept
+               heal when its expected HP is material.                long-use tools when you have scouting time.
+
+
+Before combat. Decide who owns the immediate heal, which armor talisman is live, and which weapon
+treatment matches the lead. During combat, let the ally with the accessible hands or closest position
+deliver the item when they can save the better action. See Spell Selections for scrolls and wands,
+Itemisation and Budget for permanent gear, and Combat Flow and Teamwork for off-turn choice.
+
+
+
+
+Consumables                                                                                                                   6
+

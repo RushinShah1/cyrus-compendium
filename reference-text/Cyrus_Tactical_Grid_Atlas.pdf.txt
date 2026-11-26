@@ -1,0 +1,853 @@
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Where Cyrus can flank
+Connect the centers of the two allies’ spaces. An angled line works if it crosses opposite edges or opposite
+corners of the target’s space. Both allies must also be able to attack it in melee.
+
+ 5     Flank at 5 ft         10   Flank at 10 ft       Flank via corner              No flank       A   Ally       T   Target
+
+
+
+     Column 0 · 15 ft from target                                    Column 1 · 10 ft from target
+
+
+           4                                                              4
+
+
+           3      ×                                                       3
+
+                                            T                                                           T
+           2                                       A                      2            10       5              A
+
+
+           1      ×                                                       1
+
+
+           0                                                              0
+
+
+                  0      1        2         3      4                             0        1     2       3      4
+
+     Dashed lines from (0, 1) and (0, 3) cross opposite              Solid lines from (1, 1) and (1, 3) enter at the circled
+     edges. Cyrus is out of reach there.                             west corners and exit the east edge.
+
+
+
+All four colored squares flank. The two amber lines cross the west edge at its endpoints, then cross the east
+edge. These maps treat a corner as part of both edges that meet there.
+
+
+Tiny targets depend on the footprint
+Player Core gives Tiny a space smaller than 5 feet. These examples use a 2½-foot square and keep the ally in
+the same grid cell. Resolve shared-square positions and the exact footprint with Alex.
+
+
+
+  Centered in the square                                            Northeast quarter of the square
+
+
+
+                                                                                     10
+                                                                                                T
+                       10 5       T     A                                                           A
+
+
+
+
+If the table uses a full square for the Tiny token’s flanking footprint, use the Small / Medium maps.
+
+
+
+
+Flanking       Range and reach        Size and space                                                                      1 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Small / Medium target flanks
+Both sizes occupy one 5-foot square. Each panel fixes the ally’s position. Colored squares can flank with
+that ally. The numbers show the reach Cyrus needs.
+
+ 5   Flank at 5 ft       10   Flank at 10 ft            Flank via corner       No flank        A    Ally       T   Target
+
+
+
+Ally adjacent                                                                                       Ally needs 5 ft of reach
+
+
+  Edge                                         Corner
+
+                                                   10
+
+                                                          5
+
+       10     5      T   A                                      T
+
+                                                                     A
+
+
+
+
+           4 flanking squares                       2 flanking squares
+
+
+
+
+Ally one square farther out                                                                        Ally needs 10 ft of reach
+
+
+  Edge aligned                                 Offset from edge                    Far corner
+
+                                                                                          10
+
+                                                   10                                          5
+
+       10     5      T         A                                T                                     T
+
+                                                                           A
+
+                                                                                                                   A
+
+           2 flanking squares                       2 flanking squares                     2 flanking squares
+
+
+
+
+How to use these grids
+With an ally beside an edge, Cyrus has four flanking squares, including the two amber squares at 10 feet.
+An ally beside a corner can flank with Cyrus along the opposite diagonal.
+
+
+Rotate or mirror the panel to match the ally’s side. Together the panels cover every ally square within 10-foot
+reach for a one-square ally. The flanking totals include amber squares. The unshaded squares fail the flanking
+test.
+
+
+
+
+Flanking    Range and reach     Size and space                                                                         2 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Large target flanks
+A Large enemy occupies a 2×2 footprint. The lines test the outside boundary of the whole target. The
+dotted line is one example from each panel.
+
+ 5   Flank at 5 ft       10       Flank at 10 ft            Flank via corner        No flank          A    Ally       T   Target
+
+
+
+Ally adjacent                                                                                              Ally needs 5 ft of reach
+
+
+  Edge                                             Corner
+
+                                                      10
+
+      10                                                    5
+
+      10 5
+                     T                                              T
+      10 5                    A
+
+                                                                           A
+
+
+
+           5 flanking squares                              2 flanking squares
+
+
+
+
+Ally one square farther out                                                                               Ally needs 10 ft of reach
+
+
+  Edge aligned                                     Offset from edge                     Far corner
+
+                                                                                               10
+
+      10                                              10                                             5
+
+      10 5                                            10 5
+                     T                                              T                                        T
+      10 5                          A
+
+                                                                                A
+
+                                                                                                                          A
+
+           5 flanking squares                              3 flanking squares                       2 flanking squares
+
+
+
+
+How to use these grids
+With the ally beside an edge, Cyrus can flank from five squares. In the farther column, he can even stand
+one row beyond the target’s end. The line still enters and leaves through opposite outer edges.
+
+
+Rotate or mirror the panel to match the ally’s side. Together the panels cover every ally square within 10-foot
+reach for a one-square ally. The flanking totals include amber squares. The unshaded squares fail the flanking
+test.
+
+
+
+
+Flanking    Range and reach         Size and space                                                                            3 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Huge target flanks
+A Huge enemy occupies a 3×3 footprint. The ally’s row matters now. Compare the middle and end
+positions against the same target.
+
+ 5     Flank at 5 ft       10   Flank at 10 ft                Flank via corner           No flank          A    Ally         T   Target
+
+
+
+Ally adjacent                                                                                                   Ally needs 5 ft of reach
+
+
+  Middle of edge                                 End of edge                                 Corner
+                                                                                                  10
+
+       10                                                10                                            5
+
+       10 5                                              10 5
+
+       10 5            T        A                        10 5         T                                              T
+
+       10 5                                              10 5                    A
+
+       10                                                                                                                    A
+
+
+
+            8 flanking squares                                7 flanking squares                       2 flanking squares
+
+
+
+
+Ally one square farther out                                                                                    Ally needs 10 ft of reach
+
+
+  Middle aligned                       End aligned                        Offset from edge                 Far corner
+
+                                                                                                           10
+
+                                        10                                 10                                    5
+
+     10 5                               10 5                               10 5
+
+     10 5       T          A            10 5         T                           5   T                                   T
+
+     10 5                               10 5                     A
+
+                                                                                              A
+
+                                                                                                                                    A
+
+
+      8 flanking squares                 7 flanking squares                 5 flanking squares                 2 flanking squares
+
+
+
+
+How to use these grids
+An adjacent ally at the middle of a side gives Cyrus eight clear positions, including a reach square one row
+beyond either end. A corner-to-corner flank has two clear positions, along the opposite diagonal.
+
+
+Rotate or mirror the panel to match the ally’s side. Together the panels cover every ally square within 10-foot
+reach for a one-square ally. The flanking totals include amber squares. The unshaded squares fail the flanking
+test.
+
+
+
+
+Flanking     Range and reach        Size and space                                                                                  4 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+
+Expansive Spellstrike on the grid
+All four burst corners are legal. These examples hold Cyrus and a Medium target two squares apart so
+you can see what changes when the origin moves. Each square is 5 feet.
+
+C Cyrus                 T Strike target           A Ally        E Other enemy               Chosen origin        Area
+
+
+
+   Near upper corner                                            Far upper corner
+
+
+
+                          A                E                                       A                E
+
+                  C            T                                             C          T
+                                           E                                                        E
+
+
+
+   Cyrus and the ally are in the burst. The two                 Cyrus is clear. The burst catches the upper enemy
+   enemies farther right are outside it.                        and clips the ally.
+
+
+
+
+   Near lower corner                                            Far lower corner
+
+
+
+                          A                E                                       A                E
+
+                  C            T                                             C          T
+                                           E                                                        E
+
+
+
+   Cyrus and the ally are still inside. The same width          Cyrus and the ally are clear. The burst catches the
+   shifts one row down.                                         lower enemy instead.
+
+
+
+
+Picking the anchor
+Choose a corner of the Strike target’s square, then lay down the full burst around it. With this 10-foot
+reach setup, either far corner spares Cyrus. The ally’s actual square decides which corner is clean.
+The weapon Strike still targets only T. The spell affects creatures in its area normally.
+
+Open, level grids throughout. Check the spell’s own targeting, cover and line of effect if terrain or other obstacles
+intervene.
+
+
+
+Expansive Spellstrike     Area rules   Area templates   Cover                                                    5 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+
+Angle matters as much as reach
+The 10-foot reach exception lets Cyrus Strike two squares diagonally. Bursts still use the ordinary
+area grid. Approaching at an angle can open up corners that a straight approach leaves inside the
+blast.
+   Cyrus clear                     Cyrus in area                   Both markers are legal origins.
+
+
+  Straight at reach                                Offset at reach                          Two diagonals
+
+
+              C          T                                     C                                         C
+
+                                                                       T
+                                                                                                                 T
+
+
+
+  2 of 4 corners clear Cyrus.                      3 of 4 corners clear Cyrus.              All 4 corners clear Cyrus.
+
+
+
+Same far corner on the diagonal
+Moving the burst’s anchor and increasing its radius are different decisions. The grids use the same position
+for both creatures and the same corner.
+
+
+
+  10-foot burst                                    15-foot burst                            20-foot burst
+
+
+          C                                               C                                          C
+
+
+
+                  T                                                T                                         T
+
+
+
+
+  12 squares. Cyrus is clear.                      24 squares. Cyrus is clear.              44 squares. Cyrus is inside.
+
+
+
+
+Medium target corners that spare Cyrus
+ Target offset from Cyrus                                                       10 ft            15 ft               20 ft
+ Adjacent on an edge                                                            0/4              0/4                 0/4
+ Adjacent on a diagonal                                                         1/4              0/4                 0/4
+ 2 straight                                                                     2/4              0/4                 0/4
+ 2 over, 1 across                                                               3/4              1/4                 0/4
+ 2 over, 2 across                                                               4/4              3/4                 0/4
+
+
+
+
+Range and reach       Area rules     Area templates     Expansive Spellstrike                                                6 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+
+Larger targets give you more anchors
+Each tile stays 5 feet. A Large target has 9 legal vertices, including the intersection inside its
+footprint. A standard Huge target has 16 and a Gargantuan target has 25. One affected tile is enough
+to include the creature.
+C Cyrus           T Strike target         A Ally          E Other enemy           Chosen origin    Area
+
+
+
+   Large target · all 9 corners                                 Large target · 20-foot burst
+
+
+
+                                                                             C   A
+                                                                                      T
+                  C
+                               T                                                                    E
+
+
+
+
+   For a 10-foot burst, 7 of these 9 corners spare              The far lower corner clears Cyrus by the clipped
+   Cyrus from this position. The centre vertex is legal.        edge of the template. The ally is still in the area.
+
+
+
+
+   Huge target · 20-foot burst                                  Cone preview · a source square
+
+
+
+                                                                                          S
+              C   A
+
+                          T                                                      C   S    T
+                                         E   E
+
+
+
+
+   Pushing the origin out to the far edge clears both           From the chosen flank square, aim through T. The
+   Cyrus and the ally and reaches foes beyond T.                dotted arrow shows another source and aim. Only
+                                                                the flank cone is shaded.
+
+
+
+Before committing the spell
+A burst’s selected corner does not need its own weapon reach check. The Strike reaches the creature,
+then the feat picks the anchor. With a cone, start at Cyrus when he is adjacent. Otherwise choose a
+square adjacent to the target as the source, then aim so the target is included.
+
+The spell’s area can resolve on an ordinary Strike miss. A disrupted spell, such as on a critical Strike failure,
+produces no burst or cone.
+
+
+Expansive Spellstrike   Area rules   Area templates   Cover   Magus                                                    7 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Expansive Spellstrike cones
+15-, 30- and 60-foot templates on a 5-foot grid. At nonadjacent reach, choose a square beside the target
+and aim to include at least one of its squares. If Cyrus is adjacent, his own square supplies the origin.
+
+
+  15 ft · Straight           7 squares       30 ft · Straight        28 squares     60 ft · Straight    104 squares
+
+
+
+
+  15 ft · Diagonal           6 squares       30 ft · Diagonal        24 squares     60 ft · Diagonal     96 squares
+
+
+
+
+Placements that hit the target and spare both PCs
+Cyrus has 10-foot reach on the west. A Medium ally flanks in the same row on the east, 5 feet from the target. Counts
+are safe choices over all choices that include the target.
+
+
+Target                               Source squares        15 ft                  30 ft                60 ft
+
+Medium                               8                     2/8                    4 / 20               4 / 20
+
+Large                                12                    16 / 28                9 / 52               9 / 52
+
+Huge                                 16                    38 / 48                14 / 84              14 / 84
+
+
+Read the footprint
+The 30- and 60-foot straight cones in the AoN-linked Areas diagram start with two shaded squares. The
+counts include both mirror placements of that slightly offset shape. If your table centers straight cones on the
+source instead, the safe counts at 30 and 60 feet are 2 for Medium, 6 for Large and 10 for Huge.
+
+
+Each placement uses one of eight compass directions on an open, flat grid. With this flank, none of the clean
+cones reaches directly behind the ally on the same row. Aim above or below that row to reach past the
+target. Measure cover from the cone’s actual origin.
+
+
+
+
+Expansive Spellstrike   Cone rules    Area diagrams   Flanking   Reach                                           8 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Medium target · clear the ally
+Cyrus stands two squares west of the enemy and an ally stands directly opposite. Three southward
+sweeps use that same position. The last panel rotates the flank to show a diagonal option.
+
+C Cyrus            T Strike target                 A Ally         E Other enemy           ◆ Source and aim              Area
+
+
+
+  15 ft · south across the flank                                          30 ft · same southward aim
+
+
+
+                                                                                                C       T   A
+
+                        C              T      A
+                                                                                                                E
+                                              E                                                                     E
+
+                                       E
+
+
+
+
+  Start north of T and aim south. The first row takes T                   Use the offset that puts the first-row extra square to
+  alone. The wider rows catch enemies south and                           the west. The east flank stays clear as the cone
+  southeast.                                                              widens farther south.
+
+
+
+
+  60 ft · sweep much farther south                                        15 ft · diagonal flanking variant
+
+
+                               C   T     A
+
+                                                                                            C           E
+                                              E
+                                                                                                    E
+
+                                                                                                        T
+                                                    E
+
+
+                                                                                                                A
+                                   E
+
+
+
+
+  Use the same edge and direction as the 30-foot                          Origin is the ally’s square. The northwest cone takes
+  version. The full footprint reaches foes deeper south                   T and two foes. Cyrus is three diagonals from the ally
+  and off to the southeast.                                               (20 ft), beyond this cone.
+
+
+
+
+Break the flank line with a sideways shot
+From the north or south side, the target is in the first row and the flanking ally lies outside it. In this
+straight-flank setup, every 10-foot burst corner catches Cyrus or the ally. If Cyrus closes to adjacency on
+that same line, every cone that hits the target catches the ally.
+
+
+
+
+Expansive Spellstrike       Cone rules       Area diagrams   Flanking   Reach                                                  9 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Large target · clear the ally
+Cyrus and the ally flank across the upper row of a 2×2 target. The lower row gives a second approach to
+the same target. The final panel sends the spell back the other way.
+
+C Cyrus            T Strike target                      A Ally        E Other enemy            ◆ Source and aim                 Area
+
+
+
+  15 ft · graze the southern edge                                             30 ft · carry on past the flank
+
+
+                                                                                           C                A
+                   C                             A                                                  T
+                                                                                                                        E
+                                      T
+                                                    E
+                                                                                                            E
+
+
+
+                                  E
+
+
+
+
+  Use the gap square and aim southeast. The lower                             Keep the same source and aim. The cone reaches
+  two target squares are enough. The cone reaches an                          farther east and south while leaving the entire flank
+  enemy one row below the ally.                                               row outside.
+
+
+
+
+  60 ft · keep the same near edge                                             30 ft · reverse from the ally
+
+               C             A
+                        T
+                                                                                                    C                       A
+                                         E                                                                      T
+                                                E
+
+                                                                                                        E
+
+
+
+
+                                                                                                                    E
+
+
+
+
+  The first affected row stays one square south of the                        Use the ally’s square as the origin and aim
+  ally regardless of length. The 60-foot cone adds                            southwest. This catches the same target edge, then
+  reach into that open quadrant.                                              spreads back toward Cyrus’s side but below him.
+
+
+
+
+Use the target’s width to pick a quadrant
+The southeast and southwest shots include the lower row and leave the upper flank row clear. From the
+west gap, the 30- and 60-foot diagonal versions reach past the ally’s column on the row below. The
+southeast version also works if Cyrus closes to that gap square.
+
+
+
+
+Expansive Spellstrike       Cone rules       Area diagrams       Flanking   Reach                                                  10 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Huge target · clear the ally
+Cyrus and the ally flank across the middle row of a 3×3 target. A diagonal from either side can take the
+bottom row and leave the flank line untouched.
+
+C Cyrus             T Strike target                 A Ally        E Other enemy          ◆ Source and aim                 Area
+
+
+
+  15 ft · cut across the bottom row                                       30 ft · go past the body
+
+
+
+                                                                                        C         T       A
+
+                    C           T               A                                                                     E
+
+
+                                                                                                          E
+                                E
+
+                            E
+
+
+
+  Use the west gap and angle southeast. The cone                          Keep the cone one row below the flank line. It
+  crosses the bottom three target squares and catches                     reaches past the southeast corner, from a source still
+  enemies immediately south.                                              on Cyrus’s side.
+
+
+
+
+  60 ft · extend the same sweep                                           60 ft · sweep back from the ally
+
+
+                C       T   A                                                                         C           T   A
+
+
+                                      E                                                           E
+                                            E
+                                                                                                              E
+
+
+
+
+  The same aim clears both PCs even at 60 feet. If the                    The ally’s square is the origin. Aim southwest across
+  other enemies are north of the flank, aim northeast                     the bottom row and reach enemies west and south of
+  across the top row.                                                     the target without clipping Cyrus.
+
+
+
+
+Aim through a strip of the footprint
+You only need one target square inside. The lower strip works at all three lengths here and especially well at
+30 or 60 feet. A straight 15-foot shot from the gap also fits entirely inside this Huge target, but extending
+that straight shot to 30 feet hits the ally.
+
+
+
+
+Expansive Spellstrike   Cone rules        Area diagrams      Flanking   Reach                                                11 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Line spells on the grid
+The default line is 5 feet wide. The official Areas diagram shows a single chain of squares, including at
+shallow angles. Each panel below redraws one of the published footprints.
+
+30-foot line                                            60-foot line
+
+  Straight                                6 squares        Straight                               12 squares
+
+
+
+
+  Shallow angle                           6 squares        Shallow angle                          11 squares
+
+
+
+
+  Steeper angle                           5 squares        Steeper angle                          10 squares
+
+
+
+
+  45° diagonal                            4 squares        45° diagonal                            8 squares
+
+
+
+
+Use the footprint for the angle you chose
+A yellow dot marks the origin drawn in the Areas diagram. The grid counts diagonal steps at 5, then 10 feet.
+The shallow-angle footprints above follow the published illustration, where a custom angle may need a table
+ruling on the last square.
+
+
+
+
+Line   Areas diagram   Grid measurement                                                                 12 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+What Foundry highlights
+An outlined ray is the geometric beam. Here the amber squares model the reported default rule for legacy
+measured rays, which highlights a cell when its center falls inside the beam.
+
+
+
+  45° · from a corner
+
+  Four centers lie inside. This placement
+  matches the four-cell 30-foot diagonal
+  from the book.
+
+
+
+  Amber = highlighted · dot = cell center
+
+
+
+
+  45° · from an edge midpoint
+
+  Eight centers lie inside. A half-square shift
+  puts two centers in each occupied column.
+
+
+
+
+  Amber = highlighted · dot = cell center
+
+
+
+
+  30° · from a corner
+
+  Six centers lie inside. One column
+  highlights two squares where the beam
+  crosses a row boundary.
+
+
+
+  Amber = highlighted · dot = cell center
+
+
+
+
+Use the spell’s line control in Foundry
+Try the spell’s Area button or the Ray / Line measurement tool. Version 14 uses regions for PF2e areas and add-on
+maintainers report similar mismatches. These examples model geometry and exclude ties; exact snapping and
+highlights may vary in Alex’s world.
+
+In 2014 D&D, the half-square test applied to circles. Xanathar’s template method counts any partial square under a
+line template, which can give angled lines a wider footprint.
+
+
+
+
+Foundry templates   Line Template Fix   Foundry 14.370   Xanathar’s template method                         13 / 14
+CYRUS VAL’DIRA / PATHFINDER 2E REMASTER
+
+
+Expansive Spellstrike lines
+Cyrus has 10-foot reach with Aspera. At nonadjacent reach, choose a source square beside the target and
+run the line through at least one of the target’s occupied squares.
+
+C Cyrus             A Ally           T Target           E Other enemy               S Source square
+
+
+
+   Medium · straight across the flank
+                                                                                          S
+   Start north of the target and aim south.                                     C         T A
+   The line leaves the east-side ally clear and
+   hits a second enemy in the same file.
+
+                                                                                          E
+
+
+
+   30-foot line · 5 feet wide
+
+
+
+
+   Large · cross the lower row
+
+   Start west of the lower row and aim east.
+   The line crosses the lower half of the
+                                                                  C                       A
+   target, one row below the flanking ally.
+                                                                                T
+                                                                        S                           E
+
+
+
+   30-foot line · 5 feet wide
+
+
+
+
+   Huge · angle from the west gap
+
+   Start in the west gap and angle southeast.
+   The first two line squares overlap the                               C   S         T         A
+   bottom row of the target. The line reaches
+   a foe past the southeast corner.
+                                                                                                E
+
+
+   30-foot line · 5 feet wide
+
+
+
+
+If Cyrus is adjacent, the line starts from his space
+Check that the line includes the Strike target and trace it to full length. Use the spell’s own width for anything
+wider than 5 feet.
+
+
+
+
+Expansive Spellstrike   Line    Areas diagram   Range and reach                                             14 / 14
+

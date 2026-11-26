@@ -1,0 +1,501 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                         COMBAT FLOW AND TEAMWORK
+
+
+
+
+Cyrus’s Combat Flow &
+Teamwork
+A play reference for a Strength Laughing Shadow Magus through level 16. Start with the
+problem the party needs solved. Use the grid atlas for flanks, reach and area templates.
+
+
+Choose the turn
+Track three things at the start of Cyrus’s turn. Is Spellstrike charged? Is a worthwhile target in
+reach? Is Cascade active? Check remaining Focus Points and the initiative order. Reassess after each
+action if the target falls, moves, or forces a different plan.
+
+
+  Urgent problem                                                Rescue, Escape, retreat or clear the objective
+
+
+
+  Charged + target in reach              Spellstrike                               Recharge, defend or move
+
+
+
+  Charged + target one move
+                                         Stride                                    Spellstrike
+  away
+
+
+
+  Discharged + good shot now             Recharge or Force Fang                    Spellstrike
+
+
+
+  Better spell or team setup             Use the off-turn                          Finish charged if possible
+
+
+Keep the first attack for the action that matters most. A full-accuracy Trip can buy two allies a
+better turn. A save spell can follow that Trip at full effectiveness. Spend the charged Spellstrike
+immediately when a hit or a debuff could end the threat before it acts.
+
+
+Spellstrike cadence
+                                                                                   Spellstrike from a better
+  Close and Spellstrike                  Recharge and control
+                                                                                   position
+
+
+
+ Situation                     Three actions                               End state and next decision
+
+ One in two                    T1 Stride → Spellstrike. T2 Analysis or     T1 ends discharged. T2 ends charged and
+                               Recharge → two-action save spell.           addresses a second job.
+
+ Two in three                  T1 Spellstrike → Analysis or Recharge. T2   T1 needs a target already in reach. Carry
+                               Stride → Spellstrike. T3 Recharge →         the charge forward after T3.
+                               control, defence or movement.
+
+
+
+
+Combat flow and teamwork                                                                                               1
+CYRUS VAL’DIRA / PF2E REMASTER                                                         COMBAT FLOW AND TEAMWORK
+
+
+
+
+ Situation                    Three actions                               End state and next decision
+
+ Already in range and         Analysis, Recharge, or Force Fang →         Analysis can reveal the right payload first.
+ discharged                   Spellstrike.                                Choose Fang when the force damage
+                                                                          matters and its target will survive for the
+                                                                          follow-up or another target is available.
+
+ Target still out of reach    Ranged two-action spell → Recharge.         Make the enemy spend actions reaching
+                                                                          Cyrus. Use a non-spell option if its position
+                                                                          or resistances make casting poor value.
+
+ Hasted approach              Quickened Stride → Recharge →               Extra action is for Stride or Strike. Haste
+                              Spellstrike. Or quickened Stride →          begins adding actions when Cyrus next
+                              Spellstrike → Recharge if charged.          regains actions.
+
+ A useful finishing action    Spellstrike → Force Fang, Step, Shield or   Force Fang has no attack roll. Dimensional
+                              ordinary Recharge.                          Assault as the last action trades attack
+                                                                          accuracy for a teleport and recharge.
+
+
+Spend the gap well. A charged Spellstrike can wait through a turn of control or rescue. An ally getting a
+full turn back or a boss losing an action can outweigh a second attack at MAP. Magus · Haste
+
+Cascade timing. At 7, a studious spell such as Blur lets Cyrus enter as his next action for free. Haste
+becomes a studious spell at 11. At 14, Hasted Assault combines a focus recharge with self-Quickened from
+next turn, leaving two actions now. Arcane Shroud at 16 adds a short chosen spell effect when Cyrus
+enters Cascade. Studious spells · Hasted Assault · Arcane Shroud
+
+
+
+
+Combat flow and teamwork                                                                                                  2
+CYRUS VAL’DIRA / PF2E REMASTER                                                         COMBAT FLOW AND TEAMWORK
+
+
+
+
+Setup and off-turns
+ Job                         Turn                                         Why spend it
+
+ Prepare as enemies          Runic Weapon (2) → Cascade (1).              Use when Aspera or the backup is below
+ close                                                                    the buff’s rune effects and several Strikes
+                                                                          remain. If the weapon is already covered,
+                                                                          start with support, defence or damage.
+
+ Information and control     Magus’s Analysis (1) → Slow, Fear, Acid      Learn which defence, reaction or weakness
+                             Grip or another two-action spell.            matters, then act on it or tell the ally who
+                                                                          can.
+
+ Create a flank or deny      Trip (1) → Recharge or Analysis (1) → Step   Strong before multiple allies act. Step
+ pursuit                     (1).                                         away from the foe or into a better lane
+                                                                          while retaining reach if it matters.
+
+ Teleport and cast           Dimensional Assault (1) → ordinary           The Strike is the first attack if Cyrus has
+                             two-action save spell.                       made none. The save spell ignores MAP
+                                                                          and uses its own range.
+
+ Fear before the hit         Normal Fear (2) → Strike (1).                The save resolves first, so frightened can
+                                                                          help the Strike and the party.
+
+ Debuff a caster or          Improvise Strategy (1) or Bon Mot (1) →      Stupefied pressures mental checks,
+ enable a Will save          two-action spell.                            spellcasting and Will. Bon Mot gives a
+                                                                          larger Will-save penalty if the target can
+                                                                          hear and understand the quip. Status
+                                                                          penalties to the same statistic overlap.
+
+ Emergency heal              Stride as needed → Healer’s Gloves (1) →     A clean rescue also gives the Cleric and
+                             best remaining action.                       Animist room to choose their best use of
+                                                                          the round.
+
+
+
+
+Level 7 Trip and teleport
+  Improvise Strategy [1]                 Trip [1]                                  Dimensional Assault [1]
+
+
+1. Choose clumsy 1 on success. Improvise Strategy checks Warfare Lore against Perception DC within
+30 feet. Choose a cue the target can perceive. Clumsy lowers Reflex DC for Trip and gives AC a status
+penalty. Using Strategy leaves Cyrus’s first attack available. 2. Trip at full Athletics. Use the weapon’s
+Trip trait for two-handed use at its reach. A success makes the target prone and off-guard. Clumsy’s AC
+penalty can combine with off-guard’s circumstance penalty. A critical failure can put Cyrus prone, or a Trip
+weapon can be dropped to take an ordinary failure. 3. Teleport if the destination buys something.
+Assault costs a Focus Point, recharges Spellstrike and normally includes a melee Strike at second-attack
+MAP, usually −5. Move to a clean flank, a safer lane or a square threatening a second foe. After
+Dimensional Disappearance at 10, Cyrus can keep the invisibility and skip the Strike.
+
+Choose Improvise Strategy → Trip → Recharge or Step if the teleport lacks value. If Strategy fails, judge the
+unassisted Trip or redirect the turn. If Strategy leaves Cyrus off-guard on a critical failure, use positioning
+or defence to answer it. Dimensional Assault · Trip trait
+
+
+
+
+Combat flow and teamwork                                                                                                 3
+CYRUS VAL’DIRA / PF2E REMASTER                                                   COMBAT FLOW AND TEAMWORK
+
+
+
+
+Positioning and later mobility
+• Operate from reach. Use the outer ring for flanks, threat coverage and space from shorter-reach
+  enemies. Ten-foot reach includes two squares diagonally. Flanking needs an opposite-edge or
+  opposite-corner line between allies’ space centres and both allies able to attack the foe in melee. It makes
+  the foe off-guard to their melee attacks. Reach · Flanking
+• Set up the right ally. Stand opposite the Champion while staying in range of their reaction where
+  possible. Check whether the second melee threat benefits more from a flank, or whether the casters need
+  the target separated from friendlies for area effects. Give the party the landing square before pushing an
+  enemy.
+• Pick the area before committing. With Expansive Spellstrike, a burst centres on a corner of any square
+  in the target’s space. A cone or line includes the target. It starts from Cyrus if adjacent, or any square
+  adjacent to the target if he’s attacking from farther out. The area can catch allies. Compare the template
+  with direct casting when range, cover, origin or safety changes the result. Expansive Spellstrike · Areas
+• Plan the teleport around the goal. Dimensional Assault is half Speed until it heightens to 5th rank at
+  level 9, then full Speed. Land somewhere visible that satisfies the spell’s enemy-reach wording and allows
+  the included melee Strike. Use the hop where a normal route would take more actions or expose Cyrus to
+  avoidable attacks. Dimensional Assault
+• Spend movement and recharge together when available. Running Recharge combines recharge
+  with a half-Speed Stride or a Step. Choose it over normal Recharge when repositioning changes a flank,
+  ends pursuit, or makes a safe cast possible. Fused Staff and Running Recharge compete for the proposed
+  level-8 class feat. Running Recharge
+
+Sprinting Spellstrike at 12
+
+  Charged + useful            Choose line and              Sprinting                    Recharge or
+  line                        landing square               Spellstrike [2]              exploit position [1]
+
+
+Example. Cyrus starts at one end of a straight corridor. Two foes are in the lane 20 and 40 feet away.
+Start a 120-foot Lightning Bolt Sprinting Spellstrike, travel 45 feet through them, finish in a vacant square
+5 feet beyond the second foe, and Strike that foe. With Expansive, the movement traces the line area. The
+movement can pass through foes and avoids movement reactions. The activity still requires a legal Strike
+after the move and a legal spell area. Save the last action for recharging, defence, or moving away once
+the cast is resolved.
+
+Keep priority targets within the lane Cyrus actually travels. The feat caps movement at the spell’s line
+length. Its protection from reactions covers the movement. Check the spell’s Manipulate trait separately.
+Use the table’s area convention for the line width and any effect beyond the landing square, especially
+when Cyrus is Large. Sprinting Spellstrike · Line areas
+
+
+
+
+Combat flow and teamwork                                                                                       4
+CYRUS VAL’DIRA / PF2E REMASTER                                                             COMBAT FLOW AND TEAMWORK
+
+
+
+
+Defence and targeting
+ Target or problem             Good first response                         Party follow-through
+
+ AC already lowered            Weapon Spellstrike with Gouging Claw        Flanking or prone can supply off-guard.
+                               or another attack payload.                  Frightened is a status penalty and can also
+                                                                           help.
+
+ Low Reflex or a crowded       Electric Arc for two eligible targets,      Trip uses Reflex DC. Watch positioning before
+ lane                          Thunderstrike for a single target, Acid     the Druid or Animist commits an area.
+                               Grip to move one.
+
+ Low Fortitude                 Frostbite at range, Arcane Malaise          Take the control the fight needs. Confirm
+                               through Spellstrike, Slow to tax actions,   living or disease susceptibility for the Goblin
+                               or Grapple to hold a dangerous target.      Pox mechanics of Arcane Malaise.
+
+ Low Will                      Fear for the team, Laughing Fit if          Set up a partner’s turn with Bon Mot if trained
+                               reactions are the problem, or another       or stupefied from Strategy. Check mental
+                               known Will spell.                           immunity and language as applicable.
+
+ Hard to target, hidden or     Revealing Light, See the Unseen,            Tell the ranged and melee attackers which
+ warded                        appropriate-rank Dispel Magic or an         target they can deal with now.
+                               observation action.
+
+ Enemy reactive attack         Ask about it via Analysis, fight from       Save the important Manipulate action until
+                               reach, use a safe Step, or suppress it      the threat has spent its reaction or the acting
+                               with an effect such as Laughing Fit.        ally is outside its reach.
+
+ Scouted resistance or         Pivot spell damage. Needle Darts uses       Tell the party the actual weakness and how
+ weakness                      a carried silver or cold iron piece, and    often it can be exploited.
+                               Telekinetic Projectile changes physical
+                               type with the object.
+
+
+Slow · Fear · Laughing Fit · Acid Grip · Goblin Pox · Revealing Light. Full spell profiles and the save
+coverage plan are in the spell document.
+
+Throwing backup and ranged cantrips
+Level 3 comparison assumes Str +4, Dex +1, Int +3, a trained attack, no multiple attack penalty and AC
+18. Throws are within the hammer’s first 20-foot increment. Weakness is applied once after doubling
+critical-hit damage.
+
+Attack                       Modifier      Hit average      Expected vs       Reason to use
+                                                            AC 18
+
+Light hammer                 +6            7.5              3.75              One action in hand and bludgeoning when
+                                                                              thrown. Swapping from Aspera uses an
+                                                                              Interact and changes the weapon available
+                                                                              for reactions.
+
+Hammer with Transmuting      +6            7.5 +            6.00 with         Spend 3 gp for silver or 4 gp for cold iron.
+Ingot                                      weakness         weakness 5        Apply it before initiative if possible.
+
+Hammer with Potency          +7            11               6.05              An early +1 striking turn for 4 gp. With a
+Crystal                                                                       matching metal and weakness 5, the
+                                                                              expected damage is 8.55.
+
+
+
+
+Combat flow and teamwork                                                                                                     5
+CYRUS VAL’DIRA / PF2E REMASTER                                                                 COMBAT FLOW AND TEAMWORK
+
+
+
+
+Attack                          Modifier       Hit average        Expected vs     Reason to use
+                                                                  AC 18
+
+Needle Darts                    +8             10                 6.00            Two actions, 60 feet, piercing. A carried
+                                                                                  silver or cold iron piece can trigger
+                                                                                  weakness. With weakness 5, expect 8.75
+                                                                                  before crit bleed.
+
+Telekinetic Projectile          +8             10.5               6.30            Two actions, 30 feet. Tap a loose object for
+                                                                                  bludgeoning, piercing or slashing. Its
+                                                                                  material and magic do not carry through.
+
+
+Before weakness, critical hits average 15 for a plain hammer, 22 for a crystal hammer, 20 plus 2
+persistent bleed for Needle Darts, and 21 for Telekinetic Projectile.
+
+At levels 5, 9, 13 and 16, ordinary on-tier hammer hits average 11, 11, 15.5 and 15.5 respectively, using
+the field guide’s +4/+4/+5/+5 Strength modifier assumptions. Needle Darts averages 12.5, 17.5, 22.5 and
+25. Telekinetic Projectile averages 14, 21, 28 and 31.5. Carry a hammer for its one-action attack and
+backup grip. Cast a cantrip to keep Aspera in hand or reach past a hammer’s first increment. Transmuting
+Ingot can give the hammer’s physical damage a chosen metal for a minute.
+
+
+At the table with the party
+ Partner                 What they can offer                              Cyrus’s contribution
+
+ Champion                A durable front line, protection and             Hold the opposite edge when possible. Trip or pin
+                         subclass-specific reactions.                     threats within allied reach, and position valuable
+                                                                          allies and the enemy inside the actual reaction’s
+                                                                          ranges. Avoid forcing a target out of the
+                                                                          Champion’s reach accidentally.
+
+ Cleric                  Healing and divine answers, including            Carry one emergency heal. Give the Cleric a clear
+                         Religion checks about undead or fiends if        route, then spend arcane control or weapon
+                         trained.                                         pressure so they have the option to cast
+                                                                          offensively. Coordinate before spending two
+                                                                          answers on the same effect.
+
+ Druid                   Primal control, area effects, mobility and       Shape a clean area with Acid Grip, Trip or a flank
+                         Nature information.                              without occupying the desired area. Agree who
+                                                                          handles terrain and detection. Free the Druid to
+                                                                          address the wider map while Cyrus holds one
+                                                                          threat.
+
+ Animist                 Flexible divine and apparition tools. Their      Ask what their current setup rewards. Guard an
+                         contribution depends on today’s choices.         inhabited position or protect a caster’s lane, and
+                                                                          apply AC, Reflex or Will pressure that lines up with
+                                                                          their next move.
+
+ Cyrus                   Arcane specialist, reach and precision           Own high-value arcane coverage. Ask who can act
+                         control, flexible knowledge.                     on a debuff this round. Keep a spare answer for a
+                                                                          stranded ally, a broken lane or an unreachable
+                                                                          target.
+
+
+Before initiative, ask what the fight is about and who needs a safe square. During initiative, tell the
+party which enemy is prone, when the penalty ends, or where you want to move it. Afterward, Refocus in
+10-minute blocks as time permits. Compare who has recovery, scouting and utility resources left before
+
+
+Combat flow and teamwork                                                                                                         6
+CYRUS VAL’DIRA / PF2E REMASTER                                                               COMBAT FLOW AND TEAMWORK
+
+
+
+choosing the next approach. See the item and consumable documents for what to carry.
+
+
+Athletics and hands
+In ordinary combat, the following Athletics attacks require a free hand, reach and a target at most one size
+larger. Titan Wrestler increases that limit to two sizes, or three at legendary Athletics. A matching weapon
+trait can use weapon reach and its item bonus, and offers a drop-on-critical-failure option where the trait
+says so. Reposition and Grapple also allow their stated existing-grip exceptions. Athletics · Titan Wrestler ·
+Trip trait
+
+ Action · first attack if   Check and success                               Critical outcomes and limits
+ it matters
+
+ Trip · 1 action            Athletics vs Reflex DC. Target is prone.        Critical success adds 1d6 bludgeoning. Critical
+                                                                            failure leaves Cyrus prone unless his weapon
+                                                                            trait lets him drop it for a failure.
+
+ Grapple · 1 action         Athletics vs Fortitude DC. Grabbed through      Critical success restrains. A failed renewal
+                            the end of Cyrus’s next turn unless he          releases the target. On a critical failure they
+                            moves or they Escape.                           can grab Cyrus or knock him prone.
+
+ Reposition · 1 action      Athletics vs Fortitude DC. Move target up to    Critical success allows up to 10 feet. Critical
+                            5 feet within Cyrus’s reach, around             failure lets the target move Cyrus up to 5 feet
+                            obstacles.                                      under the same rules.
+
+ Shove · 1 action           Athletics vs Fortitude DC. Push 5 feet away     Critical success allows up to 10 feet. Critical
+                            and optionally follow that far.                 failure knocks Cyrus prone.
+
+ Disarm · 1 action          Athletics vs Reflex DC. The target takes a –2   Critical success drops the item in the target’s
+                            circumstance penalty with the item or grip      space. The target can use Interact to clear a
+                            checks. Further Disarms of it gain +2           successful Disarm’s effect. Critical failure
+                            circumstance until the grip changes or item     leaves Cyrus off-guard until his next turn.
+                            is released.
+
+
+Shove and Reposition are forced movement. Save Reactive Strike for their own move or another trigger. A
+foe can provoke by standing after Trip. Standing in place resolves before the reaction. Movement and
+reactions · Reactive Strike
+
+Two-handed retrieval. Release one hand for free, draw a worn item with Interact, use it, then spend an
+Interact to regrip. That is three actions for a normal one-action potion, four for a normal two-action scroll
+with regrip. A preloaded Retrieval Prism or Belt can save the draw. A Potion Patch gives one-action self-use
+for a suitable potion while holding the weapon. Leaving the grip loose can cost the Aspera Strike or
+reaction you were holding for the next enemy. Interact · Retrieval Prism · Retrieval Belt · Potion Patch
+
+
+
+
+Combat flow and teamwork                                                                                                      7
+CYRUS VAL’DIRA / PF2E REMASTER                                                      COMBAT FLOW AND TEAMWORK
+
+
+
+
+Rules at a glance
+ Rule                                   What to track
+
+ Spellstrike · 2 actions                Cast a 1- or 2-action spell requiring attack roll or save and make a
+                                        melee Strike. Attack spells use the Strike outcome. Save spells roll their
+                                        own save, including on a normal miss. A critical Strike failure disrupts
+                                        the spell. The weapon sets reach, and the activity normally affects just
+                                        the Strike target. Both attack increments apply after the activity.
+                                        Recharge with 1 concentrate action, Analysis, or a 1-action-or-longer
+                                        conflux spell.
+
+ Arcane Cascade · 1 action              Impossible Magic lets Cyrus enter directly. Melee Strikes gain arcane
+                                        and +1 force damage, and Cyrus gets resistance 1 to spell damage.
+                                        Both rise to 2 with Weapon Specialization and 3 with Greater Weapon
+                                        Specialization. A spell cast earlier that turn can set the damage type. A
+                                        studious spell permits free Cascade as the next action on that turn.
+
+ Laughing Shadow · in Cascade           +5-foot status bonus to Speeds in armour or +10 unarmoured. The
+                                        damage against off-guard foes rises to 3, 5 or 7 at the same
+                                        specialization breakpoints with a completely free other hand. Use base
+                                        damage with Aspera in both hands until its specific benefit is known.
+
+ Magus’s Analysis · 1 action            Attempt creature Recall Knowledge, then recharge even if the check
+                                        fails. A Strike hit against it earlier this turn gives +1 circumstance to the
+                                        check. The subject is immune to this ability for 1 day. Use ordinary
+                                        Recharge when needed.
+
+ Force Fang · 1 action, 1 FP            Deals 1d4+1 force within melee reach without check or save, adding
+                                        1d4+1 per two ranks. Recharges Spellstrike without MAP. Its
+                                        Manipulate trait matters in threatening reach.
+
+ Dimensional Assault · 1 action, 1 FP   Teleport to a visible space in range within reach of an enemy and Strike
+                                        that enemy. Recharges Spellstrike. Carrying a creature through disrupts
+                                        it. Dimensional Disappearance adds invisibility on arrival and lets Cyrus
+                                        omit the Strike. If he Strikes, the invisibility ends after the attack.
+
+ Improvise Strategy · 1 action          Master Warfare Lore. Select auditory or visual and check against
+                                        Perception DC at 30 feet. Success chooses clumsy 1, dazzled, off-guard
+                                        or stupefied 1 until end of Cyrus’s next turn. A target action can end the
+                                        effect earlier, Concentrate for auditory or Interact for visual. Target is
+                                        immune for 1 hour except on critical success. Critical failure leaves
+                                        Cyrus off-guard until his next turn starts.
+
+ Bon Mot · 1 action                     Diplomacy vs Will DC within 30 feet. Success gives –2 status to
+                                        Perception and Will saves for 1 minute, critical success –3. A one-action
+                                        retort can end it. Critical failure turns the success penalty onto Cyrus.
+
+ Reactive Strike · reaction             Planned at level 6. Melee Strike on a creature within reach for the
+                                        action’s Manipulate, movement, or ranged attack trigger. It ignores
+                                        MAP. A critical hit disrupts a triggering Manipulate action. Weigh that
+                                        chance against holding a defensive reaction.
+
+ Shield · 1 action                      +1 circumstance AC to start of next turn without a free hand. Grants
+                                        Shield Block with Hardness 5, +5 per two ranks, and can block spell or
+                                        magical damage. Blocking ends the spell and prevents casting Shield
+                                        for 10 minutes. Competes with Reactive Strike and other reactions.
+
+
+
+
+Combat flow and teamwork                                                                                                8
+CYRUS VAL’DIRA / PF2E REMASTER                                                        COMBAT FLOW AND TEAMWORK
+
+
+
+
+ Rule                                       What to track
+
+ Healer’s Gloves · 1 action                 Once daily, heal a willing adjacent living creature for 2d6+7 with the
+                                            base item. Manipulate. Greater restores 4d6+15.
+
+ Hasted Assault · 1 action, 1 FP            Self only for 1 minute. Beginning on Cyrus’s next turn, grants the extra
+                                            action for Stride or Strike. As a conflux spell it also recharges on
+                                            casting.
+
+
+
+
+Knowledge and scenes
+Ask a question with an action attached. Examples include which save to target before a cast, what
+stops the creature from getting back up, or whether moving or manipulating will provoke a reaction.
+Arcana covers appropriate dragons, beasts and constructs. Society fits common humanoids and
+organisations. Warfare Lore addresses formations, signals and tactics as applicable. Academia Lore fits
+relevant institutions and scholars. Share unusual creature identification with Religion or Nature specialists
+when their skill is stronger. Recall Knowledge · Creature identification
+
+Use Undead Lore if this campaign regularly tests it, or Engineering Lore if wards, ruins and structures are
+the recurrent problem. Unified Theory broadens Arcana for magical-tradition checks. Creature
+identification continues to use the skills relevant to that creature. Unified Theory
+
+Outside the fight, Cyrus can identify the right officer at a Cormyrean watch post, use Academia Lore to
+read an institution’s habits, or give the group’s best speaker a concrete opening. At an old ward, find
+whom the builders meant to admit and how, then choose whether to dispel, bypass, or parley. Smudge, a
+scouting spell or a utility scroll can turn one piece of information into a route.
+
+
+
+
+Combat flow and teamwork                                                                                               9
+

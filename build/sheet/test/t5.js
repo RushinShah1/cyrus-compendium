@@ -1,0 +1,11 @@
+const {loadDB, E} = require('./load.js');
+const db = loadDB(); const eng = new E.Engine(db);
+const ch = JSON.parse(require('fs').readFileSync('/home/claude/site/assets/cs/cyrus.json'));
+ch.level = 20; ch.boosts.ancestry = ['str', 'int']; ch.boosts.background = ['str', 'con']; ch.boosts.class = 'str'; ch.boosts[1] = ['str', 'dex', 'con', 'int'];
+const r = eng.compute(ch);
+console.log('perception', r.perception.rank, r.perception.total);
+console.log('pending unresolved', r.pending.filter(p => p.value == null).map(p => [p.uid, p.flag, p.prompt, eng.choices(r.S, p).length]));
+const asp = ch.inventory.find(i => i.id === 'aspera');
+console.log('aspera lv', eng.invRec(asp).lv);
+const s = r.strikes.find(x => /Aspera/.test(x.name)); console.log(s.name, s.map, s.formula, s.range, s.traits);
+console.log(Object.keys(r.S.opts ? [...r.S.opts].filter(o => /spellstrike|starlit|conflux/.test(o)) : []), [...r.S.opts].filter(o => /spellstrike|starlit|conflux/.test(o)));

@@ -1,0 +1,123 @@
+CLASS Magus {'license': 'ORC', 'remaster': True, 'title': 'Pathfinder Impossible Magic'}
+Combining the physicality and technique of a warrior with the ability to cast arcane magic, you seek to perfect the art of fusing spell and strike. While the hefty tome you carry reflects hours conducting arcane research, your enemies need no reminder of your training. They recognize it as you take them down.
+@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.YVoyzV9v4QyP2UIC]{Magus}
+ITEMS [(7, 'Studious Spells'), (15, 'Greater Weapon Specialization'), (15, 'Spell-Tempered Body'), (5, 'Weapon Expertise'), (9, 'Perception Expertise'), (1, 'Arcane Cascade'), (19, 'Double Spellstrike'), (1, 'Spellstrike'), (17, 'Medium Armor Mastery'), (1, 'Magus Spellcasting'), (9, 'Twofold Will'), (9, 'Expert Spellcaster'), (17, 'Master Spellcaster'), (13, 'Weapon Mastery'), (1, 'Hybrid Study'), (11, 'Medium Armor Expertise'), (7, 'Weapon Specialization'), (1, 'Conflux Spells'), (5, 'Reflex Expertise')]
+classFeatLevels {'value': [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]}
+generalFeatLevels {'value': [3, 7, 11, 15, 19]}
+skillFeatLevels {'value': [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]}
+skillIncreaseLevels {'value': [3, 5, 7, 9, 11, 13, 15, 17, 19]}
+ancestryFeatLevels {'value': [1, 5, 9, 13, 17]}
+
+## Distracting Spellstrike L 4 ['magus'] action 2
+Requirements You have a hand free, and your Spellstrike is charged.You weave distracting magic with one hand to enhance the efficacy of your Spellstrike. Make a Spellstrike and [[/act feint traits=arcane,visual]] against the target of your Strike. Execute your Feint immediately before making the Strike, but after choosing your target. The Feint gains the arcane and visual traits, and it always has the basic effects of a Feint, rather than applying any adjustments or alternate effects from other feats or abilities.
+If you're in the Arcane Cascade stance, you gain a status bonus to your Deception check equal to your extra damage from Arcane Cascade (typically 1, increasing to 2 if you have weapon specialization and 3 if you have greater weapon specialization).
+
+## Standby Spell L 8 ['magus'] passive None
+You've honed one spell as your favored combat technique, and you've practiced it enough that you no longer need to prepare it to cast it. Choose a spell in your spellbook that you could use with Spellstrike and that has a rank no higher than the highest-rank magus spell slot you have. You can cast this spell without having it prepared ahead of time by expending a spell slot of a sufficient rank to cast your chosen spell. You can change this spell whenever you add new spells to your spellbook, or by studying your spellbook for 1 hour.
+
+## Rapid Recharge L 10 ['magus'] free None
+Frequency once per dayYou tap into an arcane trick to recover your ability to meld spells and attacks. You recharge your Spellstrike.
+
+## Conflux Focus L 12 ['magus'] passive None
+You imagine how you'll weave magic and combat into future battles, improving your focus. Whenever you @UUID[Compendium.pf2e.actionspf2e.Item.Refocus], you completely refill your focus pool.
+
+## Overwhelming Spellstrike L 12 ['magus'] action 2
+Requirements Your Spellstrike is charged.You pierce through your foe's resistance. Make a Spellstrike. The spell you cast as part of the Spellstrike ignores an amount of the target's resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including @UUID[Compendium.pf2e.conditionitems.Item.Persistent Damage] and damage caused by an ongoing effect of the spell. A creature's immunities are unaffected.
+
+## Spell Swipe L 8 ['magus'] action 3
+Requirements Your Spellstrike is charged.You attack in an arc and enact your spell against everyone you hit. Make a Spellstrike, but roll separate Strikes to attack two creatures, each of whom must be within your melee reach and adjacent to each other. If your spell could affect two or more targets or would normally have an area, your spell affects whichever foes you hit, not just the first target; otherwise, choose one target to affect with the spell. As Spellstrike, Spell Swipe counts as two attacks for your multiple attack penalty, but the penalty doesn't increase until after you make both attacks.
+If you're using a weapon that has the sweep trait, its circumstance bonus applies against both targets. You can use this activity with only melee Strikes, even if you have the starlit span hybrid study or a similar ability.
+If you use @UUID[Compendium.pf2e.feats-srd.Item.Expansive Spellstrike] to Spellstrike with an area spell, apply the area as described in Expansive Spellstrike, choosing one of the two targets to determine the area.
+
+## Runic Impression L 4 ['focus', 'magus', 'manipulate'] None None
+Your unarmed attacks or your weapon gain the benefits of a weapon rune you choose when you cast this spell: @UUID[Compendium.pf2e.equipment-srd.Item.Corrosive], @UUID[Compendium.pf2e.equipment-srd.Item.Flaming], @UUID[Compendium.pf2e.equipment-srd.Item.Frost], @UUID[Compendium.pf2e.equipment-srd.Item.Ghost Touch], @UUID[Compendium.pf2e.equipment-srd.Item.Returning], @UUID[Compendium.pf2e.equipment-srd.Item.Shock], or @UUID[Compendium.pf2e.equipment-srd.Item.Thundering]. If you cast runic impression on a weapon, this spell ends if you cease holding the weapon, with the exception of throwing a returning weapon. If this spell would give a weapon more property runes than its normal maximum, one of the existing property runes (your choice) is suppressed until the spell ends. For unarmed attacks, if this spell would give you more property runes than you could have from @UUID[Compendium.pf2e.equipment-srd.Item.Handwraps of Mighty Blows], one of the existing property runes is similarly suppressed.Heightened (8th) Add keen to the list of runes you can choose as well as the greater versions of @UUID[Compendium.pf2e.equipment-srd.Item.Corrosive (Greater)]{Corrosive}, @UUID[Compendium.pf2e.equipment-srd.Item.Flaming (Greater)]{Flaming}, @UUID[Compendium.pf2e.equipment-srd.Item.Frost (Greater)]{Frost}, @UUID[Compendium.pf2e.equipment-srd.Item.Shock (Greater)]{Shock}, and @UUID[Compendium.pf2e.equipment-srd.Item.Thundering (Greater)]{Thundering}.
+@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Runic Impression]
+
+## Runic Impression L 8 ['magus'] passive None
+You can temporarily replicate the effects of a property rune for your weapon or unarmed attacks. You learn the @UUID[Compendium.pf2e.spells-srd.Item.Runic Impression] conflux spell.
+
+## Cascading Ray L 10 ['attack', 'magus'] action 1
+Requirements Your last action was a successful Spellstrike, and the spell you cast dealt energy damage (acid, cold, electricity, fire, force, sonic, vitality, or void).Magical energy spills out to extend beyond the creature you struck. The flowing energy forms a ray with a range of 120 feet originating from the creature you damaged. You can't target any of the creatures you damaged with your Spellstrike with the ray. Make a spell attack against the new target's AC, at the same multiple attack penalty as the Strike. On a hit, the target of the ray takes 1d4 damage per spell rank of the spell you used for Spellstrike, or 1d8 damage per rank if you cast the spell from a spell slot. The ray uses the same damage type as the spell dealt (choose one if it dealt more than one type of damage). This ray has the attack trait, the tradition trait of the original spell, and the trait matching the damage type.
+
+## Striker's Scroll L 4 ['magus'] passive None
+You can attach a scroll to your weapon or @UUID[Compendium.pf2e.equipment-srd.Item.Handwraps of Mighty Blows] to blend its spell into an attack, carefully folding it around a part of the weapon or sealing it to the weapon's surface. Attaching a scroll requires using the @UUID[Compendium.pf2e.actionspf2e.Item.Affix a Talisman] action. You can have only one scroll affixed to a weapon at a time, and you can't have both a talisman and scroll attached.
+You can Cast the Spell from the scroll as part of a Spellstrike, provided the spell is one you could normally use with Spellstrike. You can't Cast the Spell in any other way while it's affixed, though you can use Affix a Talisman again to remove the scroll and use it as a normal—if a bit crumpled—scroll.
+
+## Knowledge is Power L 6 ['magus'] passive None
+When you critically succeed at a @UUID[Compendium.pf2e.actionspf2e.Item.Recall Knowledge] check about a creature, you gain a +1 circumstance bonus to your next attack roll against the creature, to your AC against its next attack roll, and to your save against its next effect requiring a save.
+If you share this information with your allies, they gain the benefits as well. If not used, these bonuses end after 1 minute.
+
+## Resounding Cascade L 16 ['aura', 'magus'] passive None
+The magical reinforcement from your Arcane Cascade extends to nearby allies. While you're in Arcane Cascade stance, you grant its extra damage and resistance in an aura affecting all allies in a @Template[type:emanation|distance:5]. This uses only the base values of your stance; it doesn't use any increase you get from bonuses, the laughing shadow hybrid study, or the like.
+As normal for duplicate effects, multiple Arcane Cascades affecting the same creature aren't cumulative.
+
+## Burning Cascade L 4 ['magus'] passive None
+Energy flares out around you when you drop into your signature stance. When you use @UUID[Compendium.pf2e.actionspf2e.Item.Arcane Cascade], each enemy in a @Template[type:emanation|distance:5] takes damage equal to the extra damage from Arcane Cascade. This damage is the same type as that of Arcane Cascade. A creature that takes this damage is temporarily immune to further uses of Burning Cascade for 1 minute.
+
+## Spell Crash L 6 ['arcane', 'force', 'magus'] action 2
+Requirements Your Spellstrike is charged, and you have at least one spell prepared in a spell slot.Instead of blending a spell into an attack, you can funnel the spell's magic into a pure blast that expands out from you. You smash your weapon or fist into the ground and expend a spell prepared in one of your spell slots. The magic of the spell explodes out in your choice of a @Template[type:emanation|distance:20], @Template[type:cone|distance:30], or @Template[type:line|distance:60]. Each creature in the area takes @Damage[1d10[force]|options:area-damage] damage per spell rank of the expended spell, with a basic @Check[reflex|basic|against:spell|options:area-damage] save against your spell DC. If your weapon has the shove trait, you push any creature that fails its save 10 feet; if your weapon has the trip trait, any creature that fails its save falls @UUID[Compendium.pf2e.conditionitems.Item.Prone]. Your Spellstrike is no longer charged.
+If the spell you expended could deal a type of damage other than force, you can change the explosion's damage to that type and replace Spell Crash's force trait with the corresponding trait.
+
+## Conjurer's Countermeasure L 3 ['focus', 'magus', 'manipulate'] None None
+You quickly create a barrier that protects you against the magic of spellcraft. You gain resistance 5 against damage from spells.
+The resistance from this spell is cumulative with that of @UUID[Compendium.pf2e.actionspf2e.Item.Arcane Cascade]. If you're in Arcane Cascade stance when the duration of conjurer's countermeasure expires, the spell's duration extends until Arcane Cascade ends.Heightened (+3) The resistance increases by 5.
+@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Conjurer's Countermeasure]
+
+## Conjurer's Countermeasure L 6 ['magus'] passive None
+You can make yourself resistant to damaging spells. You learn the @UUID[Compendium.pf2e.spells-srd.Item.Conjurer's Countermeasure] conflux spell.
+
+## Capture Magic L 8 ['magus'] reaction None
+Trigger You succeed at your save against an enemy's harmful spell, or an enemy fails a spell attack roll against you from a harmful spell.When you resist a spell, you capture some of its magic for your own use. You enter your Arcane Cascade stance, using the triggering spell to determine what damage type your Arcane Cascade deals.
+Alternatively, if you're already in Arcane Cascade, you can instead amplify its effects temporarily. Until the end of your next turn, you gain a +2 status bonus to the extra damage and resistance you gain from your Arcane Cascade.
+
+## Spell Retaliation L 6 ['magus'] free None
+Requirements Your Spellstrike isn't charged.
+Trigger You succeed at a saving throw against an enemy's spell, or an enemy fails a spell attack roll against you.Battling other spellcasters is one of your major focuses, and harnessing magic from spells you defend against gives you everything you need to fight back. You recharge your Spellstrike.
+
+## Dispelling Spellstrike L 16 ['magus'] action 3
+Requirements Your Spellstrike is charged.The spell you deliver tries to force out magic affecting your enemy. Make a Spellstrike. If it hits, you also attempt to counteract a single spell of your choice that is active on the target.
+The counteract rank is half your level rounded up, and the counteract check modifier is the standard modifier for counteracting with a spell (your Intelligence modifier plus your spellcasting proficiency bonus, plus any bonuses or penalties that specifically apply to counteract checks).
+
+## Steady Spellcasting (Magus) L 4 ['magus'] passive None
+Confident in your technique, you don't easily lose your concentration when you Cast a Spell.
+If another creature's reaction would disrupt your spellcasting action, attempt a @Check[flat|showDC:all|dc:15]. If you succeed, your action isn't disrupted.
+
+## Magic Sense (Magus) L 12 ['arcane', 'detection', 'magus'] passive None
+You can sense the presence of magic auras as though you were always using a 1st-rank @UUID[Compendium.pf2e.spells-srd.Item.Detect Magic] spell. This detects magic in your field of vision only. When you [[/act seek]], you gain the benefits of a 3rd-rank detect magic spell on things you see (in addition to the normal benefits of Seeking). You can turn this sense off and on with a free action at the start or the end of your turn.
+
+## Stolen Spell L 18 ['magus'] free None
+Trigger You critically succeed at a saving throw against an enemy's spell, or an enemy critically fails a spell attack roll against you.As you perfectly counter a spell, you re-aim its magic to use it yourself. You gain the ability to cast the triggering spell one time before the end of your next turn, even if it's not on your spell list or is of a higher rank than you can cast. This doesn't cost you a spell slot or other resource. If you cast it as part of a Spellstrike against the creature that originally cast it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against your Strike. Use your own spellcasting statistics for this spell, as you do for other spells you cast.
+
+## Versatile Spellstrike L 18 ['magus'] passive None
+You can channel the entire realm of possibilities of your spellbook into an attack.
+Once during your daily preparations, you can use a spell slot to hold that infinite potential, rather than using it to prepare a spell. When you make a Spellstrike, you can expend this special spell slot to immediately prepare and cast a spell from your spellbook at 2 ranks lower than the slot's rank. (As normal for preparing spells, you can use a spell of an even lower rank, heightening it accordingly.)
+You don't have any spell prepared in that slot until you cast from that slot.
+
+## Whirlwind Spell L 20 ['magus'] action 3
+Requirements Your Spellstrike is charged.You combine the might of a multitarget spell with a whirling flurry of attacks. You use Spellstrike, making a melee Strike against each enemy within your reach instead of against one enemy. If your spell can affect multiple targets or normally has an area, your spell affects all foes you hit, not just the first target, up to the spell's normal maximum targets. If you Strike more enemies than the spell could target, choose which foes are affected by the spell. Each attack counts toward your multiple attack penalty but doesn't increase your penalty until you've made all your attacks.
+You can use this activity with only melee Strikes, even if you have the starlit span hybrid study or a similar ability.
+If you use @UUID[Compendium.pf2e.feats-srd.Item.Expansive Spellstrike] to Spellstrike with an area spell, apply the area as described in Expansive Spellstrike, choosing one of the targets to determine the area.
+
+## Supreme Spellstrike L 20 ['magus'] passive None
+For you, it is almost effortless to combine spells and attacks into devastating combinations. You're permanently @UUID[Compendium.pf2e.conditionitems.Item.Quickened]. You can use your extra action only to Strike or to recharge @UUID[Compendium.pf2e.actionspf2e.Item.Spellstrike].
+
+## Arcane Fists L 1 ['magus'] passive None
+Your physical training encompasses unarmed combat forms. The damage die for your fist changes to 1d6 instead of 1d4. You don't take the normal –2 circumstance penalty when making a lethal attack with your fist or any other unarmed attacks. Your unarmed attacks gain the arcane trait, making them magical. At 5th level, you also gain the critical specialization effects of unarmed attacks in the brawling group and weapons in the brawling group, using your spell DC instead of class DC.
+
+## Raise a Tome L 1 ['magus'] passive None
+You can flip open a book to simultaneously study and deflect attacks. When you Raise a Shield, you can raise a book you're wielding instead of a shield. While you have a book raised, you gain a +2 circumstance bonus to AC and a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.Recall Knowledge] checks to identify creatures using a skill related to the subject of the book (Arcana if you're using your spellbook). If consulting the book normally grants an item bonus to the check for consulting the book, you gain this bonus as well.
+If you have @UUID[Compendium.pf2e.feats-srd.Item.Shield Block], you can use a raised tome for that feat as though it were a shield. The tome has Hardness 3, HP 12, and BT 6.
+In addition, you can inscribe the reinforcing rune into your spellbook to strengthen your tomes, using the same process as transferring a rune. The rune takes the form of a specialized diagram in your spellbook, occupying one page. The rune's benefits apply to any one tome in your possession chosen during your daily preparations. If your spellbook leaves your possession, the rune-granting benefit is suppressed until you get the book back.
+
+## Spirit Sheath L 2 ['arcane', 'extradimensional', 'magus'] passive None
+You've magically constructed an extradimensional sheath for your weapon that you access through your clothing, typically through a pocket, sleeve, or seam. This sheath is hard to notice, granting a +2 circumstance bonus to your Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.Conceal an Object]{Conceal} an Item within it. A spirit sheath can hold up to 1 Bulk worth of weapons.
+During a Spellstrike, you can Interact to draw one weapon from the sheath before you Cast the Spell. You can draw or return a weapon to a spirit sheath as an Interact action, as can anyone else holding or wearing the clothing that contains the sheath. A @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] spell or similar effect can be used against the spirit sheath to expel the weapon. The counteract check is made against your spell DC and the counteract rank is half your level rounded up. The weapon is also expelled if you become @UUID[Compendium.pf2e.conditionitems.Item.Unconscious].
+
+## Cantrip Expansion L 2 ['bard', 'cleric', 'magus', 'oracle', 'psychic', 'sorcerer', 'witch', 'wizard'] passive None
+Bard, Oracle, Sorcerer Study broadens your range of simple spells.
+Cleric You study a wider range of simple spells.
+Magus, Wizard Dedicated study allows you to prepare a wider range of simple spells for every situation.
+Psychic You expand what your mind can accomplish.
+Witch Your patron recognizes your need for flexibility and versatility, and grants you the power to prepare a wider range of simple spells.
+Prepared You can prepare two additional cantrips each day.
+Spontaneous Add two additional cantrips from your spell list to your repertoire.

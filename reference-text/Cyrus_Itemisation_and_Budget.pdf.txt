@@ -1,0 +1,295 @@
+CYRUS VAL’DIRA / PF2E REMASTER                                                                    ITEMISATION AND BUDGET
+
+
+
+
+Cyrus’s Itemisation and Budget
+Keep Aspera and armour on tier, then buy one capability at a time. The first three jobs are a
+defensive reaction, repeatable spell coverage and a reliable way to pick up a fallen ally.
+
+
+Shopping order
+ Level        First money                          Next purchase                          Hold off when…
+ band
+
+ 3–4          Check Aspera’s delivered runes.      Choose Clay Sphere or Flaming          You already prepare your
+              Fill any missing +1 potency and      Star at 55 gp for the weapon.          preferred attack cantrip, or a
+              plan for striking at 4. Keep         Healer’s Gloves at 80 gp are the       lower-level scroll will plug the
+              armour that fills its Dexterity      first level-4 rescue purchase.         same gap for 4–12 gp.
+              cap. Buy Ancestral Geometry at
+              30 gp when fundamentals are
+              covered.
+
+ 5–7          +1 armour potency at 5. Keep         Choose one of Tactician’s Helm,        Reactive Strike rarely connects,
+              80 gp for a Lifting Belt if          Boots of Bounding, Retrieval Belt      so the helm will seldom charge.
+              repeated Athletics checks justify    or a published staff based on what     A staff or belt bought now would
+              it.                                  routinely costs an action or slot.     delay a fundamental upgrade.
+
+ 8–10         Resilient at 8, +2 weapon            At 9 consider Armbands of              You already have a good staff,
+              potency at 10. Fund Aspera’s         Athleticism or Greater Healer’s        another property is using the
+              fused stave as the signature         Gloves. At 10 consider Greater         only slot, or spellheart
+              acquisition in this band.            Phantasmal Doorknob and a              replacement buys a redundant
+                                                   compatible extra-slot item.            cantrip.
+
+ 11–13        +2 armour potency at 11 and          Master Magus Ring if it would buy      The same item bonus already
+              greater striking at 12.              a useful extra conflux cast. Choose    comes from another slot. An
+                                                   a movement option only if its          additional hand-held option
+                                                   speed or activation does more          would mainly occupy the pack.
+                                                   than the current boots, Tailwind, or
+                                                   Hasted Assault.
+
+ 14–20        Greater resilient at 14, +3          Compare a Strength apex for            Lower item-DC attacks already
+              weapon potency at 16, +3             weapon pressure with an                bounce off the relevant enemies.
+              armour at 18, major striking at      Intelligence apex for spell DCs and    Earlier utility and movement
+              19, major resilient at 20. Include   knowledge, including the proposed      purchases still usefully fill their
+              a level-17 apex item if standard     Aspera awakening. Then buy             roles.
+              progression applies.                 specific resistance, passive
+                                                   weapon support or a stave
+                                                   upgrade.
+
+
+Mundane loadout. Check the live character sheet first. Breastplate costs 8 gp, with AC +4 and Dex cap
++1. Hide is 2 gp, with AC +3 and Dex cap +2. Both reach the same baseline AC if the Dexterity cap is
+filled. With the listed Strength threshold met, the ordinary 5-foot armour Speed penalty drops to zero.
+Keep an adventurer’s pack, the spellbook, and a cheap light hammer if you want a carried bludgeoning
+backup. Needle Darts with suitable metal covers most ranged weakness tests without buying a second
+runed weapon. Armour rules
+
+
+
+
+Itemisation and budget                                                                                                          1
+CYRUS VAL’DIRA / PF2E REMASTER                                                           ITEMISATION AND BUDGET
+
+
+
+
+Fundamentals under the standard rules
+The upgrade column is the price difference from the previous rune of that family. Acquiring a rune as loot
+can save that cash. If transferring it from another item, allow 10% of the rune’s price for the transfer, or no
+transfer fee when moving it off a runestone. A transfer takes one day and a Crafting check. The potency
+bonus sets the ordinary property-rune slot count. Fundamental runes · Transferring runes
+
+ Item         Rune                      Effect                                        Price / upgrade
+ level
+
+ 2            +1 weapon potency         +1 item to weapon attacks, 1 property slot    35 / 35 gp
+
+ 4            Striking                  2 weapon damage dice                          65 / 65 gp
+
+ 5            +1 armour potency         +1 to armour’s item AC bonus, 1 property      160 / 160 gp
+                                        slot
+
+ 8            Resilient                 +1 item to saves                              340 / 340 gp
+
+ 10           +2 weapon potency         +2 item to weapon attacks, 2 property slots   935 / 900 gp
+
+ 11           +2 armour potency         +2 to armour’s item AC bonus, 2 property      1,060 / 900 gp
+                                        slots
+
+ 12           Greater striking          3 weapon damage dice                          1,065 / 1,000 gp
+
+ 14           Greater resilient         +2 item to saves                              3,440 / 3,100 gp
+
+ 16           +3 weapon potency         +3 item to weapon attacks, 3 property slots   8,935 / 8,000 gp
+
+ 18           +3 armour potency         +3 to armour’s item AC bonus, 3 property      20,560 / 19,500 gp
+                                        slots
+
+ 19           Major striking            4 weapon damage dice                          31,065 / 30,000 gp
+
+ 20           Major resilient           +3 item to saves                              49,440 / 46,000 gp
+
+
+Automatic Bonus Progression branch. Use the standard rune cart unless the campaign confirms
+Automatic Bonus Progression. Under that variant, inherent attack, damage dice, AC and saving-throw
+advances arrive at the corresponding levels. Cross off those fundamental rune purchases and reassess
+purchases for an item bonus alone, including Athletics and Arcana gear. The variant can change which
+runes remain available. Keep the prices below as comparison points for useful activations, spell access
+and remaining property options.
+
+
+Cash checkpoints
+The GM Core new-character benchmark is a reference for total kit value, including gear. The party treasure
+currency column is the cash-equivalent parcel earned over a level, with permanent and consumable
+parcels listed separately. Dividing the baseline currency by four gives the same per-character currency
+benchmark after the standard adjustment for extra PCs. Actual division and who receives gear matters
+more than the baseline.
+
+ Level    New character lump sum                               Currency per PC during that level
+
+ 3        75 gp                                                30 gp
+
+
+
+Itemisation and budget                                                                                       2
+CYRUS VAL’DIRA / PF2E REMASTER                                                            ITEMISATION AND BUDGET
+
+
+
+
+ Level      New character lump sum                            Currency per PC during that level
+
+ 4          140 gp                                            50 gp
+
+ 5          270 gp                                            80 gp
+
+ 7          720 gp                                            180 gp
+
+ 8          1,100 gp                                          250 gp
+
+ 10         2,300 gp                                          500 gp
+
+ 12         4,500 gp                                          1,000 gp
+
+ 14         9,300 gp                                          2,250 gp
+
+ 16         20,000 gp                                         5,000 gp
+
+ 17         30,000 gp                                         7,500 gp
+
+ 20         112,000 gp                                        35,000 gp
+
+
+A 75 gp level-3 lump-sum kit can buy +1 potency, breastplate, an adventurer’s pack and Ancestral
+Geometry for 74.5 gp if the weapon itself is supplied. The other starting-wealth route gives one level-2
+permanent item, two level-1 permanent items and 25 gp instead. If the delivered Aspera already covers
+potency, move its reserved 35 gp toward the first spellheart or gloves. A gift or loot parcel changes the
+worksheet, so record which upgrades are already owned before spending.
+
+For the bespoke stave, use the final item price once assigned. Published examples give comparison points.
+Spellstriker Staff is 360 gp at 7 and 1,400 gp at 11. Staff of the Unblinking Eye is 230 gp at 6 and 900 gp at
+10. Avoid funding a published stopgap and a replacement in the same shopping band without a specific
+reason.
+
+
+Permanent picks
+Scores are 0–5 for pressure, protection, mobility, utility, and purchase value. A score of 0 means little
+contribution in that category, 3 means strong, and 5 means defining. Grades reflect fit for Cyrus at the
+indicated stage, with S defining, A high priority, B useful and C a niche buy. Scores assume the standard
+item rules.
+
+Pick                           Level / gp          Pressure    Protection   Mobility   Utility    Value   Grade
+
+Ancestral Geometry             2 / 30              ☆☆☆☆☆       ★★★★☆        ☆☆☆☆☆      ★★☆☆☆      ★★★★★   A
+
+Clay Sphere                    3 / 55              ★★★★☆       ★☆☆☆☆        ☆☆☆☆☆      ★★★☆☆      ★★★★☆   A
+
+Flaming Star                   3 / 55              ★★★★☆       ★☆☆☆☆        ☆☆☆☆☆      ★☆☆☆☆      ★★★★☆   B
+
+Jolt Coil                      3 / 60              ★★★★☆       ★☆☆☆☆        ☆☆☆☆☆      ★★☆☆☆      ★★★★☆   B
+
+Healer’s Gloves                4 / 80              ☆☆☆☆☆       ★★★★☆        ☆☆☆☆☆      ★★★☆☆      ★★★★★   A
+
+Lifting Belt                   4 / 80              ★★★☆☆       ★☆☆☆☆        ★☆☆☆☆      ★★★☆☆      ★★★★☆   A
+
+Tactician’s Helm               5 / 160             ★★☆☆☆       ★☆☆☆☆        ★★★★☆      ★★★☆☆      ★★★☆☆   B
+
+Boots of Bounding              7 / 340             ★☆☆☆☆       ★☆☆☆☆        ★★★★★      ★★★☆☆      ★★★★☆   A
+
+
+
+Itemisation and budget                                                                                            3
+CYRUS VAL’DIRA / PF2E REMASTER                                                            ITEMISATION AND BUDGET
+
+
+
+
+Pick                           Level / gp           Pressure   Protection   Mobility   Utility   Value   Grade
+
+Retrieval Belt                 7 / 340              ★★☆☆☆      ★★☆☆☆        ☆☆☆☆☆      ★★★★★     ★★★☆☆   B
+
+Greater Phantasmal Doorknob    10 / 900             ★★★★☆      ★★★☆☆        ☆☆☆☆☆      ★★☆☆☆     ★★★★☆   A
+
+Master Magus Ring              11 / 1,250           ★★★☆☆      ★☆☆☆☆        ★★★★☆      ★★★☆☆     ★★★☆☆   B
+
+
+• Ancestral Geometry. At preparations, keep the higher of two d20 rolls and randomly determine the
+  covered save. Its once-daily fortune reaction replaces the appropriate save roll with the stored result. The
+  tattoo also grants an ancestor-related Lore item bonus.
+• Weapon spellheart. Clay Sphere grants Gouging Claw. Activating the sphere to cast a morph or
+  polymorph spell gives all three physical damage choices for 1 minute and a larger weapon damage die
+  through the end of the next turn. Flaming Star grants Ignition and adds 1d4 fire to weapon Strikes through
+  the next turn after its fire activation. Jolt Coil grants Electric Arc and has a parallel electricity rider, or
+  provides passive electricity resistance on armour.
+• Long-term spellheart. Greater Phantasmal Doorknob gives Figment and daily rank-4 Vision of Death.
+  Weapon critical hits blind through the target’s next turn, followed by immunity to that blindness for 24
+  hours. The mental and emotion traits matter against immune targets. This rider uses no setup action.
+• Healing. The gloves heal an adjacent, willing living creature for 2d6+7 as one action once per day and
+  give +1 item to Medicine. Greater at 9 costs 700 gp and upgrades these to 4d6+15 and +2. The unique
+  Kindler Cameo is a separate level-7, 300 gp self-recovery option. Its two-action daily activation restores
+  3d10+12, clears current persistent damage and grants +2 status to Will for 1 minute.
+• Athletics. Lifting Belt gives +1 item to Athletics and increases the carrying thresholds by 1 Bulk.
+  Armbands of Athleticism at level 9 for 645 gp give +2 item to Athletics and +5 feet on successful Climb
+  and Swim checks. Item bonuses overlap with the weapon’s applicable Trip item bonus. Revisit the
+  armbands if Athletics is a broad job or the +2 comes online before +2 weapon potency.
+• Actions. Retrieval Belt stores a held item of up to 1 Bulk with one action, then retrieves it as a free action
+  into a free hand. It locks out further use for 1 minute after retrieval. Greater (9, 600 gp) stores three and
+  major (13, 2,500 gp) ten. Tactician’s Helm gives +1 item to Warfare Lore and banks up to two charges
+  from Reactive Strike hits. Its once-per-hour, one-action activation spends a charge to double Stride, boost
+  Athletics and Acrobatics for the turn, reposition with a shield or Interact up to three times.
+• Mobility and initiative. Boots of Bounding give +5-foot item Speed, longer Leaps and +2 to jumps.
+  Propulsive Boots are a level-13, 3,000 gp alternative with +5-foot item Speed (land, climb, and swim) and
+  a one-action daily activation. It provides 1 minute of quickened for Stride, Climb, or Swim. Mobile is the
+  level-5, 160 gp armour rune that extends one Step each turn by 5 feet. Sunweave is a level-7, 350 gp
+  armour rune with +1 item Perception and a once-daily initiative fortune roll. At one slot, buy Mobile for
+  recurring tactical spacing or Sunweave for the Perception and first-round setup. Status Speed bonuses
+  such as Tailwind and Arcane Cascade use the better value.
+• Magus kit. Master Magus Ring grants +2 item Arcana, a once-daily free-action focus point for a conflux
+  spell that must be spent that turn, and a separate once-daily free-action teleport to a visible empty space
+  within Speed. Buy for those activations if another item supplies the same Arcana bonus.
+
+
+
+
+Itemisation and budget                                                                                           4
+CYRUS VAL’DIRA / PF2E REMASTER                                                               ITEMISATION AND BUDGET
+
+
+
+
+Spell access as a purchase
+ Item                              Buying decision
+
+ Endless Grimoire                  L6, 230 gp for an extra rank-1 preparation if Cyrus can prepare that rank. Greater
+                                   L10, 900 gp grants rank 3. Major L14, 4,000 gp grants rank 5. True L18, 23,000
+                                   gp grants rank 7. The remastered Magus retains the relevant ranks, so each tier
+                                   can add a preparation. Compare that flexibility and the Learn a Spell bonus
+                                   against a staff’s casts at several ranks.
+
+ Ring of Wizardry                  Uncommon legacy option. Type I, L7 for 360 gp, supplies two extra rank-1 arcane
+                                   slots with a +1 Arcana item bonus. Higher types redistribute slots. Choose one
+                                   ring for slots, keep it worn, and compare the extra preparations against a
+                                   similarly priced staff and the investment limit.
+
+ Spellstriker Staff                Strong fallback for Sure Strike, Acid Grip and Telekinetic Maneuver when Aspera’s
+                                   bespoke staff is delayed. Its once-per-hour miss reaction on a ranked Spellstrike
+                                   creates a small damaging emanation that can catch allies.
+
+ Staff of the Unblinking Eye       Buy for repeatable investigation spells and +1 status on Perception initiative
+                                   while wielded. Its initiative benefit overlaps with other status bonuses.
+
+ Magic Wand                        A daily cast of one fixed spell at one fixed rank. Rank-1/2/3 models cost
+                                   60/160/360 gp. A rank-2 Tailwind wand buys an eight-hour +10-foot status bonus
+                                   to Speed. The wand costs 160 gp. Thirteen scrolls cost 156 gp, fourteen cost 168
+                                   gp.
+
+ Magic Scroll                      Single cast, low buy-in and no investment. Ranks 1–6 cost 4/12/30/70/150/300
+                                   gp. Keep utility answers on scrolls and move a spell to a wand after it becomes a
+                                   regular daily cast.
+
+
+An affixed item can hold one spellheart or one talisman. Separate weapon and armour attachments give
+separate slots. Spellheart cantrips heighten and can use Cyrus’s better statistics. Ranked spellheart casts
+use the printed statistics and item-specific frequency. Spellheart trait
+
+At preparation, count armour and other invested gear against the daily cap of 10. Removing an item
+leaves its old investment on that day’s tally. Keep an accessible rescue item and one scheduled-use
+consumable ready. Scroll and wand spells use their own casting actions and need the item held. The spell
+and consumable references cover the actual loadout. Invest an Item · Wands
+
+
+
+
+Itemisation and budget                                                                                                  5
+
