@@ -352,7 +352,7 @@ function initGlossary(){
 }
 
 function initSpells(){
-  const DEF = () => ({q:'', def:'all', role:'all', trad:'all', acc:'all', ss:false, stars:new Set(['4','5','6']), grades:new Set(['S','A']), acts:new Set(), ranks:new Set(), traits:new Set(), tmode:'any'});
+  const DEF = () => ({q:'', def:'all', role:'all', trad:'all', acc:'all', ss:false, stars:new Set(['4','5','6']), grades:new Set(['S','A']), acts:new Set(), ranks:new Set(), traits:new Set(), xtraits:new Set(), tmode:'any'});
   let st = DEF();
   const cards = [...main.querySelectorAll('.card[data-rank]')];
   const ranks = [...main.querySelectorAll('section.rank')];
@@ -367,7 +367,7 @@ function initSpells(){
   function activeCount(){
     let n = 0;
     if (st.q) n++; if (st.def !== 'all') n++; if (st.role !== 'all') n++; if (st.trad !== 'all') n++;
-    if (st.acc !== 'all') n++; if (st.ss) n++; n += st.acts.size ? 1 : 0; n += st.ranks.size ? 1 : 0; n += st.traits.size ? 1 : 0;
+    if (st.acc !== 'all') n++; if (st.ss) n++; n += st.acts.size ? 1 : 0; n += st.ranks.size ? 1 : 0; n += st.traits.size ? 1 : 0; n += st.xtraits.size ? 1 : 0;
     return n;
   }
   function apply(){
@@ -383,10 +383,7 @@ function initSpells(){
       if (ok && st.acc !== 'all' && !st.grades.has(d.g[+st.acc])) ok = false;
       if (ok && st.ss && d.ss !== '1') ok = false;
       if (ok && st.acts.size && !d.act.split(' ').some(a => st.acts.has(a))) ok = false;
-      if (ok && st.traits.size){
-        const t = new Set((d.traits || '').split('|'));
-        ok = st.tmode === 'all' ? [...st.traits].every(x => t.has(x)) : [...st.traits].some(x => t.has(x));
-      }
+      if (ok && !traitMatch(d.traits, st)) ok = false;
       c.classList.toggle('hide', !ok);
       if (ok) n++;
     }
@@ -401,15 +398,7 @@ function initSpells(){
     fact.textContent = k ? k + ' active, ' + n + ' spells' : n + ' spells';
     count.textContent = k ? n + ' of ' + cards.length + ' spells shown' : cards.length + ' spells';
     // trait button and pills
-    tlab.textContent = st.traits.size ? st.traits.size + ' trait' + (st.traits.size > 1 ? 's' : '') + ' (' + (st.tmode === 'all' ? 'all' : 'any') + ')' : 'Choose traits';
-    tpills.innerHTML = '';
-    [...st.traits].sort().forEach(t => {
-      const lab = tpanel.querySelector(`.topt[data-n="${CSS.escape(t)}"] span`).textContent;
-      const b = document.createElement('button'); b.type = 'button'; b.className = 'chip mini pill'; b.dataset.t = t;
-      b.innerHTML = '<span></span><span class="x" aria-hidden="true">×</span>'; b.firstChild.textContent = lab;
-      b.setAttribute('aria-label', 'Remove trait ' + lab);
-      tpills.appendChild(b);
-    });
+    traitPills(st, tpanel, tpills, tlab, 'Choose traits and tags');
   }
   function syncChips(){
     main.querySelectorAll('.controls .chip[data-f]').forEach(b => {
@@ -418,6 +407,7 @@ function initSpells(){
     });
     main.querySelectorAll('.controls .chip[data-m]').forEach(b => b.classList.toggle('on', st[b.dataset.m].has(b.dataset.v)));
     tpanel.querySelectorAll('input[type=checkbox]').forEach(i => { i.checked = st.traits.has(i.value); });
+    tpanel.querySelectorAll('.tx').forEach(b => b.setAttribute('aria-pressed', st.xtraits.has(b.dataset.x) ? 'true' : 'false'));
     tpanel.querySelectorAll('[data-tm]').forEach(b => b.classList.toggle('on', b.dataset.tm === st.tmode));
   }
   main.querySelector('#spell-q').addEventListener('input', e => { st.q = e.target.value.trim().toLowerCase(); apply(); });
@@ -436,11 +426,12 @@ function initSpells(){
   const filterT = q => tpanel.querySelectorAll('.topt').forEach(l => { l.hidden = q && !l.dataset.n.includes(q); });
   tbtn.addEventListener('click', () => openT(tpanel.hidden));
   tfind.addEventListener('input', () => filterT(tfind.value.trim().toLowerCase()));
-  tpanel.querySelectorAll('input[type=checkbox]').forEach(i => i.addEventListener('change', () => { i.checked ? st.traits.add(i.value) : st.traits.delete(i.value); apply(); }));
+  tpanel.querySelectorAll('input[type=checkbox]').forEach(i => i.addEventListener('change', () => { if (i.checked) { st.traits.add(i.value); st.xtraits.delete(i.value); } else st.traits.delete(i.value); syncChips(); apply(); }));
+  tpanel.querySelectorAll('.tx').forEach(b => b.addEventListener('click', () => { const t = b.dataset.x; if (st.xtraits.has(t)) st.xtraits.delete(t); else { st.xtraits.add(t); st.traits.delete(t); } syncChips(); apply(); }));
   tpanel.querySelectorAll('[data-tm]').forEach(b => b.addEventListener('click', () => { st.tmode = b.dataset.tm; syncChips(); apply(); }));
-  tpanel.querySelector('#tclear').addEventListener('click', () => { st.traits.clear(); syncChips(); apply(); });
+  tpanel.querySelector('#tclear').addEventListener('click', () => { st.traits.clear(); st.xtraits.clear(); syncChips(); apply(); });
   tpanel.querySelector('#tdone').addEventListener('click', () => { openT(false); tbtn.focus(); });
-  tpills.addEventListener('click', e => { const b = e.target.closest('.pill'); if (!b) return; st.traits.delete(b.dataset.t); syncChips(); apply(); });
+  tpills.addEventListener('click', e => { const b = e.target.closest('.pill'); if (!b) return; st.traits.delete(b.dataset.t); st.xtraits.delete(b.dataset.t); syncChips(); apply(); });
   document.addEventListener('click', e => { if (!tpanel.hidden && !tsel.contains(e.target)) openT(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !tpanel.hidden) { openT(false); tbtn.focus(); } });
   main.querySelector('#fclear').addEventListener('click', () => {
@@ -458,6 +449,31 @@ function initSpells(){
 }
 
 route();
+
+// ── trait and tag filter shared by spells, items and consumables: include (any or all) and exclude ──
+function traitMatch(traits, st){
+  if (!st.traits.size && !st.xtraits.size) return true;
+  const t = new Set((traits || '').split('|'));
+  if ([...st.xtraits].some(x => t.has(x))) return false;
+  if (!st.traits.size) return true;
+  return st.tmode === 'all' ? [...st.traits].every(x => t.has(x)) : [...st.traits].some(x => t.has(x));
+}
+function traitPills(st, tpanel, tpills, tlab, idle){
+  const parts = [];
+  if (st.traits.size) parts.push(st.traits.size + ' included (' + st.tmode + ')');
+  if (st.xtraits.size) parts.push(st.xtraits.size + ' excluded');
+  tlab.textContent = parts.join(', ') || idle;
+  tpills.innerHTML = '';
+  const pill = (t, neg) => {
+    const lab = tpanel.querySelector(`.topt[data-n="${CSS.escape(t)}"] span`).textContent;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'chip mini pill' + (neg ? ' neg' : ''); b.dataset.t = t;
+    b.innerHTML = '<span></span><span class="x" aria-hidden="true">×</span>'; b.firstChild.textContent = (neg ? 'Not ' : '') + lab;
+    b.setAttribute('aria-label', 'Remove ' + (neg ? 'excluded ' : '') + lab);
+    tpills.appendChild(b);
+  };
+  [...st.traits].sort().forEach(t => pill(t, false));
+  [...st.xtraits].sort().forEach(t => pill(t, true));
+}
 
 // ── multi-level sort shared by spells, items and consumables ──
 const GRADE_ORDER = 'SABCDF-';
@@ -521,7 +537,7 @@ function initCatalog(){
   const count = main.querySelector('#cat-count'), fact = main.querySelector('#fact');
   const fbox = main.querySelector('.fbox');
   if (matchMedia('(max-width: 720px)').matches) fbox.open = false;
-  const DEF = () => ({q: '', single: {}, multi: {}, stars: new Set(['4', '5', '6']), traits: new Set(), tmode: 'any'});
+  const DEF = () => ({q: '', single: {}, multi: {}, stars: new Set(['4', '5', '6']), traits: new Set(), xtraits: new Set(), tmode: 'any'});
   let st = DEF();
   root.querySelectorAll('.chip[data-mode="single"].on').forEach(b => { st.single[b.dataset.k] = b.dataset.v; });
   const defaults = {...st.single};
@@ -542,10 +558,7 @@ function initCatalog(){
       const toks = (d[k] || '').split(' ');
       if (![...set].some(v => toks.includes(v))) return false;
     }
-    if (st.traits.size){
-      const t = new Set((d.traits || '').split('|'));
-      if (st.tmode === 'all' ? ![...st.traits].every(x => t.has(x)) : ![...st.traits].some(x => t.has(x))) return false;
-    }
+    if (!traitMatch(d.traits, st)) return false;
     return true;
   }
   function active(){
@@ -553,6 +566,7 @@ function initCatalog(){
     for (const [k, v] of Object.entries(st.single)) if (v !== (defaults[k] || 'all')) n++;
     for (const s of Object.values(st.multi)) if (s.size) n++;
     if (st.traits.size) n++;
+    if (st.xtraits.size) n++;
     return n;
   }
   function apply(){
@@ -563,22 +577,14 @@ function initCatalog(){
     const k = active();
     fact.textContent = k ? k + ' active, ' + n + ' shown' : n + ' items';
     count.textContent = k ? n + ' of ' + cards.length + ' shown' : cards.length + ' items';
-    if (tsel){
-      tlab.textContent = st.traits.size ? st.traits.size + ' trait' + (st.traits.size > 1 ? 's' : '') + ' (' + st.tmode + ')' : 'Choose traits';
-      tpills.innerHTML = '';
-      [...st.traits].sort().forEach(t => {
-        const lab = tpanel.querySelector(`.topt[data-n="${CSS.escape(t)}"] span`).textContent;
-        const b = document.createElement('button'); b.type = 'button'; b.className = 'chip mini pill'; b.dataset.t = t;
-        b.innerHTML = '<span></span><span class="x" aria-hidden="true">×</span>'; b.firstChild.textContent = lab;
-        b.setAttribute('aria-label', 'Remove trait ' + lab); tpills.appendChild(b);
-      });
-    }
+    if (tsel) traitPills(st, tpanel, tpills, tlab, 'Choose traits');
   }
   function sync(){
     root.querySelectorAll('.chip[data-mode="single"]').forEach(b => b.classList.toggle('on', (st.single[b.dataset.k] || 'all') === b.dataset.v));
     root.querySelectorAll('.chip[data-mode="multi"]').forEach(b => b.classList.toggle('on', (st.multi[b.dataset.k] || new Set()).has(b.dataset.v)));
     root.querySelectorAll('.chip[data-m="stars"]').forEach(b => b.classList.toggle('on', st.stars.has(b.dataset.v)));
     tpanel?.querySelectorAll('input[type=checkbox]').forEach(i => { i.checked = st.traits.has(i.value); });
+    tpanel?.querySelectorAll('.tx').forEach(b => b.setAttribute('aria-pressed', st.xtraits.has(b.dataset.x) ? 'true' : 'false'));
     tpanel?.querySelectorAll('[data-tm]').forEach(b => b.classList.toggle('on', b.dataset.tm === st.tmode));
   }
   root.querySelector('.cq').addEventListener('input', e => { st.q = e.target.value.trim().toLowerCase(); apply(); });
@@ -595,11 +601,12 @@ function initCatalog(){
     const filterT = q => tpanel.querySelectorAll('.topt').forEach(l => { l.hidden = q && !l.dataset.n.includes(q); });
     tbtn.addEventListener('click', () => openT(tpanel.hidden));
     tfind.addEventListener('input', () => filterT(tfind.value.trim().toLowerCase()));
-    tpanel.querySelectorAll('input[type=checkbox]').forEach(i => i.addEventListener('change', () => { i.checked ? st.traits.add(i.value) : st.traits.delete(i.value); apply(); }));
+    tpanel.querySelectorAll('input[type=checkbox]').forEach(i => i.addEventListener('change', () => { if (i.checked) { st.traits.add(i.value); st.xtraits.delete(i.value); } else st.traits.delete(i.value); sync(); apply(); }));
+    tpanel.querySelectorAll('.tx').forEach(b => b.addEventListener('click', () => { const t = b.dataset.x; if (st.xtraits.has(t)) st.xtraits.delete(t); else { st.xtraits.add(t); st.traits.delete(t); } sync(); apply(); }));
     tpanel.querySelectorAll('[data-tm]').forEach(b => b.addEventListener('click', () => { st.tmode = b.dataset.tm; sync(); apply(); }));
-    tpanel.querySelector('.tclear').addEventListener('click', () => { st.traits.clear(); sync(); apply(); });
+    tpanel.querySelector('.tclear').addEventListener('click', () => { st.traits.clear(); st.xtraits.clear(); sync(); apply(); });
     tpanel.querySelector('.tdone').addEventListener('click', () => { openT(false); tbtn.focus(); });
-    tpills.addEventListener('click', e => { const b = e.target.closest('.pill'); if (!b) return; st.traits.delete(b.dataset.t); sync(); apply(); });
+    tpills.addEventListener('click', e => { const b = e.target.closest('.pill'); if (!b) return; st.traits.delete(b.dataset.t); st.xtraits.delete(b.dataset.t); sync(); apply(); });
     document.addEventListener('click', e => { if (!tpanel.hidden && !tsel.contains(e.target)) openT(false); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !tpanel.hidden) { openT(false); tbtn.focus(); } });
   }
