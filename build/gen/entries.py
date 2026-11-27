@@ -143,6 +143,9 @@ def _norm(b):
 
 _SCHOOLS = {'abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'necromancy', 'transmutation'}
 _RENAMED = {'positive': 'vitality', 'negative': 'void'}
+ATTACK_NOT_ON_CAST = {   # the attack roll belongs to something the spell creates or controls, not to casting it
+    'Illusory Creature': 'the illusion makes its own attacks', 'Tangling Creepers': 'the vine attack is a later action',
+    'Puppet Strings': 'the controlled creature makes the Strike'}
 _COMPONENT_TRAIT = {'verbal': 'Concentrate', 'somatic': 'Manipulate', 'material': 'Manipulate', 'focus': 'Manipulate'}
 _FALLBACK_FILES = {'feature': ['hybrid-studies'], 'item': ['weapons', 'armors', 'shields'], 'action': ['skill-general-actions']}
 
@@ -211,6 +214,11 @@ def _spell_traits(shown, doc):
             t = _COMPONENT_TRAIT[c]
             if t.lower() not in [l.lower() for l, _ in out]:
                 out.append((t, TRAITS.get(t.lower(), AON + '/Traits.aspx')))
+    # a spell whose casting calls for a spell attack roll has the attack trait, even where the entry leaves it out
+    if 'attack' not in [l.lower() for l, _ in out] and doc.get('name') not in ATTACK_NOT_ON_CAST:
+        body = (doc.get('markdown') or '').partition('\n---')[2].split('**Heightened')[0]
+        if (doc.get('saving_throw') or '').strip() == 'AC' or re.search(r'spell attack (?:roll|against)', body, re.I):
+            out.append(('Attack', TRAITS.get('attack', AON + '/Traits.aspx')))
     rar = [x for x in out if x[0].lower() in ('uncommon', 'rare', 'unique')]
     rest = sorted([x for x in out if x not in rar], key=lambda x: x[0].lower())
     return rar + rest
