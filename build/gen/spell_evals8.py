@@ -636,7 +636,7 @@ The cloud does the same to allies, so it must be placed on the enemy's side of t
 
 w('Tempest Cloak', """Protection for one ally against arrows and a ring of difficult terrain around them. It can keep a caster safer from archers and from enemies trying to close. It costs two actions and does nothing for him directly.""")
 
-w('Vampiric Feast', """Average damage that pays some of itself back. Through Spellstrike its touch range becomes his reach, and the temporary Hit Points he gains make it the only payload that leaves him sturdier after casting it. A basic save means half damage and half the buffer even when the target succeeds.
+w('Vampiric Feast', """Solid damage that pays some of itself back. Through Spellstrike its touch range becomes his reach, and the temporary Hit Points he gains make it the only payload that leaves him sturdier after casting it. A basic save means half damage and half the buffer even when the target succeeds.
 
 It works only on living creatures and aims at Fortitude, the save tough enemies pass most often. Void damage is rarely resisted by the living. A good payload for a fight in which he expects to be hit.""")
 
@@ -712,7 +712,7 @@ w('Translocate', """A long teleport with no line to walk and nothing to provoke.
 
 Dimensional Assault covers short hops within a fight more cheaply, so this is for the distances that spell cannot reach. From level 13 it is a studious spell, in his book for free and bundled with Arcane Cascade. Worth a scroll before then and an occasional slot after.""")
 
-w('Vision of Death', """His best Will payload. The damage is average for the rank, and the fear applies on a successful save, so the slot is never wasted on a living enemy that can feel fear. Delivered through Spellstrike it adds a solid hit and leaves the target easier for everyone to hit and affect.
+w('Vision of Death', """His best Will payload. The damage is solid for the rank, and the fear applies on a successful save, so the slot is never wasted on a living enemy that can feel fear. Delivered through Spellstrike it adds a solid hit and leaves the target easier for everyone to hit and affect.
 
 Mindless creatures and anything immune to mental or death effects ignore it completely, which rules it out on some days. Where it works it is the strongest thing he can do to an enemy with a weak Will, such as a brute. Prepare it when the day's enemies are known to be living and thinking.""")
 
@@ -840,7 +840,7 @@ w('Planar Tether', """Stops a creature from teleporting or leaving the plane. Ag
 
 w('Sanguine Mist', """A cloud of void damage that grows stronger and feeds him temporary Hit Points while he sustains it. The first burst is decent. The rest needs the action he uses to recharge, and it harms living allies too.""")
 
-w("Mantis's Grasp", """Force damage, average for the rank, with a hold on a failure, from long range. Force is almost never resisted, and an immobilised enemy cannot leave his reach or reach the party's casters. As a payload it competes with the best at this rank, and it is equally good cast directly.
+w("Mantis's Grasp", """Solid force damage with a hold on a failure, from long range. Force is almost never resisted, and an immobilised enemy cannot leave his reach or reach the party's casters. As a payload it competes with the best at this rank, and it is equally good cast directly.
 
 The hold needs a failed Reflex save and lasts a round unless the failure is critical. It is rare and needs permission. Where allowed, it is a stronger single-target option than Force Rain against an enemy he wants pinned.""")
 
@@ -880,7 +880,7 @@ w('Wall of Stone', """The strongest battlefield control he can cast at this rank
 
 It takes his whole turn, so it is a first-round spell, cast while the enemy is still closing, and a misplaced wall hinders the party as much as the enemy. On a day with a large or awkward fight in prospect, one slot spent here can be worth more than any payload.""")
 
-w('Glacial Skewer', """An attack payload with a positional trick. The damage is average for the rank and rides the Strike's roll, doubling on a critical hit, and cold and piercing together are seldom both resisted. If the push drives the target into a wall, pillar or other large obstacle, it is pinned there.
+w('Glacial Skewer', """An attack payload with a positional trick. The damage is solid for the rank and rides the Strike's roll, doubling on a critical hit, and cold and piercing together are seldom both resisted. If the push drives the target into a wall, pillar or other large obstacle, it is pinned there.
 
 The push otherwise moves the enemy out of his reach, which he does not always want, so it rewards choosing his angle before the Strike. Indoors, with a wall behind the target, the pin makes it the best attack-roll payload at this rank; in open ground Blood Feast hits harder and a heightened Briny Bolt serves as well.""")
 
@@ -950,9 +950,9 @@ Its area is a cylinder, which Expansive Spellstrike does not cover, so it is a d
 
 w('Glimmer of Charm', """An aura that softens the attitude of people near him. It could ease a tense negotiation, but it needs sustaining, has incapacitation, and using magic on the people he is negotiating with carries its own risks.""")
 
-w('Grisly Growths', """Plain single-target damage against Fortitude, average for the rank, with a basic save so that half still lands on a success. It works on almost any creature with a body, living or not, which Vampiric Feast does not.
+w('Grisly Growths', """Solid single-target damage against Fortitude, with a basic save so that half still lands on a success, and it works on almost any creature with a body, living or not, which Vampiric Feast does not. The sight of it also sickens creatures within 30 feet that fail a Will save, the target included, which is a useful penalty across a group of enemies.
 
-It has no rider. Weight of the World does far more to the fight against one strong enemy; this is the choice when the aim is simply to finish something, and the target's Fortitude is not its best save.""")
+That second effect does not spare allies, so it suits a target standing among its own side, and mindless creatures ignore it. Weight of the World does far more against one strong enemy; this is the choice when the aim is to finish something whose Fortitude is not its best save.""")
 
 w('Hallucination', """Changes what one creature perceives for an hour: a person it cannot see, a door that looks like a wall, a stranger who looks like a friend. For intrigue and infiltration it is a subtle, powerful tool, and it draws little attention when cast.
 
@@ -1118,7 +1118,7 @@ w('Lignify', """Slow with a higher ceiling. A successful save still costs the ta
 
 The follow-up saves have incapacitation, so the petrifying end is for equals. As a payload it competes with Slow three ranks lower, which gives the same floor for far less. Use this when the top slot has nothing better to do against a creature of flesh.""")
 
-w('Necrotize', """Void damage with a lingering debuff, against Fortitude. The damage is average for the rank, and the random debilitation always adds something: a weakness, a penalty, or a hindrance to movement.
+w('Necrotize', """Void damage with a lingering debuff, against Fortitude. The damage is solid for the rank, and the random debilitation always adds something: a weakness, a penalty, or a hindrance to movement.
 
 It works only on the living, and he cannot choose which debilitation appears. Chain Lightning hits harder against Reflex, so choose this for the debilitation or when Fortitude is the weaker save.""")
 
@@ -1168,7 +1168,7 @@ w('Scrying', """Watching a specific creature from anywhere. For finding an enemy
 
 w('Utter Destruction', """A cone of two damage types with a deafening rider. Its damage is well below Vampiric Exsanguination's and Chain Lightning's at the same rank.""")
 
-w('Missed Cue', """The best Will payload he can prepare. Mental damage that is average for the rank, fear even on a successful save, and on a failure the target is slowed for as long as it remains frightened, which costs it actions over at least two rounds. Damage, a debuff and lost actions from a single Strike is as much as any spell at this rank offers.
+w('Missed Cue', """The best Will payload he can prepare. Solid mental damage, fear even on a successful save, and on a failure the target is slowed for as long as it remains frightened, which costs it actions over at least two rounds. Damage, a debuff and lost actions from a single Strike is as much as any spell at this rank offers.
 
 It is a fear and mental effect, so mindless and fearless creatures ignore it, and it is rare, which means it needs permission. Where it is allowed and the enemy can feel fear, it belongs in a top slot.""")
 
@@ -1312,7 +1312,7 @@ w('Falling Sky', """Throws everything in a huge column to the ground, prone even
 
 It has incapacitation for the stun, and the column is too big to use near allies. As a direct cast against airborne enemies it has no equal on his list.""")
 
-w('Boil Blood', """Single-target fire damage against Fortitude, average for the rank, with drained on a failure to lower the target's Hit Points and later Fortitude saves. Through Spellstrike it is a simple payload.
+w('Boil Blood', """Solid single-target fire damage against Fortitude, with drained on a failure to lower the target's Hit Points and later Fortitude saves. Through Spellstrike it is a simple payload.
 
 Half damage on a success still makes it worthwhile. Creatures without blood are immune, and fire is commonly resisted by exactly the fiery enemies he may face. A simple damage choice when neither applies.""")
 

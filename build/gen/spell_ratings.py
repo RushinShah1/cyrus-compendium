@@ -160,7 +160,7 @@ R = {
     'Acid Storm': '300000',
     'Blink Charge': '200040',
     'Elemental Breath': '500000',
-    'Grisly Growths': '300000',
+    'Grisly Growths': '302000',
     'Slither': '240000',
     'Stagnate Time': '040000',
     'Toxic Cloud': '400000',
