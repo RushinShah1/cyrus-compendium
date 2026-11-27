@@ -9,7 +9,9 @@ multiplied for area (1.5 for a 10-foot burst, 15-foot cone or 30-foot line; 2 fo
 line; 2.5 for larger), and by 0.85 when a successful save takes nothing. Divide by 7 per spell rank: 1.6 or more is 5,
 1.15 is 4, 0.8 is 3, 0.45 is 2, anything less is 1. Spells with several action versions use the two-action version, damage
 that repeats each round is counted for two rounds, and a spell that needs both a hit and a failed save is counted at
-three quarters. No spell gets 6 for damage. Cantrips are ranked against each other.
+three quarters. The drained condition removes Hit Points equal to the target's level times its value, so a spell that
+drains is credited with that loss against a target of the level at which the spell is first available. No spell gets 6
+for damage. Cantrips are ranked against each other.
 
 Control (taking actions, movement or reactions away, or reshaping the field): 5 denies actions or movement with no save or
 on a successful save, or is a large solid wall; 4 does something on a success and much more on a failure, or is reliable
@@ -195,14 +197,15 @@ R = {
     'Visions of Danger': '520000',
     'Arctic Rift': '530000',
     'Uncontrollable Dance': '044000',
-    'Boil Blood': '303000',
+    'Boil Blood': '403000',
     'Earthquake': '440000',
     'Whirlpool': '230000',
-    'Polar Ray': '304000',
+    'Polar Ray': '404000',
     'Metallic Meteorite Glyph': '400000',
     'Phantasmagoria': '540000',
     'Implosion': '500000',
-    'Disappearance': '000606',
+    'Disappearance': '000606',    'Defy the Gods': '205000',
+    'Incarnate Tempest of Shades': '214000',
 }
 
 for _n, _r in R.items():

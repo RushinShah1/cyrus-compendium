@@ -98,14 +98,14 @@ _p(7,
    "This rank's own payloads target Reflex and AC, so Fortitude and Will come from Necrotize and Missed Cue heightened into these slots.")
 
 _p(8,
-   ['Arctic Rift', 'Roar of Freedom', 'Boil Blood'], ['Quandary', 'Uncontrollable Dance', 'Power Word Stun', 'Falling Sky'], ['Uncontrollable Dance'],
+   ['Arctic Rift', 'Roar of Freedom', 'Polar Ray', 'Boil Blood'], ['Quandary', 'Uncontrollable Dance', 'Power Word Stun', 'Falling Sky'], ['Uncontrollable Dance'],
    ['Disappearance', 'Roar of Freedom'], [], ['Disappearance'],
    dict(AC=['Polar Ray'], Fortitude=['Arctic Rift', 'Boil Blood', 'Falling Sky'], Reflex=['Metallic Meteorite Glyph', 'Frigid Flurry (rank 8)'], Will=['Roar of Freedom', 'Uncontrollable Dance']),
    ['Disappearance', 'Quandary', 'Arctic Rift', 'Roar of Freedom', 'Uncontrollable Dance', 'Power Word Stun', 'Boil Blood'],
    ['Falling Sky', 'Polar Ray', 'Metallic Meteorite Glyph'],
    'cold, sonic, fire',
    "Roar of Freedom is the best final action Cyrus has: one action for area damage, a debuff and temporary Hit Points. Disappearance makes every Strike hit an off-guard target. "
-   "Power Word Stun takes actions from a boss for one action and no save, leaving two for Spellstrike. Reflex and AC have no A-graded payload at this rank, so Frigid Flurry heightened covers Reflex.")
+   "Power Word Stun takes actions from a boss for one action and no save, leaving two for Spellstrike. Polar Ray is the AC payload, and its drain lowers the Fortitude save for Arctic Rift or Boil Blood. Reflex has no A-graded payload at this rank, so Frigid Flurry heightened covers it.")
 
 _p(9,
    ['Dimensional Excision', 'Falling Stars', 'Power Word Kill'], ['Remake Physiology'], ['Remake Physiology', 'Unspeakable Shadow'],
@@ -127,7 +127,7 @@ BOOK = {
     5: ['Weight of the World', 'Wall of Stone', 'Glacial Skewer', 'Blazing Fissure', 'Wave of Despair', 'Mirror Malefactors', 'Grisly Growths', 'Tornadic Gale'],
     6: ['Living Thunderbolt', 'Chain Lightning', 'Disintegrate', 'Wall of Force', 'Missed Cue', 'Necrotize', 'Lignify'],
     7: ['True Target', 'Frigid Flurry', 'Telekinetic Bombardment', 'Comet Charge', 'Power Word Blind', 'Time Beacon', 'Contingency'],
-    8: ['Disappearance', 'Quandary', 'Arctic Rift', 'Roar of Freedom', 'Uncontrollable Dance', 'Power Word Stun', 'Boil Blood'],
+    8: ['Disappearance', 'Quandary', 'Arctic Rift', 'Roar of Freedom', 'Uncontrollable Dance', 'Power Word Stun', 'Polar Ray', 'Boil Blood'],
     9: ['Foresight', 'Remake Physiology', 'Dimensional Excision', 'Power Word Kill', 'Unspeakable Shadow', 'Bilocation'],
 }
 TYPES = {0: 'bleed, fire, cold, electricity, piercing', 2: 'acid, fire, sonic, piercing', 6: 'electricity, void, mental', 9: 'bleed'}

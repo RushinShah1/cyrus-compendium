@@ -1312,9 +1312,9 @@ w('Falling Sky', """Throws everything in a huge column to the ground, prone even
 
 It has incapacitation for the stun, and the column is too big to use near allies. As a direct cast against airborne enemies it has no equal on his list.""")
 
-w('Boil Blood', """Solid single-target fire damage against Fortitude, with drained on a failure to lower the target's Hit Points and later Fortitude saves. Through Spellstrike it is a simple payload.
+w('Boil Blood', """Fire damage against Fortitude with a large second effect on a failure: the target is drained 2, which removes two further Hit Points for each of its levels and lowers its later Fortitude saves. A failed save is therefore one of the heaviest single-target results at this rank, and through Spellstrike it is a simple payload.
 
-Half damage on a success still makes it worthwhile. Creatures without blood are immune, and fire is commonly resisted by exactly the fiery enemies he may face. A simple damage choice when neither applies.""")
+On a success it is half the fire damage and no drain, and strong enemies pass Fortitude more often than not, so Polar Ray, whose drain needs only the Strike to hit, is the more reliable of the two. Creatures without blood are immune, and fire is commonly resisted. Choose it when Fortitude is the target's weaker save.""")
 
 w('Confusing Colors', """A cloud that dazzles widely and confuses or stuns those that fail. It needs sustaining and has incapacitation, so it is a spell for crowds of lesser enemies from someone who can afford the upkeep.""")
 
@@ -1348,7 +1348,9 @@ w('Take Your Places', """Teleports up to four allies anywhere within sixty feet.
 
 It moves only the willing and does nothing by itself to the enemy. It is rare. Valuable in a party that plans around position; expensive at this rank otherwise.""")
 
-w('Polar Ray', """Attack-roll cold damage that leaves the target drained on any hit, which weakens it for the rest of the day. The damage is below what his best payloads deal at this rank. The drain is the only reason to pick it, for softening an enemy the party will fight for many rounds.""")
+w('Polar Ray', """The strongest attack-roll payload at this rank against a single powerful enemy, once the drain is counted. A hit deals moderate cold damage and leaves the target drained 2 with no save, which removes two further Hit Points for each of its levels and lowers its Fortitude saves for the rest of the fight. Against a creature of level 15 or higher that is more in total than Blood Feast or a heightened Briny Bolt delivers, and it sets up Slow, Arctic Rift or Weight of the World.
+
+The drain does not double on a critical hit and does not stack with itself, so a second casting on the same enemy adds only the cold damage. Constructs and other creatures immune to drained take the cold alone. Prepare one for the day's main enemy.""", grades='ADD')
 
 w('Metallic Meteorite Glyph', """Very heavy bludgeoning damage on a basic Reflex save, in a type almost nothing resists. As a payload its two-action form is simple and strong, and half damage on a success keeps it worthwhile.
 
