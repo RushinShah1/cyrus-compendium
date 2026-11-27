@@ -6,8 +6,8 @@ A rating says how well the spell does that job compared with other spells of its
 damage, the clear outliers at their rank.
 
 Damage is measured, not judged, in two steps.
-Step 1, damage per target: average damage on a hit or a failed save, with persistent damage and damage that repeats each
-round counted for two rounds, multiplied by 0.85 when a successful save takes nothing and by 0.75 when the spell needs both
+Step 1, damage per target: average damage on a hit or a failed save, with persistent damage and damage the spell repeats on a
+creature that cannot simply leave it counted for two rounds (a cloud or zone is counted once), multiplied by 0.85 when a successful save takes nothing and by 0.75 when the spell needs both
 a hit and a failed save, divided by 2d6 (7) per spell rank. Under 45% is 1, 45% to 80% is 2, 80% to 105% is 3, 105% to
 120% is 4, 120% to 160% is 5, and more than 160% is 6. So 2d6 per rank against one target is 3.
 Step 2, area: add one star for a small area or a few targets (10-foot burst, cones up to 30 feet, lines, emanations up to
@@ -29,6 +29,7 @@ they change, for how long and for how many.
 from spell_evals_base import E
 
 R = {
+    'Elemental Breath': '500000',
     'Needle Darts': '500001',
     'Live Wire': '300000',
     'Frostbite': '301000',
@@ -209,7 +210,6 @@ R = {
     'Chain Lightning': '600000',
     'Spirit Blast': '500000',
     'Frigid Flurry': '600050',
-    'Shadow Raid': '500000',
     'Spirit Song': '530000',
     'Falling Stars': '620000',
 }
