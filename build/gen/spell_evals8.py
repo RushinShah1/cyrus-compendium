@@ -26,7 +26,7 @@ def w(name, text, grades=None, ratings=None):
 
 
 # ───────────────────────── rank 2 ─────────────────────────
-w('Acid Grip', """The most dependable payload at this rank, because it achieves something at every result short of a critical success. Its damage is modest. Its worth is the forced move, which Cyrus aims: an enemy comes off a pinned ally, into a flank or out of a doorway, and has to spend actions inside his reach to get back. Enemies of his level or higher save more often than they fail, so a spell that still shifts them on a success is worth far more than one that needs a failure.
+w('Acid Grip', """The most dependable payload at this rank, because it achieves something at every result short of a critical success. Its damage is fair once the persistent acid is counted. Its worth is the forced move, which Cyrus aims: an enemy comes off a pinned ally, into a flank or out of a doorway, and has to spend actions inside his reach to get back. Enemies of his level or higher save more often than they fail, so a spell that still shifts them on a success is worth far more than one that needs a failure.
 
 It is the wrong pick against a lone enemy that is already where the party wants it; Sudden Bolt's damage serves better there. Otherwise prepare it by default, and keep it in a rank-2 slot at every level.""")
 
@@ -694,7 +694,7 @@ It does not stop the enemy attacking whoever is adjacent, and it targets Fortitu
 
 w('Lightning Lasso', """Damage with a hold attached, if the target fails. Keeping the hold costs a sustain each round, the action he needs for recharging, and the enemy can simply Escape. Skyglass Prison holds an enemy without upkeep and does so on a success.""")
 
-w('Rend Magic', """An anti-caster payload. The initial force damage is solid and rides the Strike, and afterwards the target is hurt every time it casts a spell, which punishes exactly the enemy he most wants to pressure. Force is almost never resisted.
+w('Rend Magic', """An anti-caster payload. The initial force damage is a little under the usual for the rank and rides the Strike, and afterwards the target is hurt every time it casts a spell, which punishes exactly the enemy he most wants to pressure. Force is almost never resisted.
 
 Against anything that does not cast it is plain damage and ends at once. Prepare it when enemy spellcasters are expected; otherwise Briny Bolt offers more.""")
 

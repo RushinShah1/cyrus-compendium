@@ -18,7 +18,7 @@ def area_class(i,head):
     if a and ('cube' in a or 'square' in a): return 0
     return 1 if a else 0
 def star(ratio):
-    return 6 if ratio>1.6 else 5 if ratio>1.2 else 4 if ratio>1.05 else 3 if ratio>=0.8 else 2 if ratio>=0.45 else 1 if ratio>0 else 0
+    return 6 if ratio>1.6 else 5 if ratio>=1.2 else 4 if ratio>1.05 else 3 if ratio>=0.8 else 2 if ratio>=0.45 else 1 if ratio>0 else 0
 rows=[]
 for which,src in (('A',RANKS),('O',OCCULT)):
     for rank in range(0,10):
@@ -34,6 +34,7 @@ for which,src in (('A',RANKS),('O',OCCULT)):
             ns=min(6,star(ratio)+ac) if ratio>0 else 0
             if cur>0 or ns>0:
                 rows.append((rank,which,n,cur,d,ratio,ac,ns,plain(i['area'] or '')[:22],(i['targets'] or '')[:20],'A' if attack else ('b' if basic else 'n')))
+import collections
 for r in rows:
     rank,which,n,cur,d,ratio,ac,ns,a,t,k=r
-    print(f"{rank}{which} {n:<27} cur{cur} {d[0]:>3.0f}+{d[1]:.0f}p {k} r={ratio:.2f} a{ac} -> {ns}  |{a}|{t}")
+    if ns!=cur: print(f"{rank}{which} {n:<27} cur{cur} {d[0]:>3.0f}+{d[1]:.0f}p {k} r={ratio:.2f} a{ac} -> {ns}  |{a}|{t}")

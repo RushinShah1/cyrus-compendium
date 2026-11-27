@@ -5,17 +5,34 @@ A rating says how well the spell does that job compared with other spells of its
 5 universal or exceptional, 6 transformative: a handful of spells that change how a fight or a problem works, or, for
 damage, the clear outliers at their rank.
 
-Damage is measured, not judged, in two steps.
-Step 1, damage per target: average damage on a hit or a failed save, with persistent damage and damage the spell repeats on a
-creature that cannot simply leave it counted for two rounds (a cloud or zone is counted once), multiplied by 0.85 when a successful save takes nothing and by 0.75 when the spell needs both
-a hit and a failed save, divided by 2d6 (7) per spell rank. Under 45% is 1, 45% to 80% is 2, 80% to 105% is 3, 105% to
-120% is 4, 120% to 160% is 5, and more than 160% is 6. So 2d6 per rank against one target is 3.
+Damage is measured, not judged.
+Step 1, damage per target: average damage on a hit or a failed save, plus persistent damage for two rounds, multiplied by
+0.85 when a successful save takes nothing and by 0.75 when the spell needs both a hit and a failed save, divided by 2d6 (7)
+per spell rank. Under 45% is 1, 45% to 80% is 2, 80% to 105% is 3, 105% to 120% is 4, 120% to 160% is 5, and more than
+160% is 6. So 2d6 per rank against one target is 3.
+Lasting spells: a cloud or zone is counted for what a creature caught in it cannot avoid, which is its damage when it
+appears and its damage at the start of that creature's next turn. Damage for ending a turn in it or crossing it is not
+counted. Damage he repeats by spending an action each round (Sustain, moving through a creature, popping a blister) is
+counted for one extra round at half.
 Step 2, area: add one star for a small area or a few targets (10-foot burst, cones up to 30 feet, lines, emanations up to
 15 feet, two or three targets) and two for a large one (20-foot burst or bigger, 60-foot cone or bigger, larger
-emanations, any number of targets). A single square or a 5-foot burst adds nothing. The total stops at 6.
+emanations, any number of targets). A single square or a 5-foot burst adds nothing. A spell under 45% per target gains one
+star at most. The total stops at 6.
+Step 3, narrow targets: a spell that can only be aimed at a narrow kind of target (something metal, a creature taller than
+him, creatures up to a set level) is one star lower.
 Spells with several action versions use the two-action version. The drained condition removes Hit Points equal to the
 target's level times its value, so a spell that drains is credited with that loss against a target of the level at which
 the spell is first available. Cantrips are ranked against each other, with 2d4 as 3.
+Rated by hand: spells that kill outright (Power Word Kill), summons, spells that deal their damage through a Strike, and
+damage that is incidental to a wall, terrain or retaliation effect (0 to 2).
+Readings that needed a choice: Ignition 4, between its ranged 2d4 (3) and melee 2d6 (5). Phantom Pain 4, persistent damage
+counted once because it ends when the target stops being sickened. Agitate 2, damage the target avoids by moving counted at
+half. Weapon Storm 3, for a d8 weapon; a d12 weapon makes it 4. Draw the Lightning 3, the extra damage on his first Strike
+each round counted for two rounds, then one lower for the narrow target. Heat Metal 5 and Massacre 5, each one lower for
+the narrow target. Blister 4, the first blister popped counted as the cast and the second at half. Implosion 5, 4 per
+target and one more for a new target each round. Awaken Entropy 4, area counted as large because the first Sustain makes
+it a 20-foot burst. Purple Worm Sting 3, the venom counted for two rounds. Chromatic Ray, Elemental Breath, Prismatic Spray
+and Rainbow Fumarole use the average of their random results, and Comet Charge its best option.
 
 Control (taking actions, movement or reactions away, or reshaping the field): 5 denies actions or movement with no save or
 on a successful save, or is a large solid wall; 4 does something on a success and much more on a failure, or is reliable
@@ -29,6 +46,15 @@ they change, for how long and for how many.
 from spell_evals_base import E
 
 R = {
+    'Disintegrating Puddle': '420000',
+    'Floating Flame': '400000',
+    'Rainbow Fumarole': '400000',
+    'Living Thunderbolt': '402450',
+    'Mirror Malefactors': '503000',
+    'Puff of Poison': '500000',
+    'Prismatic Spray': '330000',
+    'Freezing Rain': '230000',
+    'Rend Magic': '201000',
     'Elemental Breath': '500000',
     'Needle Darts': '500001',
     'Live Wire': '300000',
@@ -85,7 +111,7 @@ R = {
     'Soothe': '000400',
     'Lose the Path': '020000',
     'Phantom Pain': '403000',
-    'Acid Grip': '320040',
+    'Acid Grip': '420040',
     'Invisibility': '000406',
     'Sudden Bolt': '600000',
     'Acid Arrow': '500000',
@@ -98,7 +124,7 @@ R = {
     'Enlarge': '000400',
     'Blood Vendetta': '302000',
     'Animated Assault': '400000',
-    'Ash Cloud': '111000',
+    'Ash Cloud': '211000',
     'Charitable Urge': '030000',
     'Exploding Earth': '510000',
     'Phantasmal Treasure': '020000',
@@ -128,7 +154,7 @@ R = {
     'Stinking Cloud': '044000',
     'Vampiric Feast': '300200',
     'Echo Jump': '400030',
-    'Blazing Dive': '300030',
+    'Blazing Dive': '400030',
     'Magical Fetters': '033000',
     'Roaring Applause': '040000',
     'Skyglass Prison': '040000',
@@ -144,7 +170,7 @@ R = {
     'Ice Storm': '420000',
     'Rust Cloud': '510000',
     'Vampiric Maiden': '230100',
-    'Weapon Storm': '400000',
+    'Weapon Storm': '300000',
     'Sanguine Mist': '400100',
     "Mantis's Grasp": '330000',
     'Freezing Touch': '330000',
@@ -158,7 +184,7 @@ R = {
     'Impaling Spike': '330000',
     'Corrosive Muck': '430000',
     'Banishment': '030000',
-    'Acid Storm': '400000',
+    'Acid Storm': '200000',
     'Blink Charge': '200040',
     'Grisly Growths': '302000',
     'Slither': '240000',
@@ -175,28 +201,28 @@ R = {
     'Cursed Metamorphosis': '030000',
     'Dominate': '040000',
     'Necrotize': '303000',
-    "Poltergeist's Fury": '300000',
+    "Poltergeist's Fury": '200000',
     'Vampiric Exsanguination': '400200',
     'Vibrant Pattern': '033000',
     'Vitrifying Blast': '333000',
     'Wall of Metal': '040000',
     'Awaken Entropy': '400000',
-    'Phantom Orchestra': '300000',
+    'Phantom Orchestra': '400000',
     'Missed Cue': '344000',
     'Curse of the Toad Prince': '040000',
     'Scintillating Safeguard': '000400',
-    'Beheading Buzz Saw': '500000',
+    'Beheading Buzz Saw': '400000',
     'Eclipse Burst': '600000',
     'Telekinetic Bombardment': '430000',
     'Comet Charge': '300050',
     'Heaving Earth': '530020',
     'Power Word Blind': '035000',
-    'Visions of Danger': '520000',
+    'Visions of Danger': '620000',
     'Arctic Rift': '430000',
     'Uncontrollable Dance': '044000',
     'Boil Blood': '503000',
     'Earthquake': '440000',
-    'Whirlpool': '230000',
+    'Whirlpool': '530000',
     'Polar Ray': '504000',
     'Metallic Meteorite Glyph': '300000',
     'Phantasmagoria': '540000',
