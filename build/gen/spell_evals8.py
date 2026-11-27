@@ -542,9 +542,9 @@ w('Magnetic Acceleration', """Attack-roll damage at the same rate as Briny Bolt,
 
 Its long range makes it a respectable direct cast when he cannot reach melee. As a payload Briny Bolt does the same damage and blinds. Learn it only for the ranged turn.""")
 
-w('Widow’s Bite', """A payload that weakens what it hits. The target is enfeebled for as long as the poison lasts, which lowers its attacks and damage, and the persistent poison keeps working while he recharges. All of it is decided by the Strike's roll, with no save for the enemy to pass.
+w('Widow’s Bite', """The only worthwhile payload he can cast without the manipulate trait. Casting it does not trigger Reactive Strike and cannot be lost to the flat check for being grabbed, so it is the Spellstrike for the turn when a large enemy with reach, or one that has hold of him, makes any other spell a risk. The effect suits the same enemies: the target is enfeebled for as long as the poison lasts, decided by the Strike's roll with no save, and the persistent damage keeps working while he recharges.
 
-Poison is the most commonly resisted damage type and many creatures are immune, which removes the enfeebled effect with it. It grows only every second rank. Good against a living brute; Briny Bolt is safer against an unknown enemy.""")
+Poison is the most commonly resisted damage type and many creatures are immune, which removes the enfeebled effect with it, and the spell grows only every second rank. Prepare it against living brutes; Briny Bolt is safer against an unknown enemy.""")
 
 w("Eagle's Cry", """A cone that damages and frightens in one cast, and the fear lands on a successful save. Every enemy caught is worse at attacking and defending for at least a round, on top of respectable sonic damage, and a cone is easy to aim through Expansive Spellstrike.
 
