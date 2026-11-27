@@ -1032,7 +1032,7 @@ It has incapacitation, so a higher-level enemy treats his hit as a step worse an
 
 w('Blood Feast', """The hardest-hitting attack payload at this rank, with a buffer of temporary Hit Points equal to half of what it deals. It rides the Strike's roll and its touch range becomes his reach, so a hit both removes a large part of an enemy and makes him harder to kill in return.
 
-It has no control effect, and it does not grow in every slot. When the aim is damage on an attack roll, and he expects to be hit back, nothing at rank 5 does it better. It is uncommon.""")
+It has no control effect. It gains dice with every rank, so in a rank-6 slot it still deals more on a hit than Disintegrate does after its Fortitude save. When the aim is damage on an attack roll, and he expects to be hit back, nothing at rank 5 does it better. It is uncommon.""")
 
 w('Boomerang Shot', """Heavy attack-roll damage that ignores concealment and most cover. As a direct cast that makes it the answer to an archer behind a wall or an enemy in fog. Through Spellstrike those advantages seldom apply, and its damage is roughly level with a heightened Briny Bolt, without the blind.""")
 
