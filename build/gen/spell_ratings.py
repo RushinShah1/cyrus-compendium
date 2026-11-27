@@ -12,7 +12,7 @@ per spell rank. Under 45% is 1, 45% to 80% is 2, 80% to 105% is 3, 105% to 120% 
 160% is 6. So 2d6 per rank against one target is 3.
 Lasting spells: a cloud or zone is counted for what a creature caught in it cannot avoid, which is its damage when it
 appears and its damage at the start of that creature's next turn. Damage for ending a turn in it or crossing it is not
-counted. Damage he repeats by spending an action each round (Sustain, moving through a creature, popping a blister) is
+counted. Damage he repeats by spending an action each round (Sustain, popping a blister) is
 counted for one extra round at half.
 Step 2, area: add one star for a small area or a few targets (10-foot burst, cones up to 30 feet, lines, emanations up to
 15 feet, two or three targets) and two for a large one (20-foot burst or bigger, 60-foot cone or bigger, larger
@@ -27,7 +27,8 @@ Rated by hand: spells that kill outright (Power Word Kill), summons, spells that
 damage that is incidental to a wall, terrain or retaliation effect (0 to 2).
 Readings that needed a choice: Ignition 4, between its ranged 2d4 (3) and melee 2d6 (5). Phantom Pain 4, persistent damage
 counted once because it ends when the target stops being sickened. Agitate 2, damage the target avoids by moving counted at
-half. Weapon Storm 3, for a d8 weapon; a d12 weapon makes it 4. Draw the Lightning 3, the extra damage on his first Strike
+half. Weapon Storm 3, for a d8 or d10 weapon; a d12 weapon makes it 4. Living Thunderbolt 5, counted for two full rounds
+against one creature, because the damage lasts a minute and repeats on movement he makes anyway. Draw the Lightning 3, the extra damage on his first Strike
 each round counted for two rounds, then one lower for the narrow target. Heat Metal 5 and Massacre 5, each one lower for
 the narrow target. Blister 4, the first blister popped counted as the cast and the second at half. Implosion 5, 4 per
 target and one more for a new target each round. Awaken Entropy 4, area counted as large because the first Sustain makes
@@ -49,7 +50,6 @@ R = {
     'Disintegrating Puddle': '420000',
     'Floating Flame': '400000',
     'Rainbow Fumarole': '400000',
-    'Living Thunderbolt': '402450',
     'Mirror Malefactors': '503000',
     'Puff of Poison': '500000',
     'Prismatic Spray': '330000',

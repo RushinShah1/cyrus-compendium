@@ -1336,7 +1336,9 @@ w('Rainbow Fumarole', """A column of random fire effects after a full turn. Unre
 
 w('Unrelenting Observation', """Lets several people track one creature or object perfectly. A specialised tool for a chase or surveillance.""")
 
-w('Whirlpool', """A large vortex that must be sustained, best where there is water to work with. Too many actions for a situational effect.""")
+w('Whirlpool', """A battlefield spell for a fight against many enemies, cast from far outside it. The area is large enough to hold most of an encounter and all of it is difficult terrain. Every Sustain repeats the damage and drags creatures that fail back toward the middle, so enemies pay again for each round they spend getting out. By the second Sustain it has dealt more than a single blast at the rank would.
+
+The cost is the actions. It takes a whole turn to cast, which rules out Spellstrike, and each Sustain is the action he would spend recharging. It also hits allies, so it has to land before the lines meet. Prepare it when a large group is expected and he can open from range; Arctic Rift serves better once the fight is joined.""", grades='BDD')
 
 w('Sudden Transposition', """Moves two enemies anywhere within sixty feet of him, with heavy damage if they fail. He can pull an archer and a caster into his reach, or throw two brutes away from his allies, and the move alone can decide a round.
 
