@@ -714,7 +714,7 @@ Dimensional Assault covers short hops within a fight more cheaply, so this is fo
 
 w('Vision of Death', """His best Will payload. The damage is solid for the rank, and the fear applies on a successful save, so the slot is never wasted on a living enemy that can feel fear. Delivered through Spellstrike it adds a solid hit and leaves the target easier for everyone to hit and affect.
 
-Mindless creatures and anything immune to mental or death effects ignore it completely, which rules it out on some days. Where it works it is the strongest thing he can do to an enemy with a weak Will, such as a brute. Prepare it when the day's enemies are known to be living and thinking.""")
+Mindless creatures and anything immune to mental or death effects ignore it completely, which rules it out on some days. Where it works it is the strongest thing he can do to an enemy with a weak Will, such as a brute. Prepare it when the day's enemies are known to be living and thinking.""", grades='ADD')
 
 w('Containment', """A force cage for one creature, with two opposite uses. On an enemy it removes a threat from the fight for a while if it fails its save; on a fallen ally it stops them being finished off. The second use is the more dependable, since a willing target does not save.
 
@@ -770,7 +770,7 @@ Raising it costs an action each round and blocking costs his reaction, the same 
 
 w('Flicker', """Resistance to nearly all damage for a minute, with a random teleport at the end of every turn. The resistance is useful. The teleports keep moving him out of the position he chose, and for a fighter who depends on reach and flanking that is a serious cost.""")
 
-w('Grasp of the Deep', """Solid damage against Will with a grab on a failure. A grabbed enemy cannot move away from his reach and is off-guard, which switches on Laughing Shadow's damage for every later Strike, and breaking free costs the enemy an action against his spell DC.
+w('Grasp of the Deep', """Moderate damage against Will with a grab on a failure. A grabbed enemy cannot move away from his reach and is off-guard, which switches on Laughing Shadow's damage for every later Strike, and breaking free costs the enemy an action against his spell DC.
 
 A success still halves the damage, so the slot is never wasted, but the grab needs a failure. Mental effects do not work on mindless creatures. It is a good second Will payload behind Vision of Death, better against an enemy he wants pinned.""")
 

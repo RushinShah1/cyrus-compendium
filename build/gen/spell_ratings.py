@@ -32,7 +32,8 @@ against one creature, because the damage lasts a minute and repeats on movement 
 each round counted for two rounds, then one lower for the narrow target. Heat Metal 5 and Massacre 5, each one lower for
 the narrow target. Blister 4, the first blister popped counted as the cast and the second at half. Implosion 5, 4 per
 target and one more for a new target each round. Awaken Entropy 4, area counted as large because the first Sustain makes
-it a 20-foot burst. Purple Worm Sting 3, the venom counted for two rounds. Chromatic Ray, Elemental Breath, Prismatic Spray
+it a 20-foot burst. Purple Worm Sting 3, the venom counted for two rounds. Lost Things Returned 2, its damage needing an attack that
+hits the illusion as well as the save result. Chromatic Ray, Elemental Breath, Prismatic Spray
 and Rainbow Fumarole use the average of their random results, and Comet Charge its best option.
 
 Control (taking actions, movement or reactions away, or reshaping the field): 5 denies actions or movement with no save or
@@ -175,7 +176,7 @@ R = {
     "Mantis's Grasp": '330000',
     'Freezing Touch': '330000',
     'Friends to Foes': '204000',
-    'Lost Things Returned': '040000',
+    'Lost Things Returned': '240000',
     'Weight of the World': '253000',
     'Glacial Skewer': '320030',
     'Blazing Fissure': '430000',
