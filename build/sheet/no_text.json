@@ -1,0 +1,6446 @@
+[
+[
+"feat",
+"ft:infiltration-automaton",
+"Infiltration Automaton",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"ft:scurry",
+"Scurry!",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"ft:camouflage-coat",
+"Camouflage Coat",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"ft:ceremony-of-strengthened-hand",
+"Ceremony of Strengthened Hand",
+"Pathfinder Lost Omens The Mwangi Expanse"
+],
+[
+"feat",
+"ft:luring-chomp",
+"Luring Chomp",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"feat",
+"ft:deep-vision",
+"Deep Vision",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"ft:roll-with-it",
+"Roll with It",
+"Pathfinder Lost Omens Character Guide"
+],
+[
+"feat",
+"ft:larger-than-life",
+"Larger than Life",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"ft:no-hands-no-problem",
+"No Hands, No Problem",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"ft:eyes-of-night",
+"Eyes of Night",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"ft:heat-wave",
+"Heat Wave",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"ft:impose-order",
+"Impose Order",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:quick-recovery",
+"Quick Recovery",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"ft:silence-the-profane",
+"Silence the Profane",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:remember-their-names",
+"Remember Their Names",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:lotus-above-the-wind",
+"Lotus Above the Wind",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"ft:faultless-defense",
+"Faultless Defense",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:exemplar-resiliency",
+"Exemplar Resiliency",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:orators-filibuster",
+"Orator's Filibuster",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"ft:ghostly-grasp",
+"Ghostly Grasp",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"ft:pass-vengeful-judgment",
+"Pass Vengeful Judgment",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:harsh-judgement",
+"Harsh Judgement",
+"Pathfinder Adventure: Night of the Gray Death"
+],
+[
+"feat",
+"ft:opportune-trickster",
+"Opportune Trickster",
+"Pathfinder Adventure Path: Hellbreakers"
+],
+[
+"feat",
+"ft:shackles-of-law",
+"Shackles of Law",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:sturdy-bindings",
+"Sturdy Bindings",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:devil-allies",
+"Devil Allies",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:locate-lawbreakers",
+"Locate Lawbreakers",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:blessing-of-the-five",
+"Blessing of the Five",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:dedication-to-the-five",
+"Dedication to the Five",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:reveal-beasts",
+"Reveal Beasts",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:trailblazing-stride",
+"Trailblazing Stride",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:bestiary-secrets",
+"Bestiary Secrets",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"ft:the-harder-they-fall-hellknight",
+"The Harder They Fall (Hellknight)",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"ft:righteous-resistance",
+"Righteous Resistance",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:spiritual-disruption",
+"Spiritual Disruption",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:disillusionment",
+"Disillusionment",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:silence-heresy",
+"Silence Heresy",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:fear-no-law-fear-no-one",
+"Fear No Law, Fear No One",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:seek-injustice",
+"Seek Injustice",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"feat",
+"ft:free-the-bound",
+"Free the Bound",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"ft:unbound-torrent",
+"Unbound Torrent",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"ft:impose-order-infernal-pactbreaker",
+"Impose Order (Infernal Pactbreaker)",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"ft:knight-vigilant-dedication",
+"Knight Vigilant Dedication",
+"Pathfinder Lost Omens Character Guide"
+],
+[
+"feat",
+"ft:repulse-the-wicked",
+"Repulse the Wicked",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"feat",
+"ft:judgement-of-the-monolith",
+"Judgement of the Monolith",
+"Pathfinder Lost Omens World Guide"
+],
+[
+"feat",
+"ft:flash-of-omnipotence",
+"Flash of Omnipotence",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"ft:decree-of-banishment",
+"Decree of Banishment",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:emboldened-with-glorious-purpose",
+"Emboldened with Glorious Purpose",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"ft:innate-magical-intuition",
+"Innate Magical Intuition",
+"Pathfinder Lost Omens Pathfinder Society Guide"
+],
+[
+"feat",
+"ft:elemental-substitution",
+"Elemental Substitution",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"ft:vengeful-remnant",
+"Vengeful Remnant",
+"Pathfinder Lost Omens Shining Kingdoms"
+],
+[
+"feat",
+"ft:construct-dynamo",
+"Construct Dynamo",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"ft:fracture-timeflow",
+"Fracture Timeflow",
+"Pathfinder #219: Lord of the Trinity Star"
+],
+[
+"feat",
+"ft:recycled-cogwheels",
+"Recycled Cogwheels",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"ft:empathic-envoy",
+"Empathic Envoy",
+"Pathfinder Adventure Path: Gatewalkers"
+],
+[
+"feat",
+"ft:bear-hug",
+"Bear Hug",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"feat",
+"ft:vindicators-judgment",
+"Vindicator's Judgment",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:needle-in-the-gods-eyes",
+"Needle in the Gods' Eyes",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:festering-wounds",
+"Festering Wounds",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"ft:whispers-of-warning",
+"Whispers of Warning",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"ft:void-siphon",
+"Void Siphon",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"ft:armored-regiment-training",
+"Armored Regiment Training",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"ft:animal-empathy",
+"Animal Empathy",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"ft:dueling-parry",
+"Dueling Parry",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"ft:phalanx-formation",
+"Phalanx Formation",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"ft:guarded-advance",
+"Guarded Advance",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"ft:certain-stratagem",
+"Certain Stratagem",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"ft:flashforge",
+"Flashforge",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"ft:voice-of-elements",
+"Voice of Elements",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"ft:vermillion-threads",
+"Vermillion Threads",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"ft:infuse-void",
+"Infuse Void",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"ft:autonomic-psychic-action",
+"Autonomic Psychic Action",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"ft:roll-with-it-kingmaker",
+"Roll with it (Kingmaker)",
+"Pathfinder Kingmaker"
+],
+[
+"feat",
+"ft:the-harder-they-fall-kingmaker",
+"The Harder They Fall (Kingmaker)",
+"Pathfinder Kingmaker"
+],
+[
+"feat",
+"ft:the-harder-they-fall",
+"The Harder They Fall",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:advanced-design",
+"Advanced Design",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:advanced-rangefinder",
+"Advanced Rangefinder",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:aerodynamic-construction",
+"Aerodynamic Construction",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:air-gate",
+"Air Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:alchemical-sciences-methodology",
+"Alchemical Sciences Methodology",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:alchemist-armor-expertise-level-13",
+"Alchemist Armor Expertise (Level 13)",
+"Pathfinder Core Rulebook"
+],
+[
+"feat",
+"cf:alchemist-armor-mastery-level-19",
+"Alchemist Armor Mastery (Level 19)",
+"Pathfinder Core Rulebook"
+],
+[
+"feat",
+"cf:all-consuming-hunger",
+"All-Consuming Hunger",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:animal-instinct",
+"Animal Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:animal-order",
+"Animal Order",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:antimagic-plating",
+"Antimagic Plating",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:anvils-hardness",
+"Anvil's Hardness",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:armor-innovation",
+"Armor Innovation",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:ashes",
+"Ashes",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:attack-refiner",
+"Attack Refiner",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:automated-impediments",
+"Automated Impediments",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:blessed-armament",
+"Blessed Armament",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:blessed-shield",
+"Blessed Shield",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:blessed-swiftness",
+"Blessed Swiftness",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:blight-soul-deviant-classification",
+"Blight Soul Deviant Classification",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:bloodline-aberrant",
+"Bloodline: Aberrant",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-aesir",
+"Bloodline: Aesir",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:bloodline-angelic",
+"Bloodline: Angelic",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-demonic",
+"Bloodline: Demonic",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-diabolic",
+"Bloodline: Diabolic",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-draconic",
+"Bloodline: Draconic",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-elemental",
+"Bloodline: Elemental",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-fey",
+"Bloodline: Fey",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-genie",
+"Bloodline: Genie",
+"Pathfinder Advanced Player's Guide"
+],
+[
+"feat",
+"cf:bloodline-hag",
+"Bloodline: Hag",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-harrow",
+"Bloodline: Harrow",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"feat",
+"cf:bloodline-imperial",
+"Bloodline: Imperial",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-nymph",
+"Bloodline: Nymph",
+"Pathfinder Advanced Player's Guide"
+],
+[
+"feat",
+"cf:bloodline-phoenix",
+"Bloodline: Phoenix",
+"Pathfinder #168: King of the Mountain"
+],
+[
+"feat",
+"cf:bloodline-psychopomp",
+"Bloodline: Psychopomp",
+"Pathfinder Advanced Player's Guide"
+],
+[
+"feat",
+"cf:bloodline-shadow",
+"Bloodline: Shadow",
+"Pathfinder Advanced Player's Guide"
+],
+[
+"feat",
+"cf:bloodline-spells",
+"Bloodline Spells",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-undead",
+"Bloodline: Undead",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:bloodline-wyrmblessed",
+"Bloodline: Wyrmblessed",
+"Pathfinder Lost Omens The Mwangi Expanse"
+],
+[
+"feat",
+"cf:blunt-shot",
+"Blunt Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:camouflage-pigmentation",
+"Camouflage Pigmentation",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:cascade-bearers",
+"Cascade Bearers",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:catharsis-emotion",
+"Catharsis Emotion",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:champions-aura",
+"Champion's Aura",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:churning-mind",
+"Churning Mind",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:complex-simplicity",
+"Complex Simplicity",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:construct-innovation",
+"Construct Innovation",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:cultivation-order",
+"Cultivation Order",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:curse-of-ancestral-meddling",
+"Curse of Ancestral Meddling",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-creeping-ashes",
+"Curse of Creeping Ashes",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:curse-of-engulfing-flames",
+"Curse of Engulfing Flames",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-inclement-headwinds",
+"Curse of Inclement Headwinds",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-inevitable-rot",
+"Curse of Inevitable Rot",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:curse-of-outpouring-life",
+"Curse of Outpouring Life",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-the-living-death",
+"Curse of the Living Death",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-the-mortal-warrior",
+"Curse of the Mortal Warrior",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-the-skys-call",
+"Curse of the Sky's Call",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-torrential-knowledge",
+"Curse of Torrential Knowledge",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:curse-of-turbulent-moments",
+"Curse of Turbulent Moments",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:deadly-strike",
+"Deadly Strike",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:decay-instinct",
+"Decay Instinct",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:dense-plating",
+"Dense Plating",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:desynchronized-motions",
+"Desynchronized Motions",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:dragon-deviant-classification",
+"Dragon Deviant Classification",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:dragon-instinct",
+"Dragon Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:dynamic-weighting",
+"Dynamic Weighting",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:earth-gate",
+"Earth Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:echoes-of-the-scrolls",
+"Echoes of the Scrolls",
+"Pathfinder Society Scenario #6-09: The Power of Legends"
+],
+[
+"feat",
+"cf:echoes-of-the-spells",
+"Echoes of the Spells",
+"Pathfinder Society Scenario #6-09: The Power of Legends"
+],
+[
+"feat",
+"cf:echoes-of-the-swords",
+"Echoes of the Swords",
+"Pathfinder Society Scenario #6-09: The Power of Legends"
+],
+[
+"feat",
+"cf:elemental-instinct",
+"Elemental Instinct",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:elemental-magic",
+"Elemental Magic",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:elemental-school",
+"Elemental School",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:emerald-boughs",
+"Emerald Boughs",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:empiricism-methodology",
+"Empiricism Methodology",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:encroaching-presence",
+"Encroaching Presence",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:energetic-meltdown",
+"Energetic Meltdown",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:energy-barrier",
+"Energy Barrier",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:enhanced-damage",
+"Enhanced Damage",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:enhanced-resistance",
+"Enhanced Resistance",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:entangling-form",
+"Entangling Form",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:envy",
+"Envy",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:exploit-vulnerability",
+"Exploit Vulnerability",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:extensible-weapon",
+"Extensible Weapon",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:fifth-doctrine-cloistered-cleric",
+"Fifth Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fifth-doctrine-warpriest",
+"Fifth Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fifth-doctrine",
+"Fifth Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:final-creed",
+"Final Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:final-doctrine-cloistered-cleric",
+"Final Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:final-doctrine-warpriest",
+"Final Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:final-doctrine",
+"Final Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fire-gate",
+"Fire Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:first-doctrine-cloistered-cleric",
+"First Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:first-doctrine-warpriest",
+"First Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:first-doctrine",
+"First Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:flame-order",
+"Flame Order",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:flexible-spell-preparation",
+"Flexible Spell Preparation",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:flicker-deviant-classification",
+"Flicker Deviant Classification",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:focus-spells",
+"Focus Spells",
+"Pathfinder Core Rulebook"
+],
+[
+"feat",
+"cf:forensic-medicine-methodology",
+"Forensic Medicine Methodology",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:fourth-doctrine-cloistered-cleric",
+"Fourth Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fourth-doctrine-warpriest",
+"Fourth Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fourth-doctrine",
+"Fourth Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:fourth-gates-threshold",
+"Fourth Gate's Threshold",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:fungal-rot",
+"Fungal Rot",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:fury-instinct",
+"Fury Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:gate-junction",
+"Gate Junction",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:giant-instinct",
+"Giant Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:gluttony",
+"Gluttony",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:greater-creed",
+"Greater Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:greed",
+"Greed",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:hampering-spikes",
+"Hampering Spikes",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:harmonic-oscillator",
+"Harmonic Oscillator",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:heavy-construction",
+"Heavy Construction",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:hefty-composition",
+"Hefty Composition",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:hyper-boosters",
+"Hyper Boosters",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:impossible-alloy",
+"Impossible Alloy",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:inconspicuous-appearance",
+"Inconspicuous Appearance",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:incredible-resistance",
+"Incredible Resistance",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:infused-reagents",
+"Infused Reagents",
+"Pathfinder Core Rulebook"
+],
+[
+"feat",
+"cf:initial-creed",
+"Initial Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:integrated-gauntlet",
+"Integrated Gauntlet",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:interrogation-methodology",
+"Interrogation Methodology",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:ki-spells",
+"Ki Spells",
+"Pathfinder Core Rulebook"
+],
+[
+"feat",
+"cf:layered-mesh",
+"Layered Mesh",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:leaf-order",
+"Leaf Order",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:leech-deviant-classification",
+"Leech Deviant Classification",
+"Gatewalkers Player's Guide (Remastered)"
+],
+[
+"feat",
+"cf:lesser-creed",
+"Lesser Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:lesson-of-elements",
+"Lesson of Elements",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:life-draining",
+"Life-Draining",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:light-mortar-innovation",
+"Light Mortar Innovation",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:ligneous-instinct",
+"Ligneous Instinct",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:lust",
+"Lust",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:major-creed",
+"Major Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:manifold-alloy",
+"Manifold Alloy",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:metal-gate",
+"Metal Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:metallic-reactance",
+"Metallic Reactance",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:moderate-creed",
+"Moderate Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:modular-head",
+"Modular Head",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:momentum-enhancer",
+"Momentum Enhancer",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:multisensory-mask",
+"Multisensory Mask",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:muscular-exoskeleton",
+"Muscular Exoskeleton",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:blood",
+"Blood",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:flesh",
+"Flesh",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:puppeteer",
+"Puppeteer",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:reaper",
+"Reaper",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:omnirange-stabilizers",
+"Omnirange Stabilizers",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:oracular-curse",
+"Oracular Curse",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:otherworldly-protection",
+"Otherworldly Protection",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:pacification-tools",
+"Pacification Tools",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:paragon-benefit-tome",
+"Paragon Benefit (Tome)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:patron-theme",
+"Patron Theme",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:perfect-fortification",
+"Perfect Fortification",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:phlogistonic-regulator",
+"Phlogistonic Regulator",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:physical-protections",
+"Physical Protections",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:premonition-reflexes",
+"Premonition Reflexes",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:pride",
+"Pride",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:psychic-weapon-expertise",
+"Psychic Weapon Expertise",
+"Pathfinder Dark Archive"
+],
+[
+"feat",
+"cf:psychic-weapon-specialization",
+"Psychic Weapon Specialization",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:rain-scribes",
+"Rain-Scribes",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:razor-prongs",
+"Razor Prongs",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:restless-as-the-tide",
+"Restless as the Tide",
+"Pathfinder War of Immortals"
+],
+[
+"feat",
+"cf:revelation-spells",
+"Revelation Spells",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:rope-shot",
+"Rope Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:rune-capacity",
+"Rune Capacity",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:second-doctrine-cloistered-cleric",
+"Second Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:second-doctrine-warpriest",
+"Second Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:second-doctrine",
+"Second Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:second-gates-threshold",
+"Second Gate's Threshold",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:segmented-frame",
+"Segmented Frame",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:sloth",
+"Sloth",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:speed-boosters",
+"Speed Boosters",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:spirit-instinct",
+"Spirit Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:spore-order",
+"Spore Order",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:stone-order",
+"Stone Order",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:storm-order",
+"Storm Order",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:strained-metabolism",
+"Strained Metabolism",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:subtle-dampeners",
+"Subtle Dampeners",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:aberrant-eidolon",
+"Aberrant Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:angel-eidolon",
+"Angel Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:anger-phantom-eidolon",
+"Anger Phantom Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:beast-eidolon",
+"Beast Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:construct-eidolon",
+"Construct Eidolon",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:demon-eidolon",
+"Demon Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:devotion-phantom-eidolon",
+"Devotion Phantom Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:dragon-eidolon",
+"Dragon Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:elemental-eidolon",
+"Elemental Eidolon",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:fey-eidolon",
+"Fey Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:ooze-eidolon",
+"Ooze Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:plant-eidolon",
+"Plant Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:psychopomp-eidolon",
+"Psychopomp Eidolon",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:swarm-eidolon",
+"Swarm Eidolon",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:undead-eidolon",
+"Undead Eidolon",
+"Pathfinder Impossible Magic"
+],
+[
+"feat",
+"cf:superstition-instinct",
+"Superstition Instinct",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:tangle-line",
+"Tangle Line",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:tempest-sun-mages",
+"Tempest-Sun Mages",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:tensile-absorption",
+"Tensile Absorption",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:adept-benefit-amulet",
+"Adept Benefit (Amulet)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-bell",
+"Adept Benefit (Bell)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-censer",
+"Adept Benefit (Censer)",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"cf:adept-benefit-chalice",
+"Adept Benefit (Chalice)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-lantern",
+"Adept Benefit (Lantern)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-mirror",
+"Adept Benefit (Mirror)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-regalia",
+"Adept Benefit (Regalia)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-shield",
+"Adept Benefit (Shield)",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:adept-benefit-tome",
+"Adept Benefit (Tome)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-wand",
+"Adept Benefit (Wand)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:adept-benefit-weapon",
+"Adept Benefit (Weapon)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"equipment",
+"cf:censer-implement",
+"Censer Implement",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"cf:initiate-benefit-amulet",
+"Initiate Benefit (Amulet)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-bell",
+"Initiate Benefit (Bell)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-censer",
+"Initiate Benefit (Censer)",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"cf:initiate-benefit-chalice",
+"Initiate Benefit (Chalice)",
+"Pathfinder Dark Archive"
+],
+[
+"feat",
+"cf:initiate-benefit-lantern",
+"Initiate Benefit (Lantern)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-mirror",
+"Initiate Benefit (Mirror)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-regalia",
+"Initiate Benefit (Regalia)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-shield",
+"Initiate Benefit (Shield)",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:initiate-benefit-tome",
+"Initiate Benefit (Tome)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-wand",
+"Initiate Benefit (Wand)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:initiate-benefit-weapon",
+"Initiate Benefit (Weapon)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-amulet",
+"Paragon Benefit (Amulet)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-bell",
+"Paragon Benefit (Bell)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-censer",
+"Paragon Benefit (Censer)",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"feat",
+"cf:paragon-benefit-chalice",
+"Paragon Benefit (Chalice)",
+"Pathfinder Dark Archive"
+],
+[
+"feat",
+"cf:paragon-benefit-lantern",
+"Paragon Benefit (Lantern)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-mirror",
+"Paragon Benefit (Mirror)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-regalia",
+"Paragon Benefit (Regalia)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-shield",
+"Paragon Benefit (Shield)",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:paragon-benefit-wand",
+"Paragon Benefit (Wand)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:paragon-benefit-weapon",
+"Paragon Benefit (Weapon)",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:third-doctrine-cloistered-cleric",
+"Third Doctrine (Cloistered Cleric)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:third-doctrine-warpriest",
+"Third Doctrine (Warpriest)",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:third-doctrine",
+"Third Doctrine",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:third-gates-threshold",
+"Third Gate's Threshold",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:troll-deviant-classification",
+"Troll Deviant Classification",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:true-creed",
+"True Creed",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"feat",
+"cf:untamed-order",
+"Untamed Order",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:uzunjati",
+"Uzunjati",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"cf:verdant-core-deviant-classification",
+"Verdant Core Deviant Classification",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"feat",
+"cf:versatile-vials",
+"Versatile Vials",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"cf:war-magic",
+"War Magic",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"cf:warden-spells",
+"Warden Spells",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:water-gate",
+"Water Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:wave-order",
+"Wave Order",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:weapon-innovation",
+"Weapon Innovation",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"cf:wellspring-magic",
+"Wellspring Magic",
+"Pathfinder Secrets of Magic"
+],
+[
+"feat",
+"cf:witch-lessons",
+"Witch Lessons",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"cf:wood-gate",
+"Wood Gate",
+"Pathfinder Rage of Elements"
+],
+[
+"feat",
+"cf:wraith-deviant-classification",
+"Wraith Deviant Classification",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"feat",
+"cf:wrath",
+"Wrath",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"feat",
+"af:constructed",
+"Constructed",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"af:emotionally-unaware",
+"Emotionally Unaware",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"af:automaton-core",
+"Automaton Core",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"af:constructed-body",
+"Constructed Body",
+"Pathfinder Guns & Gears"
+],
+[
+"feat",
+"af:animal-attack",
+"Animal Attack",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:awakened-form",
+"Awakened Form",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:awakened-mind",
+"Awakened Mind",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:hydration",
+"Hydration",
+"Pathfinder Lost Omens Absalom, City of Lost Omens"
+],
+[
+"feat",
+"af:swim",
+"Swim",
+"Pathfinder Lost Omens Absalom, City of Lost Omens"
+],
+[
+"feat",
+"af:land-on-your-feet",
+"Land on Your Feet",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:mount",
+"Mount",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:robust",
+"Robust",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:sunlight-healing",
+"Sunlight Healing",
+"Pathfinder Lost Omens The Mwangi Expanse"
+],
+[
+"feat",
+"af:big-sharp-teeth",
+"Big Sharp Teeth",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"feat",
+"af:wings-dragonet",
+"Wings (Dragonet)",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"feat",
+"af:unusual-anatomy",
+"Unusual Anatomy",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"af:photosynthesis",
+"Photosynthesis",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"feat",
+"af:eyes-in-back",
+"Eyes in Back",
+"Pathfinder Lost Omens The Mwangi Expanse"
+],
+[
+"feat",
+"af:keen-eyes",
+"Keen Eyes",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"af:iivlar-weaving",
+"Iivlar Weaving",
+"Pathfinder Battlecry!"
+],
+[
+"feat",
+"af:empathic-sense",
+"Empathic Sense",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"feat",
+"af:glowing-horn",
+"Glowing Horn",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"feat",
+"af:bite",
+"Bite",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:change-shape",
+"Change Shape",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"af:draconic-benefactor",
+"Draconic Benefactor",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"feat",
+"af:draconic-exemplar",
+"Draconic Exemplar",
+"Pathfinder Advanced Player's Guide"
+],
+[
+"feat",
+"af:plant-nourishment",
+"Plant Nourishment",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"af:claws",
+"Claws",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:aquatic-grace",
+"Aquatic Grace",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:hydration-merfolk",
+"Hydration (Merfolk)",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:horns-minotaur",
+"Horns (Minotaur)",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:bonded-item",
+"Bonded Item",
+"Pathfinder Feybound"
+],
+[
+"feat",
+"af:constructed-poppet",
+"Constructed (Poppet)",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"feat",
+"af:flammable",
+"Flammable",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"feat",
+"af:sharp-teeth",
+"Sharp Teeth",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:cryptomnesia",
+"Cryptomnesia",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"af:wanderers-soul",
+"Wanderer's Soul",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"af:head-gem",
+"Head Gem",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"af:horns-sarangay",
+"Horns (Sarangay)",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"feat",
+"af:greater-darkvision",
+"Greater Darkvision",
+"Pathfinder Player Core"
+],
+[
+"feat",
+"af:blunt-snout",
+"Blunt Snout",
+"Pathfinder #153: Life's Long Shadows"
+],
+[
+"feat",
+"af:magical-strikes",
+"Magical Strikes",
+"Pathfinder Feybound"
+],
+[
+"feat",
+"af:wings",
+"Wings",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"feat",
+"af:magiphage",
+"Magiphage",
+"Pathfinder Howl of the Wild"
+],
+[
+"feat",
+"af:sharp-beak",
+"Sharp Beak",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:natural-climber",
+"Natural Climber",
+"Pathfinder Player Core 2"
+],
+[
+"feat",
+"af:advanced-undead-benefits",
+"Advanced Undead Benefits",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"af:basic-undead-benefits",
+"Basic Undead Benefits",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"af:revulsion",
+"Revulsion",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"af:sunlight",
+"Sunlight",
+"Pathfinder Book of the Dead"
+],
+[
+"feat",
+"af:prehensile-tail",
+"Prehensile Tail",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"feat",
+"af:innate-venom",
+"Innate Venom",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"action",
+"ac:accept-echo",
+"Accept Echo",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:objection",
+"Objection",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:set-free",
+"Set Free",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:thermal-eruption",
+"Thermal Eruption",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:water-transfer",
+"Water Transfer",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:dazzle-seeker",
+"Dazzle Seeker",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:plaintive-plea",
+"Plaintive Plea",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:i-defy-you",
+"I Defy You!",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:acrid-barrage",
+"Acrid Barrage",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:bounce-away",
+"Bounce Away",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:fortify-focus",
+"Fortify Focus",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:anchor",
+"Anchor",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:shielding-wave",
+"Shielding Wave",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:raise-slabs",
+"Raise Slabs",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:empty-vessel",
+"Empty Vessel",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:mirror-trickery",
+"Mirror-Trickery",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:tap-the-past",
+"Tap the Past",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:dampening-harmonics",
+"Dampening Harmonics",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:lantern-beam",
+"Lantern Beam",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:lantern-strobe",
+"Lantern Strobe",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:stridulating-song",
+"Stridulating Song",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:trench-digging",
+"Trench Digging",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:tactical-retreat",
+"Tactical Retreat",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:inscribe-shadow-pamor",
+"Inscribe Shadow Pamor",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:dancing-dodge",
+"Dancing Dodge",
+"Pathfinder #204: Stage Fright"
+],
+[
+"action",
+"ac:assume-a-role",
+"Assume a Role",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:overawe-crowd",
+"Overawe Crowd",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:drain-realm",
+"Drain Realm",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:enter-seat-of-power",
+"Enter Seat Of Power",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:manifest-realm",
+"Manifest Realm",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:spread-realm",
+"Spread Realm",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:unleash-realm",
+"Unleash Realm",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:bless-ally",
+"Bless Ally",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:enter-runewell",
+"Enter Runewell",
+"Pathfinder #219: Lord of the Trinity Star"
+],
+[
+"action",
+"ac:spellsling",
+"Spellsling",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:amassed-assault",
+"Amassed Assault",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:ultimatum-of-liberation",
+"Ultimatum of Liberation",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:bullet-dancer-stance",
+"Bullet Dancer Stance",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:catharsis",
+"Catharsis",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:settle-emotions",
+"Settle Emotions",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:for-my-house",
+"For My House!",
+"Pathfinder #223: Hell's Destiny"
+],
+[
+"action",
+"ac:claw-stance",
+"Claw Stance",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:talon-stance",
+"Talon Stance",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:crescent-spray",
+"Crescent Spray",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:infiltrators-draw",
+"Infiltrator's Draw",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:reactive-falsehood",
+"Reactive Falsehood",
+"Pathfinder #204: Stage Fright"
+],
+[
+"action",
+"ac:set-explosives",
+"Set Explosives",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:channel-draconic-essence",
+"Channel Draconic Essence",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:draconic-salvation",
+"Draconic Salvation",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:speed-of-arms",
+"Speed of Arms",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:spirits-mercy",
+"Spirit's Mercy",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:spread-propaganda",
+"Spread Propaganda",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:banshee-cry",
+"Banshee Cry",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:coughing-dragon",
+"Coughing Dragon",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:goblin-jubilee",
+"Goblin Jubilee",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:jumping-jenny",
+"Jumping Jenny",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:launch-fireworks",
+"Launch Fireworks",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:spin-tale",
+"Spin Tale",
+"Pathfinder #170: Spoken on the Song Wind"
+],
+[
+"action",
+"ac:remove-head",
+"Remove Head",
+"Pathfinder Lost Omens Shining Kingdoms"
+],
+[
+"action",
+"ac:consume-flesh",
+"Consume Flesh",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:intercession-spell",
+"Intercession Spell",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:guerrilla-assault",
+"Guerrilla Assault",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:avoid-dire-fate",
+"Avoid Dire Fate",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:invoke-infernal-bargain",
+"Invoke Infernal Bargain",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:invoke-infernal-flames",
+"Invoke Infernal Flames",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:invoke-infernal-focus",
+"Invoke Infernal Focus",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:invoke-infernal-potency",
+"Invoke Infernal Potency",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:hellbreaker-strike",
+"Hellbreaker Strike",
+""
+],
+[
+"action",
+"ac:warding-shift",
+"Warding Shift",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"action",
+"ac:absorb-magic",
+"Absorb Magic",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:overflowing-blade",
+"Overflowing Blade",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:entitys-resurgence",
+"Entity's Resurgence",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:spirit-sanctification",
+"Spirit Sanctification",
+"Pathfinder Claws of the Tyrant"
+],
+[
+"action",
+"ac:engineers-efficiency",
+"Engineer's Efficiency",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:mobbing-assault",
+"Mobbing Assault",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:raise-the-horde",
+"Raise the Horde",
+"Pathfinder Battlecry!"
+],
+[
+"action",
+"ac:administer-ambient-magic",
+"Administer Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:devour-ambient-magic",
+"Devour Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:drape-ambient-magic",
+"Drape Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:repel-ambient-magic",
+"Repel Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:spit-ambient-magic",
+"Spit Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:turn-aside-ambient-magic",
+"Turn Aside Ambient Magic",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:binding-vow",
+"Binding Vow",
+"Pathfinder Dark Archive"
+],
+[
+"action",
+"ac:dragon-breath",
+"Dragon Breath",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:blizzard-evasion",
+"Blizzard Evasion",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"action",
+"ac:mystic-aegis",
+"Mystic Aegis",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"ac:boarding-assault",
+"Boarding Assault",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:once-bitten",
+"Once Bitten",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:royal-grace",
+"Royal Grace",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:swirl-crimson-shroud",
+"Swirl Crimson Shroud",
+"Pathfinder Adventure: Prey for Death"
+],
+[
+"action",
+"ac:bond-with-spirit",
+"Bond with Spirit",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"ac:enter-spirit-trance",
+"Enter Spirit Trance",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"ac:solitary-invocation",
+"Solitary Invocation",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:cobble-together",
+"Cobble Together",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:impromptu-investment",
+"Impromptu Investment",
+"Pathfinder #204: Stage Fright"
+],
+[
+"action",
+"ac:pitch-perfect-projection",
+"Pitch-Perfect Projection",
+"Pathfinder #204: Stage Fright"
+],
+[
+"action",
+"ac:swift-choreography",
+"Swift Choreography",
+"Pathfinder #204: Stage Fright"
+],
+[
+"action",
+"ac:daydream-trance",
+"Daydream Trance",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:makes-me-stronger",
+"Makes Me Stronger",
+"Pathfinder #218: Titanbane"
+],
+[
+"action",
+"ac:manifest-soulforged-armament",
+"Manifest Soulforged Armament",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:conjure-bullet",
+"Conjure Bullet",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:overwhelming-combination",
+"Overwhelming Combination",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:tenacious-stance",
+"Tenacious Stance",
+"Pathfinder Lost Omens Highhelm"
+],
+[
+"action",
+"ac:starlit-transformation",
+"Starlit Transformation",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:size-up",
+"Size Up",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"action",
+"ac:stellar-dance-stance",
+"Stellar Dance Stance",
+"Pathfinder Feybound"
+],
+[
+"action",
+"ac:stonestrike-stance",
+"Stonestrike Stance",
+"Pathfinder #195: Heavy is the Crown"
+],
+[
+"action",
+"ac:bite-and-sting",
+"Bite and Sting",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:death-drone",
+"Death Drone",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:swarm-forth",
+"Swarm Forth",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"ac:basic-finisher",
+"Basic Finisher",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:adopt-persona",
+"Adopt Persona",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"action",
+"ac:twist-design",
+"Twist Design",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"action",
+"ac:designate-ally",
+"Designate Ally",
+"Pathfinder Lost Omens Shining Kingdoms"
+],
+[
+"action",
+"ac:slayers-identification",
+"Slayer's Identification",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:accidental-shot",
+"Accidental Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"action",
+"ac:drink-blood",
+"Drink Blood",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:part-the-veil",
+"Part the Veil",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:aegis-of-envy",
+"Aegis of Envy",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:convocation-of-greed",
+"Convocation of Greed",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:gluttonous-feast",
+"Gluttonous Feast",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:host-of-wrath",
+"Host of Wrath",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:sorshens-devotion",
+"Sorshen's Devotion",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:summon-sloth",
+"Summon Sloth",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"action",
+"ac:tell-me-more",
+"Tell Me More",
+"Paizo Blog: Foolish Housekeeping and Other Articles"
+],
+[
+"action",
+"ac:rouse-the-world",
+"Rouse the World",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:lay-down-arms",
+"Lay Down Arms",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:a-quick-glimpse-beyond",
+"A Quick Glimpse Beyond",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:bend-time",
+"Bend Time",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:bestial-clarity",
+"Bestial Clarity",
+"Pathfinder Lost Omens Firebrands"
+],
+[
+"action",
+"ac:chaotic-destiny",
+"Chaotic Destiny",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:fated-not-to-die",
+"Fated Not to Die",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:feys-fortune",
+"Fey's Fortune",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:forged-in-fire",
+"Forged in Fire",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:harrow-the-fiend",
+"Harrow the Fiend",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:hellish-impression",
+"Hellish Impression",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:host-spirit",
+"Host Spirit",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"ac:hunt-runelord",
+"Hunt Runelord",
+"Pathfinder Revenge of the Runelords Player's Guide"
+],
+[
+"action",
+"ac:indomitable-act",
+"Indomitable Act",
+"Pathfinder Lost Omens Firebrands"
+],
+[
+"action",
+"ac:inflict-punishment",
+"Inflict Punishment",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"action",
+"ac:my-legend-must-be-told",
+"My Legend Must Be Told",
+"Pathfinder Myth-Speaker Player's Guide"
+],
+[
+"action",
+"ac:mythic-echo",
+"Mythic Echo",
+"Pathfinder Myth-Speaker Player's Guide"
+],
+[
+"action",
+"ac:prophecys-pawn",
+"Prophecy's Pawn",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:recall-under-pressure",
+"Recall Under Pressure",
+"Pathfinder Stolen Fate Player's Guide"
+],
+[
+"action",
+"ac:reclaim-destiny",
+"Reclaim Destiny",
+"Pathfinder Lost Omens Travel Guide"
+],
+[
+"action",
+"ac:sibilant-whispers",
+"Sibilant Whispers",
+"Pathfinder Vautlines Player's Guide"
+],
+[
+"action",
+"ac:spiritual-scar",
+"Spiritual Scar",
+"Pathfinder Bastion of Blasphemies Player's Guide"
+],
+[
+"action",
+"ac:stellar-misfortune",
+"Stellar Misfortune",
+"Pathfinder Lost Omens Travel Guide"
+],
+[
+"action",
+"ac:warding-sign",
+"Warding Sign",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:widdershins-thrice",
+"Widdershins Thrice",
+"Pathfinder Feybound"
+],
+[
+"action",
+"ac:wish-for-luck",
+"Wish for Luck",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:activate-resonant-reflection",
+"Activate Resonant Reflection",
+"Pathfinder #153: Life's Long Shadows"
+],
+[
+"action",
+"ac:relentless-assault",
+"Relentless Assault",
+"Pathfinder Hell's Destiny Player's Guide"
+],
+[
+"action",
+"ac:scrappy-defiance",
+"Scrappy Defiance",
+"Pathfinder Hell's Destiny Player's Guide"
+],
+[
+"action",
+"ac:true-shapeshift",
+"True Shapeshift",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:verdant-rest",
+"Verdant Rest",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:a-challenge-for-heroes",
+"A Challenge for Heroes",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:blinding-of-the-needle",
+"Blinding of the Needle",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:brandish-the-gorgons-gaze",
+"Brandish the Gorgon's Gaze",
+"Pathfinder #217: Death Sails a Wine-Dark Sea"
+],
+[
+"action",
+"ac:break-the-suns-legs",
+"Break the Sun's Legs",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:burn-out-of-time",
+"Burn out of Time",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:coiling-serpents",
+"Coiling Serpents",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:fleeting-arc-through-heaven-and-earth",
+"Fleeting Arc through Heaven and Earth",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:heaven-rains-an-ending",
+"Heaven Rains an Ending",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:heavy-is-the-crown",
+"Heavy is the Crown",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:mark-the-center",
+"Mark the Center",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:only-you-and-i",
+"Only You and I",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:plant-thirty-barbs",
+"Plant Thirty Barbs",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:race-the-skies",
+"Race the Skies",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:rejoin-in-flight",
+"Rejoin in Flight",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:ringing-challenge",
+"Ringing Challenge",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:sever-four-dragonfly-wings",
+"Sever Four Dragonfly Wings",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:shed-the-mortal-skin",
+"Shed the Mortal Skin",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:skirt-the-underworld",
+"Skirt the Underworld",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:spasm-of-the-berserker",
+"Spasm of the Berserker",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:tangle-in-riddle",
+"Tangle in Riddle",
+"Pathfinder #217: Death Sails a Wine-Dark Sea"
+],
+[
+"action",
+"ac:topple-the-pillar-of-heaven",
+"Topple the Pillar of Heaven",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:unravel-the-future",
+"Unravel the Future",
+"Pathfinder #217: Death Sails a Wine-Dark Sea"
+],
+[
+"action",
+"ac:pacifying-infusion",
+"Pacifying Infusion",
+"Pathfinder Rage of Elements"
+],
+[
+"action",
+"ac:reloading-cascade",
+"Reloading Cascade",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:command-a-thrall",
+"Command a Thrall",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:consume-thrall",
+"Consume Thrall",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:nudging-whisper",
+"Nudging Whisper",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"action",
+"ac:dragon-breath-eidolon",
+"Dragon Breath (Eidolon)",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:empower-breath",
+"Empower Breath",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:flowing-engulf",
+"Flowing Engulf",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:sever-conduit",
+"Sever Conduit",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:surprising-anatomy",
+"Surprising Anatomy",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:glimpse-vulnerability",
+"Glimpse Vulnerability",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:shed-spirit",
+"Shed Spirit",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:stitching-strike",
+"Stitching Strike",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:divert-lightning",
+"Divert Lightning",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:share-life",
+"Share Life",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:shatter-glass",
+"Shatter Glass",
+"Pathfinder #180: The Smoking Gun"
+],
+[
+"action",
+"ac:timely-dodge",
+"Timely Dodge",
+"Pathfinder #194: Cult of the Cave Worm"
+],
+[
+"action",
+"ac:transform-ammunition",
+"Transform Ammunition",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"ac:research",
+"Research",
+"Pathfinder GM Core"
+],
+[
+"action",
+"ac:decompose",
+"Decompose",
+"Pathfinder Rage of Elements"
+],
+[
+"action",
+"ac:unwavering-resilience",
+"Unwavering Resilience",
+"Pathfinder #202: Severed at the Root"
+],
+[
+"action",
+"ac:find-fault",
+"Find Fault",
+"Pathfinder War of Immortals"
+],
+[
+"action",
+"ac:smoke-blending",
+"Smoke Blending",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"action",
+"ac:toxic-touch",
+"Toxic Touch",
+"Pathfinder Rage of Elements"
+],
+[
+"action",
+"ac:mist-blending",
+"Mist Blending",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"action",
+"ac:salt-wound",
+"Salt Wound",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"action",
+"ac:psychometric-assessment",
+"Psychometric Assessment",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"action",
+"ac:armor-up",
+"Armor Up!",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:defend-life",
+"Defend Life",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:dragon-breath-dragon-form",
+"Dragon Breath (Dragon Form)",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:dragons-protection",
+"Dragon's Protection",
+"Pathfinder Lost Omens Draconic Codex"
+],
+[
+"action",
+"ac:fight-with-fear",
+"Fight with Fear",
+"Pathfinder Impossible Magic"
+],
+[
+"action",
+"ac:foresight",
+"Foresight",
+"Pathfinder Player Core"
+],
+[
+"action",
+"ac:life-block",
+"Life Block",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:overload-vision",
+"Overload Vision",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:thats-my-number",
+"That's My Number",
+"Pathfinder Secrets of Magic"
+],
+[
+"action",
+"ac:thundering-roar",
+"Thundering Roar",
+"Pathfinder Impossible Magic"
+],
+[
+"heritage",
+"he:ambitious-human",
+"Ambitious Human",
+"Pathfinder Beginner Box: Secrets of the Unlit Star"
+],
+[
+"heritage",
+"he:battle-trained-human-bb",
+"Battle-Trained Human (BB)",
+"Pathfinder Beginner Box: Secrets of the Unlit Star"
+],
+[
+"heritage",
+"he:warden-human-bb",
+"Warden Human (BB)",
+"Pathfinder Beginner Box"
+],
+[
+"heritage",
+"he:gandharva",
+"Gandharva",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"heritage",
+"he:kanchil",
+"Kanchil",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"heritage",
+"he:leungli",
+"Leungli",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"heritage",
+"he:naari",
+"Naari",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"background",
+"bg:post-guard-of-all-trades",
+"Post Guard of All Trades",
+"Pathfinder Agents of Edgewatch Player's Guide"
+],
+[
+"background",
+"bg:wish-for-riches",
+"Wish for Riches",
+"Pathfinder Gatewalkers Player's Guide"
+],
+[
+"background",
+"bg:historical-reenactor",
+"Historical Reenactor",
+"Pathfinder Sky King's Tomb Player's Guide"
+],
+[
+"background",
+"bg:reclaimer-investigator",
+"Reclaimer Investigator",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"deity",
+"de:abrogail",
+"Abrogail",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"deity",
+"de:chinostes",
+"Chinostes",
+"Pathfinder #216: The Acropolis Pyre"
+],
+[
+"deity",
+"de:norns",
+"Norns",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"deity",
+"de:seafarers-hope",
+"Seafarers' Hope",
+"Pathfinder Lost Omens Travel Guide"
+],
+[
+"deity",
+"de:the-curtain-call",
+"The Curtain Call",
+"Pathfinder Curtain Call Player's Guide"
+],
+[
+"deity",
+"de:atheists-and-free-agents",
+"Atheists and Free Agents",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"equipment",
+"eq:abrogail-i-script",
+"Abrogail I Script",
+"Pathfinder Adventure Path: Hellbreakers"
+],
+[
+"equipment",
+"eq:advanced-book-of-translation-tien",
+"Advanced Book of Translation (Tien)",
+"Pathfinder Lost Omens Pathfinder Society Guide"
+],
+[
+"weapon",
+"eq:aerekostes",
+"Aerekostes",
+"Pathfinder #218: Titanbane"
+],
+[
+"treasure",
+"eq:agate",
+"Agate",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:aged-arbor-wine",
+"Aged Arbor Wine",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"treasure",
+"eq:alabaster-and-obsidian-game-set",
+"Alabaster and obsidian game set",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:alabaster-idol",
+"Alabaster idol",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:alabaster",
+"Alabaster",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:amber",
+"Amber",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:amethyst",
+"Amethyst",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:amphora-with-lavish-scenes",
+"Amphora with lavish scenes",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:amulet-implement",
+"Amulet Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"equipment",
+"eq:amulet-of-the-slumberer",
+"Amulet of the Slumberer",
+"Pathfinder Adventure Path: Hell's Destiny"
+],
+[
+"treasure",
+"eq:ancient-dragon-skull-etched-with-mystic-sigils",
+"Ancient dragon skull etched with mystic sigils",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:aquamarine",
+"Aquamarine",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:astrolabe-of-the-falling-stars",
+"Astrolabe of the Falling Stars",
+"Pathfinder Adventure Path: Gatewalkers"
+],
+[
+"ammo",
+"eq:awakened-adamantine-shot",
+"Awakened Adamantine Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:awakened-cold-iron-shot",
+"Awakened Cold Iron Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:awakened-silver-shot",
+"Awakened Silver Shot",
+"Pathfinder Guns & Gears"
+],
+[
+"weapon",
+"eq:axe-musket",
+"Axe Musket",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:azurite",
+"Azurite",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:bakuwa-lizardfolk-bony-plates",
+"Bakuwa Lizardfolk Bony Plates",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"consumable",
+"eq:basic-ingredient",
+"Basic Ingredient",
+"Pathfinder Kingmaker"
+],
+[
+"equipment",
+"eq:bell-implement",
+"Bell Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"consumable",
+"eq:black-dragons-breath-potion-adult",
+"Black Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:black-dragons-breath-potion-wyrm",
+"Black Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:black-dragons-breath-potion-young",
+"Black Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"weapon",
+"eq:black-powder-knuckle-dusters",
+"Black Powder Knuckle Dusters",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:blightburn-necklace",
+"Blightburn Necklace",
+"Pathfinder #155: Lord of the Black Sands"
+],
+[
+"equipment",
+"eq:bloodhound-olfactory-stimulators",
+"Bloodhound Olfactory Stimulators",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"treasure",
+"eq:bloodstone",
+"Bloodstone",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:bow-staff",
+"Bow Staff",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"treasure",
+"eq:brass-anklet",
+"Brass anklet",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:brass-dragons-breath-potion-adult",
+"Brass Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:brass-dragons-breath-potion-wyrm",
+"Brass Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:brass-dragons-breath-potion-young",
+"Brass Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"treasure",
+"eq:brass-scepter-with-amethyst-head",
+"Brass scepter with amethyst head",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:brass-statuette-of-a-bull",
+"Brass statuette of a bull",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:bronze-bowl-with-wave-imagery",
+"Bronze bowl with wave imagery",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:bronze-brazier-with-asmodean-artwork",
+"Bronze brazier with Asmodean artwork",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:bronze-chalice-with-bloodstones",
+"Bronze chalice with bloodstones",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:bronze-dragons-breath-potion-adult",
+"Bronze Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:bronze-dragons-breath-potion-wyrm",
+"Bronze Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:bronze-dragons-breath-potion-young",
+"Bronze Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"equipment",
+"eq:busine-of-divine-reinforcements",
+"Busine of Divine Reinforcements",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"equipment",
+"eq:called-lastwall",
+"Called (Lastwall)",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"equipment",
+"eq:called",
+"Called",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"weapon",
+"eq:cane-pistol",
+"Cane Pistol",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:carnelian",
+"Carnelian",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:carved-wooden-game-set",
+"Carved wooden game set",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:cavalry-commanders-lance",
+"Cavalry Commander's Lance",
+"Pathfinder Battlecry!"
+],
+[
+"treasure",
+"eq:ceremonial-dagger-with-onyx-hilt",
+"Ceremonial dagger with onyx hilt",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:ceremonial-shortsword-with-spinels",
+"Ceremonial shortsword with spinels",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:chalice-implement",
+"Chalice Implement",
+"Pathfinder Dark Archive"
+],
+[
+"consumable",
+"eq:champions-laurels-amateur",
+"Champion's Laurels (Amateur)",
+"Pathfinder #216: The Acropolis Pyre"
+],
+[
+"consumable",
+"eq:champions-laurels-professional",
+"Champion's Laurels (Professional)",
+"Pathfinder #216: The Acropolis Pyre"
+],
+[
+"consumable",
+"eq:champions-laurels-renowned",
+"Champion's Laurels (Renowned)",
+"Pathfinder #216: The Acropolis Pyre"
+],
+[
+"treasure",
+"eq:chandelier-crafted-from-dreams",
+"Chandelier crafted from dreams",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:chrysoberyl-symbol-of-an-evil-eye",
+"Chrysoberyl symbol of an evil eye",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:chrysoberyl",
+"Chrysoberyl",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:chrysoprase",
+"Chrysoprase",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:cipher-of-elemental-planes",
+"Cipher of Elemental Planes",
+"Pathfinder Rage of Elements"
+],
+[
+"treasure",
+"eq:citrine",
+"Citrine",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:colorful-pastoral-tapestry",
+"Colorful pastoral tapestry",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:colorful-velvet-half-mask",
+"Colorful velvet half mask",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:commandants-scabbard",
+"Commandant's Scabbard",
+"Pathfinder Battlecry!"
+],
+[
+"equipment",
+"eq:conductors-instrument",
+"Conductor's Instrument",
+"Pathfinder Beginner Box: Secrets of the Unlit Star"
+],
+[
+"weapon",
+"eq:contract-blade",
+"Contract Blade",
+"Pathfinder Lost Omens Cheliax, Infernal Inheritance"
+],
+[
+"treasure",
+"eq:copper-and-spinel-puzzle-box",
+"Copper and spinel puzzle box",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:copper-pieces",
+"Copper Pieces",
+"Pathfinder Player Core"
+],
+[
+"treasure",
+"eq:copper-statuette-of-a-salamander",
+"Copper statuette of a salamander",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:coral-idol-of-an-elemental-lord",
+"Coral idol of an elemental lord",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:coral",
+"Coral",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:cordelias-greater-construct-key",
+"Cordelia's Greater Construct Key",
+"Pathfinder Lost Omens Pathfinder Society Guide"
+],
+[
+"weapon",
+"eq:crescent-cross",
+"Crescent Cross",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"treasure",
+"eq:crystal-dinner-set-fine-silverware",
+"Crystal dinner set, fine silverware",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:crystallized-dragon-heart",
+"Crystallized dragon heart",
+"Pathfinder GM Core"
+],
+[
+"ammo",
+"eq:cutlery",
+"Cutlery",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:cytillesh-toolkit",
+"Cytillesh Toolkit",
+"Pathfinder Monster Core"
+],
+[
+"weapon",
+"eq:dagger-pistol",
+"Dagger Pistol",
+"Pathfinder Guns & Gears"
+],
+[
+"consumable",
+"eq:darkening-poison",
+"Darkening Poison",
+"Pathfinder Monster Core"
+],
+[
+"treasure",
+"eq:diamond-large",
+"Diamond, large",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:diamond-ring-with-platinum-band",
+"Diamond ring with platinum band",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:diamond-small",
+"Diamond, small",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:divine-art-piece-created-by-shelyn",
+"Divine art piece created by Shelyn",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:duskwood-violin-by-a-legend",
+"Duskwood violin by a legend",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:elegant-cloth-doll",
+"Elegant cloth doll",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:emerald-brilliant-green",
+"Emerald, brilliant green",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:emerald",
+"Emerald",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:energy-robe-of-acid",
+"Energy Robe of Acid",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"equipment",
+"eq:energy-robe-of-cold",
+"Energy Robe of Cold",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"equipment",
+"eq:energy-robe-of-electricity",
+"Energy Robe of Electricity",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"equipment",
+"eq:energy-robe-of-fire",
+"Energy Robe of Fire",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"treasure",
+"eq:engraved-copper-ring",
+"Engraved copper ring",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:enhanced-hearing-aids",
+"Enhanced Hearing Aids",
+"Pathfinder Lost Omens The Grand Bazaar"
+],
+[
+"treasure",
+"eq:enormous-chryselephantine-sculpture-by-a-legend",
+"Enormous chryselephantine sculpture by a legend",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:enormous-tapestry-of-a-major-battle",
+"Enormous tapestry of a major battle",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:etched-copper-ewer",
+"Etched copper ewer",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:explosive-dogslicer",
+"Explosive Dogslicer",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:extendable-pincer",
+"Extendable Pincer",
+"Pathfinder Guns & Gears"
+],
+[
+"backpack",
+"eq:extradimensional-stash",
+"Extradimensional Stash",
+"Pathfinder #168: King of the Mountain"
+],
+[
+"equipment",
+"eq:eye-of-the-moonwarden",
+"Eye of the Moonwarden",
+"Pathfinder #208: Hoof, Cinder, and Storm"
+],
+[
+"treasure",
+"eq:famous-portrait-by-a-master",
+"Famous portrait by a master",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:feather-of-unfounded-bravado",
+"Feather of Unfounded Bravado",
+"Pathfinder Battlecry!"
+],
+[
+"treasure",
+"eq:fine-gold-spyglass",
+"Fine gold spyglass",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:fingerprint-kit",
+"Fingerprint Kit",
+"Pathfinder #157: Devil at the Dreaming Palace"
+],
+[
+"equipment",
+"eq:fireworks-display",
+"Fireworks Display",
+"Pathfinder Guns & Gears"
+],
+[
+"consumable",
+"eq:formulated-sunlight",
+"Formulated Sunlight",
+"Pathfinder Lost Omens Character Guide"
+],
+[
+"equipment",
+"eq:fox-marble",
+"Fox Marble",
+"Pathfinder #168: King of the Mountain"
+],
+[
+"equipment",
+"eq:frightful-hag-eye",
+"Frightful Hag Eye",
+"Pathfinder #182: Graveclaw"
+],
+[
+"equipment",
+"eq:gamtu-hat",
+"Gamtu Hat",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"treasure",
+"eq:garnet",
+"Garnet",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gilded-ceremonial-armor",
+"Gilded ceremonial armor",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gilded-scepter-with-sapphire",
+"Gilded scepter with sapphire",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:gnome-amalgam-musket",
+"Gnome Amalgam Musket",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:gold-and-aquamarine-diadem",
+"Gold and aquamarine diadem",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-and-garnet-ring",
+"Gold and garnet ring",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-and-opal-bracelet",
+"Gold and opal bracelet",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-chalice-with-black-pearls",
+"Gold chalice with black pearls",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-dragon-statuette",
+"Gold dragon statuette",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-mask-of-a-high-priest",
+"Gold mask of a high priest",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-necklace-with-peridots",
+"Gold necklace with peridots",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-pieces",
+"Gold Pieces",
+"Pathfinder Player Core"
+],
+[
+"treasure",
+"eq:gold-rapier-with-amethysts",
+"Gold rapier with amethysts",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:gold-urn-with-scenes-of-judgment",
+"Gold urn with scenes of judgment",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:grannys-hedge-trimmer",
+"Granny's Hedge Trimmer",
+"Pathfinder Adventure: Little Trouble in Big Absalom"
+],
+[
+"consumable",
+"eq:green-dragons-breath-potion-adult",
+"Green Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:green-dragons-breath-potion-wyrm",
+"Green Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:green-dragons-breath-potion-young",
+"Green Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:greengut",
+"Greengut",
+"Pathfinder #155: Lord of the Black Sands"
+],
+[
+"weapon",
+"eq:gun-sword",
+"Gun Sword",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:hallajin-key",
+"Hallajin Key",
+"Pathfinder Society Scenario #4-11: Prisoners of the Electric Castle"
+],
+[
+"weapon",
+"eq:hammer-gun",
+"Hammer Gun",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:hand-mirror-with-decorated-frame",
+"Hand mirror with decorated frame",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:hardshell-surki-carapace",
+"Hardshell Surki Carapace",
+"Pathfinder Howl of the Wild"
+],
+[
+"equipment",
+"eq:head-gem",
+"Head Gem",
+"Pathfinder Lost Omens Tian Xia Character Guide"
+],
+[
+"armor",
+"eq:heavy-barding-large",
+"Heavy Barding (Large)",
+"Pathfinder Player Core"
+],
+[
+"armor",
+"eq:heavy-barding-small-or-medium",
+"Heavy Barding (Small or Medium)",
+"Pathfinder Player Core"
+],
+[
+"weapon",
+"eq:hells-judgment",
+"Hell's Judgment",
+"Pathfinder Battlecry!"
+],
+[
+"treasure",
+"eq:hematite",
+"Hematite",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:holy-steam-ball-refill",
+"Holy Steam Ball Refill",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:hongbao-of-many-things",
+"Hongbao of Many Things",
+"Pathfinder Blog"
+],
+[
+"treasure",
+"eq:illuminated-manuscript",
+"Illuminated manuscript",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:illustrated-book",
+"Illustrated book",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:incense-bundle-of-annual-blessings",
+"Incense Bundle of Annual Blessings",
+"Pathfinder Blog"
+],
+[
+"weapon",
+"eq:inflammation-flask-greater",
+"Inflammation Flask (Greater)",
+"Pathfinder #203: Shepherd of Decay"
+],
+[
+"weapon",
+"eq:inflammation-flask-lesser",
+"Inflammation Flask (Lesser)",
+"Pathfinder #203: Shepherd of Decay"
+],
+[
+"weapon",
+"eq:inflammation-flask-major",
+"Inflammation Flask (Major)",
+"Pathfinder #203: Shepherd of Decay"
+],
+[
+"weapon",
+"eq:inflammation-flask-moderate",
+"Inflammation Flask (Moderate)",
+"Pathfinder #203: Shepherd of Decay"
+],
+[
+"treasure",
+"eq:inscribed-crocodile-skull",
+"Inscribed crocodile skull",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:intricate-silver-and-gold-music-box",
+"Intricate silver and gold music box",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:iron-and-rock-crystal-brazier",
+"Iron and rock crystal brazier",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:iron-cauldron-with-gargoyle-faces",
+"Iron cauldron with gargoyle faces",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:ivory",
+"Ivory",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jade",
+"Jade",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jasper",
+"Jasper",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jet-and-white-gold-game-set",
+"Jet and white gold game set",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jet",
+"Jet",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jewel-encrusted-gold-altar",
+"Jewel‑encrusted gold altar",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jeweled-dawnsilver-crown",
+"Jeweled dawnsilver crown",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jeweled-gold-puzzle-box",
+"Jeweled gold puzzle box",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:jeweled-orrery-of-the-planes",
+"Jeweled orrery of the planes",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:ka-stone",
+"Ka Stone",
+"Pathfinder Lost Omens World Guide"
+],
+[
+"equipment",
+"eq:ladder-10-foot",
+"Ladder (10-foot)",
+"Pathfinder Player Core"
+],
+[
+"weapon",
+"eq:lancer",
+"Lancer",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"equipment",
+"eq:land-delvers-chair",
+"Land-delver's Chair",
+"Pathfinder Howl of the Wild"
+],
+[
+"equipment",
+"eq:lantern-implement",
+"Lantern Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"treasure",
+"eq:lapis-lazuli-pendant",
+"Lapis lazuli pendant",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:lapis-lazuli",
+"Lapis lazuli",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:leather-flagon-with-caydenite-symbol",
+"Leather flagon with Caydenite symbol",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:life-size-sculpture-by-an-expert",
+"Life‑size sculpture by an expert",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:light-barding",
+"Light Barding",
+"Pathfinder Player Core"
+],
+[
+"consumable",
+"eq:light-writer-plates",
+"Light Writer Plates",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:living-flame-shaped-into-a-phoenix",
+"Living flame shaped into a phoenix",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:lovers-ink",
+"Lover's Ink",
+"Pathfinder Lost Omens Legends"
+],
+[
+"equipment",
+"eq:lucky-copper",
+"Lucky Copper",
+"Pathfinder Adventures: Troubles in Grayce"
+],
+[
+"equipment",
+"eq:lucky-gold",
+"Lucky Gold",
+"Pathfinder Adventures: Troubles in Grayce"
+],
+[
+"equipment",
+"eq:lucky-keepsake",
+"Lucky Keepsake",
+"Pathfinder Lost Omens Character Guide"
+],
+[
+"equipment",
+"eq:lucky-silver",
+"Lucky Silver",
+"Pathfinder Adventures: Troubles in Grayce"
+],
+[
+"weapon",
+"eq:mace-multipistol",
+"Mace Multipistol",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:magazine-with-6-pellets",
+"Magazine with 6 Pellets",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:magazine-with-8-pellets",
+"Magazine with 8 Pellets",
+"Pathfinder Guns & Gears"
+],
+[
+"consumable",
+"eq:fairy-pie-apple",
+"Fairy Pie (Apple)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:fairy-pie-blackbird",
+"Fairy Pie (Blackbird)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:fairy-pie-meat",
+"Fairy Pie (Meat)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-bigger",
+"Magic Mushroom (Bigger)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-cannier",
+"Magic Mushroom (Cannier)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-smaller",
+"Magic Mushroom (Smaller)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-spicier",
+"Magic Mushroom (Spicier)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-sweeter",
+"Magic Mushroom (Sweeter)",
+"Pathfinder Feybound"
+],
+[
+"consumable",
+"eq:magic-mushroom-wild",
+"Magic Mushroom (Wild)",
+"Pathfinder Feybound"
+],
+[
+"equipment",
+"eq:magical-medal-gorillas-might",
+"Magical Medal (Gorilla's Might)",
+"Pathfinder Battlecry!"
+],
+[
+"equipment",
+"eq:magical-medal-griffons-heart",
+"Magical Medal (Griffon's Heart)",
+"Pathfinder Battlecry!"
+],
+[
+"equipment",
+"eq:magical-medal-phoenixs-fire",
+"Magical Medal (Phoenix's Fire)",
+"Pathfinder Battlecry!"
+],
+[
+"equipment",
+"eq:magical-medal-unicorns-purity",
+"Magical Medal (Unicorn's Purity)",
+"Pathfinder Battlecry!"
+],
+[
+"equipment",
+"eq:magical-medal-wolf-pack",
+"Magical Medal (Wolf Pack)",
+"Pathfinder Battlecry!"
+],
+[
+"treasure",
+"eq:major-painting-by-a-legend",
+"Major Painting by a Legend",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:malachite",
+"Malachite",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:marble-altar",
+"Marble altar",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:mikazuki",
+"Mikazuki",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"consumable",
+"eq:mindmurk-oil",
+"Mindmurk Oil",
+"Pathfinder Society Scenario #1-23: The Star-Crossed Court"
+],
+[
+"equipment",
+"eq:mirror-implement",
+"Mirror Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"treasure",
+"eq:moonstone-and-onyx-game-set",
+"Moonstone and onyx game set",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:moonstone",
+"Moonstone",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:musket-staff-of-void",
+"Musket Staff of Void",
+"Pathfinder NPC Core"
+],
+[
+"consumable",
+"eq:nap-gas-dispenser",
+"Nap Gas Dispenser",
+"Pathfinder #215: To Blot Out the Sun"
+],
+[
+"treasure",
+"eq:obsidian",
+"Obsidian",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:onyx",
+"Onyx",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:opal",
+"Opal",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:oracular-hag-eye",
+"Oracular Hag Eye",
+"Pathfinder #182: Graveclaw"
+],
+[
+"equipment",
+"eq:orc-warmask",
+"Orc Warmask",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"treasure",
+"eq:original-manuscript-from-a-world-famous-author",
+"Original manuscript from a world‑famous author",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:parade-armor-with-flourishes",
+"Parade armor with flourishes",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:pearl-black",
+"Pearl, black",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:pearl-irregular-freshwater",
+"Pearl, irregular freshwater",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:pearl-saltwater",
+"Pearl, saltwater",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:peridot",
+"Peridot",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:peshpine-grenade-greater",
+"Peshpine Grenade (Greater)",
+"Pathfinder #149: Against the Scarlet Triad"
+],
+[
+"weapon",
+"eq:peshpine-grenade-lesser",
+"Peshpine Grenade (Lesser)",
+"Pathfinder #149: Against the Scarlet Triad"
+],
+[
+"weapon",
+"eq:peshpine-grenade-major",
+"Peshpine Grenade (Major)",
+"Pathfinder #149: Against the Scarlet Triad"
+],
+[
+"weapon",
+"eq:peshpine-grenade-moderate",
+"Peshpine Grenade (Moderate)",
+"Pathfinder #149: Against the Scarlet Triad"
+],
+[
+"treasure",
+"eq:phasing-ether-silk-tapestry",
+"Phasing ether silk tapestry",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:piercing-wind",
+"Piercing Wind",
+"Pathfinder Guns & Gears"
+],
+[
+"equipment",
+"eq:pilgrims-token",
+"Pilgrim's Token",
+"Pathfinder Player Core 2"
+],
+[
+"treasure",
+"eq:plain-brass-censer",
+"Plain brass censer",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:platinum-dragon-statuette",
+"Platinum dragon statuette",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:platinum-framed-monocle",
+"Platinum‑framed monocle",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:platinum-image-of-a-fey-noble-with-a-bit-of-orichalcum",
+"Platinum image of a fey noble with a bit of orichalcum",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:platinum-pieces",
+"Platinum Pieces",
+"Pathfinder Player Core"
+],
+[
+"consumable",
+"eq:poison-sedum",
+"Poison Sedum",
+"Pathfinder #178: Punks in a Powder Keg"
+],
+[
+"treasure",
+"eq:porcelain-doll-with-amber-eyes",
+"Porcelain doll with amber eyes",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:porcelain-vase-inlaid-with-gold",
+"Porcelain vase inlaid with gold",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-acid-resistance-greater",
+"Potion of Acid Resistance (Greater)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-acid-resistance-lesser",
+"Potion of Acid Resistance (Lesser)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-acid-resistance-moderate",
+"Potion of Acid Resistance (Moderate)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-acid-retaliation-greater",
+"Potion of Acid Retaliation (Greater)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-acid-retaliation-lesser",
+"Potion of Acid Retaliation (Lesser)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-acid-retaliation-major",
+"Potion of Acid Retaliation (Major)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-acid-retaliation-minor",
+"Potion of Acid Retaliation (Minor)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-acid-retaliation-moderate",
+"Potion of Acid Retaliation (Moderate)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-cold-resistance-greater",
+"Potion of Cold Resistance (Greater)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-cold-resistance-lesser",
+"Potion of Cold Resistance (Lesser)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-cold-resistance-moderate",
+"Potion of Cold Resistance (Moderate)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-cold-retaliation-greater",
+"Potion of Cold Retaliation (Greater)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-cold-retaliation-lesser",
+"Potion of Cold Retaliation (Lesser)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-cold-retaliation-major",
+"Potion of Cold Retaliation (Major)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-cold-retaliation-minor",
+"Potion of Cold Retaliation (Minor)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-cold-retaliation-moderate",
+"Potion of Cold Retaliation (Moderate)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-electricity-resistance-greater",
+"Potion of Electricity Resistance (Greater)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-electricity-resistance-lesser",
+"Potion of Electricity Resistance (Lesser)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-electricity-resistance-moderate",
+"Potion of Electricity Resistance (Moderate)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-electricity-retaliation-greater",
+"Potion of Electricity Retaliation (Greater)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-electricity-retaliation-lesser",
+"Potion of Electricity Retaliation (Lesser)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-electricity-retaliation-major",
+"Potion of Electricity Retaliation (Major)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-electricity-retaliation-minor",
+"Potion of Electricity Retaliation (Minor)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-electricity-retaliation-moderate",
+"Potion of Electricity Retaliation (Moderate)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-fire-resistance-greater",
+"Potion of Fire Resistance (Greater)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-fire-resistance-lesser",
+"Potion of Fire Resistance (Lesser)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-fire-resistance-moderate",
+"Potion of Fire Resistance (Moderate)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:potion-of-fire-retaliation-greater",
+"Potion of Fire Retaliation (Greater)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-fire-retaliation-lesser",
+"Potion of Fire Retaliation (Lesser)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-fire-retaliation-major",
+"Potion of Fire Retaliation (Major)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-fire-retaliation-minor",
+"Potion of Fire Retaliation (Minor)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-fire-retaliation-moderate",
+"Potion of Fire Retaliation (Moderate)",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:potion-of-sonic-resistance-greater",
+"Potion of Sonic Resistance (Greater)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-sonic-resistance-lesser",
+"Potion of Sonic Resistance (Lesser)",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:potion-of-sonic-resistance-moderate",
+"Potion of Sonic Resistance (Moderate)",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:power-suit",
+"Power Suit",
+"Pathfinder Guns & Gears"
+],
+[
+"consumable",
+"eq:practice-target",
+"Practice Target",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:previously-lost-volume-from-a-legendary-author",
+"Previously lost volume from a legendary author",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:pyrite",
+"Pyrite",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:quality-painting-by-an-unknown",
+"Quality painting by an unknown",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:quality-sculpture-by-an-unknown",
+"Quality sculpture by an unknown",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:quartz-milky-rose-or-smoky",
+"Quartz, milky, rose, or smoky",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:quartz-rock-crystal",
+"Quartz, rock crystal",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:rapier-pistol",
+"Rapier Pistol",
+"Pathfinder Guns & Gears"
+],
+[
+"consumable",
+"eq:red-dragons-breath-potion-adult",
+"Red Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:red-dragons-breath-potion-wyrm",
+"Red Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:red-dragons-breath-potion-young",
+"Red Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"equipment",
+"eq:regalia-implement",
+"Regalia Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"armor",
+"eq:reinforced-chassis",
+"Reinforced Chassis",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:rhodochrosite",
+"Rhodochrosite",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:rite-of-reinforcement-exoskeleton",
+"Rite of Reinforcement Exoskeleton",
+"Pathfinder Lost Omens The Mwangi Expanse"
+],
+[
+"equipment",
+"eq:robe-of-feathers-fall",
+"Robe of Feathers Fall",
+"Pathfinder Blog: April Fools"
+],
+[
+"ammo",
+"eq:rounds-arquebus",
+"Rounds (Arquebus)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-axe-musket",
+"Rounds (Axe Musket)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-black-powder-knuckle-dusters",
+"Rounds (Black Powder Knuckle Dusters)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-blunderbuss",
+"Rounds (Blunderbuss)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-cane-pistol",
+"Rounds (Cane Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-clan-pistol",
+"Rounds (Clan Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-coat-pistol",
+"Rounds (Coat Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-dagger-pistol",
+"Rounds (Dagger Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-dawnsilver-tree",
+"Rounds (Dawnsilver Tree)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-double-barreled-musket",
+"Rounds (Double-Barreled Musket)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-double-barreled-pistol",
+"Rounds (Double-Barreled Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-dragon-mouth-pistol",
+"Rounds (Dragon Mouth Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-dueling-pistol",
+"Rounds (Dueling Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-dwarven-scattergun",
+"Rounds (Dwarven Scattergun)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-explosive-dogslicer",
+"Rounds (Explosive Dogslicer)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-fire-lance",
+"Rounds (Fire Lance)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-flingflenser",
+"Rounds (Flingflenser)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-flintlock-musket",
+"Rounds (Flintlock Musket)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-flintlock-pistol",
+"Rounds (Flintlock Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-gnome-amalgam-musket",
+"Rounds (Gnome Amalgam Musket)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-gun-sword",
+"Rounds (Gun Sword)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-hammer-gun",
+"Rounds (Hammer Gun)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-hand-cannon",
+"Rounds (Hand Cannon)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-harmona-gun",
+"Rounds (Harmona Gun)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-jezail",
+"Rounds (Jezail)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-mace-multipistol",
+"Rounds (Mace Multipistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-pepperbox",
+"Rounds (Pepperbox)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-piercing-wind",
+"Rounds (Piercing Wind)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-rapier-pistol",
+"Rounds (Rapier Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-shield-pistol",
+"Rounds (Shield Pistol)",
+"Pathfinder Lost Omens Firebrands"
+],
+[
+"ammo",
+"eq:rounds-shobhad-longrifle",
+"Rounds (Shobhad Longrifle)",
+"Pathfinder #173: Doorway to the Red Star"
+],
+[
+"ammo",
+"eq:rounds-slide-pistol",
+"Rounds (Slide Pistol)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-spike-launcher",
+"Rounds (Spike Launcher)",
+"Pathfinder Guns & Gears"
+],
+[
+"ammo",
+"eq:rounds-three-peaked-tree",
+"Rounds (Three-peaked Tree)",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:ruby-large",
+"Ruby, large",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:ruby-small",
+"Ruby, small",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:sack-of-hydras-teeth",
+"Sack of Hydra's Teeth",
+"Pathfinder Battlecry!"
+],
+[
+"treasure",
+"eq:saints-bone-with-lost-scriptures",
+"Saint's bone with lost scriptures",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:sapphire",
+"Sapphire",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:sard",
+"Sard",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:sardonyx",
+"Sardonyx",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:scrimshaw-whale-bone",
+"Scrimshaw whale bone",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-10th-rank-spell",
+"Scroll of 10th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-1st-rank-spell",
+"Scroll of 1st-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-2nd-rank-spell",
+"Scroll of 2nd-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-3rd-rank-spell",
+"Scroll of 3rd-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-4th-rank-spell",
+"Scroll of 4th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-5th-rank-spell",
+"Scroll of 5th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-6th-rank-spell",
+"Scroll of 6th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-7th-rank-spell",
+"Scroll of 7th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-8th-rank-spell",
+"Scroll of 8th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:scroll-of-9th-rank-spell",
+"Scroll of 9th-rank Spell",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:set-of-decorated-ceramic-plates",
+"Set of decorated ceramic plates",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:set-of-decorated-porcelain-plates",
+"Set of decorated porcelain plates",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:set-of-six-ivory-dice",
+"Set of six ivory dice",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:seven-color-raw-fish-salad",
+"Seven-Color Raw Fish Salad",
+"Pathfinder Blog"
+],
+[
+"treasure",
+"eq:shell",
+"Shell",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:shrine-inarizushi",
+"Shrine Inarizushi",
+"Pathfinder Blog"
+],
+[
+"equipment",
+"eq:signifers-mask",
+"Signifer's Mask",
+"Pathfinder Lost Omens Hellfire Dispatches"
+],
+[
+"treasure",
+"eq:silk-ceremonial-armor",
+"Silk ceremonial armor",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silk-fan-decorated-with-turquoise",
+"Silk fan decorated with turquoise",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silk-mask-decorated-with-citrines",
+"Silk mask decorated with citrines",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silver-and-jade-censer",
+"Silver and jade censer",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silver-coronet-with-peridots",
+"Silver coronet with peridots",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:silver-dragons-breath-potion-adult",
+"Silver Dragon's Breath Potion (Adult)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:silver-dragons-breath-potion-wyrm",
+"Silver Dragon's Breath Potion (Wyrm)",
+"Pathfinder Core Rulebook"
+],
+[
+"consumable",
+"eq:silver-dragons-breath-potion-young",
+"Silver Dragon's Breath Potion (Young)",
+"Pathfinder Core Rulebook"
+],
+[
+"treasure",
+"eq:silver-flagon-inscribed-with-fields",
+"Silver flagon inscribed with fields",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silver-mirror-with-gilded-frame",
+"Silver mirror with gilded frame",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:silver-pieces",
+"Silver Pieces",
+"Pathfinder Player Core"
+],
+[
+"treasure",
+"eq:silver-statuette-of-a-raven",
+"Silver statuette of a raven",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:simple-painting",
+"Simple painting",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:simple-sculpture",
+"Simple sculpture",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:simple-silver-circlet",
+"Simple silver circlet",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:sling-darts",
+"Sling Darts",
+"Pathfinder War of Immortals"
+],
+[
+"treasure",
+"eq:small-cold-iron-cauldron-with-onyx",
+"Small cold iron cauldron with onyx",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:smoky-hag-eye",
+"Smoky Hag Eye",
+"Pathfinder #182: Graveclaw"
+],
+[
+"treasure",
+"eq:solidified-moment-of-time",
+"Solidified Moment of Time",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:spare-wax-cylinder",
+"Spare Wax Cylinder",
+"Pathfinder Lost Omens Legends"
+],
+[
+"consumable",
+"eq:special-ingredient",
+"Special Ingredient",
+"Pathfinder Kingmaker"
+],
+[
+"weapon",
+"eq:spectral-dagger",
+"Spectral Dagger",
+"Pathfinder Lost Omens Shining Kingdoms"
+],
+[
+"consumable",
+"eq:spider-mold",
+"Spider Mold",
+"Pathfinder One-Shot #2: Dinner at Lionlodge"
+],
+[
+"treasure",
+"eq:spinel-deep-blue",
+"Spinel, deep blue",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:spinel-red-or-green",
+"Spinel, red or green",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:splendid-lyre-of-world-famous-lyrist",
+"Splendid lyre of world‑famous lyrist",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:splendid-pyschopomp-mask",
+"Splendid Pyschopomp Mask",
+"Pathfinder #169: Kindled Magic"
+],
+[
+"equipment",
+"eq:splendid-skull-mask",
+"Splendid Skull Mask",
+"Pathfinder Lost Omens Ancestry Guide"
+],
+[
+"weapon",
+"eq:spore-shephards-staff-greater",
+"Spore Shephard's Staff (Greater)",
+"Pathfinder #193: Mantle of Gold"
+],
+[
+"weapon",
+"eq:spore-shephards-staff-major",
+"Spore Shephard's Staff (Major)",
+"Pathfinder #193: Mantle of Gold"
+],
+[
+"weapon",
+"eq:spore-shephards-staff",
+"Spore Shephard's Staff",
+"Pathfinder #193: Mantle of Gold"
+],
+[
+"consumable",
+"eq:spray-pellets",
+"Spray Pellets",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"equipment",
+"eq:st-alkitarems-eye",
+"St. Alkitarem's Eye",
+"Pathfinder #152: Legacy of the Lost God"
+],
+[
+"weapon",
+"eq:staff-of-imperious-echo",
+"Staff of Imperious Echo",
+"Pathfinder Adventure Path #225: Vaultlines"
+],
+[
+"equipment",
+"eq:standard-book-of-translation-tien",
+"Standard Book of Translation (Tien)",
+"Pathfinder Lost Omens Pathfinder Society Guide"
+],
+[
+"treasure",
+"eq:star-sapphire-necklace",
+"Star sapphire necklace",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:star-sapphire",
+"Star sapphire",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:starless-scope-lens",
+"Starless Scope Lens",
+"Pathfinder Adventure: Malevolence"
+],
+[
+"equipment",
+"eq:stony-hag-eye",
+"Stony Hag Eye",
+"Pathfinder #182: Graveclaw"
+],
+[
+"equipment",
+"eq:submersible-helmet-greater",
+"Submersible Helmet (Greater)",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"equipment",
+"eq:submersible-helmet",
+"Submersible Helmet",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"armor",
+"eq:subterfuge-suit",
+"Subterfuge Suit",
+"Pathfinder Guns & Gears"
+],
+[
+"armor",
+"eq:suit-of-armoire",
+"Suit of Armoire",
+"Pathfinder Blog: April Fools"
+],
+[
+"equipment",
+"eq:supramarine-chair",
+"Supramarine Chair",
+"Pathfinder Howl of the Wild"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-beast",
+"Taljjae's Mask (The Beast)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-general",
+"Taljjae's Mask (The General)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-grandmother",
+"Taljjae's Mask (The Grandmother)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-hermit",
+"Taljjae's Mask (The Hermit)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-hero",
+"Taljjae's Mask (The Hero)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-nobleman",
+"Taljjae's Mask (The Nobleman)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"equipment",
+"eq:taljjaes-mask-the-wanderer",
+"Taljjae's Mask (The Wanderer)",
+"Pathfinder Lost Omens Monsters of Myth"
+],
+[
+"treasure",
+"eq:tankard-owned-by-cayden-cailean",
+"Tankard owned by Cayden Cailean",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:ten-days-breath",
+"Ten Day's Breath",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"equipment",
+"eq:tengu-feather-fan",
+"Tengu Feather Fan",
+"Pathfinder Player Core 2"
+],
+[
+"consumable",
+"eq:the-dancers-song",
+"The Dancers' Song",
+"Pathfinder Lost Omens Shining Kingdoms"
+],
+[
+"treasure",
+"eq:thought-lens-of-astral-essence",
+"Thought Lens of Astral Essence",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:three-days-breath",
+"Three Day's Breath",
+"Pathfinder #220: Crypt of Runes"
+],
+[
+"weapon",
+"eq:three-peaked-tree",
+"Three-peaked Tree",
+"Pathfinder Guns & Gears"
+],
+[
+"treasure",
+"eq:tigers-eye",
+"Tiger's‑eye",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:titan-nagaji-scales",
+"Titan Nagaji Scales",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"equipment",
+"eq:tome-implement",
+"Tome Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"treasure",
+"eq:topaz",
+"Topaz",
+"Pathfinder GM Core"
+],
+[
+"armor",
+"eq:tough-skin",
+"Tough Skin",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"treasure",
+"eq:tourmaline",
+"Tourmaline",
+"Pathfinder GM Core"
+],
+[
+"treasure",
+"eq:towering-sculpture-by-a-master",
+"Towering sculpture by a master",
+"Pathfinder GM Core"
+],
+[
+"consumable",
+"eq:treat-standard",
+"Treat (Standard)",
+"Pathfinder Lost Omens Travel Guide"
+],
+[
+"consumable",
+"eq:treat-unique",
+"Treat (Unique)",
+"Pathfinder Lost Omens Travel Guide"
+],
+[
+"weapon",
+"eq:triggerbrand",
+"Triggerbrand",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"consumable",
+"eq:tteokguk-of-time-advancement",
+"Tteokguk of Time Advancement",
+"Pathfinder Blog"
+],
+[
+"treasure",
+"eq:turquoise",
+"Turquoise",
+"Pathfinder GM Core"
+],
+[
+"equipment",
+"eq:tyrants-writs",
+"Tyrant's Writs",
+"Pathfinder Lost Omens Impossible Lands"
+],
+[
+"weapon",
+"eq:versatile-vial",
+"Versatile Vial",
+"Pathfinder Player Core 2"
+],
+[
+"treasure",
+"eq:virtuoso-silver-flute",
+"Virtuoso silver flute",
+"Pathfinder Bestiary"
+],
+[
+"equipment",
+"eq:wand-implement",
+"Wand Implement",
+"Pathfinder Dark Archive (Remastered)"
+],
+[
+"consumable",
+"eq:wasul-reed-mask",
+"Wasul Reed Mask",
+"Pathfinder Abomination Vaults Hardcover Compilation"
+],
+[
+"equipment",
+"eq:wayfinderfinder",
+"Wayfinderfinder",
+"Pathfinder Blog: April Fools"
+],
+[
+"treasure",
+"eq:wide-landscape-by-an-expert",
+"Wide landscape by an expert",
+"Pathfinder GM Core"
+],
+[
+"weapon",
+"eq:windlass-bola",
+"Windlass Bola",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"equipment",
+"eq:witch-token",
+"Witch Token",
+"Pathfinder #190: The Choosing"
+],
+[
+"weapon",
+"eq:wrecker",
+"Wrecker",
+"Pathfinder Treasure Vault (Remastered)"
+],
+[
+"consumable",
+"eq:yellow-musk-poison",
+"Yellow Musk Poison",
+"Pathfinder Bestiary 2"
+],
+[
+"armor",
+"eq:zetogeki-hide-armor",
+"Zetogeki Hide Armor",
+"Pathfinder #208: Hoof, Cinder, and Storm"
+],
+[
+"treasure",
+"eq:zircon",
+"Zircon",
+"Pathfinder GM Core"
+],
+[
+"spell",
+"sp:discomfiting-whispers",
+"Discomfiting Whispers",
+"Pathfinder War of Immortals"
+],
+[
+"spell",
+"sp:vindicators-judgment",
+"Vindicator's Judgment",
+"Pathfinder War of Immortals"
+],
+[
+"spell",
+"sp:anima-invocation-modified",
+"Anima Invocation (Modified)",
+"Pathfinder #150: Broken Promises"
+],
+[
+"spell",
+"sp:aspirational-state",
+"Aspirational State",
+"Pathfinder Society Scenario #2-22: Breaking the Storm: Excising Ruination"
+],
+[
+"spell",
+"sp:create-mycoguardian",
+"Create Mycoguardian",
+"Pathfinder #193: Mantle of Gold"
+],
+[
+"spell",
+"sp:destroy-mindscape",
+"Destroy Mindscape",
+"Pathfinder Season of Ghosts Hardcover Compilation"
+],
+[
+"spell",
+"sp:rite-of-cleansing-flame",
+"Rite of Cleansing Flame",
+"Pathfinder #216: The Acropolis Pyre"
+],
+[
+"spell",
+"sp:shroud-of-the-provinces",
+"Shroud of the Provinces",
+"Pathfinder Impossible Magic"
+],
+[
+"spell",
+"sp:synchronize-ley-line",
+"Synchronize Ley Line",
+"Pathfinder Adventure Path #225: Vaultlines"
+],
+[
+"spell",
+"sp:unfettered-mark",
+"Unfettered Mark",
+"Pathfinder #161: Belly of the Black Whale"
+],
+[
+"condition",
+"co:cursebound",
+"Cursebound",
+"Pathfinder Player Core 2"
+],
+[
+"condition",
+"co:cursebound",
+"Cursebound",
+"Pathfinder Player Core 2"
+],
+[
+"action",
+"fa:augury",
+"Augury",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"fa:erudite",
+"Erudite",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"action",
+"fa:grasping-tendrils",
+"Grasping Tendrils",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:luminous",
+"Luminous",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"action",
+"fa:mask-freeze",
+"Mask Freeze",
+"Pathfinder Lost Omens Character Guide"
+],
+[
+"action",
+"fa:purify-air",
+"Purify Air",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:radiant",
+"Radiant",
+"Pathfinder Lost Omens Knights of Lastwall"
+],
+[
+"action",
+"fa:soul-sight",
+"Soul Sight",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"fa:spirit-touch",
+"Spirit Touch",
+"Pathfinder Book of the Dead"
+],
+[
+"action",
+"fa:synchronize-spirit",
+"Synchronize Spirit",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"fa:verdant-burst",
+"Verdant Burst",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-balanced-luck",
+"Familiar of Balanced Luck",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-bolstering-aid",
+"Familiar of Bolstering Aid",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"fa:familiar-of-enticing-negotiation",
+"Familiar of Enticing Negotiation",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"fa:familiar-of-flowing-script",
+"Familiar of Flowing Script",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-freezing-rime",
+"Familiar of Freezing Rime",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-insightful-observation",
+"Familiar of Insightful Observation",
+"Pathfinder Lost Omens Rival Academies"
+],
+[
+"action",
+"fa:familiar-of-keen-senses",
+"Familiar of Keen Senses",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-nimble-flight",
+"Familiar of Nimble Flight",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"fa:familiar-of-obscuring-snowfall",
+"Familiar of Obscuring Snowfall",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"fa:familiar-of-ongoing-misery",
+"Familiar of Ongoing Misery",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-overwhelming-tides",
+"Familiar of Overwhelming Tides",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"fa:familiar-of-paired-perplexity",
+"Familiar of Paired Perplexity",
+"Pathfinder Lost Omens Divine Mysteries"
+],
+[
+"action",
+"fa:familiar-of-parasitic-might",
+"Familiar of Parasitic Might",
+"Pathfinder Howl of the Wild"
+],
+[
+"action",
+"fa:familiar-of-restored-spirit",
+"Familiar of Restored Spirit",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-stalking-night",
+"Familiar of Stalking Night",
+"Pathfinder Player Core"
+],
+[
+"action",
+"fa:familiar-of-swarms-heart",
+"Familiar of Swarm's Heart",
+"Pathfinder Lost Omens Divine Mysteries"
+]
+]

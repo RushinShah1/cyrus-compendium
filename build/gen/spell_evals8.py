@@ -213,3 +213,8 @@ Compared with Spray of Salt it deals slightly less damage in a burst that is har
 w('Ignite Fireworks', """As a Reflex-targeting area option, Ignite Fireworks deals light damage (1d8 fire and 1d8 sonic) in a 10-foot burst and dazzles every creature that does not critically succeed: for a round on a success, 3 rounds on a failure and a minute on a critical failure. A dazzled creature treats everything as concealed, so each of its attacks has a 20 per cent chance to miss. Each damage type rises by 1d8 every two ranks, and its range is 60 feet.
 
 Compared with Vomit Swarm it deals the same damage in a smaller area, but its rider applies on a successful save, which makes it the more reliable debuff. Compared with Revealing Light it dazzles for less time and adds damage. Through Expansive Spellstrike a 10-foot burst needs care when allies stand beside the target.""")
+
+
+# ───────────── corrections outside rank 2 ─────────────
+# Scatter Scree's area is two contiguous 5-foot cubes, which Expansive Spellstrike does not cover.
+w('Scatter Scree', """As a Reflex-targeting cantrip, Scatter Scree deals light damage (2d4 bludgeoning, rising by 1d4 per rank) in two adjacent 5-foot cubes and leaves the ground there as difficult terrain for a minute. Its area is not a burst, cone or line, so through Spellstrike it affects only the target and the target's space, even with Expansive Spellstrike. Cast directly from 30 feet it slows movement through a doorway or corridor. The damage is too low for regular use, and casting it again ends the earlier one.""")

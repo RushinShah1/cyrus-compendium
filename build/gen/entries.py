@@ -1,7 +1,6 @@
-"""Unified rules entries: AoN archive text (exact) when it covers the printing, Foundry text otherwise."""
+"""Rules entries, taken only from the Archives of Nethys data."""
 import json, re, html as H
 from urllib.parse import quote_plus
-import rules
 
 AON = 'https://2e.aonprd.com'
 _files = {'spell': 'spells', 'feat': 'feats', 'action': 'actions', 'item': 'equipment',
@@ -85,7 +84,11 @@ def _acttext(s):
 
 def _aon_entry(doc):
     md = doc['markdown'].replace('\r', '')
-    head, _, rest = md.partition('\n---')
+    head, sep, rest = md.partition('\n---')
+    if not sep:      # an entry with no rule line under its header: the header ends with the Source paragraph
+        m = re.search(r'\*\*Source\*\*[^\n]*\n', md)
+        if m:
+            head, rest = md[:m.end()], md[m.end():]
     title = re.search(r'<title[^>]*right="([^"]*)"[^>]*>(.*?)</title>', head, re.S)
     act = re.search(r'<actions string="([^"]+)"', title.group(2) if title else '')
     traits = re.findall(r'<trait label="([^"]+)" url="([^"]+)"', head)
@@ -117,86 +120,8 @@ def _aon_entry(doc):
         body=_md('\n\n'.join(body)), heightened=_md('\n\n'.join(height)))
 
 
-def _foundry_entry(d, kind):
-    s = d['system']
-    lvl = s.get('level', {}).get('value', 1) or 1
-    h = rules.render(s['description']['value'], lvl)
-    head, body, height = rules.split_sections(h)
-    tr = s.get('traits', {})
-    traits = []
-    rar = tr.get('rarity', 'common')
-    if rar != 'common':
-        traits.append((rar.title(), TRAITS.get(rar, AON)))
-    for t in list(tr.get('value', [])) + [x for x in TRAIT_FIX.get(d['name'], []) if x not in tr.get('value', [])]:
-        nm = t.replace('-', ' ').title()
-        traits.append((nm, TRAITS.get(t.replace('-', ' '), f'{AON}/Search.aspx?q={quote_plus(nm)}')))
-    fields = []
-    for k in ['Prerequisites', 'Frequency', 'Trigger', 'Requirements', 'Cost']:
-        if k in head:
-            fields.append((k, head[k]))
-        elif k + 's' in head:
-            fields.append((k, head[k + 's']))
-    if kind == 'feat':
-        pr = [x.get('value') for x in (s.get('prerequisites') or {}).get('value', [])]
-        if pr and not any(f[0] == 'Prerequisites' for f in fields):
-            fields.insert(0, ('Prerequisites', '; '.join(pr)))
-    if kind == 'spell':
-        a = s.get('area') or {}
-        area = head.get('Area') or (f"{a.get('value')}-foot {a.get('type')}" if a else '')
-        df = s.get('defense') or {}
-        dtxt = ''
-        if df.get('save'):
-            dtxt = ('basic ' if df['save'].get('basic') else '') + df['save']['statistic'].title()
-        elif df.get('passive'):
-            dtxt = df['passive'].get('statistic', '').upper()
-        dur = (s.get('duration') or {})
-        durtxt = ('sustained' + (' up to ' + dur['value'] if dur.get('value') else '')) if dur.get('sustained') else dur.get('value', '')
-        for lab, val in [('Range', s.get('range', {}).get('value')), ('Area', area), ('Targets', s.get('target', {}).get('value')),
-                         ('Defense', dtxt), ('Duration', durtxt)]:
-            if val:
-                fields.append((lab, val))
-    if kind == 'item':
-        pr = (s.get('price') or {}).get('value') or {}
-        ptxt = ', '.join(f'{v:,} {k}' for k, v in pr.items() if v)
-        use = (s.get('usage') or {}).get('value', '')
-        blk = (s.get('bulk') or {}).get('value')
-        for lab, val in [('Price', ptxt), ('Usage', use.replace('-', ' ') if use else ''), ('Bulk', ('L' if blk == 0.1 else str(blk)) if blk not in (None, 0) else '')]:
-            if val:
-                fields.append((lab, val))
-        # higher-level variants as separate Foundry items
-        base = d['name']
-        vs = []
-        for nm, hits in rules.IDX.items():
-            if nm.startswith(base.lower() + ' (') and any(p == 'equipment' for p, _ in hits):
-                vd = json.load(open([f for p, f in hits if p == 'equipment'][0]))
-                vs.append(vd)
-        vs.sort(key=lambda x: x['system'].get('level', {}).get('value', 0))
-        if vs:
-            extra = []
-            for vd in vs:
-                vsys = vd['system']
-                vpr = ', '.join(f'{v:,} {k}' for k, v in ((vsys.get('price') or {}).get('value') or {}).items() if v)
-                vh = rules.render(vsys['description']['value'], vsys.get('level', {}).get('value', 1))
-                extra.append(f'<h5 class="sub">{H.escape(vd["name"])} <span class="muted">Item {vsys.get("level", {}).get("value")}, {vpr}</span></h5>{vh}')
-            body = body + '<details class="vars"><summary>Higher-level versions</summary>' + ''.join(extra) + '</details>'
-    t = (s.get('time') or {}).get('value') if kind == 'spell' else None
-    act = None
-    if kind == 'spell':
-        act = {'1': 'one', '2': 'two', '3': 'three', 'reaction': 'reaction', 'free': 'free'}.get(str(t).lower())
-    else:
-        at = (s.get('actionType') or {}).get('value')
-        n = (s.get('actions') or {}).get('value')
-        act = {'action': {1: 'one', 2: 'two', 3: 'three'}.get(n), 'reaction': 'reaction', 'free': 'free'}.get(at)
-    pub = s.get('publication', {})
-    hint = '#' + kind if kind in ('spell', 'item', 'feat', 'action') else ''  # tells the glossary which kind of entry the name means
-    return dict(name=d['name'], url=f'{AON}/Search.aspx?q={quote_plus(d["name"])}{hint}', source='foundry', level=str(lvl),
-                action=act, action_text=str(t or ''), traits=traits, fields=fields,
-                traditions=[x.title() for x in (tr.get('traditions') or [])],
-                book=pub.get('title', '').replace('Pathfinder ', ''), body=body, heightened=height)
-
-
-ACTION_OVERRIDE = {'Sprinting Spellstrike': 'two'}  # Foundry marks it passive; AoN/Impossible Magic print it as a 2-action activity
-
+ACTION_OVERRIDE = {}
+ALIAS = {('Studious Spells', 'feature'): 'Studious Spell'}   # the name the current magus class entry uses
 
 REMASTER_BOOKS = {'gm core', 'player core', 'player core 2', 'treasure vault (remastered)', 'guns gears (remastered)',
                   'rage of elements', 'battlecry', 'howl of the wild', 'war of immortals', 'impossible magic', 'monster core',
@@ -215,76 +140,109 @@ def _norm(b):
     return b
 
 
-_SCHOOLS = {'abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'illusion', 'necromancy', 'transmutation'}
+
+_SCHOOLS = {'abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'necromancy', 'transmutation'}
 _RENAMED = {'positive': 'vitality', 'negative': 'void'}
-_RARITY = ('uncommon', 'rare', 'unique')
+_COMPONENT_TRAIT = {'verbal': 'Concentrate', 'somatic': 'Manipulate', 'material': 'Manipulate', 'focus': 'Manipulate'}
+_FALLBACK_FILES = {'feature': ['hybrid-studies'], 'item': ['weapons', 'armors', 'shields'], 'action': ['skill-general-actions']}
 
 
-TRAIT_FIX = {'Weight of the World': ['concentrate', 'manipulate']}  # the data record has an empty trait list; Impossible Magic pg. 173
+def _key(name):
+    return name.lower().replace('’', "'").strip()
 
 
-def _spell_traits(shown, d):
-    """Trait row for a spell card: the printed traits under current rules.
+def _cands(name, kind):
+    """Every Archives of Nethys document of this kind with this name."""
+    k = _key(name)
+    out = list(_load(kind).get(k, []))
+    if not out:
+        for f in _FALLBACK_FILES.get(kind, []):
+            fk = 'file:' + f
+            if fk not in _cache:
+                d = {}
+                for x in json.load(open(f'/home/claude/ext/aon/2e/data/{f}.json')):
+                    d.setdefault(_key(x['name']), []).append(x)
+                _cache[fk] = d
+            out += _cache[fk].get(k, [])
+    return out
 
-    Older printings list components and a school in place of concentrate and manipulate, so the row takes the
-    traits from the Foundry record as well, drops the school and uses the current names of renamed traits."""
-    have = {}
-    for label, url in shown:
-        k = _RENAMED.get(label.lower(), label.lower())
-        if k in _SCHOOLS:
-            continue
-        have[k] = (k.title(), TRAITS.get(k, url))
-    tr = d['system'].get('traits', {})
-    rar = tr.get('rarity', 'common')
-    if rar != 'common':
-        have.setdefault(rar, (rar.title(), TRAITS.get(rar, AON)))
-    for t in list(tr.get('value', [])) + TRAIT_FIX.get(d['name'], []):
-        k = t.replace('-', ' ')
-        have.setdefault(k, (k.title(), TRAITS.get(k, f'{AON}/Search.aspx?q={quote_plus(k.title())}')))
-    return [have[k] for k in sorted(have, key=lambda k: (k not in _RARITY, k))]
+
+def _idnum(c):
+    n = re.findall(r'\d+', c.get('id') or '')
+    return int(n[0]) if n else 0
+
+
+def pick(cands, prefer_source=None):
+    """The current printing among documents that share a name: one that no later printing has replaced, the page's
+    own document ahead of the rows for its versions, a rulebook ahead of other books, then the most recent release."""
+    if prefer_source:
+        for c in cands:
+            if c.get('primary_source') == prefer_source:
+                return c
+    pool = [c for c in cands if not c.get('remaster_id')] or cands
+    pool = [c for c in pool if not c.get('exclude_from_search')] or pool     # an item's activation row is not the action
+    pool = [c for c in pool if not c.get('item_parent_id')] or pool
+    return max(pool, key=lambda c: (c.get('primary_source_category') == 'Rulebooks', c.get('release_date') or '', _idnum(c)))
+
+
+def is_legacy(doc):
+    """A printing from before the remaster that no later book has replaced."""
+    if doc.get('category') == 'spell':
+        return bool(set(doc.get('component') or []) & set(_COMPONENT_TRAIT))     # written with spell components
+    return (doc.get('release_date') or '9') < '2023-08-02'                       # before Rage of Elements, the first book in the new format
+
+
+def _spell_traits(shown, doc):
+    """Trait row for a spell. A printing that lists spell components gains the traits those components give the spell
+    (Core Rulebook pg. 303: verbal gives concentrate; somatic, material and focus give manipulate). Its school trait is
+    dropped, and a trait the entry lists under both its old and new name is shown under the new one."""
+    listed = [t.lower() for t in (doc.get('trait') or [])]
+    out = []
+    for l, u in shown:
+        new = _RENAMED.get(l.lower())
+        if new and new in listed:          # the entry lists both the old trait name and the one that replaced it
+            l, u = new.title(), TRAITS.get(new, u)
+        if l.lower() not in [x.lower() for x, _ in out]:
+            out.append((l, u))
+    comps = [c for c in (doc.get('component') or []) if c in _COMPONENT_TRAIT]
+    if comps:
+        out = [(l, u) for l, u in out if l.lower() not in _SCHOOLS]
+        for c in comps:
+            t = _COMPONENT_TRAIT[c]
+            if t.lower() not in [l.lower() for l, _ in out]:
+                out.append((t, TRAITS.get(t.lower(), AON + '/Traits.aspx')))
+    rar = [x for x in out if x[0].lower() in ('uncommon', 'rare', 'unique')]
+    rest = sorted([x for x in out if x not in rar], key=lambda x: x[0].lower())
+    return rar + rest
 
 
 def entry(name, kind='spell', foundry_kind=None, prefer_source=None):
-    fk = foundry_kind or {'spell': 'spell', 'feat': 'feat', 'action': 'action', 'item': 'item', 'feature': 'feature',
-                          'skillaction': 'action'}.get(kind, 'any')
-    try:
-        d = rules.get(name, fk)
-    except KeyError:
-        d = None
-    book = (d['system'].get('publication', {}).get('title', '').replace('Pathfinder ', '') if d else prefer_source) or ''
-    cands = _load(kind).get(name.lower(), [])
-    doc = None
-    for c in cands:
-        ps = c.get('primary_source', '')
-        if prefer_source and ps == prefer_source:
-            doc = c; break
-        if book and _norm(ps) == _norm(book):
-            doc = c; break
-    if doc is None and d is not None and d['system'].get('publication', {}).get('remaster'):
-        rem = [c for c in cands if _norm(c.get('primary_source', '')) in REMASTER_BOOKS - {'secrets of magic'}]
-        if rem:
-            doc = rem[0]
-    if doc is None and d is None and cands:
-        rem = [c for c in cands if _norm(c.get('primary_source', '')) in REMASTER_BOOKS]
-        doc = (rem or cands)[0] if rem else cands[-1]
-    if doc is not None:
-        e = _aon_entry(doc)
-        if not e['action'] and d is not None:
-            e['action'] = _foundry_entry(d, fk if fk != 'any' else kind)['action']
-        e['remaster'] = bool(d['system'].get('publication', {}).get('remaster')) if d else True
-        e['fdoc'] = d
-        e.setdefault('kind', kind)
-        if kind == 'spell' and d is not None:
-            e['traits'] = _spell_traits(e['traits'], d)
-        return e
-    if d is None:
-        raise KeyError(name)
-    e = _foundry_entry(d, fk)
+    """The Archives of Nethys entry for a name. foundry_kind is accepted for older callers and ignored."""
+    name = ALIAS.get((name, kind), name)
+    cands = _cands(name, kind)
+    if not cands:
+        base = re.sub(r'\s*\([^)]*\)\s*$', '', name)
+        if base != name:
+            cands = _cands(base, kind)
+    if cands and all(c.get('remaster_id') for c in cands) and not prefer_source:
+        # every printing under this name has been replaced: the current one carries a class in its name
+        k = _key(name) + ' ('
+        alts = [c for n, cs in _load(kind).items() if n.startswith(k) for c in cs if not c.get('remaster_id')]
+        alts = [c for c in alts if 'Magus' in (c.get('trait') or [])] or (alts if len(alts) == 1 else [])
+        if alts:
+            cands = alts
+    if not cands:
+        raise KeyError(f'{name} ({kind}) is not in the Archives of Nethys data')
+    doc = pick(cands, prefer_source)
+    e = _aon_entry(doc)
     if name in ACTION_OVERRIDE:
         e['action'] = ACTION_OVERRIDE[name]
-    e['remaster'] = bool(d['system'].get('publication', {}).get('remaster'))
-    e['fdoc'] = d
+    e['remaster'] = not is_legacy(doc)
+    e['doc'] = doc
+    e['fdoc'] = None
     e.setdefault('kind', kind)
+    if kind == 'spell':
+        e['traits'] = _spell_traits(e['traits'], doc)
     return e
 
 
@@ -313,3 +271,5 @@ def rule_html(rid, depth=0):
         out += _md(parts[i + 1])
     out = re.sub(r'<h5 class="sub">\s*</h5>', '', out)
     return out, d['name']
+
+

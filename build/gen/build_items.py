@@ -263,12 +263,12 @@ def custom_gift_card(n, tier, aspect, tr, act, body, ev):
 
 
 def weapon_row(n):
-    import rules
-    d = rules.get(n, 'item')
-    s = d['system']
-    dmg = s.get('damage', {})
-    traits = ', '.join(t.replace('-', ' ').replace('deadly d', 'deadly d').title() for t in s['traits']['value'])
-    return [f'<a href="https://2e.aonprd.com/Search.aspx?q={n}">{n}</a>', f'{dmg.get("dice", 1)}{dmg.get("die")} {dmg.get("damageType", "")}', traits, str(s.get('bulk', {}).get('value', ''))]
+    import entries
+    d = entries.pick(entries._cands(n, 'weapon'))
+    dtype = {'S': 'slashing', 'P': 'piercing', 'B': 'bludgeoning'}
+    die, _, t = (d.get('damage') or '').partition(' ')
+    dmg = f'{die} {dtype.get(t, t)}'.strip()
+    return [f'<a href="https://2e.aonprd.com{d["url"]}">{n}</a>', dmg, ', '.join(d.get('trait_raw') or []), str(d.get('bulk_raw') or '')]
 
 
 def aspera_page():

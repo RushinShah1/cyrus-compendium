@@ -118,6 +118,12 @@ BN = {}
 for k, d in bu.items():
     BN.setdefault(nname(d.get('name')), []).append(k)
 EXTRA = {}
+NO_TEXT = []
+RELATED = {'tactic', 'mythic-calling', 'ikon', 'hellknight-order', 'arcane-thesis', 'archetype', 'weapon', 'equipment', 'armor', 'shield'}
+
+
+def ids(v):
+    return v if isinstance(v, list) else ([] if v in (None, '', '[]') else [v])
 
 
 def gloss_key(d, key):
@@ -131,40 +137,23 @@ def gloss_key(d, key):
     if typ == 'feat' and key.startswith('af:'):
         cats = {'feat', 'heritage', 'ancestry'}
     book = (d['system'].get('publication') or {}).get('title', '')
-    cands = [k for k in BN.get(nname(d['name']), []) if bu[k].get('category') in cats] if cats else []
-    if not cands and cats and re.search(r'\([^)]*\)$', d['name']):
-        bk = bookkey((d['system'].get('publication') or {}).get('title', ''))
-        cands = [k for k in BN.get(nname(re.sub(r'\s*\([^)]*\)$', '', d['name'])), []) if bu[k].get('category') in cats
-                 and bookkey(bu[k].get('primary_source')) == bk]
-        if len(cands) > 1:
-            cands = []
-    same = [k for k in cands if bookkey(bu[k].get('primary_source')) == bookkey(book)]
-    if same:
-        return sorted(same, key=lambda k: k.startswith('d:'))[0]
-    rem = (d['system'].get('publication') or {}).get('remaster')
-    if cands and not rem:
-        return sorted(cands, key=lambda k: k.startswith('d:'))[0]
+    # which Archives of Nethys document holds this option's text: same name and kind, then the item or feat the named
+    # version belongs to, then a same-named document of a closely related kind
+    base = re.sub(r'\s*\([^)]*\)$', '', d['name'])
+    cands = []
+    for nm, cs in ((d['name'], cats), (base, cats), (d['name'], cats | RELATED), (base, cats | RELATED)):
+        cands = [k for k in BN.get(nname(nm), []) if bu[k].get('category') in cs] if cs else []
+        if cands:
+            break
     if cands:
-        # a remastered Foundry entry whose archive match is another printing: use the archive text only when that
-        # printing is not a legacy book (the archive predates some remastered books, such as Impossible Magic)
-        ok = [k for k in cands if bookkey(bu[k].get('primary_source')) not in LEGACY_BOOKS]
-        if ok:
-            return sorted(ok, key=lambda k: k.startswith('d:'))[0]
+        same = [k for k in cands if bookkey(bu[k].get('primary_source')) == bookkey(book)]
+        pool = same or [k for k in cands if not ids(bu[k].get('remaster_id'))] or cands
+        return sorted(pool, key=lambda k: (k.startswith('d:'), -(int(''.join(re.findall(r'\d', str(bu[k].get('release_date') or '0'))) or 0))))[0]
     if typ in ('effect',):
         return None
-    # newer than the archive: keep Foundry's own text as a glossary entry
-    gk = 'f:' + key
-    lvl = (d['system'].get('level') or {}).get('value', 1) or 1
-    body = frules.render(d['system'].get('description', {}).get('value', ''), lvl)
-    trs = d['system'].get('traits', {}).get('value', []) or []
-    th = ''.join(f'<span class="trait">{H.escape(t.replace("-", " ").title())}</span>' for t in trs)
-    note = ('<p class="gnote">This printing is newer than the offline Archives of Nethys archive, so its text comes from the '
-            'Foundry PF2e system\'s transcription of the same book.</p>')
-    TN = {'feat': 'Feat', 'spell': 'Spell', 'action': 'Action', 'weapon': 'Weapon', 'armor': 'Armour', 'shield': 'Shield', 'class': 'Class',
-          'ancestry': 'Ancestry', 'heritage': 'Heritage', 'background': 'Background', 'deity': 'Deity'}
-    tname = 'Class feature' if key.startswith('cf:') else TN.get(typ, 'Item')
-    EXTRA[gk] = [d['name'], tname, (f'<div class="traits">{th}</div>' if th else '') + (f'<p><strong>Source</strong> {H.escape(book.replace("Pathfinder ", ""))}</p>' if book else '') + body + note, '']
-    return gk
+    # no Archives of Nethys entry: the option has no rules text to show
+    NO_TEXT.append((typ, key, d['name'], book))
+    return None
 
 
 # ───────── records ─────────
@@ -446,4 +435,5 @@ for g, types in groups.items():
     sizes[g] = (len(recs), round(os.path.getsize(p) / 1e6, 2))
 print(sizes)
 json.dump(EXTRA, open('/home/claude/build/sheet/extra_gloss.json', 'w'), ensure_ascii=False)
-print('foundry-only glossary entries', len(EXTRA))
+print('sheet options with no Archives of Nethys entry', len(NO_TEXT))
+json.dump(NO_TEXT, open('/home/claude/build/sheet/no_text.json', 'w'), ensure_ascii=False, indent=0)

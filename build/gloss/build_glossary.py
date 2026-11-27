@@ -134,17 +134,6 @@ def render_md(md, depth=0):
 
 
 KIND = {'spell': 'spell', 'feat': 'feat', 'action': 'action', 'equipment': 'item'}
-SWAPPED = []
-
-
-def foundry_html(e):
-    tr = ''.join(f'<a class="trait" href="{H.escape(u)}">{H.escape(l)}</a>' for l, u in e.get('traits', []))
-    fields = ''.join(f'<p><strong>{H.escape(l)}</strong> {v}</p>' for l, v in e.get('fields', []))
-    body = e.get('body', '') + (f'<div class="hr">{e["heightened"]}</div>' if e.get('heightened') else '')
-    src = f'<p><strong>Source</strong> {H.escape(e.get("book") or "")}</p>' if e.get('book') else ''
-    note = ('<p class="gnote">This printing is newer than the offline Archives of Nethys archive, so its text comes from the '
-            'Foundry PF2e system\'s transcription of the same book.</p>')
-    return (f'<div class="traits">{tr}</div>' if tr else '') + src + fields + body + note
 
 
 def bookkey(b):
@@ -218,45 +207,21 @@ def render_aon(k):
             note = (f'<p class="gnote">Legacy printing. The remaster renamed and revised this as '
                     f'<a href="https://2e.aonprd.com{r["url"]}">{H.escape(r["name"])}</a>; this version remains available.</p>')
             return [d['name'], TYPE.get(d.get('category'), (d.get('type') or '').title()), note + render_md(d.get('markdown') or ''), 'legacy']
-    cat = d.get('category')
-    if cat in KIND:
-        try:
-            e = entries.entry(d['name'], KIND[cat])
-        except KeyError:
-            e = None
-        if e is not None:
-            if e.get('source') != 'aon' and (same_book(d.get('primary_source'), e.get('book'))
-                                              or bookkey(d.get('primary_source')) not in LEGACY or not e.get('remaster')):
-                e = None
-        if e is not None and e.get('source') != 'aon':
-            alt = [x for x in bn.get(d['name'].lower(), []) if x in bu and same_book(bu[x].get('primary_source'), e.get('book'))]
-            if alt:
-                d = bu[alt[0]]
-                e = None
-        if e is not None:
-            if e.get('source') != 'aon':
-                SWAPPED.append((d['name'], d.get('primary_source'), e.get('book')))
-                return [e['name'], TYPE[cat], foundry_html(e), '']
-            rk = aon_index.norm(e['url'])
-            if rk != k and rk in bu:
-                d = bu[rk]
     return [d['name'], TYPE.get(d.get('category'), (d.get('type') or '').title()), render_md(d.get('markdown') or ''),
             ('legacy' if ids(d.get('remaster_id')) else '')]
 
 
-def render_foundry(name):
+def resolve_entry(name):
+    """A name the index lookup missed (a version name such as 'Potion of Flying (Standard)'): the entry lookup's own match."""
     name, hint = split_hint(name)
     for kind in ((hint,) if hint else ('item', 'spell', 'feat', 'action')):
         try:
-            e = entries.entry(name, kind, foundry_kind='any')
+            e = entries.entry(name, kind)
         except KeyError:
             continue
-        tr = ''.join(f'<a class="trait" href="{H.escape(u)}">{H.escape(l)}</a>' for l, u in e.get('traits', []))
-        fields = ''.join(f'<p><strong>{H.escape(l)}</strong> {v}</p>' for l, v in e.get('fields', []))
-        body = e.get('body', '') + (f'<div class="hr">{e["heightened"]}</div>' if e.get('heightened') else '')
-        src = f'<p class="muted small">Source {H.escape(e.get("book") or "")}</p>' if e.get('book') else ''
-        return [e['name'], {'item': 'Item', 'spell': 'Spell', 'feat': 'Feat', 'action': 'Action'}[kind],
-                (f'<div class="traits">{tr}</div>' if tr else '') + src + fields + body, '']
+        k = aon_index.norm(e['url'])
+        if k in bu:
+            return k
     return None
 
 
@@ -307,13 +272,9 @@ def main():
             r[1] = type_name(d)
         ALL[k] = r
     for low, name in fallback.items():
-        r = render_foundry(name)
-        if r:
-            key = 'f-' + slug(split_hint(name)[0])
-            if key in ALL and ALL[key][1] != r[1]:
-                key += '-' + split_hint(name)[1]
-            ALL[key] = r
-            qmap[low] = key
+        k = resolve_entry(name)
+        if k:
+            qmap[low] = k
     extra = '/home/claude/build/sheet/extra_gloss.json'
     if os.path.exists(extra):
         for k, v in json.load(open(extra)).items():
@@ -321,7 +282,7 @@ def main():
     frg = '/home/claude/build/fr/fr_gloss.json'
     if os.path.exists(frg):
         ALL.update(json.load(open(frg)))
-    print('swapped to newer printing', len(SWAPPED), 'entries', len(ALL), 'unresolved', [n for n in fallback if n not in qmap][:20])
+    print('entries', len(ALL), 'unresolved names', [n for n in fallback if n not in qmap][:40])
     for v in ALL.values():
         v[2] = rewrite(v[2], ALL, qmap)
     rules_page(ALL)

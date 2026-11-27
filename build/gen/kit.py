@@ -140,12 +140,12 @@ _VAR = re.compile(r'<h5 class="sub">(?P<name>[^<]+)</h5>\s*<div class="traits">(
 
 
 def _variant_level(name):
-    import rules
-    for n in (name, re.sub(r'^(.*) \((\w+)\)$', r'\2 \1', name)):
-        try:
-            return rules.get(n, 'item')['system']['level']['value']
-        except Exception:
-            pass
+    """Item level of a named version of an item, from its own row in the Archives of Nethys data."""
+    import entries
+    for kind in ('item', 'weapon'):
+        c = [d for d in entries._cands(name, kind) if not d.get('remaster_id')]
+        if c:
+            return entries.pick(c).get('level', '')
     return ''
 
 

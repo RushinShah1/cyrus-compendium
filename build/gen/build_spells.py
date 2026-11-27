@@ -49,45 +49,79 @@ SLOT_LVL = {1: 1, 2: 3, 3: 5, 4: 7, 5: 9, 6: 11, 7: 13, 8: 15, 9: 17}
 missing = []
 
 
-_SHAPE = re.compile(r'type:(burst|cone|line)|\d+-foot (burst|cone|line)')
-_MULTI = re.compile(r'\b(two|three|four|five|six|[2-9])\s+\d+-foot[- ]burst', re.I)
+_SHAPE = re.compile(r'\d+-\s*foot[- ]+(burst|cone|line)', re.I)
+_MULTI = re.compile(r'\b(two|three|four|five|six|[2-9])\s+\d+-\s*foot[- ]+burst', re.I)
+_ACTS = {'Single Action': '1', 'Two Actions': '2', 'Three Actions': '3'}
 
 
-def spellstrike_areas(d, e):
+AREA_NOT_ON_CAST = {'Blister': 'the cone comes from popping a blister with a later action'}
+
+
+def _plain(md):
+    t = re.sub(r'\{\{\w+ \d+ "([^"]+)"\}\}', r'\1', md or '')
+    return re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', t)
+
+
+def spellstrike_areas(e):
     """Area shapes the spell has when cast with 1 or 2 actions, which is what Spellstrike can deliver.
 
     A spell whose area depends on the number of actions is read version by version. A spell that creates several
     bursts is left out, because Expansive Spellstrike places a single burst."""
-    desc = (d.get('description') or {}).get('value', '') if d else ''
-    atxt = ' '.join(v for k, v in e['fields'] if k == 'Area').lower()
-    if _MULTI.search(re.sub(r'<[^>]+>', ' ', desc)) or _MULTI.search(atxt):
+    doc = e.get('doc') or {}
+    body = _plain((doc.get('markdown') or '').partition('\n---')[2])
+    atxt = _plain(doc.get('area_raw') or '')
+    if _MULTI.search(body) or _MULTI.search(atxt):
         return set()
-    found = lambda t: {a or b for a, b in _SHAPE.findall(t)}
-    versions = dict(re.findall(r'<p>\s*<span class="action-glyph">([123])</span>(.*?)</p>', desc, flags=re.S))
+    found = lambda t: {m.lower() for m in _SHAPE.findall(t)}
+    parts = re.split(r'<actions string="(Single Action|Two Actions|Three Actions)" />', body.split('**Heightened')[0])
+    versions = {_ACTS[parts[i]]: parts[i + 1] for i in range(1, len(parts) - 1, 2)}
     if any(found(v) for v in versions.values()):
         return set().union(*(found(v) for k, v in versions.items() if k in '12'))
-    shapes = found(desc) | found(atxt)
-    area = (d.get('area') or {}).get('type') if d else None
-    if area in ('burst', 'cone', 'line'):
-        shapes.add(area)
+    shapes = found(atxt) | {t.lower() for t in (doc.get('area_type') or []) if t.lower() in ('burst', 'cone', 'line')}
+    if atxt.strip().lower() in ('', 'varies') and e['name'] not in AREA_NOT_ON_CAST:      # the area is given in the text
+        shapes |= found(body.split('**Heightened')[0])
     return shapes
 
 
+_SAVE_TEXT = re.compile(r'(?:basic|attempts?(?: an?)?(?: initial| new)?|succeeds? (?:at|on) an?|with an?|against an?|makes? an?|rolls? an?|check or)\s+'
+                        r'(?:DC \d+ )?(?:basic )?(Fortitude|Reflex|Will)\s+(?:saves?|saving throws?)\b', re.I)
+# the entry mentions a save, but not one that casting the spell on a creature requires
+SAVE_NOT_ON_CAST = {
+    'Elemental Absorption': 'the save is against damage released later',
+    'Wall of Mirrors': 'the save is made by a creature that later attacks the wall',
+    'Cloak of Colors': 'the save is made by a creature that later hits the target',
+    'Zealous Conviction': 'the save is a willing target resisting a later request',
+    'Unrelenting Observation': 'the save applies only to an unwilling creature chosen as the sensor',
+    'Retrocognition': 'the save is the caster\'s own',
+    'Proximal Shift': 'the saves are made by creatures beside the caster\'s own departure and arrival spaces',
+}
+
+
+def _defence(e):
+    """(attack roll?, saving throws) a spell requires. The entry's Attack trait and its Defense or Saving Throw line
+    decide. An entry with no such line is read for a spell attack roll or a save that creatures attempt."""
+    doc = e.get('doc') or {}
+    traits = [a.lower() for a, _ in e.get('traits', [])]
+    dv = re.sub('<[^>]+>', '', ' '.join(v for k, v in e['fields'] if k == 'Defense')).lower() + ' ' + _plain(doc.get('saving_throw') or '').lower()
+    body = _plain((doc.get('markdown') or '').partition('\n---')[2]).split('**Heightened')[0]
+    attack = 'attack' in traits or bool(re.search(r'\bac\b', dv))
+    saves = [x for x in ('fortitude', 'reflex', 'will') if x in dv]
+    if not dv.strip():
+        attack = attack or bool(re.search(r'spell attack (?:roll|against)', body, re.I))
+        if e['name'] not in SAVE_NOT_ON_CAST:
+            found = [m.lower() for m in _SAVE_TEXT.findall(body)]
+            saves = [x for x in ('fortitude', 'reflex', 'will') if x in found]
+    return attack, saves
+
+
 def badges(e, name):
-    d = e['fdoc']['system'] if e.get('fdoc') else {}
-    t = str((d.get('time') or {}).get('value', ''))
-    tr = (d.get('traits') or {}).get('value', [])
-    df = d.get('defense') or {}
-    if not d:
-        t = {'one': '1', 'two': '2'}.get(e.get('action'), (e.get('action_text') or '').strip())
-        tr = [a.lower() for a, _ in e.get('traits', [])]
-        dv = ' '.join(v for k, v in e['fields'] if k == 'Defense').lower()
-        df = {'save': {'statistic': w}} if (w := next((x for x in ('fortitude', 'reflex', 'will') if x in dv), None)) else {}
-        if 'ac' == dv.strip():
-            tr = tr + ['attack']
+    doc = e.get('doc') or {}
+    acts = doc.get('actions') or ''
+    attack, saves = _defence(e)
+    # Spellstrike takes a spell that can be cast with 1 or 2 actions and needs a spell attack roll or a saving throw
+    eligible = bool(re.search(r'Single Action|Two Actions', acts)) and (attack or bool(saves))
+    shapes = spellstrike_areas(e)
     out = []
-    eligible = t in ('1', '2', '1 to 3', '1 to 2', '2 to 3') and ('attack' in tr or df.get('save'))
-    shapes = spellstrike_areas(d, e)
     if eligible:
         out.append(f'<span class="bd b-ss" title="Can be delivered with Spellstrike">{ic("spellstrike")}Spellstrike</span>')
         if shapes & {'burst', 'cone', 'line'}:
@@ -101,25 +135,11 @@ def badges(e, name):
 
 def defense_key(e):
     """Space-separated defences a spell targets: 'ac' for an attack roll, plus any saving throw."""
-    keys = []
-    traits = [a.lower() for a, _ in e.get('traits', [])]
-    if e.get('fdoc'):
-        d = e['fdoc']['system']
-        traits = traits + (d.get('traits') or {}).get('value', [])
-        df = d.get('defense') or {}
-        if 'attack' in traits:
-            keys.append('ac')
-        if df.get('save'):
-            keys.append(df['save']['statistic'])
-    else:
-        dv = re.sub('<[^>]+>', '', ' '.join(v for k, v in e['fields'] if k == 'Defense')).lower()
-        if 'attack' in traits or dv.strip() == 'ac':
-            keys.append('ac')
-        keys += [x for x in ('fortitude', 'reflex', 'will') if x in dv]
-    return ' '.join(dict.fromkeys(keys)) or 'none'
+    attack, saves = _defence(e)
+    return ' '.join((['ac'] if attack else []) + saves) or 'none'
 
 
-NO_CAST_TRAITS = {'Blood Vendetta', 'Utter Destruction'}  # published with neither trait (Player Core pg. 318; Pathfinder #209)
+NO_CAST_TRAITS = {'Blood Vendetta', 'Utter Destruction'}  # listed with neither trait on Archives of Nethys
 
 
 def card(name, rank, occult_only):
