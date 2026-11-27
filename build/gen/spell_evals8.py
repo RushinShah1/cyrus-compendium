@@ -8,10 +8,12 @@ An evaluation judges the spell. It does not describe it: the rules text sits dir
    direct cast, a reaction, before a fight, a scroll or wand), against what kind of enemy or problem, and where it is the
    wrong choice.
  - Compare it with the spells that compete for the same job, and end on the place it earns.
- - Facts that shape every judgement: his spell DC trails a full caster's (trained to level 8, expert at 9, master at 17),
-   so enemies often save and an effect on a successful save is worth a great deal; an attack-roll spell delivered by
-   Spellstrike uses the Strike's roll; he has two slots of each rank; sustaining a spell and recharging Spellstrike
-   compete for the same action; from level 6 a reaction spell competes with Reactive Strike.
+ - Facts that shape every judgement: an enemy of his level or higher resists a save spell more often than not, whoever
+   casts it, so an effect on a successful save is worth a great deal and a critical failure is rare. His spell DC is
+   level with a full caster's or one or two points behind until level 19 (see the handoff), so never blame a spell's
+   unreliability on his DC. An attack-roll spell delivered by Spellstrike uses the Strike's roll; he has two slots of
+   each rank; sustaining a spell and recharging Spellstrike compete for the same action; from level 6 a reaction spell
+   competes with Reactive Strike.
  - Plain wording, British spelling, sentences that vary. No party names, campaign, named monsters, printings or
    references to other pages. S, A and B cards run to roughly 70 to 110 words; C, D and F cards to 30 to 50.
 """
@@ -24,7 +26,7 @@ def w(name, text, grades=None, ratings=None):
 
 
 # ───────────────────────── rank 2 ─────────────────────────
-w('Acid Grip', """The most dependable payload at this rank, because it achieves something at every result short of a critical success. Its damage is modest. Its worth is the forced move, which Cyrus aims: an enemy comes off a pinned ally, into a flank or out of a doorway, and has to spend actions inside his reach to get back. His spell DC means enemies will often save, and a spell that still shifts them on a success suits him far better than one that needs a failure.
+w('Acid Grip', """The most dependable payload at this rank, because it achieves something at every result short of a critical success. Its damage is modest. Its worth is the forced move, which Cyrus aims: an enemy comes off a pinned ally, into a flank or out of a doorway, and has to spend actions inside his reach to get back. Enemies of his level or higher save more often than they fail, so a spell that still shifts them on a success is worth far more than one that needs a failure.
 
 It is the wrong pick against a lone enemy that is already where the party wants it; Sudden Bolt's damage serves better there. Otherwise prepare it by default, and keep it in a rank-2 slot at every level.""")
 
@@ -32,7 +34,7 @@ w('Invisibility', """Two different spells, depending on the slot. From a rank-2 
 
 From a rank-4 slot it is among the best things he can cast as a fight opens. An enemy that cannot see him is off-guard to every Strike, which switches on Laughing Shadow's extra damage without help from anyone, and each attack aimed at him has to find him first. Enemies that sense without sight, or that can see the invisible, undo it. The rank-2 use is occasional enough for a scroll or wand; the rank-4 use earns a slot until Dimensional Disappearance at 10.""", grades='SAB')
 
-w('Telekinetic Maneuver', """This turns a Spellstrike into a Strike and a Trip, Shove or Reposition in one activity, settled by the Strike's roll and not by his weaker spell DC or a separate Athletics action. A tripped enemy is off-guard, which feeds Laughing Shadow, and from level 6 it provokes Reactive Strike when it stands. Against one dangerous melee enemy that is two or three of its actions spoiled across a round.
+w('Telekinetic Maneuver', """This turns a Spellstrike into a Strike and a Trip, Shove or Reposition in one activity, settled by the Strike's roll, with no save for the target and no separate Athletics action. A tripped enemy is off-guard, which feeds Laughing Shadow, and from level 6 it provokes Reactive Strike when it stands. Against one dangerous melee enemy that is two or three of its actions spoiled across a round.
 
 It adds no damage, so it is the wrong payload when the target simply needs to die, and it does little to an enemy that cannot be knocked down or moved. Dimensional Drop gets the same prone result from a Reflex save even when the Strike misses; this is the better choice against agile enemies and when a shove is what the position needs.""")
 
@@ -54,13 +56,13 @@ w('Laughing Fit', """The best answer at this rank to an enemy whose reactions ar
 
 The cost is the sustain. Each round it competes with recharging Spellstrike, so Cyrus keeps it running in place of his own burst damage, and it is best when the party's other strikers benefit more than he loses. Mindless creatures and anything not alive ignore it entirely. Prepare it for a known single threat, not as routine.""")
 
-w('Stupefy', """A debuff aimed at spellcasters that barely functions unless the target fails outright, and against his DC many will not. The effect on a success is over before it matters. Fear from a rank-1 slot hampers any kind of enemy, works on a success, and costs less.""")
+w('Stupefy', """A debuff aimed at spellcasters that barely functions unless the target fails outright, which a capable enemy often will not. The effect on a success is over before it matters. Fear from a rank-1 slot hampers any kind of enemy, works on a success, and costs less.""")
 
 w('Revealing Light', """A problem-solver more than a combat spell. Its real job is ending invisibility and concealment for the whole party at once, at long range, and nothing else at this rank does that. The dazzle it leaves is a decent consolation, since it applies even on a successful save.
 
 It deals no damage, so on a day without hidden enemies it is a wasted slot, and Ignite Fireworks dazzles nearly as well while hurting. That makes it a scroll to carry at all times and a preparation only when unseen enemies are expected. Through Expansive Spellstrike the burst will dazzle allies next to the target as readily as enemies.""")
 
-w('Noise Blast', """Respectable area damage against Fortitude with a rider that almost never matters: being deafened for a round changes little for most enemies. The stun on a critical failure is the one real prize, and his spell DC makes critical failures uncommon. The burst suits Expansive Spellstrike when two or three enemies are bunched and no ally stands beside the target; its short range makes it awkward to cast directly.
+w('Noise Blast', """Respectable area damage against Fortitude with a rider that almost never matters: being deafened for a round changes little for most enemies. The stun on a critical failure is the one real prize, and critical failures are uncommon against anything of his level or higher. The burst suits Expansive Spellstrike when two or three enemies are bunched and no ally stands beside the target; its short range makes it awkward to cast directly.
 
 Of the three Fortitude area spells at this rank it comes last. Spray of Salt hits a little harder in a cone that is easier to keep off allies, and Disorienting Flash matches its damage from twice the range with a rider worth having. Take it only if both of those are unavailable.""")
 
@@ -112,7 +114,7 @@ w('Water Breathing', """A complete answer to one problem, for the whole party, f
 
 w('Blood Vendetta', """Damage for no action on his turn, which is attractive for a class as short of actions as the magus. The persistent bleed is respectable for the slot and the weakness it adds helps every slashing hit that follows, his own included.
 
-The conditions are awkward. He has to be hit first, by the right damage type, and the enemy then gets a save against his modest DC. From level 6 Reactive Strike is nearly always the better use of the reaction. Creatures that cannot bleed ignore it. A reasonable low-slot choice before 6, and seldom after.""")
+The conditions are awkward. He has to be hit first, by the right damage type, and the enemy then gets a save. From level 6 Reactive Strike is nearly always the better use of the reaction. Creatures that cannot bleed ignore it. A reasonable low-slot choice before 6, and seldom after.""")
 
 w('Embed Message', """Useful only away from a fight, as a warning, a signal or a message left behind. It is cheap and occasionally clever, and never worth a daily slot. Aspera's stave is planned to hold it, which gives him the option for nothing.""")
 
@@ -180,7 +182,7 @@ w('Translate', """When no one shares a language it is the only way to talk or re
 
 w('Vomit Swarm', """Solid area damage against Reflex in a cone, which is the easiest shape to use through Expansive Spellstrike: Cyrus points it away from his allies and catches whatever stands behind the target. The sickened rider is the best debuff among the rank-2 area spells, lowering the attacks, saves and AC of everything that fails for as long as it lasts.
 
-The rider needs a failed save, and against his DC that is far from certain. Ignite Fireworks deals the same damage and dazzles even on a success, so it is the steadier choice; this is the better one against crowds of weak enemies that will fail often.""")
+The rider needs a failed save, which is far from certain against capable enemies. Ignite Fireworks deals the same damage and dazzles even on a success, so it is the steadier choice; this is the better one against crowds of weak enemies that will fail often.""")
 
 w('Water Walk', """A crossing solved for ten minutes. Buy the scroll when a river or harbour is in the way.""")
 
@@ -202,7 +204,7 @@ The cone is small and will rarely catch more than two or three enemies, and acid
 
 w('Blood Runs Cold', """A Fortitude payload that takes an action from a single enemy if it fails. Against one strong enemy a lost action is worth more than the small damage that comes with it, and persistent cold keeps the slow going on a critical failure.
 
-A successful save reduces it to a few points of damage, and his DC makes that the common result. Slow at rank 3 costs the target an action even on a success, so this is a stopgap for levels 3 and 4 against enemies with poor Fortitude, and has little use afterwards.""")
+A successful save reduces it to a few points of damage, and against a strong single enemy that is the common result. Slow at rank 3 costs the target an action even on a success, so this is a stopgap for levels 3 and 4 against enemies with poor Fortitude, and has little use afterwards.""")
 
 w('Unrelenting Gravity', """Its strength is the effect on a successful save: a round of being slower and easier to hit. Its headline effect, knocking the target prone, needs a failure. Dimensional Drop puts a grounded enemy prone even when it saves, which makes that the better spell for the same job in most fights.
 
@@ -212,7 +214,7 @@ w('Disorienting Flash', """Three sizes of Fortitude area damage from one prepare
 
 The burst is harder to keep off allies than a cone, the rider needs a failed save, and its damage is a little behind Spray of Salt. Pick it for the day when he does not know what the fights will look like.""")
 
-w('Ignite Fireworks', """The most reliable debuff among the rank-2 area spells, because the dazzle lands on a successful save. Against his DC that is the result he should plan around, and a round in which several enemies each risk missing is worth more than the light damage. On a failure the dazzle lasts most of a fight.
+w('Ignite Fireworks', """The most reliable debuff among the rank-2 area spells, because the dazzle lands on a successful save. Against strong enemies a success is the result he should plan around, and a round in which several enemies each risk missing is worth more than the light damage. On a failure the dazzle lasts most of a fight.
 
 Its burst needs care through Expansive Spellstrike when allies stand beside the target, since they are dazzled too. It is another Reflex spell in a list already heavy with them. Vomit Swarm matches the damage with a stronger rider that needs a failure; this one is the safer pick against tough enemies.""")
 
@@ -236,13 +238,13 @@ It grows at half the rate of Gouging Claw and Ignition, so by level 7 or so the 
 
 w('Frostbite', """His save-based cantrip for enemies whose AC is the problem. A heavily armoured target with poor Fortitude takes this even when the Strike misses, and cold is a damage type none of his attack cantrips provide. Its 60-foot range also makes it a respectable direct cast.
 
-It hits less hard than the attack cantrips, and it depends on his spell DC, so against most targets Gouging Claw remains the better payload. Keep it prepared for the fights where the Strike is unlikely to land.""")
+It hits less hard than the attack cantrips, and a successful save halves it, so against most targets Gouging Claw remains the better payload. Keep it prepared for the fights where the Strike is unlikely to land.""")
 
 w('Electric Arc', """A fine cantrip for a full caster and a compromised one for him. Through Spellstrike only the creature he hits is affected, which throws away the second target that makes the spell good. What remains is a direct cast against two enemies on a turn when he cannot reach melee, and electricity as a damage type.
 
 That is enough to keep it for days with fliers or enemies across difficult ground. It is not a payload, and on most days Needle Darts covers the ranged turn better.""")
 
-w('Void Warp', """A second Fortitude cantrip that does nothing to anything that is not alive, where Frostbite hurts everything. The rider only appears on a critical failure, which his DC rarely produces. No reason to take both, and Frostbite is the one to take.""")
+w('Void Warp', """A second Fortitude cantrip that does nothing to anything that is not alive, where Frostbite hurts everything. The rider only appears on a critical failure, which is rare. No reason to take both, and Frostbite is the one to take.""")
 
 w('Telekinetic Projectile', """A choice of physical damage types from one cantrip, depending on the object thrown. Gouging Claw already gives two of the three with more damage and a bleed, and this needs a loose object within range. Only bludgeoning sets it apart, and his attack spells seldom need it.""")
 
@@ -254,7 +256,7 @@ w('Caustic Blast', """The cheapest burst he can put through Expansive Spellstrik
 
 w('Scatter Scree', """Light damage and a patch of difficult terrain. Its area is not a burst, cone or line, so even with Expansive Spellstrike it only roughens the target's own space. Cast directly it can slow movement through a doorway, which is a minor use for a cantrip slot.""")
 
-w('Daze', """The only cantrip that targets Will, with weak damage and a stun that needs a critical failure against his modest DC. It is worth having only if he wants every save covered at cantrip level, or needs to subdue someone without killing them.""")
+w('Daze', """The only cantrip that targets Will, with weak damage and a stun that needs a critical failure. It is worth having only if he wants every save covered at cantrip level, or needs to subdue someone without killing them.""")
 
 w('Shield', """One action, no free hand, and a point of AC for the round, which fits a two-handed fighter with a spare third action better than anything else on the list. The block is the real prize: it can take the edge off a spell or a single heavy hit, something an ordinary shield cannot do against magic.
 
@@ -278,7 +280,7 @@ w('Time Sense', """Knowing the exact time has occasional uses for coordinating a
 
 w('Eat Fire', """A reaction that blunts one fire effect and leaves him with a puff of smoke to use. The resistance is small, it competes with Reactive Strike, and it only matters against one damage type. A scroll of Resist Energy answers a fire-heavy day far better.""")
 
-w('Gale Blast', """A small burst around himself that can shove adjacent enemies back to the distance where his reach weapon works best and theirs do not. That is a neat fit for a reach fighter in principle. In practice the damage is poor, it relies on his DC, and a Step achieves the same spacing for one action.""")
+w('Gale Blast', """A small burst around himself that can shove adjacent enemies back to the distance where his reach weapon works best and theirs do not. That is a neat fit for a reach fighter in principle. In practice the damage is poor, the push needs a failed save, and a Step achieves the same spacing for one action.""")
 
 w('Puff of Poison', """A Fortitude payload whose persistent damage keeps going while he recharges. Poison is among the most commonly resisted types, the range is very short, and it grows only every second rank. Frostbite is the better Fortitude cantrip in nearly every fight.""")
 
@@ -330,13 +332,13 @@ w('Tailwind', """An all-day Speed bonus from a rank-2 wand is a staple for most 
 
 w('Grease', """A cheap way to knock several enemies prone at once, which leaves them off-guard for Laughing Shadow and for every melee ally, and costs each an action to stand. It works best cast directly over a doorway or a tight group in the first round. As a Spellstrike payload it loses most of its area.
 
-It depends on failed Reflex saves against his DC, and enemies with good balance barely notice it. A reasonable rank-1 slot against clumsy or heavily armoured groups; otherwise Fear does more.""")
+It depends on failed Reflex saves, and enemies with good balance barely notice it. A reasonable rank-1 slot against clumsy or heavily armoured groups; otherwise Fear does more.""")
 
 w('Befuddle', """A setup spell. Even on a successful save the target is easier to hit and worse at casting for a round, and the clumsy condition also lowers the Reflex DC his Trip is rolled against. The effect is over quickly, so its worth depends on the party acting on it straight away.
 
 Fear gives a similar penalty that applies to more of what the enemy does and fades more slowly. This is the better choice specifically against a spellcaster, where stupefied can make its next spell fail. Mindless creatures are immune.""")
 
-w('Briny Bolt', """The best attack-roll payload he can learn at low level. Every hit blinds the target for a round unless it spends an action clearing its eyes, so the enemy either loses an action or attacks with a coin-flip chance to miss, and a blinded enemy is off-guard to the whole party. That rider rides his Strike's roll, which is far more reliable than his spell DC, and the damage keeps growing with each rank.
+w('Briny Bolt', """The best attack-roll payload he can learn at low level. Every hit blinds the target for a round unless it spends an action clearing its eyes, so the enemy either loses an action or attacks with a coin-flip chance to miss, and a blinded enemy is off-guard to the whole party. That rider rides his Strike's roll, with no save to resist it, and the damage keeps growing with each rank.
 
 It needs a creature with eyes to matter, and bludgeoning is the least exciting damage type. Prepare it in whichever rank is not holding Sure Strike, and keep heightening it.""")
 
@@ -348,7 +350,7 @@ w('Force Barrage', """It cannot be delivered by Spellstrike, since it has neithe
 
 w('Breathe Fire', """The basic cone for Expansive Spellstrike, with damage that keeps pace by rank and nothing else to recommend it. The cone is short, so it rarely catches more than two enemies. Fine as a first area payload at level 2 to 4; better cones replace it quickly.""")
 
-w('Dizzying Colors', """Capable of ending the turns of several weak enemies at once, and unreliable against anything that matters. Incapacitation makes strong enemies treat their saves as a step better, and his DC makes failures scarce even among the rest. The dazzle on a success is some compensation.
+w('Dizzying Colors', """Capable of ending the turns of several weak enemies at once, and unreliable against anything that matters. Incapacitation makes strong enemies treat their saves as a step better, and failures are far from certain even among the rest. The dazzle on a success is some compensation.
 
 Its place is a fight against a crowd of lower-level enemies, with the cone pointed away from allies. Against a single strong enemy it is a wasted slot.""")
 
@@ -366,7 +368,7 @@ w('Leaden Steps', """A setup spell for electricity. The weakness it creates adds
 
 Keeping it going costs a sustain each round, which competes with recharging, and on a successful save it lasts only a moment. It pays off in a party that leans on electricity; cast by him alone, the setup turn usually costs more damage than the weakness returns.""")
 
-w('Command', """It does nothing on a successful save, and against his DC that is the likely result. When it works it wastes one enemy action. Fear costs the same slot and always achieves something.""")
+w('Command', """It does nothing on a successful save, and against a capable enemy that is the likely result. When it works it wastes one enemy action. Fear costs the same slot and always achieves something.""")
 
 w('Curse of Slippery Steps', """It hampers one enemy's movement. That can spoil a charge or slow a runner, but it does not stop the enemy attacking, and Tangle Vine does a similar job as a cantrip. Not worth a slot.""")
 
@@ -428,11 +430,11 @@ w('Carryall', """A floating platform for cargo. Convenient for hauling loot and 
 
 w('Charm', """A social spell for the party's negotiator, to be used with care. When it works it turns a guard, a clerk or a reluctant witness friendly for an hour, which opens doors Diplomacy alone might not. It fails outright against anyone the party has threatened, it carries incapacitation, and being caught casting it tends to end the conversation.
 
-His DC makes success uncertain, so it supplements his Diplomacy instead of replacing it. A scroll or wand suits it, since the need is occasional and never arises mid-fight.""")
+Success is uncertain, so it supplements his Diplomacy instead of replacing it. A scroll or wand suits it, since the need is occasional and never arises mid-fight.""")
 
 w('Chilling Spray', """A small cone that slows what fails, with weak damage that improves slowly. The Speed penalty is rarely decisive, and Breathe Fire does more damage in the same shape.""")
 
-w('Déjà Vu', """Clever against an enemy that has just wasted a turn, and nothing at all on a successful save. Incapacitation and his DC make success the usual result against anything dangerous.""")
+w('Déjà Vu', """Clever against an enemy that has just wasted a turn, and nothing at all on a successful save. Incapacitation makes success the usual result against anything dangerous.""")
 
 w('Draw Ire', """A taunt that works even on a successful save, discouraging one enemy from attacking anyone but him. He is not the party's most durable member, so inviting attacks is seldom what he wants, and the penalty is small.""")
 
@@ -478,7 +480,7 @@ w('Sleep', """Weak in a fight, where a sleeper wakes at the first loud noise or 
 
 w('Snowball', """An attack payload with a slowing rider, which sounds better than it plays. Its damage falls well behind Briny Bolt and Shocking Grasp as it heightens, and Briny Bolt's blind is the stronger effect.""")
 
-w('Spider Sting', """Poison damage and a weakening effect that both depend on failed Fortitude saves over several rounds. Poison is widely resisted and his DC is modest, so the full effect is rare. Enfeeble does the debuff more reliably.""")
+w('Spider Sting', """Poison damage and a weakening effect that both depend on failed Fortitude saves over several rounds. Poison is widely resisted, so the full effect is rare. Enfeeble does the debuff more reliably.""")
 
 w('Summon Animal', """A full turn to cast, an action every round to keep, and a creature too weak to threaten anything he is fighting. Summoning does not fit the way a magus spends actions.""")
 
@@ -612,7 +614,7 @@ w('Locate', """Points the way to a specific object, and to a specific creature i
 
 w('Mind Reading', """A tool for the party's negotiator. A glimpse of surface thoughts during an interrogation or a tense bargain can expose a lie or reveal what the other side wants, and that is information no skill check provides so directly.
 
-It needs a failed Will save against his modest DC, and a target that succeeds may realise what was attempted, which has consequences in polite company. It suits a scroll kept for the conversation that matters.""")
+It needs a failed Will save, and a target that succeeds may realise what was attempted, which has consequences in polite company. It suits a scroll kept for the conversation that matters.""")
 
 w('Organsight', """Extra precision damage on his next piercing or slashing hit, bought with a Recall Knowledge check each round. He identifies enemies anyway, so the check is something he is good at, and the damage applies to a Spellstrike.
 
@@ -620,7 +622,7 @@ It costs two actions to set up and one each round to renew, and a magus has none
 
 w('Phantom Prison', """Removes one enemy from a fight for as long as the party ignores it, which against a group lets everyone concentrate on the rest. That is powerful when it holds.
 
-It costs a full turn, has incapacitation, relies on a failed Will save against his DC, and breaks down each time the target tests the walls or is attacked. Too many ways to fail for a class that gives up a Spellstrike to cast it.""")
+It costs a full turn, has incapacitation, relies on a failed Will save, and breaks down each time the target tests the walls or is attacked. Too many ways to fail for a class that gives up a Spellstrike to cast it.""")
 
 w('Safe Passage', """Protection for the party while crossing one stretch of dangerous ground. It answers a specific hazard and nothing else. A scroll if the route is known to need it.""")
 
@@ -658,7 +660,7 @@ w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On 
 
 w('Blazing Dive', """A flying leap that ends in a burst of fire around where he lands. It reaches a distant group and hurts it, but he arrives in the middle of the enemy having spent the turn's main actions, and allies near the landing are burned too.""")
 
-w('Oneiric Mire', """Entangling Flora's effect against Will instead of Reflex, which helps against nimble enemies. It needs a whole turn and failed saves against his DC, and difficult terrain alone is modest control for that price.""")
+w('Oneiric Mire', """Entangling Flora's effect against Will instead of Reflex, which helps against nimble enemies. It needs a whole turn and failed saves, and difficult terrain alone is modest control for that price.""")
 
 w('Veil of Privacy', """Protection from scrying and detection for eight hours. It matters only when the party knows it is being watched by magic, which is a rare kind of problem.""")
 
@@ -670,7 +672,7 @@ The damage is lower than Crashing Wave's, and slashing is resisted more often th
 
 w('Magical Fetters', """A heavy penalty to one enemy's AC, Reflex and Speed for the whole fight, if it fails. A success gives a mild version for a round. Against an enemy of his level the full effect makes every attack against it far more likely to hit and to crit.
 
-Incapacitation and his DC mean it rarely lands on anything stronger than him. It is a spell for equal or weaker enemies with poor Reflex, where it can be excellent.""")
+Incapacitation means it rarely lands on anything stronger than him. It is a spell for equal or weaker enemies with poor Reflex, where it can be excellent.""")
 
 w('Radiant Globe', """A dome that destroys arrows passing through it. It protects a small area from archers for as long as he spends an action each round on it, after a whole turn to cast. Wall of Wind does more for less upkeep.""")
 
@@ -698,7 +700,7 @@ Against anything that does not cast it is plain damage and ends at once. Prepare
 
 w('Tricks and Treats', """A burst around himself that makes enemies clumsy even on a success and takes their reactions on a failure. Being surrounded is when he wants it, and removing reactions lets him and his allies move freely.
 
-It relies on Will saves against his DC, does nothing to enemies carrying no valuables, and replaces a Spellstrike on that turn. A curiosity more than a staple.""")
+It needs failed Will saves for its better effect, does nothing to enemies carrying no valuables, and replaces a Spellstrike on that turn. A curiosity more than a staple.""")
 
 
 # ───────────────────────── rank 4 ─────────────────────────
@@ -730,7 +732,7 @@ Its damage and its staying power both come from sustaining, which costs him his 
 
 w('Confusion', """An action lost even on a success, and on a failure an enemy that may turn on its own side. Against a group of dangerous enemies the failure result can swing a fight, and through Spellstrike the stun on a success comes on top of a Strike.
 
-It is single-target at this rank and relies on his DC for the big effect; a confused enemy may also simply attack him. Mindless creatures are immune. Paralyze does more to one equal enemy, so this is the choice when the enemy outnumbers the party.""")
+It is single-target at this rank and needs a failed save for the big effect; a confused enemy may also simply attack him. Mindless creatures are immune. Paralyze does more to one equal enemy, so this is the choice when the enemy outnumbers the party.""")
 
 w('Unfettered Movement', """Protection from grapples, webs, and anything else that would slow or hold one creature, for ten minutes. Against an enemy that grabs or restrains it is close to a complete answer. Cast it from a scroll before such a fight.""")
 
@@ -784,7 +786,7 @@ w("Mirror's Misfortune", """An illusory double that makes attackers who strike i
 
 w('Morass of Ages', """An aura that can slow every enemy near him, growing as he sustains it. A front-line fighter surrounded by enemies is where such an aura belongs, and taking an action from each of them is powerful.
 
-Each creature saves once, against Fortitude and his DC, and those that succeed are unaffected for the rest of the spell. Sustaining it costs the action he needs to recharge. Strong on paper, and too dependent on failed saves to rely on.""")
+Each creature saves once, against Fortitude, and those that succeed are unaffected for the rest of the spell. Sustaining it costs the action he needs to recharge. Strong on paper, and too dependent on failed saves to rely on.""")
 
 w('Mountain Resilience', """Steady resistance to physical damage, which is what most enemies deal. Twenty minutes is long enough to cast before a fight, and on a front-line ally or on himself it takes a bite out of every weapon hit. The stronger versions in higher slots are worth far more.
 
@@ -810,7 +812,7 @@ w('Spell Immunity', """Protection against one named spell for a day. When the pa
 
 w('Suggestion', """A persuasive nudge that can send a guard away, stall a pursuer or end a standoff without a fight. In the hands of the party's negotiator it has clear uses, and a suggestion that seems reasonable may never be recognised as magic.
 
-It has incapacitation and relies on his DC, so it works on minor figures more than on anyone important, and a target that resists strongly knows what he tried. Carry it as a scroll and use it where failure would not be a disaster.""")
+It has incapacitation and needs a failed save, so it works on minor figures more than on anyone important, and a target that resists strongly knows what he tried. Carry it as a scroll and use it where failure would not be a disaster.""")
 
 w('Telepathy', """Silent two-way conversation with creatures nearby. It can replace a shared language in a pinch. Message and Translate cover most of the same needs more cheaply.""")
 
@@ -930,7 +932,7 @@ The number of blisters depends on the Fortitude save, and a success yields only 
 
 w('Cloak of Colors', """A defensive buff that fights back. Enemies beside the target are dazzled without a save, and those that hit it in melee risk being blinded. On a front-line ally it reduces incoming hits for a minute.
 
-The blinding effect has incapacitation and relies on his DC, so against strong enemies only the dazzle is dependable. Two actions in the first round is the cost. A reasonable opening buff when he is not yet in reach.""")
+The blinding effect has incapacitation and needs a failed save, so against strong enemies only the dazzle is dependable. Two actions in the first round is the cost. A reasonable opening buff when he is not yet in reach.""")
 
 w('Elemental Breath', """A long cone of very high damage with a rider, in a random element. Through Expansive Spellstrike sixty feet of cone covers the field beyond his target, and each element adds something useful to the damage.
 
@@ -954,7 +956,7 @@ It has no rider. Weight of the World does far more to the fight against one stro
 
 w('Hallucination', """Changes what one creature perceives for an hour: a person it cannot see, a door that looks like a wall, a stranger who looks like a friend. For intrigue and infiltration it is a subtle, powerful tool, and it draws little attention when cast.
 
-It has incapacitation and depends on a failed save against his DC, and the target gets chances to see through it. It has no use in a fight. A scroll or wand for the scheme that calls for it.""")
+It has incapacitation and depends on a failed save, and the target gets chances to see through it. It has no use in a fight. A scroll or wand for the scheme that calls for it.""")
 
 w('Illusory Scene', """A full illusory scene with moving figures, sound and smell, lasting an hour. It can fake a camp, a patrol or a gathering to mislead pursuers or draw guards away. Ten minutes to cast, so it is a planning tool for a scroll.""")
 
@@ -990,7 +992,7 @@ w('Stagnate Time', """An area that can take an action from every enemy inside it
 
 Nothing happens on a successful Will save, it affects allies who enter, and enemies can leave. For two actions it is still one of the strongest area effects he can cast when the enemy must hold ground. Use it against groups defending a spot.""")
 
-w('Subconscious Suggestion', """A suggestion that waits for a trigger. It suits a long game: a steward who will leave a door unlocked, a guard who will look away at a signal. With incapacitation and his DC it works on minor figures. A scroll for intrigue.""")
+w('Subconscious Suggestion', """A suggestion that waits for a trigger. It suits a long game: a steward who will leave a door unlocked, a guard who will look away at a signal. With incapacitation it works on minor figures. A scroll for intrigue.""")
 
 w('Summon Dragon', """A full turn to cast and an action each round to keep, for a creature well below the level of anything he is fighting. As with every summon, it costs him the actions his own turn runs on.""")
 
@@ -1104,7 +1106,7 @@ It has incapacitation and aims at Fortitude, so it is for enemies of his level o
 
 w('Dominate', """Control of an enemy on a failed save, turning it on its allies. Even a success costs it an action. When it works on something dangerous the fight swings completely.
 
-Incapacitation restricts it to enemies of his level or lower, the target saves again every round, and mindless creatures are immune. It is uncommon. A gamble that suits a full caster's DC better than his.""")
+Incapacitation restricts it to enemies of his level or lower, the target saves again every round, and mindless creatures are immune. It is uncommon. A gamble, and an expensive one for a caster with two slots at the rank.""")
 
 w('Field of Razors', """Damaging difficult terrain over a wide area. It taxes movement for a minute but costs a whole turn, and Rust Cloud hurts more from rank 4.""")
 
@@ -1194,7 +1196,7 @@ Through Expansive Spellstrike it covers the field beyond his target, and with Sp
 
 w('Beheading Buzz Saw', """A line of heavy slashing and persistent bleed with a small chance of killing outright. The bleed is unusually large and keeps working for rounds.
 
-A successful save avoids everything, including half damage, and against his DC that is the common result on the enemies that matter. Frigid Flurry is far more dependable. Creatures that do not bleed lose half of what it offers.""")
+A successful save avoids everything, including half damage, and that is the common result on the enemies that matter. Frigid Flurry is far more dependable. Creatures that do not bleed lose half of what it offers.""")
 
 w('Eclipse Burst', """An enormous burst of cold and void damage at long range. It is far too large to use near the party and cannot go through Expansive Spellstrike in any sensible way. A blast for a caster who stands at the back.""")
 
@@ -1236,7 +1238,7 @@ It takes a full turn and a sustain, enemies that succeed are simply moved outsid
 
 w('Mask of Terror', """A defensive buff that makes attackers afraid. Each creature that tries to harm the target must save or be frightened, and may lose the action entirely. On whoever the enemy is focusing on, it weakens a good share of incoming attacks for a minute.
 
-It relies on his DC and each creature is affected only once per round. Mindless enemies ignore it. A reasonable opening cast on a front-line ally when he cannot yet reach the enemy.""")
+It needs failed saves and each creature is affected only once per round. Mindless enemies ignore it. A reasonable opening cast on a front-line ally when he cannot yet reach the enemy.""")
 
 w('Momentary Recovery', """A teleport with a pause in which he can act on himself. It gives him a moment to drink a potion or cast a personal spell out of harm's way. Translocate moves him further for less.""")
 
@@ -1426,7 +1428,7 @@ w('Soothe', """Ranged healing he can cast from a scroll or wand once the dedicat
 
 w('Bless', """A small attack bonus for the party in an aura around him. He fights in the middle of his allies, so the aura is well placed, but it costs two actions at the start and the party's divine caster does it better. A scroll at most.""")
 
-w('Bane', """A small attack penalty for enemies near him if they fail a Will save. The effect is slight and depends on his DC. Fear does more to one enemy for certain.""")
+w('Bane', """A small attack penalty for enemies near him if they fail a Will save. The effect is slight and needs a failed save. Fear does more to one enemy for certain.""")
 
 w('Sanctuary', """Makes enemies save before they can attack the protected creature. It is at its best on a downed or fragile ally who will not be attacking. Useful from a scroll in a rescue; it ends if the target fights.""")
 
@@ -1434,7 +1436,7 @@ w('Protection', """A point of AC and saves for a minute. Small, and two actions 
 
 w('Liberating Command', """One action to give a grabbed or restrained ally an immediate attempt to break free. Cheap and occasionally vital against enemies that grapple. A scroll or wand covers the need.""")
 
-w('Ill Omen', """Makes one enemy roll its next attack twice and take the worse result, if it fails a save. Nothing happens on a success, and against his DC that is the usual outcome.""")
+w('Ill Omen', """Makes one enemy roll its next attack twice and take the worse result, if it fails a save. Nothing happens on a success, and against a capable enemy that is the usual outcome.""")
 
 w('Lose the Path', """A reaction that spoils an enemy's Stride, which can stop a charge short of its target. It competes with Reactive Strike, and an enemy moving past him is exactly what Reactive Strike punishes.""")
 
