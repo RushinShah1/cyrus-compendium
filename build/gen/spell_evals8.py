@@ -652,9 +652,9 @@ It costs a full turn and does nothing against melee or spells. Keep it as a scro
 
 w('Warding Aggression', """A small AC bonus against one enemy that lasts only while he keeps hitting it. It replaces a Spellstrike on the turn it is cast and gives less than Shield does for one action.""")
 
-w('Echo Jump', """The hit-and-run payload. Through Spellstrike he Strikes, then the spell resolves: he teleports up to 30 feet without triggering reactions, and the creature he struck takes solid force damage, a type almost nothing resists. That is a Strike, a blast and a reposition in one activity, where every other payload at the rank leaves him standing in reach of what he just hit. Delivered this way the blast harms only the Strike's target, because Expansive Spellstrike covers bursts, cones and lines and not emanations, so allies beside him are safe.
+w('Echo Jump', """The hit-and-run payload. Through Spellstrike he Strikes, deals solid force damage to that target and teleports up to 30 feet without triggering reactions, where every other payload at the rank leaves him in reach of what he just hit. Allies beside him are safe, since the blast spreads only when the spell is cast on its own.
 
-Cast on its own it gives up the Strike and hits everything within 10 feet of where he stood, allies included; that is the escape for a turn when he is mobbed. Prepare it whenever he will want distance after the hit: against an enemy with a punishing reach, or to cross from one side of a fight to the other. It gains range and damage every two ranks.""", grades='ADD', ratings='400040')
+Prepare it against an enemy with a punishing reach, or to cross a fight after the hit. Cast alone it is an escape from a surround that also hits adjacent allies.""", grades='ADD', ratings='400040')
 
 w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On a hard-hitting ally that is one extra Strike for two of his actions and a rank-3 slot, which is a poor exchange beside Haste.""")
 
