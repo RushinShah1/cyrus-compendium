@@ -272,4 +272,5 @@ for _n, (_a, _b) in _STAVE.items():
 
 import spell_evals7  # noqa: E402,F401  general rewrites
 import spell_evals8  # noqa: E402,F401  evaluations rewritten to one standard, applied last
+import spell_evals9  # noqa: E402,F401  evaluations in their current wording, applied last
 import spell_ratings  # noqa: E402,F401  role ratings reviewed against one scale
