@@ -108,7 +108,7 @@ The costs are the reaction and the slot. From level 6 it competes with Reactive 
 
 w('Warping Pull', """The stronger of his two protective reactions against a single large hit. It works on any source of damage, including spells and breath weapons, and its resistance grows quickly in higher slots. The short teleport matters as much as the number: it can take an ally out of an enemy's reach before the next attack, or bring them into a flank.
 
-It protects against one effect only, so Hidebound is better against an enemy that makes many attacks, and the ally has to be within 30 feet. Like any reaction spell it competes with Reactive Strike from level 6. A low-rank slot is a cheap place to keep it. It is uncommon, so it needs the GM's agreement.""")
+It protects against one effect only, so Hidebound is better against an enemy that makes many attacks, and the ally has to be within 30 feet. Like any reaction spell it competes with Reactive Strike from level 6. A low-rank slot is a cheap place to keep it.""")
 
 w('Water Breathing', """A complete answer to one problem, for the whole party, for hours. There is no reason to hold a daily slot for it: buy a scroll when water is known to be ahead, and at higher ranks one casting covers the day.""")
 
@@ -196,7 +196,7 @@ w('Blazing Armory', """It arms someone with a weapon they did not bring. Cyrus f
 
 w('Binding Muzzle', """A narrow answer to creatures that depend on a bite or a breath weapon. Against those it is strong, because even a successful save closes the mouth for a round, and at long range. Against anything that fights with weapons, claws or spells cast without speech it does nothing.
 
-That narrowness, and the fact that it is rare and needs permission, makes it a scroll to carry when such an enemy is expected.""")
+That narrowness makes it a scroll to carry when such an enemy is expected.""")
 
 w('Spray of Salt', """The hardest-hitting Fortitude area spell at this rank, in a short cone that is easy to steer away from allies through Expansive Spellstrike. It has no rider against ordinary enemies, so it is simply damage against a save that slow, heavily armoured enemies pass and spellcasters and skirmishers fail.
 
@@ -548,7 +548,7 @@ Poison is the most commonly resisted damage type and many creatures are immune, 
 
 w("Eagle's Cry", """A cone that damages and frightens in one cast, and the fear lands on a successful save. Every enemy caught is worse at attacking and defending for at least a round, on top of respectable sonic damage, and a cone is easy to aim through Expansive Spellstrike.
 
-It targets Fortitude, so big enemies will often take the half-damage result, which still frightens them. It does not improve its fear in higher slots. For a group fight this is among the best rank-3 payloads; it is uncommon and needs permission.""")
+It targets Fortitude, so big enemies will often take the half-damage result, which still frightens them. It does not improve its fear in higher slots. For a group fight this is among the best rank-3 payloads.""")
 
 w('Wooden Double', """Insurance against the worst moment of a fight. He chooses to use it after a critical hit has been rolled against him, so it never wastes a reaction on an ordinary blow, and it turns a doubled hit from a powerful enemy into damage on a block of wood.
 
@@ -652,9 +652,9 @@ It costs a full turn and does nothing against melee or spells. Keep it as a scro
 
 w('Warding Aggression', """A small AC bonus against one enemy that lasts only while he keeps hitting it. It replaces a Spellstrike on the turn it is cast and gives less than Shield does for one action.""")
 
-w('Echo Jump', """A teleport that punishes whatever surrounded him. He leaves, the space he left explodes, and no reactions are triggered. As an escape from a bad position it is clean and it does respectable force damage.
+w('Echo Jump', """A teleport that punishes whatever surrounded him. He leaves, the space he left bursts with force, and no reactions are triggered. As an escape from a bad position it is clean, and the damage is solid for the rank in a type almost nothing resists.
 
-Allies beside him are caught in the blast, and it replaces his Spellstrike for the turn. Dimensional Assault and Time Jump reposition him more cheaply. Useful when he expects to be mobbed.""")
+Spellstrike accepts it, since it is a two-action spell with a save. Delivered that way it harms only the creature he strikes, and whether he still teleports is for the GM to decide; if he does, it is a Strike, a blast and an exit in one activity, which suits him better than any other payload at the rank. Cast on its own it gives up the Strike and catches allies beside him. Dimensional Assault repositions him more cheaply, so prepare this when he expects to be mobbed.""")
 
 w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On a hard-hitting ally that is one extra Strike for two of his actions and a rank-3 slot, which is a poor exchange beside Haste.""")
 
@@ -740,7 +740,7 @@ w('Clairvoyance', """Seeing a place before entering it. A minute of casting buys
 
 w('Wall of Mirrors', """A solid wall for two actions, which is rare at any rank. It blocks movement, arrows and line of effect, so it can cut a fight in half, seal a corridor against reinforcements, or shelter the party from a volley, and it lasts a minute unless dismissed. Enemies that attack it suffer for doing so.
 
-Most walls cost a whole turn; this leaves him an action to Stride or raise Shield. It deals no damage of its own, and a wall in the wrong place hinders his allies as much as the enemy. It is rare and needs permission. With that granted, it is one of the strongest control spells he can prepare.""")
+Most walls cost a whole turn; this leaves him an action to Stride or raise Shield. It deals no damage of its own, and a wall in the wrong place hinders his allies as much as the enemy. With that granted, it is one of the strongest control spells he can prepare.""")
 
 w('Zephyr Slip', """A reaction that carries him away from an enemy that has just closed with him. He wants enemies inside his reach, and he wants his reaction for Reactive Strike. It solves a problem he does not have.""")
 
@@ -842,15 +842,15 @@ w('Sanguine Mist', """A cloud of void damage that grows stronger and feeds him t
 
 w("Mantis's Grasp", """Solid force damage with a hold on a failure, from long range. Force is almost never resisted, and an immobilised enemy cannot leave his reach or reach the party's casters. As a payload it competes with the best at this rank, and it is equally good cast directly.
 
-The hold needs a failed Reflex save and lasts a round unless the failure is critical. It is rare and needs permission. Where allowed, it is a stronger single-target option than Force Rain against an enemy he wants pinned.""")
+The hold needs a failed Reflex save and lasts a round unless the failure is critical. It is a stronger single-target option than Force Rain against an enemy he wants pinned.""")
 
 w('Entangle Fate', """Makes several enemies off-guard even when they save. Off-guard lowers their AC against the whole party and switches on Laughing Shadow's extra damage without any need to flank, and for up to four enemies at once that is a large benefit from one cast.
 
-It deals no damage and the stronger effects need several failures. It is rare, so permission is required. Cast as a fight begins against a group, it raises the party's damage for the rounds that follow more than a damage spell would.""")
+It deals no damage and the stronger effects need several failures. Cast as a fight begins against a group, it raises the party's damage for the rounds that follow more than a damage spell would.""")
 
 w("Infiltrator's Tunnel", """A door through a wall. Two linked portals let him step into a sealed room, past a locked gate or out of a cell, and in a higher slot the party can follow. For planned infiltration it removes obstacles that would otherwise take skill checks or noise.
 
-It has no combat role beyond an escape route, and it is rare. A scroll for the job that needs it.""")
+It has no combat role beyond an escape route. A scroll for the job that needs it.""")
 
 w('Freezing Touch', """A payload that can root an enemy for the fight. On a failure the target is stuck until it breaks free, taking persistent cold all the while, and trying to escape costs it actions. Through Spellstrike the touch becomes his reach, and even a success leaves some damage ticking.
 
@@ -1032,7 +1032,7 @@ It has incapacitation, so a higher-level enemy treats his hit as a step worse an
 
 w('Blood Feast', """The hardest-hitting attack payload at this rank, with a buffer of temporary Hit Points equal to half of what it deals. It rides the Strike's roll and its touch range becomes his reach, so a hit both removes a large part of an enemy and makes him harder to kill in return.
 
-It has no control effect. It gains dice with every rank, so in a rank-6 slot it still deals more on a hit than Disintegrate does after its Fortitude save. When the aim is damage on an attack roll, and he expects to be hit back, nothing at rank 5 does it better. It is uncommon.""")
+It has no control effect. It gains dice with every rank, so in a rank-6 slot it still deals more on a hit than Disintegrate does after its Fortitude save. When the aim is damage on an attack roll, and he expects to be hit back, nothing at rank 5 does it better.""")
 
 w('Boomerang Shot', """Heavy attack-roll damage that ignores concealment and most cover. As a direct cast that makes it the answer to an archer behind a wall or an enemy in fog. Through Spellstrike those advantages seldom apply, and its damage is roughly level with a heightened Briny Bolt, without the blind.""")
 
@@ -1106,7 +1106,7 @@ It has incapacitation and aims at Fortitude, so it is for enemies of his level o
 
 w('Dominate', """Control of an enemy on a failed save, turning it on its allies. Even a success costs it an action. When it works on something dangerous the fight swings completely.
 
-Incapacitation restricts it to enemies of his level or lower, the target saves again every round, and mindless creatures are immune. It is uncommon. A gamble, and an expensive one for a caster with two slots at the rank.""")
+Incapacitation restricts it to enemies of his level or lower, the target saves again every round, and mindless creatures are immune. A gamble, and an expensive one for a caster with two slots at the rank.""")
 
 w('Field of Razors', """Damaging difficult terrain over a wide area. It taxes movement for a minute but costs a whole turn, and Rust Cloud hurts more from rank 4.""")
 
@@ -1170,11 +1170,11 @@ w('Utter Destruction', """A cone of two damage types with a deafening rider. Its
 
 w('Missed Cue', """The best Will payload he can prepare. Solid mental damage, fear even on a successful save, and on a failure the target is slowed for as long as it remains frightened, which costs it actions over at least two rounds. Damage, a debuff and lost actions from a single Strike is as much as any spell at this rank offers.
 
-It is a fear and mental effect, so mindless and fearless creatures ignore it, and it is rare, which means it needs permission. Where it is allowed and the enemy can feel fear, it belongs in a top slot.""")
+It is a fear and mental effect, so mindless and fearless creatures ignore it. Where it is allowed and the enemy can feel fear, it belongs in a top slot.""")
 
 w('Word of Revision', """A reaction that undoes a disaster: an ally's failed save is rolled again, or a killing blow leaves them standing. Once per creature each day it can prevent the single worst event of a fight.
 
-It occupies a top slot for something that may not happen, and it is rare. For a party facing an enemy with deadly save effects it is excellent insurance.""")
+It occupies a top slot for something that may not happen. For a party facing an enemy with deadly save effects it is excellent insurance.""")
 
 w('Curse of the Toad Prince', """A toad for a minute on a failure, and even on a success the target is sickened and drops what it holds, which disarms a weapon user. That success effect gives it a floor most transformation spells lack.
 
@@ -1248,7 +1248,7 @@ w('Planar Seal', """Blocks teleportation and planar travel across a wide area fo
 
 w('Power Word Blind', """Blindness for one action with no save. Against enemies near his level the target is blind for minutes, which all but removes it from the fight, and one action leaves room for a full Spellstrike on the same turn.
 
-Its strength depends entirely on the target's level: much stronger enemies are only dazzled. It is uncommon. Against equals and slightly stronger foes it is one of the most efficient actions he can take from a top slot.""")
+Its strength depends entirely on the target's level: much stronger enemies are only dazzled. Against equals and slightly stronger foes it is one of the most efficient actions he can take from a top slot.""")
 
 w('Prismatic Armor', """Resistance to seven damage types for a minute, with a chance to dazzle attackers. On whoever is taking the punishment it prevents a great deal in a fight with mixed energy damage. Energy Aegis gives a similar spread for a whole day from a wand.""")
 
@@ -1260,7 +1260,7 @@ w('Project Image', """Lets him cast from an illusory double. His spells go throu
 
 w('Reverse Gravity', """Throws every creature in a wide column to the ceiling and holds it there for a minute. Enemies that cannot fly are out of the fight or badly placed, with no save for most of the effect.
 
-It takes a full turn, it is uncommon, and it catches allies in the area. Used at range on the enemy's formation in the first round, it is among the strongest control spells he can cast.""")
+It takes a full turn and it catches allies in the area. Used at range on the enemy's formation in the first round, it is among the strongest control spells he can cast.""")
 
 w('Retrocognition', """Impressions of what happened in a place, reaching back years with enough time. For an investigation it can answer questions nobody living can. Scroll.""")
 
@@ -1328,7 +1328,7 @@ w('Pinpoint', """Tells him exactly where a creature or object is, anywhere. It e
 
 w('Power Word Stun', """A stun for one action with no saving throw. Even the strongest enemy loses an action, and one of his level or a little above loses a whole round or more. Nothing else lets him take an action from a single powerful enemy with certainty and still Spellstrike in the same turn.
 
-It works once per target in a fight and is uncommon. A magus could hardly ask for a better use of a top slot against one dangerous enemy.""")
+It works once per target in a fight. A magus could hardly ask for a better use of a top slot against one dangerous enemy.""")
 
 w('Prismatic Wall', """A wall that harms and hinders anything trying to pass, lasting an hour. As a barrier it is close to absolute. It takes a full turn and blocks his own allies' attacks as well.""")
 
@@ -1340,15 +1340,15 @@ w('Whirlpool', """A battlefield spell for a fight against many enemies, cast fro
 
 The cost is the actions. It takes a whole turn to cast, which rules out Spellstrike, and each Sustain is the action he would spend recharging. It also hits allies, so it has to land before the lines meet. Prepare it when a large group is expected and he can open from range; Arctic Rift serves better once the fight is joined.""", grades='BDD')
 
-w('Sudden Transposition', """Moves two enemies anywhere within sixty feet of him, with heavy damage if they fail. He can pull an archer and a caster into his reach, or throw two brutes away from his allies, and the move alone can decide a round.
+w('Sudden Transposition', """Moves enemies anywhere within 60 feet of him, with heavy damage if they fail. Cast on its own it takes two creatures: he can pull an archer and a caster into his reach, or throw two brutes away from his allies, and the move alone can decide a round. Through Spellstrike it reaches only the creature he strikes, which is enough to send a dangerous enemy to the far side of the fight after the hit.
 
-Nothing happens on a successful Fortitude save, and it replaces his Spellstrike. It is uncommon. Most useful when the enemy's formation is the problem.""")
+Nothing happens on a successful Fortitude save, which is the strong save of most large enemies. Most useful when the enemy's position is the problem and the target is not one of the hardy ones.""")
 
 w('Incarnate Archmage', """A full turn for light damage and some disruption of enemy magic. The return is far too small for a rank-8 slot and three actions.""")
 
 w('Take Your Places', """Teleports up to four allies anywhere within sixty feet. In one cast the party can surround an enemy, leave a trap, or get its wounded clear, and no one provokes.
 
-It moves only the willing and does nothing by itself to the enemy. It is rare. Valuable in a party that plans around position; expensive at this rank otherwise.""")
+It moves only the willing and does nothing by itself to the enemy. Valuable in a party that plans around position; expensive at this rank otherwise.""")
 
 w('Polar Ray', """The strongest attack-roll payload at this rank against a single powerful enemy, once the drain is counted. A hit deals moderate cold damage and leaves the target drained 2 with no save, which removes two further Hit Points for each of its levels and lowers its Fortitude saves for the rest of the fight. Against a creature of level 15 or higher that is more in total than Blood Feast or a heightened Briny Bolt delivers, and it sets up Slow, Arctic Rift or Weight of the World.
 
@@ -1376,7 +1376,7 @@ It is a direct cast and a mental effect, so mindless enemies ignore it. Among hi
 
 w('Dimensional Excision', """Enormous untyped damage with heavy bleed, against Will, and without the mental trait, so almost nothing is immune. Half still lands on a success. Against creatures away from their home plane the save is much harder.
 
-It has no control effect, and it is rare. As a pure damage payload for his highest slot it is the most widely applicable he has.""")
+It has no control effect. As a pure damage payload for his highest slot it is the most widely applicable he has.""")
 
 w('Implosion', """A large fixed amount of damage to one target, then to a new target each round he sustains it. The first hit can ride a Strike. The later ones cost his recharge action, and no creature can be hit twice. Good total damage against a group, at the price of his own rhythm.""")
 
@@ -1392,7 +1392,7 @@ w('Magnetic Dominion', """Moves every armoured or metallic creature within a hun
 
 w('Power Word Kill', """Death with no save for a weaker enemy, and a large fixed loss of Hit Points for a stronger one, all for a single action. Against a powerful enemy that is guaranteed damage that leaves two actions for a Spellstrike, which no other top-rank spell offers.
 
-It works once per target and is uncommon. As a finisher on an enemy already hurt, or as a certain opening blow, it is among the best uses of his highest slot.""")
+It works once per target. As a finisher on an enemy already hurt, or as a certain opening blow, it is among the best uses of his highest slot.""")
 
 w('Prismatic Sphere', """A seven-layered shell around a small space, nearly impassable for an hour. It protects a held position superbly and pins him to one spot, which is not how he fights.""")
 
@@ -1408,7 +1408,7 @@ w('Incarnate Draconic Legion', """A full turn for a line and a cone of heavy dam
 
 w('Prismatic Shield', """A one-action defence for a round: melee attackers suffer random prismatic effects, arrows are stopped, and spells aimed at him may be turned aside. On a turn when he expects the enemy's full attention it prevents a great deal and still leaves two actions for a Spellstrike.
 
-It lasts one round and uses his highest slot, and it is rare. Best saved for the round a powerful enemy turns on him.""")
+It lasts one round and uses his highest slot. Best saved for the round a powerful enemy turns on him.""")
 
 w('Weird', """Heavy mental damage and fear to any number of chosen creatures, with a chance of death on a critical failure. It is safe for allies and frightens even those that save.
 
