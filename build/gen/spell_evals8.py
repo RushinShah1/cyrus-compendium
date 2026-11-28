@@ -660,7 +660,7 @@ w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On 
 
 w('Blazing Dive', """With the common-sense, flavour-fitting ruling the GM prefers, Blazing Dive answers the problem Cyrus has at the start of most fights, which is that the enemy worth hitting is rarely standing next to him. Rather than spend a turn walking, he flies up to 60 feet, comes down within reach of his target and Strikes as he lands, with the spell's heat and impact added to the blow. Because he arrives through the air, a gap, a barricade or a line of guards in the way does not stop him.
 
-It asks for some care in return. He has to rise 15 feet before he dives, so a low ceiling rules it out, and because he is flying, not teleporting, enemies he leaves behind can still strike at him as he goes. The damage is part bludgeoning and part fire, so an enemy that resists fire takes a good deal less.""", grades='ADD', ratings='400040')
+It asks for some care in return. He has to rise 15 feet before he dives, so a low ceiling rules it out, and because he is flying, not teleporting, enemies he leaves behind can still strike at him as he goes. A little over half of the damage is fire, which is the type enemies most often resist, so against a creature of flame or one warded against heat the spell adds much less to the blow than it does elsewhere.""", grades='ADD', ratings='400040')
 
 w('Oneiric Mire', """Entangling Flora's effect against Will instead of Reflex, which helps against nimble enemies. It needs a whole turn and failed saves, and difficult terrain alone is modest control for that price.""")
 
