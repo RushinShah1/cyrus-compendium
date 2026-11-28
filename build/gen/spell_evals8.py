@@ -590,7 +590,7 @@ It deals no damage and aims at Fortitude, which strong enemies usually pass. Slo
 
 w('Dive and Breach', """Movement and area damage in one cast. He leaves one group, appears beside another and damages creatures at both ends, with an action left over. For a skirmisher that is an attractive turn when two clusters of enemies are within range.
 
-It replaces Spellstrike on that turn, and the damage is modest for the slot. Dimensional Assault repositions him for a Focus Point and includes a Strike. Take it only if he wants a second escape that hurts what he leaves behind.""")
+Through Spellstrike he Strikes first and then dives, and only the creature he struck takes the damage, which is modest for the slot. Echo Jump does the same job with force damage and no Leap, so this is the second choice of the two; it moves him further and gains a die at every rank.""")
 
 w('Dream Message', """A one-way message to anyone he has met, wherever they are. Useful for reports, warnings and requests between adventures, and never urgent. A scroll or a wand covers it.""")
 
@@ -652,9 +652,9 @@ It costs a full turn and does nothing against melee or spells. Keep it as a scro
 
 w('Warding Aggression', """A small AC bonus against one enemy that lasts only while he keeps hitting it. It replaces a Spellstrike on the turn it is cast and gives less than Shield does for one action.""")
 
-w('Echo Jump', """A teleport that punishes whatever surrounded him. He leaves, the space he left bursts with force, and no reactions are triggered. As an escape from a bad position it is clean, and the damage is solid for the rank in a type almost nothing resists.
+w('Echo Jump', """The hit-and-run payload. Through Spellstrike he Strikes, then the spell resolves: he teleports up to 30 feet without triggering reactions, and the creature he struck takes solid force damage, a type almost nothing resists. That is a Strike, a blast and a reposition in one activity, where every other payload at the rank leaves him standing in reach of what he just hit. Delivered this way the blast harms only the Strike's target, because Expansive Spellstrike covers bursts, cones and lines and not emanations, so allies beside him are safe.
 
-Spellstrike accepts it, since it is a two-action spell with a save. Delivered that way it harms only the creature he strikes, and whether he still teleports is for the GM to decide; if he does, it is a Strike, a blast and an exit in one activity, which suits him better than any other payload at the rank. Cast on its own it gives up the Strike and catches allies beside him. Dimensional Assault repositions him more cheaply, so prepare this when he expects to be mobbed.""")
+Cast on its own it gives up the Strike and hits everything within 10 feet of where he stood, allies included; that is the escape for a turn when he is mobbed. Prepare it whenever he will want distance after the hit: against an enemy with a punishing reach, or to cross from one side of a fight to the other. It gains range and damage every two ranks.""", grades='ADD', ratings='400040')
 
 w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On a hard-hitting ally that is one extra Strike for two of his actions and a rank-3 slot, which is a poor exchange beside Haste.""")
 
@@ -700,7 +700,7 @@ Against anything that does not cast it is plain damage and ends at once. Prepare
 
 w('Tricks and Treats', """A burst around himself that makes enemies clumsy even on a success and takes their reactions on a failure. Being surrounded is when he wants it, and removing reactions lets him and his allies move freely.
 
-It needs failed Will saves for its better effect, does nothing to enemies carrying no valuables, and replaces a Spellstrike on that turn. A curiosity more than a staple.""")
+It needs failed Will saves for its better effect, does nothing to enemies carrying no valuables, and through Spellstrike it reaches only the creature he strikes. A curiosity more than a staple.""")
 
 
 # ───────────────────────── rank 4 ─────────────────────────
@@ -1082,7 +1082,7 @@ An unwilling target gets a Will save, and the reaction competes with Reactive St
 
 w('Collective Transposition', """Rearranges the battlefield: two creatures moved anywhere within thirty feet of him. Allies go willingly, so it can set a flank, rescue a caster or bring a striker into reach in one cast, and enemies that fail are moved where the party wants them.
 
-Enemies get a Will save and it deals no damage. It costs his Spellstrike for the turn. Useful in a party that fights by position; often a luxury.""")
+Enemies get a Will save and it deals no damage. Through Spellstrike it moves only the creature he strikes, so the two-creature use is a cast on its own. Useful in a party that fights by position; often a luxury.""")
 
 w('Truesight', """Sees through illusions, disguises and shape-changes for ten minutes. On the day the enemy relies on such tricks it is decisive, and otherwise it does nothing. A scroll.""")
 

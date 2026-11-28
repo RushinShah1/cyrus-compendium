@@ -47,12 +47,13 @@ _p(2,
 _p(3,
    ['Lightning Bolt', 'Vampiric Feast', 'Agonizing Despair', 'Gravity Wave', 'Magnetic Acceleration'], ['Slow', 'Skyglass Prison', 'Stinking Cloud', 'Paralyze'],
    ['Blister Bomb', "Day's Weight", 'Roaring Applause', 'Blindness'], ['Haste', 'Heroism', 'Wooden Double', "Cloud Dragon's Cloak"],
-   ['Time Jump'], ['Hypercognition', 'Ghostly Weapon', 'Shared Invisibility'],
-   dict(AC=['Magnetic Acceleration', 'Shocking Grasp (rank 3)'], Fortitude=['Slow', 'Vampiric Feast', 'Gravity Wave', 'Skyglass Prison'], Reflex=['Lightning Bolt', 'Fireball'], Will=['Agonizing Despair', 'Roaring Applause']),
-   ['Haste', 'Slow', 'Lightning Bolt', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave'],
+   ['Time Jump', 'Echo Jump'], ['Hypercognition', 'Ghostly Weapon', 'Shared Invisibility'],
+   dict(AC=['Magnetic Acceleration', 'Shocking Grasp (rank 3)'], Fortitude=['Slow', 'Vampiric Feast', 'Gravity Wave', 'Skyglass Prison'], Reflex=['Lightning Bolt', 'Echo Jump', 'Fireball'], Will=['Agonizing Despair', 'Roaring Applause']),
+   ['Haste', 'Slow', 'Lightning Bolt', 'Echo Jump', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave'],
    ['Skyglass Prison', 'Blister Bomb', 'Shared Invisibility', 'Wooden Double', "Cloud Dragon's Cloak", "Day's Weight", 'Stinking Cloud'],
-   'electricity, void, mental, bludgeoning',
+   'electricity, force, void, mental, bludgeoning',
    "Haste and Slow are the default pair until more slots arrive. Vampiric Feast and Agonizing Despair are the strongest single-target payloads, on Fortitude and Will. "
+   "Echo Jump is the payload for a turn when he wants to be elsewhere after the hit. "
    "Roaring Applause sets up Reactive Strike against anything that is not mindless. No attack spell at this rank is graded above B, so heighten Shocking Grasp when AC is the weak defence. "
    "Lightning Bolt becomes the Sprinting Spellstrike line at 12. Ghostly Weapon enters the spellbook at 11 as a studious spell.")
 
@@ -122,7 +123,7 @@ BOOK = {
     1: ['Sure Strike', 'Briny Bolt', 'Thunderstrike', 'Fear', 'Shockwave', 'Dehydrate', 'Shocking Grasp', 'Gust of Wind', 'Grease', 'Acidic Burst'],
     2: ['Acid Grip', 'Invisibility', 'Telekinetic Maneuver', 'Ignite Fireworks', 'Spray of Salt', 'Disorienting Flash', 'Hidebound', 'Warping Pull',
         'Laughing Fit', 'Revealing Light', 'Blazing Bolt', 'Heat Metal', 'Charitable Urge', 'Vomit Swarm'],
-    3: ['Haste', 'Slow', 'Lightning Bolt', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave', 'Blister Bomb', 'Shared Invisibility'],
+    3: ['Haste', 'Slow', 'Lightning Bolt', 'Echo Jump', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave', 'Blister Bomb', 'Shared Invisibility'],
     4: ['Fly', 'Translocate', 'Wall of Mirrors', 'Force Rain', 'Chromatic Ray', 'Freezing Touch', 'Grasp of the Deep', "Mantis's Grasp", 'Entangle Fate', 'Vision of Death', 'Containment'],
     5: ['Weight of the World', 'Wall of Stone', 'Glacial Skewer', 'Blazing Fissure', 'Wave of Despair', 'Mirror Malefactors', 'Grisly Growths', 'Tornadic Gale'],
     6: ['Living Thunderbolt', 'Chain Lightning', 'Disintegrate', 'Wall of Force', 'Missed Cue', 'Necrotize', 'Lignify'],
