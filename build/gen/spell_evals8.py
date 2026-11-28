@@ -652,15 +652,15 @@ It costs a full turn and does nothing against melee or spells. Keep it as a scro
 
 w('Warding Aggression', """A small AC bonus against one enemy that lasts only while he keeps hitting it. It replaces a Spellstrike on the turn it is cast and gives less than Shield does for one action.""")
 
-w('Echo Jump', """With the common-sense, flavour-fitting ruling the GM prefers, Echo Jump lets Cyrus hit an enemy and be gone: he Strikes, adds force damage and teleports up to 30 feet away, and nothing gets a reaction as he leaves. That suits a fight against something with a long reach or a punishing reaction, and any turn when he needs to be on the other side of the room afterwards. Force damage is almost never resisted.
+w('Echo Jump', """With the common-sense, flavour-fitting ruling the GM prefers, Echo Jump lets Cyrus strike an enemy and be somewhere else before it can answer. He lands the blow, the spell adds a burst of force to it, and he vanishes to a spot up to 30 feet away; because it is a teleport, neither that enemy nor anything else nearby gets a reaction as he goes. That makes it the spell for a creature he does not want to stand next to, one with a long reach, a grab or a punishing reaction, and for turns when the fight needs him on the far side of the room once the blow is struck. Force is a type that almost nothing resists, so the extra damage can be relied on.
 
-Cast without the Strike, it is a way out when he is surrounded, though the blast also catches allies standing next to him.""", grades='ADD', ratings='400040')
+He can also cast it without attacking, simply to get out when he is surrounded, though the burst then spreads around the space he left and will catch any ally standing beside him.""", grades='ADD', ratings='400040')
 
 w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On a hard-hitting ally that is one extra Strike for two of his actions and a rank-3 slot, which is a poor exchange beside Haste.""")
 
-w('Blazing Dive', """With the common-sense, flavour-fitting ruling the GM prefers, Blazing Dive gets Cyrus into a fight and hits as he arrives: he flies up to 60 feet, lands within reach of an enemy, Strikes it and adds bludgeoning and fire damage, all in two actions. Reaching a distant enemy normally costs him an action or two before he can attack, so it is at its best in the first round, or whenever the enemy he wants is across the room. The flight also clears gaps and rough ground.
+w('Blazing Dive', """With the common-sense, flavour-fitting ruling the GM prefers, Blazing Dive answers the problem Cyrus has at the start of most fights, which is that the enemy worth hitting is rarely standing next to him. Rather than spend a turn walking, he flies up to 60 feet, comes down within reach of his target and Strikes as he lands, with the spell's heat and impact added to the blow. Because he arrives through the air, a gap, a barricade or a line of guards in the way does not stop him.
 
-It needs 15 feet of clear air above him, enemies he flies past may get a reaction, and half the damage is fire.""", grades='ADD', ratings='400040')
+It asks for some care in return. He has to rise 15 feet before he dives, so a low ceiling rules it out, and because he is flying, not teleporting, enemies he leaves behind can still strike at him as he goes. The damage is part bludgeoning and part fire, so an enemy that resists fire takes a good deal less.""", grades='ADD', ratings='400040')
 
 w('Oneiric Mire', """Entangling Flora's effect against Will instead of Reflex, which helps against nimble enemies. It needs a whole turn and failed saves, and difficult terrain alone is modest control for that price.""")
 
