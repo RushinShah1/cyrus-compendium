@@ -1340,7 +1340,7 @@ w('Whirlpool', """A battlefield spell for a fight against many enemies, cast fro
 
 The cost is the actions. It takes a whole turn to cast, which rules out Spellstrike, and each Sustain is the action he would spend recharging. It also hits allies, so it has to land before the lines meet. Prepare it when a large group is expected and he can open from range; Arctic Rift serves better once the fight is joined.""", grades='BDD')
 
-w('Sudden Transposition', """Moves enemies anywhere within 60 feet of him, with heavy damage if they fail. Cast on its own it takes two creatures: he can pull an archer and a caster into his reach, or throw two brutes away from his allies, and the move alone can decide a round. Through Spellstrike it reaches only the creature he strikes, which is enough to send a dangerous enemy to the far side of the fight after the hit.
+w('Sudden Transposition', """Moves enemies anywhere within 60 feet of him, with solid damage if they fail. Cast on its own it takes two creatures: he can pull an archer and a caster into his reach, or throw two brutes away from his allies, and the move alone can decide a round. Through Spellstrike it reaches only the creature he strikes, which is enough to send a dangerous enemy to the far side of the fight after the hit.
 
 Nothing happens on a successful Fortitude save, which is the strong save of most large enemies. Most useful when the enemy's position is the problem and the target is not one of the hardy ones.""")
 
