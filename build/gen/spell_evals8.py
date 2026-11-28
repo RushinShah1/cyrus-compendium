@@ -652,13 +652,15 @@ It costs a full turn and does nothing against melee or spells. Keep it as a scro
 
 w('Warding Aggression', """A small AC bonus against one enemy that lasts only while he keeps hitting it. It replaces a Spellstrike on the turn it is cast and gives less than Shield does for one action.""")
 
-w('Echo Jump', """The hit-and-run payload. Through Spellstrike he Strikes, deals solid force damage to that target and teleports up to 30 feet without triggering reactions, where every other payload at the rank leaves him in reach of what he just hit. Allies beside him are safe, since the blast spreads only when the spell is cast on its own.
+w('Echo Jump', """With the common-sense, flavour-fitting ruling the GM prefers, Echo Jump provides the exit in one Spellstrike: the Strike, solid force damage on that enemy, and a teleport of up to 30 feet that triggers no reactions. Every other payload at the rank leaves him in reach of what he just hit, and force is almost never resisted.
 
 Prepare it against an enemy with a punishing reach, or to cross a fight after the hit. Cast alone it is an escape from a surround that also hits adjacent allies.""", grades='ADD', ratings='400040')
 
 w('Temporal Twin', """Lets an ally repeat one action from a spot he chooses. On a hard-hitting ally that is one extra Strike for two of his actions and a rank-3 slot, which is a poor exchange beside Haste.""")
 
-w('Blazing Dive', """A flying leap that ends in a burst of fire around where he lands. It reaches a distant group and hurts it, but he arrives in the middle of the enemy having spent the turn's main actions, and allies near the landing are burned too.""")
+w('Blazing Dive', """With the common-sense, flavour-fitting ruling the GM prefers, Blazing Dive provides the approach in one Spellstrike: up to 60 feet of flight into reach, the Strike, and solid bludgeoning and fire damage on that enemy. The move costs no action and crosses gaps and difficult terrain, and the damage grows at every rank.
+
+It needs 15 feet of headroom, the flight can trigger reactions, and half the damage is fire. Prepare it with Echo Jump: one to arrive, one to leave.""", grades='ADD', ratings='400040')
 
 w('Oneiric Mire', """Entangling Flora's effect against Will instead of Reflex, which helps against nimble enemies. It needs a whole turn and failed saves, and difficult terrain alone is modest control for that price.""")
 

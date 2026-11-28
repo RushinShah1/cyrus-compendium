@@ -155,7 +155,7 @@ R = {
     'Stinking Cloud': '044000',
     'Vampiric Feast': '300200',
     'Echo Jump': '400040',
-    'Blazing Dive': '400030',
+    'Blazing Dive': '400040',
     'Magical Fetters': '033000',
     'Roaring Applause': '040000',
     'Skyglass Prison': '040000',
