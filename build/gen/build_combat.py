@@ -162,13 +162,13 @@ PARTY = [
 
 LEVELS = [
     ('1 to 4', "One Spellstrike, then a recharge. Magus's Analysis recharges once per creature each day, Dimensional Assault and Force Fang recharge for a Focus Point each, and Arcane Cascade costs an action in the first round.",
-     "Cantrips are the usual payload, with Gouging Claw first. Both rank-1 slots go to Sure Strike. Expansive Spellstrike and Running Recharge arrive at 4, with two rank-2 slots."),
+     "Cantrips are the usual spell in a Spellstrike, with Gouging Claw first. Both rank-1 slots go to Sure Strike. Expansive Spellstrike and Running Recharge arrive at 4, with two rank-2 slots."),
     ('5 to 8', "Haste and Slow at 5. Reactive Strike at 6 makes his reach a threat off-turn. Improvise Strategy at 7 gives off-guard without an attack, studious spells give a free Arcane Cascade, and master Athletics makes Trip reliable.",
-     "Slotted spells start to cover each save. A Ring of Wizardry adds rank-1 slots at 7 and Aspera's stave adds charges at 8, so Sure Strike no longer competes with payloads."),
+     "Slotted spells start to cover each save. A Ring of Wizardry adds rank-1 slots at 7 and Aspera's stave adds charges at 8, so Sure Strike no longer competes with attack spells for slots."),
     ('9 to 12', "Dimensional Assault reaches his full Speed at 9. Dimensional Disappearance at 10 makes each teleport an escape or an attack from hiding. Sprinting Spellstrike at 12 turns line spells into movement and area damage.",
      "The Witch Dedication at 9 opens occult scrolls, wands and Synesthesia from the stave. Haste becomes a studious spell at 11."),
     ('13 to 16', "Hasted Assault at 14 makes him quickened for a whole fight and adds a third Focus Point. Arcane Shroud at 16 adds a short buff each time he enters Arcane Cascade.",
-     "Fly and Translocate become studious spells at 13. Rank-5 to rank-8 slots give an A-graded payload for most defences at each rank."),
+     "Fly and Translocate become studious spells at 13. Rank-5 to rank-8 slots give an A-graded spell for most defences at each rank."),
     ('17 to 20', "Rank-9 slots and master spellcasting at 17. Double Spellstrike at 19 delivers two spells in one Spellstrike once a day. Supreme Spellstrike at 20 makes him permanently quickened for a Strike or a recharge.",
      "Aspera's planned grand gift at 17 removes the limit on the quickened action. Stolen Spell at 18 only matters against enemy spellcasters."),
 ]

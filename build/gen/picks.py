@@ -1,4 +1,4 @@
-# Rank-end summaries, written against three goals: a payload for every defence (AC, Fortitude, Reflex, Will),
+# Rank-end summaries, written against three goals: a spell for every defence (AC, Fortitude, Reflex, Will),
 # varied damage types, and tactical variety at each rank.
 # Keys: role -> spell names; 'saves' -> defence -> spell names; 'book' spellbook picks in priority order;
 # 'types' damage types among the spellbook picks; 'prep' and an optional 'note'.
@@ -29,7 +29,7 @@ _p(1,
    ['Sure Strike', 'Briny Bolt', 'Thunderstrike', 'Fear', 'Shockwave', 'Dehydrate'],
    ['Shocking Grasp', 'Gust of Wind', 'Grease', 'Acidic Burst', 'Illusory Object'],
    'bludgeoning, electricity, sonic, fire, acid',
-   "Both rank-1 slots should usually be Sure Strike. Once a Ring of Wizardry adds rank-1 slots at 7, Fear and a damage payload fit beside it. "
+   "Both rank-1 slots should usually be Sure Strike. Once a Ring of Wizardry adds rank-1 slots at 7, Fear and a damage spell fit beside it. "
    "From level 12, keep Gust of Wind for a cheap Sprinting Spellstrike.")
 
 _p(2,
@@ -40,7 +40,7 @@ _p(2,
    ['Acid Grip', 'Invisibility', 'Telekinetic Maneuver', 'Ignite Fireworks', 'Spray of Salt', 'Disorienting Flash', 'Hidebound', 'Warping Pull'],
    ['Laughing Fit', 'Revealing Light', 'Sudden Bolt', 'Blazing Bolt', 'Heat Metal', 'Charitable Urge', 'Vomit Swarm'],
    'acid, fire, sonic, electricity, piercing',
-   "Acid Grip is the default payload. The second slot goes to Ignite Fireworks or a Fortitude area spell against groups, Telekinetic Maneuver against one strong enemy, "
+   "Acid Grip is the default spell. The second slot goes to Ignite Fireworks or a Fortitude area spell against groups, Telekinetic Maneuver against one strong enemy, "
    "or Invisibility when the plan involves an approach. No Fortitude or Will spell at this rank is graded above B, so learn one of Spray of Salt and Disorienting Flash, not both, "
    "and rely on Fear at rank 1 and Slow at rank 3 for those saves. Blur and Gecko Grip enter the spellbook at 7 as studious spells.")
 
@@ -52,8 +52,8 @@ _p(3,
    ['Haste', 'Slow', 'Lightning Bolt', 'Blazing Dive', 'Echo Jump', 'Time Jump', 'Agonizing Despair', 'Vampiric Feast', 'Roaring Applause', 'Gravity Wave'],
    ['Skyglass Prison', 'Blister Bomb', 'Shared Invisibility', 'Wooden Double', "Cloud Dragon's Cloak", "Day's Weight", 'Stinking Cloud'],
    'electricity, fire, force, void, mental, bludgeoning',
-   "Haste and Slow are the default pair until more slots arrive. Vampiric Feast and Agonizing Despair are the strongest single-target payloads, on Fortitude and Will. "
-   "Blazing Dive and Echo Jump are the payloads for arriving and for leaving. "
+   "Haste and Slow are the default pair until more slots arrive. Vampiric Feast and Agonizing Despair are the strongest single-target spells, on Fortitude and Will. "
+   "Blazing Dive carries him into a fight with a Strike, and Echo Jump takes him out after one. "
    "Roaring Applause sets up Reactive Strike against anything that is not mindless. No attack spell at this rank is graded above B, so heighten Shocking Grasp when AC is the weak defence. "
    "Lightning Bolt becomes the Sprinting Spellstrike line at 12. Ghostly Weapon enters the spellbook at 11 as a studious spell.")
 
@@ -66,7 +66,7 @@ _p(4,
    ['Friends to Foes', 'Entangle Fate', 'Lost Things Returned', 'Vision of Death', 'Containment'],
    'force, cold, bludgeoning, mental',
    "Heighten Invisibility to rank 4 for a fight where Cyrus wants to attack unseen. Force Rain is the flexible damage slot at one, two or three actions. "
-   "Freezing Touch, Mantis's Grasp and Grasp of the Deep give a payload for Fortitude, Reflex and Will. Fly and Translocate become studious at 13.")
+   "Freezing Touch, Mantis's Grasp and Grasp of the Deep give a spell for Fortitude, Reflex and Will. Fly and Translocate become studious at 13.")
 
 _p(5,
    ['Glacial Skewer', 'Blazing Fissure', 'Grisly Growths', 'Mirror Malefactors', 'Blood Feast', 'Plasma Whirl'], ['Wall of Stone', 'Weight of the World', 'Wave of Despair', 'Stagnate Time'],
@@ -76,7 +76,7 @@ _p(5,
    ['Tornadic Gale', 'Plasma Whirl', 'Blood Feast', 'Stagnate Time', 'Truespeech'],
    'bludgeoning, fire, cold, piercing, mental, bleed',
    "Weight of the World and Wall of Stone, with Wave of Despair for groups. Blazing Fissure is the rank-5 Sprinting line when prone helps more than damage. "
-   "Every defence has an A-graded payload at this rank.")
+   "Every defence has an A-graded spell at this rank.")
 
 _p(6,
    ['Chain Lightning', 'Disintegrate', 'Living Thunderbolt', 'Necrotize', 'Missed Cue', 'Silver Spear', 'Phantasmal Calamity'], ['Wall of Force', 'Petrify', 'Lignify', 'Vitrifying Blast', 'Curse of the Toad Prince'],
@@ -86,7 +86,7 @@ _p(6,
    ['Silver Spear', 'Phantasmal Calamity', 'Curse of the Toad Prince', 'Vitrifying Blast', 'Vampiric Exsanguination'],
    'electricity, void, mental, piercing',
    "Living Thunderbolt for Sprinting Spellstrike turns. Chain Lightning is the reliable damage slot; Disintegrate when Sure Strike or an off-guard target makes the hit likely. "
-   "Missed Cue and Necrotize are the Will and Fortitude payloads.")
+   "Missed Cue and Necrotize are the Will and Fortitude spells.")
 
 _p(7,
    ['Frigid Flurry', 'Telekinetic Bombardment', 'Comet Charge'], ['Telekinetic Bombardment', 'Power Word Blind'], ['Defy the Gods', 'Power Word Blind'],
@@ -96,7 +96,7 @@ _p(7,
    ['Contingency', 'Energy Aegis', 'Warp Mind'],
    'cold, slashing, bludgeoning',
    "True Target for the boss, Frigid Flurry as the line. Rank-7 Haste on six creatures is the strongest opening spell for the whole party. "
-   "This rank's own payloads target Reflex and AC, so Fortitude and Will come from Necrotize and Missed Cue heightened into these slots.")
+   "This rank's own spells target Reflex and AC, so Fortitude and Will come from Necrotize and Missed Cue heightened into these slots.")
 
 _p(8,
    ['Arctic Rift', 'Roar of Freedom', 'Polar Ray', 'Boil Blood'], ['Quandary', 'Uncontrollable Dance', 'Power Word Stun', 'Falling Sky'], ['Uncontrollable Dance'],
@@ -106,7 +106,7 @@ _p(8,
    ['Falling Sky', 'Polar Ray', 'Metallic Meteorite Glyph'],
    'cold, sonic, fire',
    "Roar of Freedom is the best final action Cyrus has: one action for area damage, a debuff and temporary Hit Points. Disappearance makes every Strike hit an off-guard target. "
-   "Power Word Stun takes actions from a boss for one action and no save, leaving two for Spellstrike. Polar Ray is the AC payload, and its drain lowers the Fortitude save for Arctic Rift or Boil Blood. Reflex has no A-graded payload at this rank, so Frigid Flurry heightened covers it.")
+   "Power Word Stun takes actions from a boss for one action and no save, leaving two for Spellstrike. Polar Ray is the spell against AC, and its drain lowers the Fortitude save for Arctic Rift or Boil Blood. Reflex has no A-graded spell at this rank, so Frigid Flurry heightened covers it.")
 
 _p(9,
    ['Dimensional Excision', 'Falling Stars', 'Power Word Kill'], ['Remake Physiology'], ['Remake Physiology', 'Unspeakable Shadow'],
@@ -116,7 +116,7 @@ _p(9,
    ['Bilocation', 'Prismatic Shield', 'Falling Stars'],
    'bleed, bludgeoning, fire',
    "Cyrus gets rank-9 slots at 17. Foresight on whichever ally the boss targets and Remake Physiology on the boss. "
-   "No attack spell at this rank has a card, so Disintegrate heightened is the AC payload.")
+   "No attack spell at this rank has a card, so Disintegrate heightened is the spell against AC.")
 
 BOOK = {
     0: ['Gouging Claw', 'Ignition', 'Frostbite', 'Electric Arc', 'Shield', 'Message', 'Needle Darts', 'Tangle Vine', 'Detect Magic'],

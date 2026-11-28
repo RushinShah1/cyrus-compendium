@@ -218,7 +218,7 @@ def picks_html(rank):
             f'<div class="pk">{ic("shieldmagic")}<span class="pl">{d}</span><span class="pv">{", ".join(link(n) for n in p["saves"].get(d, [])) or "<span class=muted>No card at this rank</span>"}</span></div>'
             for d in ('AC', 'Fortitude', 'Reflex', 'Will'))
         types = f'<div class="pk">{ic("damage")}<span class="pl">Damage types</span><span class="pv">{H.escape(p["types"])}</span></div>' if p.get('types') else ''
-        cover = f'<h4 class="pkh">Payloads by defence</h4><div class="pkg"><div>{rows}</div><div>{types}</div></div>'
+        cover = f'<h4 class="pkh">Spells by defence</h4><div class="pkg"><div>{rows}</div><div>{types}</div></div>'
     prep = f'<p class="prep">{H.escape(p["prep"])}</p>' if p.get('prep') else ''
     note = f'<p class="muted small">{H.escape(p["note"])}</p>' if p.get('note') else ''
     title = 'Cantrip picks' if rank == 0 else f'Rank {rank} picks'
