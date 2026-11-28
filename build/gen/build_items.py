@@ -106,7 +106,7 @@ PLAN = [
     ('3', '+1 weapon potency (from 2)', f'{J("Ancestral Geometry")}, {J("Clay Sphere")} on Aspera, Lattice Armor', f'{J("Devilwing Badge")}, {J("Rime Crystal")}, {J("Flaming Star")} or {J("Jolt Coil")} in place of Clay Sphere; {J("Mage\'s Hat")}; {J("Pendant of the Occult")} for Guidance at will; a light hammer as a thrown backup', ''),
     ('4', 'Striking', f'{J("Healer\'s Gloves")}, a {J("Potion Patch", "it")} loaded with a healing potion', f'{J("Lifting Belt")} or {J("Mage\'s Hat")} as the early skill item; {J("Ghost Touch")} if incorporeal enemies appear', ''),
     ('5', '+1 armour potency; ' + J('Fearsome') + ' in Aspera\'s only property slot', f'{J("Shawl of Seasons")} set to spring for 40-foot Speed in Arcane Cascade', f'{J("Hooked")} in place of Fearsome; {J("Mobile")} in the armour; {J("Diplomat\'s Badge")}; {J("Pristine Epaulets")}; {J("Convincing")} or {J("Cunning")} if social scenes or Recall Knowledge matter more than the planned runes', ''),
-    ('6', '', f'{J("Endless Grimoire")}, greater {J("Clay Sphere")} for a daily Enlarge', f'{J("Tactician\'s Helm")} once Reactive Strike is in use; {J("Choker of Elocution")}; standard {J("Phantasmal Doorknob")}', '+1 rank-1 preparation'),
+    ('6', '', f'{J("Endless Grimoire")}, greater {J("Clay Sphere")} for a daily Enlarge, {J("Tactician\'s Helm")} once Reactive Strike is in use', f'{J("Choker of Elocution")}; standard {J("Phantasmal Doorknob")}', '+1 rank-1 preparation'),
     ('7', J('Sunweave') + ' in the armour\'s only slot', f'{J("Ring of Wizardry")} (Type I), {J("Retrieval Belt")}, {J("Kindler Cameo")}', f'{J("Cloak of Illusions")} for a daily Invisibility until 10, or {J("Cloak of Social Graces")} for Diplomacy and a daily Heroism; {J("Red Thread Knot")}; {J("Rooting")}; {J("Warding Statuette")}', '+2 rank-1 slots'),
     ('8', 'Resilient; ' + J('Astral') + ' takes Aspera\'s only slot and Fearsome moves to a runestone', 'Aspera\'s stave with Fused Staff', f'{J("Frost")}, {J("Corrosive")}, {J("Flaming")} or {J("Shock")} in place of Astral if spirits are rare', ''),
     ('9', '', f'Greater {J("Retrieval Belt")} for three stored items, greater {J("Healer\'s Gloves")}', f'{J("Thunderblast Slippers")}, since the footwear slot is free until 13; {J("Vigilant Eye")} against invisible enemies; {J("Armbands of Athleticism")}; {J("Messenger\'s Ring")}; greater {J("Pendant of the Occult")} if Occultism reaches expert; {J("Humbug Pocket")} or {J("Thousand-Blade Thesis")} where they fit the campaign', ''),
@@ -115,7 +115,7 @@ PLAN = [
     ('12', 'Greater striking, ' + J('Fortification') + ' in the second armour slot, greater ' + J('Fearsome'), f'{J("Ring of Wizardry")} Type III', 'The moderate <a href="#" data-to="it-dread-lesser">Dread</a> rune in place of Fortification if the party keeps enemies frightened', 'Ring adds two rank-3 slots and one rank-2'),
     ('13–14', 'Greater resilient at 14', f'{J("Ring of Wizardry")} Type IV and major {J("Endless Grimoire")} at 14', f'{J("Propulsive Boots")} at 13 or greater {J("Boots of Bounding")} at 14; greater {J("Cloak of Social Graces")} at 13', 'Rank-5 preparation; ring adds two rank-4 slots and one rank-3'),
     ('15–16', 'Greater ' + J('Astral') + ' at 15; +3 weapon potency at 16 with ' + J('Frost') + ' as the third rune', 'Upgrades to the runes Cyrus uses most', f'{J("Keen")} as the third rune in place of Frost; greater {J("Ashen")} at 16 if Ashen is in use', ''),
-    ('17–20', '+3 armour potency and greater Fortification at 18, with ' + J('Antimagic') + ' as the third armour rune; major striking at 19, major resilient at 20', f'{J("Sash of Books")} as the apex item at 17', f'{J("Spellwatch")} in place of Antimagic; high-grade {J("Djezet Armor")} at 19 or {J("Orichalcum Armor")} at 20 for a fourth armour rune; {J("Bracers of Strength")} as the Strength apex, or {J("Crown of Intellect")} if the sash cannot be had; true {J("Endless Grimoire")} at 18', 'Rank-7 preparation at 18'),
+    ('17–20', '+3 armour potency, greater Fortification and major Sunweave at 18, with ' + J('Antimagic') + ' as the third armour rune; major striking at 19, major resilient at 20', f'{J("Sash of Books")} as the apex item at 17', f'{J("Spellwatch")} in place of Antimagic; an {J("Orichalcum Weapon")} at 18 for a fourth rune on Aspera; high-grade {J("Djezet Armor")} at 19 or {J("Orichalcum Armor")} at 20 for a fourth armour rune; {J("Bracers of Strength")} as the Strength apex, or {J("Crown of Intellect")} if the sash cannot be had; true {J("Endless Grimoire")} at 18', 'Rank-7 preparation at 18'),
 ]
 
 
@@ -134,11 +134,13 @@ def items_page():
         ['<a href="https://2e.aonprd.com/Search.aspx?q=Scale+Mail">Scale Mail</a>', 'If Dexterity reaches +2', '+3', '+2', '+2', '−2', '−5 ft', '2'],
         ['<a href="https://2e.aonprd.com/Search.aspx?q=Breastplate">Breastplate</a>', 'For a dragonhide suit', '+4', '+1', '+3', '−2', '−5 ft', '2']])
     groups = [('Weapon runes', 'Weapon rune', 'Aspera holds one property rune per point of potency.'),
+              ('Weapon materials', 'Weapon material', 'Aspera can be remade in one precious material. Standard grade holds runes up to level 15 and high grade any rune.'),
               ('Armour runes', 'Armour rune', 'The armour holds one property rune per point of potency.'),
               ('Armour materials', 'Armour material', 'The armour can be made of one precious material. Low grade holds runes up to level 8, standard grade up to level 15 and high grade any rune.'),
               ('Spellhearts', 'Spellheart', 'Aspera and the armour each hold one spellheart or talisman.'),
+              ('Banners', 'Banner', 'A magical banner can be affixed to a weapon that also carries a spellheart. It is not invested. Its aura is a 30-foot emanation around the bearer, and a creature benefits from one banner at a time.'),
               ('Worn and held items', None, 'Investment limit: 10 items.')]
-    cats = ['Weapon rune', 'Armour rune', 'Armour material', 'Spellheart', 'Worn item', 'Held item']
+    cats = ['Weapon rune', 'Weapon material', 'Armour rune', 'Armour material', 'Spellheart', 'Banner', 'Worn item', 'Held item']
     order = {}
     for n, d in I.items():
         order.setdefault(d['cat'], []).append(n)

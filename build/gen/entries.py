@@ -224,6 +224,25 @@ def _spell_traits(shown, doc):
     return rar + rest
 
 
+# Cards for one version of an item whose Archives of Nethys page lists many unrelated versions (aeon stones):
+# the card keeps the page's opening text and that version's block only.
+VARIANT_ONLY = {'Aeon Stone (Preserving)'}
+
+
+def _variant_only(doc, name):
+    parts = re.split(r'(?=<title\s+level="2")', doc['markdown'])
+    keep = [p for p in parts[1:] if re.search(r'<title[^>]*>\s*' + re.escape(name) + r'\s*</title>', p)]
+    if not keep:
+        return doc
+    right = re.search(r'right="([^"]+)"', keep[0])
+    head = re.sub(r'right="[^"]+"', f'right="{right.group(1)}"', parts[0], count=1) if right else parts[0]
+    d = dict(doc)
+    d['markdown'] = head + keep[0]
+    if right:
+        d['level'] = re.sub(r'\D', '', right.group(1)) or doc.get('level')
+    return d
+
+
 def entry(name, kind='spell', foundry_kind=None, prefer_source=None):
     """The Archives of Nethys entry for a name. foundry_kind is accepted for older callers and ignored."""
     name = ALIAS.get((name, kind), name)
@@ -242,6 +261,8 @@ def entry(name, kind='spell', foundry_kind=None, prefer_source=None):
     if not cands:
         raise KeyError(f'{name} ({kind}) is not in the Archives of Nethys data')
     doc = pick(cands, prefer_source)
+    if name in VARIANT_ONLY:
+        doc = _variant_only(doc, name)
     e = _aon_entry(doc)
     if name in ACTION_OVERRIDE:
         e['action'] = ACTION_OVERRIDE[name]
