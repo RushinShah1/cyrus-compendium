@@ -215,7 +215,6 @@ C = {
  'Sparkleskin': 'Sparkles that reveal invisible creatures; Revealing Light covers it.',
  'Thief of Fortune': "Steals an enemy's buff, which most monsters don't have.",
  'Time Pocket': 'Sends an item a short way forward in time; a novelty.',
- 'Trade Items': 'Swaps held items with someone, a theft trick.',
  'Transcribe Conflict': 'Writes up a recent fight for later study; flavour only.',
  'Travel by Turtle': "A mythic spell, which needs mythic power the party doesn't use.",
  'Unseasonable Squall': "Built for one adventure's setting; a wind burst that Gust of Wind covers.",
@@ -371,7 +370,6 @@ C = {
  'Beseech Arcanotheign': "A mythic spell, which needs mythic power the party doesn't use.",
  'Call Fluxwraith': "An incarnate summon that takes three actions; Cyrus's own spells do more.",
  'Divinity Leech': 'Disrupts divine casters only.',
- 'Forest of Gates': 'Transports the party to a peaceful realm, a travel spell.',
  'Linnorm Sting': "Built for one adventure's setting; a poison that Boil Blood outperforms at lower rank.",
  'Metamorphosis': "A battle form: Cyrus can't use Aspera, Spellstrike or Arcane Cascade while in it.",
  'Proliferating Eyes': 'A spreading scrying eye; slow and indirect.',
@@ -386,13 +384,13 @@ _C_GRADE = {
 0: "Bramble Bush|Elemental Counter|Invoke True Name|Take Root|Torturous Trauma",
 1: "500 Toads|Admonishing Ray|Air Bubble|Airburst|Aqueous Blast|Camel Spit|Disguise Magic|Elysian Whimsy|Equal Footing|Exchange Image|Flashy Disappearance|Flense|Gritty Wheeze|Invisible Item|Item Facade|Lock|Message Rune|Negate Aroma|Overselling Flourish|Personal Rain Cloud|Scorching Blast|Scouring Sand|Share Lore|Synchronize Steps",
 2: "Bee-Man's Summons|Blast of the Bellows|Bone Spray|Boneshaker|Brine Dragon Bile|Carrion Mire|Cauterize Wounds|Clad in Metal|Cleanse Air|Confetti Cloud|Dancing Shield|Elemental Zone|Empty Pack|Far-Flung Fetch|Fear the Sun|Feast of Ashes|Flame Wisp|Horrifying Blood Loss|Illusory Shroud|Impeccable Flow|Instant Armor|Lock Item|Magnetic Attraction|Magnetic Repulsion|Mark of Blood|Mental Map|Mind Games|Misdirection|Osseous Cage|Peaceful Rest|Phantom Crowd|Radiant Field|Rime Slick|Sea Surge|Shadow Zombie|Slough Skin|Steel Fortifications|Swallow Light|The Queen's Rainbow|Tremorsense|Umbral Extraction|Umbral Mindtheft|Veil Of Spirits|Vicious Jealousy|Warrior's Regret",
-3: "Bind Undead|Blastback|Bonewall Bulwark|Bracing Tendrils|Caster's Imposition|Conjured Conveyance|Croak Voice|Cup of Dust|Deep Sight|Distracting Chatter|Dividing Trench|Elemental Annihilation Wave|Firework Blast|Gasping Marsh|Heatvision|Ibex's Harvest|Lashing Rope|Mind of Menace|Noxious Metals|One with Stone|Overwhelming Memory|Perseis's Precautions|Pyrotechnics|Rally Point|Sand Form|Sea of Thought|Shift Blame|Shifting Sand|Sparkleskin|Thief of Fortune|Trade Items|Unseasonable Squall|Wall of Radiance|Wall of Virtue|Web of Eyes",
+3: "Bind Undead|Blastback|Bonewall Bulwark|Bracing Tendrils|Caster's Imposition|Conjured Conveyance|Croak Voice|Cup of Dust|Deep Sight|Distracting Chatter|Dividing Trench|Elemental Annihilation Wave|Firework Blast|Gasping Marsh|Heatvision|Ibex's Harvest|Lashing Rope|Mind of Menace|Noxious Metals|One with Stone|Overwhelming Memory|Perseis's Precautions|Pyrotechnics|Rally Point|Sand Form|Sea of Thought|Shift Blame|Shifting Sand|Sparkleskin|Thief of Fortune|Unseasonable Squall|Wall of Radiance|Wall of Virtue|Web of Eyes",
 4: "Airlift|Aromatic Lure|Bridge of Vines|Channel Arrogance|Chromatic Armor|Cinder Swarm|Clownish Curse|Compel True Name|Coral Eruption|Daydreamer's Curse|Detect Creator|Detect Scrying|Elemental Sense|Enhance Senses|False Nature|Filter Air|Forgotten Lines|Glass Form|Magic Mailbox|Mirage|Misty Memory|Necrotic Radiation|Ocular Overload|Pest Swarm|Prophet's Luck|Ranage's Circle|Ravenous Portal|Reflective Scales|Rigid Form|Sage's Curse|Sliding Blocks|Soft Landing|Steal Voice|Stifling Stillness|Stonesense|Swarming Wasp Stings|Umbral Graft|Variable Gravity|Vision of Beauty|Ymeri's Mark",
 5: "Ancestral Winds|Bandit's Doom|Belittling Boast|Blind Eye|Chromatic Wall|Domora's Defense|Entwined Roots|False Vision|Fire's Pathway|Flames of Ego|Flammable Fumes|Incendiary Fog|Infectious Comedy|Instant Minefield|Lashunta's Life Bubble|Mantle of the Frozen Heart|Mantle of the Magma Heart|Mantle of the Melting Heart|Mantle of the Unwavering Heart|Pillars of Sand|Return Beacon|Ritual Obstruction|Sawtooth Terrain|Shock and Awe|Temporary Glyph|Transmute Rock and Mud|Wisdom of the Winds|Wyvern Sting",
 6: "Aura of the Unremarkable|Bound in Death|Crimson Breath|Earth and Sky|Halcyon Infusion|Ravenous Darkness|Suffocate|Temporal Ward",
 7: "Blightburn Blast|Chrysopoetic Curse|Control Sand|Corrosive Body|Dancing Fountain|Devouring Void|Entrancing Eyes|Indolent Haze|Inexhaustible Cynicism|Leng Sting|Love's Sacrifice|Maze of Locked Doors|Pollen Pods|Recall Legacy|Return to Essence",
 8: "All is One, One is All|Antimagic Field|Burning Blossoms|Deluge|Ferrous Form|Mimic Spell|Prying Survey|Summon Elemental Herald|Summon Irii|Undermine Reality",
-9: "Astral Labyrinth|Call Fluxwraith|Divinity Leech|Forest of Gates|Linnorm Sting|Proliferating Eyes|Summon Ancient Fleshforged|Upheaval",
+9: "Astral Labyrinth|Call Fluxwraith|Divinity Leech|Linnorm Sting|Proliferating Eyes|Summon Ancient Fleshforged|Upheaval",
 }
 
 # spells the review added to the passed-over list: (grade, reason)

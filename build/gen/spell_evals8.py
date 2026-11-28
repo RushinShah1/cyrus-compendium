@@ -1525,3 +1525,12 @@ w('Spiritual Epidemic', """A lasting curse that weakens and stupefies, spreading
 w('Overwhelming Presence', """Forces any number of creatures to spend actions paying him tribute, with some effect even on a success. Against a crowd it wastes a great many enemy actions. It has incapacitation, so the strongest enemy present is the least affected.""")
 
 w('Unfathomable Song', """Random debuffs on up to five enemies each round he sustains it. It has incapacitation and the sustain takes his recharge action.""")
+
+
+# ───────────────────────── cards added on 28 November 2026 ─────────────────────────
+E['Trade Items'] = ('002003', 'CBD', """Swaps a small item in his hand for one an enemy holds or carries, at 60 feet, unless the enemy succeeds at a Reflex save. Aimed at a wand, a key, a potion or the object the enemy is guarding, it takes away the one thing a fight or a theft turns on, and through Spellstrike it follows a hit on the same target.
+
+He has to be holding something of light Bulk to give in exchange, most weapons are too heavy for it before rank 5, and a successful save wastes the cast. A scroll for the day a single object matters.""")
+E['Forest of Gates'] = ('000204', 'CBD', """Carries the party up to 1,000 miles in an hour's walk, and the walk restores Hit Points and reduces doomed and drained as a night's rest would. Arrival depends on a DC 40 Arcana or Nature check, which his Arcana usually makes, and even a failure lands within 10 miles.
+
+It does not restore spells, and Teleport covers the same distance from a rank-7 slot. A travel spell for the top slot on a day with no fight in it.""")
